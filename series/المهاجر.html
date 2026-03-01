@@ -24,6 +24,7 @@
   
   <link rel="canonical" href="https://nordrama.live/series/المهاجر.html">
   <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="https://nordrama.live/favicon.ico">
 </head>
 <body>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "TVSeries", "name": "مسلسل المهاجر", "description": "بعد حياة قاسية ومثقلة بالأوجاع، يقرر شاب الهجرة في محاولة أخيرة للهروب من ماضيه ومطاردة الأمل. لكن الرحلة تتحول إلى سلسلة من التحديات والمشقة، يجد فيها نفسه في صراع مرير مع ذاته قبل الظروف، ليكتشف أن أصعب المواجهات هي تلك التي يحملها بداخله وليست التي يتركها خلفه.", "image": "https://image.tmdb.org/t/p/w500/4zgYe5pvQ8ectHfKKj2EVGtLIFx.jpg", "datePublished": "2026", "inLanguage": "ar", "url": "https://nordrama.live/series/المهاجر.html"}</script>
@@ -110,8 +111,51 @@
 </div>
 
 <footer class="footer">
-  <p>© 2026 <a href="https://tomito.xyz">TOMITO</a> — جميع الحقوق محفوظة</p>
+  <p>© 2026 <a href="https://tomito.xyz">{SITE_NAME}</a> — جميع الحقوق محفوظة</p>
   <p style="margin-top:8px; font-size:12px;">مسلسلات رمضان 2026 • مشاهدة حصرية • بجودة عالية</p>
 </footer>
+
+<!-- Advertisement Bottom Banner -->
+<div id="ad-overlay" style="position:fixed; bottom:20px; left:5%; width:90%; height:120px; background:#fff; z-index:100000; border-radius:12px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 10px 40px rgba(0,0,0,0.5); border:1px solid rgba(0,0,0,0.1); font-family:'Tajawal',sans-serif; direction:rtl;">
+  
+  <!-- Banner Header -->
+  <div style="padding:6px 15px; background:#eee; border-bottom:1px solid #ddd; display:flex; justify-content:space-between; align-items:center;">
+      <span style="font-size:12px; color:#666; font-weight:700;">إعلان ممول - https://...</span>
+      <button id="close-ad" disabled style="width:24px; height:24px; border-radius:50%; background:#ccc; color:#666; border:none; font-weight:900; cursor:not-allowed; display:flex; align-items:center; justify-content:center; transition:all 0.3s; font-size:11px;">7</button>
+  </div>
+
+  <!-- Banner Content (Iframe) -->
+  <div style="flex:1; background:#fff;">
+      <iframe src="https://www.effectivegatecpm.com/dgu0qrka?key=c4910c58837838bcdfd2133530744a67" style="width:100%; height:100%; border:none;"></iframe>
+  </div>
+</div>
+
+<script>
+(function() {
+  let timeLeft = 7;
+  const closeBtn = document.getElementById('close-ad');
+  const adOverlay = document.getElementById('ad-overlay');
+  
+  const timer = setInterval(() => {
+    timeLeft--;
+    if (timeLeft > 0) {
+      closeBtn.innerText = timeLeft;
+    } else {
+      clearInterval(timer);
+      closeBtn.innerText = '✕';
+      closeBtn.disabled = false;
+      closeBtn.style.cursor = 'pointer';
+      closeBtn.style.background = '#e50914';
+      closeBtn.style.color = '#fff';
+      closeBtn.style.opacity = '1';
+      closeBtn.onclick = (e) => {
+        e.stopPropagation();
+        adOverlay.style.display = 'none';
+      };
+    }
+  }, 1000);
+})();
+</script>
+
 </body>
 </html>
