@@ -1,24 +1,59 @@
 import json
 import os
 import urllib.parse
+import requests
+import re
 
-def load_json(filepath):
-    with open(filepath, 'r', encoding='utf-8') as f:
-        return json.load(f)
+TMDB_API_KEY = '882e741f7283dc9ba1654d4692ec30f6'
+BASE_URL = 'https://api.themoviedb.org/3'
+IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/original'
 
-def generate_html(item, template_content):
-    title = item.get('title', '')
-    poster = item.get('poster', '')
-    description = item.get('description', '')
+def fetch_tmdb_data(endpoint, params=None):
+    if params is None:
+        params = {}
+    params['api_key'] = TMDB_API_KEY
+    params['language'] = 'ar'
+    url = f"{BASE_URL}/{endpoint}"
+    try:
+        response = requests.get(url, params=params)
+        if response.status_code == 200:
+            return response.json().get('results', [])
+        else:
+            print(f"Error fetching from {url}: {response.status_code}")
+            return []
+    except Exception as e:
+        print(f"Exception fetching from {url}: {e}")
+        return []
+
+def generate_html(item, template_content, item_type):
+    if item_type == 'movie':
+        title = item.get('title', '')
+        original_title = item.get('original_title', '')
+        date = item.get('release_date', '')
+    else:
+        title = item.get('name', '')
+        original_title = item.get('original_name', '')
+        date = item.get('first_air_date', '')
+        
+    poster_path = item.get('poster_path', '')
+    poster = f"{IMAGE_BASE_URL}{poster_path}" if poster_path else ""
+    description = item.get('overview', '')
     if not description:
         description = "شاهد واستمتع بأفضل الحلقات والمسلسلات والأفلام على موقعنا."
-    item_url = item.get('url', '')
+    
+    rating = item.get('vote_average', '0.0')
+    year = date.split('-')[0] if date else "2026"
+    
+    # Simple ID-based URL for demonstration
+    item_id = item.get('id')
+    tmdb_type = 'movie' if item_type == 'movie' else 'tv'
+    item_url = f"https://tomito.xyz/{tmdb_type}/{item_id}"
     
     html = template_content
     # Replace the title
     html = html.replace('24 / 24 | TOMITO MOVIES', f'{title} | TOMITO MOVIES')
-    html = html.replace('مسلسل 24 (2001)', title)
-    html = html.replace('Watch 24 (2001)', f'Watch {title}')
+    html = html.replace('مسلسل 24 (2001)', f'{title} ({year})')
+    html = html.replace('Watch 24 (2001)', f'Watch {title} ({year})')
     
     # Replace poster
     html = html.replace('https://image.tmdb.org/t/p/original/iq6yrZ5LEDXf1ArCOYLq8PIUBpV.jpg', poster)
@@ -26,27 +61,28 @@ def generate_html(item, template_content):
     
     # Replace title texts in the body
     html = html.replace('<span>24</span>', f'<span>{title}</span>')
-    html = html.replace('<span style="font-size: 0.6em; color: #aaa;">24</span>', f'<span style="font-size: 0.6em; color: #aaa;">{title}</span>')
+    html = html.replace('<span style="font-size: 0.6em; color: #aaa;">24</span>', f'<span style="font-size: 0.6em; color: #aaa;">{original_title}</span>')
     
     # Replace descriptions
     desc_escaped = description.replace('"', '&quot;').replace('<', '&lt;').replace('>', '&gt;')
-    html = html.replace('Counterterrorism agent Jack Bauer fights the bad guys of the world, a day at a time. With each week&#x27;s episode unfolding in real-time, &quot;24&quot; covers a single day in the life of Bauer each season.', desc_escaped)
+    template_desc = 'Counterterrorism agent Jack Bauer fights the bad guys of the world, a day at a time. With each week&#x27;s episode unfolding in real-time, &quot;24&quot; covers a single day in the life of Bauer each season.'
+    html = html.replace(template_desc, desc_escaped)
     
     # Replace tags
-    html = html.replace('<span class="tag">2001</span>', '<span class="tag">2026</span>')
-    if item.get('type') == 'movie':
+    html = html.replace('<span class="tag">2001</span>', f'<span class="tag">{year}</span>')
+    html = html.replace('<span class="tag">⭐ 7.8</span>', f'<span class="tag">⭐ {rating}</span>')
+    
+    if item_type == 'movie':
         html = html.replace('TV Series | مسلسل', 'Movie | فيلم')
-    elif item.get('type') == 'episode':
-        html = html.replace('TV Series | مسلسل', 'Episode | حلقة')
+    else:
+        html = html.replace('TV Series | مسلسل', 'TV Series | مسلسل')
     
     # Replace Watch/Download links
     html = html.replace('https://tomito.xyz/tv/1973-24', item_url)
     
-    return html
+    return html, title, poster, item_url
 
 def main():
-    json_files = ['ramadan_2026_results_1.json', 'ramadan_2026_results_2.json', 'ramadan_2026_results_3.json']
-    
     template_path = 'movies/24.html'
     if not os.path.exists(template_path):
         print(f"Template {template_path} not found.")
@@ -62,101 +98,100 @@ def main():
             sitemap_content = f.read()
     
     new_urls = []
-    all_series = []
-    seen_series = set()
+    all_items = []
     
-    for jf in json_files:
-        if not os.path.exists(jf):
-            print(f"Warning: {jf} not found.")
-            continue
-        print(f"Processing {jf}...")
-        data = load_json(jf)
-        for item in data:
-            item_type = item.get('type')
-            item_url = item.get('url', '')
+    categories = [
+        ('movie/popular', 'movie'),
+        ('tv/popular', 'series')
+    ]
+    
+    for endpoint, item_type in categories:
+        print(f"Fetching {item_type} from TMDB...")
+        results = fetch_tmdb_data(endpoint)
+        for item in results:
+            # Generate and write HTML
+            html, title, poster, watch_url = generate_html(item, template_content, item_type)
             
-            if not item_url:
-                continue
+            # Simple slug generation
+            slug = title.replace(' ', '-').replace('/', '-').lower()
+            slug = "".join([c for c in slug if c.isalnum() or c == '-'])
             
-            # Collect series for index.html
-            if item_type == 'series':
-                item_title = item.get('title', '')
-                if item_title not in seen_series:
-                    all_series.append(item)
-                    seen_series.add(item_title)
+            if not slug:
+                slug = str(item.get('id'))
                 
-            parts = item_url.strip('/').split('/')
-            slug = parts[-1].split('?')[0]
-            slug = urllib.parse.unquote(slug)
-            
-            folder = 'watch'
-            if item_type == 'series':
-                folder = 'series'
-            elif item_type == 'movie':
-                folder = 'movies'
-            elif item_type == 'episode':
-                folder = 'watch'
-                
+            folder = 'movies' if item_type == 'movie' else 'series'
             os.makedirs(folder, exist_ok=True)
             
             file_path = os.path.join(folder, f"{slug}.html")
-            
-            # Generate and write HTML
-            html = generate_html(item, template_content)
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(html)
-                
-            loc_url = f"https://nordrama.live/{folder}/{slug}"
             
+            # For index.html
+            all_items.append({
+                'title': title,
+                'poster': poster,
+                'slug': slug,
+                'folder': folder
+            })
+            
+            loc_url = f"https://nordrama.live/{folder}/{slug}"
             if f"<loc>{loc_url}</loc>" not in sitemap_content and loc_url not in new_urls:
                 new_urls.append(loc_url)
                 
-    # Update index.html with series cards
+    # Update index.html with cards
     index_path = 'index.html'
-    if os.path.exists(index_path) and all_series:
-        print(f"Updating {index_path} with {len(all_series)} series...")
+    if os.path.exists(index_path) and all_items:
+        print(f"Updating {index_path} with {len(all_items)} items...")
         with open(index_path, 'r', encoding='utf-8') as f:
             index_content = f.read()
             
         cards_html = ""
-        for s in all_series:
-            s_title = s.get('title', '')
-            s_poster = s.get('poster', '')
-            s_url = s.get('url', '')
-            s_parts = s_url.strip('/').split('/')
-            s_slug = urllib.parse.unquote(s_parts[-1].split('?')[0])
-            
+        for s in all_items:
             card = f"""
-    <a class="card" href="series/{s_slug}">
-      <img class="card-poster" src="{s_poster}" alt="{s_title}" loading="lazy">
+    <a class="card" href="{s['folder']}/{s['slug']}">
+      <img class="card-poster" src="{s['poster']}" alt="{s['title']}" loading="lazy">
       <div class="card-overlay">
-        <div class="card-meta">حصري</div>
+        <div class="card-meta">{"فيلم" if s['folder'] == 'movies' else "مسلسل"}</div>
       </div>
       <div class="card-bottom">
         <div class="card-title">
-          <div class="card-title-ar">{s_title}</div>
+          <div class="card-title-ar">{s['title']}</div>
         </div>
       </div>
     </a>
 """
             cards_html += card
             
-        # Replace content between <div class="grid" id="all"> and </div>
         start_marker = '<div class="grid" id="all">'
-        end_marker = '</div>'
+        # Improved regex to find the grid and replace its content
+        pattern = re.compile(re.escape(start_marker) + r'.*?</div>\s*</section>', re.DOTALL)
         
-        start_idx = index_content.find(start_marker)
-        if start_idx != -1:
-            content_start = start_idx + len(start_marker)
-            # Find the closing tag of the grid div
-            # This is tricky if there are nested divs, but our structure looks flat.
-            # We'll look for the first </div> after the start.
-            end_idx = index_content.find(end_marker, content_start)
-            if end_idx != -1:
-                new_index_content = index_content[:content_start] + cards_html + index_content[end_idx:]
-                with open(index_path, 'w', encoding='utf-8') as f:
-                    f.write(new_index_content)
-                print("index.html updated successfully.")
+        # We want to keep <div class="grid" id="all"> and </div>\n</section>
+        replacement = start_marker + cards_html + "\n  </div>\n</section>"
+        
+        if pattern.search(index_content):
+            new_index_content = pattern.sub(replacement, index_content)
+            with open(index_path, 'w', encoding='utf-8') as f:
+                f.write(new_index_content)
+            print("index.html updated successfully with regex.")
+        else:
+            # Fallback for old way if structure changed
+            print("Regex pattern not found, trying manual search...")
+            start_idx = index_content.find(start_marker)
+            if start_idx != -1:
+                content_start = start_idx + len(start_marker)
+                # Find the NEXT section or end of file
+                next_section_idx = index_content.find('<footer', content_start)
+                if next_section_idx == -1:
+                    next_section_idx = len(index_content)
+                
+                # Find the LAST </div> before the next section
+                end_idx = index_content.rfind('</div>', content_start, next_section_idx)
+                if end_idx != -1:
+                    new_index_content = index_content[:content_start] + cards_html + index_content[end_idx:]
+                    with open(index_path, 'w', encoding='utf-8') as f:
+                        f.write(new_index_content)
+                    print("index.html updated successfully with fallback.")
 
     if new_urls and sitemap_content:
         sitemap_content = sitemap_content.strip()
