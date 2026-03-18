@@ -62,6 +62,8 @@ def main():
             sitemap_content = f.read()
     
     new_urls = []
+    all_series = []
+    seen_series = set()
     
     for jf in json_files:
         if not os.path.exists(jf):
@@ -75,6 +77,13 @@ def main():
             
             if not item_url:
                 continue
+            
+            # Collect series for index.html
+            if item_type == 'series':
+                item_title = item.get('title', '')
+                if item_title not in seen_series:
+                    all_series.append(item)
+                    seen_series.add(item_title)
                 
             parts = item_url.strip('/').split('/')
             slug = parts[-1].split('?')[0]
@@ -102,6 +111,53 @@ def main():
             if f"<loc>{loc_url}</loc>" not in sitemap_content and loc_url not in new_urls:
                 new_urls.append(loc_url)
                 
+    # Update index.html with series cards
+    index_path = 'index.html'
+    if os.path.exists(index_path) and all_series:
+        print(f"Updating {index_path} with {len(all_series)} series...")
+        with open(index_path, 'r', encoding='utf-8') as f:
+            index_content = f.read()
+            
+        cards_html = ""
+        for s in all_series:
+            s_title = s.get('title', '')
+            s_poster = s.get('poster', '')
+            s_url = s.get('url', '')
+            s_parts = s_url.strip('/').split('/')
+            s_slug = urllib.parse.unquote(s_parts[-1].split('?')[0])
+            
+            card = f"""
+    <a class="card" href="series/{s_slug}">
+      <img class="card-poster" src="{s_poster}" alt="{s_title}" loading="lazy">
+      <div class="card-overlay">
+        <div class="card-meta">حصري</div>
+      </div>
+      <div class="card-bottom">
+        <div class="card-title">
+          <div class="card-title-ar">{s_title}</div>
+        </div>
+      </div>
+    </a>
+"""
+            cards_html += card
+            
+        # Replace content between <div class="grid" id="all"> and </div>
+        start_marker = '<div class="grid" id="all">'
+        end_marker = '</div>'
+        
+        start_idx = index_content.find(start_marker)
+        if start_idx != -1:
+            content_start = start_idx + len(start_marker)
+            # Find the closing tag of the grid div
+            # This is tricky if there are nested divs, but our structure looks flat.
+            # We'll look for the first </div> after the start.
+            end_idx = index_content.find(end_marker, content_start)
+            if end_idx != -1:
+                new_index_content = index_content[:content_start] + cards_html + index_content[end_idx:]
+                with open(index_path, 'w', encoding='utf-8') as f:
+                    f.write(new_index_content)
+                print("index.html updated successfully.")
+
     if new_urls and sitemap_content:
         sitemap_content = sitemap_content.strip()
         if sitemap_content.endswith('</urlset>'):
