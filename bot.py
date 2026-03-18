@@ -106,7 +106,7 @@ def main():
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(html)
                 
-            loc_url = f"https://nordrama.live/{folder}/{slug}.html"
+            loc_url = f"https://nordrama.live/{folder}/{slug}"
             
             if f"<loc>{loc_url}</loc>" not in sitemap_content and loc_url not in new_urls:
                 new_urls.append(loc_url)
