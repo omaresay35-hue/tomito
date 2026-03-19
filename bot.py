@@ -38,6 +38,11 @@ def search_tmdb_poster(title):
     search_query = re.sub(r'\s+الموسم\s+.*', '', search_query)
     search_query = re.sub(r'\s+-\s+.*', '', search_query) # remove suffixes after dash
     search_query = search_query.strip()
+
+    # Strip trailing numbers from search query to get the base series
+    search_query = re.sub(r'\s+\d+$', '', search_query).strip()
+    
+    if not search_query or search_query.isdigit(): return None
     
     params = {'api_key': TMDB_API_KEY, 'language': 'ar', 'query': search_query}
     url = f"{BASE_URL}/search/multi"
@@ -48,17 +53,30 @@ def search_tmdb_poster(title):
             if results:
                 for res in results:
                     if res.get('poster_path'):
-                        return f"{IMAGE_BASE_URL}{res.get('poster_path')}"
+                        # Basic title check to avoid "24" matching unrelated stuff
+                        res_title = res.get('name', res.get('title', '')).lower()
+                        if len(search_query) > 1 and search_query.lower() in res_title or res_title in search_query.lower():
+                             return f"{IMAGE_BASE_URL}{res.get('poster_path')}"
         return None
     except Exception:
         return None
 
 def extract_series_parent(title):
-    pattern = r'(.*?)\s+الحلقة\s+\d+.*'
-    match = re.search(pattern, title)
-    if match:
-        return match.group(1).strip()
-    return title
+    # Remove common prefixes/suffixes
+    cleaned = title.replace('مسلسل', '').replace('برنامج', '').replace('انمي', '').replace('فيلم', '').strip()
+    # Remove bracketed content like (2026)
+    cleaned = re.sub(r'\(.*?\)', '', cleaned).strip()
+    # Remove season/episode markers
+    cleaned = re.sub(r'الموسم\s+\d+.*', '', cleaned)
+    cleaned = re.sub(r'الجزء\s+\d+.*', '', cleaned)
+    cleaned = re.sub(r'الحلقة\s+\d+.*', '', cleaned)
+    cleaned = re.sub(r'ep\s+\d+.*', '', cleaned, flags=re.I)
+    
+    # Strip trailing numbers (e.g., "Title 2" -> "Title")
+    cleaned = re.sub(r'\s+\d+\s*$', '', cleaned).strip()
+    # print(f"DEBUG: '{title}' -> '{cleaned}'")
+        
+    return cleaned
 
 def extract_episode_number(title):
     match = re.search(r'الحلقة\s+(\d+)', title)
@@ -67,6 +85,14 @@ def extract_episode_number(title):
 def clean_slug(title):
     # Remove prefix words
     cleaned = title.replace('مسلسل ', '').replace('برنامج ', '').replace('فيلم ', '').strip()
+    # Remove season/episode markers
+    cleaned = re.sub(r'الموسم\s+\d+', '', cleaned)
+    cleaned = re.sub(r'الجزء\s+\d+', '', cleaned)
+    cleaned = re.sub(r'الحلقة\s+\d+.*', '', cleaned)
+    cleaned = re.sub(r'ep\s+\d+.*', '', cleaned, flags=re.I)
+    # Strip trailing numbers (e.g., "Title 2" -> "Title")
+    cleaned = re.sub(r'\s+\d+$', '', cleaned)
+    cleaned = cleaned.strip()
     # Remove years like 2026, 2025, 2024
     cleaned = re.sub(r'\s*202\d\s*', ' ', cleaned).strip()
     # Create slug
@@ -225,9 +251,9 @@ def main():
                 if t_key not in series_map[base_title]['episodes_dict'] and poster_cache[base_title]:
                     series_map[base_title]['episodes_dict'][t_key] = item
             elif item_type == 'series':
-                if title not in series_map:
-                    series_map[title] = {'parent': None, 'episodes_dict': {}}
-                series_map[title]['parent'] = item
+                if base_title not in series_map:
+                    series_map[base_title] = {'parent': None, 'episodes_dict': {}}
+                series_map[base_title]['parent'] = item
             elif item_type == 'movie':
                 item_slug = clean_slug(title)
                 std_item = {
@@ -239,7 +265,10 @@ def main():
 
     processed_titles = set()
     cards_html = ""
-    new_urls = []
+    new_urls = [
+        "https://nordrama.live/",
+        "https://nordrama.live/movies",
+    ]
     
     os.makedirs('ramadan-trailer', exist_ok=True)
     os.makedirs('movies', exist_ok=True)
@@ -334,31 +363,18 @@ def main():
             tree = ET.parse(sitemap_path)
             root = tree.getroot()
             for loc in root.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc'):
-                if loc.text: existing_urls.add(loc.text.replace('.html', ''))
-        except Exception: pass
-    
-    for url in new_urls: existing_urls.add(url.replace('.html', ''))
-    
-    # Update sitemap
-    sitemap_path = 'sitemap.xml'
-    existing_urls = set()
-    if os.path.exists(sitemap_path):
-        try:
-            import xml.etree.ElementTree as ET
-            tree = ET.parse(sitemap_path)
-            root = tree.getroot()
-            for loc in root.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc'):
                 if loc is not None and loc.text:
-                    existing_urls.add(loc.text.replace('.html', ''))
+                    url_text = loc.text.replace('.html', '').strip()
+                    if url_text: existing_urls.add(url_text)
         except Exception: pass
     
     for url in new_urls:
-        existing_urls.add(url.replace('.html', ''))
+        existing_urls.add(url.replace('.html', '').strip())
     
     with open(sitemap_path, 'w', encoding='utf-8') as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
         for url in sorted(list(existing_urls)):
-            f.write(f'  <url><loc>{url}</loc><priority>0.8</priority></url>\n')
+            if url: f.write(f'  <url><loc>{url}</loc><priority>0.8</priority></url>\n')
         f.write('</urlset>')
 
 if __name__ == '__main__':

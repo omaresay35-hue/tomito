@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مسلسل بنات العم 2 - انتقام الموتى | TOMITO</title>
+  <title>بنات العم 2 - انتقام الموتى | TOMITO</title>
   <meta name="description"
-    content="مشاهدة وتحميل مسلسل بنات العم 2 - انتقام الموتى (2026) أون لاين بجودة عالية HD. Watch 24 (2001) online exclusively on TOMITO.">
+    content="مشاهدة وتحميل بنات العم 2 - انتقام الموتى (2026) أون لاين بجودة عالية HD. Watch 24 (2001) online exclusively on TOMITO.">
   <meta property="og:title" content="24 / 24">
   <meta property="og:description"
-    content="مشاهدة وتحميل مسلسل بنات العم 2 - انتقام الموتى (2026) أون لاين بجودة عالية HD. Watch 24 (2001) online exclusively on TOMITO.">
-  <meta property="og:image" content="">
+    content="مشاهدة وتحميل بنات العم 2 - انتقام الموتى (2026) أون لاين بجودة عالية HD. Watch 24 (2001) online exclusively on TOMITO.">
+  <meta property="og:image" content="https://image.tmdb.org/t/p/original/znMBnF7AjsNBzx41GiD9NFCApur.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../style.css">
   <link rel="icon" href="https://nordrama.live/favicon.ico">
@@ -29,11 +29,11 @@
   </header>
 
   <div class="series-hero">
-    <img src="" alt="24" loading="eager">
+    <img src="https://image.tmdb.org/t/p/original/znMBnF7AjsNBzx41GiD9NFCApur.jpg" alt="24" loading="eager">
     <div class="series-info">
       <h1 class="series-title" style="display: flex; flex-direction: column; gap: 5px;">
-        <span>مسلسل بنات العم 2 - انتقام الموتى</span>
-        <span style="font-size: 0.6em; color: #aaa;">مسلسل بنات العم 2 - انتقام الموتى</span>
+        <span>بنات العم 2 - انتقام الموتى</span>
+        <span style="font-size: 0.6em; color: #aaa;">بنات العم 2 - انتقام الموتى</span>
       </h1>
       <div class="series-desc">
         <div style="margin-bottom: 20px; font-family: sans-serif;">Counterterrorism agent Jack Bauer fights the bad guys
@@ -97,29 +97,22 @@
     <h2 class="section-title">الحلقات المتاحة</h2>
     <div class="episodes-grid">
 
-        <a href="https://tomito.xyz/watch-ramadan/بنات-العم-2-انتقام-الموتى-الحلقة-7-السابعة" class="episode-card" target="_blank">
+        <a href="https://nordrama.live/watch/بنات-العم-2-انتقام-الموتى-ep-7" class="episode-card" target="_blank">
           <div class="ep-number">1</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل بنات العم 2 - انتقام الموتى الحلقة 7 السابعة</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/watch-ramadan/بنات-العم-2-انتقام-الموتى-الحلقة-7-السابعة" class="episode-card" target="_blank">
+        <a href="https://nordrama.live/watch/بنات-العم-2-انتقام-الموتى-ep-9" class="episode-card" target="_blank">
           <div class="ep-number">2</div>
-          <div class="ep-info">
-            <div class="ep-title">مسلسل بنات العم 2 - انتقام الموتى الحلقة 7 السابعة</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
-          </div>
-        </a>
-        <a href="https://tomito.xyz/watch-ramadan/بنات-العم-2-انتقام-الموتى-الحلقة-9-التاسعة" class="episode-card" target="_blank">
-          <div class="ep-number">3</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل بنات العم 2 - انتقام الموتى الحلقة 9 التاسعة</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/watch-ramadan/بنات-العم-2-انتقام-الموتى-الحلقة-10-العاشرة-والاخيرة" class="episode-card" target="_blank">
-          <div class="ep-number">4</div>
+        <a href="https://nordrama.live/watch/بنات-العم-2-انتقام-الموتى-ep-10" class="episode-card" target="_blank">
+          <div class="ep-number">3</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل بنات العم 2 - انتقام الموتى الحلقة 10 العاشرة والاخيرة</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
@@ -127,6 +120,27 @@
         </a>
     </div>
   </div>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const epNum = urlParams.get('episode');
+    if (epNum) {
+        const episodes = {"7": "https://nordrama.live/watch/بنات-العم-2-انتقام-الموتى-ep-7", "9": "https://nordrama.live/watch/بنات-العم-2-انتقام-الموتى-ep-9", "10": "https://nordrama.live/watch/بنات-العم-2-انتقام-الموتى-ep-10"};
+        const selectedUrl = episodes[epNum];
+        if (selectedUrl) {
+            document.querySelectorAll('a[href*="tomito.xyz"]').forEach(link => {
+                if (link.classList.contains('btn-primary') || link.classList.contains('btn-secondary')) {
+                    link.href = selectedUrl;
+                }
+            });
+            const titleEl = document.querySelector('.series-title span');
+            if (titleEl && !titleEl.textContent.includes('الحلقة')) {
+                titleEl.textContent += ' - الحلقة ' + epNum;
+            }
+        }
+    }
+</script>
+
 </body>
 
 </html>
