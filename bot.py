@@ -34,7 +34,8 @@ def fetch_tmdb_data(endpoint, params=None):
 def search_tmdb_poster(title):
     search_query = title.replace('مسلسل ', '').replace('برنامج ', '').replace('فيلم ', '').strip()
     search_query = re.sub(r'\s+الحلقة\s+\d+.*', '', search_query)
-    search_query = re.sub(r'2026', '', search_query).strip()
+    search_query = re.sub(r'\s+202\d', '', search_query)
+    search_query = re.sub(r'\s+الموسم\s+.*', '', search_query).strip()
     
     params = {'api_key': TMDB_API_KEY, 'language': 'ar', 'query': search_query}
     url = f"{BASE_URL}/search/multi"
@@ -58,8 +59,14 @@ def extract_series_parent(title):
     return title
 
 def clean_ramadan_slug(title):
+    # Remove prefix words
     cleaned = title.replace('مسلسل ', '').replace('برنامج ', '').strip()
+    # Remove years like 2026, 2025, 2024
+    cleaned = re.sub(r'\s*202\d\s*', ' ', cleaned).strip()
+    # Create slug
     slug = cleaned.replace(' ', '-').replace('/', '-').lower()
+    slug = re.sub(r'-+', '-', slug)
+    # Filter alphanum and dashes
     return "".join([c for c in slug if c.isalnum() or c == '-'])
 
 def generate_html(std_item, template_content, episodes=None):
@@ -149,17 +156,19 @@ def main():
             if base_title not in poster_cache:
                 print(f"Searching TMDB for: {base_title}")
                 tmdb_poster = search_tmdb_poster(base_title)
-                # USE ONLY TMDB POSTER. NO FALLBACK.
-                poster_cache[base_title] = tmdb_poster or ""
+                poster_cache[base_title] = tmdb_poster or item.get('poster')
                 time.sleep(0.1)
             
+            # Split prefix and clean slug (remove years)
             item_slug = clean_ramadan_slug(title)
-            watch_url = f"https://tomito.xyz/ramadan-trailer/{item_slug}"
+            item_type = item.get('type', 'series')
+            prefix = "ramadan-trailer" if item_type == 'series' else "ramadan"
+            watch_url = f"https://tomito.xyz/{prefix}/{item_slug}"
             
             std_item = {
                 'title': title, 'orig_title': title,
                 'poster': poster_cache[base_title], 'desc': item.get('description', ''),
-                'year': '2026', 'rating': '⭐ حصري', 'type': item.get('type', 'series'),
+                'year': '2026', 'rating': '⭐ حصري', 'type': item_type,
                 'watch_url': watch_url, 'source': 'json'
             }
             
