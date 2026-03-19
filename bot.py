@@ -114,15 +114,42 @@ def generate_html(std_item, template_content, episodes=None):
     html = re.sub(btn_pattern, btn_repl, html)
 
     if item_type == 'series' and episodes:
-        ep_list_html = '<div class="episodes-section">\n    <h2 class="section-title">الحلقات المتاحة</h2>\n    <div class="grid">\n'
+        # Premium Glassmorphism UI for Episodes
+        style = """
+<style>
+    .episodes-section { margin-top: 50px; padding: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+    .section-title { font-size: 2em; margin-bottom: 30px; color: #fff; text-align: center; font-weight: 700; letter-spacing: 1px; }
+    .episodes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    .episode-card {
+        display: flex; align-items: center; gap: 20px; padding: 20px;
+        background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 15px;
+        text-decoration: none; color: #fff; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .episode-card:hover {
+        background: rgba(255, 255, 255, 0.1); border-color: #e50914;
+        transform: translateY(-5px) scale(1.02); box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    .ep-number {
+        font-size: 1.5em; font-weight: 900; color: #e50914; min-width: 40px; text-align: center;
+        text-shadow: 0 0 10px rgba(229, 9, 20, 0.3);
+    }
+    .ep-info { display: flex; flex-direction: column; }
+    .ep-title { font-size: 1.1em; font-weight: 600; line-height: 1.4; color: #eee; }
+    .ep-action { font-size: 0.8em; color: #aaa; margin-top: 5px; }
+</style>
+"""
+        ep_list_html = style + '<div class="episodes-section">\n    <h2 class="section-title">الحلقات المتاحة</h2>\n    <div class="episodes-grid">\n'
         for i, ep in enumerate(episodes):
             ep_slug = clean_slug(ep['title'])
-            ep_url = f"../watch-ramadan/{ep_slug}.html"
+            # Backlink to tomito.xyz with clean URL
+            ep_url = f"https://tomito.xyz/watch-ramadan/{ep_slug}"
             ep_list_html += f"""
-        <a href="{ep_url}" class="episode-card" style="display:flex; align-items:center; gap:15px; padding:15px; background:rgba(255,255,255,0.05); border-radius:8px; text-decoration:none; color:#fff; border:1px solid rgba(255,255,255,0.1); transition:all 0.3s;">
-          <div class="ep-number" style="font-size:1.2em; font-weight:bold; color:#e50914;">{i+1}</div>
+        <a href="{ep_url}" class="episode-card" target="_blank">
+          <div class="ep-number">{i+1}</div>
           <div class="ep-info">
             <div class="ep-title">{ep['title']}</div>
+            <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>"""
         ep_list_html += '\n    </div>\n  </div>'
@@ -151,9 +178,17 @@ def main():
             if base_title not in poster_cache:
                 print(f"Searching TMDB for: {base_title}")
                 tmdb_poster = search_tmdb_poster(base_title)
-                # Keep fallback if not found on TMDB
-                poster_cache[base_title] = tmdb_poster or item.get('poster') or ""
+                json_poster = item.get('poster', '')
+                if json_poster and 'image.tmdb.org' in json_poster:
+                    json_poster = json_poster.replace('/w500/', '/original/').replace('/w342/', '/original/')
+                poster_cache[base_title] = tmdb_poster or json_poster
                 time.sleep(0.1)
+            elif not poster_cache[base_title]:
+                json_poster = item.get('poster', '')
+                if json_poster:
+                    if 'image.tmdb.org' in json_poster:
+                        json_poster = json_poster.replace('/w500/', '/original/').replace('/w342/', '/original/')
+                    poster_cache[base_title] = json_poster
             
             item_slug = clean_slug(title)
             item_type = item.get('type', 'series')
@@ -249,7 +284,8 @@ def main():
         
         with open(os.path.join(folder, f"{slug}.html"), 'w', encoding='utf-8') as f:
             f.write(html)
-        new_urls.append(f"https://nordrama.live/{folder}/{slug}.html")
+        # Clean URLs for sitemap (no .html)
+        new_urls.append(f"https://nordrama.live/{folder}/{slug}")
 
     for title, info in series_map.items():
         for ep in info['episodes']:
@@ -258,7 +294,8 @@ def main():
             html = generate_html(ep, template_content)
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(html)
-            new_urls.append(f"https://nordrama.live/watch-ramadan/{slug}.html")
+            # Clean URLs for sitemap
+            new_urls.append(f"https://nordrama.live/watch-ramadan/{slug}")
 
     index_path = 'index.html'
     if os.path.exists(index_path):
@@ -270,16 +307,28 @@ def main():
             with open(index_path, 'w', encoding='utf-8') as f:
                 f.write(pattern.sub(replacement, index_content))
 
+    import xml.etree.ElementTree as ET
     sitemap_path = 'sitemap.xml'
+    existing_urls = set()
     if os.path.exists(sitemap_path):
-        with open(sitemap_path, 'r', encoding='utf-8') as f:
-            sm_content = f.read().strip()
-            if sm_content.endswith('</urlset>'): sm_content = sm_content[:-9]
-            for url in set(new_urls):
-                if f"<loc>{url}</loc>" not in sm_content:
-                    sm_content += f"  <url><loc>{url}</loc><priority>0.8</priority></url>\n"
-            with open(sitemap_path, 'w', encoding='utf-8') as f:
-                f.write(sm_content + '</urlset>')
+        try:
+            tree = ET.parse(sitemap_path)
+            root = tree.getroot()
+            for loc in root.findall('.//{http://www.sitemaps.org/schemas/sitemap/0.9}loc'):
+                if loc.text:
+                    existing_urls.add(loc.text.replace('.html', ''))
+        except Exception:
+            pass
+    
+    for url in new_urls:
+        existing_urls.add(url.replace('.html', ''))
+    
+    with open(sitemap_path, 'w', encoding='utf-8') as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        for url in sorted(list(existing_urls)):
+            f.write(f'  <url><loc>{url}</loc><priority>0.8</priority></url>\n')
+        f.write('</urlset>')
 
 if __name__ == '__main__':
     main()
