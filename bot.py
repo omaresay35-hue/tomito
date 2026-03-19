@@ -7,7 +7,7 @@ import time
 
 TMDB_API_KEY = '882e741f7283dc9ba1654d4692ec30f6'
 BASE_URL = 'https://api.themoviedb.org/3'
-IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/original'
+IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/w500'
 
 def load_json(filepath):
     if not os.path.exists(filepath):
