@@ -10,7 +10,7 @@
   <meta property="og:title" content="24 / 24">
   <meta property="og:description"
     content="مشاهدة وتحميل مسلسل النص التاني (2026) أون لاين بجودة عالية HD. Watch 24 (2001) online exclusively on TOMITO.">
-  <meta property="og:image" content="https://image.tmdb.org/t/p/w500/rIwpM2XvlcAGofwsnUphehdaJGx.jpg">
+  <meta property="og:image" content="https://image.tmdb.org/t/p/original/rIwpM2XvlcAGofwsnUphehdaJGx.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../style.css">
   <link rel="icon" href="https://nordrama.live/favicon.ico">
@@ -29,7 +29,7 @@
   </header>
 
   <div class="series-hero">
-    <img src="https://image.tmdb.org/t/p/w500/rIwpM2XvlcAGofwsnUphehdaJGx.jpg" alt="24" loading="eager">
+    <img src="https://image.tmdb.org/t/p/original/rIwpM2XvlcAGofwsnUphehdaJGx.jpg" alt="24" loading="eager">
     <div class="series-info">
       <h1 class="series-title" style="display: flex; flex-direction: column; gap: 5px;">
         <span>مسلسل النص التاني</span>
@@ -51,10 +51,10 @@
       </div>
 
       <div style="margin-top:30px; display:flex; gap:15px; flex-wrap:wrap;">
-        <a href="https://tomito.xyz/watch-ramadan/النص-التاني" target="_blank" class="btn btn-primary"
+        <a href="https://tomito.xyz/ramadan-trailer/النص-التاني" target="_blank" class="btn btn-primary"
           style="background:#e50914; color:#fff; border-radius:6px; font-weight:900; padding:12px 30px; text-decoration:none;">▶
           Watch Now / شاهد الآن</a>
-        <a href="https://tomito.xyz/watch-ramadan/النص-التاني" target="_blank" class="btn btn-secondary"
+        <a href="https://tomito.xyz/ramadan-trailer/النص-التاني" target="_blank" class="btn btn-secondary"
           style="background:rgba(255,255,255,0.1); color:#fff; border-radius:6px; font-weight:900; padding:12px 30px; text-decoration:none; border:1px solid rgba(255,255,255,0.2);">⬇
           Download / تحميل</a>
       </div>
@@ -70,24 +70,70 @@
 
 
 
+
+<style>
+    .episodes-section { margin-top: 50px; padding: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+    .section-title { font-size: 2em; margin-bottom: 30px; color: #fff; text-align: center; font-weight: 700; letter-spacing: 1px; }
+    .episodes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+    .episode-card {
+        display: flex; align-items: center; gap: 20px; padding: 20px;
+        background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 15px;
+        text-decoration: none; color: #fff; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .episode-card:hover {
+        background: rgba(255, 255, 255, 0.1); border-color: #e50914;
+        transform: translateY(-5px) scale(1.02); box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    .ep-number {
+        font-size: 1.5em; font-weight: 900; color: #e50914; min-width: 40px; text-align: center;
+        text-shadow: 0 0 10px rgba(229, 9, 20, 0.3);
+    }
+    .ep-info { display: flex; flex-direction: column; }
+    .ep-title { font-size: 1.1em; font-weight: 600; line-height: 1.4; color: #eee; }
+    .ep-action { font-size: 0.8em; color: #aaa; margin-top: 5px; }
+</style>
 <div class="episodes-section">
     <h2 class="section-title">الحلقات المتاحة</h2>
-    <div class="grid">
+    <div class="episodes-grid">
 
-        <a href="../ramadan/النص-التاني-الحلقة-1-الاولي.html" class="episode-card" style="display:flex; align-items:center; gap:15px; padding:15px; background:rgba(255,255,255,0.05); border-radius:8px; text-decoration:none; color:#fff; border:1px solid rgba(255,255,255,0.1); transition:all 0.3s;">
-          <div class="ep-number" style="font-size:1.2em; font-weight:bold; color:#e50914;">1</div>
+        <a href="https://tomito.xyz/watch-ramadan/النص-التاني?episode=1" class="episode-card" target="_blank">
+          <div class="ep-number">1</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل النص التاني الحلقة 1 الاولي</div>
+            <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="../ramadan/النص-التاني-الحلقة-2-الثانية.html" class="episode-card" style="display:flex; align-items:center; gap:15px; padding:15px; background:rgba(255,255,255,0.05); border-radius:8px; text-decoration:none; color:#fff; border:1px solid rgba(255,255,255,0.1); transition:all 0.3s;">
-          <div class="ep-number" style="font-size:1.2em; font-weight:bold; color:#e50914;">2</div>
+        <a href="https://tomito.xyz/watch-ramadan/النص-التاني?episode=2" class="episode-card" target="_blank">
+          <div class="ep-number">2</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل النص التاني الحلقة 2 الثانية</div>
+            <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
     </div>
   </div>
+
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const epNum = urlParams.get('episode');
+    if (epNum) {
+        const episodes = {"1": "https://tomito.xyz/watch-ramadan/النص-التاني?episode=1", "2": "https://tomito.xyz/watch-ramadan/النص-التاني?episode=2"};
+        const selectedUrl = episodes[epNum];
+        if (selectedUrl) {
+            document.querySelectorAll('a[href*="tomito.xyz"]').forEach(link => {
+                if (link.classList.contains('btn-primary') || link.classList.contains('btn-secondary')) {
+                    link.href = selectedUrl;
+                }
+            });
+            const titleEl = document.querySelector('.series-title span');
+            if (titleEl && !titleEl.textContent.includes('الحلقة')) {
+                titleEl.textContent += ' - الحلقة ' + epNum;
+            }
+        }
+    }
+</script>
+
 </body>
 
 </html>

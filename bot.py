@@ -32,10 +32,12 @@ def fetch_tmdb_data(endpoint, params=None):
         return []
 
 def search_tmdb_poster(title):
-    search_query = title.replace('مسلسل ', '').replace('برنامج ', '').replace('فيلم ', '').strip()
+    search_query = title.replace('مسلسل ', '').replace('برنامج ', '').replace('فيلم ', '').replace('كامل ', '').replace('مترجم ', '').strip()
     search_query = re.sub(r'\s+الحلقة\s+\d+.*', '', search_query)
     search_query = re.sub(r'\s+202\d', '', search_query)
-    search_query = re.sub(r'\s+الموسم\s+.*', '', search_query).strip()
+    search_query = re.sub(r'\s+الموسم\s+.*', '', search_query)
+    search_query = re.sub(r'\s+-\s+.*', '', search_query) # remove suffixes after dash
+    search_query = search_query.strip()
     
     params = {'api_key': TMDB_API_KEY, 'language': 'ar', 'query': search_query}
     url = f"{BASE_URL}/search/multi"
@@ -57,6 +59,10 @@ def extract_series_parent(title):
     if match:
         return match.group(1).strip()
     return title
+
+def extract_episode_number(title):
+    match = re.search(r'الحلقة\s+(\d+)', title)
+    return match.group(1) if match else "1"
 
 def clean_slug(title):
     # Remove prefix words
@@ -141,9 +147,11 @@ def generate_html(std_item, template_content, episodes=None):
 """
         ep_list_html = style + '<div class="episodes-section">\n    <h2 class="section-title">الحلقات المتاحة</h2>\n    <div class="episodes-grid">\n'
         for i, ep in enumerate(episodes):
-            ep_slug = clean_slug(ep['title'])
-            # Backlink to tomito.xyz with clean URL
-            ep_url = f"https://tomito.xyz/watch-ramadan/{ep_slug}"
+            series_name = extract_series_parent(ep['title'])
+            series_slug = clean_slug(series_name)
+            ep_num = extract_episode_number(ep['title'])
+            # New format: series_slug?episode=N
+            ep_url = f"https://tomito.xyz/watch-ramadan/{series_slug}?episode={ep_num}"
             ep_list_html += f"""
         <a href="{ep_url}" class="episode-card" target="_blank">
           <div class="ep-number">{i+1}</div>
@@ -153,7 +161,30 @@ def generate_html(std_item, template_content, episodes=None):
           </div>
         </a>"""
         ep_list_html += '\n    </div>\n  </div>'
-        html = html.replace('</body>', f'{ep_list_html}\n</body>')
+        
+        # JavaScript for dynamic episode handling
+        js_code = """
+<script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const epNum = urlParams.get('episode');
+    if (epNum) {
+        const episodes = """ + json.dumps({extract_episode_number(e['title']): e['watch_url'] for e in episodes}, ensure_ascii=False) + """;
+        const selectedUrl = episodes[epNum];
+        if (selectedUrl) {
+            document.querySelectorAll('a[href*="tomito.xyz"]').forEach(link => {
+                if (link.classList.contains('btn-primary') || link.classList.contains('btn-secondary')) {
+                    link.href = selectedUrl;
+                }
+            });
+            const titleEl = document.querySelector('.series-title span');
+            if (titleEl && !titleEl.textContent.includes('الحلقة')) {
+                titleEl.textContent += ' - الحلقة ' + epNum;
+            }
+        }
+    }
+</script>
+"""
+        html = html.replace('</body>', f'{ep_list_html}\n{js_code}\n</body>')
 
     return html
 
@@ -208,14 +239,17 @@ def main():
                 'year': '2026', 'rating': '⭐ حصري', 'type': item_type,
                 'watch_url': watch_url, 'source': 'json'
             }
-            
+            # Deduplicate episodes by stripped title
             if std_item['type'] == 'episode':
                 if base_title not in series_map:
-                    series_map[base_title] = {'parent': None, 'episodes': []}
-                series_map[base_title]['episodes'].append(std_item)
+                    series_map[base_title] = {'parent': None, 'episodes_dict': {}}
+                
+                t_key = std_item['title'].strip()
+                if t_key not in series_map[base_title]['episodes_dict']:
+                    series_map[base_title]['episodes_dict'][t_key] = std_item
             elif std_item['type'] == 'series':
                 if title not in series_map:
-                    series_map[title] = {'parent': None, 'episodes': []}
+                    series_map[title] = {'parent': None, 'episodes_dict': {}}
                 series_map[title]['parent'] = std_item
             else:
                 all_std_items.append(std_item)
@@ -223,9 +257,10 @@ def main():
     for title, info in series_map.items():
         if not info['parent']:
             item_slug = clean_slug(title)
+            episodes = list(info['episodes_dict'].values())
             info['parent'] = {
                 'title': title, 'orig_title': title, 'poster': poster_cache.get(title, ""),
-                'desc': info['episodes'][0]['desc'] if info['episodes'] else "",
+                'desc': episodes[0]['desc'] if episodes else "",
                 'year': '2026', 'rating': '⭐ حصري', 'type': 'series', 'source': 'json',
                 'watch_url': f"https://tomito.xyz/ramadan-trailer/{item_slug}"
             }
@@ -257,14 +292,16 @@ def main():
         if item['title'] in processed_titles: continue
         processed_titles.add(item['title'])
         slug = clean_slug(item['title'])
+        if not item['poster']: continue
         
         if item['type'] == 'series':
             folder = 'ramadan-trailer'
             eps = series_map.get(item['title'], {}).get('episodes', [])
             html = generate_html(item, template_content, episodes=eps)
             meta = "حصري" if item['source'] == 'json' else "مسلسل"
+            # Remove .html from internal links as requested
             cards_html += f"""
-    <a class="card" href="{folder}/{slug}.html">
+    <a class="card" href="{folder}/{slug}">
       <img class="card-poster" src="{item['poster']}" alt="{item['title']}" loading="lazy">
       <div class="card-overlay"><div class="card-meta">{meta}</div></div>
       <div class="card-bottom"><div class="card-title"><div class="card-title-ar">{item['title']}</div></div></div>
@@ -272,14 +309,20 @@ def main():
         elif item['type'] == 'movie':
             folder = 'movies'
             html = generate_html(item, template_content)
+            # Remove .html from internal links as requested
             cards_html += f"""
-    <a class="card" href="{folder}/{slug}.html">
+    <a class="card" href="{folder}/{slug}">
       <img class="card-poster" src="{item['poster']}" alt="{item['title']}" loading="lazy">
       <div class="card-overlay"><div class="card-meta">فيلم</div></div>
       <div class="card-bottom"><div class="card-title"><div class="card-title-ar">{item['title']}</div></div></div>
     </a>"""
         else:
             folder = 'watch-ramadan'
+            series_name = extract_series_parent(item['title'])
+            series_slug = clean_slug(series_name)
+            ep_num = extract_episode_number(item['title'])
+            # Update watch_url for single episode pages too
+            item['watch_url'] = f"https://tomito.xyz/watch-ramadan/{series_slug}?episode={ep_num}"
             html = generate_html(item, template_content)
         
         with open(os.path.join(folder, f"{slug}.html"), 'w', encoding='utf-8') as f:
@@ -288,14 +331,23 @@ def main():
         new_urls.append(f"https://nordrama.live/{folder}/{slug}")
 
     for title, info in series_map.items():
-        for ep in info['episodes']:
-            slug = clean_slug(ep['title'])
-            file_path = os.path.join('watch-ramadan', f"{slug}.html")
-            html = generate_html(ep, template_content)
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(html)
-            # Clean URLs for sitemap
-            new_urls.append(f"https://nordrama.live/watch-ramadan/{slug}")
+        episodes = list(info['episodes_dict'].values())
+        if not episodes or not info['parent']: continue
+        if not info['parent']['poster']: continue
+        
+        series_slug = clean_slug(title)
+        file_path = os.path.join('watch-ramadan', f"{series_slug}.html")
+        
+        # Standardize episode URLs before generating HTML
+        for ep in episodes:
+            ep_num = extract_episode_number(ep['title'])
+            ep['watch_url'] = f"https://tomito.xyz/watch-ramadan/{series_slug}?episode={ep_num}"
+            
+        html = generate_html(info['parent'], template_content, episodes=episodes)
+        with open(file_path, 'w', encoding='utf-8') as f:
+            f.write(html)
+        # Clean URLs for sitemap (series level)
+        new_urls.append(f"https://nordrama.live/watch-ramadan/{series_slug}")
 
     index_path = 'index.html'
     if os.path.exists(index_path):
