@@ -149,10 +149,10 @@ def main():
             if base_title not in poster_cache:
                 print(f"Searching TMDB for: {base_title}")
                 tmdb_poster = search_tmdb_poster(base_title)
-                poster_cache[base_title] = tmdb_poster or item.get('poster')
+                # USE ONLY TMDB POSTER. NO FALLBACK.
+                poster_cache[base_title] = tmdb_poster or ""
                 time.sleep(0.1)
             
-            # Clean slug for ramadan-trailer watch links
             item_slug = clean_ramadan_slug(title)
             watch_url = f"https://tomito.xyz/ramadan-trailer/{item_slug}"
             
