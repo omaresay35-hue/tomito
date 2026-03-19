@@ -32,23 +32,17 @@ def fetch_tmdb_data(endpoint, params=None):
         return []
 
 def search_tmdb_poster(title):
-    # Clean title for search
     search_query = title.replace('مسلسل ', '').replace('برنامج ', '').replace('فيلم ', '').strip()
     search_query = re.sub(r'\s+الحلقة\s+\d+.*', '', search_query)
     search_query = re.sub(r'2026', '', search_query).strip()
     
-    params = {
-        'api_key': TMDB_API_KEY,
-        'language': 'ar',
-        'query': search_query
-    }
+    params = {'api_key': TMDB_API_KEY, 'language': 'ar', 'query': search_query}
     url = f"{BASE_URL}/search/multi"
     try:
         response = requests.get(url, params=params)
         if response.status_code == 200:
             results = response.json().get('results', [])
             if results:
-                # Find the first one with a poster
                 for res in results:
                     if res.get('poster_path'):
                         return f"{IMAGE_BASE_URL}{res.get('poster_path')}"
@@ -63,6 +57,11 @@ def extract_series_parent(title):
         return match.group(1).strip()
     return title
 
+def clean_ramadan_slug(title):
+    cleaned = title.replace('مسلسل ', '').replace('برنامج ', '').strip()
+    slug = cleaned.replace(' ', '-').replace('/', '-').lower()
+    return "".join([c for c in slug if c.isalnum() or c == '-'])
+
 def generate_html(std_item, template_content, episodes=None):
     title = std_item.get('title', '')
     original_title = std_item.get('orig_title', '')
@@ -71,8 +70,7 @@ def generate_html(std_item, template_content, episodes=None):
     year = std_item.get('year', '2026')
     rating = std_item.get('rating', '⭐ 7.8')
     item_type = std_item.get('type', 'series')
-    # USER SPECIFIC: Always link to tomito.xyz
-    watch_url = "https://www.tomito.xyz"
+    watch_url = std_item.get('watch_url', 'https://www.tomito.xyz')
     
     html = template_content
     html = html.replace('24 / 24 | TOMITO MOVIES', f'{title} | TOMITO')
@@ -95,10 +93,18 @@ def generate_html(std_item, template_content, episodes=None):
         html = html.replace('TV Series | مسلسل', 'Episode | حلقة')
     
     html = html.replace('https://tomito.xyz/tv/1973-24', watch_url)
-    # Also replace other links to be sure
-    html = html.replace('▶ Watch Now / شاهد الآن', '▶ Watch Now / شاهد الآن')
-    # Replace direct source links if present from previous runs
-    html = re.sub(r'href="https://shhaheid4u.net/.*? "', f'href="{watch_url}"', html)
+    
+    btn_pattern = r'href="(https?://[^"]*?)"'
+    def btn_repl(m):
+        link = m.group(1)
+        if 'tomito.xyz' in link:
+             if '/tv/' in link or '/movie/' in link or '/series/' in link or '/episode/' in link or '/ramadan/' in link or '/ramadan-trailer/' in link:
+                 return f'href="{watch_url}"'
+             if link == 'https://www.tomito.xyz': return f'href="{watch_url}"'
+        if 'shhid4u' in link or 'shahhed' in link or 'shhaheid' in link: return f'href="{watch_url}"'
+        return m.group(0)
+    
+    html = re.sub(btn_pattern, btn_repl, html)
 
     if item_type == 'series' and episodes:
         ep_list_html = '<div class="episodes-section">\n    <h2 class="section-title">الحلقات المتاحة</h2>\n    <div class="grid">\n'
@@ -133,32 +139,28 @@ def main():
     series_map = {}
     poster_cache = {}
 
-    # 1. Load from JSON and Cache Posters
     for jf in json_files:
         data = load_json(jf)
         for item in data:
             title = item.get('title', '')
             if not title: continue
-            
-            # Normalize title to group episodes
             base_title = extract_series_parent(title)
             
-            # Search poster if not in cache
             if base_title not in poster_cache:
                 print(f"Searching TMDB for: {base_title}")
                 tmdb_poster = search_tmdb_poster(base_title)
                 poster_cache[base_title] = tmdb_poster or item.get('poster')
-                time.sleep(0.1) # Be kind to API
+                time.sleep(0.1)
+            
+            # Clean slug for ramadan-trailer watch links
+            item_slug = clean_ramadan_slug(title)
+            watch_url = f"https://tomito.xyz/ramadan-trailer/{item_slug}"
             
             std_item = {
-                'title': title,
-                'orig_title': title,
-                'poster': poster_cache[base_title],
-                'desc': item.get('description', ''),
-                'year': '2026',
-                'rating': '⭐ حصري',
-                'type': item.get('type', 'series'),
-                'source': 'json'
+                'title': title, 'orig_title': title,
+                'poster': poster_cache[base_title], 'desc': item.get('description', ''),
+                'year': '2026', 'rating': '⭐ حصري', 'type': item.get('type', 'series'),
+                'watch_url': watch_url, 'source': 'json'
             }
             
             if std_item['type'] == 'episode':
@@ -174,35 +176,32 @@ def main():
 
     for title, info in series_map.items():
         if not info['parent']:
+            item_slug = clean_ramadan_slug(title)
             info['parent'] = {
-                'title': title,
-                'orig_title': title,
-                'poster': poster_cache.get(title, ""),
+                'title': title, 'orig_title': title, 'poster': poster_cache.get(title, ""),
                 'desc': info['episodes'][0]['desc'] if info['episodes'] else "",
-                'year': '2026', 'rating': '⭐ حصري', 'type': 'series', 'source': 'json'
+                'year': '2026', 'rating': '⭐ حصري', 'type': 'series', 'source': 'json',
+                'watch_url': f"https://tomito.xyz/ramadan-trailer/{item_slug}"
             }
         all_std_items.append(info['parent'])
 
-    # 2. Add TMDB
     categories = [('movie/popular', 'movie'), ('tv/popular', 'series')]
     for endpoint, item_type in categories:
         results = fetch_tmdb_data(endpoint)
         for item in results:
             title = item.get('title') or item.get('name')
             if title in poster_cache: continue
+            item_id = item.get('id')
+            watch_url = f"https://tomito.xyz/{'movie' if item_type == 'movie' else 'tv'}/{item_id}"
             std_item = {
-                'title': title,
-                'orig_title': item.get('original_title') or item.get('original_name'),
+                'title': title, 'orig_title': item.get('original_title') or item.get('original_name'),
                 'poster': f"{IMAGE_BASE_URL}{item.get('poster_path')}" if item.get('poster_path') else "",
-                'desc': item.get('overview', ''),
-                'year': (item.get('release_date') or item.get('first_air_date', '2026')).split('-')[0],
-                'rating': f"⭐ {item.get('vote_average', '0.0')}",
-                'type': item_type,
-                'source': 'tmdb'
+                'desc': item.get('overview', ''), 'year': (item.get('release_date') or item.get('first_air_date', '2026')).split('-')[0],
+                'rating': f"⭐ {item.get('vote_average', '0.0')}", 'type': item_type,
+                'watch_url': watch_url, 'source': 'tmdb'
             }
             all_std_items.append(std_item)
 
-    # 3. Process All
     processed_titles = set()
     cards_html = ""
     new_urls = []
@@ -212,7 +211,6 @@ def main():
         if item['title'] in processed_titles: continue
         processed_titles.add(item['title'])
         slug = create_slug(item['title'])
-        
         if item['type'] == 'series':
             folder = 'series'
             eps = series_map.get(item['title'], {}).get('episodes', [])
@@ -236,23 +234,19 @@ def main():
         else:
             folder = 'watch'
             html = generate_html(item, template_content)
-            
         with open(os.path.join(folder, f"{slug}.html"), 'w', encoding='utf-8') as f:
             f.write(html)
         new_urls.append(f"https://nordrama.live/{folder}/{slug}.html")
 
-    # Handle JSON episodes in watch/
     for title, info in series_map.items():
         for ep in info['episodes']:
             slug = create_slug(ep['title'])
             file_path = os.path.join('watch', f"{slug}.html")
-            if not os.path.exists(file_path):
-                html = generate_html(ep, template_content)
-                with open(file_path, 'w', encoding='utf-8') as f:
-                    f.write(html)
-                new_urls.append(f"https://nordrama.live/watch/{slug}.html")
+            html = generate_html(ep, template_content)
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(html)
+            new_urls.append(f"https://nordrama.live/watch/{slug}.html")
 
-    # Update index.html
     index_path = 'index.html'
     if os.path.exists(index_path):
         with open(index_path, 'r', encoding='utf-8') as f:
@@ -263,7 +257,6 @@ def main():
             with open(index_path, 'w', encoding='utf-8') as f:
                 f.write(pattern.sub(replacement, index_content))
 
-    # Update sitemap
     sitemap_path = 'sitemap.xml'
     if os.path.exists(sitemap_path):
         with open(sitemap_path, 'r', encoding='utf-8') as f:
