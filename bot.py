@@ -58,16 +58,16 @@ def extract_series_parent(title):
         return match.group(1).strip()
     return title
 
-def clean_ramadan_slug(title):
+def clean_slug(title):
     # Remove prefix words
-    cleaned = title.replace('مسلسل ', '').replace('برنامج ', '').strip()
+    cleaned = title.replace('مسلسل ', '').replace('برنامج ', '').replace('فيلم ', '').strip()
     # Remove years like 2026, 2025, 2024
     cleaned = re.sub(r'\s*202\d\s*', ' ', cleaned).strip()
     # Create slug
     slug = cleaned.replace(' ', '-').replace('/', '-').lower()
     slug = re.sub(r'-+', '-', slug)
     # Filter alphanum and dashes
-    return "".join([c for c in slug if c.isalnum() or c == '-'])
+    return "".join([c for c in slug if (ord(c) > 127) or c.isalnum() or c == '-'])
 
 def generate_html(std_item, template_content, episodes=None):
     title = std_item.get('title', '')
@@ -116,9 +116,8 @@ def generate_html(std_item, template_content, episodes=None):
     if item_type == 'series' and episodes:
         ep_list_html = '<div class="episodes-section">\n    <h2 class="section-title">الحلقات المتاحة</h2>\n    <div class="grid">\n'
         for i, ep in enumerate(episodes):
-            ep_slug = ep['title'].replace(' ', '-').replace('/', '-').lower()
-            ep_slug = "".join([c for c in ep_slug if c.isalnum() or c == '-'])
-            ep_url = f"../watch/{ep_slug}.html"
+            ep_slug = clean_slug(ep['title'])
+            ep_url = f"../ramadan/{ep_slug}.html"
             ep_list_html += f"""
         <a href="{ep_url}" class="episode-card" style="display:flex; align-items:center; gap:15px; padding:15px; background:rgba(255,255,255,0.05); border-radius:8px; text-decoration:none; color:#fff; border:1px solid rgba(255,255,255,0.1); transition:all 0.3s;">
           <div class="ep-number" style="font-size:1.2em; font-weight:bold; color:#e50914;">{i+1}</div>
@@ -131,9 +130,10 @@ def generate_html(std_item, template_content, episodes=None):
 
     return html
 
+# create_slug is now redundant, but kept for non-ramadan items if any
+# However, for consistency, let's just make it call clean_slug
 def create_slug(title):
-    slug = title.replace(' ', '-').replace('/', '-').lower()
-    return "".join([c for c in slug if c.isalnum() or c == '-'])
+    return clean_slug(title)
 
 def main():
     template_path = 'movies/24.html'
@@ -160,9 +160,9 @@ def main():
                 time.sleep(0.1)
             
             # Split prefix and clean slug (remove years)
-            item_slug = clean_ramadan_slug(title)
+            item_slug = clean_slug(title)
             item_type = item.get('type', 'series')
-            prefix = "ramadan-trailer" if item_type == 'series' else "ramadan"
+            prefix = "watch-ramadan" if item_type == 'series' else "ramadan"
             watch_url = f"https://tomito.xyz/{prefix}/{item_slug}"
             
             std_item = {
@@ -185,12 +185,12 @@ def main():
 
     for title, info in series_map.items():
         if not info['parent']:
-            item_slug = clean_ramadan_slug(title)
+            item_slug = clean_slug(title)
             info['parent'] = {
                 'title': title, 'orig_title': title, 'poster': poster_cache.get(title, ""),
                 'desc': info['episodes'][0]['desc'] if info['episodes'] else "",
                 'year': '2026', 'rating': '⭐ حصري', 'type': 'series', 'source': 'json',
-                'watch_url': f"https://tomito.xyz/ramadan-trailer/{item_slug}"
+                'watch_url': f"https://tomito.xyz/watch-ramadan/{item_slug}"
             }
         all_std_items.append(info['parent'])
 
@@ -214,14 +214,14 @@ def main():
     processed_titles = set()
     cards_html = ""
     new_urls = []
-    os.makedirs('series', exist_ok=True); os.makedirs('movies', exist_ok=True); os.makedirs('watch', exist_ok=True)
+    os.makedirs('watch-ramadan', exist_ok=True); os.makedirs('movies', exist_ok=True); os.makedirs('ramadan', exist_ok=True)
     
     for item in all_std_items:
         if item['title'] in processed_titles: continue
         processed_titles.add(item['title'])
         slug = create_slug(item['title'])
         if item['type'] == 'series':
-            folder = 'series'
+            folder = 'watch-ramadan'
             eps = series_map.get(item['title'], {}).get('episodes', [])
             html = generate_html(item, template_content, episodes=eps)
             meta = "حصري" if item['source'] == 'json' else "مسلسل"
@@ -241,7 +241,7 @@ def main():
       <div class="card-bottom"><div class="card-title"><div class="card-title-ar">{item['title']}</div></div></div>
     </a>"""
         else:
-            folder = 'watch'
+            folder = 'ramadan'
             html = generate_html(item, template_content)
         with open(os.path.join(folder, f"{slug}.html"), 'w', encoding='utf-8') as f:
             f.write(html)
@@ -250,11 +250,11 @@ def main():
     for title, info in series_map.items():
         for ep in info['episodes']:
             slug = create_slug(ep['title'])
-            file_path = os.path.join('watch', f"{slug}.html")
+            file_path = os.path.join('ramadan', f"{slug}.html")
             html = generate_html(ep, template_content)
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(html)
-            new_urls.append(f"https://nordrama.live/watch/{slug}.html")
+            new_urls.append(f"https://nordrama.live/ramadan/{slug}.html")
 
     index_path = 'index.html'
     if os.path.exists(index_path):
