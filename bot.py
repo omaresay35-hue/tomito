@@ -162,7 +162,12 @@ def main():
             # Split prefix and clean slug (remove years)
             item_slug = clean_slug(title)
             item_type = item.get('type', 'series')
-            prefix = "watch-ramadan" if item_type == 'series' else "ramadan"
+            if item_type == 'series':
+                prefix = "ramadan-trailer"
+            elif item_type == 'episode':
+                prefix = "watch-ramadan"
+            else:
+                prefix = "movies"
             watch_url = f"https://tomito.xyz/{prefix}/{item_slug}"
             
             std_item = {
@@ -190,7 +195,7 @@ def main():
                 'title': title, 'orig_title': title, 'poster': poster_cache.get(title, ""),
                 'desc': info['episodes'][0]['desc'] if info['episodes'] else "",
                 'year': '2026', 'rating': '⭐ حصري', 'type': 'series', 'source': 'json',
-                'watch_url': f"https://tomito.xyz/watch-ramadan/{item_slug}"
+                'watch_url': f"https://tomito.xyz/ramadan-trailer/{item_slug}"
             }
         all_std_items.append(info['parent'])
 
@@ -214,14 +219,14 @@ def main():
     processed_titles = set()
     cards_html = ""
     new_urls = []
-    os.makedirs('watch-ramadan', exist_ok=True); os.makedirs('movies', exist_ok=True); os.makedirs('ramadan', exist_ok=True)
+    os.makedirs('ramadan-trailer', exist_ok=True); os.makedirs('movies', exist_ok=True); os.makedirs('watch-ramadan', exist_ok=True)
     
     for item in all_std_items:
         if item['title'] in processed_titles: continue
         processed_titles.add(item['title'])
         slug = create_slug(item['title'])
         if item['type'] == 'series':
-            folder = 'watch-ramadan'
+            folder = 'ramadan-trailer'
             eps = series_map.get(item['title'], {}).get('episodes', [])
             html = generate_html(item, template_content, episodes=eps)
             meta = "حصري" if item['source'] == 'json' else "مسلسل"
@@ -241,7 +246,7 @@ def main():
       <div class="card-bottom"><div class="card-title"><div class="card-title-ar">{item['title']}</div></div></div>
     </a>"""
         else:
-            folder = 'ramadan'
+            folder = 'watch-ramadan'
             html = generate_html(item, template_content)
         with open(os.path.join(folder, f"{slug}.html"), 'w', encoding='utf-8') as f:
             f.write(html)
@@ -250,11 +255,11 @@ def main():
     for title, info in series_map.items():
         for ep in info['episodes']:
             slug = create_slug(ep['title'])
-            file_path = os.path.join('ramadan', f"{slug}.html")
+            file_path = os.path.join('watch-ramadan', f"{slug}.html")
             html = generate_html(ep, template_content)
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(html)
-            new_urls.append(f"https://nordrama.live/ramadan/{slug}.html")
+            new_urls.append(f"https://nordrama.live/watch-ramadan/{slug}.html")
 
     index_path = 'index.html'
     if os.path.exists(index_path):
