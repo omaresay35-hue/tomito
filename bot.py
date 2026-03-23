@@ -111,9 +111,10 @@ def generate_html(std_item, template_content, episodes=None):
     item_type = std_item.get('type', 'series')
     watch_url = std_item.get('watch_url', 'https://www.tomito.xyz')
     
+    seo_title = f"{title} — مشاهدة 2026 فابور مجاناً على تومتو"
     html = template_content
-    html = html.replace('24 / 24 | TOMITO MOVIES', f'{title} | TOMITO')
-    html = html.replace('<title>24 (2001) | Watch online on TOMITO</title>', f'<title>{title} ({year}) | Watch online on TOMITO</title>')
+    html = html.replace('24 / 24 | TOMITO MOVIES', seo_title)
+    html = html.replace('<title>24 (2001) | Watch online on TOMITO</title>', f'<title>{seo_title}</title>')
     html = html.replace('مسلسل 24 (2001)', f'{title} ({year})')
     html = html.replace('<span>24</span>', f'<span>{title}</span>')
     html = html.replace('<span style="font-size: 0.6em; color: #aaa;">24</span>', f'<span style="font-size: 0.6em; color: #aaa;">{original_title}</span>')
@@ -216,52 +217,64 @@ def main():
     with open(template_path, 'r', encoding='utf-8') as f:
         template_content = f.read()
         
-    json_files = ['ramadan_2026_results_1.json', 'ramadan_2026_results_2.json', 'ramadan_2026_results_3.json']
+    json_files = {
+        'ramadan': ['ramadan_2026_results_1.json', 'ramadan_2026_results_2.json', 'ramadan_2026_results_3.json'],
+        'movies': ['all_movies1.json'],
+        'anime': ['anime.json'],
+        'series': ['series.json']
+    }
     series_map = {}
     poster_cache = {}
     all_std_items = []
 
-    for jf in json_files:
-        data = load_json(jf)
-        for item in data:
-            title = item.get('title', '')
-            if not title: continue
-            base_title = extract_series_parent(title)
-            
-            if base_title not in poster_cache:
-                print(f"Searching TMDB for: {base_title}")
-                tmdb_poster = search_tmdb_poster(base_title)
-                json_poster = item.get('poster', '')
-                if json_poster and 'image.tmdb.org' in json_poster:
-                    json_poster = json_poster.replace('/w500/', '/original/').replace('/w342/', '/original/')
-                poster_cache[base_title] = tmdb_poster or json_poster
-                time.sleep(0.05)
-            elif not poster_cache[base_title]:
-                json_poster = item.get('poster', '')
-                if json_poster:
-                    if 'image.tmdb.org' in json_poster:
+    categories_data = {
+        'ramadan': {'title': 'مسلسلات رمضان 2026', 'items': []},
+        'movies': {'title': 'أفلام حصرية 2026', 'items': []},
+        'anime': {'title': 'أنمي وكرتون 2026', 'items': []},
+        'series': {'title': 'مسلسلات عربية وأجنبية 2026', 'items': []}
+    }
+
+    for cat_name, files in json_files.items():
+        for jf in files:
+            data = load_json(jf)
+            for item in data:
+                title = item.get('title', '')
+                if not title: continue
+                
+                # Cleanup title for searching/slug
+                base_title = extract_series_parent(title)
+                
+                if base_title not in poster_cache:
+                    # Only search TMDB if not already found in JSON (premium check)
+                    tmdb_poster = search_tmdb_poster(base_title)
+                    json_poster = item.get('poster', '')
+                    if json_poster and 'image.tmdb.org' in json_poster:
                         json_poster = json_poster.replace('/w500/', '/original/').replace('/w342/', '/original/')
-                    poster_cache[base_title] = json_poster
-            
-            item_type = item.get('type', 'series')
-            if item_type == 'episode':
-                if base_title not in series_map:
-                    series_map[base_title] = {'parent': None, 'episodes_dict': {}}
-                t_key = title.strip()
-                if t_key not in series_map[base_title]['episodes_dict'] and poster_cache[base_title]:
-                    series_map[base_title]['episodes_dict'][t_key] = item
-            elif item_type == 'series':
-                if base_title not in series_map:
-                    series_map[base_title] = {'parent': None, 'episodes_dict': {}}
-                series_map[base_title]['parent'] = item
-            elif item_type == 'movie':
-                item_slug = clean_slug(title)
-                std_item = {
-                    'title': title, 'orig_title': title, 'poster': poster_cache.get(title, item.get('poster', '')),
-                    'desc': item.get('description', ''), 'year': '2026', 'rating': '⭐ حصري',
-                    'type': 'movie', 'watch_url': f"https://tomito.xyz/movies/{item_slug}", 'source': 'json'
-                }
-                if std_item['poster']: all_std_items.append(std_item)
+                    poster_cache[base_title] = tmdb_poster or json_poster
+                    if tmdb_poster: time.sleep(0.05)
+                
+                item_type = item.get('type', 'series')
+                if item_type == 'episode':
+                    if base_title not in series_map:
+                        series_map[base_title] = {'parent': None, 'episodes_dict': {}}
+                    t_key = title.strip()
+                    if t_key not in series_map[base_title]['episodes_dict']:
+                        series_map[base_title]['episodes_dict'][t_key] = item
+                elif item_type == 'series':
+                    if base_title not in series_map:
+                        series_map[base_title] = {'parent': None, 'episodes_dict': {}}
+                    series_map[base_title]['parent'] = item
+                    categories_data[cat_name]['items'].append(('series', base_title))
+                elif item_type == 'movie':
+                    item_slug = clean_slug(title)
+                    std_item = {
+                        'title': title, 'orig_title': title, 'poster': poster_cache.get(title, item.get('poster', '')),
+                        'desc': item.get('description', ''), 'year': '2026', 'rating': '⭐ حصري',
+                        'type': 'movie', 'watch_url': f"https://tomito.xyz/movies/{item_slug}", 'source': 'json'
+                    }
+                    if std_item['poster']: 
+                        all_std_items.append(std_item)
+                        categories_data[cat_name]['items'].append(('movie', title))
 
     processed_titles = set()
     cards_html = ""
@@ -318,41 +331,54 @@ def main():
             f.write(html)
         new_urls.append(f"https://nordrama.live/ramadan-trailer/{series_slug}")
         
-        # Add to index cards
-        cards_html += f"""
-    <a class="card" href="ramadan-trailer/{series_slug}">
-      <img class="card-poster" src="{parent['poster']}" alt="{title}" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+    # Generate categorized sections for index.html
+    sections_html = ""
+    for cat_id, cat_info in categories_data.items():
+        if not cat_info['items']: continue
+        
+        sections_html += f'\n<section class="section" id="{cat_id}">\n'
+        sections_html += f'  <h2 class="section-title">{cat_info["title"]}</h2>\n'
+        sections_html += f'  <div class="grid">\n'
+        
+        for item_type, title in cat_info['items']:
+            base_slug = clean_slug(title)
+            poster = poster_cache.get(title, poster_cache.get(extract_series_parent(title), ""))
+            if not poster: continue
+            
+            href = f"ramadan-trailer/{base_slug}" if item_type == 'series' else f"movies/{base_slug}"
+            label = "حصري" if cat_id == 'ramadan' else ("فيلم" if item_type == 'movie' else "مسلسل")
+            
+            sections_html += f"""
+    <a class="card" href="{href}">
+      <img class="card-poster" src="{poster}" alt="{title}" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">{label}</div></div>
       <div class="card-bottom"><div class="card-title"><div class="card-title-ar">{title}</div></div></div>
     </a>"""
-
-    # Process Movies & TMDB items
-    for item in all_std_items:
-        slug = clean_slug(item['title'])
-        folder = 'movies' if item['type'] == 'movie' else 'tv'
-        os.makedirs(folder, exist_ok=True)
-        html = generate_html(item, template_content)
-        with open(os.path.join(folder, f"{slug}.html"), 'w', encoding='utf-8') as f:
-            f.write(html)
-        new_urls.append(f"https://nordrama.live/{folder}/{slug}")
-        
-        cards_html += f"""
-    <a class="card" href="{folder}/{slug}">
-      <img class="card-poster" src="{item['poster']}" alt="{item['title']}" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">{'فيلم' if item['type'] == 'movie' else 'مسلسل'}</div></div>
-      <div class="card-bottom"><div class="card-title"><div class="card-title-ar">{item['title']}</div></div></div>
-    </a>"""
+        sections_html += "\n  </div>\n</section>"
 
     # Update index.html
     index_path = 'index.html'
     if os.path.exists(index_path):
         with open(index_path, 'r', encoding='utf-8') as f:
             index_content = f.read()
-        pattern = re.compile(re.escape('<div class="grid" id="all">') + r'.*?</div>\s*</section>', re.DOTALL)
-        replacement = '<div class="grid" id="all">' + cards_html + "\n  </div>\n</section>"
+        
+        # Replace the entire dynamic component
+        start_tag = '<!-- DYNAMIC_CONTENT_START -->'
+        end_tag = '<!-- DYNAMIC_CONTENT_END -->'
+        pattern = re.compile(re.escape(start_tag) + r'.*?' + re.escape(end_tag), re.DOTALL)
+        
         if pattern.search(index_content):
+            new_index_content = pattern.sub(f"{start_tag}\n{sections_html}\n{end_tag}", index_content)
             with open(index_path, 'w', encoding='utf-8') as f:
-                f.write(pattern.sub(replacement, index_content))
+                f.write(new_index_content)
+        else:
+            # Fallback if tags not found (for the first time)
+            pattern = re.compile(re.escape('<section class="section" id="ramadan">') + r'.*?</section>', re.DOTALL)
+            if pattern.search(index_content):
+                with open(index_path, 'w', encoding='utf-8') as f:
+                    # Inject tags for future runs
+                    replacement = f"{start_tag}\n{sections_html}\n{end_tag}"
+                    f.write(pattern.sub(replacement, index_content))
 
     # Update sitemap
     sitemap_path = 'sitemap.xml'

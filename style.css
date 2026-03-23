@@ -7,17 +7,18 @@
 
 /* ====== CSS VARIABLES ====== */
 :root {
-  --red: #e50914;
-  --red-dark: #b20710;
+  --red: #c0392b;
+  --red-dark: #922b21;
+  --accent: linear-gradient(135deg, #c0392b, #8e44ad);
   --black: #0a0a0a;
-  --dark: #141414;
-  --card-bg: #181818;
+  --dark: #121212;
+  --card-bg: #1a1a1a;
   --gray: #808080;
   --light-gray: #b3b3b3;
   --white: #e5e5e5;
   --pure-white: #ffffff;
   --font: 'Tajawal', sans-serif;
-  --radius: 6px;
+  --radius: 10px;
   --shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
   --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -146,7 +147,74 @@ img {
   transform: scale(1.05);
 }
 
-/* ====== HERO SECTION ====== */
+/* ====== HERO CAROUSEL (NEW - Shahid Style) ====== */
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  min-height: 580px;
+  overflow: hidden;
+  background: var(--black);
+}
+
+.carousel-track {
+  display: flex;
+  height: 100%;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center top;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 6% 80px;
+  flex-shrink: 0;
+}
+
+.carousel-item .hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+}
+
+.hero-content .hero-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #c0392b, #8e44ad);
+  color: #fff;
+  padding: 5px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 900;
+  margin-bottom: 16px;
+  letter-spacing: 1px;
+}
+
+.hero-content .hero-title {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  text-shadow: 0 2px 20px rgba(0,0,0,0.8);
+  color: #fff;
+}
+
+.hero-content .hero-desc {
+  font-size: 17px;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 28px;
+  line-height: 1.7;
+  max-width: 540px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ====== LEGACY HERO (kept for detail pages) ====== */
 .hero {
   position: relative;
   height: 80vh;
@@ -270,8 +338,8 @@ img {
 /* ====== CARD GRID ====== */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 24px 16px;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 24px 18px;
 }
 
 .card {
@@ -281,11 +349,13 @@ img {
   overflow: hidden;
   transition: var(--transition);
   background: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 .card:hover {
   z-index: 50;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  transform: scale(1.04) translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.85);
 }
 
 .card-poster {
@@ -344,7 +414,10 @@ img {
 
 .card-meta {
   font-size: 11px;
-  color: var(--red);
+  background: linear-gradient(135deg, #c0392b, #8e44ad);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 900;
 }
 
