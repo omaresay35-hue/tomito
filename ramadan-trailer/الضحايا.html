@@ -97,7 +97,7 @@
     <h2 class="section-title">الحلقات المتاحة</h2>
     <div class="episodes-grid">
 
-        <a href="https://nordrama.live/watch/الضحايا-ep-2" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/الضحايا?episode=2" class="episode-card" target="_blank">
           <div class="ep-number">1</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل الضحايا الحلقة 2 الثانية</div>
@@ -111,7 +111,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const epNum = urlParams.get('episode');
     if (epNum) {
-        const episodes = {"2": "https://nordrama.live/watch/الضحايا-ep-2"};
+        const episodes = {"2": "https://tomito.xyz/ramadan-trailer/الضحايا?episode=2"};
         const selectedUrl = episodes[epNum];
         if (selectedUrl) {
             document.querySelectorAll('a[href*="tomito.xyz"]').forEach(link => {

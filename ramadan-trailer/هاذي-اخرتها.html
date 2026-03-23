@@ -97,28 +97,28 @@
     <h2 class="section-title">الحلقات المتاحة</h2>
     <div class="episodes-grid">
 
-        <a href="https://nordrama.live/watch/هاذي-اخرتها-ep-8" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/هاذي-اخرتها?episode=8" class="episode-card" target="_blank">
           <div class="ep-number">1</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل هاذي اخرتها الحلقة 8 الثامنة</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="https://nordrama.live/watch/هاذي-اخرتها-ep-9" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/هاذي-اخرتها?episode=9" class="episode-card" target="_blank">
           <div class="ep-number">2</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل هاذي اخرتها الحلقة 9 التاسعة</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="https://nordrama.live/watch/هاذي-اخرتها-ep-10" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/هاذي-اخرتها?episode=10" class="episode-card" target="_blank">
           <div class="ep-number">3</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل هاذي اخرتها الحلقة 10 العاشرة</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="https://nordrama.live/watch/هاذي-اخرتها-ep-13" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/هاذي-اخرتها?episode=13" class="episode-card" target="_blank">
           <div class="ep-number">4</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل هاذي اخرتها الحلقة 13 الثالثة عشر</div>
@@ -132,7 +132,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const epNum = urlParams.get('episode');
     if (epNum) {
-        const episodes = {"8": "https://nordrama.live/watch/هاذي-اخرتها-ep-8", "9": "https://nordrama.live/watch/هاذي-اخرتها-ep-9", "10": "https://nordrama.live/watch/هاذي-اخرتها-ep-10", "13": "https://nordrama.live/watch/هاذي-اخرتها-ep-13"};
+        const episodes = {"8": "https://tomito.xyz/ramadan-trailer/هاذي-اخرتها?episode=8", "9": "https://tomito.xyz/ramadan-trailer/هاذي-اخرتها?episode=9", "10": "https://tomito.xyz/ramadan-trailer/هاذي-اخرتها?episode=10", "13": "https://tomito.xyz/ramadan-trailer/هاذي-اخرتها?episode=13"};
         const selectedUrl = episodes[epNum];
         if (selectedUrl) {
             document.querySelectorAll('a[href*="tomito.xyz"]').forEach(link => {

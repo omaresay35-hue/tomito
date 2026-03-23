@@ -97,21 +97,21 @@
     <h2 class="section-title">الحلقات المتاحة</h2>
     <div class="episodes-grid">
 
-        <a href="https://nordrama.live/watch/الهيبة-راس-الجبل-ep-11" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/الهيبة-راس-الجبل?episode=11" class="episode-card" target="_blank">
           <div class="ep-number">1</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل الهيبة - راس الجبل الحلقة 11 الحادية عش</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="https://nordrama.live/watch/الهيبة-راس-الجبل-ep-12" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/الهيبة-راس-الجبل?episode=12" class="episode-card" target="_blank">
           <div class="ep-number">2</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل الهيبة - راس الجبل الحلقة 12 الثانية عشر</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="https://nordrama.live/watch/الهيبة-راس-الجبل-ep-13" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/الهيبة-راس-الجبل?episode=13" class="episode-card" target="_blank">
           <div class="ep-number">3</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل الهيبة - راس الجبل الحلقة 13 الثالثة عشر</div>
@@ -125,7 +125,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const epNum = urlParams.get('episode');
     if (epNum) {
-        const episodes = {"11": "https://nordrama.live/watch/الهيبة-راس-الجبل-ep-11", "12": "https://nordrama.live/watch/الهيبة-راس-الجبل-ep-12", "13": "https://nordrama.live/watch/الهيبة-راس-الجبل-ep-13"};
+        const episodes = {"11": "https://tomito.xyz/ramadan-trailer/الهيبة-راس-الجبل?episode=11", "12": "https://tomito.xyz/ramadan-trailer/الهيبة-راس-الجبل?episode=12", "13": "https://tomito.xyz/ramadan-trailer/الهيبة-راس-الجبل?episode=13"};
         const selectedUrl = episodes[epNum];
         if (selectedUrl) {
             document.querySelectorAll('a[href*="tomito.xyz"]').forEach(link => {

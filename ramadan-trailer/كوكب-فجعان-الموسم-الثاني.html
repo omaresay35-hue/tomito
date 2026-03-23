@@ -97,35 +97,35 @@
     <h2 class="section-title">الحلقات المتاحة</h2>
     <div class="episodes-grid">
 
-        <a href="https://nordrama.live/watch/كوكب-فجعان-الموسم-الثاني-ep-1" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/كوكب-فجعان-الموسم-الثاني?episode=1" class="episode-card" target="_blank">
           <div class="ep-number">1</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل كوكب فجعان الموسم الثاني الحلقة 1</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="https://nordrama.live/watch/كوكب-فجعان-الموسم-الثاني-ep-2" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/كوكب-فجعان-الموسم-الثاني?episode=2" class="episode-card" target="_blank">
           <div class="ep-number">2</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل كوكب فجعان الموسم الثاني الحلقة 2</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="https://nordrama.live/watch/كوكب-فجعان-الموسم-الثاني-ep-3" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/كوكب-فجعان-الموسم-الثاني?episode=3" class="episode-card" target="_blank">
           <div class="ep-number">3</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل كوكب فجعان الموسم الثاني الحلقة 3</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="https://nordrama.live/watch/كوكب-فجعان-الموسم-الثاني-ep-4" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/كوكب-فجعان-الموسم-الثاني?episode=4" class="episode-card" target="_blank">
           <div class="ep-number">4</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل كوكب فجعان الموسم الثاني الحلقة 4 الرابعة</div>
             <div class="ep-action">مشاهدة الآن على Tomito</div>
           </div>
         </a>
-        <a href="https://nordrama.live/watch/كوكب-فجعان-الموسم-الثاني-ep-5" class="episode-card" target="_blank">
+        <a href="https://tomito.xyz/ramadan-trailer/كوكب-فجعان-الموسم-الثاني?episode=5" class="episode-card" target="_blank">
           <div class="ep-number">5</div>
           <div class="ep-info">
             <div class="ep-title">مسلسل كوكب فجعان الموسم الثاني الحلقة 5 الخامسة</div>
@@ -139,7 +139,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const epNum = urlParams.get('episode');
     if (epNum) {
-        const episodes = {"1": "https://nordrama.live/watch/كوكب-فجعان-الموسم-الثاني-ep-1", "2": "https://nordrama.live/watch/كوكب-فجعان-الموسم-الثاني-ep-2", "3": "https://nordrama.live/watch/كوكب-فجعان-الموسم-الثاني-ep-3", "4": "https://nordrama.live/watch/كوكب-فجعان-الموسم-الثاني-ep-4", "5": "https://nordrama.live/watch/كوكب-فجعان-الموسم-الثاني-ep-5"};
+        const episodes = {"1": "https://tomito.xyz/ramadan-trailer/كوكب-فجعان-الموسم-الثاني?episode=1", "2": "https://tomito.xyz/ramadan-trailer/كوكب-فجعان-الموسم-الثاني?episode=2", "3": "https://tomito.xyz/ramadan-trailer/كوكب-فجعان-الموسم-الثاني?episode=3", "4": "https://tomito.xyz/ramadan-trailer/كوكب-فجعان-الموسم-الثاني?episode=4", "5": "https://tomito.xyz/ramadan-trailer/كوكب-فجعان-الموسم-الثاني?episode=5"};
         const selectedUrl = episodes[epNum];
         if (selectedUrl) {
             document.querySelectorAll('a[href*="tomito.xyz"]').forEach(link => {
