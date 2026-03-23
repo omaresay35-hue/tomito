@@ -9,6 +9,16 @@ TMDB_API_KEY = '882e741f7283dc9ba1654d4692ec30f6'
 BASE_URL = 'https://api.themoviedb.org/3'
 IMAGE_BASE_URL = 'https://image.tmdb.org/t/p/original'
 
+def clean_slug(text):
+    if not text: return ""
+    # Remove Arabic prefixes
+    res = text.replace('مسلسل ', '').replace('برنامج ', '').replace('انمي ', '').replace('فيلم ', '').replace('كامل ', '').replace('مترجم ', '').strip()
+    # Normalize spaces and characters
+    res = res.replace(' ', '-').lower()
+    res = re.sub(r'[^a-z0-9\-]', '', res)
+    res = re.sub(r'-+', '-', res).strip('-')
+    return res
+
 def load_json(filepath):
     if not os.path.exists(filepath):
         print(f"File {filepath} not found.")
@@ -32,14 +42,8 @@ def fetch_tmdb_data(endpoint, params=None):
         return []
 
 def search_tmdb_info(title):
-    search_query = title.replace('مسلسل ', '').replace('برنامج ', '').replace('انمي ', '').replace('فيلم ', '').replace('كامل ', '').replace('مترجم ', '').strip()
-    search_query = re.sub(r'\s+الحلقة\s+\d+.*', '', search_query)
-    search_query = re.sub(r'\s+202\d', '', search_query)
-    search_query = re.sub(r'\s+الموسم\s+.*', '', search_query)
-    search_query = re.sub(r'\s+-\s+.*', '', search_query) # remove suffixes after dash
-    search_query = search_query.strip()
-    search_query = re.sub(r'\s+\d+$', '', search_query).strip()
-    
+    # Trust the title from extract_series_parent, but do minimal cleanup
+    search_query = title.strip()
     if not search_query or search_query.isdigit(): return None
     
     params = {'api_key': TMDB_API_KEY, 'language': 'ar', 'query': search_query}
@@ -49,58 +53,56 @@ def search_tmdb_info(title):
         if response.status_code == 200:
             results = response.json().get('results', [])
             if results:
+                # Filter results that have a poster and prefer them
                 for res in results:
                     if res.get('poster_path'):
-                        res_title = res.get('name', res.get('title', '')).lower()
-                        if len(search_query) > 1 and search_query.lower() in res_title or res_title in search_query.lower():
-                             return {
-                                 'poster': f"{IMAGE_BASE_URL}{res.get('poster_path')}",
-                                 'id': res.get('id'),
-                                 'type': res.get('media_type', 'tv') # media_type is 'movie' or 'tv'
-                             }
+                         # If we found a result with a poster for our specific query, trust it
+                         return {
+                             'poster': f"{IMAGE_BASE_URL}{res.get('poster_path')}",
+                             'id': res.get('id'),
+                             'type': res.get('media_type', 'tv')
+                         }
         return None
-    except Exception:
+    except Exception as e:
+        print(f"Error searching TMDB for {search_query}: {e}")
         return None
 
 def extract_series_parent(title):
     # Remove common prefixes/suffixes
     cleaned = title.replace('مسلسل', '').replace('برنامج', '').replace('انمي', '').replace('فيلم', '').strip()
-    # Remove bracketed content like (2026)
-    cleaned = re.sub(r'\(.*?\)', '', cleaned).strip()
-    # Remove season/episode markers
+    
+    # Special case: if there's bracketed content, it often IS the title (like [Oshi no Ko])
+    bracket_match = re.search(r'\[(.*?)\]', cleaned)
+    if bracket_match:
+        cand = bracket_match.group(1).strip()
+        if len(cand) > 2:
+            return cand
+
+    # Remove Season/Part/Episode markers (English & Arabic)
+    cleaned = re.sub(r'(?i)\d+(st|nd|rd|th)?\s+Season', '', cleaned)
+    cleaned = re.sub(r'(?i)Season\s+\d+', '', cleaned)
     cleaned = re.sub(r'الموسم\s+\d+.*', '', cleaned)
     cleaned = re.sub(r'الجزء\s+\d+.*', '', cleaned)
     cleaned = re.sub(r'الحلقة\s+\d+.*', '', cleaned)
     cleaned = re.sub(r'ep\s+\d+.*', '', cleaned, flags=re.I)
     
-    # Strip trailing numbers (e.g., "Title 2" -> "Title")
+    # Remove specific trailer tags
+    cleaned = cleaned.replace('فاصل إعلاني', '').replace('إعلان', '').strip()
+    
+    # Remove bracketed content (Round and Square) if we haven't already used it
+    cleaned = re.sub(r'[\(\[].*?[\)\]]', '', cleaned).strip()
+    
+    # Final cleanup of common symbols
+    cleaned = cleaned.replace('-', '').replace('—', '').replace(':', '').strip()
+    
+    # Strip trailing numbers or single chars
     cleaned = re.sub(r'\s+\d+\s*$', '', cleaned).strip()
-    # print(f"DEBUG: '{title}' -> '{cleaned}'")
         
     return cleaned
 
 def extract_episode_number(title):
     match = re.search(r'الحلقة\s+(\d+)', title)
     return match.group(1) if match else "1"
-
-def clean_slug(title):
-    # Remove prefix words
-    cleaned = title.replace('مسلسل ', '').replace('برنامج ', '').replace('فيلم ', '').strip()
-    # Remove season/episode markers
-    cleaned = re.sub(r'الموسم\s+\d+', '', cleaned)
-    cleaned = re.sub(r'الجزء\s+\d+', '', cleaned)
-    cleaned = re.sub(r'الحلقة\s+\d+.*', '', cleaned)
-    cleaned = re.sub(r'ep\s+\d+.*', '', cleaned, flags=re.I)
-    # Strip trailing numbers (e.g., "Title 2" -> "Title")
-    cleaned = re.sub(r'\s+\d+$', '', cleaned)
-    cleaned = cleaned.strip()
-    # Remove years like 2026, 2025, 2024
-    cleaned = re.sub(r'\s*202\d\s*', ' ', cleaned).strip()
-    # Create slug
-    slug = cleaned.replace(' ', '-').replace('/', '-').lower()
-    slug = re.sub(r'-+', '-', slug)
-    # Filter alphanum, dashes and non-ascii (for Arabic support)
-    return "".join([c for c in slug if (ord(c) > 127) or c.isalnum() or c == '-'])
 
 def generate_html(std_item, template_content, episodes=None):
     title = std_item.get('title', '')
@@ -269,16 +271,16 @@ def main():
                     if base_title not in series_map:
                         series_map[base_title] = {'parent': None, 'episodes_dict': {}, 'tmdb_id': tmdb_id, 'tmdb_type': tmdb_type}
                     series_map[base_title]['parent'] = item
-                    categories_data[cat_name]['items'].append(('series', base_title))
+                    categories_data[cat_name]['items'].append(('series', title)) # Use original title
                 elif item_type == 'movie':
-                    item_slug = clean_slug(title)
+                    base_slug = clean_slug(title)
                     # For movies, ensure media_type is 'movie'
                     m_type = tmdb_type if tmdb_type == 'movie' else 'movie'
                     
                     if tmdb_id:
-                        watch_url = f"https://tomito.xyz/{m_type}/{tmdb_id}-{item_slug}"
+                        watch_url = f"https://tomito.xyz/{m_type}/{tmdb_id}-{base_slug}"
                     else:
-                        watch_url = f"https://tomito.xyz/movies/{item_slug}"
+                        watch_url = f"https://tomito.xyz/movies/{base_slug}"
 
                     std_item = {
                         'title': title, 'orig_title': title, 'poster': poster,
@@ -311,15 +313,24 @@ def main():
         if not parent or not parent.get('poster'): continue
         
         series_slug = clean_slug(title)
-        parent['watch_url'] = f"https://tomito.xyz/ramadan-trailer/{series_slug}" # Placeholder, actual clicks on card go to trailer page
+        
+        # Determine canonical URL using TMDB info
+        tmdb_info = tmdb_cache.get(title, {})
+        tmdb_id = tmdb_info.get('id')
+        tmdb_type = tmdb_info.get('type', 'tv')
+        
+        if tmdb_id:
+            parent['watch_url'] = f"https://tomito.xyz/{tmdb_type}/{tmdb_id}-{series_slug}"
+        else:
+            parent['watch_url'] = f"https://tomito.xyz/ramadan-trailer/{series_slug}"
         
         # Prepare episode links for the series trailer page
         eps_for_rendering = []
         for ep in episodes_list:
             ep_num = extract_episode_number(ep['title'])
             ep_slug = f"{series_slug}-ep-{ep_num}"
-            # The actual watch link for an episode is usually the series link with an episode param or a specific ep route
-            # For now, we follow the user's pattern: /tv/id-slug
+            
+            # Use the canonical series URL as base for episodes
             ep_watch_url = parent['watch_url']
             if '?' in ep_watch_url: ep_watch_url += f"&episode={ep_num}"
             else: ep_watch_url += f"?episode={ep_num}"
@@ -339,9 +350,7 @@ def main():
             html = generate_html(ep_std, template_content)
             with open(os.path.join('watch', f"{ep_slug}.html"), 'w', encoding='utf-8') as f:
                 f.write(html)
-            # We keep the static /watch/ URLs in sitemap for internal indexing if desired,
-            # but usually we want to pointing to the main watch link.
-            # User example: https://tomito.xyz/tv/203737-oshi-no-ko
+            
             new_urls.append(f"https://tomito.xyz/watch/{ep_slug}")
             
         # Generate Series (Trailer) Landing Page
@@ -349,10 +358,7 @@ def main():
         with open(os.path.join('ramadan-trailer', f"{series_slug}.html"), 'w', encoding='utf-8') as f:
             f.write(html)
         
-        if tmdb_id:
-            new_urls.append(f"https://tomito.xyz/{tmdb_type}/{tmdb_id}-{series_slug}")
-        else:
-            new_urls.append(f"https://tomito.xyz/ramadan-trailer/{series_slug}")
+        new_urls.append(parent['watch_url'])
         
     # Write HTML pages for movies/anime/series and add to sitemap
     for cat_id, cat_info in categories_data.items():
@@ -367,20 +373,28 @@ def main():
             tmdb_id = info.get('id')
             tmdb_type = info.get('type', 'tv') if item_type != 'movie' else 'movie'
             
+            # Use a cleaner slug for TMDB URLs if possible
+            tmdb_slug = clean_slug(parent_title)
+            base_slug = title.strip().replace(' ', '-').lower() 
+            
             if item_type == 'movie':
                 std_item = next((x for x in all_std_items if x['title'] == title), None)
                 if std_item and std_item.get('poster'):
                     os.makedirs('movies', exist_ok=True)
+                    
+                    # Update watch_url for movies using cleaner slug
+                    if tmdb_id:
+                        std_item['watch_url'] = f"https://tomito.xyz/{tmdb_type}/{tmdb_id}-{tmdb_slug}"
+                    else:
+                        std_item['watch_url'] = f'https://tomito.xyz/movies/{base_slug}'
+                        
                     page_html = generate_html(std_item, template_content)
                     with open(os.path.join('movies', f'{base_slug}.html'), 'w', encoding='utf-8') as mf:
                         mf.write(page_html)
                     
-                    if tmdb_id:
-                        new_urls.append(f"https://tomito.xyz/{tmdb_type}/{tmdb_id}-{base_slug}")
-                    else:
-                        new_urls.append(f'https://tomito.xyz/movies/{base_slug}')
+                    new_urls.append(std_item['watch_url'])
             elif item_type == 'series':
-                s_info = series_map.get(title)
+                s_info = series_map.get(parent_title)
                 if not s_info:
                     continue
                 s_parent = s_info.get('parent')
@@ -391,18 +405,15 @@ def main():
                 
                 # Ensure the watch_url in the landing page is correct
                 if tmdb_id:
-                    s_parent['watch_url'] = f"https://tomito.xyz/{tmdb_type}/{tmdb_id}-{base_slug}"
+                    s_parent['watch_url'] = f"https://tomito.xyz/{tmdb_type}/{tmdb_id}-{tmdb_slug}"
                 else:
                     s_parent['watch_url'] = f'https://tomito.xyz/{folder}/{base_slug}'
-                
+
                 page_html = generate_html(s_parent, template_content)
                 with open(os.path.join(folder, f'{base_slug}.html'), 'w', encoding='utf-8') as sf:
                     sf.write(page_html)
                 
-                if tmdb_id:
-                    new_urls.append(f"https://tomito.xyz/{tmdb_type}/{tmdb_id}-{base_slug}")
-                else:
-                    new_urls.append(f'https://tomito.xyz/{folder}/{base_slug}')
+                new_urls.append(s_parent['watch_url'])
 
     # Generate categorized sections for index.html
     sections_html = ""
