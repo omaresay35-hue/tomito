@@ -331,6 +331,35 @@ def main():
             f.write(html)
         new_urls.append(f"https://nordrama.live/ramadan-trailer/{series_slug}")
         
+    # Write HTML pages for movies/anime/series and add to sitemap
+    for cat_id, cat_info in categories_data.items():
+        if cat_id == 'ramadan':
+            continue  # ramadan series already handled above
+        for item_type, title in cat_info['items']:
+            base_slug = clean_slug(title)
+            if item_type == 'movie':
+                std_item = next((x for x in all_std_items if x['title'] == title), None)
+                if std_item and std_item.get('poster'):
+                    os.makedirs('movies', exist_ok=True)
+                    page_html = generate_html(std_item, template_content)
+                    with open(os.path.join('movies', f'{base_slug}.html'), 'w', encoding='utf-8') as mf:
+                        mf.write(page_html)
+                    new_urls.append(f'https://nordrama.live/movies/{base_slug}')
+            elif item_type == 'series':
+                s_info = series_map.get(title)
+                if not s_info:
+                    continue
+                s_parent = s_info.get('parent')
+                if not s_parent or not s_parent.get('poster'):
+                    continue
+                folder = 'anime-trailer' if cat_id == 'anime' else 'series'
+                os.makedirs(folder, exist_ok=True)
+                s_parent['watch_url'] = f'https://tomito.xyz/{folder}/{base_slug}'
+                page_html = generate_html(s_parent, template_content)
+                with open(os.path.join(folder, f'{base_slug}.html'), 'w', encoding='utf-8') as sf:
+                    sf.write(page_html)
+                new_urls.append(f'https://nordrama.live/{folder}/{base_slug}')
+
     # Generate categorized sections for index.html
     sections_html = ""
     for cat_id, cat_info in categories_data.items():
