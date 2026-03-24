@@ -1,0 +1,106 @@
+name: 🤖 Auto Generate Pages & Sitemap
+
+on:
+  schedule:
+    # Run every hour — 24 runs/day × ~2100 pages = ~50,400 pages/day
+    - cron: '0 * * * *'
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: 'Number of pages per category (movies/tv/anime)'
+        required: false
+        default: '2100'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    name: Generate Pages & Sitemap
+    runs-on: ubuntu-latest
+    timeout-minutes: 55   # Stay within the 1-hour window
+
+    steps:
+      # ── 1. Checkout ─────────────────────────────────────────────────────────
+      - name: ⬇️ Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # ── 2. Python setup ─────────────────────────────────────────────────────
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Install dependencies
+        run: pip install requests
+
+      # ── 3. Ensure output directories exist ──────────────────────────────────
+      - name: 📁 Create output directories
+        run: mkdir -p movies series anime actors watch data
+
+      # ── 4. Run the main generator ────────────────────────────────────────────
+      - name: 🎬 Run mega_bot.py (generate pages)
+        env:
+          REPO_PATH: ${{ github.workspace }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: |
+          LIMIT="${{ github.event.inputs.limit || '2100' }}"
+          echo "▶ Running mega_bot.py with limit=$LIMIT per category"
+          python mega_bot.py --limit "$LIMIT"
+
+      # ── 5. Regenerate full sitemap ───────────────────────────────────────────
+      - name: 🗺️ Regenerate sitemap.xml
+        env:
+          REPO_PATH: ${{ github.workspace }}
+        run: python generate_full_sitemap.py
+
+      # ── 6. Count pages for the commit message ───────────────────────────────
+      - name: 📊 Count generated pages
+        id: count
+        run: |
+          MOVIES=$(find movies -name "*.html" 2>/dev/null | wc -l)
+          SERIES=$(find series -name "*.html" 2>/dev/null | wc -l)
+          ANIME=$(find anime  -name "*.html" 2>/dev/null | wc -l)
+          ACTORS=$(find actors -name "*.html" 2>/dev/null | wc -l)
+          TOTAL=$((MOVIES + SERIES + ANIME + ACTORS))
+          SITEMAP=$(grep -c '<url>' sitemap.xml 2>/dev/null || echo 0)
+          echo "movies=$MOVIES"   >> $GITHUB_OUTPUT
+          echo "series=$SERIES"   >> $GITHUB_OUTPUT
+          echo "anime=$ANIME"     >> $GITHUB_OUTPUT
+          echo "actors=$ACTORS"   >> $GITHUB_OUTPUT
+          echo "total=$TOTAL"     >> $GITHUB_OUTPUT
+          echo "sitemap=$SITEMAP" >> $GITHUB_OUTPUT
+          echo "──────────────────────────"
+          echo "🎬 Movies : $MOVIES"
+          echo "📺 Series : $SERIES"
+          echo "🌸 Anime  : $ANIME"
+          echo "🎭 Actors : $ACTORS"
+          echo "📄 Total  : $TOTAL"
+          echo "🗺️  Sitemap: $SITEMAP URLs"
+
+      # ── 7. Commit & push ─────────────────────────────────────────────────────
+      - name: 🚀 Commit and push generated files
+        run: |
+          git config user.name  "tomito-bot[bot]"
+          git config user.email "tomito-bot@users.noreply.github.com"
+
+          git add movies/ series/ anime/ actors/ watch/ sitemap.xml poster_cache.json 2>/dev/null || true
+          git add -u
+
+          TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
+          TOTAL="${{ steps.count.outputs.total }}"
+          SITEMAP="${{ steps.count.outputs.sitemap }}"
+
+          if git diff --cached --quiet; then
+            echo "✅ No changes to commit — all pages already up to date."
+          else
+            git commit -m "🤖 [${TIMESTAMP}] Auto-generated ${TOTAL} pages | Sitemap: ${SITEMAP} URLs
+
+          Movies: ${{ steps.count.outputs.movies }} | Series: ${{ steps.count.outputs.series }} | Anime: ${{ steps.count.outputs.anime }} | Actors: ${{ steps.count.outputs.actors }}"
+            git push origin HEAD
+            echo "✅ Pushed successfully!"
+          fi

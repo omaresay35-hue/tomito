@@ -2,7 +2,7 @@ import os
 
 def generate_sitemap():
     base_url = "https://tomito.xyz"
-    root_dir = "/home/tomito/tomito"
+    root_dir = os.environ.get("REPO_PATH", os.path.dirname(os.path.abspath(__file__)))
     content_dirs = ['movies', 'series', 'anime', 'actors', 'watch', 'ramadan-trailer']
     
     urls = []

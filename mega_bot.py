@@ -11,7 +11,7 @@ TMDB_API_KEY = "882e741f7283dc9ba1654d4692ec30f6"
 BASE_URL = "https://api.themoviedb.org/3"
 IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original"
 SITE_URL = "https://tomito.xyz"
-BASE_PATH = "/home/tomito/tomito"
+BASE_PATH = os.environ.get("REPO_PATH", os.path.dirname(os.path.abspath(__file__)))
 DIRS = ['movies', 'series', 'anime', 'actors', 'watch', 'data']
 
 # --- Master Template ---
@@ -244,4 +244,8 @@ def main(limit=1000):
     print("Execution Finished!")
 
 if __name__ == "__main__":
-    main(limit=1000)
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--limit', type=int, default=1000)
+    args = parser.parse_args()
+    main(limit=args.limit)
