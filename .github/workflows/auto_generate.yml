@@ -1,15 +1,14 @@
 name: 🤖 Auto Generate Pages & Sitemap
 
 on:
-  schedule:
-    # Run every hour — 24 runs/day × ~2100 pages = ~50,400 pages/day
-    - cron: '0 * * * *'
+    # Run once per day at midnight — 1 run/day × ~1667×3 categories ≈ 5,000 pages/day
+    - cron: '0 0 * * *'
   workflow_dispatch:
     inputs:
       limit:
         description: 'Number of pages per category (movies/tv/anime)'
         required: false
-        default: '2100'
+        default: '1667'
 
 permissions:
   contents: write
@@ -48,7 +47,7 @@ jobs:
           REPO_PATH: ${{ github.workspace }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
         run: |
-          LIMIT="${{ github.event.inputs.limit || '2100' }}"
+          LIMIT="${{ github.event.inputs.limit || '1667' }}"
           echo "▶ Running mega_bot.py with limit=$LIMIT per category"
           python mega_bot.py --limit "$LIMIT"
 

@@ -49,2630 +49,960 @@
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
-  <!-- Hero Section (Carousel) -->
-  <section class="hero-carousel" id="home">
-    <div class="carousel-track">
-      <div class="carousel-item active"
-        style="background-image: linear-gradient(to top, #0f0f0f 10%, transparent 90%), url('https://image.tmdb.org/t/p/original/mBa3H80G7C69vSfsU9Y63vMGnyM.jpg');">
-        <div class="hero-content">
-          <span class="hero-badge">حصري ★ 2026</span>
-          <h1 class="hero-title">توب غان: مافريك</h1>
-          <p class="hero-desc">بعد مسيرة امتدت لأكثر من ثلاثين عاماً في القوات الجوية، يجد مافريك نفسه مكلفاً بتدريب
-            مفرزة من خريجي توب غان في مهمة لم يسبق لها مثيل.</p>
-          <div class="hero-btns">
-            <a href="#" class="btn btn-primary">مشاهدة الآن</a>
-            <a href="#" class="btn btn-secondary">المزيد من المعلومات</a>
-          </div>
+  <!-- Category Filters -->
+  <section class="filters-section">
+    <div class="filter-container">
+      <div class="filter-item">
+        <label>التصنيف</label>
+        <div class="custom-select">
+          <select id="category-select">
+            <option value="all">كل التصنيفات</option>
+            <option value="ramadan">رمضان 2026</option>
+            <option value="movies">أفلام</option>
+            <option value="anime">أنمي</option>
+            <option value="series">مسلسلات</option>
+          </select>
+        </div>
+      </div>
+      <div class="filter-item">
+        <label>الترتيب</label>
+        <div class="custom-select">
+          <select id="sort-select">
+            <option value="newest">الأحدث أولاً</option>
+            <option value="popular">الأكثر مشاهدة</option>
+            <option value="rating">الأعلى تقييماً</option>
+          </select>
         </div>
       </div>
     </div>
   </section>
 
+
   <!-- DYNAMIC_CONTENT_START -->
 
-  <section class="section" id="ramadan">
-    <h2 class="section-title">مسلسلات رمضان 2026</h2>
-    <div class="grid">
+<section class="section" id="ramadan">
+  <h2 class="section-title">مسلسلات رمضان 2026</h2>
+  <div class="grid">
 
-      <a class="card" href="ramadan-trailer/عدم-المؤاخذة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/trKhGAQaj8KqY7Uj9GHVSHX61Ty.jpg"
-          alt="عدم المؤاخذة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">عدم المؤاخذة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بيت-الاحلام">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="بيت الاحلام" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بيت الاحلام</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/دار-السد">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/5gbTKFOpNHMBzbLBKau0JVvM2ci.jpg"
-          alt="دار السد" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">دار السد</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/سر-وقدر">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/iOxKhfpHT15wVfU2Wgs1gGonpee.jpg" alt="سر وقدر"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">سر وقدر</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/افراج">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/2UUpvYL77Pp2fI3Q96SVqFoSGWl.jpg" alt="افراج"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">افراج</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/المقام">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/uQwTyyBMiVJs4CtMOAiIyIKHXrT.jpg" alt="المقام"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">المقام</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/هكذا-اسماء-الله-الحسني">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="هكذا اسماء الله الحسني" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">هكذا اسماء الله الحسني</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اقر-واعترف">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/oLSanNob76jySbw2R910CgLyZ9y.jpg"
-          alt="اقر واعترف" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اقر واعترف</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اقر-واعترف-2026">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/w500/oLSanNob76jySbw2R910CgLyZ9y.jpg"
-          alt="اقر واعترف 2026" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اقر واعترف 2026</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اكسيدون">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/yaa9NMCJiKhimAclTGO01Ug10J5.jpg" alt="اكسيدون"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اكسيدون</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الحصن-2026">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/w500/icEPnZqtB0M1H8OUa2UE1nYnI1a.jpg" alt="الحصن 2026"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الحصن 2026</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/مراتي-في-ورطة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/lKIMmiVxlLOG85pRC986vw0zxVN.jpg"
-          alt="مراتي في ورطة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">مراتي في ورطة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/لصوص-العمارة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/F4WdkrPlNH2GimBzfm7LKFMLQj.jpg"
-          alt="لصوص العمارة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">لصوص العمارة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/شارع-الاعشى">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/rAbN8corGlIr1Y496e4a1mF1hUN.jpg"
-          alt="شارع الاعشى" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">شارع الاعشى</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/شارع-الاعشي">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/rAbN8corGlIr1Y496e4a1mF1hUN.jpg"
-          alt="شارع الاعشي" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">شارع الاعشي</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/يحيى">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/rr5kfDoWfiChzijbgXIHi1pqSJ7.jpg" alt="يحيى"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">يحيى</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/لوبي-الغرام">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/ozK13I5S3ZBKAmnqDHOKAhHU3ug.jpg"
-          alt="لوبي الغرام" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">لوبي الغرام</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/صاحبك-راجل">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/fsV0awnFxZUnMPOK2OwwLULmdaW.jpg"
-          alt="صاحبك راجل" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">صاحبك راجل</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/النويلاتي">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/4Qbffql5vv9BE6lGPdERmT97iuV.jpg"
-          alt="النويلاتي" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">النويلاتي</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/التحقيق-2026">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/w500/i5hmoRjHNWady4AtAGICTUXknKH.jpg"
-          alt="التحقيق 2026" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">التحقيق 2026</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/شمس-الاصيل">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="شمس الاصيل" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">شمس الاصيل</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/حبر-سري-2026">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/w500/61NKw78pxjNpDLyJpRSU8DoNAMs.jpg"
-          alt="حبر سري 2026" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">حبر سري 2026</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/مولانا">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/m388DUJOrqcMwWa2QvbKQEDuTrH.jpg" alt="مولانا"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">مولانا</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/قص-ولزق">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="قص ولزق" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">قص ولزق</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/ابطال-الرمال">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="ابطال الرمال" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">ابطال الرمال</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/شط-الحرية">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/lkgtUfnpVCnTxHPXhKdNXMrfMqU.jpg"
-          alt="شط الحرية" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">شط الحرية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/باب-البنات-صبرية-في-السبعينات">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/r0dJ2u5Ptm1uPk4CWrIpnmPc0QT.jpg"
-          alt="باب البنات - صبرية في السبعينات" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">باب البنات - صبرية في السبعينات</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/عايلة-مايلة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/j9KzVbq3X0nVNmsNdUGhNoow3sm.jpg"
-          alt="عايلة مايلة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">عايلة مايلة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/شاكر-عودة-البطل">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/hleHLIhGulLr9I3PACSQGy1rUax.jpg"
-          alt="شاكر عودة البطل" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">شاكر عودة البطل</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/شاكر">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/eWq28TD1uteZ1HDuiF4Bt0g25Gs.jpg" alt="شاكر"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">شاكر</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/وننسى-اللي-كان">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/qfkELZLxSTXSQTV5jS7G9GkROHx.jpg"
-          alt="وننسى اللي كان" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">وننسى اللي كان</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اولاد-الراعي">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/biAvwA8P2h348GLYLMbykmiNOBI.jpg"
-          alt="اولاد الراعي" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اولاد الراعي</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/كان-ياما-كان">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/daUhrfu8JRGfTLa8yGppnkBUVeZ.jpg"
-          alt="كان ياما كان" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">كان ياما كان</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/سوا-سوا">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/lpQS2wOdqzfrbNzso7plCEcHM2C.jpg" alt="سوا سوا"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">سوا سوا</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الست-موناليزا">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/3jlWlBsqgf5tqwvmoatzBA9fFIS.jpg"
-          alt="الست موناليزا" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الست موناليزا</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/يوميات-رجل-متزوج">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/kMzJtn5pOZmJwROBBacVfUzcREl.jpg"
-          alt="يوميات رجل متزوج" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">يوميات رجل متزوج</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/كابتن-شديد">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/zwdz9z0MNv08dpBDCgRmKIleW60.jpg"
-          alt="كابتن شديد" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">كابتن شديد</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/وديمة-وحليمة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/57aGmMCCnRsHfD9O8ix5QuwwXot.jpg"
-          alt="وديمة وحليمة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">وديمة وحليمة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/دراما-كوين">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/gk5jYnRZiEwRG4pOMe9q0eaq7Y.jpg"
-          alt="دراما كوين" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">دراما كوين</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/صحاب-الارض">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/lRu8YUUoak6CQSRbOA7fKXPniBf.jpg"
-          alt="صحاب الارض" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">صحاب الارض</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/توابع">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/nlJCEELP872HSxtEnBZltl4HDQ0.jpg" alt="توابع"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">توابع</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بنات-عبدالغني">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/43GqtCoF4ljQU7YycmzcDLzExYA.jpg"
-          alt="بنات عبدالغني" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بنات عبدالغني</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/السوق-الحرة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/vqhkDp1gX8hlSHwRKaEvAj0Yw0D.jpg"
-          alt="السوق الحرة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">السوق الحرة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/رامز-ليفل-الوحش">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/AcXF0jT7ct2LmbbCwHMqwcOs4Iw.jpg"
-          alt="رامز ليفل الوحش" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">رامز ليفل الوحش</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اتنين-غيرنا">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/wfDPrl7XWqaXPeKDAYoJAURzpEk.jpg"
-          alt="اتنين غيرنا" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اتنين غيرنا</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/دروب-المرجلة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/y48f6TD3SJK7qf718Ojk4ErEWCL.jpg"
-          alt="دروب المرجلة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">دروب المرجلة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/وطن-ع-وتر-2022">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/w500/lUKR7GHp6CvNpZv4C0KBRg4IbTa.jpg"
-          alt="وطن ع وتر 2022" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">وطن ع وتر 2022</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/وطن-ع-وتر-2026">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/xQ79r10kfwdkM3ThFlk3P4WLcE.jpg"
-          alt="وطن ع وتر 2026" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">وطن ع وتر 2026</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/فن-الحرب">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/y2bMELQDMvsS6mG2Jiaitajj110.jpg"
-          alt="فن الحرب" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">فن الحرب</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/عين-سحرية">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/tbAG9y4q3FWGQxEUD4dJmeiSMg8.jpg"
-          alt="عين سحرية" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">عين سحرية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/خطوات-صغيرة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/xBzmjWAjIGhoH5VVYljlhBLCHFK.jpg"
-          alt="خطوات صغيرة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">خطوات صغيرة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/قلبي-اطمان">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/3iNT3rKs8q7qDr1fWxfznimZ7JV.jpg"
-          alt="قلبي اطمان" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">قلبي اطمان</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الكاميرا-الخفية-2026">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/w500/uf5yegjQaNS7XMrgOwJ1IBEekXB.jpg"
-          alt="الكاميرا الخفية 2026" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الكاميرا الخفية 2026</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الكاميرا-الخفية">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/uf5yegjQaNS7XMrgOwJ1IBEekXB.jpg"
-          alt="الكاميرا الخفية" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الكاميرا الخفية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/نوبة-وتوبة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/2hpMZpRxHPXMwVYBF4YG8hlOJdP.jpg"
-          alt="نوبة وتوبة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">نوبة وتوبة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/كوميدي-تانا">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/3usGlNEebVyLW5y6NBdbJqVSQBw.jpg"
-          alt="كوميدي تانا" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">كوميدي تانا</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/قبل-وبعد">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/juBRzq1CpZNcBfJGHts5ITADANk.jpg"
-          alt="قبل وبعد" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">قبل وبعد</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/فخر-الدلتا">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/e8jAzECm044wQvZMQAW7gtD9xDy.jpg"
-          alt="فخر الدلتا" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">فخر الدلتا</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/حامض-حلو">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/51kk9reZVCOg08vqBtyPphNUQg3.jpg"
-          alt="حامض حلو" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">حامض حلو</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/جوز-ولوز">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/6oBEHZYnzopt9r5Lq1k8Z8o3kG8.jpg"
-          alt="جوز ولوز" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">جوز ولوز</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/المقعد-الاخير">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="المقعد الاخير" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">المقعد الاخير</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بين-اهلنا">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/vG3AHpdteMUtLQ0VcdKIwc7ozAZ.jpg"
-          alt="بين اهلنا" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بين اهلنا</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/درش">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/5smBMVD3RnPpghhWOJWnBan3yqY.jpg" alt="درش"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">درش</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/المداح">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/qlVgLDGVrzFJGJdNPgKKhtXUguZ.jpg" alt="المداح"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">المداح</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الكينج">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/gZ1zGHxewufaBAEQBzCH9E0NHRd.jpg" alt="الكينج"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الكينج</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/علي-كلاي">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/1rv82gNj4IisQPiaRD2a6J7Fg4t.jpg"
-          alt="علي كلاي" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">علي كلاي</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/هي-كيميا">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/r8xoRlko0glhOY7HgkMlfSQt9aP.jpg"
-          alt="هي كيميا" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">هي كيميا</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/شرارة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/ylWKtyabAc4uku1RreoUDcn2Vs1.jpg" alt="شرارة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">شرارة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/سموم-القيظ">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/wiXnE2dZDOBuKBTpDpny9K5gHXO.jpg"
-          alt="سموم القيظ" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">سموم القيظ</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/راس-الافعى">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="راس الافعى" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">راس الافعى</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/ديفوردي">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="ديفوردي" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">ديفوردي</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/حد-اقصى">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/p6xfQXdeeLrVMRrSbkmI2CyM5D9.jpg" alt="حد اقصى"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">حد اقصى</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/حاصلة-في-كايرو">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/6tCc8z5xRqAPTW68xU4zfXhQQZx.jpg"
-          alt="حاصلة في كايرو" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">حاصلة في كايرو</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بدل-تالف">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/iQzUPfKYsWQhY8KzBHc6ti2tvzO.jpg"
-          alt="بدل تالف" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بدل تالف</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الخروج-الى-البئر">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/w500/iFbml8432R3aVZdkdfhglHI7V5t.jpg"
-          alt="الخروج الى البئر" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الخروج الى البئر</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الحصلة-العائلة">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="الحصلة العائلة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الحصلة العائلة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الحصلة-العائلة-2">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="الحصلة العائلة 2 -" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الحصلة العائلة 2 -</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/انس-ai">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="انس AI" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">انس AI</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/مناعة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/wVt5yIYmvqpk8wqTXGsou7LB4OE.jpg" alt="مناعة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">مناعة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/قيصرية">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/3VDmDOjxE2zKKMTmRkdklpa6CHT.jpg" alt="قيصرية"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">قيصرية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/عيلة-الملك">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/4Nl6U4iartb3GvDNBQkhnE2TPYM.jpg"
-          alt="عيلة الملك" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">عيلة الملك</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/عنتر-وليلى">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/9jBZG0uR1N7JTzlLAwc1tMp86Jm.jpg"
-          alt="عنتر وليلى" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">عنتر وليلى</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/عرش-الشيطان">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/eQ1oqRdlB9t6T1Fs6WGNYtw0Vjy.jpg"
-          alt="عرش الشيطان" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">عرش الشيطان</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/شباب-البومب">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/gjdnCoSD0fuDJEexUNeao4Nz8gZ.jpg"
-          alt="شباب البومب" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">شباب البومب</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/سعادة-المجنون">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/uJl4Ug3u2ktt0L0fdWqrvpDS7EP.jpg"
-          alt="سعادة المجنون" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">سعادة المجنون</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/دكان-سليمان">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/2opE83npHLMMg2nEHjCJMpNV4er.jpg"
-          alt="دكان سليمان" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">دكان سليمان</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/المحافظة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/AaNe4r0HEBdHKPf5JMLL2dgpMjB.jpg"
-          alt="المحافظة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">المحافظة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الغميضة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/mCnzoSZCjdiFnuFTZIDOvMVLmtk.jpg" alt="الغميضة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الغميضة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اخر-كلام">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/tXFIOqNi9wl9AsAXJCao84NK7Ij.jpg"
-          alt="اخر كلام" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اخر كلام</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/ابجد-هوس">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/z174Ox6tcXyZG7osGNZ3jRDQSjc.jpg"
-          alt="ابجد هوس" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">ابجد هوس</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/ابجد-هلوس">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="ابجد هلوس" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">ابجد هلوس</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بنات-لالة-منانة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/AruiouIsAIpvmX0RDXE2G1CR4A0.jpg"
-          alt="بنات لالة منانة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بنات لالة منانة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/امور-عائلية">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="امور عائلية" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">امور عائلية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الخزانة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/iREd0rNCjYdf5Ar0vfaW32yrkm.jpg" alt="الخزانة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الخزانة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الثمن-2026">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/w500/uFEV0Tsns33zKyuc12l4XCBoba7.jpg" alt="الثمن 2026"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الثمن 2026</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اسرار-2026">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/w500/dVtYvgvHrA1E8TWyxtOBx4i6tMm.jpg" alt="اسرار 2026"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اسرار 2026</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/كحيلان">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/pLTGUL6sYMYMJ05Sntqr6XTgwCa.jpg" alt="كحيلان"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">كحيلان</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/صحة-خويا-bro">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="صحة خويا BRO" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">صحة خويا BRO</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/رحمة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/6NrDJgoeOXZzDVTfU0RgXwuWUQI.jpg" alt="رحمة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">رحمة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/رباعة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/34N589rXVvG9wiQhN1O1fj4afBq.jpg" alt="رباعة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">رباعة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الرباعة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/34N589rXVvG9wiQhN1O1fj4afBq.jpg" alt="الرباعة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الرباعة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/حمدية">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/7s12Z5c00THxqDD1UykwLqgjL59.jpg" alt="حمدية"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">حمدية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بالحرام">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/okqSrJ552eYkxCow1nWABWs9xYD.jpg" alt="بالحرام"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بالحرام</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/انا-وهي-وهيا">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="انا وهي وهيا" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">انا وهي وهيا</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الهيبة-راس-الجبل">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/tOGB4nYRVFC0KFQRP3uTQSbIzla.jpg"
-          alt="الهيبة راس الجبل" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الهيبة راس الجبل</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اسال-روحك">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="اسال روحك" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اسال روحك</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/عمارة-السعادة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/aRWRWRrF4tSApJYfnlquSxILg0i.jpg"
-          alt="عمارة السعادة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">عمارة السعادة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بنات-العم">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/znMBnF7AjsNBzx41GiD9NFCApur.jpg"
-          alt="بنات العم" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بنات العم</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/العمة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/uRhk1ofQVFvt4NkR085JxEQbgyW.jpg" alt="العمة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">العمة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/متاهة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/pwfzCQQ6KzvfKPoFEYCeAtdOjoq.jpg" alt="متاهة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">متاهة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/حياة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/uGLIdqDkbsJ1UncbJazd53quL9h.jpg" alt="حياة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">حياة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/حكايات-شامة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/dh19Caeu9LHpHQ8aclPtUoRZMKV.jpg"
-          alt="حكايات شامة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">حكايات شامة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/جناية-حب">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/xNPfmHDsBxlVdDfQGFJorJD9H5I.jpg"
-          alt="جناية حب" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">جناية حب</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/وصية-جدو">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/gmqoN18SjAEYw9qzGL84siVFms6.jpg"
-          alt="وصية جدو" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">وصية جدو</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/يوميات-محجوبة-والتبارية">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="يوميات محجوبة والتبارية" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">يوميات محجوبة والتبارية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/موش-نورمال">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="موش نورمال" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">موش نورمال</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/كلاش">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/rLGXBNdz3M2vW9WjccVVQEb23ND.jpg" alt="كلاش"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">كلاش</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/المداح-6-اسطورة-النهاية">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="المداح 6 اسطورة النهاية" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">المداح 6 اسطورة النهاية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/هذي-اخرتها">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/SoT3g47KMGmujiC9Z8fahd0JOk.jpg"
-          alt="هذي اخرتها" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">هذي اخرتها</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/مولات-الدار">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/hxI4tocFoaEXzhUGK5z5IawVID1.jpg"
-          alt="مولات الدار" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">مولات الدار</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/ملوك-اليمن">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/t5tnZh8CRr4CHvIrBCvrFC8IBOi.jpg"
-          alt="ملوك اليمن" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">ملوك اليمن</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الفراق">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/e4mwIGuTjORTuUABIaqU2Z7tZTu.jpg" alt="الفراق"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الفراق</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/لفراق">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="لفراق" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">لفراق</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/عش-الطمع">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/5qbUpDztpPj16HrAXTGB3v1MVGV.jpg"
-          alt="عش الطمع" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">عش الطمع</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/انا-ولا-انا">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/rv2wu5Z3IG8cjrBiHTNI2UArRxU.jpg"
-          alt="انا ولا انا" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">انا ولا انا</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/المهاجر">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/EfzM5oGqRyflG30MfDiXnqQDNM.jpg" alt="المهاجر"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">المهاجر</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الزوجة-السابعة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/q09M3c2V1Yzdw56ISlURsqOqKZ3.jpg"
-          alt="الزوجة السابعة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الزوجة السابعة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بيت-ام-ليلة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/x19raCYYcjt5q7kdkOyxrupbAFD.jpg"
-          alt="بيت ام ليلة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بيت ام ليلة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/كية">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg" alt="كية"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">كية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/درب-الذهب">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/kSTFeSJGebHIPeV2rnjjedlzXIq.jpg"
-          alt="درب الذهب" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">درب الذهب</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الخطيفة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/zo2Ye1XMIYqQXsI9Dz80p15Jar2.jpg" alt="الخطيفة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الخطيفة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/11-بالمية">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/k1OmgQRPIZKuaRNiNF7kkLcMawG.jpg"
-          alt="11 بالمية" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">11 بالمية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/9-بالحلال">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/nmK6BZwGpQVgbhjo88QgLpkG0wQ.jpg"
-          alt="9 بالحلال" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">9 بالحلال</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بنات-الخالة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/auC7KzHowQNamEsW7mI8OXNZ59J.jpg"
-          alt="بنات الخالة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بنات الخالة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/يا-انا-يا-هي">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/ktEheqZ4ty0SV7BHo1hYk4D9Bzq.jpg"
-          alt="يا انا يا هي" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">يا انا يا هي</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/كوكب-فجعان">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/qmrTHxWRQkxo4rMkRcMPO3ohm80.jpg"
-          alt="كوكب فجعان" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">كوكب فجعان</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اهلا-سمسم">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/buGPJsHC37AzmHr2tYTIDKLibQ7.jpg"
-          alt="اهلا سمسم" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اهلا سمسم</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الثمن">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/uFEV0Tsns33zKyuc12l4XCBoba7.jpg" alt="الثمن"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الثمن</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بنات-العم-2-انتقام-الموتى">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="بنات العم 2 - انتقام الموتى"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بنات العم 2 - انتقام الموتى</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/يوميات-محجوبة-والتيبارية">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="يوميات محجوبة والتيبارية" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">يوميات محجوبة والتيبارية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/ليل-البنفسج">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/aikuhUfTpCsb4azPRaQkArOKdbx.jpg"
-          alt="ليل البنفسج" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">ليل البنفسج</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/زناقي-العز">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="زناقي العز" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">زناقي العز</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/ثعالب-الصحراء">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/oje4F8UdShpIfpqWG8SqXWURVCh.jpg"
-          alt="ثعالب الصحراء" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">ثعالب الصحراء</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/حد-اقصي">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/p6xfQXdeeLrVMRrSbkmI2CyM5D9.jpg" alt="حد اقصي"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">حد اقصي</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/هاذي-اخرتها">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/bPIYRfq0Wn4vd0WCkxA7m2n5STS.jpg"
-          alt="هاذي اخرتها" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">هاذي اخرتها</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/وجب-القضاء">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/869LauzZCTzKE8zj0SLHxHkXfSd.jpg"
-          alt="وجب القضاء" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">وجب القضاء</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/نزيف-التراب">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/shA0mDNpoNM52oNPsshSaJGGpDQ.jpg"
-          alt="نزيف التراب" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">نزيف التراب</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/نزيف-التراب-3-الجزء-الثالث">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="نزيف التراب 3 الجزء الثالث"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">نزيف التراب 3 الجزء الثالث</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/لحظات-مسروقة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/ziHop7TcEouUytKmyAvjjzmpGdR.jpg"
-          alt="لحظات مسروقة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">لحظات مسروقة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/غيبوبة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/y7PiQlb53sIVOXQevzTposZpTDD.jpg" alt="غيبوبة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">غيبوبة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/شكون-كان-يقول">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/7tyNsSuDF3n0NsMJY0KlAKFyrV2.jpg"
-          alt="شكون كان يقول" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">شكون كان يقول</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بيت-في-كوزينة">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="بيت في كوزينة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بيت في كوزينة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بابا-وماما-جيران">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/jch1jIJhXeE9ZE8dH0sDnZc9V05.jpg"
-          alt="بابا وماما جيران" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بابا وماما جيران</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/القافر">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="القافر" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">القافر</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الحنة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/hKRFDtRImN72zz03M6ur5zmX1KK.jpg" alt="الحنة"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الحنة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/عرين-الذئاب">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/dWjMrAMvgQWOnwLmHgxqc0kzGEc.jpg"
-          alt="عرين الذئاب" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">عرين الذئاب</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/مرضي-ودحام">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/ti5U8LBakcsmMgLdsYuMOXNL4DX.jpg"
-          alt="مرضي ودحام" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">مرضي ودحام</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/عنبر">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/gQTEXDM6J3CsY7LPFd4xc6Tj1rh.jpg" alt="عنبر"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">عنبر</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اخر-الشهر">
-        <img class="card-poster" src="https://tomito.xyz/favicon.ico" alt="اخر الشهر" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اخر الشهر</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اللون-الازرق">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/x8MSZXIg3JpXt72Bab3A00IqTn2.jpg"
-          alt="اللون الازرق" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اللون الازرق</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/اب-ولكن">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/tMkSzkVDBLsk8DQ7FnDggY0XEDC.jpg" alt="اب ولكن"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">اب ولكن</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/بيت-السعد">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/oYy3Puv9L2dNJ6DOA6ziF8fCpcD.jpg"
-          alt="بيت السعد" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">بيت السعد</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/فرصة-اخيرة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/9GuHmrIFnXhJLGHJF7p7a5YvlEZ.jpg"
-          alt="فرصة اخيرة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">فرصة اخيرة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/النص-التاني">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/rIwpM2XvlcAGofwsnUphehdaJGx.jpg"
-          alt="النص التاني" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">النص التاني</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/الضحايا">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/uzfP3ILGEXhSbhfCOsgCDZW7ojk.jpg" alt="الضحايا"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">الضحايا</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="ramadan-trailer/ن-النسوة">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/kdKJapXLmWaSxBRaex6JfAc0gP9.jpg"
-          alt="ن النسوة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">حصري</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">ن النسوة</div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
-  <section class="section" id="anime">
-    <h2 class="section-title">أنمي وكرتون 2026</h2>
-    <div class="grid">
+    <a class="card" href="ramadan-trailer/عدم-المؤاخذة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/trKhGAQaj8KqY7Uj9GHVSHX61Ty.jpg" alt="عدم المؤاخذة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">عدم المؤاخذة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/دار-السد">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/5gbTKFOpNHMBzbLBKau0JVvM2ci.jpg" alt="دار السد" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">دار السد</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/سر-وقدر">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/iOxKhfpHT15wVfU2Wgs1gGonpee.jpg" alt="سر وقدر" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">سر وقدر</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/افراج">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/2UUpvYL77Pp2fI3Q96SVqFoSGWl.jpg" alt="افراج" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">افراج</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/المقام">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uQwTyyBMiVJs4CtMOAiIyIKHXrT.jpg" alt="المقام" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">المقام</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/اقر-واعترف">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/oLSanNob76jySbw2R910CgLyZ9y.jpg" alt="اقر واعترف" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">اقر واعترف</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/اقر-واعترف-2026">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sZoyw5SWNHR2VsKvp1bUw0wW4Rs.jpg" alt="اقر واعترف 2026" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">اقر واعترف 2026</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/اكسيدون">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/yaa9NMCJiKhimAclTGO01Ug10J5.jpg" alt="اكسيدون" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">اكسيدون</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/مراتي-في-ورطة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lKIMmiVxlLOG85pRC986vw0zxVN.jpg" alt="مراتي في ورطة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">مراتي في ورطة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/لصوص-العمارة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/F4WdkrPlNH2GimBzfm7LKFMLQj.jpg" alt="لصوص العمارة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">لصوص العمارة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/شارع-الاعشى">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rAbN8corGlIr1Y496e4a1mF1hUN.jpg" alt="شارع الاعشى" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">شارع الاعشى</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/شارع-الاعشي">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/qL1MBO7f8V7jXSB46SgpetwqNaV.jpg" alt="شارع الاعشي" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">شارع الاعشي</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/يحيى">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rr5kfDoWfiChzijbgXIHi1pqSJ7.jpg" alt="يحيى" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">يحيى</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/لوبي-الغرام">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ozK13I5S3ZBKAmnqDHOKAhHU3ug.jpg" alt="لوبي الغرام" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">لوبي الغرام</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/صاحبك-راجل">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/fsV0awnFxZUnMPOK2OwwLULmdaW.jpg" alt="صاحبك راجل" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">صاحبك راجل</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/النويلاتي">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4Qbffql5vv9BE6lGPdERmT97iuV.jpg" alt="النويلاتي" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">النويلاتي</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/مولانا">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/m388DUJOrqcMwWa2QvbKQEDuTrH.jpg" alt="مولانا" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">مولانا</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/شط-الحرية">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lkgtUfnpVCnTxHPXhKdNXMrfMqU.jpg" alt="شط الحرية" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">شط الحرية</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/باب-البنات-صبرية-في-السبعينات">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/r0dJ2u5Ptm1uPk4CWrIpnmPc0QT.jpg" alt="باب البنات - صبرية في السبعينات" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">باب البنات - صبرية في السبعينات</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/عايلة-مايلة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/j9KzVbq3X0nVNmsNdUGhNoow3sm.jpg" alt="عايلة مايلة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">عايلة مايلة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/شاكر-عودة-البطل">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/hleHLIhGulLr9I3PACSQGy1rUax.jpg" alt="شاكر عودة البطل" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">شاكر عودة البطل</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/شاكر">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/eWq28TD1uteZ1HDuiF4Bt0g25Gs.jpg" alt="شاكر" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">شاكر</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/وننسى-اللي-كان">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/qfkELZLxSTXSQTV5jS7G9GkROHx.jpg" alt="وننسى اللي كان" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">وننسى اللي كان</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/اولاد-الراعي">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/biAvwA8P2h348GLYLMbykmiNOBI.jpg" alt="اولاد الراعي" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">اولاد الراعي</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/كان-ياما-كان">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/daUhrfu8JRGfTLa8yGppnkBUVeZ.jpg" alt="كان ياما كان" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">كان ياما كان</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/سوا-سوا">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lpQS2wOdqzfrbNzso7plCEcHM2C.jpg" alt="سوا سوا" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">سوا سوا</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الست-موناليزا">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3jlWlBsqgf5tqwvmoatzBA9fFIS.jpg" alt="الست موناليزا" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الست موناليزا</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/يوميات-رجل-متزوج">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/kMzJtn5pOZmJwROBBacVfUzcREl.jpg" alt="يوميات رجل متزوج" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">يوميات رجل متزوج</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/كابتن-شديد">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/zwdz9z0MNv08dpBDCgRmKIleW60.jpg" alt="كابتن شديد" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">كابتن شديد</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/وديمة-وحليمة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/57aGmMCCnRsHfD9O8ix5QuwwXot.jpg" alt="وديمة وحليمة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">وديمة وحليمة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/دراما-كوين">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gk5jYnRZiEwRG4pOMe9q0eaq7Y.jpg" alt="دراما كوين" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">دراما كوين</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/صحاب-الارض">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lRu8YUUoak6CQSRbOA7fKXPniBf.jpg" alt="صحاب الارض" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">صحاب الارض</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/توابع">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/nlJCEELP872HSxtEnBZltl4HDQ0.jpg" alt="توابع" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">توابع</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/بنات-عبدالغني">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/43GqtCoF4ljQU7YycmzcDLzExYA.jpg" alt="بنات عبدالغني" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">بنات عبدالغني</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/السوق-الحرة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/vqhkDp1gX8hlSHwRKaEvAj0Yw0D.jpg" alt="السوق الحرة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">السوق الحرة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/رامز-ليفل-الوحش">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/AcXF0jT7ct2LmbbCwHMqwcOs4Iw.jpg" alt="رامز ليفل الوحش" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">رامز ليفل الوحش</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/اتنين-غيرنا">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wfDPrl7XWqaXPeKDAYoJAURzpEk.jpg" alt="اتنين غيرنا" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">اتنين غيرنا</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/دروب-المرجلة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/y48f6TD3SJK7qf718Ojk4ErEWCL.jpg" alt="دروب المرجلة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">دروب المرجلة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/وطن-ع-وتر-2026">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/hYNfFROv5Ce6Hl6kKHvhVrZmJCM.jpg" alt="وطن ع وتر 2026" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">وطن ع وتر 2026</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/فن-الحرب">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/y2bMELQDMvsS6mG2Jiaitajj110.jpg" alt="فن الحرب" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">فن الحرب</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/عين-سحرية">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/tbAG9y4q3FWGQxEUD4dJmeiSMg8.jpg" alt="عين سحرية" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">عين سحرية</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/خطوات-صغيرة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/xBzmjWAjIGhoH5VVYljlhBLCHFK.jpg" alt="خطوات صغيرة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">خطوات صغيرة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/قلبي-اطمان">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3iNT3rKs8q7qDr1fWxfznimZ7JV.jpg" alt="قلبي اطمان" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">قلبي اطمان</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الكاميرا-الخفية">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uf5yegjQaNS7XMrgOwJ1IBEekXB.jpg" alt="الكاميرا الخفية" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الكاميرا الخفية</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/نوبة-وتوبة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/2hpMZpRxHPXMwVYBF4YG8hlOJdP.jpg" alt="نوبة وتوبة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">نوبة وتوبة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/كوميدي-تانا">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3usGlNEebVyLW5y6NBdbJqVSQBw.jpg" alt="كوميدي تانا" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">كوميدي تانا</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/قبل-وبعد">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/juBRzq1CpZNcBfJGHts5ITADANk.jpg" alt="قبل وبعد" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">قبل وبعد</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/فخر-الدلتا">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/e8jAzECm044wQvZMQAW7gtD9xDy.jpg" alt="فخر الدلتا" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">فخر الدلتا</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/حامض-حلو">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/51kk9reZVCOg08vqBtyPphNUQg3.jpg" alt="حامض حلو" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">حامض حلو</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/جوز-ولوز">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/6oBEHZYnzopt9r5Lq1k8Z8o3kG8.jpg" alt="جوز ولوز" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">جوز ولوز</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/بين-اهلنا">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/vG3AHpdteMUtLQ0VcdKIwc7ozAZ.jpg" alt="بين اهلنا" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">بين اهلنا</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/درش">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/5smBMVD3RnPpghhWOJWnBan3yqY.jpg" alt="درش" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">درش</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/المداح">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/qlVgLDGVrzFJGJdNPgKKhtXUguZ.jpg" alt="المداح" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">المداح</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الكينج">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gZ1zGHxewufaBAEQBzCH9E0NHRd.jpg" alt="الكينج" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الكينج</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/علي-كلاي">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1rv82gNj4IisQPiaRD2a6J7Fg4t.jpg" alt="علي كلاي" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">علي كلاي</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/هي-كيميا">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/r8xoRlko0glhOY7HgkMlfSQt9aP.jpg" alt="هي كيميا" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">هي كيميا</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/شرارة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ylWKtyabAc4uku1RreoUDcn2Vs1.jpg" alt="شرارة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">شرارة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/سموم-القيظ">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wiXnE2dZDOBuKBTpDpny9K5gHXO.jpg" alt="سموم القيظ" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">سموم القيظ</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/حد-اقصى">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/p6xfQXdeeLrVMRrSbkmI2CyM5D9.jpg" alt="حد اقصى" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">حد اقصى</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/حاصلة-في-كايرو">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/6tCc8z5xRqAPTW68xU4zfXhQQZx.jpg" alt="حاصلة في كايرو" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">حاصلة في كايرو</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/بدل-تالف">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/iQzUPfKYsWQhY8KzBHc6ti2tvzO.jpg" alt="بدل تالف" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">بدل تالف</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الحصلة-العائلة-2">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/478IpJI0Ty6xVVZZIOSOdUg3irT.jpg" alt="الحصلة العائلة 2 -" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الحصلة العائلة 2 -</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/مناعة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wVt5yIYmvqpk8wqTXGsou7LB4OE.jpg" alt="مناعة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">مناعة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/قيصرية">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3VDmDOjxE2zKKMTmRkdklpa6CHT.jpg" alt="قيصرية" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">قيصرية</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/عيلة-الملك">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4Nl6U4iartb3GvDNBQkhnE2TPYM.jpg" alt="عيلة الملك" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">عيلة الملك</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/عنتر-وليلى">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/9jBZG0uR1N7JTzlLAwc1tMp86Jm.jpg" alt="عنتر وليلى" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">عنتر وليلى</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/عرش-الشيطان">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/eQ1oqRdlB9t6T1Fs6WGNYtw0Vjy.jpg" alt="عرش الشيطان" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">عرش الشيطان</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/شباب-البومب">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gjdnCoSD0fuDJEexUNeao4Nz8gZ.jpg" alt="شباب البومب" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">شباب البومب</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/سعادة-المجنون">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uJl4Ug3u2ktt0L0fdWqrvpDS7EP.jpg" alt="سعادة المجنون" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">سعادة المجنون</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/دكان-سليمان">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/2opE83npHLMMg2nEHjCJMpNV4er.jpg" alt="دكان سليمان" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">دكان سليمان</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/المحافظة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/AaNe4r0HEBdHKPf5JMLL2dgpMjB.jpg" alt="المحافظة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">المحافظة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الغميضة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/mCnzoSZCjdiFnuFTZIDOvMVLmtk.jpg" alt="الغميضة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الغميضة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/اخر-كلام">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/tXFIOqNi9wl9AsAXJCao84NK7Ij.jpg" alt="اخر كلام" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">اخر كلام</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/ابجد-هوس">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/z174Ox6tcXyZG7osGNZ3jRDQSjc.jpg" alt="ابجد هوس" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">ابجد هوس</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/ابجد-هلوس">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/7eqb8Iv9DrxN2nkOTUiZzviEOlv.jpg" alt="ابجد هلوس" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">ابجد هلوس</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/بنات-لالة-منانة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/AruiouIsAIpvmX0RDXE2G1CR4A0.jpg" alt="بنات لالة منانة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">بنات لالة منانة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الخزانة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/iREd0rNCjYdf5Ar0vfaW32yrkm.jpg" alt="الخزانة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الخزانة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/كحيلان">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/pLTGUL6sYMYMJ05Sntqr6XTgwCa.jpg" alt="كحيلان" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">كحيلان</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/صحة-خويا-bro">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/bMu6AzlT6IXZ1twDaoTXp1Zeap4.jpg" alt="صحة خويا BRO" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">صحة خويا BRO</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/رحمة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/6NrDJgoeOXZzDVTfU0RgXwuWUQI.jpg" alt="رحمة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">رحمة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/رباعة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/34N589rXVvG9wiQhN1O1fj4afBq.jpg" alt="رباعة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">رباعة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الرباعة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/37w9D05BhjEi2yKyT9XKHXcVJIr.jpg" alt="الرباعة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الرباعة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/حمدية">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/7s12Z5c00THxqDD1UykwLqgjL59.jpg" alt="حمدية" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">حمدية</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/بالحرام">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/okqSrJ552eYkxCow1nWABWs9xYD.jpg" alt="بالحرام" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">بالحرام</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الهيبة-راس-الجبل">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/tOGB4nYRVFC0KFQRP3uTQSbIzla.jpg" alt="الهيبة راس الجبل" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الهيبة راس الجبل</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/عمارة-السعادة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/aRWRWRrF4tSApJYfnlquSxILg0i.jpg" alt="عمارة السعادة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">عمارة السعادة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/بنات-العم">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/znMBnF7AjsNBzx41GiD9NFCApur.jpg" alt="بنات العم" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">بنات العم</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/العمة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uRhk1ofQVFvt4NkR085JxEQbgyW.jpg" alt="العمة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">العمة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/متاهة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/pwfzCQQ6KzvfKPoFEYCeAtdOjoq.jpg" alt="متاهة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">متاهة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/حياة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uGLIdqDkbsJ1UncbJazd53quL9h.jpg" alt="حياة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">حياة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/حكايات-شامة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/dh19Caeu9LHpHQ8aclPtUoRZMKV.jpg" alt="حكايات شامة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">حكايات شامة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/جناية-حب">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/xNPfmHDsBxlVdDfQGFJorJD9H5I.jpg" alt="جناية حب" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">جناية حب</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/وصية-جدو">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gmqoN18SjAEYw9qzGL84siVFms6.jpg" alt="وصية جدو" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">وصية جدو</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/كلاش">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rLGXBNdz3M2vW9WjccVVQEb23ND.jpg" alt="كلاش" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">كلاش</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/المداح-6-اسطورة-النهاية">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lovHpXLDIuqlrbTWhpFSqcSEHPD.jpg" alt="المداح 6 اسطورة النهاية" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">المداح 6 اسطورة النهاية</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/هذي-اخرتها">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/SoT3g47KMGmujiC9Z8fahd0JOk.jpg" alt="هذي اخرتها" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">هذي اخرتها</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/مولات-الدار">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/hxI4tocFoaEXzhUGK5z5IawVID1.jpg" alt="مولات الدار" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">مولات الدار</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/ملوك-اليمن">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/t5tnZh8CRr4CHvIrBCvrFC8IBOi.jpg" alt="ملوك اليمن" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">ملوك اليمن</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الفراق">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/e4mwIGuTjORTuUABIaqU2Z7tZTu.jpg" alt="الفراق" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الفراق</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/عش-الطمع">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/5qbUpDztpPj16HrAXTGB3v1MVGV.jpg" alt="عش الطمع" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">عش الطمع</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/انا-ولا-انا">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rv2wu5Z3IG8cjrBiHTNI2UArRxU.jpg" alt="انا ولا انا" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">انا ولا انا</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/المهاجر">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/EfzM5oGqRyflG30MfDiXnqQDNM.jpg" alt="المهاجر" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">المهاجر</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الزوجة-السابعة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/q09M3c2V1Yzdw56ISlURsqOqKZ3.jpg" alt="الزوجة السابعة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الزوجة السابعة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/بيت-ام-ليلة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/x19raCYYcjt5q7kdkOyxrupbAFD.jpg" alt="بيت ام ليلة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">بيت ام ليلة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/كية">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg" alt="كية" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">كية</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/درب-الذهب">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/kSTFeSJGebHIPeV2rnjjedlzXIq.jpg" alt="درب الذهب" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">درب الذهب</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الخطيفة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/zo2Ye1XMIYqQXsI9Dz80p15Jar2.jpg" alt="الخطيفة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الخطيفة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/11-بالمية">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/k1OmgQRPIZKuaRNiNF7kkLcMawG.jpg" alt="11 بالمية" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">11 بالمية</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/9-بالحلال">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/nmK6BZwGpQVgbhjo88QgLpkG0wQ.jpg" alt="9 بالحلال" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">9 بالحلال</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/بنات-الخالة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/auC7KzHowQNamEsW7mI8OXNZ59J.jpg" alt="بنات الخالة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">بنات الخالة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/يا-انا-يا-هي">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ktEheqZ4ty0SV7BHo1hYk4D9Bzq.jpg" alt="يا انا يا هي" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">يا انا يا هي</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/كوكب-فجعان">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/qmrTHxWRQkxo4rMkRcMPO3ohm80.jpg" alt="كوكب فجعان" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">كوكب فجعان</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/اهلا-سمسم">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/buGPJsHC37AzmHr2tYTIDKLibQ7.jpg" alt="اهلا سمسم" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">اهلا سمسم</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الثمن">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uFEV0Tsns33zKyuc12l4XCBoba7.jpg" alt="الثمن" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الثمن</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/بنات-العم-2-انتقام-الموتى">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/vj8lUERUvFH3O2V97BUEAUDmC8I.jpg" alt="بنات العم 2 - انتقام الموتى" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">بنات العم 2 - انتقام الموتى</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/ليل-البنفسج">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/aikuhUfTpCsb4azPRaQkArOKdbx.jpg" alt="ليل البنفسج" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">ليل البنفسج</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/ثعالب-الصحراء">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/oje4F8UdShpIfpqWG8SqXWURVCh.jpg" alt="ثعالب الصحراء" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">ثعالب الصحراء</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/حد-اقصي">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/p6xfQXdeeLrVMRrSbkmI2CyM5D9.jpg" alt="حد اقصي" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">حد اقصي</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/هاذي-اخرتها">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/bPIYRfq0Wn4vd0WCkxA7m2n5STS.jpg" alt="هاذي اخرتها" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">هاذي اخرتها</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/وجب-القضاء">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/869LauzZCTzKE8zj0SLHxHkXfSd.jpg" alt="وجب القضاء" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">وجب القضاء</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/نزيف-التراب">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/shA0mDNpoNM52oNPsshSaJGGpDQ.jpg" alt="نزيف التراب" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">نزيف التراب</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/نزيف-التراب-3-الجزء-الثالث">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/37w9D05BhjEi2yKyT9XKHXcVJIr.jpg" alt="نزيف التراب 3 الجزء الثالث" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">نزيف التراب 3 الجزء الثالث</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/لحظات-مسروقة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ziHop7TcEouUytKmyAvjjzmpGdR.jpg" alt="لحظات مسروقة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">لحظات مسروقة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/غيبوبة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/y7PiQlb53sIVOXQevzTposZpTDD.jpg" alt="غيبوبة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">غيبوبة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/شكون-كان-يقول">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/7tyNsSuDF3n0NsMJY0KlAKFyrV2.jpg" alt="شكون كان يقول" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">شكون كان يقول</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/بابا-وماما-جيران">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/jch1jIJhXeE9ZE8dH0sDnZc9V05.jpg" alt="بابا وماما جيران" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">بابا وماما جيران</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الحنة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/hKRFDtRImN72zz03M6ur5zmX1KK.jpg" alt="الحنة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الحنة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/عرين-الذئاب">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/dWjMrAMvgQWOnwLmHgxqc0kzGEc.jpg" alt="عرين الذئاب" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">عرين الذئاب</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/مرضي-ودحام">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ti5U8LBakcsmMgLdsYuMOXNL4DX.jpg" alt="مرضي ودحام" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">مرضي ودحام</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/عنبر">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gQTEXDM6J3CsY7LPFd4xc6Tj1rh.jpg" alt="عنبر" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">عنبر</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/اللون-الازرق">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/x8MSZXIg3JpXt72Bab3A00IqTn2.jpg" alt="اللون الازرق" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">اللون الازرق</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/اب-ولكن">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/tMkSzkVDBLsk8DQ7FnDggY0XEDC.jpg" alt="اب ولكن" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">اب ولكن</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/بيت-السعد">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/oYy3Puv9L2dNJ6DOA6ziF8fCpcD.jpg" alt="بيت السعد" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">بيت السعد</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/فرصة-اخيرة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/9GuHmrIFnXhJLGHJF7p7a5YvlEZ.jpg" alt="فرصة اخيرة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">فرصة اخيرة</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/النص-التاني">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rIwpM2XvlcAGofwsnUphehdaJGx.jpg" alt="النص التاني" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">النص التاني</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/الضحايا">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uzfP3ILGEXhSbhfCOsgCDZW7ojk.jpg" alt="الضحايا" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">الضحايا</div></div>
+    </a>
+    <a class="card" href="ramadan-trailer/ن-النسوة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/kdKJapXLmWaSxBRaex6JfAc0gP9.jpg" alt="ن النسوة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">حصري</div></div>
+      <div class="card-bottom"><div class="card-title">ن النسوة</div></div>
+    </a>
+  </div>
+</section>
+<section class="section" id="anime">
+  <h2 class="section-title">أنمي وكرتون 2026</h2>
+  <div class="grid">
 
-      <a class="card" href="anime/one-piece">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/b9nSI5cl2bTj7FlhQl4TIoOwvW6.jpg"
-          alt="One Piece" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">One Piece</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/one-piece-special">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/zftx59xeJOJtsmRdwqo4rn6zNpj.jpg"
-          alt="One Piece - Special" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">One Piece - Special</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/shingeki-no-kyojin">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/yGi2XhxOqkiP0hVfviZMUJKC5Qn.jpg"
-          alt="Shingeki no Kyojin" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Shingeki no Kyojin</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/shingeki-no-kyojin-kuinaki-sentaku-ova">
-        <img class="card-poster"
-          src="https://www.fasel-hd.cam/wp-content/uploads/2018/07/52_637165062903926302SNK_S1_Small_EN_hq.jpg"
-          alt="Shingeki no Kyojin : Kuinaki Sentaku OVA -" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Shingeki no Kyojin : Kuinaki Sentaku OVA -</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/shingeki-no-kyojin-ova">
-        <img class="card-poster"
-          src="https://www.fasel-hd.cam/wp-content/uploads/2018/07/52_637165062903926302SNK_S1_Small_EN_hq.jpg"
-          alt="Shingeki no Kyojin OVA" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Shingeki no Kyojin OVA</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/solo-leveling">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/gRjLWlk3tCIXGQ435D34XSsjGBw.jpg"
-          alt="Solo Leveling" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Solo Leveling</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/shingeki-no-kyojin-the-final">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/yGi2XhxOqkiP0hVfviZMUJKC5Qn.jpg"
-          alt="Shingeki no Kyojin: The Final" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Shingeki no Kyojin: The Final</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/kimetsu-no-yaiba">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/dwuVipGiAfGZ3SAOJClm6bweUts.jpg"
-          alt="Kimetsu no Yaiba" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Kimetsu no Yaiba</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/jujutsu-kaisen">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/feS8k6Wy8b0mLGzJLwmEyVkZ9xx.jpg"
-          alt="Jujutsu Kaisen" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Jujutsu Kaisen</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg"
-          alt="Detective Conan" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-صفر">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا صفر" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا صفر</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-الاولى">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا الاولى" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا الاولى</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-الثانية">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا الثانية" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا الثانية</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-الثالثة">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا الثالثة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا الثالثة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-الرابعة">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا الرابعة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا الرابعة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-الخامسة">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا الخامسة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا الخامسة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-السادسة">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا السادسة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا السادسة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-السابعة">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا السابعة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا السابعة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-الثامنة">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا الثامنة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا الثامنة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-التاسعة">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا التاسعة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا التاسعة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-العاشرة">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا العاشرة" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا العاشرة</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-الحادية-عشر">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا الحادية عشر" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا الحادية عشر</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/detective-conan-الاوفا-الثانية-عشر">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2017/12/conan-400x600.jpg"
-          alt="Detective Conan – الاوفا الثانية عشر" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Detective Conan – الاوفا الثانية عشر</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/hunter-x-hunter-2011">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/r8qfs8dBQnhSgym9onnmVlnm3zd.jpg"
-          alt="Hunter x Hunter 2011" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Hunter x Hunter 2011</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/shingeki-no-kyojin-lost-girls-ova">
-        <img class="card-poster" src="https://www.fasel-hd.cam/wp-content/uploads/2018/08/231098.jpg"
-          alt="Shingeki no Kyojin : Lost Girls OVA -" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Shingeki no Kyojin : Lost Girls OVA -</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/steel-ball-run-jojo-no-kimyou-na-bouken">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/k8iHQ2IU7j5FprP4oWrp03ClqJ9.jpg"
-          alt="Steel Ball Run: JoJo no Kimyou na Bouken" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Steel Ball Run: JoJo no Kimyou na Bouken</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/fangkai-nage-nuwu">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/aALqEgghYorHOwR5pgeCq9YMrjj.jpg"
-          alt="Fangkai Nage Nuwu" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Fangkai Nage Nuwu</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/immortality">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/4QjbA5gmFrAq2gjdkTxKYPrsQGn.jpg"
-          alt="IMMORTALITY" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">IMMORTALITY</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/pantheon">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/aZupC6eJhTe82e5I0JRaOBjFHOd.jpg"
-          alt="Pantheon" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Pantheon</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/terror-man">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/jYXLVEkLhSgdCdmgisPzTGY4kYP.jpg"
-          alt="Terror Man" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Terror Man</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/baki-dou">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/wViuuy27uauEs3A8Vn69Q43MFAQ.jpg"
-          alt="Baki-dou" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Baki-dou</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/omae-gotoki-ga-maou-ni-kateru-to-omouna">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/nH6Ch1q5rwdRs56bYTA9wuOhfbL.jpg"
-          alt="Omae Gotoki ga Maou ni Kateru to Omouna" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Omae Gotoki ga Maou ni Kateru to Omouna</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/meitantei-precure">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/zuPQ9R5x17EM6xEA37TLRkL2BGD.jpg"
-          alt="Meitantei Precure!" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Meitantei Precure!</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/wu-liuqi-jiyi-suipian">
-        <img class="card-poster"
-          src="https://www.fasel-hd.cam/wp-content/uploads/2026/01/bea005190310aae7a05f488689dccd69.jpg"
-          alt="Wu Liuqi: Jiyi Suipian" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Wu Liuqi: Jiyi Suipian</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/medalist-2nd">
-        <img class="card-poster"
-          src="https://www.fasel-hd.cam/wp-content/uploads/2026/01/71ad1d72a90a70b9ddafe04d707e8972-400x600.jpg"
-          alt="Medalist 2nd" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Medalist 2nd</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/sousou-no-frieren-2nd">
-        <img class="card-poster"
-          src="https://www.fasel-hd.cam/wp-content/uploads/2026/01/a4dcd5828c39793a2649acae4855eca9-400x600.jpg"
-          alt="Sousou no Frieren 2nd" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Sousou no Frieren 2nd</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/prism-rondo">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/ogbZc8ELD0XnzCtWE0jGNbesiNc.jpg"
-          alt="Prism Rondo" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Prism Rondo</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/kirei-ni-shitemoraemasu-ka">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/u3FoBE3Vw0tTHFV6djpSv5HHBU5.jpg"
-          alt="Kirei ni Shitemoraemasu ka." loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Kirei ni Shitemoraemasu ka.</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/3rd">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/sUB4lZghNnwQywKqgjIfJsyBqI2.jpg" alt="3rd"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">3rd</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/himesama-goumon-no-jikan-desu-2nd">
-        <img class="card-poster"
-          src="https://www.fasel-hd.cam/wp-content/uploads/2026/01/49d763e68dc5372e3a1f4741d9563552-400x600.jpg"
-          alt="Himesama " Goumon" no Jikan desu 2nd" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Himesama "Goumon" no Jikan desu 2nd</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="anime/high-school-kimengumi">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/8ota15pVJEQYzEM0lVb9iVtUvPQ.jpg"
-          alt="High School! Kimengumi" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">High School! Kimengumi</div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
-  <section class="section" id="series">
-    <h2 class="section-title">مسلسلات عربية وأجنبية 2026</h2>
-    <div class="grid">
+    <a class="card" href="anime/one-piece">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/b9nSI5cl2bTj7FlhQl4TIoOwvW6.jpg" alt="One Piece" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">One Piece</div></div>
+    </a>
+    <a class="card" href="anime/one-piece-special">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/b9nSI5cl2bTj7FlhQl4TIoOwvW6.jpg" alt="One Piece - Special" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">One Piece - Special</div></div>
+    </a>
+    <a class="card" href="anime/shingeki-no-kyojin">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/yGi2XhxOqkiP0hVfviZMUJKC5Qn.jpg" alt="Shingeki no Kyojin" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Shingeki no Kyojin</div></div>
+    </a>
+    <a class="card" href="anime/solo-leveling">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gRjLWlk3tCIXGQ435D34XSsjGBw.jpg" alt="Solo Leveling" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Solo Leveling</div></div>
+    </a>
+    <a class="card" href="anime/shingeki-no-kyojin-the-final">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/yGi2XhxOqkiP0hVfviZMUJKC5Qn.jpg" alt="Shingeki no Kyojin: The Final" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Shingeki no Kyojin: The Final</div></div>
+    </a>
+    <a class="card" href="anime/kimetsu-no-yaiba">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/dwuVipGiAfGZ3SAOJClm6bweUts.jpg" alt="Kimetsu no Yaiba" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Kimetsu no Yaiba</div></div>
+    </a>
+    <a class="card" href="anime/jujutsu-kaisen">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/feS8k6Wy8b0mLGzJLwmEyVkZ9xx.jpg" alt="Jujutsu Kaisen" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Jujutsu Kaisen</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-صفر">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا صفر" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا صفر</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-الاولى">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الاولى" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الاولى</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-الثانية">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الثانية" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الثانية</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-الثالثة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الثالثة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الثالثة</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-الرابعة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الرابعة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الرابعة</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-الخامسة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الخامسة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الخامسة</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-السادسة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا السادسة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا السادسة</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-السابعة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا السابعة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا السابعة</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-الثامنة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الثامنة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الثامنة</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-التاسعة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا التاسعة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا التاسعة</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-العاشرة">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا العاشرة" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا العاشرة</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-الحادية-عشر">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الحادية عشر" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الحادية عشر</div></div>
+    </a>
+    <a class="card" href="anime/detective-conan-الاوفا-الثانية-عشر">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الثانية عشر" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الثانية عشر</div></div>
+    </a>
+    <a class="card" href="anime/hunter-x-hunter-2011">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/r8qfs8dBQnhSgym9onnmVlnm3zd.jpg" alt="Hunter x Hunter 2011" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Hunter x Hunter 2011</div></div>
+    </a>
+    <a class="card" href="anime/steel-ball-run-jojo-no-kimyou-na-bouken">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/k8iHQ2IU7j5FprP4oWrp03ClqJ9.jpg" alt="Steel Ball Run: JoJo no Kimyou na Bouken" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Steel Ball Run: JoJo no Kimyou na Bouken</div></div>
+    </a>
+    <a class="card" href="anime/fangkai-nage-nuwu">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/aALqEgghYorHOwR5pgeCq9YMrjj.jpg" alt="Fangkai Nage Nuwu" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Fangkai Nage Nuwu</div></div>
+    </a>
+    <a class="card" href="anime/immortality">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4QjbA5gmFrAq2gjdkTxKYPrsQGn.jpg" alt="IMMORTALITY" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">IMMORTALITY</div></div>
+    </a>
+    <a class="card" href="anime/pantheon">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/aZupC6eJhTe82e5I0JRaOBjFHOd.jpg" alt="Pantheon" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Pantheon</div></div>
+    </a>
+    <a class="card" href="anime/terror-man">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/jYXLVEkLhSgdCdmgisPzTGY4kYP.jpg" alt="Terror Man" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Terror Man</div></div>
+    </a>
+    <a class="card" href="anime/baki-dou">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wViuuy27uauEs3A8Vn69Q43MFAQ.jpg" alt="Baki-dou" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Baki-dou</div></div>
+    </a>
+    <a class="card" href="anime/omae-gotoki-ga-maou-ni-kateru-to-omouna">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/nH6Ch1q5rwdRs56bYTA9wuOhfbL.jpg" alt="Omae Gotoki ga Maou ni Kateru to Omouna" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Omae Gotoki ga Maou ni Kateru to Omouna</div></div>
+    </a>
+    <a class="card" href="anime/meitantei-precure">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/zuPQ9R5x17EM6xEA37TLRkL2BGD.jpg" alt="Meitantei Precure!" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Meitantei Precure!</div></div>
+    </a>
+    <a class="card" href="anime/prism-rondo">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ogbZc8ELD0XnzCtWE0jGNbesiNc.jpg" alt="Prism Rondo" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Prism Rondo</div></div>
+    </a>
+    <a class="card" href="anime/kirei-ni-shitemoraemasu-ka">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/u3FoBE3Vw0tTHFV6djpSv5HHBU5.jpg" alt="Kirei ni Shitemoraemasu ka." loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Kirei ni Shitemoraemasu ka.</div></div>
+    </a>
+    <a class="card" href="anime/3rd">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sUB4lZghNnwQywKqgjIfJsyBqI2.jpg" alt="3rd" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">3rd</div></div>
+    </a>
+    <a class="card" href="anime/high-school-kimengumi">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/8ota15pVJEQYzEM0lVb9iVtUvPQ.jpg" alt="High School! Kimengumi" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">High School! Kimengumi</div></div>
+    </a>
+  </div>
+</section>
+<section class="section" id="series">
+  <h2 class="section-title">مسلسلات عربية وأجنبية 2026</h2>
+  <div class="grid">
 
-      <a class="card" href="series/peaky-blinders">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/zGFqvijcGAh2QoUfI1zFf1HZb0N.jpg"
-          alt="Peaky Blinders" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Peaky Blinders</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="series/moon-knight">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/mdsh6PgayTmhNJIoPgh2zEajLZm.jpg"
-          alt="Moon Knight" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Moon Knight</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="series/halo">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/rKlAQe02AUrwDqzfSGbLnwoNHPJ.jpg" alt="Halo"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Halo</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="series/the-last-kingdom">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/8eJf0hxgIhE6QSxbtuNCekTddy1.jpg"
-          alt="The Last Kingdom" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">The Last Kingdom</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="series/game-of-thrones">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/ymlP99B7EQCJbJcdsQFtnh9ADlF.jpg"
-          alt="Game of Thrones" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Game of Thrones</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="series/euphoria">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/iTmIT0hWJeKHg3BTEsSiDSmtKTL.jpg"
-          alt="Euphoria" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Euphoria</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="series/the-walking-dead">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/sE9IMFfWMVcPZcfrsxDclcRuhYo.jpg"
-          alt="The Walking Dead" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">The Walking Dead</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="series/reacher">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/jBIAkLtnLFLDRrGtK9rHv871mXV.jpg" alt="Reacher"
-          loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Reacher</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="series/the-sopranos">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/2QKckxlc3l445WDFfkVlosFqg0F.jpg"
-          alt="The Sopranos" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">The Sopranos</div>
-          </div>
-        </div>
-      </a>
-      <a class="card" href="series/invincible">
-        <img class="card-poster" src="https://image.tmdb.org/t/p/original/pKf7GfJcuU4ypEUjGnts2D83oqL.jpg"
-          alt="Invincible" loading="lazy">
-        <div class="card-overlay">
-          <div class="card-meta">مسلسل</div>
-        </div>
-        <div class="card-bottom">
-          <div class="card-title">
-            <div class="card-title-ar">Invincible</div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </section>
+    <a class="card" href="series/peaky-blinders">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/zGFqvijcGAh2QoUfI1zFf1HZb0N.jpg" alt="Peaky Blinders" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Peaky Blinders</div></div>
+    </a>
+    <a class="card" href="series/moon-knight">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/mdsh6PgayTmhNJIoPgh2zEajLZm.jpg" alt="Moon Knight" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Moon Knight</div></div>
+    </a>
+    <a class="card" href="series/halo">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rKlAQe02AUrwDqzfSGbLnwoNHPJ.jpg" alt="Halo" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Halo</div></div>
+    </a>
+    <a class="card" href="series/the-last-kingdom">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/8eJf0hxgIhE6QSxbtuNCekTddy1.jpg" alt="The Last Kingdom" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">The Last Kingdom</div></div>
+    </a>
+    <a class="card" href="series/game-of-thrones">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ymlP99B7EQCJbJcdsQFtnh9ADlF.jpg" alt="Game of Thrones" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Game of Thrones</div></div>
+    </a>
+    <a class="card" href="series/euphoria">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/iTmIT0hWJeKHg3BTEsSiDSmtKTL.jpg" alt="Euphoria" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Euphoria</div></div>
+    </a>
+    <a class="card" href="series/the-walking-dead">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sE9IMFfWMVcPZcfrsxDclcRuhYo.jpg" alt="The Walking Dead" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">The Walking Dead</div></div>
+    </a>
+    <a class="card" href="series/reacher">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/jBIAkLtnLFLDRrGtK9rHv871mXV.jpg" alt="Reacher" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Reacher</div></div>
+    </a>
+    <a class="card" href="series/the-sopranos">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/2QKckxlc3l445WDFfkVlosFqg0F.jpg" alt="The Sopranos" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">The Sopranos</div></div>
+    </a>
+    <a class="card" href="series/invincible">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/pKf7GfJcuU4ypEUjGnts2D83oqL.jpg" alt="Invincible" loading="lazy">
+      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
+      <div class="card-bottom"><div class="card-title">Invincible</div></div>
+    </a>
+  </div>
+</section>
   <!-- DYNAMIC_CONTENT_END -->
 
   <footer class="footer">
@@ -2680,12 +1010,36 @@
     <p style="margin-top:8px; font-size:12px;">مسلسلات رمضان 2026 • مشاهدة حصرية • بجودة عالية</p>
   </footer>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const catSelect = document.getElementById('category-select');
+      const sortSelect = document.getElementById('sort-select');
+      const sections = document.querySelectorAll('section.section');
 
+      // Sort dummy logic (frontend shuffling for fun)
+      sortSelect.addEventListener('change', () => {
+        sections.forEach(sec => {
+          const grid = sec.querySelector('.grid');
+          if (!grid) return;
+          const cards = Array.from(grid.children);
+          cards.sort(() => Math.random() - 0.5); // Random shuffle to simulate sorting for now
+          cards.forEach(card => grid.appendChild(card));
+        });
+      });
 
-
-
-
-
+      // Category logic
+      catSelect.addEventListener('change', (e) => {
+        const selected = e.target.value;
+        sections.forEach(sec => {
+          if (selected === 'all' || sec.id === selected) {
+            sec.style.display = 'block';
+          } else {
+            sec.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>

@@ -41,11 +41,19 @@ def clean_title_junk(text):
     return res.strip().replace('  ', ' ')
 
 def clean_search_query(text):
-    # Strip seasonal/episode info then replace hyphen/junk with space
+    # Fallback to English words first if possible as TMDB handles them better
+    eng_only = re.findall(r'[A-Za-z0-9\s]+', text)
+    eng_str = " ".join(eng_only).strip()
+    # Replace some common keywords to ensure pure titles
+    eng_str = re.sub(r'\s+(Season|Episode|Special|Ep|EP).*', '', eng_str, flags=re.I).strip()
+    
+    if len(eng_str) > 2:
+        # Extra step to trim trailing numbers which might be years or episodes, 
+        # but only if safely separated. e.g. "One Piece" 
+        return re.sub(r'\s+', ' ', eng_str).lower().strip()
+    
     res = clean_title_junk(text)
     res = res.replace('-', ' ').replace('_', ' ')
-    # User said "Moon Knight الموسم الاول" = no, "Moon Knight" = yes
-    # Also "dire space blasete0 -"
     res = re.sub(r'[^a-z0-9\u0600-\u06FF\s]', ' ', res.lower())
     return re.sub(r'\s+', ' ', res).strip()
 
@@ -54,9 +62,8 @@ def clean_slug(text, strip_all=True):
     if strip_all:
         res = clean_title_junk(text)
     else:
-        # Keep seasonal/episode info for unique watch pages but clean junk
         res = re.sub(r'[أإآ]', 'ا', text)
-        junk = ['- فاصل اعلاني', 'فاصل اعلاني', '- فاصل-اعلاني', 'فاصل-اعلاني', 'مشاهدة وتحميل', 'مترجم اون لاين', 'بجودة عالية', 'كامل مترجم', 'فيلم', 'مسلسل', 'انمي', 'برنامج', 'اعلان', 'حصرية', 'حصري']
+        junk = ['- فاصل اعلاني', 'فاصل اعلاني', '- فاصل-اعلاني', 'فاصل-اعلاني', 'مشاهدة وتحميل', 'مترجم اون لاين', 'بجودة عالية', 'كامل مترجم', 'فيلم', 'مسلسل', 'انمي', 'أنمي', 'برنامج', 'اعلان', 'حصرية', 'حصري']
         for j in junk: res = res.replace(j, '')
         res = re.sub(r'[\(\[].*?[\)\]]', '', res)
     
@@ -215,15 +222,17 @@ def generate_html(std_item, template_content, episodes=None):
     return html
 
 def main():
-    template_path = 'movies/24.html'
-    if not os.path.exists(template_path): return
+    template_path = 'movies.html'
+    if not os.path.exists(template_path): 
+        print("Template not found!")
+        return
     with open(template_path, 'r', encoding='utf-8') as f: template_content = f.read()
 
     # Cleanup
     for folder in ['ramadan-trailer', 'movies', 'watch', 'series', 'anime']:
         if os.path.exists(folder):
             for f in os.listdir(folder):
-                if f.endswith('.html') and f != '24.html': os.remove(os.path.join(folder, f))
+                if f.endswith('.html'): os.remove(os.path.join(folder, f))
         os.makedirs(folder, exist_ok=True)
 
     categories = {
@@ -295,8 +304,10 @@ def main():
             with open(page_path, 'w', encoding='utf-8') as pf: pf.write(html)
         
         href = f"{folder}/{slug}"
-        if cat_id not in index_sections: index_sections[cat_id] = []
-        index_sections[cat_id].append({'title': clean_title_junk(parent['title']), 'poster': poster, 'href': href, 'label': "حصري" if cat_id == 'ramadan' else ("فيلم" if cat_id == 'movies' else "مسلسل")})
+        if info:
+            if 'fasel' in poster: print("WTF: info is truthy but poster is fasel:", info, poster)
+            if cat_id not in index_sections: index_sections[cat_id] = []
+            index_sections[cat_id].append({'title': clean_title_junk(parent['title']), 'poster': poster, 'href': href, 'label': "حصري" if cat_id == 'ramadan' else ("فيلم" if cat_id == 'movies' else "مسلسل")})
         processed_urls.add(f"https://tomito.xyz/{href}")
         
         # 2. Generate Episode Pages (Optional, in watch/)
@@ -325,15 +336,20 @@ def main():
     for cat_id, items in index_sections.items():
         sections_html += f'\n<section class="section" id="{cat_id}">\n  <h2 class="section-title">{cat_titles[cat_id]}</h2>\n  <div class="grid">\n'
         for item in items:
-            sections_html += f'\n    <a class="card" href="{item["href"]}">\n      <img class="card-poster" src="{item["poster"]}" alt="{item["title"]}" loading="lazy">\n      <div class="card-overlay"><div class="card-meta">{item["label"]}</div></div>\n      <div class="card-bottom"><div class="card-title"><div class="card-title-ar">{item["title"]}</div></div></div>\n    </a>'
+            sections_html += f'\n    <a class="card" href="{item["href"]}">\n      <img class="card-poster" src="{item["poster"]}" alt="{item["title"]}" loading="lazy">\n      <div class="card-overlay"><div class="card-meta">{item["label"]}</div></div>\n      <div class="card-bottom"><div class="card-title">{item["title"]}</div></div>\n    </a>'
+
         sections_html += "\n  </div>\n</section>"
 
+    if 'fasel' in sections_html:
+        print("sections_html DEFINITELY CONTAINS FASEL!")
+    
     if os.path.exists('index.html'):
         with open('index.html', 'r', encoding='utf-8') as f: content = f.read()
         start_tag, end_tag = '<!-- DYNAMIC_CONTENT_START -->', '<!-- DYNAMIC_CONTENT_END -->'
-        pattern = re.compile(re.escape(start_tag) + r'.*?' + re.escape(end_tag), re.DOTALL)
-        if pattern.search(content):
-            new_content = pattern.sub(f"{start_tag}\n{sections_html}\n{end_tag}", content)
+        if start_tag in content and end_tag in content:
+            before = content.split(start_tag)[0]
+            after = content.split(end_tag)[1]
+            new_content = before + start_tag + '\n' + sections_html + '\n  ' + end_tag + after
             new_content = new_content.replace('.html"', '"').replace('.html#', '#')
             with open('index.html', 'w', encoding='utf-8') as f: f.write(new_content)
 

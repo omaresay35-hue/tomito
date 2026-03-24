@@ -1940,5 +1940,80 @@
     "id": 1398,
     "type": "tv",
     "orig_title": "آل سوبرانو"
+  },
+  "2026 1 1": {
+    "poster": "https://image.tmdb.org/t/p/original/sZoyw5SWNHR2VsKvp1bUw0wW4Rs.jpg",
+    "id": 1635058,
+    "type": "movie",
+    "orig_title": "Stokstaartjes  cyclus 1: opwekking 2026"
+  },
+  "2 2": {
+    "poster": "https://image.tmdb.org/t/p/original/qL1MBO7f8V7jXSB46SgpetwqNaV.jpg",
+    "id": 1084242,
+    "type": "movie",
+    "orig_title": "زوتروبوليس ٢"
+  },
+  "2026 1": {
+    "poster": "https://image.tmdb.org/t/p/original/hYNfFROv5Ce6Hl6kKHvhVrZmJCM.jpg",
+    "id": 314242,
+    "type": "tv",
+    "orig_title": "11% (2026)"
+  },
+  "2 007 1": {
+    "poster": "https://image.tmdb.org/t/p/original/478IpJI0Ty6xVVZZIOSOdUg3irT.jpg",
+    "id": 58695,
+    "type": "movie",
+    "orig_title": "The Impossible Kid"
+  },
+  "2 1": {
+    "poster": "https://image.tmdb.org/t/p/original/7eqb8Iv9DrxN2nkOTUiZzviEOlv.jpg",
+    "id": 31654,
+    "type": "tv",
+    "orig_title": "أبطال الديجيتال الجزئين 1-2"
+  },
+  "bro": {
+    "poster": "https://image.tmdb.org/t/p/original/bMu6AzlT6IXZ1twDaoTXp1Zeap4.jpg",
+    "id": 116503,
+    "type": "movie",
+    "orig_title": "Bro'"
+  },
+  "2 3": {
+    "poster": "https://image.tmdb.org/t/p/original/37w9D05BhjEi2yKyT9XKHXcVJIr.jpg",
+    "id": 208344,
+    "type": "tv",
+    "orig_title": "3日2夜"
+  },
+  "6 8": {
+    "poster": "https://image.tmdb.org/t/p/original/lovHpXLDIuqlrbTWhpFSqcSEHPD.jpg",
+    "id": 281481,
+    "type": "tv",
+    "orig_title": "LE 6/8 ANSANM"
+  },
+  "2 7": {
+    "poster": "https://image.tmdb.org/t/p/original/vj8lUERUvFH3O2V97BUEAUDmC8I.jpg",
+    "id": 16058,
+    "type": "tv",
+    "orig_title": "I Love the '70s: Volume 2"
+  },
+  "3 2": {
+    "poster": "https://image.tmdb.org/t/p/original/37w9D05BhjEi2yKyT9XKHXcVJIr.jpg",
+    "id": 208344,
+    "type": "tv",
+    "orig_title": "3日2夜"
+  },
+  "shingeki no kyojin attack on titan": {
+    "poster": "https://image.tmdb.org/t/p/original/yGi2XhxOqkiP0hVfviZMUJKC5Qn.jpg",
+    "id": 1429,
+    "type": "tv",
+    "orig_title": "هجوم العمالقة"
+  },
+  "shingeki no kyojin attack on titan kuinaki sentaku ova": null,
+  "shingeki no kyojin attack on titan ova": null,
+  "shingeki no kyojin attack on titan lost girls ova": null,
+  "high school kimengumi 2026": {
+    "poster": "https://image.tmdb.org/t/p/original/8ota15pVJEQYzEM0lVb9iVtUvPQ.jpg",
+    "id": 308142,
+    "type": "tv",
+    "orig_title": "ハイスクール！奇面組"
   }
 }
