@@ -1,6 +1,7 @@
 name: 🤖 Auto Generate Pages & Sitemap
 
 on:
+  schedule:
     # Run once per day at midnight — 1 run/day × ~1667×3 categories ≈ 5,000 pages/day
     - cron: '0 0 * * *'
   workflow_dispatch:
