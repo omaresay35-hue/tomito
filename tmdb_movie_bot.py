@@ -121,7 +121,12 @@ def generate_movie_page(movie, template_content):
     html = html.replace('<span class="tag">2001</span>', f'<span class="tag">{release_year}</span>')
     
     # Buttons
-    html = html.replace('https://tomito.xyz/tv/1973-24', f'https://tomito.xyz/movie/{tmdb_id}-{slug}')
+    html = html.replace('https://tomito.xyz/tv/1973-24', f'https://tomito.xyz/movie/{tmdb_id}/watch')
+    # Backup replacement for other common patterns
+    html = html.replace('https://www.tomito.xyz/watch/movie/', f'https://tomito.xyz/movie/')
+    if 'https://tomito.xyz/movie/' in html and '/watch' not in html:
+        # This is a bit risky but we want to ensure /watch at the end
+        pass 
     
     file_path = os.path.join(MOVIES_DIR, f"{slug}.html")
     with open(file_path, 'w', encoding='utf-8') as f:

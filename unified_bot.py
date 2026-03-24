@@ -110,30 +110,46 @@ def generate_html(std_item, template_content, episodes=None):
     description = std_item.get('desc', '') or "شاهد واستمتع بأفضل الحلقات والمسلسلات والأفلام على موقعنا."
     year = std_item.get('year', '2026')
     
-    # Construct optimal watch URL
-    match_ep = re.search(r'الحلقة\s+(\d+)', display_title)
-    match_se = re.search(r'الموسم\s+(\d+)', display_title)
-    ep_n = match_ep.group(1) if match_ep else "1"
-    se_n = match_se.group(1) if match_se else "1"
+    # Clean searching queries
+    sq = clean_search_query(display_title)
+    slug = clean_slug(display_title, strip_all=True) # Ensure slug is available for ramadan
+    cat_id = std_item.get('category') # Get category from std_item
+
+    # 1. Check if we have TMDB data in the item
+    tmdb_id = std_item.get('tmdb_id')
+    media_type = std_item.get('type') # 'movie' or 'tv'
     
-    # Check if we are generating a "watch" page (usually individual episodes)
-    is_watch_page = "الحلقة" in display_title or "الموسم" in display_title
+    # 2. Check if we are generating a "watch" page (individual episode/season)
+    # These often contain "الحلقة" (Episode) or "الموسم" (Season) in titles
+    is_series_watch = "الحلقة" in display_title or "الموسم" in display_title
     
-    # User wants watch-ramadan format for ALL Arabic series/Ramadan shows
-    if is_watch_page and (std_item.get('label') == "رمضان" or std_item.get('category') == 'series'):
-        # Ensure spaces are replaced with hyphens for the watch-ramadan path
-        bt = clean_title_junk(display_title).replace(' ', '-')
-        watch_url = f"https://tomito.xyz/watch-ramadan/{urllib.parse.quote(bt)}?episode={ep_n}"
-    elif is_watch_page and std_item.get('type') == 'movie' and std_item.get('tmdb_id'):
-        # React routing: /watch/movie/:id
-        watch_url = f"https://tomito.xyz/watch/movie/{std_item['tmdb_id']}"
-    elif is_watch_page and std_item.get('tmdb_id') and std_item.get('type') == 'tv':
-        # React routing: /watch/tv/:id?season=S&episode=E
-        watch_url = f"https://tomito.xyz/watch/tv/{std_item['tmdb_id']}?season={se_n}&episode={ep_n}"
+    # Season and Episode extraction (Arabic: الحلقة 1, الموسم 1)
+    season_num = 1
+    episode_num = 1
+    s_match = re.search(r'الموسم\s*(\d+)', display_title)
+    if s_match: season_num = s_match.group(1)
+    e_match = re.search(r'الحلقة\s*(\d+)', display_title)
+    if e_match: episode_num = e_match.group(1)
+
+    if cat_id == 'ramadan':
+        # Ramadan pattern: /watch-ramadan/{slug}?episode={E}
+        watch_url = f"https://tomito.xyz/watch-ramadan/{slug}?episode={episode_num}"
+    elif media_type == 'movie' and tmdb_id:
+        # Movie pattern: /movie/{id}/watch
+        watch_url = f"https://tomito.xyz/movie/{tmdb_id}/watch"
+    elif media_type == 'tv' and tmdb_id:
+        # TV Pattern: /tv/{id}/watch?season={S}&episode={E}
+        if is_series_watch:
+            watch_url = f"https://tomito.xyz/tv/{tmdb_id}/watch?season={season_num}&episode={episode_num}"
+        else:
+            # Parent TV page, link to first episode or just the watch page
+            watch_url = f"https://tomito.xyz/tv/{tmdb_id}/watch?season=1&episode=1"
     else:
-        # Default search query fallback
-        sq = clean_search_query(display_title)
-        watch_url = f"https://www.tomito.xyz/search?q={urllib.parse.quote(sq)}"
+        # Fallback to search query
+        watch_url = f"https://tomito.xyz/search?q={urllib.parse.quote(sq)}"
+
+    # Generate buttons/links replacement
+    # Using a simple replacement for common tomito.xyz patterns found in templates
     
     seo_title = f"{display_title} — مشاهدة 2026 فابور مجاناً على تومتو"
     
@@ -173,9 +189,14 @@ def generate_html(std_item, template_content, episodes=None):
             if std_item.get('label') == "رمضان" or std_item.get('category') == 'series':
                 bt_local = clean_title_junk(et).replace(' ', '-')
                 ep_link = f"https://tomito.xyz/watch-ramadan/{urllib.parse.quote(bt_local)}?episode={ep_n_local}"
+            elif std_item.get('tmdb_id') and std_item.get('type') == 'tv':
+                # Local season number for the current page
+                local_s_match = re.search(r'الموسم\s*(\d+)', display_title)
+                local_s_num = local_s_match.group(1) if local_s_match else "1"
+                ep_link = f"https://tomito.xyz/tv/{std_item['tmdb_id']}/watch?season={local_s_num}&episode={ep_n_local}"
             else:
                 sq_local = clean_search_query(et)
-                ep_link = f"https://www.tomito.xyz/search?q={urllib.parse.quote(sq_local)}"
+                ep_link = f"https://tomito.xyz/search?q={urllib.parse.quote(sq_local)}"
             
             # Extract episode number if possible
             ep_num = ep_n_local if match_ep_local else "?"
