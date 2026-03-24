@@ -19,13 +19,13 @@
 <body>
 
   <header class="header">
-    <a class="logo" href="../index.html">TOMITO</a>
+    <a class="logo" href="../index">TOMITO</a>
     <ul class="nav">
-      <li><a href="../index.html">الرئيسية</a></li>
-      <li><a href="../index.html#ramadan">رمضان 2026</a></li>
-      <li><a href="../movies.html">أفلام و مسلسلات</a></li>
+      <li><a href="../index">الرئيسية</a></li>
+      <li><a href="../index#ramadan">رمضان 2026</a></li>
+      <li><a href="../movies">أفلام و مسلسلات</a></li>
     </ul>
-    <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
+    <a class="header-btn" href="https://www.tomito.xyz/search?q=%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%20%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9">الموقع الرسمي</a>
   </header>
 
   <div class="series-hero">
@@ -33,7 +33,7 @@
     <div class="series-info">
       <h1 class="series-title" style="display: flex; flex-direction: column; gap: 5px;">
         <span>مسلسل خطوات صغيرة</span>
-        <span style="font-size: 0.6em; color: #aaa;"></span>
+        <span style="font-size: 0.6em; color: #aaa;">خطوات صغيرة</span>
       </h1>
       <div class="series-desc">
         <div style="margin-bottom: 20px; font-family: sans-serif;">Counterterrorism agent Jack Bauer fights the bad guys
@@ -47,14 +47,14 @@
       <div class="series-tags">
         <span class="tag">TV Series | مسلسل</span>
         <span class="tag">⭐ 7.8</span>
-        <span class="tag">2026</span>
+        <span class="tag">2001</span>
       </div>
 
       <div style="margin-top:30px; display:flex; gap:15px; flex-wrap:wrap;">
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة" target="_blank" class="btn btn-primary"
+        <a href="https://www.tomito.xyz/search?q=%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%20%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9" target="_blank" class="btn btn-primary"
           style="background:#e50914; color:#fff; border-radius:6px; font-weight:900; padding:12px 30px; text-decoration:none;">▶
           Watch Now / شاهد الآن</a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة" target="_blank" class="btn btn-secondary"
+        <a href="https://www.tomito.xyz/search?q=%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%20%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9" target="_blank" class="btn btn-secondary"
           style="background:rgba(255,255,255,0.1); color:#fff; border-radius:6px; font-weight:900; padding:12px 30px; text-decoration:none; border:1px solid rgba(255,255,255,0.2);">⬇
           Download / تحميل</a>
       </div>
@@ -62,7 +62,7 @@
   </div>
 
   <footer class="footer">
-    <p>© 2026 <a href="https://tomito.xyz">TOMITO MOVIES</a> — جميع الحقوق محفوظة</p>
+    <p>© 2026 <a href="https://www.tomito.xyz/search?q=%D8%AE%D8%B7%D9%88%D8%A7%D8%AA%20%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9">TOMITO MOVIES</a> — جميع الحقوق محفوظة</p>
   </footer>
 
 
@@ -70,154 +70,327 @@
 
 
 
-
-<style>
-    .episodes-section { margin-top: 50px; padding: 20px; border-top: 1px solid rgba(255,255,255,0.1); }
-    .section-title { font-size: 2em; margin-bottom: 30px; color: #fff; text-align: center; font-weight: 700; letter-spacing: 1px; }
-    .episodes-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
-    .episode-card {
-        display: flex; align-items: center; gap: 20px; padding: 20px;
-        background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 15px;
-        text-decoration: none; color: #fff; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
-    .episode-card:hover {
-        background: rgba(255, 255, 255, 0.1); border-color: #e50914;
-        transform: translateY(-5px) scale(1.02); box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-    }
-    .ep-number {
-        font-size: 1.5em; font-weight: 900; color: #e50914; min-width: 40px; text-align: center;
-        text-shadow: 0 0 10px rgba(229, 9, 20, 0.3);
-    }
-    .ep-info { display: flex; flex-direction: column; }
-    .ep-title { font-size: 1.1em; font-weight: 600; line-height: 1.4; color: #eee; }
-    .ep-action { font-size: 0.8em; color: #aaa; margin-top: 5px; }
-</style>
-<div class="episodes-section">
+<div class="episodes-section" style="width: 100%; max-width: 1200px; margin: 20px auto; padding: 0 20px;">
     <h2 class="section-title">الحلقات المتاحة</h2>
-    <div class="episodes-grid">
+    <div class="episodes-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 15px;">
 
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=1" class="episode-card" target="_blank">
-          <div class="ep-number">1</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=1" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">1</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 1 الاولي</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 1 الاولي</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=2" class="episode-card" target="_blank">
-          <div class="ep-number">2</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=1" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">1</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 2 الثانية</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 1 الاولي</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=3" class="episode-card" target="_blank">
-          <div class="ep-number">3</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=1" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">1</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 3 الثالثة</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 1 الاولي</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=4" class="episode-card" target="_blank">
-          <div class="ep-number">4</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=1" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">1</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 4 الرابعة</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 1 الاولي</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=5" class="episode-card" target="_blank">
-          <div class="ep-number">5</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=10" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">10</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 5 الخامسة</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 10 العاشرة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=6" class="episode-card" target="_blank">
-          <div class="ep-number">6</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=10" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">10</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 6 السادسة</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 10 العاشرة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=7" class="episode-card" target="_blank">
-          <div class="ep-number">7</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=10" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">10</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 7 السابعة</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 10 العاشرة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=8" class="episode-card" target="_blank">
-          <div class="ep-number">8</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=11" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">11</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 8 الثامنة</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 11 الحادية عشر</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=9" class="episode-card" target="_blank">
-          <div class="ep-number">9</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=11" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">11</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 9 التاسعة</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 11 الحادية عشر</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=10" class="episode-card" target="_blank">
-          <div class="ep-number">10</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=11" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">11</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 10 العاشرة</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 11 الحادية عشر</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=11" class="episode-card" target="_blank">
-          <div class="ep-number">11</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=12" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">12</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 11 الحادية عشر</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 12 الثانية عشر</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=12" class="episode-card" target="_blank">
-          <div class="ep-number">12</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=12" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">12</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 12 الثانية عشر</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 12 الثانية عشر</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=13" class="episode-card" target="_blank">
-          <div class="ep-number">13</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=13" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">13</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 13 الثالثة عشر</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 13 الثالثة عشر</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
-        <a href="https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=14" class="episode-card" target="_blank">
-          <div class="ep-number">14</div>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=13" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">13</div>
           <div class="ep-info">
-            <div class="ep-title">مسلسل خطوات صغيرة الحلقة 14 الرابعة عشر</div>
-            <div class="ep-action">مشاهدة الآن على Tomito</div>
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 13 الثالثة عشر</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=14" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">14</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 14 الرابعة عشر</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=14" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">14</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 14 الرابعة عشر</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=2" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">2</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 2 الثانية</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=2" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">2</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 2 الثانية</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=2" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">2</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 2 الثانية</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=2" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">2</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 2 الثانية</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=3" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">3</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 3 الثالثة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=3" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">3</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 3 الثالثة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=3" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">3</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 3 الثالثة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=3" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">3</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 3 الثالثة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=4" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">4</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 4 الرابعة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=4" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">4</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 4 الرابعة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=4" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">4</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 4 الرابعة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=4" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">4</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 4 الرابعة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=5" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">5</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 5 الخامسة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=5" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">5</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 5 الخامسة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=5" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">5</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 5 الخامسة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=5" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">5</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 5 الخامسة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=6" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">6</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 6 السادسة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=6" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">6</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 6 السادسة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=6" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">6</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 6 السادسة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=6" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">6</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 6 السادسة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=7" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">7</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 7 السابعة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=7" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">7</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 7 السابعة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=7" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">7</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 7 السابعة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=8" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">8</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 8 الثامنة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=8" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">8</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 8 الثامنة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=8" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">8</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 8 الثامنة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=9" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">9</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 9 التاسعة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=9" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">9</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 9 التاسعة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
+          </div>
+        </a>
+        <a href="https://tomito.xyz/watch-ramadan/%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%B5%D8%BA%D9%8A%D8%B1%D8%A9?episode=9" class="episode-card" target="_blank" style="text-decoration: none; color: inherit; background: #1a1a1a; padding: 15px; border-radius: 8px; transition: 0.3s; display: flex; align-items: center; border: 1px solid #333;">
+          <div class="ep-number" style="background: #e50914; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-left: 15px; flex-shrink: 0;">9</div>
+          <div class="ep-info">
+            <div class="ep-title" style="font-weight: bold; margin-bottom: 5px;">مسلسل خطوات صغيرة الحلقة 9 التاسعة</div>
+            <div class="ep-action" style="font-size: 0.85em; color: #e50914;">مشاهدة الآن</div>
           </div>
         </a>
     </div>
   </div>
-
-<script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const epNum = urlParams.get('episode');
-    if (epNum) {
-        const episodes = {"1": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=1", "2": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=2", "3": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=3", "4": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=4", "5": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=5", "6": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=6", "7": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=7", "8": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=8", "9": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=9", "10": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=10", "11": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=11", "12": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=12", "13": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=13", "14": "https://tomito.xyz/ramadan-trailer/خطوات-صغيرة?episode=14"};
-        const selectedUrl = episodes[epNum];
-        if (selectedUrl) {
-            document.querySelectorAll('a[href*="tomito.xyz"]').forEach(link => {
-                if (link.classList.contains('btn-primary') || link.classList.contains('btn-secondary')) {
-                    link.href = selectedUrl;
-                }
-            });
-            const titleEl = document.querySelector('.series-title span');
-            if (titleEl && !titleEl.textContent.includes('الحلقة')) {
-                titleEl.textContent += ' - الحلقة ' + epNum;
-            }
-        }
-    }
-</script>
-
 </body>
 
 </html>
