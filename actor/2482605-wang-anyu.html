@@ -76,7 +76,7 @@ He made his acting debut in 2019 with the youth drama Our Shiny Days. Since then
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });

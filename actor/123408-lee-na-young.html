@@ -76,7 +76,7 @@ Lee married actor Won Bin on May 30, 2015, in a private small ceremony in a whea
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });

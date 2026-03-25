@@ -76,7 +76,7 @@ Bean's film roles include Patriot Games (1992), GoldenEye (1995), Ronin (1998), 
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });

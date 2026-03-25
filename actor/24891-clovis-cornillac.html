@@ -80,7 +80,7 @@ Cornillac was married to Caroline Proust from 1994 t</p>
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });

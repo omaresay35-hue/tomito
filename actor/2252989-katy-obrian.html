@@ -76,7 +76,7 @@ She is best known for her roles as bodybuilder Jackie in Love Lies Bleeding, I
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });
