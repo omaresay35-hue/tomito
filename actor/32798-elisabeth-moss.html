@@ -76,7 +76,7 @@ Moss began acting in the early 1990s and first gained recognition for playing Zo
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });

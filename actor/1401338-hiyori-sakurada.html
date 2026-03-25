@@ -76,7 +76,7 @@ In 2018, she was selected as 6 out of a total of 3,437 applicants in the exclusi
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });

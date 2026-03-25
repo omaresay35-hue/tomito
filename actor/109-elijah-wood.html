@@ -76,7 +76,7 @@ Wood made his film debut with a small part in Back to the Future Part II (1989).
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });

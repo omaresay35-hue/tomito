@@ -112,7 +112,7 @@
                 <span>Scott Connors</span>
             </a>
             <a href="/actor/1224072-emy-coligado" class="cast-card">
-                <img src="https://image.tmdb.org/t/p/original/fwbuK9EevdeUxwuL0QGf3MUdZZt.jpg" alt="Emy Coligado" loading="lazy" onerror="this.src='../favicon.ico'">
+                <img src="https://image.tmdb.org/t/p/original/n61EctuWbXK9QCIJyLt3eWSfqUu.jpg" alt="Emy Coligado" loading="lazy" onerror="this.src='../favicon.ico'">
                 <span>Emy Coligado</span>
             </a></div></section>
 
@@ -122,7 +122,7 @@
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });

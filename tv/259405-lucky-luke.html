@@ -83,6 +83,22 @@
                 <img src="https://image.tmdb.org/t/p/original/2gCaopWoxvPaL3gyPkYyZnzAY9U.jpg" alt="Jérôme Niel" loading="lazy" onerror="this.src='../favicon.ico'">
                 <span>Jérôme Niel</span>
             </a>
+            <a href="/actor/221633-sébastien-lalanne" class="cast-card">
+                <img src="https://image.tmdb.org/t/p/original/28oNL7uSHSJiaDnHWqnx56E1cvW.jpg" alt="Sébastien Lalanne" loading="lazy" onerror="this.src='../favicon.ico'">
+                <span>Sébastien Lalanne</span>
+            </a>
+            <a href="/actor/2752797-matthieu-lemeunier" class="cast-card">
+                <img src="https://image.tmdb.org/t/p/original/1pJ2nYyStbqwtixqtglFyV85oWJ.jpg" alt="Matthieu Lemeunier" loading="lazy" onerror="this.src='../favicon.ico'">
+                <span>Matthieu Lemeunier</span>
+            </a>
+            <a href="/actor/1332489-benoît-moret" class="cast-card">
+                <img src="https://image.tmdb.org/t/p/original/hNC6UVF9O70IgeQunUMBSpsDj3q.jpg" alt="Benoît Moret" loading="lazy" onerror="this.src='../favicon.ico'">
+                <span>Benoît Moret</span>
+            </a>
+            <a href="/actor/586758-marie-christine-orry" class="cast-card">
+                <img src="https://image.tmdb.org/t/p/original/nSo8Bqm6mGGRC7LsfLRGIxYP2lS.jpg" alt="Marie-Christine Orry" loading="lazy" onerror="this.src='../favicon.ico'">
+                <span>Marie-Christine Orry</span>
+            </a>
             <a href="/actor/1517908-victor-le-blond" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lxhFzzKKFqwAPiFPXzHwm4fNHsB.jpg" alt="Victor Le Blond" loading="lazy" onerror="this.src='../favicon.ico'">
                 <span>Victor Le Blond</span>
@@ -102,7 +118,7 @@
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });

@@ -92,7 +92,7 @@
                 <span>Bella Shepard</span>
             </a>
             <a href="/actor/3724996-zoë-steiner" class="cast-card">
-                <img src="https://image.tmdb.org/t/p/original/7ihFpQ8rLUETUhRnbjKo2KMJBd5.jpg" alt="Zoë Steiner" loading="lazy" onerror="this.src='../favicon.ico'">
+                <img src="https://image.tmdb.org/t/p/original/35Q3QzPHwV1brW8Vi5tvs90Al0B.jpg" alt="Zoë Steiner" loading="lazy" onerror="this.src='../favicon.ico'">
                 <span>Zoë Steiner</span>
             </a>
             <a href="/actor/585607-gina-yashere" class="cast-card">
@@ -122,7 +122,7 @@
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });

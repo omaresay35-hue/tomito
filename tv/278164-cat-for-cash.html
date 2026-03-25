@@ -79,17 +79,17 @@
                 <img src="https://image.tmdb.org/t/p/original/v1E9wnCbcfwc9UrCJvWzXFI2vM.jpg" alt="Kittiphop Sereevichayasawat" loading="lazy" onerror="this.src='../favicon.ico'">
                 <span>Kittiphop Sereevichayasawat</span>
             </a>
-            <a href="/actor/2262808-sapol-assawamunkong" class="cast-card">
-                <img src="https://image.tmdb.org/t/p/original/f2g2t7b5u4KT9BgzTZn4AfrSQeE.jpg" alt="Sapol Assawamunkong" loading="lazy" onerror="this.src='../favicon.ico'">
-                <span>Sapol Assawamunkong</span>
+            <a href="/actor/1203876-arisara-wongchalee" class="cast-card">
+                <img src="https://image.tmdb.org/t/p/original/p8KgolBImhMDs12qjzYiuYo9iUM.jpg" alt="Arisara Wongchalee" loading="lazy" onerror="this.src='../favicon.ico'">
+                <span>Arisara Wongchalee</span>
             </a>
             <a href="/actor/2729028-chayakorn-jutamas" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zXZeUQR0NaCHcnEEOIDYDMgAZZX.jpg" alt="Chayakorn Jutamas" loading="lazy" onerror="this.src='../favicon.ico'">
                 <span>Chayakorn Jutamas</span>
             </a>
-            <a href="/actor/1203876-arisara-wongchalee" class="cast-card">
-                <img src="https://image.tmdb.org/t/p/original/p8KgolBImhMDs12qjzYiuYo9iUM.jpg" alt="Arisara Wongchalee" loading="lazy" onerror="this.src='../favicon.ico'">
-                <span>Arisara Wongchalee</span>
+            <a href="/actor/2262808-sapol-assawamunkong" class="cast-card">
+                <img src="https://image.tmdb.org/t/p/original/f2g2t7b5u4KT9BgzTZn4AfrSQeE.jpg" alt="Sapol Assawamunkong" loading="lazy" onerror="this.src='../favicon.ico'">
+                <span>Sapol Assawamunkong</span>
             </a></div></section>
 
   <footer class="footer">
@@ -98,7 +98,7 @@
   <script>
     document.querySelectorAll('a').forEach(a => {
         let h = a.getAttribute('href');
-        if (h && h.endsWith('') && !h.startsWith('http') && !h.startsWith('//')) {
+        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
             a.setAttribute('href', h.slice(0, -5));
         }
     });

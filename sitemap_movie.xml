@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nordrama.live/movie/1000407-valensole-1965</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1000438-emergency</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -14,6 +8,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1000879-the-site</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1001010-winter-in-sokcho</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -241,12 +241,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1061771-decorado</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1062722-frankenstein</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -260,6 +254,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1063857-peg-o-my-heart</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1063861-vital-signs</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -344,12 +344,6 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1084242-zootopia-2</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1084390-big-deal</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -445,6 +439,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1099219-beyond-the-sin</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1100988-28-years-later</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -463,6 +463,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1103731-in-vitro</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1104845-plankton-the-movie</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -470,12 +476,6 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1106289-the-pickup</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1106382-bau-artist-at-war</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -757,7 +757,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1142149-the-girl-who-cried-pearls</loc>
+    <loc>https://nordrama.live/movie/1142921-tere-ishk-mein</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -889,7 +889,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1154725-robot-t-o</loc>
+    <loc>https://nordrama.live/movie/1155234-the-girl-who-stole-time</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1045,6 +1045,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1178602-miroirs-no-3</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1179684-amsterdamned-ii</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -1129,18 +1135,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1193824-rabbit-trap</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1193861-the-woman-in-the-line</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1194963-noise</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -1184,6 +1178,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1196573-she-rides-shotgun</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1196791-soul-on-fire</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1243,6 +1243,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1200063-a-gilded-game</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1200320-killing-faith</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -1256,6 +1262,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1201012-dhoom-dhaam</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1202306-hell-house-llc-lineage</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1340,12 +1352,6 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1212142-kinda-pregnant</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1212271-eleanor-the-great</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1567,6 +1573,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1230208-squad-36</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1230368-springsteen-deliver-me-from-nowhere</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -1741,6 +1753,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1241924-the-dumpling-queen</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1241983-train-dreams</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -1795,6 +1813,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1242669-mr-k</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1242686-salvable</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1242898-predator-badlands</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -1807,18 +1837,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1243006-h-is-for-hawk</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1243078-the-correspondent</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1243341-z-o-m-b-i-e-s-4-dawn-of-the-vampires</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -1826,6 +1844,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1243460-joes-college-road-trip</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1243800-paternal-leave</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -1915,12 +1939,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1252377-la-dolce-villa</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1252382-tyler-perrys-finding-joy</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -1987,12 +2005,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1255778-lucky-star</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1255788-the-gardener</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -2012,6 +2024,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1257406-two-prosecutors</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1257957-bison-kaalamaadan</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -2137,6 +2155,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1265827-retro</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1266127-ready-or-not-here-i-come</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -2191,6 +2215,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1269838-sunshine</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1271895-96-minutes</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -2215,12 +2245,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1273049-dragon</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1276073-bullet-train-explosion</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -2239,6 +2263,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1278164-blood-brothers-bara-naga</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1278853-woodwalkers-2</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -2251,12 +2281,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1278983-under-the-stars</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1279947-sunray-fallen-soldier</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -2264,6 +2288,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1280282-gabbys-dollhouse-the-movie</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1280330-operation-hadal</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -2311,7 +2341,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1284493-haunted-minds</loc>
+    <loc>https://nordrama.live/movie/1284505-forced-vacation</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -2396,12 +2426,6 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1290183-the-first-ride</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1290190-lokah-chapter-1-chandra</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -2629,13 +2653,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1306368-the-rip</loc>
+    <loc>https://nordrama.live/movie/1306525-the-elixir</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1306525-the-elixir</loc>
+    <loc>https://nordrama.live/movie/1306816-my-daughter-is-a-zombie</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -2737,6 +2761,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1314452-other</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1315303-primate</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -2762,6 +2792,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1316147-grand-prix-of-europe</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1316719-the-ugly</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -2827,12 +2863,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1319482-traumatika</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1319895-hostile-takeover</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -2857,12 +2887,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1320392-one-to-one-john-yoko</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1321108-dude</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -2876,6 +2900,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1321439-the-wrong-paris</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1322218-mononoke-the-movie-chapter-ii-the-ashes-of-rage</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -2989,12 +3019,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1329189-leo-lou</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1330421-bone-lake</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -3068,12 +3092,6 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1340355-under-ninja</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1340625-two-people-exchanging-saliva</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -3200,6 +3218,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1359916-5-centimeters-per-second</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1361934-teki-cometh</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -3427,12 +3451,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1380415-the-last-supper</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1380682-the-last-rodeo</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -3445,19 +3463,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1381405-mass-jathara</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1383247-agent-zero</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1383592-soft-leaves</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -3488,6 +3494,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1388366-popeye-the-slayer-man</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1388694-the-calendar-killer</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -3619,6 +3631,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1399515-the-adventure</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1400032-10dance</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -3649,6 +3667,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1401318-a-merry-little-ex-mas</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1401357-demon-squad-tooth-and-claw</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -3668,6 +3692,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1403735-laila</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1404734-mumu</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -3697,13 +3727,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1407523-tu-meri-main-tera-main-tera-tu-meri</loc>
+    <loc>https://nordrama.live/movie/1407861-the-bayou</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1407861-the-bayou</loc>
+    <loc>https://nordrama.live/movie/1407862-lost-in-the-spotlight</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -3781,7 +3811,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1419027-attack-13</loc>
+    <loc>https://nordrama.live/movie/1418522-delicious</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -3793,19 +3823,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1419826-the-world-will-tremble</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1420733-the-cursed-insatiable-desires</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1421153-living-the-land</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -3991,7 +4009,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1430593-tinsel-town</loc>
+    <loc>https://nordrama.live/movie/1430386-woman-and-child</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4075,12 +4093,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1438969-unicorni</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1439112-muzzle-city-of-wolves</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -4093,19 +4105,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1440144-la-deuda</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1440700-little-hearts</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1441563-my-secret-santa</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4148,6 +4148,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1445363-epic-elvis-presley-in-concert</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1446765-the-dam</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4196,6 +4202,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1450115-the-silent-service-the-battle-of-arctic-ocean</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1450257-clika</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4291,6 +4303,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1461714-my-mom-jayne</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1462229-pegasus-3</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -4327,12 +4345,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1465563-a-poet</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1466115-even-if-this-love-disappears-tonight</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -4352,6 +4364,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1469354-border-hunters</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1469823-the-pact</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4387,13 +4405,13 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1473354-sarvam-maya</loc>
+    <loc>https://nordrama.live/movie/1473635-things-unspoken</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1473635-things-unspoken</loc>
+    <loc>https://nordrama.live/movie/1474048-lupin-the-iiird-zenigata-and-the-two-lupins</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4495,19 +4513,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1491034-netflix-tudum-2025</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1491902-bang</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1492113-hipak</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4645,7 +4651,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1517123-on-the-road</loc>
+    <loc>https://nordrama.live/movie/1517772-unknown-number-the-high-school-catfish</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4682,6 +4688,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1523070-prendiamoci-una-pausa</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/1523145-your-heart-will-be-broken</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4747,18 +4759,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/1548017-the-family-mcmullen</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1548092-the-follies</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/1548113-the-muppet-show</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -4795,6 +4795,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1551003-rl-stines-pumpkinhead</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1551194-always-winter</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -4826,12 +4832,6 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1561955-stephen</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1562010-taylor-swift-the-eras-tour-the-final-show</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -4915,6 +4915,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/1584125-breakdown-1975</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/1584215-the-internship</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -4922,12 +4928,6 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/1584628-borrón-y-vida-nueva</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/1585476-kevin-costner-presents-the-first-christmas</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -5329,6 +5329,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/568770-the-containment</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/574475-final-destination-bloodlines</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -5336,6 +5342,12 @@
   </url>
   <url>
     <loc>https://nordrama.live/movie/575265-mission-impossible-the-final-reckoning</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nordrama.live/movie/587357-miss-moxy</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
@@ -5521,6 +5533,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/766369-nocturnal</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/766520-rosemead</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -5575,12 +5593,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/799882-the-bluff</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/801937-silent-night-deadly-night</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -5629,6 +5641,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://nordrama.live/movie/842931-sacramento</loc>
+    <lastmod>2026-03-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://nordrama.live/movie/843342-hamlet</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
@@ -5653,25 +5671,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nordrama.live/movie/850920-the-parenting</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/857800-becoming-led-zeppelin</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://nordrama.live/movie/858024-hamnet</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nordrama.live/movie/861211-in-the-name-of-blood</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
