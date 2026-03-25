@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -41,6 +43,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git config --global core.quotepath false
           git add .
           git commit -m "Automated update: Generated 10,000 pages, updated homepage and sitemap" || echo "No changes to commit"
-          git push
+          git push origin main
