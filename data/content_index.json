@@ -2073,6 +2073,24 @@
     ]
   },
   {
+    "title": "光·渊 / Justice in the Dark",
+    "title_ar": "光·渊",
+    "title_en": "Justice in the Dark",
+    "slug": "131037-justice-in-the-dark",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/puRxk6D3n4HWAyjIi9PML0xaQRQ.jpg",
+    "rating": 9.1,
+    "year": "2023",
+    "type": "tv",
+    "tmdb_id": 131037,
+    "genres": [
+      "Drama",
+      "Mystery",
+      "Crime",
+      "Sci-Fi & Fantasy"
+    ]
+  },
+  {
     "title_ar": "كلمات المشاهير الأخيرة: إيريك دين",
     "title_en": "Famous Last Words: Eric Dane",
     "slug": "1639000-famous-last-words-eric-dane",
@@ -2809,6 +2827,21 @@
     "tmdb_id": 237339,
     "genres": [
       "Comedy",
+      "Drama"
+    ]
+  },
+  {
+    "title": "กอดกันมั้ย นายตัวท็อป / Top Form",
+    "title_ar": "กอดกันมั้ย นายตัวท็อป",
+    "title_en": "Top Form",
+    "slug": "278847-top-form",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/t9UONPPGbc0nAaY84rTVcqTr1xU.jpg",
+    "rating": 9.0,
+    "year": "2025",
+    "type": "tv",
+    "tmdb_id": 278847,
+    "genres": [
       "Drama"
     ]
   },
@@ -12223,6 +12256,21 @@
     "tmdb_id": 221121,
     "genres": [
       "Crime",
+      "Documentary"
+    ]
+  },
+  {
+    "title": "食贫道",
+    "title_ar": "食贫道",
+    "title_en": "食贫道",
+    "slug": "244043-食贫道",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/mefDu7sNuNNvolUTrrW4y0se2Vo.jpg",
+    "rating": 8.3,
+    "year": "2023",
+    "type": "tv",
+    "tmdb_id": 244043,
+    "genres": [
       "Documentary"
     ]
   },
@@ -28067,6 +28115,24 @@
     ]
   },
   {
+    "title": "سبايدرمان الجار الودود / Your Friendly Neighborhood Spider-Man",
+    "title_ar": "سبايدرمان الجار الودود",
+    "title_en": "Your Friendly Neighborhood Spider-Man",
+    "slug": "138503-your-friendly-neighborhood-spider-man",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/kjcsNeqF52YUQ2rUBGLMHwLkxvR.jpg",
+    "rating": 7.8,
+    "year": "2025",
+    "type": "tv",
+    "tmdb_id": 138503,
+    "genres": [
+      "Animation",
+      "Action & Adventure",
+      "Sci-Fi & Fantasy",
+      "Comedy"
+    ]
+  },
+  {
     "title_ar": "كاراميلو",
     "title_en": "Caramelo",
     "slug": "1277988-caramelo",
@@ -31443,6 +31509,40 @@
       "Drama",
       "Mystery",
       "Soap"
+    ]
+  },
+  {
+    "title": "Marvel's Moon Girl and Devil Dinosaur",
+    "title_ar": "Marvel's Moon Girl and Devil Dinosaur",
+    "title_en": "Marvel's Moon Girl and Devil Dinosaur",
+    "slug": "92788-marvels-moon-girl-and-devil-dinosaur",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/1oFkjiF9fT2asKWjRiJtlbhu3hn.jpg",
+    "rating": 7.7,
+    "year": "2023",
+    "type": "tv",
+    "tmdb_id": 92788,
+    "genres": [
+      "Animation",
+      "Kids",
+      "Sci-Fi & Fantasy",
+      "Action & Adventure"
+    ]
+  },
+  {
+    "title": "お隣の天使様にいつの間にか駄目人間にされていた件 / The Angel Next Door Spoils Me Rotten",
+    "title_ar": "お隣の天使様にいつの間にか駄目人間にされていた件",
+    "title_en": "The Angel Next Door Spoils Me Rotten",
+    "slug": "154743-the-angel-next-door-spoils-me-rotten",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/hXhtuSNOpOrLV734jPsTRhiuu2C.jpg",
+    "rating": 7.7,
+    "year": "2023",
+    "type": "tv",
+    "tmdb_id": 154743,
+    "genres": [
+      "Animation",
+      "Comedy"
     ]
   },
   {
@@ -53937,6 +54037,22 @@
     ]
   },
   {
+    "title": "天久鷹央の推理カルテ / Ameku M.D.: Doctor Detective",
+    "title_ar": "天久鷹央の推理カルテ",
+    "title_en": "Ameku M.D.: Doctor Detective",
+    "slug": "250994-ameku-md-doctor-detective",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/jfUwdU2MSi4oZoc8hErn5cOI1Gs.jpg",
+    "rating": 7.2,
+    "year": "2025",
+    "type": "tv",
+    "tmdb_id": 250994,
+    "genres": [
+      "Animation",
+      "Mystery"
+    ]
+  },
+  {
     "title_ar": "المختطفة: إليزابيث سمارت",
     "title_en": "Kidnapped: Elizabeth Smart",
     "slug": "1595481-kidnapped-elizabeth-smart",
@@ -58431,6 +58547,23 @@
     "tmdb_id": 237508,
     "genres": [
       "Drama"
+    ]
+  },
+  {
+    "title": "شركة الكراسي / The Chair Company",
+    "title_ar": "شركة الكراسي",
+    "title_en": "The Chair Company",
+    "slug": "271267-the-chair-company",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/z3MztYTuHO5i62ThgyLNfTiuzGJ.jpg",
+    "rating": 7.1,
+    "year": "2025",
+    "type": "tv",
+    "tmdb_id": 271267,
+    "genres": [
+      "Comedy",
+      "Drama",
+      "Mystery"
     ]
   },
   {
@@ -75638,6 +75771,41 @@
     ]
   },
   {
+    "title": "بي بليد أكس / Beyblade X",
+    "title_ar": "بي بليد أكس",
+    "title_en": "Beyblade X",
+    "slug": "226688-beyblade-x",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/66wkm14IWdrY5LaKZDAbkD2T9Jt.jpg",
+    "rating": 6.8,
+    "year": "2023",
+    "type": "tv",
+    "tmdb_id": 226688,
+    "genres": [
+      "Animation",
+      "Action & Adventure",
+      "Comedy",
+      "Sci-Fi & Fantasy",
+      "Kids"
+    ]
+  },
+  {
+    "title": "Revenger",
+    "title_ar": "Revenger",
+    "title_en": "Revenger",
+    "slug": "211297-revenger",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/8crdrNPfiDOll3k03hyvOjyhHIN.jpg",
+    "rating": 6.8,
+    "year": "2023",
+    "type": "tv",
+    "tmdb_id": 211297,
+    "genres": [
+      "Animation",
+      "Action & Adventure"
+    ]
+  },
+  {
     "title_ar": "Warlord",
     "title_en": "Warlord",
     "slug": "1239115-warlord",
@@ -85505,6 +85673,22 @@
     ]
   },
   {
+    "title": "The Irrational",
+    "title_ar": "The Irrational",
+    "title_en": "The Irrational",
+    "slug": "217211-the-irrational",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/jJtOpfgV4iPu9RtxllHwZgn9dqI.jpg",
+    "rating": 6.6,
+    "year": "2023",
+    "type": "tv",
+    "tmdb_id": 217211,
+    "genres": [
+      "Crime",
+      "Drama"
+    ]
+  },
+  {
     "title_ar": "Aída y vuelta",
     "title_en": "Aída y vuelta",
     "slug": "1370123-aída-y-vuelta",
@@ -90353,6 +90537,24 @@
     "tmdb_id": 294840,
     "genres": [
       "Drama"
+    ]
+  },
+  {
+    "title": "冒険者になりたいと都に出て行った娘がSランクになってた / My Daughter Left the Nest and Returned an S-Rank Adventurer",
+    "title_ar": "冒険者になりたいと都に出て行った娘がSランクになってた",
+    "title_en": "My Daughter Left the Nest and Returned an S-Rank Adventurer",
+    "slug": "229609-my-daughter-left-the-nest-and-returned-an-s-rank-adventurer",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/vvKEnBhfGgbuADstFHD5Mn0hZnw.jpg",
+    "rating": 6.5,
+    "year": "2023",
+    "type": "tv",
+    "tmdb_id": 229609,
+    "genres": [
+      "Animation",
+      "Comedy",
+      "Action & Adventure",
+      "Sci-Fi & Fantasy"
     ]
   },
   {
@@ -95341,6 +95543,22 @@
     ]
   },
   {
+    "title": "The Curse",
+    "title_ar": "The Curse",
+    "title_en": "The Curse",
+    "slug": "114655-the-curse",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/k2qJPaGFdyFXEEJpwG5HrmeNpjv.jpg",
+    "rating": 6.4,
+    "year": "2023",
+    "type": "tv",
+    "tmdb_id": 114655,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ]
+  },
+  {
     "title_ar": "F Valentine's Day",
     "title_en": "F Valentine's Day",
     "slug": "1429605-f-valentines-day",
@@ -99505,6 +99723,21 @@
     "tmdb_id": 245679,
     "genres": [
       "Drama"
+    ]
+  },
+  {
+    "title": "Sconfort Zone",
+    "title_ar": "Sconfort Zone",
+    "title_en": "Sconfort Zone",
+    "slug": "286690-sconfort-zone",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/nCsD8EYth5LEDcP7BsnnLJKtzsS.jpg",
+    "rating": 6.3,
+    "year": "2025",
+    "type": "tv",
+    "tmdb_id": 286690,
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -104335,6 +104568,38 @@
     "tmdb_id": 253896,
     "genres": [
       "Comedy"
+    ]
+  },
+  {
+    "title": "Found",
+    "title_ar": "Found",
+    "title_en": "Found",
+    "slug": "214160-found",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/b6Uo0Tkjhqlze7R7DgGmP9Fq4Ce.jpg",
+    "rating": 6.2,
+    "year": "2023",
+    "type": "tv",
+    "tmdb_id": 214160,
+    "genres": [
+      "Drama",
+      "Crime"
+    ]
+  },
+  {
+    "title": "Duster",
+    "title_ar": "Duster",
+    "title_en": "Duster",
+    "slug": "113959-duster",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/wYBsKEFU0qHdhSI9QtQjL8HELMn.jpg",
+    "rating": 6.2,
+    "year": "2025",
+    "type": "tv",
+    "tmdb_id": 113959,
+    "genres": [
+      "Crime",
+      "Drama"
     ]
   },
   {
@@ -118603,6 +118868,21 @@
     "genres": [
       "Crime",
       "Mystery"
+    ]
+  },
+  {
+    "title": "Survival Mode",
+    "title_ar": "Survival Mode",
+    "title_en": "Survival Mode",
+    "slug": "294879-survival-mode",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/ygsZL4FCAmcJnrHqIHPEOSJHlS1.jpg",
+    "rating": 5.8,
+    "year": "2025",
+    "type": "tv",
+    "tmdb_id": 294879,
+    "genres": [
+      "Documentary"
     ]
   },
   {
@@ -139303,6 +139583,21 @@
       "Drama",
       "Action & Adventure",
       "Comedy"
+    ]
+  },
+  {
+    "title": "Number One on the Call Sheet",
+    "title_ar": "Number One on the Call Sheet",
+    "title_en": "Number One on the Call Sheet",
+    "slug": "285310-number-one-on-the-call-sheet",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/mLibEk2hWf6OqywiYUpumGf07eP.jpg",
+    "rating": 4.3,
+    "year": "2025",
+    "type": "tv",
+    "tmdb_id": 285310,
+    "genres": [
+      "Documentary"
     ]
   },
   {
