@@ -260,6 +260,7 @@ def create_page(item_data, media_type):
         f.write(html)
 
     index_entry = {
+        'title': f"{title_ar} / {title_en}" if title_ar != title_en else title_ar,
         'title_ar': title_ar,
         'title_en': title_en,
         'slug': slug,
@@ -316,11 +317,11 @@ def create_actor_page(actor_id):
     return f"actor/{slug}"
 
 # --- Fetch IDs from TMDB ---
-def fetch_ids(media_type, years, target=5000, genre=None):
+def fetch_ids(media_type, years, target=5000, genre=None, start_page=1):
     ids = set()
     for year in years:
-        page = 1
-        while len(ids) < target and page <= 500:
+        page = start_page
+        while len(ids) < target and page <= start_page + 500:
             params = {
                 'page': page,
                 'sort_by': 'popularity.desc',
@@ -381,29 +382,35 @@ def main(limit=20000):
         path = os.path.join(BASE_PATH, d)
         os.makedirs(path, exist_ok=True)
 
-    # Clean old pages
-    for d in ['movie', 'tv', 'actor']:
-        dirpath = os.path.join(BASE_PATH, d)
-        if os.path.exists(dirpath):
-            for f in os.listdir(dirpath):
-                if f.endswith('.html'):
-                    os.remove(os.path.join(dirpath, f))
-        print(f"  Cleaned {d}/")
+    # Skipping old page cleanup to allow accumulation
+    print("  Incremental mode: Preserving existing pages...")
 
-    # Distribution: movies 1000, series 1000, actors 1000
-    movie_target = 1000
-    tv_target = 1000
-    actor_target = 1000
+    # Distribution
+    movie_target = limit // 2
+    tv_target = limit // 2
     years = [2026, 2025, 2024, 2023, 2022]
 
-    print(f"\nFetching TMDB IDs...")
-    movie_ids = fetch_ids('movie', years, target=movie_target)
-    print(f"  Movies: {len(movie_ids)} IDs")
-    tv_ids = fetch_ids('tv', years, target=tv_target)
-    print(f"  TV Series: {len(tv_ids)} IDs")
-
+    # Load existing content index
     all_index = []
-    all_pages = []
+    index_path = os.path.join(BASE_PATH, 'data', 'content_index.json')
+    if os.path.exists(index_path):
+        try:
+            with open(index_path, 'r', encoding='utf-8') as f:
+                all_index = json.load(f)
+            print(f"  Loaded {len(all_index)} existing items from index.")
+        except Exception:
+            print("  Warning: Could not load existing index, starting fresh.")
+
+    existing_ids = {item.get('tmdb_id') for item in all_index if item.get('tmdb_id')}
+    existing_slugs = {item.get('slug') for item in all_index if item.get('slug')}
+    all_pages = [f"{item['folder']}/{item['slug']}" for item in all_index]
+    
+    print(f"\nFetching TMDB IDs (Starting from page {getattr(args, 'start_page', 1)})...")
+    movie_ids = [mid for mid in fetch_ids('movie', years, target=movie_target, start_page=getattr(args, 'start_page', 1)) if mid not in existing_ids]
+    print(f"  New Movies: {len(movie_ids)} IDs")
+    tv_ids = [tid for tid in fetch_ids('tv', years, target=tv_target, start_page=getattr(args, 'start_page', 1)) if tid not in existing_ids]
+    print(f"  New TV Series: {len(tv_ids)} IDs")
+
     actor_ids = set()
     page_count = [0]
     errors = [0]
@@ -475,7 +482,8 @@ def main(limit=20000):
 
     # Save content index
     index_path = os.path.join(BASE_PATH, 'data', 'content_index.json')
-    all_index.sort(key=lambda x: x.get('rating', 0), reverse=True)
+    # Use float casting to handle old string ratings and new float ratings
+    all_index.sort(key=lambda x: float(x.get('rating', 0)), reverse=True)
     with open(index_path, 'w', encoding='utf-8') as f:
         json.dump(all_index, f, ensure_ascii=False, indent=2)
     print(f"\nSaved content index: {len(all_index)} items → {index_path}")
@@ -492,6 +500,7 @@ def main(limit=20000):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--limit', type=int, default=20000)
+    parser.add_argument('--limit', type=int, default=9000)
+    parser.add_argument('--start-page', type=int, default=1)
     args = parser.parse_args()
     main(limit=args.limit)
