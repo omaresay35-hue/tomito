@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — الصفحة غير موجودة — TOMITO</title>
+  <meta name="description" content="عذراً، الصفحة التي تبحث عنها غير موجودة. عد إلى الصفحة الرئيسية لمتابعة مشاهدة أفضل الأفلام والمسلسلات.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    .error-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: calc(100vh - 160px);
+      text-align: center;
+      padding: 60px 5%;
+      background: radial-gradient(circle at center, rgba(222, 103, 24, 0.05) 0%, transparent 70%);
+    }
+    
+    .error-content {
+      max-width: 600px;
+      animation: fadeInUp 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .error-code {
+      font-size: clamp(120px, 20vw, 180px);
+      font-weight: 900;
+      line-height: 0.9;
+      margin-bottom: 20px;
+      background: var(--accent);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 40px var(--red-glow));
+      letter-spacing: -5px;
+    }
+
+    .error-title {
+      font-size: clamp(24px, 5vw, 36px);
+      font-weight: 800;
+      color: var(--pure-white);
+      margin-bottom: 16px;
+    }
+
+    .error-desc {
+      font-size: 18px;
+      color: var(--light-gray);
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+
+    .error-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Decorative background element */
+    .bg-glow {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 600px;
+      background: var(--red-glow);
+      filter: blur(150px);
+      opacity: 0.15;
+      pointer-events: none;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow"></div>
+
+  <header class="header">
+    <a class="logo" href="/">TOMITO</a>
+    <ul class="nav">
+      <li><a href="/">الرئيسية</a></li>
+      <li><a href="/#movies">أفلام</a></li>
+      <li><a href="/#series">مسلسلات</a></li>
+    </ul>
+    <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
+  </header>
+
+  <main class="error-section">
+    <div class="error-content">
+      <div class="error-code">404</div>
+      <h1 class="error-title">عذراً! الصفحة غير موجودة</h1>
+      <p class="error-desc">يبدو أنك تهت في عالم السينما... الصفحة التي تبحث عنها غير موجودة أو تم نقلها إلى عنوان جديد.</p>
+      
+      <div class="error-actions">
+        <a href="https://www.tomito.xyz" class="btn btn-primary">
+          <span class="btn-icon">🏠</span>
+          العودة للرئيسية
+        </a>
+        <a href="/" class="btn btn-secondary">
+          <span class="btn-icon">🎬</span>
+          تصفح الأفلام
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | مشاهدة افلام ومسلسلات اون لاين HD مجاناً</p>
+  </footer>
+</body>
+</html>
