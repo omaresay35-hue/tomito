@@ -3,18 +3,30 @@ import os
 import json
 import re
 import time
-import urllib.parse
-from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # --- Configuration ---
 TMDB_API_KEY = "882e741f7283dc9ba1654d4692ec30f6"
 BASE_URL = "https://api.themoviedb.org/3"
 IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original"
-SITE_URL = "https://tomito.xyz"
-BASE_PATH = os.environ.get("REPO_PATH", os.path.dirname(os.path.abspath(__file__)))
-DIRS = ['movies', 'series', 'anime', 'actors', 'watch', 'data']
+SITE_URL = "https://nordrama.live"
+BUTTON_DOMAIN = "https://tomito.xyz"
+BASE_PATH = os.path.dirname(os.path.abspath(__file__))
+DIRS = ['movie', 'tv', 'actor', 'data']
 
-# --- Master Template ---
+# SEO keyword banks
+SEO_AR = [
+    "مشاهدة", "تحميل", "اون لاين", "بجودة عالية", "HD", "مترجم",
+    "حصري", "2026", "2025", "2024", "بدون اعلانات", "مجاناً",
+    "كامل", "جودة BluRay", "مسلسلات", "افلام", "انمي"
+]
+SEO_EN = [
+    "Watch Online", "Download", "HD Quality", "Full Movie", "Free Streaming",
+    "English Subtitles", "BluRay", "2026", "Exclusive", "No Ads"
+]
+
+# --- Master Template (CSS uses ../style.css for subdirectory pages) ---
 MASTER_TEMPLATE = """<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -22,44 +34,63 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{TITLE_PAGE}}</title>
   <meta name="description" content="{{META_DESC}}">
+  <meta name="keywords" content="{{KEYWORDS}}">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta property="og:title" content="{{TITLE_OG}}">
   <meta property="og:description" content="{{META_DESC}}">
   <meta property="og:image" content="{{POSTER_URL}}">
+  <meta property="og:url" content="{{PAGE_URL}}">
+  <meta property="og:type" content="video.movie">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" href="{{POSTER_URL}}">
+  <meta name="twitter:title" content="{{TITLE_OG}}">
+  <meta name="twitter:image" content="{{POSTER_URL}}">
+  <link rel="canonical" href="{{PAGE_URL}}">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../favicon.ico">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "{{SCHEMA_TYPE}}",
+    "name": "{{TITLE_AR}}",
+    "alternateName": "{{TITLE_EN}}",
+    "description": "{{META_DESC}}",
+    "image": "{{POSTER_URL}}",
+    "datePublished": "{{YEAR}}",
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "{{RATING}}", "bestRating": "10"}
+  }
+  </script>
 </head>
 <body>
   <header class="header">
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/index#ramadan">رمضان 2026</a></li>
-      <li><a href="/movies">أفلام و مسلسلات</a></li>
+      <li><a href="/movie">أفلام</a></li>
+      <li><a href="/tv">مسلسلات</a></li>
     </ul>
-    <a class="header-btn" href="{{WATCH_URL}}">الموقع الرسمي</a>
+    <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <div class="series-hero">
-    <img src="{{POSTER_URL}}" alt="{{TITLE_AR}}" loading="eager">
+    <img src="{{POSTER_URL}}" alt="{{TITLE_AR}} — مشاهدة وتحميل" loading="eager" class="series-poster">
     <div class="series-info">
-      <h1 class="series-title" style="display: flex; flex-direction: column; gap: 5px;">
+      <h1 class="series-title">
         <span>{{TITLE_AR}}</span>
-        <span style="font-size: 0.6em; color: #aaa;">{{TITLE_EN}}</span>
+        <span class="series-subtitle">{{TITLE_EN}}</span>
       </h1>
       <div class="series-desc">
-        <div style="margin-bottom: 20px; font-family: sans-serif;">{{DESC_EN}}</div>
-        <div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; color: #ccc; font-family: 'Tajawal', sans-serif;">{{DESC_AR}}</div>
+        <p class="desc-en">{{DESC_EN}}</p>
+        <p class="desc-ar">{{DESC_AR}}</p>
       </div>
       {{TAGS_SECTION}}
 
-      <div style="margin-top:30px; display:flex; gap:15px; flex-wrap:wrap;">
-        <a href="{{WATCH_URL}}" target="_blank" class="btn btn-primary"
-          style="background:#e50914; color:#fff; border-radius:6px; font-weight:900; padding:12px 30px; text-decoration:none;">▶
-          Watch Now / شاهد الآن</a>
-        <a href="{{WATCH_URL}}" target="_blank" class="btn btn-secondary"
-          style="background:rgba(255,255,255,0.1); color:#fff; border-radius:6px; font-weight:900; padding:12px 30px; text-decoration:none; border:1px solid rgba(255,255,255,0.2);">⬇
-          Download / تحميل</a>
+      <div class="action-buttons">
+        <a href="{{BUTTON_URL}}" class="btn btn-watch">
+          <span class="btn-icon">▶</span> شاهد الآن — Watch Now
+        </a>
+        <a href="{{BUTTON_URL}}" class="btn btn-download">
+          <span class="btn-icon">⬇</span> تحميل — Download
+        </a>
       </div>
     </div>
   </div>
@@ -67,8 +98,16 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
   {{EXTRA_CONTENT}}
 
   <footer class="footer">
-    <p>© 2026 <a href="/">TOMITO MOVIES</a> — جميع الحقوق محفوظة</p>
+    <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
+  <script>
+    document.querySelectorAll('a').forEach(a => {
+        let h = a.getAttribute('href');
+        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
+            a.setAttribute('href', h.slice(0, -5));
+        }
+    });
+  </script>
 </body>
 </html>"""
 
@@ -80,12 +119,19 @@ def clean_slug(text):
     res = re.sub(r'[-\s_]+', '-', res)
     return res
 
-def get_tmdb_data(endpoint, params):
+def get_tmdb_data(endpoint, params, retries=3):
     params['api_key'] = TMDB_API_KEY
-    try:
-        response = requests.get(f"{BASE_URL}/{endpoint}", params=params, timeout=10)
-        if response.status_code == 200: return response.json()
-    except: pass
+    for attempt in range(retries):
+        try:
+            response = requests.get(f"{BASE_URL}/{endpoint}", params=params, timeout=15)
+            if response.status_code == 200:
+                return response.json()
+            if response.status_code == 429:
+                time.sleep(1.5)
+                continue
+        except Exception:
+            if attempt < retries - 1:
+                time.sleep(0.5)
     return None
 
 def fetch_details(tmdb_id, media_type):
@@ -94,158 +140,358 @@ def fetch_details(tmdb_id, media_type):
     credits = get_tmdb_data(f"{media_type}/{tmdb_id}/credits", {})
     return {'ar': ar_data, 'en': en_data, 'credits': credits}
 
-def generate_seo_description(ar_data, en_data):
+def build_keywords(title_ar, title_en, media_type, year, genres_ar):
+    kw = [
+        title_ar, title_en,
+        f"مشاهدة {title_ar}", f"تحميل {title_ar}",
+        f"{title_ar} اون لاين", f"{title_ar} مترجم",
+        f"{title_ar} {year}", f"watch {title_en} online",
+        f"download {title_en}", f"{title_en} HD",
+    ]
+    if media_type == 'movie':
+        kw += [f"فيلم {title_ar}", f"{title_ar} كامل"]
+    else:
+        kw += [f"مسلسل {title_ar}", f"{title_ar} جميع الحلقات"]
+    kw += genres_ar
+    return ", ".join(kw[:20])
+
+def generate_seo_description(ar_data, en_data, title_ar, year):
     ar_desc = ar_data.get('overview', '') if ar_data else ''
     en_desc = en_data.get('overview', '') if en_data else ''
-    k_ar = "مشاهدة وتحميل مباشر، بجودة عالية HD، حصرياً 2026، مترجم عربي."
-    k_en = "Watch and download online, High Quality HD, Exclusive 2026, English Subtitles."
-    return (f"{ar_desc}\n\n{k_ar}" if ar_desc else k_ar), (f"{en_desc}\n\n{k_en}" if en_desc else k_en)
+    seo_ar = f"مشاهدة وتحميل {title_ar} ({year}) اون لاين بجودة عالية HD مترجم حصرياً بدون اعلانات."
+    seo_en = f"Watch and download online in HD quality. Free streaming with English subtitles 2026."
+    full_ar = f"{ar_desc} {seo_ar}" if ar_desc else seo_ar
+    full_en = f"{en_desc} {seo_en}" if en_desc else seo_en
+    return full_ar.strip(), full_en.strip()
 
 # --- Page Generation ---
 def create_page(item_data, media_type):
     ar, en, credits = item_data['ar'], item_data['en'], item_data['credits']
-    if not ar and not en: return None
-    
-    title_ar = ar.get('title') or ar.get('name') or (en.get('title') or en.get('name') if en else 'Unknown')
-    title_en = en.get('title') or en.get('name') or (ar.get('title') or ar.get('name') if ar else 'Unknown')
-    tmdb_id = ar.get('id') if ar else en.get('id')
+    if not ar and not en:
+        return None, None
+
+    data = ar or en
+    title_ar = (ar.get('title') or ar.get('name') or '') if ar else ''
+    title_en = (en.get('title') or en.get('name') or '') if en else ''
+    if not title_ar: title_ar = title_en
+    if not title_en: title_en = title_ar
+    tmdb_id = data.get('id')
     slug = clean_slug(title_en) or f"{media_type}-{tmdb_id}"
-    poster_path = ar.get('poster_path') or en.get('poster_path')
-    poster_url = f"{IMAGE_BASE_URL}{poster_path}" if poster_path else "https://www.tomito.xyz/favicon.ico"
-    year = (ar.get('release_date') or ar.get('first_air_date') or '2026')[:4]
-    rating = ar.get('vote_average', 0)
-    desc_ar, desc_en = generate_seo_description(ar, en)
-    
+    if media_type == 'movie' or 'tv' in media_type:
+        slug = f"{tmdb_id}-{slug}"
+    poster_path = data.get('poster_path') or (en.get('poster_path') if en else None) or (ar.get('poster_path') if ar else None)
+    if not poster_path:
+        return None, None
+    poster_url = f"{IMAGE_BASE_URL}{poster_path}"
+    year = (data.get('release_date') or data.get('first_air_date') or '2026')[:4]
+    rating = round(data.get('vote_average', 0), 1)
+    desc_ar, desc_en = generate_seo_description(ar, en, title_ar, year)
+
+    # Genres
+    genres_ar = [g.get('name', '') for g in (ar.get('genres', []) if ar else [])]
+    genres_en = [g.get('name', '') for g in (en.get('genres', []) if en else [])]
+
     if media_type == 'movie':
-        watch_url = f"{SITE_URL}/movie/{tmdb_id}/watch"
-    elif 'tv' in media_type:
+        watch_url = "#player"
+        folder = 'movie'
+        schema_type = 'Movie'
+        type_label = "Movie | فيلم"
+    elif 'anime' in media_type:
         watch_url = f"{SITE_URL}/tv/{tmdb_id}/watch?season=1&episode=1"
+        folder = 'tv' # Keep as tv even for anime
+        schema_type = 'TVSeries'
+        type_label = "Anime | أنمي"
     else:
-        watch_url = f"{SITE_URL}/watch/{media_type}/{tmdb_id}"
-    
-    type_label = "Movie | فيلم" if media_type == 'movie' else "TV Series | مسلسل"
-    if 'anime' in media_type: type_label = "Anime | أنمي"
+        watch_url = f"{SITE_URL}/tv/{tmdb_id}/watch?season=1&episode=1"
+        folder = 'tv'
+        schema_type = 'TVSeries'
+        type_label = "TV Series | مسلسل"
 
-    # Extra Content: Cast
-    cast_section = '<div class="cast-section" style="padding: 40px 20px; max-width: 1200px; margin: 0 auto;">\n<h2 style="color: #fff; margin-bottom: 20px;">طاقم العمل / Cast</h2>\n<div style="display: flex; gap: 15px; overflow-x: auto; padding-bottom: 10px;">'
+    page_url = f"{SITE_URL}/{folder}/{slug}"
+    keywords = build_keywords(title_ar, title_en, media_type, year, genres_ar)
+
+    # Cast section
+    cast_html = '<section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">'
+    actor_ids = set()
     if credits and credits.get('cast'):
-        for actor in credits['cast'][:15]:
-            cast_section += f'''
-            <a href="/actors/{actor["id"]}-{clean_slug(actor["name"])}" style="text-decoration: none; color: #fff; text-align: center; min-width: 100px;">
-                <img src="{IMAGE_BASE_URL}{actor["profile_path"] if actor.get("profile_path") else ""}" alt="{actor["name"]}" style="width: 100px; height: 150px; object-fit: cover; border-radius: 8px; border: 1px solid #333;" onerror="this.src='/favicon.ico'">
-                <div style="font-size: 0.8em; margin-top: 5px; width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{actor["name"]}</div>
+        for actor in credits['cast'][:12]:
+            aid = actor.get('id')
+            aname = actor.get('name', '')
+            aprofile = actor.get('profile_path', '')
+            if aid: actor_ids.add(aid)
+            img_src = f"{IMAGE_BASE_URL}{aprofile}" if aprofile else "../favicon.ico"
+            cast_html += f'''
+            <a href="/actor/{aid}-{clean_slug(aname)}" class="cast-card">
+                <img src="{img_src}" alt="{aname}" loading="lazy" onerror="this.src='../favicon.ico'">
+                <span>{aname}</span>
             </a>'''
-    cast_section += '</div>\n</div>'
+    cast_html += '</div></section>'
 
-    tags_html = f'<div class="series-tags"><span class="tag">{type_label}</span><span class="tag">⭐ {rating}</span><span class="tag">{year}</span></div>'
-    
-    html = MASTER_TEMPLATE.replace('{{TITLE_PAGE}}', f'{title_ar} — مشاهدة وتحميل 2026') \
-                          .replace('{{META_DESC}}', f'مشاهدة وتحميل {title_ar} ({year}) أون لاين بجودة عالية HD. {desc_ar[:100]}') \
-                          .replace('{{TITLE_OG}}', f'{title_ar} / {title_en}') \
-                          .replace('{{POSTER_URL}}', poster_url) \
-                          .replace('{{WATCH_URL}}', watch_url) \
-                          .replace('{{TITLE_AR}}', title_ar) \
-                          .replace('{{TITLE_EN}}', title_en) \
-                          .replace('{{DESC_AR}}', desc_ar) \
-                          .replace('{{DESC_EN}}', desc_en) \
-                          .replace('{{TAGS_SECTION}}', tags_html) \
-                          .replace('{{EXTRA_CONTENT}}', cast_section)
+    # Tags
+    tags = [type_label, f"⭐ {rating}", year] + genres_en[:3]
+    tags_html = '<div class="series-tags">' + ''.join(f'<span class="tag">{t}</span>' for t in tags) + '</div>'
 
-    folder = 'movies' if media_type == 'movie' else ('anime' if 'anime' in media_type else 'series')
+    # Build page
+    html = MASTER_TEMPLATE
+    replacements = {
+        '{{TITLE_PAGE}}': f'{title_ar} — مشاهدة وتحميل {year} | TOMITO',
+        '{{META_DESC}}': f'مشاهدة وتحميل {title_ar} ({title_en}) {year} اون لاين بجودة HD. {desc_ar[:150]}',
+        '{{KEYWORDS}}': keywords,
+        '{{TITLE_OG}}': f'{title_ar} / {title_en} — TOMITO',
+        '{{POSTER_URL}}': poster_url,
+        '{{PAGE_URL}}': page_url,
+        '{{BUTTON_URL}}': f"{BUTTON_DOMAIN}/{folder}/{slug}",
+        '{{WATCH_URL}}': watch_url,
+        '{{TITLE_AR}}': title_ar,
+        '{{TITLE_EN}}': title_en,
+        '{{DESC_AR}}': desc_ar,
+        '{{DESC_EN}}': desc_en,
+        '{{TAGS_SECTION}}': tags_html,
+        '{{EXTRA_CONTENT}}': cast_html,
+        '{{SCHEMA_TYPE}}': schema_type,
+        '{{YEAR}}': year,
+        '{{RATING}}': str(rating),
+    }
+    for k, v in replacements.items():
+        html = html.replace(k, v)
+
     path = os.path.join(BASE_PATH, folder, f"{slug}.html")
-    with open(path, 'w', encoding='utf-8') as f: f.write(html)
-    return f"{folder}/{slug}"
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(html)
+
+    index_entry = {
+        'title_ar': title_ar,
+        'title_en': title_en,
+        'slug': slug,
+        'folder': folder,
+        'poster': poster_url,
+        'rating': rating,
+        'year': year,
+        'type': media_type,
+        'tmdb_id': tmdb_id,
+        'genres': genres_en,
+    }
+    return f"{folder}/{slug}", index_entry
 
 def create_actor_page(actor_id):
-    ar, en = get_tmdb_data(f"person/{actor_id}", {'language': 'ar'}), get_tmdb_data(f"person/{actor_id}", {'language': 'en'})
-    if not en: return None
-    name, bio_ar, bio_en = en.get('name'), (ar.get('biography', '') if ar else ''), en.get('biography', '')
-    img_url = f"{IMAGE_BASE_URL}{en.get('profile_path')}" if en.get('profile_path') else "https://www.tomito.xyz/favicon.ico"
+    ar = get_tmdb_data(f"person/{actor_id}", {'language': 'ar'})
+    en = get_tmdb_data(f"person/{actor_id}", {'language': 'en'})
+    if not en:
+        return None
+    name = en.get('name', 'Unknown')
+    bio_ar = (ar.get('biography', '') if ar else '') or ''
+    bio_en = en.get('biography', '') or ''
+    img_url = f"{IMAGE_BASE_URL}{en.get('profile_path')}" if en.get('profile_path') else "../favicon.ico"
     slug = f"{actor_id}-{clean_slug(name)}"
 
-    html = MASTER_TEMPLATE.replace('{{TITLE_PAGE}}', f'{name} | ممثلي توميتو') \
-                          .replace('{{META_DESC}}', f'تعرف على الممثل {name}، سيرته الذاتية وأهم أعماله لعام 2026.') \
-                          .replace('{{TITLE_OG}}', name) \
-                          .replace('{{POSTER_URL}}', img_url) \
-                          .replace('{{WATCH_URL}}', '#') \
-                          .replace('{{TITLE_AR}}', name) \
-                          .replace('{{TITLE_EN}}', "Performer / ممثل") \
-                          .replace('{{DESC_AR}}', bio_ar) \
-                          .replace('{{DESC_EN}}', bio_en) \
-                          .replace('{{TAGS_SECTION}}', '') \
-                          .replace('{{EXTRA_CONTENT}}', '')
+    seo_desc = f"تعرف على {name} — سيرته الذاتية وأهم أعماله. شاهد أفلام ومسلسلات {name} اون لاين بجودة عالية HD على NORDRAMA."
+    keywords = f"{name}, ممثل, أفلام {name}, مسلسلات {name}, سيرة ذاتية, actor, filmography"
 
-    path = os.path.join(BASE_PATH, 'actors', f"{slug}.html")
-    with open(path, 'w', encoding='utf-8') as f: f.write(html)
-    return f"actors/{slug}"
+    html = MASTER_TEMPLATE
+    replacements = {
+        '{{TITLE_PAGE}}': f'{name} — الممثل | TOMITO',
+        '{{META_DESC}}': seo_desc,
+        '{{KEYWORDS}}': keywords,
+        '{{TITLE_OG}}': f'{name} — TOMITO',
+        '{{POSTER_URL}}': img_url,
+        '{{PAGE_URL}}': f'{SITE_URL}/actor/{slug}',
+        '{{BUTTON_URL}}': f'{BUTTON_DOMAIN}/actor/{slug}',
+        '{{WATCH_URL}}': '/',
+        '{{TITLE_AR}}': name,
+        '{{TITLE_EN}}': 'Performer | ممثل',
+        '{{DESC_AR}}': bio_ar[:500],
+        '{{DESC_EN}}': bio_en[:500],
+        '{{TAGS_SECTION}}': '',
+        '{{EXTRA_CONTENT}}': '',
+        '{{SCHEMA_TYPE}}': 'Person',
+        '{{YEAR}}': '',
+        '{{RATING}}': '0',
+    }
+    for k, v in replacements.items():
+        html = html.replace(k, v)
+
+    path = os.path.join(BASE_PATH, 'actor', f"{slug}.html")
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(html)
+    return f"actor/{slug}"
+
+# --- Fetch IDs from TMDB ---
+def fetch_ids(media_type, years, target=5000, genre=None):
+    ids = set()
+    for year in years:
+        page = 1
+        while len(ids) < target and page <= 500:
+            params = {
+                'page': page,
+                'sort_by': 'popularity.desc',
+                'vote_count.gte': 5,
+            }
+            if media_type == 'movie':
+                params['primary_release_year'] = year
+            else:
+                params['first_air_date_year'] = year
+            if genre:
+                params['with_genres'] = genre
+            data = get_tmdb_data(f"discover/{media_type}", params)
+            if not data or not data.get('results'):
+                break
+            for r in data['results']:
+                ids.add(r['id'])
+            if page >= data.get('total_pages', 1):
+                break
+            page += 1
+        if len(ids) >= target:
+            break
+    return list(ids)[:target]
+
+# --- Sitemap Generator ---
+def generate_sitemap(base_url, root_dir, all_pages):
+    today = datetime.now().strftime('%Y-%m-%d')
+    sitemap_path = os.path.join(root_dir, 'sitemap.xml')
+
+    priority_map = {
+        'movie': 0.8,
+        'tv': 0.8,
+        'actor': 0.6,
+    }
+    base_url = "https://nordrama.live" # Use nordrama.live for sitemap loc
+    with open(sitemap_path, 'w', encoding='utf-8') as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        # Homepage
+        f.write(f'  <url>\n    <loc>{base_url}/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n')
+        # All generated pages
+        for page_path in all_pages:
+            parts = page_path.split('/')
+            folder = parts[0] if parts else 'movie'
+            priority = priority_map.get(folder, 0.7)
+            freq = 'weekly' if folder in ['movie', 'tv'] else 'monthly'
+            url = f"{base_url}/{page_path}" # Clean URL already handled by bot logic
+            f.write(f'  <url>\n    <loc>{url}</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{priority}</priority>\n  </url>\n')
+        f.write('</urlset>')
+
+    print(f"\nGenerated sitemap.xml with {len(all_pages) + 1} URLs")
+    return sitemap_path
 
 # --- Main ---
-def main(limit=1000):
+def main(limit=20000):
+    print(f"=== NORDRAMA MEGA BOT — Target: {limit} pages ===")
+
     for d in DIRS:
         path = os.path.join(BASE_PATH, d)
         os.makedirs(path, exist_ok=True)
-        # Cleanup old .html files
-        if d in ['movies', 'series', 'anime', 'actors']:
-            for f in os.listdir(path):
-                if f.endswith('.html'): os.remove(os.path.join(path, f))
-    
-    # Increase TMDB page fetching to reach 1000 items (20 per page)
-    def fetch_ids(media_type, year, target=1000, genre=None):
-        ids = []
-        page = 1
-        while len(ids) < target and page <= 50:
-            params = {
-                'primary_release_year' if media_type == 'movie' else 'first_air_date_year': year,
-                'page': page,
-                'sort_by': 'popularity.desc'
-            }
-            if genre: params['with_genres'] = genre
-            data = get_tmdb_data(f"discover/{media_type}", params)
-            if not data or not data.get('results'): break
-            for r in data['results']:
-                if len(ids) < target: ids.append(r['id'])
-            page += 1
-        return ids
 
-    movie_ids = fetch_ids('movie', 2026, target=limit)
-    tv_ids = fetch_ids('tv', 2026, target=limit)
-    anime_ids = fetch_ids('tv', 2026, target=limit, genre='16')
-    
-    actor_ids = set()
+    # Clean old pages
+    for d in ['movie', 'tv', 'actor']:
+        dirpath = os.path.join(BASE_PATH, d)
+        if os.path.exists(dirpath):
+            for f in os.listdir(dirpath):
+                if f.endswith('.html'):
+                    os.remove(os.path.join(dirpath, f))
+        print(f"  Cleaned {d}/")
+
+    # Distribution: movies 1000, series 1000, actors 1000
+    movie_target = 1000
+    tv_target = 1000
+    actor_target = 1000
+    years = [2026, 2025, 2024, 2023, 2022]
+
+    print(f"\nFetching TMDB IDs...")
+    movie_ids = fetch_ids('movie', years, target=movie_target)
+    print(f"  Movies: {len(movie_ids)} IDs")
+    tv_ids = fetch_ids('tv', years, target=tv_target)
+    print(f"  TV Series: {len(tv_ids)} IDs")
+
+    all_index = []
     all_pages = []
+    actor_ids = set()
+    page_count = [0]
+    errors = [0]
+    lock_index = __import__('threading').Lock()
 
-    def work(tid, mtype):
-        details = fetch_details(tid, mtype)
-        if not details: return
-        if details['credits'] and details['credits'].get('cast'):
-            # Only process top 3 actors as separate pages per item to avoid explosion
-            for a in details['credits']['cast'][:3]: actor_ids.add(a['id'])
-        url = create_page(details, mtype)
-        if url: all_pages.append(f"{SITE_URL}/{url}")
+    def process_item(tmdb_id, media_type):
+        try:
+            details = fetch_details(tmdb_id, 'movie' if media_type == 'movie' else 'tv')
+            if not details or (not details['ar'] and not details['en']):
+                return
+            url, index_entry = create_page(details, media_type)
+            if url and index_entry:
+                with lock_index:
+                    all_index.append(index_entry)
+                    all_pages.append(url)
+                    page_count[0] += 1
+                if details['credits'] and details['credits'].get('cast'):
+                    for a in details['credits']['cast'][:3]:
+                        if a.get('id'):
+                            with lock_index:
+                                actor_ids.add(a['id'])
+        except Exception:
+            errors[0] += 1
 
-    print(f"Processing {len(movie_ids)} movies, {len(tv_ids)} series, {len(anime_ids)} anime...")
+    total = len(movie_ids) + len(tv_ids)
+    print(f"\nProcessing {total} items with 10 workers...")
+
     with ThreadPoolExecutor(max_workers=10) as ex:
-        for mid in movie_ids: ex.submit(work, mid, 'movie')
-        for tid in tv_ids: ex.submit(work, tid, 'tv')
-        for aid in anime_ids: ex.submit(work, aid, 'tv-anime')
-    
-    print(f"Processing {len(actor_ids)} actors...")
-    with ThreadPoolExecutor(max_workers=10) as ex:
-        # Capping actors to 1000 per run as requested
-        for arid in list(actor_ids)[:1000]: 
-            url = create_actor_page(arid)
-            if url: all_pages.append(f"{SITE_URL}/{url}")
+        futures = []
+        for mid in movie_ids:
+            futures.append(ex.submit(process_item, mid, 'movie'))
+        for tid in tv_ids:
+            futures.append(ex.submit(process_item, tid, 'tv'))
 
-    with open(os.path.join(BASE_PATH, 'sitemap.xml'), 'w', encoding='utf-8') as f:
-        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-        f.write(f'  <url><loc>{SITE_URL}/</loc><priority>1.0</priority></url>\n')
-        for url in sorted(all_pages): f.write(f'  <url><loc>{url}</loc><priority>0.8</priority></url>\n')
-        f.write('</urlset>')
-    print("Execution Finished!")
+        done = 0
+        for f in as_completed(futures):
+            done += 1
+            if done % 500 == 0:
+                print(f"  Progress: {done}/{total} processed, {page_count[0]} pages created...")
+
+    print(f"\nContent pages created: {page_count[0]}")
+    print(f"Errors: {errors[0]}")
+
+    # Actor pages (cap at 1000)
+    actor_list = list(actor_ids)[:1000]
+    print(f"\nProcessing {len(actor_list)} actor pages...")
+    actor_count = [0]
+    actor_pages = []
+
+    def process_actor(aid):
+        try:
+            result = create_actor_page(aid)
+            if result:
+                with lock_index:
+                    actor_count[0] += 1
+                    actor_pages.append(result)
+        except Exception:
+            pass
+
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        futures = [ex.submit(process_actor, aid) for aid in actor_list]
+        done = 0
+        for f in as_completed(futures):
+            done += 1
+            if done % 500 == 0:
+                print(f"  Actors progress: {done}/{len(actor_list)}")
+
+    print(f"Actor pages created: {actor_count[0]}")
+
+    # Save content index
+    index_path = os.path.join(BASE_PATH, 'data', 'content_index.json')
+    all_index.sort(key=lambda x: x.get('rating', 0), reverse=True)
+    with open(index_path, 'w', encoding='utf-8') as f:
+        json.dump(all_index, f, ensure_ascii=False, indent=2)
+    print(f"\nSaved content index: {len(all_index)} items → {index_path}")
+
+    # Generate single unified sitemap
+    all_combined_pages = all_pages + actor_pages
+    generate_sitemap(SITE_URL, BASE_PATH, all_combined_pages)
+
+    total_pages = page_count[0] + actor_count[0]
+    print(f"\n{'='*50}")
+    print(f"TOTAL PAGES GENERATED: {total_pages}")
+    print(f"{'='*50}")
 
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--limit', type=int, default=1000)
+    parser.add_argument('--limit', type=int, default=20000)
     args = parser.parse_args()
     main(limit=args.limit)

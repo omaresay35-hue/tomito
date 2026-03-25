@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TOMITO تومتو — شاهد مسلسلات رمضان 2026 فابور مجاناً</title>
-  <meta name="description" content="شاهد أحدث مسلسلات رمضان 2026 والمسلسلات العربية والأفلام الحصرية بجودة عالية">
-  <meta name="keywords"
-    content="مسلسلات رمضان 2026, مسلسلات عربية, افلام عربية, مشاهدة اون لاين, tomito, تومتو, مسلسلات حصرية, رمضان 2026, مسلسلات مجانية">
+  <title>TOMITO — مشاهدة وتحميل أفلام ومسلسلات وأنمي اون لاين 2026 HD مجاناً</title>
+  <meta name="description" content="شاهد وحمل أحدث الأفلام والمسلسلات والأنمي 2024-2026 اون لاين بجودة عالية HD مجاناً. مسلسلات رمضان 2026 حصرياً على TOMITO بدون اعلانات.">
+  <meta name="keywords" content="مشاهدة افلام اون لاين, تحميل مسلسلات, أنمي مترجم, مسلسلات رمضان 2026, افلام 2026, HD, مجاني, بدون اعلانات, TOMITO, nordrama.live, watch movies online, download series, anime 2026">
   <meta name="robots" content="index, follow, max-image-preview:large">
-
   <meta property="og:type" content="website">
-  <meta property="og:title" content="TOMITO — شاهد مسلسلات رمضان 2026 حصرياً اون لاين">
-  <meta property="og:description"
-    content="شاهد أحدث مسلسلات رمضان 2026 والمسلسلات العربية والأفلام الحصرية بجودة عالية">
+  <meta property="og:title" content="TOMITO — أفلام ومسلسلات وأنمي اون لاين 2026">
+  <meta property="og:description" content="شاهد أحدث الأفلام والمسلسلات ومسلسلات رمضان 2026 حصرياً بجودة HD.">
   <meta property="og:site_name" content="TOMITO">
   <meta property="og:url" content="https://nordrama.live">
-
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="TOMITO — شاهد مسلسلات رمضان 2026 حصرياً اون لاين">
-
   <link rel="canonical" href="https://nordrama.live">
   <link rel="stylesheet" href="style.css">
-
+  <link rel="icon" href="favicon.ico">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "TOMITO",
     "url": "https://nordrama.live",
-    "description": "شاهد أحدث مسلسلات رمضان 2026 والمسلسلات العربية والأفلام الحصرية بجودة عالية",
-    "inLanguage": "ar"
+    "description": "مشاهدة وتحميل أفلام ومسلسلات وأنمي اون لاين بجودة عالية HD 2026",
+    "inLanguage": "ar",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://nordrama.live/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
   </script>
 </head>
-
 <body>
 
   <header class="header">
-    <a class="logo" href="index">TOMITO</a>
+    <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
-      <li><a href="index">الرئيسية</a></li>
-      <li><a href="index#ramadan">رمضان 2026</a></li>
-      <li><a href="index#movies">أفلام</a></li>
-      <li><a href="index#anime">أنمي</a></li>
-      <li><a href="index#series">مسلسلات</a></li>
+      <li><a href="/">الرئيسية</a></li>
+      <li><a href="#movies">أفلام</a></li>
+      <li><a href="#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
-  <!-- Category Filters -->
   <section class="filters-section">
     <div class="filter-container">
       <div class="filter-item">
         <label>التصنيف</label>
         <div class="custom-select">
-          <select id="category-select">
+          <select id="category-select" onchange="filterCategory(this.value)">
             <option value="all">كل التصنيفات</option>
-            <option value="ramadan">رمضان 2026</option>
             <option value="movies">أفلام</option>
-            <option value="anime">أنمي</option>
             <option value="series">مسلسلات</option>
+            <option value="anime">أنمي</option>
           </select>
         </div>
       </div>
@@ -68,8 +61,8 @@
         <label>الترتيب</label>
         <div class="custom-select">
           <select id="sort-select">
-            <option value="newest">الأحدث أولاً</option>
             <option value="popular">الأكثر مشاهدة</option>
+            <option value="newest">الأحدث أولاً</option>
             <option value="rating">الأعلى تقييماً</option>
           </select>
         </div>
@@ -77,969 +70,787 @@
     </div>
   </section>
 
+  <!-- DYNAMIC CONTENT -->
 
-  <!-- DYNAMIC_CONTENT_START -->
-
-<section class="section" id="ramadan">
-  <h2 class="section-title">مسلسلات رمضان 2026</h2>
+<section class="section" id="movies">
+  <h2 class="section-title">أحدث الأفلام — Newest Movies</h2>
   <div class="grid">
-
-    <a class="card" href="ramadan-trailer/عدم-المؤاخذة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/trKhGAQaj8KqY7Uj9GHVSHX61Ty.jpg" alt="عدم المؤاخذة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">عدم المؤاخذة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/دار-السد">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/5gbTKFOpNHMBzbLBKau0JVvM2ci.jpg" alt="دار السد" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">دار السد</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/سر-وقدر">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/iOxKhfpHT15wVfU2Wgs1gGonpee.jpg" alt="سر وقدر" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">سر وقدر</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/افراج">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/2UUpvYL77Pp2fI3Q96SVqFoSGWl.jpg" alt="افراج" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">افراج</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/المقام">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uQwTyyBMiVJs4CtMOAiIyIKHXrT.jpg" alt="المقام" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">المقام</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/اقر-واعترف">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/oLSanNob76jySbw2R910CgLyZ9y.jpg" alt="اقر واعترف" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">اقر واعترف</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/اقر-واعترف-2026">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sZoyw5SWNHR2VsKvp1bUw0wW4Rs.jpg" alt="اقر واعترف 2026" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">اقر واعترف 2026</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/اكسيدون">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/yaa9NMCJiKhimAclTGO01Ug10J5.jpg" alt="اكسيدون" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">اكسيدون</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/مراتي-في-ورطة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lKIMmiVxlLOG85pRC986vw0zxVN.jpg" alt="مراتي في ورطة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">مراتي في ورطة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/لصوص-العمارة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/F4WdkrPlNH2GimBzfm7LKFMLQj.jpg" alt="لصوص العمارة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">لصوص العمارة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/شارع-الاعشى">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rAbN8corGlIr1Y496e4a1mF1hUN.jpg" alt="شارع الاعشى" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">شارع الاعشى</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/شارع-الاعشي">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/qL1MBO7f8V7jXSB46SgpetwqNaV.jpg" alt="شارع الاعشي" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">شارع الاعشي</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/يحيى">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rr5kfDoWfiChzijbgXIHi1pqSJ7.jpg" alt="يحيى" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">يحيى</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/لوبي-الغرام">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ozK13I5S3ZBKAmnqDHOKAhHU3ug.jpg" alt="لوبي الغرام" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">لوبي الغرام</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/صاحبك-راجل">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/fsV0awnFxZUnMPOK2OwwLULmdaW.jpg" alt="صاحبك راجل" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">صاحبك راجل</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/النويلاتي">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4Qbffql5vv9BE6lGPdERmT97iuV.jpg" alt="النويلاتي" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">النويلاتي</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/مولانا">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/m388DUJOrqcMwWa2QvbKQEDuTrH.jpg" alt="مولانا" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">مولانا</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/شط-الحرية">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lkgtUfnpVCnTxHPXhKdNXMrfMqU.jpg" alt="شط الحرية" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">شط الحرية</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/باب-البنات-صبرية-في-السبعينات">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/r0dJ2u5Ptm1uPk4CWrIpnmPc0QT.jpg" alt="باب البنات - صبرية في السبعينات" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">باب البنات - صبرية في السبعينات</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/عايلة-مايلة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/j9KzVbq3X0nVNmsNdUGhNoow3sm.jpg" alt="عايلة مايلة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">عايلة مايلة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/شاكر-عودة-البطل">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/hleHLIhGulLr9I3PACSQGy1rUax.jpg" alt="شاكر عودة البطل" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">شاكر عودة البطل</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/شاكر">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/eWq28TD1uteZ1HDuiF4Bt0g25Gs.jpg" alt="شاكر" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">شاكر</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/وننسى-اللي-كان">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/qfkELZLxSTXSQTV5jS7G9GkROHx.jpg" alt="وننسى اللي كان" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">وننسى اللي كان</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/اولاد-الراعي">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/biAvwA8P2h348GLYLMbykmiNOBI.jpg" alt="اولاد الراعي" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">اولاد الراعي</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/كان-ياما-كان">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/daUhrfu8JRGfTLa8yGppnkBUVeZ.jpg" alt="كان ياما كان" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">كان ياما كان</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/سوا-سوا">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lpQS2wOdqzfrbNzso7plCEcHM2C.jpg" alt="سوا سوا" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">سوا سوا</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الست-موناليزا">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3jlWlBsqgf5tqwvmoatzBA9fFIS.jpg" alt="الست موناليزا" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الست موناليزا</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/يوميات-رجل-متزوج">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/kMzJtn5pOZmJwROBBacVfUzcREl.jpg" alt="يوميات رجل متزوج" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">يوميات رجل متزوج</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/كابتن-شديد">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/zwdz9z0MNv08dpBDCgRmKIleW60.jpg" alt="كابتن شديد" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">كابتن شديد</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/وديمة-وحليمة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/57aGmMCCnRsHfD9O8ix5QuwwXot.jpg" alt="وديمة وحليمة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">وديمة وحليمة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/دراما-كوين">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gk5jYnRZiEwRG4pOMe9q0eaq7Y.jpg" alt="دراما كوين" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">دراما كوين</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/صحاب-الارض">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lRu8YUUoak6CQSRbOA7fKXPniBf.jpg" alt="صحاب الارض" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">صحاب الارض</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/توابع">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/nlJCEELP872HSxtEnBZltl4HDQ0.jpg" alt="توابع" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">توابع</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/بنات-عبدالغني">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/43GqtCoF4ljQU7YycmzcDLzExYA.jpg" alt="بنات عبدالغني" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">بنات عبدالغني</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/السوق-الحرة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/vqhkDp1gX8hlSHwRKaEvAj0Yw0D.jpg" alt="السوق الحرة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">السوق الحرة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/رامز-ليفل-الوحش">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/AcXF0jT7ct2LmbbCwHMqwcOs4Iw.jpg" alt="رامز ليفل الوحش" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">رامز ليفل الوحش</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/اتنين-غيرنا">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wfDPrl7XWqaXPeKDAYoJAURzpEk.jpg" alt="اتنين غيرنا" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">اتنين غيرنا</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/دروب-المرجلة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/y48f6TD3SJK7qf718Ojk4ErEWCL.jpg" alt="دروب المرجلة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">دروب المرجلة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/وطن-ع-وتر-2026">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/hYNfFROv5Ce6Hl6kKHvhVrZmJCM.jpg" alt="وطن ع وتر 2026" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">وطن ع وتر 2026</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/فن-الحرب">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/y2bMELQDMvsS6mG2Jiaitajj110.jpg" alt="فن الحرب" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">فن الحرب</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/عين-سحرية">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/tbAG9y4q3FWGQxEUD4dJmeiSMg8.jpg" alt="عين سحرية" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">عين سحرية</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/خطوات-صغيرة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/xBzmjWAjIGhoH5VVYljlhBLCHFK.jpg" alt="خطوات صغيرة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">خطوات صغيرة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/قلبي-اطمان">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3iNT3rKs8q7qDr1fWxfznimZ7JV.jpg" alt="قلبي اطمان" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">قلبي اطمان</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الكاميرا-الخفية">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uf5yegjQaNS7XMrgOwJ1IBEekXB.jpg" alt="الكاميرا الخفية" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الكاميرا الخفية</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/نوبة-وتوبة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/2hpMZpRxHPXMwVYBF4YG8hlOJdP.jpg" alt="نوبة وتوبة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">نوبة وتوبة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/كوميدي-تانا">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3usGlNEebVyLW5y6NBdbJqVSQBw.jpg" alt="كوميدي تانا" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">كوميدي تانا</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/قبل-وبعد">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/juBRzq1CpZNcBfJGHts5ITADANk.jpg" alt="قبل وبعد" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">قبل وبعد</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/فخر-الدلتا">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/e8jAzECm044wQvZMQAW7gtD9xDy.jpg" alt="فخر الدلتا" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">فخر الدلتا</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/حامض-حلو">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/51kk9reZVCOg08vqBtyPphNUQg3.jpg" alt="حامض حلو" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">حامض حلو</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/جوز-ولوز">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/6oBEHZYnzopt9r5Lq1k8Z8o3kG8.jpg" alt="جوز ولوز" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">جوز ولوز</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/بين-اهلنا">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/vG3AHpdteMUtLQ0VcdKIwc7ozAZ.jpg" alt="بين اهلنا" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">بين اهلنا</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/درش">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/5smBMVD3RnPpghhWOJWnBan3yqY.jpg" alt="درش" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">درش</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/المداح">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/qlVgLDGVrzFJGJdNPgKKhtXUguZ.jpg" alt="المداح" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">المداح</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الكينج">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gZ1zGHxewufaBAEQBzCH9E0NHRd.jpg" alt="الكينج" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الكينج</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/علي-كلاي">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1rv82gNj4IisQPiaRD2a6J7Fg4t.jpg" alt="علي كلاي" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">علي كلاي</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/هي-كيميا">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/r8xoRlko0glhOY7HgkMlfSQt9aP.jpg" alt="هي كيميا" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">هي كيميا</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/شرارة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ylWKtyabAc4uku1RreoUDcn2Vs1.jpg" alt="شرارة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">شرارة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/سموم-القيظ">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wiXnE2dZDOBuKBTpDpny9K5gHXO.jpg" alt="سموم القيظ" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">سموم القيظ</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/حد-اقصى">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/p6xfQXdeeLrVMRrSbkmI2CyM5D9.jpg" alt="حد اقصى" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">حد اقصى</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/حاصلة-في-كايرو">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/6tCc8z5xRqAPTW68xU4zfXhQQZx.jpg" alt="حاصلة في كايرو" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">حاصلة في كايرو</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/بدل-تالف">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/iQzUPfKYsWQhY8KzBHc6ti2tvzO.jpg" alt="بدل تالف" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">بدل تالف</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الحصلة-العائلة-2">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/478IpJI0Ty6xVVZZIOSOdUg3irT.jpg" alt="الحصلة العائلة 2 -" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الحصلة العائلة 2 -</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/مناعة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wVt5yIYmvqpk8wqTXGsou7LB4OE.jpg" alt="مناعة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">مناعة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/قيصرية">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3VDmDOjxE2zKKMTmRkdklpa6CHT.jpg" alt="قيصرية" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">قيصرية</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/عيلة-الملك">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4Nl6U4iartb3GvDNBQkhnE2TPYM.jpg" alt="عيلة الملك" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">عيلة الملك</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/عنتر-وليلى">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/9jBZG0uR1N7JTzlLAwc1tMp86Jm.jpg" alt="عنتر وليلى" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">عنتر وليلى</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/عرش-الشيطان">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/eQ1oqRdlB9t6T1Fs6WGNYtw0Vjy.jpg" alt="عرش الشيطان" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">عرش الشيطان</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/شباب-البومب">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gjdnCoSD0fuDJEexUNeao4Nz8gZ.jpg" alt="شباب البومب" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">شباب البومب</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/سعادة-المجنون">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uJl4Ug3u2ktt0L0fdWqrvpDS7EP.jpg" alt="سعادة المجنون" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">سعادة المجنون</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/دكان-سليمان">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/2opE83npHLMMg2nEHjCJMpNV4er.jpg" alt="دكان سليمان" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">دكان سليمان</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/المحافظة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/AaNe4r0HEBdHKPf5JMLL2dgpMjB.jpg" alt="المحافظة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">المحافظة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الغميضة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/mCnzoSZCjdiFnuFTZIDOvMVLmtk.jpg" alt="الغميضة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الغميضة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/اخر-كلام">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/tXFIOqNi9wl9AsAXJCao84NK7Ij.jpg" alt="اخر كلام" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">اخر كلام</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/ابجد-هوس">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/z174Ox6tcXyZG7osGNZ3jRDQSjc.jpg" alt="ابجد هوس" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">ابجد هوس</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/ابجد-هلوس">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/7eqb8Iv9DrxN2nkOTUiZzviEOlv.jpg" alt="ابجد هلوس" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">ابجد هلوس</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/بنات-لالة-منانة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/AruiouIsAIpvmX0RDXE2G1CR4A0.jpg" alt="بنات لالة منانة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">بنات لالة منانة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الخزانة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/iREd0rNCjYdf5Ar0vfaW32yrkm.jpg" alt="الخزانة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الخزانة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/كحيلان">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/pLTGUL6sYMYMJ05Sntqr6XTgwCa.jpg" alt="كحيلان" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">كحيلان</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/صحة-خويا-bro">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/bMu6AzlT6IXZ1twDaoTXp1Zeap4.jpg" alt="صحة خويا BRO" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">صحة خويا BRO</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/رحمة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/6NrDJgoeOXZzDVTfU0RgXwuWUQI.jpg" alt="رحمة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">رحمة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/رباعة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/34N589rXVvG9wiQhN1O1fj4afBq.jpg" alt="رباعة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">رباعة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الرباعة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/37w9D05BhjEi2yKyT9XKHXcVJIr.jpg" alt="الرباعة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الرباعة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/حمدية">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/7s12Z5c00THxqDD1UykwLqgjL59.jpg" alt="حمدية" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">حمدية</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/بالحرام">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/okqSrJ552eYkxCow1nWABWs9xYD.jpg" alt="بالحرام" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">بالحرام</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الهيبة-راس-الجبل">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/tOGB4nYRVFC0KFQRP3uTQSbIzla.jpg" alt="الهيبة راس الجبل" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الهيبة راس الجبل</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/عمارة-السعادة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/aRWRWRrF4tSApJYfnlquSxILg0i.jpg" alt="عمارة السعادة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">عمارة السعادة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/بنات-العم">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/znMBnF7AjsNBzx41GiD9NFCApur.jpg" alt="بنات العم" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">بنات العم</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/العمة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uRhk1ofQVFvt4NkR085JxEQbgyW.jpg" alt="العمة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">العمة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/متاهة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/pwfzCQQ6KzvfKPoFEYCeAtdOjoq.jpg" alt="متاهة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">متاهة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/حياة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uGLIdqDkbsJ1UncbJazd53quL9h.jpg" alt="حياة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">حياة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/حكايات-شامة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/dh19Caeu9LHpHQ8aclPtUoRZMKV.jpg" alt="حكايات شامة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">حكايات شامة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/جناية-حب">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/xNPfmHDsBxlVdDfQGFJorJD9H5I.jpg" alt="جناية حب" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">جناية حب</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/وصية-جدو">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gmqoN18SjAEYw9qzGL84siVFms6.jpg" alt="وصية جدو" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">وصية جدو</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/كلاش">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rLGXBNdz3M2vW9WjccVVQEb23ND.jpg" alt="كلاش" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">كلاش</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/المداح-6-اسطورة-النهاية">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lovHpXLDIuqlrbTWhpFSqcSEHPD.jpg" alt="المداح 6 اسطورة النهاية" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">المداح 6 اسطورة النهاية</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/هذي-اخرتها">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/SoT3g47KMGmujiC9Z8fahd0JOk.jpg" alt="هذي اخرتها" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">هذي اخرتها</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/مولات-الدار">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/hxI4tocFoaEXzhUGK5z5IawVID1.jpg" alt="مولات الدار" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">مولات الدار</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/ملوك-اليمن">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/t5tnZh8CRr4CHvIrBCvrFC8IBOi.jpg" alt="ملوك اليمن" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">ملوك اليمن</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الفراق">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/e4mwIGuTjORTuUABIaqU2Z7tZTu.jpg" alt="الفراق" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الفراق</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/عش-الطمع">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/5qbUpDztpPj16HrAXTGB3v1MVGV.jpg" alt="عش الطمع" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">عش الطمع</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/انا-ولا-انا">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rv2wu5Z3IG8cjrBiHTNI2UArRxU.jpg" alt="انا ولا انا" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">انا ولا انا</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/المهاجر">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/EfzM5oGqRyflG30MfDiXnqQDNM.jpg" alt="المهاجر" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">المهاجر</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الزوجة-السابعة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/q09M3c2V1Yzdw56ISlURsqOqKZ3.jpg" alt="الزوجة السابعة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الزوجة السابعة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/بيت-ام-ليلة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/x19raCYYcjt5q7kdkOyxrupbAFD.jpg" alt="بيت ام ليلة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">بيت ام ليلة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/كية">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/b34jPzmB0wZy7EjUZoleXOl2RRI.jpg" alt="كية" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">كية</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/درب-الذهب">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/kSTFeSJGebHIPeV2rnjjedlzXIq.jpg" alt="درب الذهب" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">درب الذهب</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الخطيفة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/zo2Ye1XMIYqQXsI9Dz80p15Jar2.jpg" alt="الخطيفة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الخطيفة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/11-بالمية">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/k1OmgQRPIZKuaRNiNF7kkLcMawG.jpg" alt="11 بالمية" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">11 بالمية</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/9-بالحلال">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/nmK6BZwGpQVgbhjo88QgLpkG0wQ.jpg" alt="9 بالحلال" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">9 بالحلال</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/بنات-الخالة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/auC7KzHowQNamEsW7mI8OXNZ59J.jpg" alt="بنات الخالة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">بنات الخالة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/يا-انا-يا-هي">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ktEheqZ4ty0SV7BHo1hYk4D9Bzq.jpg" alt="يا انا يا هي" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">يا انا يا هي</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/كوكب-فجعان">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/qmrTHxWRQkxo4rMkRcMPO3ohm80.jpg" alt="كوكب فجعان" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">كوكب فجعان</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/اهلا-سمسم">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/buGPJsHC37AzmHr2tYTIDKLibQ7.jpg" alt="اهلا سمسم" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">اهلا سمسم</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الثمن">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uFEV0Tsns33zKyuc12l4XCBoba7.jpg" alt="الثمن" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الثمن</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/بنات-العم-2-انتقام-الموتى">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/vj8lUERUvFH3O2V97BUEAUDmC8I.jpg" alt="بنات العم 2 - انتقام الموتى" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">بنات العم 2 - انتقام الموتى</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/ليل-البنفسج">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/aikuhUfTpCsb4azPRaQkArOKdbx.jpg" alt="ليل البنفسج" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">ليل البنفسج</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/ثعالب-الصحراء">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/oje4F8UdShpIfpqWG8SqXWURVCh.jpg" alt="ثعالب الصحراء" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">ثعالب الصحراء</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/حد-اقصي">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/p6xfQXdeeLrVMRrSbkmI2CyM5D9.jpg" alt="حد اقصي" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">حد اقصي</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/هاذي-اخرتها">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/bPIYRfq0Wn4vd0WCkxA7m2n5STS.jpg" alt="هاذي اخرتها" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">هاذي اخرتها</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/وجب-القضاء">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/869LauzZCTzKE8zj0SLHxHkXfSd.jpg" alt="وجب القضاء" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">وجب القضاء</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/نزيف-التراب">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/shA0mDNpoNM52oNPsshSaJGGpDQ.jpg" alt="نزيف التراب" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">نزيف التراب</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/نزيف-التراب-3-الجزء-الثالث">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/37w9D05BhjEi2yKyT9XKHXcVJIr.jpg" alt="نزيف التراب 3 الجزء الثالث" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">نزيف التراب 3 الجزء الثالث</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/لحظات-مسروقة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ziHop7TcEouUytKmyAvjjzmpGdR.jpg" alt="لحظات مسروقة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">لحظات مسروقة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/غيبوبة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/y7PiQlb53sIVOXQevzTposZpTDD.jpg" alt="غيبوبة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">غيبوبة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/شكون-كان-يقول">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/7tyNsSuDF3n0NsMJY0KlAKFyrV2.jpg" alt="شكون كان يقول" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">شكون كان يقول</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/بابا-وماما-جيران">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/jch1jIJhXeE9ZE8dH0sDnZc9V05.jpg" alt="بابا وماما جيران" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">بابا وماما جيران</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الحنة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/hKRFDtRImN72zz03M6ur5zmX1KK.jpg" alt="الحنة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الحنة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/عرين-الذئاب">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/dWjMrAMvgQWOnwLmHgxqc0kzGEc.jpg" alt="عرين الذئاب" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">عرين الذئاب</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/مرضي-ودحام">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ti5U8LBakcsmMgLdsYuMOXNL4DX.jpg" alt="مرضي ودحام" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">مرضي ودحام</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/عنبر">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gQTEXDM6J3CsY7LPFd4xc6Tj1rh.jpg" alt="عنبر" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">عنبر</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/اللون-الازرق">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/x8MSZXIg3JpXt72Bab3A00IqTn2.jpg" alt="اللون الازرق" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">اللون الازرق</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/اب-ولكن">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/tMkSzkVDBLsk8DQ7FnDggY0XEDC.jpg" alt="اب ولكن" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">اب ولكن</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/بيت-السعد">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/oYy3Puv9L2dNJ6DOA6ziF8fCpcD.jpg" alt="بيت السعد" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">بيت السعد</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/فرصة-اخيرة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/9GuHmrIFnXhJLGHJF7p7a5YvlEZ.jpg" alt="فرصة اخيرة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">فرصة اخيرة</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/النص-التاني">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rIwpM2XvlcAGofwsnUphehdaJGx.jpg" alt="النص التاني" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">النص التاني</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/الضحايا">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uzfP3ILGEXhSbhfCOsgCDZW7ojk.jpg" alt="الضحايا" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">الضحايا</div></div>
-    </a>
-    <a class="card" href="ramadan-trailer/ن-النسوة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/kdKJapXLmWaSxBRaex6JfAc0gP9.jpg" alt="ن النسوة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">حصري</div></div>
-      <div class="card-bottom"><div class="card-title">ن النسوة</div></div>
+    <a class="card" href="movie/1327688-one-mile-chapter-one">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1GZaoYe0mQy211DgDSAxAXr30ul.jpg" alt="One Mile: Chapter One / One Mile: Chapter One — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
+      <div class="card-bottom"><div class="card-title">One Mile: Chapter One / One Mile: Chapter One</div></div>
+    </a>
+    <a class="card" href="movie/1282440-happy-patel-khatarnak-jasoos">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/vsCkxiY2c26C6y4RyTVkpdXIfCW.jpg" alt="Happy Patel: Khatarnak Jasoos / Happy Patel: Khatarnak Jasoos — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Happy Patel: Khatarnak Jasoos / Happy Patel: Khatarnak Jasoos</div></div>
+    </a>
+    <a class="card" href="movie/1575557-amici-comuni">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/6tLRcsrHDpdBZQSJI234Mc3rTub.jpg" alt="Amici comuni / Amici comuni — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">4.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Amici comuni / Amici comuni</div></div>
+    </a>
+    <a class="card" href="movie/1620991-the-investigation-of-lucy-letby">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/qhNThwc72GqihJhXaP29Af5hJ2A.jpg" alt="The Investigation of Lucy Letby / The Investigation of Lucy Letby — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">The Investigation of Lucy Letby / The Investigation of Lucy Letby</div></div>
+    </a>
+    <a class="card" href="movie/1180417-the-dutchman">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/v7CCosgX9LcSpt7bXmqw5OzTFTV.jpg" alt="The Dutchman / The Dutchman — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">4.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">The Dutchman / The Dutchman</div></div>
+    </a>
+    <a class="card" href="movie/1367642-reminders-of-him">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/7L6rceYgzQ0NeHD7PRDNrRoQ291.jpg" alt="Reminders of Him / Reminders of Him — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Reminders of Him / Reminders of Him</div></div>
+    </a>
+    <a class="card" href="movie/1268609-pavane">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/brU6iYOchpCZBWQu1zTqyjq3ynA.jpg" alt="على إيقاع البافان / Pavane — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">على إيقاع البافان / Pavane</div></div>
+    </a>
+    <a class="card" href="movie/1217584-torrente-for-president">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/a0Fn0PiGGiU74jIUelpce6z70i9.jpg" alt="Torrente Presidente / Torrente for President — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Torrente Presidente / Torrente for President</div></div>
+    </a>
+    <a class="card" href="movie/1475490-the-calling-witch">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/q8o2NzIH4ze28NAVs1eRkejAJIk.jpg" alt="The Calling Witch / The Calling Witch — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">The Calling Witch / The Calling Witch</div></div>
+    </a>
+    <a class="card" href="movie/1449400-reckless">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/76jjEatL53KYooIrDQK9wsk4rm1.jpg" alt="Reckless / Reckless — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Reckless / Reckless</div></div>
+    </a>
+    <a class="card" href="movie/1447971-scare-out">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/cPdZiwjdLel5DD7Nm99FcSsXuSr.jpg" alt="惊蛰无声 / Scare Out — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">惊蛰无声 / Scare Out</div></div>
+    </a>
+    <a class="card" href="movie/696393-cold-storage">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/pfqkETJ2A3zXZJuNcufZbAJNnKA.jpg" alt="Cold Storage / Cold Storage — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Cold Storage / Cold Storage</div></div>
+    </a>
+    <a class="card" href="movie/1424965-ice-skater">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/m93BKabB7Je8WQACed58BXeHNNR.jpg" alt="Ice Skater / Ice Skater — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Ice Skater / Ice Skater</div></div>
+    </a>
+    <a class="card" href="movie/1462229-pegasus-3">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/cL5vAK6bUHYWTOnypi34mzzWI8X.jpg" alt="飞驰人生3 / Pegasus 3 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
+      <div class="card-bottom"><div class="card-title">飞驰人生3 / Pegasus 3</div></div>
+    </a>
+    <a class="card" href="movie/1327690-one-mile-chapter-two">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3sjc9qXXmQoUWKQ3qIjS1nZaUJy.jpg" alt="One Mile: Chapter Two / One Mile: Chapter Two — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">One Mile: Chapter Two / One Mile: Chapter Two</div></div>
+    </a>
+    <a class="card" href="movie/1451867-ghost-elephants">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/h2zN5Oo89DjwY9Q4F8zto5MlnNb.jpg" alt="Ghost Elephants / Ghost Elephants — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Ghost Elephants / Ghost Elephants</div></div>
+    </a>
+    <a class="card" href="movie/1290821-shelter">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wDHhmyIKfq5cZTYmRal4IR4y85e.jpg" alt="مأوى / Shelter — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">مأوى / Shelter</div></div>
+    </a>
+    <a class="card" href="movie/1617852-speed-faster">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/dKYp9uUlDufvL0gWHve8nuzePdk.jpg" alt="Speed Faster / Speed Faster — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Speed Faster / Speed Faster</div></div>
+    </a>
+    <a class="card" href="movie/1159559-scream-7">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ny0YBRSwiyGQ5Q1slaS8Q6JcVjm.jpg" alt="Scream 7 / Scream 7 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Scream 7 / Scream 7</div></div>
+    </a>
+    <a class="card" href="movie/1305781-blades-of-the-guardians-wind-rises-in-the-desert">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/AsWzPlQK2xJTIrzw6McT8Yvy6H2.jpg" alt="镖人：风起大漠 / Blades of the Guardians: Wind Rises in the Desert — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">镖人：风起大漠 / Blades of the Guardians: Wind Rises in the Desert</div></div>
+    </a>
+    <a class="card" href="movie/1615284-caju-meu-amigo">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/euYHIYx8d6sNI2FMePFXYzp0sA7.jpg" alt="Caju, Meu Amigo / Caju, Meu Amigo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Caju, Meu Amigo / Caju, Meu Amigo</div></div>
+    </a>
+    <a class="card" href="movie/1591916-a-melbourne-match">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/Nm49NSh8UUGtEMmTUImjZFZuAs.jpg" alt="A Melbourne Match / A Melbourne Match — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">A Melbourne Match / A Melbourne Match</div></div>
+    </a>
+    <a class="card" href="movie/1321179-the-kings-warden">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/zEH1FQTEnRY05i8gQIYdR10Vp92.jpg" alt="왕과 사는 남자 / The King's Warden — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">왕과 사는 남자 / The King's Warden</div></div>
+    </a>
+    <a class="card" href="movie/1381027-good-boy">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/cEXT4bXOrM0pqrK714NP3M69cWW.jpg" alt="Good Boy / Good Boy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Good Boy / Good Boy</div></div>
+    </a>
+    <a class="card" href="movie/1454680-hugo">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sYRssxFzHMr3Rz0VTEF21m6iVDU.jpg" alt="Victor comme tout le monde / Hugo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Victor comme tout le monde / Hugo</div></div>
+    </a>
+    <a class="card" href="movie/1305715-unexpected-family">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rwdLcQeV9TB6Qc1JU0EC387bUQi.jpg" alt="عائلة غير متوقعة / Unexpected Family — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">عائلة غير متوقعة / Unexpected Family</div></div>
+    </a>
+    <a class="card" href="movie/1323625-night-patrol">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rNqLzACU9ez2ehDalTFDPjZiC4G.jpg" alt="Night Patrol / Night Patrol — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Night Patrol / Night Patrol</div></div>
+    </a>
+    <a class="card" href="movie/1608615-the-way-to-you">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4aOxnMaDkr792WOZFJUb6LxcR74.jpg" alt="The Way to You / The Way to You — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">The Way to You / The Way to You</div></div>
+    </a>
+    <a class="card" href="movie/1449709-agata-christian-murder-on-the-snow">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/nLOF571J6YOTAmryyO5qOwSyURm.jpg" alt="Agata Christian - Delitto sulle nevi / Agata Christian - Murder on the Snow — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Agata Christian - Delitto sulle nevi / Agata Christian - Murder on the Snow</div></div>
+    </a>
+    <a class="card" href="movie/1291335-solo-mio">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/efSsZJaddeq0LOABZqpCXdMxv9P.jpg" alt="Solo Mio / Solo Mio — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Solo Mio / Solo Mio</div></div>
+    </a>
+    <a class="card" href="movie/1401357-demon-squad-tooth-and-claw">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/s4KjTRsxdQF1BBKXvYadA6OJFEc.jpg" alt="Demon Squad: Tooth and Claw / Demon Squad: Tooth and Claw — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Demon Squad: Tooth and Claw / Demon Squad: Tooth and Claw</div></div>
+    </a>
+    <a class="card" href="movie/1146344-misdirection">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/z7padnoIDHbmxPdqEHryhqlaVqc.jpg" alt="Misdirection / Misdirection — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Misdirection / Misdirection</div></div>
+    </a>
+    <a class="card" href="movie/1128377-in-cold-light">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rnrrZfFiUIpL00wUh15OBKStnDD.jpg" alt="In Cold Light / In Cold Light — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">In Cold Light / In Cold Light</div></div>
+    </a>
+    <a class="card" href="movie/1290436-summer-beats">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/j4p4TaoK4LrlLgCK0m0pBUT5CcB.jpg" alt="Ma frère / Summer Beats — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Ma frère / Summer Beats</div></div>
+    </a>
+    <a class="card" href="movie/1263037-cheekatilo">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/pO86EjZb7QyGYk5RW4Xm4UWe5Uv.jpg" alt="చీకటిలో / Cheekatilo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">4.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">చీకటిలో / Cheekatilo</div></div>
+    </a>
+    <a class="card" href="movie/1116201-iron-lung">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sIwakdbMGS1krtgendTWpxTY9Hw.jpg" alt="Iron Lung / Iron Lung — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Iron Lung / Iron Lung</div></div>
+    </a>
+    <a class="card" href="movie/1318417-a-place-for-her">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3blpQb6lMwX3VW4enxNpkX9po1c.jpg" alt="La maison des femmes / A Place for Her — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">La maison des femmes / A Place for Her</div></div>
+    </a>
+    <a class="card" href="movie/1218412-promised-sky">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/i2HNCMGzIuY4oQyDrI6zuTDrOfk.jpg" alt="Promis le ciel / Promised Sky — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Promis le ciel / Promised Sky</div></div>
+    </a>
+    <a class="card" href="movie/1609144-tempi-supplementari">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/epxdQEEPe70ew9THfheqrVOEPPe.jpg" alt="Tempi supplementari / Tempi supplementari — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">4.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Tempi supplementari / Tempi supplementari</div></div>
+    </a>
+    <a class="card" href="movie/1608982-from-the-ashes-the-pit">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3OBRXbnlhZxMPpfLMLzQwF29IMC.jpg" alt="جرس إنذار: الحفرة / From the Ashes: The Pit — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">3.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">جرس إنذار: الحفرة / From the Ashes: The Pit</div></div>
+    </a>
+    <a class="card" href="movie/1472636-un-bel-giorno">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lfl48xTTCWwXcXIYgi8XgRZyBlv.jpg" alt="Un bel giorno / Un bel giorno — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Un bel giorno / Un bel giorno</div></div>
+    </a>
+    <a class="card" href="movie/965483-parasakthi">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/cpKJGYU8Z1iSXzkgDl8vhazk5EQ.jpg" alt="பராசக்தி / Parasakthi — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">பராசக்தி / Parasakthi</div></div>
+    </a>
+    <a class="card" href="movie/1368830-chers-parents">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/dOTZP3gnMjJHva914Xrzljhyl7c.jpg" alt="Chers parents / Chers parents — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Chers parents / Chers parents</div></div>
+    </a>
+    <a class="card" href="movie/1228477-chebi-my-fluffy-friend-2">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/aEd7HxaP36ATadbRytifEScRiLr.jpg" alt="Чебурашка 2 / Chebi: My Fluffy Friend 2 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Чебурашка 2 / Chebi: My Fluffy Friend 2</div></div>
+    </a>
+    <a class="card" href="movie/1088434-hellfire">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/tQti9QTf13MfzNpXguijgNh7ojE.jpg" alt="Hellfire / Hellfire — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Hellfire / Hellfire</div></div>
+    </a>
+    <a class="card" href="movie/1633264-louis-theroux-inside-the-manosphere">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ouOvRvsgF37yEx3D6ZLWyuxZFjE.jpg" alt="لويس ثيرو: داخل عالم الذكورية / Louis Theroux: Inside the Manosphere — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">لويس ثيرو: داخل عالم الذكورية / Louis Theroux: Inside the Manosphere</div></div>
+    </a>
+    <a class="card" href="movie/1618784-fight-against-evil-3">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/f5EoZe8Z256w0tgRhYzV0LAtNuH.jpg" alt="东北警察故事3 / Fight Against Evil 3 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">东北警察故事3 / Fight Against Evil 3</div></div>
+    </a>
+    <a class="card" href="movie/1171145-crime-101">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/cZY1IOguquyYhJdRbuLcdypXnDA.jpg" alt="Crime 101 / Crime 101 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Crime 101 / Crime 101</div></div>
+    </a>
+    <a class="card" href="movie/1624183-blackout">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gFy3I3hJeLKKJt8EGpc1ZbGTwoH.jpg" alt="Blackout / Blackout — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Blackout / Blackout</div></div>
+    </a>
+    <a class="card" href="movie/869140-thalaivar-thambi-thalaimaiyil">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wqofJvDrFv65QgyVmNI4loi9jZZ.jpg" alt="தலைவர் தம்பி தலைமையில் / Thalaivar Thambi Thalaimaiyil — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">தலைவர் தம்பி தலைமையில் / Thalaivar Thambi Thalaimaiyil</div></div>
+    </a>
+    <a class="card" href="movie/1373198-twisted">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rF6txsM6cgF9vg6Ra5sNbkvUwrw.jpg" alt="Twisted / Twisted — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">4.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Twisted / Twisted</div></div>
+    </a>
+    <a class="card" href="movie/1636891-mexicali">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/kQbmqipH7YvmILnB0PF8faOEcUp.jpg" alt="Mexicali / Mexicali — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Mexicali / Mexicali</div></div>
+    </a>
+    <a class="card" href="movie/1390382-couture">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/zN2hnZzj3DjJH2CzB76kDo1zYFu.jpg" alt="Coutures / Couture — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Coutures / Couture</div></div>
+    </a>
+    <a class="card" href="movie/1538718-disneyland-handcrafted">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/81szv19zvs5fGqXtWau6tXzfC4T.jpg" alt="Disneyland Handcrafted / Disneyland Handcrafted — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Disneyland Handcrafted / Disneyland Handcrafted</div></div>
+    </a>
+    <a class="card" href="movie/1637319-hannah-montana-20th-anniversary-special">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/2BZ0bij5ORSvfDepCDD8CqVcpaG.jpg" alt="Hannah Montana 20th Anniversary Special / Hannah Montana 20th Anniversary Special — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Hannah Montana 20th Anniversary Special / Hannah Montana 20th Anniversary Special</div></div>
+    </a>
+    <a class="card" href="movie/1119449-good-luck-have-fun-dont-die">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rWcfOdY7TU6lTdazWj0ebDZnAfO.jpg" alt="Good Luck, Have Fun, Don't Die / Good Luck, Have Fun, Don't Die — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Good Luck, Have Fun, Don't Die / Good Luck, Have Fun, Don't Die</div></div>
+    </a>
+    <a class="card" href="movie/1110034-kraken">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/8ExwomWgJoXBdY3u1Otiw2zY9wZ.jpg" alt="Kraken / Kraken — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Kraken / Kraken</div></div>
+    </a>
+    <a class="card" href="movie/1174240-vampire-zombiesfrom-space">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/g7uQT3jpdCaxcK9jn3cJY1Tfryq.jpg" alt="Vampire Zombies...from Space! / Vampire Zombies...from Space! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Vampire Zombies...from Space! / Vampire Zombies...from Space!</div></div>
+    </a>
+    <a class="card" href="movie/680493-return-to-silent-hill">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/vrmBGQRCW7TzoZS4XDNuVV60cgv.jpg" alt="Return to Silent Hill / Return to Silent Hill — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Return to Silent Hill / Return to Silent Hill</div></div>
+    </a>
+    <a class="card" href="movie/1417849-naari-naari-naduma-murari">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/jFBu7tS0mlEZwYTkjJcKH48bV4m.jpg" alt="నారీ నారీ నడుమ మురారి / Naari Naari Naduma Murari — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">నారీ నారీ నడుమ మురారి / Naari Naari Naduma Murari</div></div>
     </a>
   </div>
 </section>
-<section class="section" id="anime">
-  <h2 class="section-title">أنمي وكرتون 2026</h2>
-  <div class="grid">
 
-    <a class="card" href="anime/one-piece">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/b9nSI5cl2bTj7FlhQl4TIoOwvW6.jpg" alt="One Piece" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">One Piece</div></div>
-    </a>
-    <a class="card" href="anime/one-piece-special">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/b9nSI5cl2bTj7FlhQl4TIoOwvW6.jpg" alt="One Piece - Special" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">One Piece - Special</div></div>
-    </a>
-    <a class="card" href="anime/shingeki-no-kyojin">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/yGi2XhxOqkiP0hVfviZMUJKC5Qn.jpg" alt="Shingeki no Kyojin" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Shingeki no Kyojin</div></div>
-    </a>
-    <a class="card" href="anime/solo-leveling">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gRjLWlk3tCIXGQ435D34XSsjGBw.jpg" alt="Solo Leveling" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Solo Leveling</div></div>
-    </a>
-    <a class="card" href="anime/shingeki-no-kyojin-the-final">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/yGi2XhxOqkiP0hVfviZMUJKC5Qn.jpg" alt="Shingeki no Kyojin: The Final" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Shingeki no Kyojin: The Final</div></div>
-    </a>
-    <a class="card" href="anime/kimetsu-no-yaiba">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/dwuVipGiAfGZ3SAOJClm6bweUts.jpg" alt="Kimetsu no Yaiba" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Kimetsu no Yaiba</div></div>
-    </a>
-    <a class="card" href="anime/jujutsu-kaisen">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/feS8k6Wy8b0mLGzJLwmEyVkZ9xx.jpg" alt="Jujutsu Kaisen" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Jujutsu Kaisen</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-صفر">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا صفر" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا صفر</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-الاولى">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الاولى" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الاولى</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-الثانية">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الثانية" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الثانية</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-الثالثة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الثالثة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الثالثة</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-الرابعة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الرابعة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الرابعة</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-الخامسة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الخامسة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الخامسة</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-السادسة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا السادسة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا السادسة</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-السابعة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا السابعة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا السابعة</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-الثامنة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الثامنة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الثامنة</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-التاسعة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا التاسعة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا التاسعة</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-العاشرة">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا العاشرة" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا العاشرة</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-الحادية-عشر">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الحادية عشر" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الحادية عشر</div></div>
-    </a>
-    <a class="card" href="anime/detective-conan-الاوفا-الثانية-عشر">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1X4oWU6r5IUO5e0ZgeT3GdvJbRC.jpg" alt="Detective Conan – الاوفا الثانية عشر" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Detective Conan – الاوفا الثانية عشر</div></div>
-    </a>
-    <a class="card" href="anime/hunter-x-hunter-2011">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/r8qfs8dBQnhSgym9onnmVlnm3zd.jpg" alt="Hunter x Hunter 2011" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Hunter x Hunter 2011</div></div>
-    </a>
-    <a class="card" href="anime/steel-ball-run-jojo-no-kimyou-na-bouken">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/k8iHQ2IU7j5FprP4oWrp03ClqJ9.jpg" alt="Steel Ball Run: JoJo no Kimyou na Bouken" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Steel Ball Run: JoJo no Kimyou na Bouken</div></div>
-    </a>
-    <a class="card" href="anime/fangkai-nage-nuwu">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/aALqEgghYorHOwR5pgeCq9YMrjj.jpg" alt="Fangkai Nage Nuwu" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Fangkai Nage Nuwu</div></div>
-    </a>
-    <a class="card" href="anime/immortality">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4QjbA5gmFrAq2gjdkTxKYPrsQGn.jpg" alt="IMMORTALITY" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">IMMORTALITY</div></div>
-    </a>
-    <a class="card" href="anime/pantheon">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/aZupC6eJhTe82e5I0JRaOBjFHOd.jpg" alt="Pantheon" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Pantheon</div></div>
-    </a>
-    <a class="card" href="anime/terror-man">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/jYXLVEkLhSgdCdmgisPzTGY4kYP.jpg" alt="Terror Man" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Terror Man</div></div>
-    </a>
-    <a class="card" href="anime/baki-dou">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wViuuy27uauEs3A8Vn69Q43MFAQ.jpg" alt="Baki-dou" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Baki-dou</div></div>
-    </a>
-    <a class="card" href="anime/omae-gotoki-ga-maou-ni-kateru-to-omouna">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/nH6Ch1q5rwdRs56bYTA9wuOhfbL.jpg" alt="Omae Gotoki ga Maou ni Kateru to Omouna" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Omae Gotoki ga Maou ni Kateru to Omouna</div></div>
-    </a>
-    <a class="card" href="anime/meitantei-precure">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/zuPQ9R5x17EM6xEA37TLRkL2BGD.jpg" alt="Meitantei Precure!" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Meitantei Precure!</div></div>
-    </a>
-    <a class="card" href="anime/prism-rondo">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ogbZc8ELD0XnzCtWE0jGNbesiNc.jpg" alt="Prism Rondo" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Prism Rondo</div></div>
-    </a>
-    <a class="card" href="anime/kirei-ni-shitemoraemasu-ka">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/u3FoBE3Vw0tTHFV6djpSv5HHBU5.jpg" alt="Kirei ni Shitemoraemasu ka." loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Kirei ni Shitemoraemasu ka.</div></div>
-    </a>
-    <a class="card" href="anime/3rd">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sUB4lZghNnwQywKqgjIfJsyBqI2.jpg" alt="3rd" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">3rd</div></div>
-    </a>
-    <a class="card" href="anime/high-school-kimengumi">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/8ota15pVJEQYzEM0lVb9iVtUvPQ.jpg" alt="High School! Kimengumi" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">High School! Kimengumi</div></div>
-    </a>
-  </div>
-</section>
 <section class="section" id="series">
-  <h2 class="section-title">مسلسلات عربية وأجنبية 2026</h2>
+  <h2 class="section-title">أحدث المسلسلات — Newest Series</h2>
   <div class="grid">
-
-    <a class="card" href="series/peaky-blinders">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/zGFqvijcGAh2QoUfI1zFf1HZb0N.jpg" alt="Peaky Blinders" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Peaky Blinders</div></div>
+    <a class="card" href="tv/254953-rooster">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/w64idjoYmY2eVda5nXl3TNFh0IA.jpg" alt="Rooster / Rooster — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Rooster / Rooster</div></div>
     </a>
-    <a class="card" href="series/moon-knight">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/mdsh6PgayTmhNJIoPgh2zEajLZm.jpg" alt="Moon Knight" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Moon Knight</div></div>
+    <a class="card" href="tv/313995-singles-inferno-reunion">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/xgM5WOEzr0Y7MUK0EnuozBw3CKZ.jpg" alt="솔로지옥 리유니언 / Single's Inferno Reunion — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">솔로지옥 리유니언 / Single's Inferno Reunion</div></div>
     </a>
-    <a class="card" href="series/halo">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rKlAQe02AUrwDqzfSGbLnwoNHPJ.jpg" alt="Halo" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Halo</div></div>
+    <a class="card" href="tv/313289-battle-of-fates">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/vhBR39iem2CS2lnibQE0LKgq49S.jpg" alt="운명전쟁49 / Battle of Fates — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">운명전쟁49 / Battle of Fates</div></div>
     </a>
-    <a class="card" href="series/the-last-kingdom">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/8eJf0hxgIhE6QSxbtuNCekTddy1.jpg" alt="The Last Kingdom" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">The Last Kingdom</div></div>
+    <a class="card" href="tv/302074-rj-decker">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/bkMdvmjj1zEnVqZTPskBREDzTuS.jpg" alt="R.J. Decker / R.J. Decker — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">R.J. Decker / R.J. Decker</div></div>
     </a>
-    <a class="card" href="series/game-of-thrones">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ymlP99B7EQCJbJcdsQFtnh9ADlF.jpg" alt="Game of Thrones" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Game of Thrones</div></div>
+    <a class="card" href="tv/279136-love-between-lines">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/orawdlwsGdfGDVWBYTPpCi87Myt.jpg" alt="轧戏 / Love Between Lines — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">轧戏 / Love Between Lines</div></div>
     </a>
-    <a class="card" href="series/euphoria">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/iTmIT0hWJeKHg3BTEsSiDSmtKTL.jpg" alt="Euphoria" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Euphoria</div></div>
+    <a class="card" href="tv/294344-los-colorado">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4HV6Vd3QL9C29SZF4KBJ499bUet.jpg" alt="Los Colorado / Los Colorado — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Los Colorado / Los Colorado</div></div>
     </a>
-    <a class="card" href="series/the-walking-dead">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sE9IMFfWMVcPZcfrsxDclcRuhYo.jpg" alt="The Walking Dead" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">The Walking Dead</div></div>
+    <a class="card" href="tv/297024-fear-factor-house-of-fear">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/t9U95eNaip1vnmzfgj6kSiyVtAR.jpg" alt="Fear Factor: House of Fear / Fear Factor: House of Fear — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Fear Factor: House of Fear / Fear Factor: House of Fear</div></div>
     </a>
-    <a class="card" href="series/reacher">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/jBIAkLtnLFLDRrGtK9rHv871mXV.jpg" alt="Reacher" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Reacher</div></div>
+    <a class="card" href="tv/278271-the-invisible-man-and-his-soon-to-be-wife">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ovkgVd6wwJ4FAwilVtxsmIhbXmp.jpg" alt="透明男と人間女～そのうち夫婦になるふたり～ / The Invisible Man and His Soon-to-Be Wife — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">透明男と人間女～そのうち夫婦になるふたり～ / The Invisible Man and His Soon-to-Be Wife</div></div>
     </a>
-    <a class="card" href="series/the-sopranos">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/2QKckxlc3l445WDFfkVlosFqg0F.jpg" alt="The Sopranos" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">The Sopranos</div></div>
+    <a class="card" href="tv/284828-duang-with-you">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4WZGVbZoHf76KBi0sAWts7pw9Mq.jpg" alt="ด้วงกับเธอ / Duang with You — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">ด้วงกับเธอ / Duang with You</div></div>
     </a>
-    <a class="card" href="series/invincible">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/pKf7GfJcuU4ypEUjGnts2D83oqL.jpg" alt="Invincible" loading="lazy">
-      <div class="card-overlay"><div class="card-meta">مسلسل</div></div>
-      <div class="card-bottom"><div class="card-title">Invincible</div></div>
+    <a class="card" href="tv/287591-in-the-clear-moonlit-dusk">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3061lEeTTSb5NtX0ASXnRSO7Mo5.jpg" alt="うるわしの宵の月 / In the Clear Moonlit Dusk — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">うるわしの宵の月 / In the Clear Moonlit Dusk</div></div>
+    </a>
+    <a class="card" href="tv/311370-candy">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3xzH2dUaqReMocxfBWU19wOa5hI.jpg" alt="糖果 / Candy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">糖果 / Candy</div></div>
+    </a>
+    <a class="card" href="tv/284495-isekai-office-worker-the-other-worlds-books-depend-on-the-bean-counter">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/9ZtYwGcz9g6vcOBcFTMOFrYQVKs.jpg" alt="異世界の沙汰は社畜次第 / Isekai Office Worker: The Other World's Books Depend on the Bean Counter — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">異世界の沙汰は社畜次第 / Isekai Office Worker: The Other World's Books Depend on the Bean Counter</div></div>
+    </a>
+    <a class="card" href="tv/285743-you-cant-be-in-a-rom-com-with-your-childhood-friends">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rMoMsLOTbEKCWFEzgbxryoXUgRe.jpg" alt="幼馴染とはラブコメにならない / You Can't Be in a Rom-Com with Your Childhood Friends! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">幼馴染とはラブコメにならない / You Can't Be in a Rom-Com with Your Childhood Friends!</div></div>
+    </a>
+    <a class="card" href="tv/293608-undercover-miss-hong">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/bjcQqh217cN4UEMX73iMWZA0Y0y.jpg" alt="الآنسة هونغ في مهمة سرية / Undercover Miss Hong — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
+      <div class="card-bottom"><div class="card-title">الآنسة هونغ في مهمة سرية / Undercover Miss Hong</div></div>
+    </a>
+    <a class="card" href="tv/290667-an-adventurers-daily-grind-at-age-29">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rnwq4Z17xEV29QiT5Kwy9Sh6R8y.jpg" alt="29歳独身中堅冒険者の日常 / An Adventurer's Daily Grind at Age 29 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">29歳独身中堅冒険者の日常 / An Adventurer's Daily Grind at Age 29</div></div>
+    </a>
+    <a class="card" href="tv/290231-love-from-9-to-5">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/drpeMcOyFlaoSP2R5ZkWgbqLfDK.jpg" alt="Amor de oficina / Love from 9 to 5 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Amor de oficina / Love from 9 to 5</div></div>
+    </a>
+    <a class="card" href="tv/262361-can-you-keep-a-secret">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/tHClv1qk48Hcu3DjusH1nglQIl9.jpg" alt="Can You Keep a Secret? / Can You Keep a Secret? — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Can You Keep a Secret? / Can You Keep a Secret?</div></div>
+    </a>
+    <a class="card" href="tv/308606-pelayo-más-allá-del-límite">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/fNxvkDtJKUXIPZaVHVSNacktBRV.jpg" alt="Pelayo: Más allá del límite / Pelayo: Más Allá Del Límite — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Pelayo: Más allá del límite / Pelayo: Más Allá Del Límite</div></div>
+    </a>
+    <a class="card" href="tv/108181-imperfect-women">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wW7rimhnokiQ8V6ha6VKIwHg8IV.jpg" alt="Imperfect Women / Imperfect Women — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Imperfect Women / Imperfect Women</div></div>
+    </a>
+    <a class="card" href="tv/285507-major-grom-against-the-rules">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/bfB8P3Fv7jCGcrwIMF70mN1Atm0.jpg" alt="Майор Гром: Игра против правил / Major Grom: Against the Rules — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Майор Гром: Игра против правил / Major Grom: Against the Rules</div></div>
+    </a>
+    <a class="card" href="tv/235685-the-pendragon-cycle-rise-of-the-merlin">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gUooqhhzLVwDuyUZpZlscT9IzXY.jpg" alt="The Pendragon Cycle: Rise of the Merlin / The Pendragon Cycle: Rise of the Merlin — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">The Pendragon Cycle: Rise of the Merlin / The Pendragon Cycle: Rise of the Merlin</div></div>
+    </a>
+    <a class="card" href="tv/293550-gomorrah-the-origins">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/l0RJjiE6k1Ey5m3pYTe60BQbNnZ.jpg" alt="Gomorra - Le Origini / Gomorrah: The Origins — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Gomorra - Le Origini / Gomorrah: The Origins</div></div>
+    </a>
+    <a class="card" href="tv/312693-small-prophets">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/vlR2nPjHuHJaZb6n8NV2MJIl5Br.jpg" alt="Small Prophets / Small Prophets — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Small Prophets / Small Prophets</div></div>
+    </a>
+    <a class="card" href="tv/314587-my-rival">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/cZVOZl7Xx2G1BdKC1Apx2GxobcO.jpg" alt="Mi Rival / My rival — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Mi Rival / My rival</div></div>
+    </a>
+    <a class="card" href="tv/254071-steal">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/zHADFVQlJY0Q9MdLBGaJ92WwE6Q.jpg" alt="سطو / Steal — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">سطو / Steal</div></div>
+    </a>
+    <a class="card" href="tv/308767-handsome-devil-charming-killer">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/eMYeeDy7xj22JnatwxVT8wHTujI.jpg" alt="Handsome Devil: Charming Killer / Handsome Devil: Charming Killer — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Handsome Devil: Charming Killer / Handsome Devil: Charming Killer</div></div>
+    </a>
+    <a class="card" href="tv/288382-le-diplôme">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/fA1d6JQRZgMPOv6PgPf2xzLnidB.jpg" alt="Le Diplôme / Le Diplôme — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Le Diplôme / Le Diplôme</div></div>
+    </a>
+    <a class="card" href="tv/255661-young-sherlock">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lyol9MRlluT2ZS000JbPt4qxG9N.jpg" alt="الشاب شيرلوك / Young Sherlock — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">الشاب شيرلوك / Young Sherlock</div></div>
+    </a>
+    <a class="card" href="tv/254492-hana-kimi">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4BoA0q0oh1FJiRe9PlZCxlqX26T.jpg" alt="花ざかりの君たちへ / Hana-Kimi — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">花ざかりの君たちへ / Hana-Kimi</div></div>
+    </a>
+    <a class="card" href="tv/279388-pursuit-of-jade">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/cYV1cn51qeu7aLqMUrSsmPe1QNo.jpg" alt="逐玉 / Pursuit of Jade — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">逐玉 / Pursuit of Jade</div></div>
+    </a>
+    <a class="card" href="tv/272322-ewilans-quest">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3XjPuRha7S0K8ZV1ElxJJGIucsb.jpg" alt="La Quête d'Ewilan / Ewilan's Quest — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">La Quête d'Ewilan / Ewilan's Quest</div></div>
+    </a>
+    <a class="card" href="tv/276110-the-case-book-of-arne">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/AbpAfT1RJ4IMB2uxUucXfaPMrFa.jpg" alt="アルネの事件簿 / The Case Book of Arne — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">アルネの事件簿 / The Case Book of Arne</div></div>
+    </a>
+    <a class="card" href="tv/273977-the-art-of-sarah">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3bYSwRqLy2qfx5gqVJdOhibxeML.jpg" alt="فنون سارا / The Art of Sarah — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">فنون سارا / The Art of Sarah</div></div>
+    </a>
+    <a class="card" href="tv/259856-salvador">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/8pLnnRB2qG1vZHXpjm2gVFNyUX.jpg" alt="Salvador / Salvador — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Salvador / Salvador</div></div>
+    </a>
+    <a class="card" href="tv/223530-star-trek-starfleet-academy">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/m4JnADIJkF5ck6jq7GUEcPBKxd0.jpg" alt="Star Trek: Starfleet Academy / Star Trek: Starfleet Academy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Star Trek: Starfleet Academy / Star Trek: Starfleet Academy</div></div>
+    </a>
+    <a class="card" href="tv/274141-a-gentle-nobles-vacation-recommendation">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/v0jFsByv3sX4aDpqgpoC7hjtqB8.jpg" alt="穏やか貴族の休暇のすすめ。 / A Gentle Noble's Vacation Recommendation — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">穏やか貴族の休暇のすすめ。 / A Gentle Noble's Vacation Recommendation</div></div>
+    </a>
+    <a class="card" href="tv/313298-the-dinosaurs">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/x37IK9WWhuzi7tgyMT4ff3kiT5X.jpg" alt="الديناصورات / The Dinosaurs — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">الديناصورات / The Dinosaurs</div></div>
+    </a>
+    <a class="card" href="tv/295483-the-villainess-is-adored-by-the-prince-of-the-neighbor-kingdom">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/bjgqOgkOxWphCaq1CG1jPhDq1dI.jpg" alt="悪役令嬢は隣国の王太子に溺愛される / The Villainess Is Adored by the Prince of the Neighbor Kingdom — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">悪役令嬢は隣国の王太子に溺愛される / The Villainess Is Adored by the Prince of the Neighbor Kingdom</div></div>
+    </a>
+    <a class="card" href="tv/131142-love-story">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/7WU3cXD0rip5ONc7owI2dBWAVjW.jpg" alt="Love Story / Love Story — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Love Story / Love Story</div></div>
+    </a>
+    <a class="card" href="tv/315051-polen">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/uryZoVG1QHY9l07oB6HcipRkSy3.jpg" alt="Polen / Polen — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Polen / Polen</div></div>
+    </a>
+    <a class="card" href="tv/308482-taskaree-the-smugglers-web">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/25fKRXvQLBq4nXu9vjOVJcvCiiD.jpg" alt="तस्करी: द स्मगलर्स वेब / Taskaree: The Smuggler's Web — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">तस्करी: द स्मगलर्स वेब / Taskaree: The Smuggler's Web</div></div>
+    </a>
+    <a class="card" href="tv/312697-jury-duty-presents-company-retreat">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/pwSxtL9AfjTcdBU0XQuRkqEp8hh.jpg" alt="الموظف الوحيد / Jury Duty Presents: Company Retreat — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">الموظف الوحيد / Jury Duty Presents: Company Retreat</div></div>
+    </a>
+    <a class="card" href="tv/292493-my-korean-boyfriend">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wxxX9PYI7u6LJfURvSABBHqbud8.jpg" alt="Meu Namorado Coreano / My Korean Boyfriend — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Meu Namorado Coreano / My Korean Boyfriend</div></div>
+    </a>
+    <a class="card" href="tv/310759-la-preside">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/6IPH7WaQjMnwZBL9g4IwvOBjdD1.jpg" alt="La preside / La preside — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">La preside / La preside</div></div>
+    </a>
+    <a class="card" href="tv/285636-time-flies">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/9n2HM0guy6Wn95EshDj7Uw6XWd2.jpg" alt="زمن الذباب / Time Flies — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">زمن الذباب / Time Flies</div></div>
+    </a>
+    <a class="card" href="tv/152401-madam-beja">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/eN3jw7AEOwNtTQTsGVHlEPvs6OC.jpg" alt="Dona Beja / Madam Beja — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Dona Beja / Madam Beja</div></div>
+    </a>
+    <a class="card" href="tv/285650-laffaire-laura-stern">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/amoBYUQhXjUGdcPviy3ja6xJOOE.jpg" alt="L'affaire Laura Stern / L'affaire Laura Stern — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">L'affaire Laura Stern / L'affaire Laura Stern</div></div>
+    </a>
+    <a class="card" href="tv/272586-land-of-sin">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/cCHjCJxrUZrDGFxnSCM5Xfl0lMo.jpg" alt="أرض الخطيئة / Land of Sin — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">أرض الخطيئة / Land of Sin</div></div>
+    </a>
+    <a class="card" href="tv/285739-vladimir">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/j02VBIGVIk2OTwTUZ1YzyzcONAy.jpg" alt="البروفيسور فلاديمير / Vladimir — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">البروفيسور فلاديمير / Vladimir</div></div>
+    </a>
+    <a class="card" href="tv/310282-a-testa-alta-il-coraggio-di-una-donna">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rl3FlB31f9JMggt6SqUU5Qw0Bor.jpg" alt="A testa alta - Il coraggio di una donna / A testa alta - Il coraggio di una donna — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">4.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">A testa alta - Il coraggio di una donna / A testa alta - Il coraggio di una donna</div></div>
+    </a>
+    <a class="card" href="tv/295366-there-was-a-cute-girl-in-the-heros-party-so-i-tried-confessing-to-her">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/hlprcIJFyWVkCNOxU7UySb1ECLe.jpg" alt="勇者パーティーにかわいい子がいたので、告白してみた。 / There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">勇者パーティーにかわいい子がいたので、告白してみた。 / There Was a Cute Girl in the Hero's Party, So I Tried Confessing to Her</div></div>
+    </a>
+    <a class="card" href="tv/261676-the-truth">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/jlVH4LZCyHrssklKF2g2tLqtxdm.jpg" alt="风过留痕 / The Truth — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">风过留痕 / The Truth</div></div>
+    </a>
+    <a class="card" href="tv/310537-silent-nava">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3mnX6J8axXhx8MAhaLZdi7LNCPg.jpg" alt="Тиха Нава / Silent Nava — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Тиха Нава / Silent Nava</div></div>
+    </a>
+    <a class="card" href="tv/297424-our-universe">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/2H3LxJjSQNCtMfG1zwToWH5L4RM.jpg" alt="عالمنا / Our Universe — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">عالمنا / Our Universe</div></div>
+    </a>
+    <a class="card" href="tv/290856-marshals">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/nInfaveN1iFpRIcMGNKENoVVUT2.jpg" alt="Marshals / Marshals — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Marshals / Marshals</div></div>
+    </a>
+    <a class="card" href="tv/294280-the-demon-kings-daughter-is-too-kind">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gUpjTomq5J4aOpwAOJ3WB76kh5g.jpg" alt="魔王の娘は優しすぎる!! / The Demon King's Daughter Is Too Kind!! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">魔王の娘は優しすぎる!! / The Demon King's Daughter Is Too Kind!!</div></div>
+    </a>
+    <a class="card" href="tv/244244-run-away">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/frKxKytEHIA2vXg4RAz14Sc0UmS.jpg" alt="الهاربة / Run Away — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">الهاربة / Run Away</div></div>
+    </a>
+    <a class="card" href="tv/292474-radioactive-emergency">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/5MxP4pmZWyBA8d27fAaROFsaH1h.jpg" alt="حالة طوارئ إشعاعية / Radioactive Emergency — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">حالة طوارئ إشعاعية / Radioactive Emergency</div></div>
+    </a>
+    <a class="card" href="tv/287231-vanished">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/6Htrg4SobTHu9aYaYLGZaNLJvLX.jpg" alt="Vanished / Vanished — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Vanished / Vanished</div></div>
+    </a>
+    <a class="card" href="tv/295170-a-woman-of-substance">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/tW7pp996pGVd0YTLtc7ZyW9VMqk.jpg" alt="A Woman of Substance / A Woman of Substance — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">A Woman of Substance / A Woman of Substance</div></div>
     </a>
   </div>
 </section>
-  <!-- DYNAMIC_CONTENT_END -->
+
+<section class="section" id="anime">
+  <h2 class="section-title">أنمي مترجم — Anime</h2>
+  <div class="grid">
+    <a class="card" href="movie/1215638-checkered-ninja-3">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sGUesG39H2LWZ6lUTwZXOqUHsxI.jpg" alt="Ternet Ninja 3 / Checkered Ninja 3 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Ternet Ninja 3 / Checkered Ninja 3</div></div>
+    </a>
+    <a class="card" href="tv/294344-los-colorado">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4HV6Vd3QL9C29SZF4KBJ499bUet.jpg" alt="Los Colorado / Los Colorado — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Los Colorado / Los Colorado</div></div>
+    </a>
+    <a class="card" href="tv/278271-the-invisible-man-and-his-soon-to-be-wife">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ovkgVd6wwJ4FAwilVtxsmIhbXmp.jpg" alt="透明男と人間女～そのうち夫婦になるふたり～ / The Invisible Man and His Soon-to-Be Wife — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">透明男と人間女～そのうち夫婦になるふたり～ / The Invisible Man and His Soon-to-Be Wife</div></div>
+    </a>
+    <a class="card" href="tv/287591-in-the-clear-moonlit-dusk">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3061lEeTTSb5NtX0ASXnRSO7Mo5.jpg" alt="うるわしの宵の月 / In the Clear Moonlit Dusk — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">うるわしの宵の月 / In the Clear Moonlit Dusk</div></div>
+    </a>
+    <a class="card" href="tv/284495-isekai-office-worker-the-other-worlds-books-depend-on-the-bean-counter">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/9ZtYwGcz9g6vcOBcFTMOFrYQVKs.jpg" alt="異世界の沙汰は社畜次第 / Isekai Office Worker: The Other World's Books Depend on the Bean Counter — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">異世界の沙汰は社畜次第 / Isekai Office Worker: The Other World's Books Depend on the Bean Counter</div></div>
+    </a>
+    <a class="card" href="tv/285743-you-cant-be-in-a-rom-com-with-your-childhood-friends">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rMoMsLOTbEKCWFEzgbxryoXUgRe.jpg" alt="幼馴染とはラブコメにならない / You Can't Be in a Rom-Com with Your Childhood Friends! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">幼馴染とはラブコメにならない / You Can't Be in a Rom-Com with Your Childhood Friends!</div></div>
+    </a>
+    <a class="card" href="tv/290667-an-adventurers-daily-grind-at-age-29">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/rnwq4Z17xEV29QiT5Kwy9Sh6R8y.jpg" alt="29歳独身中堅冒険者の日常 / An Adventurer's Daily Grind at Age 29 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">29歳独身中堅冒険者の日常 / An Adventurer's Daily Grind at Age 29</div></div>
+    </a>
+    <a class="card" href="tv/254492-hana-kimi">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4BoA0q0oh1FJiRe9PlZCxlqX26T.jpg" alt="花ざかりの君たちへ / Hana-Kimi — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">花ざかりの君たちへ / Hana-Kimi</div></div>
+    </a>
+    <a class="card" href="tv/276110-the-case-book-of-arne">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/AbpAfT1RJ4IMB2uxUucXfaPMrFa.jpg" alt="アルネの事件簿 / The Case Book of Arne — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">アルネの事件簿 / The Case Book of Arne</div></div>
+    </a>
+    <a class="card" href="tv/274141-a-gentle-nobles-vacation-recommendation">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/v0jFsByv3sX4aDpqgpoC7hjtqB8.jpg" alt="穏やか貴族の休暇のすすめ。 / A Gentle Noble's Vacation Recommendation — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">穏やか貴族の休暇のすすめ。 / A Gentle Noble's Vacation Recommendation</div></div>
+    </a>
+    <a class="card" href="tv/295483-the-villainess-is-adored-by-the-prince-of-the-neighbor-kingdom">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/bjgqOgkOxWphCaq1CG1jPhDq1dI.jpg" alt="悪役令嬢は隣国の王太子に溺愛される / The Villainess Is Adored by the Prince of the Neighbor Kingdom — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">悪役令嬢は隣国の王太子に溺愛される / The Villainess Is Adored by the Prince of the Neighbor Kingdom</div></div>
+    </a>
+    <a class="card" href="tv/294280-the-demon-kings-daughter-is-too-kind">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gUpjTomq5J4aOpwAOJ3WB76kh5g.jpg" alt="魔王の娘は優しすぎる!! / The Demon King's Daughter Is Too Kind!! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">魔王の娘は優しすぎる!! / The Demon King's Daughter Is Too Kind!!</div></div>
+    </a>
+    <a class="card" href="tv/275902-kaya-chan-isnt-scary">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/jfWdGJ2HcaCMVRdOUBPd6ayYgz2.jpg" alt="カヤちゃんはコワくない / Kaya-chan Isn't Scary — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">カヤちゃんはコワくない / Kaya-chan Isn't Scary</div></div>
+    </a>
+    <a class="card" href="tv/293144-wash-it-all-away">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/u3FoBE3Vw0tTHFV6djpSv5HHBU5.jpg" alt="綺麗にしてもらえますか。 / Wash It All Away — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">綺麗にしてもらえますか。 / Wash It All Away</div></div>
+    </a>
+    <a class="card" href="tv/285291-reincarnated-as-a-dragon-hatchling">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/wwleFyKVSzCw2GkdJTwXplHsPZp.jpg" alt="転生したらドラゴンの卵だった～最強以外目指さねぇ～ / Reincarnated as a Dragon Hatchling — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.3⭐</div></div>
+      <div class="card-bottom"><div class="card-title">転生したらドラゴンの卵だった～最強以外目指さねぇ～ / Reincarnated as a Dragon Hatchling</div></div>
+    </a>
+    <a class="card" href="tv/285166-jack-of-all-trades-party-of-none">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/upjt2eq2ICUq8iZjtGbK7UFhQgH.jpg" alt="متعدد المهارات بلا فريق / Jack-of-All-Trades, Party of None — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">متعدد المهارات بلا فريق / Jack-of-All-Trades, Party of None</div></div>
+    </a>
+    <a class="card" href="tv/281161-noble-reincarnation-born-blessed-so-ill-obtain-ultimate-power">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ggxUYlw7a3eVegnXDv8aCDiLccJ.jpg" alt="貴族転生 ～恵まれた生まれから最強の力を得る～ / Noble Reincarnation: Born Blessed, So I'll Obtain Ultimate Power — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">貴族転生 ～恵まれた生まれから最強の力を得る～ / Noble Reincarnation: Born Blessed, So I'll Obtain Ultimate Power</div></div>
+    </a>
+    <a class="card" href="tv/253476-journal-with-witch">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/oMgxAEq7OVvkLDevVMfYwlAzBrP.jpg" alt="違国日記 / Journal with Witch — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.9⭐</div></div>
+      <div class="card-bottom"><div class="card-title">違国日記 / Journal with Witch</div></div>
+    </a>
+    <a class="card" href="tv/293629-yoroi-shinden-samurai-troopers">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/gTJXC84z3pq9VxVGjbStvMP0I2g.jpg" alt="鎧真伝サムライトルーパー / Yoroi-Shinden Samurai Troopers — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">鎧真伝サムライトルーパー / Yoroi-Shinden Samurai Troopers</div></div>
+    </a>
+    <a class="card" href="tv/259819-rooster-fighter">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/iCtbr0sIdaKZjhQH3Wr7hW6A1IU.jpg" alt="Rooster Fighter / Rooster Fighter — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Rooster Fighter / Rooster Fighter</div></div>
+    </a>
+    <a class="card" href="tv/283891-the-holy-grail-of-eris">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/vJ8nhBdsxImahootP1wM5iG3Bzs.jpg" alt="エリスの聖杯 / The Holy Grail of Eris — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">エリスの聖杯 / The Holy Grail of Eris</div></div>
+    </a>
+    <a class="card" href="tv/305163-the-daily-life-of-a-part-time-torturer">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/bDQVbF2zrLOrbbx3FQgI5MZb8IU.jpg" alt="拷問バイトくんの日常 / The Daily Life of a Part-time Torturer — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">拷問バイトくんの日常 / The Daily Life of a Part-time Torturer</div></div>
+    </a>
+    <a class="card" href="tv/285933-tune-in-to-the-midnight-heart">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/otKyL6FiAoNAAB90N0cO3RhRhCj.jpg" alt="真夜中ハートチューン / Tune In to the Midnight Heart — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
+      <div class="card-bottom"><div class="card-title">真夜中ハートチューン / Tune In to the Midnight Heart</div></div>
+    </a>
+    <a class="card" href="tv/278043-you-and-i-are-polar-opposites">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lLjcMT7fwuO5fgswb2drlbFwoTJ.jpg" alt="正反対な君と僕 / You and I Are Polar Opposites — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">正反対な君と僕 / You and I Are Polar Opposites</div></div>
+    </a>
+    <a class="card" href="tv/263330-shiboyugi-playing-death-games-to-put-food-on-the-table">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3i3kkEgmw2LVkohQifjUxKqNCq.jpg" alt="ألعاب الموت من أجل لقمة العيش / SHIBOYUGI: Playing Death Games to Put Food on the Table — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
+      <div class="card-bottom"><div class="card-title">ألعاب الموت من أجل لقمة العيش / SHIBOYUGI: Playing Death Games to Put Food on the Table</div></div>
+    </a>
+    <a class="card" href="tv/288589-easygoing-territory-defense-by-the-optimistic-lord">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/27sQp8T5zwGICIKmxOn6XkK5UtD.jpg" alt="お気楽領主の楽しい領地防衛 ～生産系魔術で名もなき村を最強の城塞都市に～ / Easygoing Territory Defense by the Optimistic Lord — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">お気楽領主の楽しい領地防衛 ～生産系魔術で名もなき村を最強の城塞都市に～ / Easygoing Territory Defense by the Optimistic Lord</div></div>
+    </a>
+    <a class="card" href="tv/284444-champignon-witch">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/fnMlh7jvoPvqoIqz5bYnw8MkQwO.jpg" alt="シャンピニオンの魔女 / Champignon Witch — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
+      <div class="card-bottom"><div class="card-title">シャンピニオンの魔女 / Champignon Witch</div></div>
+    </a>
+    <a class="card" href="tv/249907-sentenced-to-be-a-hero">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/1vAlK7Oy8E4c3O57SiUabpyz01P.jpg" alt="محكوم عليه أن يكون بطلاً / Sentenced to Be a Hero — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">محكوم عليه أن يكون بطلاً / Sentenced to Be a Hero</div></div>
+    </a>
+    <a class="card" href="tv/291414-does-it-count-if-you-lose-your-innocence-to-an-android">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/4dfyZ5UZKGuS5Pur5nMqFp6s675.jpg" alt="アンドロイドは経験人数に入りますか？？ / Does It Count If You Lose Your Innocence to an Android? — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">アンドロイドは経験人数に入りますか？？ / Does It Count If You Lose Your Innocence to an Android?</div></div>
+    </a>
+    <a class="card" href="tv/280049-hell-mode-the-hardcore-gamer-dominates-in-another-world-with-garbage-balancing">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/8ORt29GnG4gFNrQDUUSE1ZQP9Vm.jpg" alt="ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～ はじまりの召喚士 / Hell Mode: The Hardcore Gamer Dominates in Another World with Garbage Balancing — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.8⭐</div></div>
+      <div class="card-bottom"><div class="card-title">ヘルモード ～やり込み好きのゲーマーは廃設定の異世界で無双する～ はじまりの召喚士 / Hell Mode: The Hardcore Gamer Dominates in Another World with Garbage Balancing</div></div>
+    </a>
+  </div>
+</section>
 
   <footer class="footer">
-    <p>© 2026 <a href="https://tomito.xyz">TOMITO</a> — جميع الحقوق محفوظة</p>
-    <p style="margin-top:8px; font-size:12px;">مسلسلات رمضان 2026 • مشاهدة حصرية • بجودة عالية</p>
+    <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | مشاهدة افلام ومسلسلات اون لاين HD مجاناً</p>
   </footer>
 
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const catSelect = document.getElementById('category-select');
-      const sortSelect = document.getElementById('sort-select');
-      const sections = document.querySelectorAll('section.section');
-
-      // Sort dummy logic (frontend shuffling for fun)
-      sortSelect.addEventListener('change', () => {
-        sections.forEach(sec => {
-          const grid = sec.querySelector('.grid');
-          if (!grid) return;
-          const cards = Array.from(grid.children);
-          cards.sort(() => Math.random() - 0.5); // Random shuffle to simulate sorting for now
-          cards.forEach(card => grid.appendChild(card));
-        });
-      });
-
-      // Category logic
-      catSelect.addEventListener('change', (e) => {
-        const selected = e.target.value;
-        sections.forEach(sec => {
-          if (selected === 'all' || sec.id === selected) {
-            sec.style.display = 'block';
-          } else {
-            sec.style.display = 'none';
-          }
-        });
-      });
+  function filterCategory(val) {
+    document.querySelectorAll('.section').forEach(s => {
+      if (val === 'all') { s.style.display = ''; }
+      else { s.style.display = s.id === val ? '' : 'none'; }
     });
+  }
   </script>
 </body>
-
 </html>
