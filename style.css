@@ -7,17 +7,17 @@
 
 /* ====== CSS VARIABLES ====== */
 :root {
-  --red: #e50914;
-  --red-dark: #b20710;
-  --red-glow: rgba(229, 9, 20, 0.4);
-  --accent: linear-gradient(135deg, #e50914 0%, #b81d24 50%, #8e44ad 100%);
-  --accent-btn: linear-gradient(135deg, #e50914, #ff2d2d);
-  --black: #09090b;
-  --dark: #111113;
-  --card-bg: #16161a;
-  --card-hover: #1e1e24;
+  --red: #de6718;
+  --red-dark: #af5113;
+  --red-glow: rgba(222, 103, 24, 0.4);
+  --accent: linear-gradient(135deg, #de6718 0%, #af5113 50%, #060b19 100%);
+  --accent-btn: linear-gradient(135deg, #de6718, #f08d4a);
+  --black: #060b19;
+  --dark: #0a1024;
+  --card-bg: #0d142d;
+  --card-hover: #141b3a;
   --surface: rgba(255, 255, 255, 0.03);
-  --glass: rgba(16, 16, 20, 0.85);
+  --glass: rgba(6, 11, 25, 0.85);
   --glass-border: rgba(255, 255, 255, 0.06);
   --gray: #6b7280;
   --light-gray: #9ca3af;
@@ -118,7 +118,7 @@ img {
 }
 
 .header:hover {
-  border-bottom-color: rgba(229, 9, 20, 0.15);
+  border-bottom-color: rgba(222, 103, 24, 0.15);
 }
 
 .logo {
@@ -184,7 +184,7 @@ img {
   border: none;
   cursor: pointer;
   transition: var(--transition);
-  box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+  box-shadow: 0 4px 15px rgba(222, 103, 24, 0.3);
 }
 
 .header-btn:hover {
@@ -245,7 +245,7 @@ img {
   background: rgba(255, 255, 255, 0.06);
   border-color: var(--red);
   outline: none;
-  box-shadow: 0 0 0 3px rgba(229, 9, 20, 0.1);
+  box-shadow: 0 0 0 3px rgba(222, 103, 24, 0.1);
 }
 
 .custom-select::after {
@@ -307,8 +307,8 @@ img {
 
 .card:hover {
   transform: translateY(-8px) scale(1.02);
-  border-color: rgba(229, 9, 20, 0.3);
-  box-shadow: var(--shadow-lg), 0 0 40px rgba(229, 9, 20, 0.1);
+  border-color: rgba(222, 103, 24, 0.3);
+  box-shadow: var(--shadow-lg), 0 0 40px rgba(222, 103, 24, 0.1);
   z-index: 10;
 }
 
@@ -373,7 +373,7 @@ img {
   padding: 40px 5%;
   align-items: flex-start;
   flex-wrap: wrap;
-  background: linear-gradient(135deg, rgba(229, 9, 20, 0.03), transparent);
+  background: linear-gradient(135deg, rgba(222, 103, 24, 0.03), transparent);
 }
 
 .series-hero > img,
@@ -448,9 +448,9 @@ img {
 }
 
 .tag:hover {
-  background: rgba(229, 9, 20, 0.15);
+  background: rgba(222, 103, 24, 0.15);
   color: var(--red);
-  border-color: rgba(229, 9, 20, 0.3);
+  border-color: rgba(222, 103, 24, 0.3);
 }
 
 /* ====== ACTION BUTTONS ====== */
@@ -484,7 +484,7 @@ img {
 .btn-primary {
   background: var(--accent-btn);
   color: var(--pure-white);
-  box-shadow: 0 4px 20px rgba(229, 9, 20, 0.35);
+  box-shadow: 0 4px 20px rgba(222, 103, 24, 0.35);
 }
 
 .btn-watch:hover,
@@ -505,7 +505,7 @@ img {
 .btn-secondary:hover {
   background: rgba(255, 255, 255, 0.12);
   border-color: var(--red);
-  box-shadow: 0 0 20px rgba(229, 9, 20, 0.1);
+  box-shadow: 0 0 20px rgba(222, 103, 24, 0.1);
 }
 
 /* ====== CAST SECTION ====== */
@@ -614,7 +614,7 @@ img {
   text-align: center;
   color: var(--gray);
   font-size: 13px;
-  background: linear-gradient(to top, rgba(229, 9, 20, 0.02), transparent);
+  background: linear-gradient(to top, rgba(222, 103, 24, 0.02), transparent);
 }
 
 .footer a {
