@@ -56,7 +56,7 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
     "description": "{{META_DESC}}",
     "image": "{{POSTER_URL}}",
     "datePublished": "{{YEAR}}",
-    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "{{RATING}}", "bestRating": "10"}
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "{{RATING}}", "bestRating": "10", "ratingCount": "{{RATING_COUNT}}"}
   }
   </script>
 </head>
@@ -185,6 +185,8 @@ def create_page(item_data, media_type):
     poster_url = f"{IMAGE_BASE_URL}{poster_path}"
     year = (data.get('release_date') or data.get('first_air_date') or '2026')[:4]
     rating = round(data.get('vote_average', 0), 1)
+    rating_count = data.get('vote_count', 1)
+    if not rating_count or rating_count == 0: rating_count = 1
     desc_ar, desc_en = generate_seo_description(ar, en, title_ar, year)
 
     # Genres
@@ -251,6 +253,7 @@ def create_page(item_data, media_type):
         '{{SCHEMA_TYPE}}': schema_type,
         '{{YEAR}}': year,
         '{{RATING}}': str(rating),
+        '{{RATING_COUNT}}': str(rating_count),
     }
     for k, v in replacements.items():
         html = html.replace(k, v)
@@ -307,6 +310,7 @@ def create_actor_page(actor_id):
         '{{SCHEMA_TYPE}}': 'Person',
         '{{YEAR}}': '',
         '{{RATING}}': '0',
+        '{{RATING_COUNT}}': '1',
     }
     for k, v in replacements.items():
         html = html.replace(k, v)
