@@ -40,25 +40,14 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
   <meta property="og:description" content="{{META_DESC}}">
   <meta property="og:image" content="{{POSTER_URL}}">
   <meta property="og:url" content="{{PAGE_URL}}">
-  <meta property="og:type" content="video.movie">
+  <meta property="og:type" content="{{OG_TYPE}}">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{TITLE_OG}}">
   <meta name="twitter:image" content="{{POSTER_URL}}">
   <link rel="canonical" href="{{PAGE_URL}}">
   <link rel="stylesheet" href="../style.css">
   <link rel="icon" href="../favicon.ico">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "{{SCHEMA_TYPE}}",
-    "name": "{{TITLE_AR}}",
-    "alternateName": "{{TITLE_EN}}",
-    "description": "{{META_DESC}}",
-    "image": "{{POSTER_URL}}",
-    "datePublished": "{{YEAR}}",
-    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "{{RATING}}", "bestRating": "10", "ratingCount": "{{RATING_COUNT}}"}
-  }
-  </script>
+  {{JSON_LD}}
 </head>
 <body>
   <header class="header">
@@ -70,6 +59,12 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
+
+  <nav class="breadcrumb">
+    <a href="/">الرئيسية</a> &gt; 
+    <a href="/{{FOLDER}}">{{TYPE_AR}}</a> &gt; 
+    <span>{{TITLE_AR}}</span>
+  </nav>
 
   <div class="series-hero">
     <img src="{{POSTER_URL}}" alt="{{TITLE_AR}} — مشاهدة وتحميل" loading="eager" class="series-poster">
@@ -233,6 +228,36 @@ def create_page(item_data, media_type):
     tags = [type_label, f"⭐ {rating}", year] + genres_en[:3]
     tags_html = '<div class="series-tags">' + ''.join(f'<span class="tag">{t}</span>' for t in tags) + '</div>'
 
+    # JSON-LD Generation
+    breadcrumb_ld = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": SITE_URL},
+            {"@type": "ListItem", "position": 2, "name": type_label.split('|')[-1].strip(), "item": f"{SITE_URL}/{folder}"},
+            {"@type": "ListItem", "position": 3, "name": title_ar, "item": page_url}
+        ]
+    }
+
+    main_ld = {
+        "@context": "https://schema.org",
+        "@type": schema_type,
+        "name": title_ar,
+        "alternateName": title_en,
+        "description": desc_ar,
+        "image": poster_url,
+        "datePublished": year,
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": str(rating),
+            "bestRating": "10",
+            "ratingCount": str(rating_count)
+        }
+    }
+
+    json_ld_html = f'<script type="application/ld+json">{json.dumps(breadcrumb_ld, ensure_ascii=False)}</script>\n'
+    json_ld_html += f'<script type="application/ld+json">{json.dumps(main_ld, ensure_ascii=False)}</script>'
+
     # Build page
     html = MASTER_TEMPLATE
     replacements = {
@@ -240,6 +265,7 @@ def create_page(item_data, media_type):
         '{{META_DESC}}': f'مشاهدة وتحميل {title_ar} ({title_en}) {year} اون لاين بجودة HD. {desc_ar[:150]}',
         '{{KEYWORDS}}': keywords,
         '{{TITLE_OG}}': f'{title_ar} / {title_en} — TOMITO',
+        '{{OG_TYPE}}': 'video.movie' if media_type == 'movie' else 'video.tv_show',
         '{{POSTER_URL}}': poster_url,
         '{{PAGE_URL}}': page_url,
         '{{BUTTON_URL}}': f"{BUTTON_DOMAIN}/{folder}/{slug}",
@@ -250,10 +276,9 @@ def create_page(item_data, media_type):
         '{{DESC_EN}}': desc_en,
         '{{TAGS_SECTION}}': tags_html,
         '{{EXTRA_CONTENT}}': cast_html,
-        '{{SCHEMA_TYPE}}': schema_type,
-        '{{YEAR}}': year,
-        '{{RATING}}': str(rating),
-        '{{RATING_COUNT}}': str(rating_count),
+        '{{JSON_LD}}': json_ld_html,
+        '{{FOLDER}}': folder,
+        '{{TYPE_AR}}': type_label.split('|')[-1].strip(),
     }
     for k, v in replacements.items():
         html = html.replace(k, v)
@@ -291,12 +316,35 @@ def create_actor_page(actor_id):
     seo_desc = f"تعرف على {name} — سيرته الذاتية وأهم أعماله. شاهد أفلام ومسلسلات {name} اون لاين بجودة عالية HD على NORDRAMA."
     keywords = f"{name}, ممثل, أفلام {name}, مسلسلات {name}, سيرة ذاتية, actor, filmography"
 
+    # JSON-LD Generation (Person type does NOT support AggregateRating)
+    breadcrumb_ld = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "الرئيسية", "item": SITE_URL},
+            {"@type": "ListItem", "position": 2, "name": "ممثلين", "item": f"{SITE_URL}/actor"},
+            {"@type": "ListItem", "position": 3, "name": name, "item": f'{SITE_URL}/actor/{slug}'}
+        ]
+    }
+
+    main_ld = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": name,
+        "description": bio_ar,
+        "image": img_url
+    }
+
+    json_ld_html = f'<script type="application/ld+json">{json.dumps(breadcrumb_ld, ensure_ascii=False)}</script>\n'
+    json_ld_html += f'<script type="application/ld+json">{json.dumps(main_ld, ensure_ascii=False)}</script>'
+
     html = MASTER_TEMPLATE
     replacements = {
         '{{TITLE_PAGE}}': f'{name} — الممثل | TOMITO',
         '{{META_DESC}}': seo_desc,
         '{{KEYWORDS}}': keywords,
         '{{TITLE_OG}}': f'{name} — TOMITO',
+        '{{OG_TYPE}}': 'profile',
         '{{POSTER_URL}}': img_url,
         '{{PAGE_URL}}': f'{SITE_URL}/actor/{slug}',
         '{{BUTTON_URL}}': f'{BUTTON_DOMAIN}/actor/{slug}',
@@ -307,10 +355,9 @@ def create_actor_page(actor_id):
         '{{DESC_EN}}': bio_en[:500],
         '{{TAGS_SECTION}}': '',
         '{{EXTRA_CONTENT}}': '',
-        '{{SCHEMA_TYPE}}': 'Person',
-        '{{YEAR}}': '',
-        '{{RATING}}': '0',
-        '{{RATING_COUNT}}': '1',
+        '{{JSON_LD}}': json_ld_html,
+        '{{FOLDER}}': 'actor',
+        '{{TYPE_AR}}': 'ممثلين',
     }
     for k, v in replacements.items():
         html = html.replace(k, v)
