@@ -92,7 +92,7 @@ def index_urls_from_sitemap(sitemap_path, limit=100):
 if __name__ == "__main__":
     # هنا تقدر تختار واش تصيفط سيت ماب كامل أو رابط واحد
     # باش نجربو، غدي نصيفطو روابط من sitemap_movie.xml (بدل limit يلا بغيتي أكثر)
-    index_urls_from_sitemap(SITEMAP_FILE, limit=10)
+    index_urls_from_sitemap(SITEMAP_FILE, limit=200)
     
     # يلا بغيتي تصيفط رابط واحد ديراكت:
     # notify_google_index("https://yourdomain.com/movie/test-movie.html", "URL_UPDATED")
