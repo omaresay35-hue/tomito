@@ -1,0 +1,6 @@
+# Service Account Keys
+reference-fact-488823-b6-710a3997d9de.json
+
+# Python
+__pycache__/
+*.pyc

@@ -1,0 +1,36 @@
+name: Google Indexing API
+
+on:
+  schedule:
+    # Keykhdem kola nhar m3a 12 dlil (00:00 UTC)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Ki khelik tbda l3amaliya manual mn GitHub
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install google-auth requests
+
+      - name: Create Service Account Key from Secrets
+        run: |
+          echo "${{ secrets.GCP_INDEXING_KEY }}" > reference-fact-488823-b6-710a3997d9de.json
+
+      - name: Run Indexing Script
+        run: |
+          python google_indexer.py
+
+      - name: Security Cleanup
+        if: always()
+        run: |
+          rm -f reference-fact-488823-b6-710a3997d9de.json
