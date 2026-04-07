@@ -22,15 +22,8 @@ jobs:
         run: |
           pip install google-auth requests
 
-      - name: Create Service Account Key from Secrets
-        run: |
-          echo "${{ secrets.GCP_INDEXING_KEY }}" > reference-fact-488823-b6-710a3997d9de.json
-
       - name: Run Indexing Script
+        env:
+          GCP_INDEXING_KEY: ${{ secrets.GCP_INDEXING_KEY }}
         run: |
           python google_indexer.py
-
-      - name: Security Cleanup
-        if: always()
-        run: |
-          rm -f reference-fact-488823-b6-710a3997d9de.json

@@ -20,8 +20,14 @@ SITEMAP_FILE = 'sitemap_movie.xml'
 
 def get_access_token():
     """كتحصل على التوكن (Access Token) باش نقدرو نصيفطو الطلب لجوجل"""
-    credentials = service_account.Credentials.from_service_account_file(
-        SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+    if 'GCP_INDEXING_KEY' in os.environ:
+        creds_json = json.loads(os.environ['GCP_INDEXING_KEY'])
+        credentials = service_account.Credentials.from_service_account_info(
+            creds_json, scopes=SCOPES)
+    else:
+        credentials = service_account.Credentials.from_service_account_file(
+            SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+        
     request = google.auth.transport.requests.Request()
     credentials.refresh(request)
     return credentials.token
