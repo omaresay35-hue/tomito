@@ -14,8 +14,10 @@ SERVICE_ACCOUNT_FILE = 'reference-fact-488823-b6-710a3997d9de.json'
 SCOPES = ['https://www.googleapis.com/auth/indexing']
 ENDPOINT = 'https://indexing.googleapis.com/v3/urlNotifications:publish'
 
-# مسار الـ sitemap ديالك (مثلاً sitemap_movie.xml)
-SITEMAP_FILE = 'sitemap_movie.xml' 
+# مسارات الـ sitemaps ديالنا
+SITEMAPS = ['sitemap_root.xml', 'sitemap_tv.xml', 'sitemap_actor.xml', 'sitemap_movie.xml']
+PROGRESS_FILE = 'indexer_progress.json'
+LINKS_PER_RUN = 66
 # ==========================================
 
 def get_access_token():
@@ -35,8 +37,6 @@ def get_access_token():
 def notify_google_index(url, type="URL_UPDATED"):
     """
     كتصيفط URL لجوجل باش يدير ليه أرشفة بالزربة
-    type="URL_UPDATED" : يلا كان رابط جديد ولا درتي فيه تعديل
-    type="URL_DELETED" : يلا بغيتي تمسحو من جوجل
     """
     try:
         access_token = get_access_token()
@@ -51,48 +51,112 @@ def notify_google_index(url, type="URL_UPDATED"):
         response = requests.post(ENDPOINT, headers=headers, json=data)
         
         if response.status_code == 200:
-            print(f"✅ Success (تمت الأرشفة بنجاح): {url}")
-            return True
+            print(f"✅ Success: {url}")
+            return "SUCCESS"
         else:
-            print(f"❌ Error (خطأ في {url}): {response.json()}")
-            return False
+            try:
+                resp_json = response.json()
+                error_obj = resp_json.get("error", {})
+                is_rate_limit = (
+                    response.status_code == 429 or 
+                    error_obj.get("code") == 429 or 
+                    error_obj.get("status") == "RESOURCE_EXHAUSTED"
+                )
+                if is_rate_limit:
+                    print(f"⚠️ Rate Limit: {resp_json}")
+                    return "RATE_LIMIT"
+                else:
+                    print(f"❌ Error | {url} | Response: {resp_json}")
+                    return "ERROR"
+            except Exception:
+                print(f"❌ Error | {url} | HTTP {response.status_code}")
+                return "ERROR"
     except Exception as e:
         print(f"❌ Exception: {e}")
-        return False
+        return "ERROR"
 
-def index_urls_from_sitemap(sitemap_path, limit=100):
-    """كتقرا الروابط من فايل sitemap وكتصيفطهم لجوجل (Google Indexing API limit هو 200 في النهار عادة)"""
-    if not os.path.exists(sitemap_path):
-        print(f"Sitemap file {sitemap_path} not found.")
-        return
+def load_progress() -> dict:
+    if os.path.exists(PROGRESS_FILE):
+        try:
+            with open(PROGRESS_FILE, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                if isinstance(data, dict):
+                    return data
+        except Exception:
+            pass
+    return {}
 
-    tree = ET.parse(sitemap_path)
-    root = tree.getroot()
+def save_progress(progress):
+    with open(PROGRESS_FILE, 'w', encoding='utf-8') as f:
+        json.dump(progress, f, indent=4)
+
+def index_sitemaps():
+    progress = load_progress()
+    rate_limit_hit = False
     
-    # حيت الـ sitemap كيكون فيه namespace
-    namespace = {'ns': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
-    
-    urls = []
-    for loc in root.findall('.//ns:loc', namespace):
-        urls.append(loc.text)
+    for sitemap_path in SITEMAPS:
+        if rate_limit_hit:
+            break
+            
+        print(f"\n==========================================")
+        print(f"🚀 كنقراو دابا من: {sitemap_path}")
+        print(f"==========================================")
         
-    print(f"طوطال الروابط اللي لقينا: {len(urls)}")
-    print(f"غادي نصيفطو {limit} رابط دابا...\n")
-    
-    count = 0
-    for url in urls[:limit]:
-        success = notify_google_index(url, "URL_UPDATED")
-        if success:
-            count += 1
-        # باش ما نبلوكيوش السيرفر ديال جوجل كديرو pause صغير
-        time.sleep(1)
+        if not os.path.exists(sitemap_path):
+            print(f"❌ Sitemap file {sitemap_path} not found.")
+            continue
+
+        try:
+            tree = ET.parse(sitemap_path)
+            root = tree.getroot()
+        except ET.ParseError:
+            print(f"❌ Error parsing {sitemap_path}")
+            continue
         
-    print(f"\nسالينا! تم إرسال {count} رابط لجوجل باش يطّلع في محرك البحث بالزربة.")
+        namespace = {'ns': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+        
+        urls: list[str] = []
+        for loc in root.findall('.//ns:loc', namespace):
+            loc_text = loc.text
+            if loc_text is not None:
+                urls.append(loc_text)
+            
+        total_urls = len(urls)
+        print(f"📊 طوطال الروابط اللي لقينا هنا: {total_urls}")
+        
+        start_index = int(progress.get(sitemap_path, 0))
+        
+        if start_index >= total_urls:
+            print(f"✅ سالينا هاد الـ sitemap كامل! (الروابط كاملين {total_urls} صيفطناهم)")
+            continue
+            
+        end_index = min(start_index + LINKS_PER_RUN, total_urls)
+        urls_to_index = [urls[i] for i in range(start_index, end_index)]
+        
+        print(f"▶️ غادي نصيفطو {len(urls_to_index)} رابط دابا (من {start_index + 1} حتى لـ {min(end_index, total_urls)})...\n")
+        
+        count = 0
+        
+        for url in urls_to_index:
+            status = notify_google_index(url, "URL_UPDATED")
+            if status == "SUCCESS":
+                count += 1
+            elif status == "RATE_LIMIT":
+                rate_limit_hit = True
+                break
+            else:
+                count += 1 # نزيدوه باش ماندوروش عليه مرة أخرى فالحالة ديال error عادي
+            time.sleep(1)
+            
+        progress[sitemap_path] = start_index + count
+        save_progress(progress)
+        
+        print(f"✅ تم الإرسال/المعالجة د {count} رابط من {sitemap_path}.")
+        
+    if rate_limit_hit:
+         print("\n🚨 وصلنا للـ Limit ديال Google، السكريبت وقف باش مانتجاوزوش الحد.")
+    else:
+         print("\n🎉 سالينا الران ديال دابا! المرة الجاية غادي يكمل اوتوماتيك منين حبسنا.")
 
 if __name__ == "__main__":
-    # هنا تقدر تختار واش تصيفط سيت ماب كامل أو رابط واحد
-    # باش نجربو، غدي نصيفطو روابط من sitemap_movie.xml (بدل limit يلا بغيتي أكثر)
-    index_urls_from_sitemap(SITEMAP_FILE, limit=200)
-    
-    # يلا بغيتي تصيفط رابط واحد ديراكت:
-    # notify_google_index("https://yourdomain.com/movie/test-movie.html", "URL_UPDATED")
+    index_sitemaps()

@@ -32,6 +32,15 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRCQVS90BX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PRCQVS90BX');
+  </script>
   <title>{{TITLE_PAGE}}</title>
   <meta name="description" content="{{META_DESC}}">
   <meta name="keywords" content="{{KEYWORDS}}">
