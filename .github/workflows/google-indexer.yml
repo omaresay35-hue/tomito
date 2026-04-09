@@ -2,13 +2,19 @@ name: Google Indexing API
 
 on:
   schedule:
-    # Keykhdem kola nhar m3a 12 dlil (00:00 UTC)
+    # كيخدم كل ليلة مع 12 د الليل بتوقيت UTC
     - cron: '0 0 * * *'
-  workflow_dispatch: # Ki khelik tbda l3amaliya manual mn GitHub
+  workflow_dispatch: # هادي هي اللي كتعطيك زر "Run workflow" باش تخدمو وقتما بغيتي
 
 jobs:
   index:
     runs-on: ubuntu-latest
+    
+    # --- هاد الجزء هو الحل ديال مشكل 403 اللي عندك ---
+    permissions:
+      contents: write
+    # -----------------------------------------------
+
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -33,5 +39,6 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add indexer_progress.json
+          # إيلا مكان حتى تغيير، السكريبت ماغاديش يعطيك خطأ
           git commit -m "chore: update google indexer progress [skip ci]" || echo "No changes to commit"
           git push
