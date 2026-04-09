@@ -1354,6 +1354,22 @@
     ]
   },
   {
+    "title": "Dear Killer Nannies: Criado por sicarios / Dear Killer Nannies",
+    "title_ar": "Dear Killer Nannies: Criado por sicarios",
+    "title_en": "Dear Killer Nannies",
+    "slug": "313721-dear-killer-nannies",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/rNjB5TBYUBOxXR2GjR02uukSwBw.jpg",
+    "rating": 9.4,
+    "year": "2026",
+    "type": "tv",
+    "tmdb_id": 313721,
+    "genres": [
+      "Drama",
+      "Crime"
+    ]
+  },
+  {
     "title_ar": "ด้วงกับเธอ",
     "title_en": "Duang with You",
     "slug": "284828-duang-with-you",
@@ -6155,6 +6171,21 @@
     "tmdb_id": 273125,
     "genres": [
       "Drama"
+    ]
+  },
+  {
+    "title": "+مسلسل الخلاط / Alkhallat+: The Series",
+    "title_ar": "+مسلسل الخلاط",
+    "title_en": "Alkhallat+: The Series",
+    "slug": "318188-alkhallat-the-series",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/5t1g6ramHYGQd75jSwugoCvpw5e.jpg",
+    "rating": 8.7,
+    "year": "2026",
+    "type": "tv",
+    "tmdb_id": 318188,
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -11242,6 +11273,21 @@
     "genres": [
       "Drama",
       "Sci-Fi & Fantasy"
+    ]
+  },
+  {
+    "title": "How Disney Built America",
+    "title_ar": "How Disney Built America",
+    "title_en": "How Disney Built America",
+    "slug": "253027-how-disney-built-america",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/dYVZKuKreQfdBUGlHF39J4J07yy.jpg",
+    "rating": 8.4,
+    "year": "2024",
+    "type": "tv",
+    "tmdb_id": 253027,
+    "genres": [
+      "Documentary"
     ]
   },
   {
@@ -19675,6 +19721,22 @@
     ]
   },
   {
+    "title": "பி.டி சார் / PT Sir",
+    "title_ar": "பி.டி சார்",
+    "title_en": "PT Sir",
+    "slug": "1073264-pt-sir",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/1nTKDDzcU0M0I4PonmbjAHkIyQE.jpg",
+    "rating": 8.1,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1073264,
+    "genres": [
+      "Comedy",
+      "Drama"
+    ]
+  },
+  {
     "title_ar": "Amélie et la métaphysique des tubes",
     "title_en": "Little Amélie or the Character of Rain",
     "slug": "682012-little-amélie-or-the-character-of-rain",
@@ -23271,6 +23333,21 @@
     "genres": [
       "Drama",
       "Mystery"
+    ]
+  },
+  {
+    "title": "ആട്ടം / Aattam",
+    "title_ar": "ആട്ടം",
+    "title_en": "Aattam",
+    "slug": "957926-aattam",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/gjptPp7YlX1oy9yCjEpOdlrRisL.jpg",
+    "rating": 8.0,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 957926,
+    "genres": [
+      "Drama"
     ]
   },
   {
@@ -39375,6 +39452,36 @@
     ]
   },
   {
+    "title": "கொட்டுக்காளி / The Adamant Girl",
+    "title_ar": "கொட்டுக்காளி",
+    "title_en": "The Adamant Girl",
+    "slug": "1098332-the-adamant-girl",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/gKHW0fX9a9sMnRnFcqAVI0ETq1Z.jpg",
+    "rating": 7.6,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1098332,
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "title": "春行 / A Journey in Spring",
+    "title_ar": "春行",
+    "title_en": "A Journey in Spring",
+    "slug": "1083971-a-journey-in-spring",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/it9vGkMknYN94N9rTrYsvxCyDpD.jpg",
+    "rating": 7.6,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1083971,
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
     "title_ar": "Rondallas",
     "title_en": "Band Together",
     "slug": "1437873-band-together",
@@ -48729,6 +48836,21 @@
     ]
   },
   {
+    "title": "ماء العين / Who Do I Belong To",
+    "title_ar": "ماء العين",
+    "title_en": "Who Do I Belong To",
+    "slug": "794090-who-do-i-belong-to",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/1VkHDFWSx2RVR8WspKHTHHCjvfB.jpg",
+    "rating": 7.4,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 794090,
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
     "title_ar": "Den stygge stesøsteren",
     "title_en": "The Ugly Stepsister",
     "slug": "1284120-the-ugly-stepsister",
@@ -53112,6 +53234,22 @@
       "Animation",
       "Sci-Fi & Fantasy",
       "Action & Adventure"
+    ]
+  },
+  {
+    "title": "Blind Date Book Club",
+    "title_ar": "Blind Date Book Club",
+    "title_en": "Blind Date Book Club",
+    "slug": "1249342-blind-date-book-club",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/9fwY72YdYuQW8hzC3bQXFVc8QRi.jpg",
+    "rating": 7.3,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1249342,
+    "genres": [
+      "Romance",
+      "TV Movie"
     ]
   },
   {
@@ -59215,6 +59353,23 @@
     "tmdb_id": 253946,
     "genres": [
       "Drama"
+    ]
+  },
+  {
+    "title": "放开那个女巫 / Release that Witch",
+    "title_ar": "放开那个女巫",
+    "title_en": "Release that Witch",
+    "slug": "298026-release-that-witch",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/aALqEgghYorHOwR5pgeCq9YMrjj.jpg",
+    "rating": 7.2,
+    "year": "2026",
+    "type": "tv",
+    "tmdb_id": 298026,
+    "genres": [
+      "Animation",
+      "Action & Adventure",
+      "Sci-Fi & Fantasy"
     ]
   },
   {
@@ -70849,6 +71004,21 @@
     ]
   },
   {
+    "title": "वनवास / Vanvaas",
+    "title_ar": "वनवास",
+    "title_en": "Vanvaas",
+    "slug": "1371030-vanvaas",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/rMFHWTeMeBB6xr6eIfoWfsqzito.jpg",
+    "rating": 7.0,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1371030,
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
     "title_ar": "الشعوذة: الطقوس الأخيرة",
     "title_en": "The Conjuring: Last Rites",
     "slug": "1038392-the-conjuring-last-rites",
@@ -75998,6 +76168,22 @@
       "Romance",
       "Comedy",
       "Drama"
+    ]
+  },
+  {
+    "title": "विजय 69 / Vijay 69",
+    "title_ar": "विजय 69",
+    "title_en": "Vijay 69",
+    "slug": "1252457-vijay-69",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/tSQzRaYyKEjM8gEyhqayU4rhbdU.jpg",
+    "rating": 6.9,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1252457,
+    "genres": [
+      "Drama",
+      "Comedy"
     ]
   },
   {
@@ -82875,6 +83061,39 @@
     ]
   },
   {
+    "title": "Sei nell'anima / Beautiful Rebel",
+    "title_ar": "Sei nell'anima",
+    "title_en": "Beautiful Rebel",
+    "slug": "1156966-beautiful-rebel",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/oUANCs4IoJ6mAaDY8M38dqBbh1k.jpg",
+    "rating": 6.8,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1156966,
+    "genres": [
+      "Music",
+      "Drama",
+      "History"
+    ]
+  },
+  {
+    "title": "Sniper: No Nation",
+    "title_ar": "Sniper: No Nation",
+    "title_en": "Sniper: No Nation",
+    "slug": "1641319-sniper-no-nation",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/wlimwHMelt9PRdgFhS5bWJWPrjr.jpg",
+    "rating": 6.8,
+    "year": "2026",
+    "type": "movie",
+    "tmdb_id": 1641319,
+    "genres": [
+      "Action",
+      "Thriller"
+    ]
+  },
+  {
     "title_ar": "Warlord",
     "title_en": "Warlord",
     "slug": "1239115-warlord",
@@ -88476,6 +88695,56 @@
     ]
   },
   {
+    "title": "గామి / Gaami",
+    "title_ar": "గామి",
+    "title_en": "Gaami",
+    "slug": "886385-gaami",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/nruKcKWmuP7ce7sBGBNViHJaZrZ.jpg",
+    "rating": 6.7,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 886385,
+    "genres": [
+      "Adventure",
+      "Thriller",
+      "Science Fiction",
+      "Fantasy"
+    ]
+  },
+  {
+    "title": "Molli and Max in the Future",
+    "title_ar": "Molli and Max in the Future",
+    "title_en": "Molli and Max in the Future",
+    "slug": "1011911-molli-and-max-in-the-future",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/us42Z0MPRlJvMZ9nsfoAdCwPyvv.jpg",
+    "rating": 6.7,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1011911,
+    "genres": [
+      "Comedy",
+      "Romance",
+      "Science Fiction"
+    ]
+  },
+  {
+    "title": "Taylor Tomlinson: Have It All",
+    "title_ar": "Taylor Tomlinson: Have It All",
+    "title_en": "Taylor Tomlinson: Have It All",
+    "slug": "1227770-taylor-tomlinson-have-it-all",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/nHsbWXfhVk53azsXICJGzn2imMg.jpg",
+    "rating": 6.7,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1227770,
+    "genres": [
+      "Comedy"
+    ]
+  },
+  {
     "title_ar": "Father Mother Sister Brother",
     "title_en": "Father Mother Sister Brother",
     "slug": "1159206-father-mother-sister-brother",
@@ -93880,6 +94149,21 @@
     ]
   },
   {
+    "title": "1995",
+    "title_ar": "1995",
+    "title_en": "1995",
+    "slug": "1200260-1995",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/wKgRzK743xFWGFarlNt3r6FJCeE.jpg",
+    "rating": 6.6,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1200260,
+    "genres": [
+      "Comedy"
+    ]
+  },
+  {
     "title_ar": "Aída y vuelta",
     "title_en": "Aída y vuelta",
     "slug": "1370123-aída-y-vuelta",
@@ -99190,6 +99474,36 @@
     "tmdb_id": 1020829,
     "genres": [
       "Drama"
+    ]
+  },
+  {
+    "title": "Las chicas de la estación / The Girls at the Station",
+    "title_ar": "Las chicas de la estación",
+    "title_en": "The Girls at the Station",
+    "slug": "1299040-the-girls-at-the-station",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/59VcBk0uPVmwxubyip1tzc8C2Fu.jpg",
+    "rating": 6.5,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1299040,
+    "genres": [
+      "Drama"
+    ]
+  },
+  {
+    "title": "Beacon",
+    "title_ar": "Beacon",
+    "title_en": "Beacon",
+    "slug": "1276035-beacon",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/4AB3bHhsNBpnhMDThJP6RI0tery.jpg",
+    "rating": 6.5,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1276035,
+    "genres": [
+      "Thriller"
     ]
   },
   {
@@ -104758,6 +105072,22 @@
     ]
   },
   {
+    "title": "Estimados señores",
+    "title_ar": "Estimados señores",
+    "title_en": "Estimados señores",
+    "slug": "1389730-estimados-señores",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/11glKZCdAMGHqHqukpWZBHdkKFb.jpg",
+    "rating": 6.4,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1389730,
+    "genres": [
+      "Drama",
+      "History"
+    ]
+  },
+  {
     "title_ar": "F Valentine's Day",
     "title_en": "F Valentine's Day",
     "slug": "1429605-f-valentines-day",
@@ -109280,6 +109610,21 @@
       "Drama",
       "Thriller",
       "History"
+    ]
+  },
+  {
+    "title": "నా సామిరంగ / Naa Saami Ranga",
+    "title_ar": "నా సామిరంగ",
+    "title_en": "Naa Saami Ranga",
+    "slug": "1171096-naa-saami-ranga",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/4xwNsmT0XPFF0Ssa7kB6FR1MZRz.jpg",
+    "rating": 6.3,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1171096,
+    "genres": [
+      "Action"
     ]
   },
   {
@@ -114741,6 +115086,53 @@
     ]
   },
   {
+    "title": "Socias por accidente",
+    "title_ar": "Socias por accidente",
+    "title_en": "Socias por accidente",
+    "slug": "1632181-socias-por-accidente",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/4f9uATxSIqKYXW2NEXbew5wFvc2.jpg",
+    "rating": 6.2,
+    "year": "2026",
+    "type": "movie",
+    "tmdb_id": 1632181,
+    "genres": [
+      "Comedy"
+    ]
+  },
+  {
+    "title": "Evcilik / The Playroom",
+    "title_ar": "Evcilik",
+    "title_en": "The Playroom",
+    "slug": "1316617-the-playroom",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/rGBiezUJEaHG7CHMa3QVMpC2dGE.jpg",
+    "rating": 6.2,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1316617,
+    "genres": [
+      "Thriller",
+      "Drama"
+    ]
+  },
+  {
+    "title": "The Testaments",
+    "title_ar": "The Testaments",
+    "title_en": "The Testaments",
+    "slug": "287527-the-testaments",
+    "folder": "tv",
+    "poster": "https://image.tmdb.org/t/p/original/xVsFopLisBoiKdXXecaNTN4pJ9A.jpg",
+    "rating": 6.2,
+    "year": "2026",
+    "type": "tv",
+    "tmdb_id": 287527,
+    "genres": [
+      "Drama",
+      "Sci-Fi & Fantasy"
+    ]
+  },
+  {
     "title_ar": "Los Tigres",
     "title_en": "Los Tigres",
     "slug": "1464374-los-tigres",
@@ -119210,6 +119602,23 @@
     "tmdb_id": 1143295,
     "genres": [
       "Comedy"
+    ]
+  },
+  {
+    "title": "Последний Ронин / The Last Ronin",
+    "title_ar": "Последний Ронин",
+    "title_en": "The Last Ronin",
+    "slug": "1188064-the-last-ronin",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/eiRyIUQGQH0fMgPOZYuOgtMbyY0.jpg",
+    "rating": 6.1,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1188064,
+    "genres": [
+      "Science Fiction",
+      "Drama",
+      "Action"
     ]
   },
   {
@@ -123823,6 +124232,24 @@
     "genres": [
       "Horror",
       "Thriller"
+    ]
+  },
+  {
+    "title": "Beck 51 - Vilhelm",
+    "title_ar": "Beck 51 - Vilhelm",
+    "title_en": "Beck 51 - Vilhelm",
+    "slug": "1240949-beck-51-vilhelm",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/5olfXarRgNO5Iq80gMxedm7e3ap.jpg",
+    "rating": 6.0,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1240949,
+    "genres": [
+      "Crime",
+      "Mystery",
+      "Thriller",
+      "Drama"
     ]
   },
   {
@@ -134109,6 +134536,22 @@
     ]
   },
   {
+    "title": "Husband, Father, Killer: The Alyssa Pladl Story",
+    "title_ar": "Husband, Father, Killer: The Alyssa Pladl Story",
+    "title_en": "Husband, Father, Killer: The Alyssa Pladl Story",
+    "slug": "1373873-husband-father-killer-the-alyssa-pladl-story",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/g4egqiCIKR1jQTr9zl0uN0smtpN.jpg",
+    "rating": 5.7,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1373873,
+    "genres": [
+      "Drama",
+      "TV Movie"
+    ]
+  },
+  {
     "title_ar": "The Carpenter's Son",
     "title_en": "The Carpenter's Son",
     "slug": "1286185-the-carpenters-son",
@@ -137124,6 +137567,72 @@
     "genres": [
       "Drama",
       "Mystery"
+    ]
+  },
+  {
+    "title": "Cérémonie de clôture des Jeux Olympiques de Paris 2024 / Paris 2024 Olympic Closing Ceremony",
+    "title_ar": "Cérémonie de clôture des Jeux Olympiques de Paris 2024",
+    "title_en": "Paris 2024 Olympic Closing Ceremony",
+    "slug": "1322488-paris-2024-olympic-closing-ceremony",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/5Kb7DTk4cxo8rlr7bhcOPZFNzHW.jpg",
+    "rating": 5.6,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1322488,
+    "genres": [
+      "Documentary",
+      "Family",
+      "History"
+    ]
+  },
+  {
+    "title": "Dalej jazda! 2 / Off We Go 2",
+    "title_ar": "Dalej jazda! 2",
+    "title_en": "Off We Go 2",
+    "slug": "1575690-off-we-go-2",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/5vzcdDFYT8GRusHtbbmuRbL9WdQ.jpg",
+    "rating": 5.6,
+    "year": "2026",
+    "type": "movie",
+    "tmdb_id": 1575690,
+    "genres": [
+      "Comedy",
+      "Romance"
+    ]
+  },
+  {
+    "title": "ಮ್ಯಾಕ್ಸ್ / MAX",
+    "title_ar": "ಮ್ಯಾಕ್ಸ್",
+    "title_en": "MAX",
+    "slug": "1147058-max",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/4YeUKzChWqTB3FtuRJkxczCkQoi.jpg",
+    "rating": 5.6,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1147058,
+    "genres": [
+      "Action",
+      "Drama"
+    ]
+  },
+  {
+    "title": "Fuze",
+    "title_ar": "Fuze",
+    "title_en": "Fuze",
+    "slug": "1242265-fuze",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/oWehDe6fFR4eUdUMDy4jz6XiinO.jpg",
+    "rating": 5.6,
+    "year": "2026",
+    "type": "movie",
+    "tmdb_id": 1242265,
+    "genres": [
+      "Action",
+      "Crime",
+      "Thriller"
     ]
   },
   {
@@ -142287,6 +142796,39 @@
     ]
   },
   {
+    "title": "Topakk / Triggered",
+    "title_ar": "Topakk",
+    "title_en": "Triggered",
+    "slug": "1132491-triggered",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/50g702Thykuc49lhVpz4zMSpPtL.jpg",
+    "rating": 5.4,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1132491,
+    "genres": [
+      "Action",
+      "Thriller",
+      "Crime"
+    ]
+  },
+  {
+    "title": "TMZ Presents | The Downfall of Diddy 2: The Indictment",
+    "title_ar": "TMZ Presents | The Downfall of Diddy 2: The Indictment",
+    "title_en": "TMZ Presents | The Downfall of Diddy 2: The Indictment",
+    "slug": "1362614-tmz-presents-the-downfall-of-diddy-2-the-indictment",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/4pvLKrP8oeUXqrrxirp6GcqFW9v.jpg",
+    "rating": 5.4,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1362614,
+    "genres": [
+      "Documentary",
+      "Crime"
+    ]
+  },
+  {
     "title_ar": "Killing Faith",
     "title_en": "Killing Faith",
     "slug": "1200320-killing-faith",
@@ -143742,6 +144284,21 @@
       "Drama",
       "Crime",
       "Thriller"
+    ]
+  },
+  {
+    "title": "Horst Schlämmer sucht das Glück",
+    "title_ar": "Horst Schlämmer sucht das Glück",
+    "title_en": "Horst Schlämmer sucht das Glück",
+    "slug": "1437698-horst-schlämmer-sucht-das-glück",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/lEg0bWvMTZ7s86ZoUp31ppXX3tG.jpg",
+    "rating": 5.3,
+    "year": "2026",
+    "type": "movie",
+    "tmdb_id": 1437698,
+    "genres": [
+      "Comedy"
     ]
   },
   {
@@ -148956,6 +149513,23 @@
     ]
   },
   {
+    "title": "Rosamunde Pilcher: Frühstück bei Tessa",
+    "title_ar": "Rosamunde Pilcher: Frühstück bei Tessa",
+    "title_en": "Rosamunde Pilcher: Frühstück bei Tessa",
+    "slug": "1228333-rosamunde-pilcher-frühstück-bei-tessa",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/ayKmQYfhAUe6lZbTabPZpwY5CJ4.jpg",
+    "rating": 5.0,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1228333,
+    "genres": [
+      "Romance",
+      "TV Movie",
+      "Drama"
+    ]
+  },
+  {
     "title_ar": "Conjuring Tapes",
     "title_en": "Conjuring Tapes",
     "slug": "1206083-conjuring-tapes",
@@ -153125,6 +153699,23 @@
     ]
   },
   {
+    "title": "Somewhere Quiet",
+    "title_ar": "Somewhere Quiet",
+    "title_en": "Somewhere Quiet",
+    "slug": "1114922-somewhere-quiet",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/evExphB7F7PpCHx06dMCwePArfH.jpg",
+    "rating": 4.5,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1114922,
+    "genres": [
+      "Drama",
+      "Thriller",
+      "Horror"
+    ]
+  },
+  {
     "title_ar": "First Moon",
     "title_en": "First Moon",
     "slug": "1468417-first-moon",
@@ -155212,6 +155803,22 @@
     ]
   },
   {
+    "title": "മലയാളി ഫ്രം ഇന്ത്യ / Malayalee from India",
+    "title_ar": "മലയാളി ഫ്രം ഇന്ത്യ",
+    "title_en": "Malayalee from India",
+    "slug": "1101175-malayalee-from-india",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/mOqYSsuaDi9D6dh0GRF8gj2ilJQ.jpg",
+    "rating": 4.2,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1101175,
+    "genres": [
+      "Drama",
+      "Comedy"
+    ]
+  },
+  {
     "title_ar": "The Dresden Sun",
     "title_en": "The Dresden Sun",
     "slug": "846049-the-dresden-sun",
@@ -155983,6 +156590,22 @@
     "genres": [
       "Action",
       "Science Fiction"
+    ]
+  },
+  {
+    "title": "Dosen Ghaib: Sudah Malam atau Sudah Tahu / Dosen Ghaib: It's Nighttime or You Already Know",
+    "title_ar": "Dosen Ghaib: Sudah Malam atau Sudah Tahu",
+    "title_en": "Dosen Ghaib: It's Nighttime or You Already Know",
+    "slug": "1264247-dosen-ghaib-its-nighttime-or-you-already-know",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/zF1D2iiUtsvsjsA3IarOXryxn32.jpg",
+    "rating": 4.0,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1264247,
+    "genres": [
+      "Horror",
+      "Thriller"
     ]
   },
   {
@@ -157199,6 +157822,22 @@
     ]
   },
   {
+    "title": "Agents",
+    "title_ar": "Agents",
+    "title_en": "Agents",
+    "slug": "1304588-agents",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/xvdkVb070AqZZpTBOZzbrnsGL3d.jpg",
+    "rating": 3.3,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1304588,
+    "genres": [
+      "Action",
+      "Thriller"
+    ]
+  },
+  {
     "title_ar": "Parking",
     "title_en": "Parking",
     "slug": "1565344-parking",
@@ -158078,6 +158717,24 @@
     "genres": [
       "Horror",
       "Thriller"
+    ]
+  },
+  {
+    "title": "Witch Hunter",
+    "title_ar": "Witch Hunter",
+    "title_en": "Witch Hunter",
+    "slug": "1365083-witch-hunter",
+    "folder": "movie",
+    "poster": "https://image.tmdb.org/t/p/original/mMrFLhcA26F9yZ5xsYKP7T9YNo5.jpg",
+    "rating": 2.0,
+    "year": "2024",
+    "type": "movie",
+    "tmdb_id": 1365083,
+    "genres": [
+      "Fantasy",
+      "Action",
+      "Adventure",
+      "Horror"
     ]
   },
   {
