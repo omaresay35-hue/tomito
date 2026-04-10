@@ -1,3 +1,6 @@
 {
-    "sitemap_root.xml": 600
+    "sitemap_root.xml": 600,
+    "sitemap_tv.xml": 66,
+    "sitemap_actor.xml": 66,
+    "sitemap_movie.xml": 66
 }
