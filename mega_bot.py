@@ -16,6 +16,28 @@ BUTTON_DOMAIN = "https://tomito.xyz"
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 DIRS = ['movie', 'tv', 'movie-trend', 'tv-trend', 'actor', 'data']
 
+# --- Global Content Index Cache ---
+_AVAILABLE_IDS = None
+
+def get_available_ids():
+    global _AVAILABLE_IDS
+    if _AVAILABLE_IDS is not None:
+        return _AVAILABLE_IDS
+    
+    _AVAILABLE_IDS = set()
+    path = os.path.join(BASE_PATH, 'data', 'content_index.json')
+    if os.path.exists(path):
+        try:
+            with open(path, 'r', encoding='utf-8') as f:
+                index_data = json.load(f)
+                for item in index_data:
+                    tid = item.get('tmdb_id')
+                    if tid:
+                        _AVAILABLE_IDS.add(int(tid))
+        except Exception:
+            pass
+    return _AVAILABLE_IDS
+
 # SEO keyword banks
 SEO_AR = [
     "مشاهدة", "تحميل", "اون لاين", "بجودة عالية", "HD", "مترجم",
@@ -264,11 +286,23 @@ def create_page(item_data, media_type, is_trend=False):
 
     # Similar Content section (Replacing Cast as requested)
     similar_html = ''
+    available_ids = get_available_ids()
     similar_data = item_data.get('similar', {})
+    
+    # Filter similar results to only show items we have in our index
+    filtered_similar = []
     if similar_data and similar_data.get('results'):
+        for sim in similar_data['results']:
+            sim_id = sim.get('id')
+            if sim_id and int(sim_id) in available_ids:
+                filtered_similar.append(sim)
+            if len(filtered_similar) >= 12:
+                break
+
+    if filtered_similar:
         section_title = "أفلام مشابهة — Similar Movies" if media_type == 'movie' else "مسلسلات مشابهة — Similar Series"
         similar_html = f'<section class="section"><h2 class="section-title">{section_title}</h2><div class="grid">'
-        for sim in similar_data['results'][:12]:
+        for sim in filtered_similar:
             s_id = sim.get('id', '')
             s_title = sim.get('title') or sim.get('name') or ''
             s_poster = sim.get('poster_path', '')
@@ -426,7 +460,13 @@ def fetch_actor_credits(actor_id):
 
 def build_filmography_html(movies, tv_shows):
     """Build filmography HTML section with cards visually identical to the main site."""
-    if not movies and not tv_shows:
+    available_ids = get_available_ids()
+    
+    # Filter by what we have in index
+    f_movies = [m for m in movies if m.get('id') and int(m.get('id')) in available_ids]
+    f_tv = [t for t in tv_shows if t.get('id') and int(t.get('id')) in available_ids]
+
+    if not f_movies and not f_tv:
         return ''
 
     def card(item, folder):
@@ -447,13 +487,13 @@ def build_filmography_html(movies, tv_shows):
     </a>'''
 
     html = ''
-    if movies:
+    if f_movies:
         html += '<section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">'
-        html += ''.join(card(m, 'movie') for m in movies)
+        html += ''.join(card(m, 'movie') for m in f_movies)
         html += '</div></section>'
-    if tv_shows:
+    if f_tv:
         html += '<section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">'
-        html += ''.join(card(t, 'tv') for t in tv_shows)
+        html += ''.join(card(t, 'tv') for t in f_tv)
         html += '</div></section>'
     return html
 
