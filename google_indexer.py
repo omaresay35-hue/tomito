@@ -15,9 +15,9 @@ SCOPES = ['https://www.googleapis.com/auth/indexing']
 ENDPOINT = 'https://indexing.googleapis.com/v3/urlNotifications:publish'
 
 # مسارات الـ sitemaps ديالنا
-SITEMAPS = ['sitemap_root.xml', 'sitemap_tv.xml', 'sitemap_actor.xml', 'sitemap_movie.xml']
+SITEMAPS = ['sitemap_trend.xml', 'sitemap_root.xml', 'sitemap_tv.xml', 'sitemap_actor.xml', 'sitemap_movie.xml']
 PROGRESS_FILE = 'indexer_progress.json'
-LINKS_PER_RUN = 66
+LINKS_PER_RUN = 200
 # ==========================================
 
 def get_access_token():
@@ -93,9 +93,10 @@ def save_progress(progress):
 def index_sitemaps():
     progress = load_progress()
     rate_limit_hit = False
+    total_indexed_this_run = 0
     
     for sitemap_path in SITEMAPS:
-        if rate_limit_hit:
+        if rate_limit_hit or total_indexed_this_run >= LINKS_PER_RUN:
             break
             
         print(f"\n==========================================")
@@ -124,28 +125,34 @@ def index_sitemaps():
         total_urls = len(urls)
         print(f"📊 طوطال الروابط اللي لقينا هنا: {total_urls}")
         
-        start_index = int(progress.get(sitemap_path, 0))
+        # إيلا كانت sitemap_trend.xml، ديما نبداو من الأول حيت هي كتكون فيها الجديد ديال النهار
+        if sitemap_path == 'sitemap_trend.xml':
+            start_index = 0
+        else:
+            start_index = int(progress.get(sitemap_path, 0))
         
         if start_index >= total_urls:
             print(f"✅ سالينا هاد الـ sitemap كامل! (الروابط كاملين {total_urls} صيفطناهم)")
             continue
             
-        end_index = min(start_index + LINKS_PER_RUN, total_urls)
+        remaining_in_quota = LINKS_PER_RUN - total_indexed_this_run
+        end_index = min(start_index + remaining_in_quota, total_urls)
         urls_to_index = [urls[i] for i in range(start_index, end_index)]
         
         print(f"▶️ غادي نصيفطو {len(urls_to_index)} رابط دابا (من {start_index + 1} حتى لـ {min(end_index, total_urls)})...\n")
         
         count = 0
-        
         for url in urls_to_index:
             status = notify_google_index(url, "URL_UPDATED")
             if status == "SUCCESS":
                 count += 1
+                total_indexed_this_run += 1
             elif status == "RATE_LIMIT":
                 rate_limit_hit = True
                 break
             else:
                 count += 1 # نزيدوه باش ماندوروش عليه مرة أخرى فالحالة ديال error عادي
+                total_indexed_this_run += 1
             time.sleep(1)
             
         progress[sitemap_path] = start_index + count
@@ -155,6 +162,8 @@ def index_sitemaps():
         
     if rate_limit_hit:
          print("\n🚨 وصلنا للـ Limit ديال Google، السكريبت وقف باش مانتجاوزوش الحد.")
+    elif total_indexed_this_run >= LINKS_PER_RUN:
+         print(f"\n✅ وصلنا للحد اللي حددنا ({LINKS_PER_RUN} رابط). غادي نحبسو هنا باش نحتارمو الكوطا.")
     else:
          print("\n🎉 سالينا الران ديال دابا! المرة الجاية غادي يكمل اوتوماتيك منين حبسنا.")
 

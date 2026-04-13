@@ -186,30 +186,44 @@ def build_keywords(title_ar, title_en, media_type, year, genres_ar):
 def generate_seo_with_gemini(title_ar, year, type_label):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
     ar_type = "فيلم" if "Movie" in type_label else "مسلسل"
-    prompt = f"Write a powerful, highly optimized SEO meta description for the {ar_type} '{title_ar}' ({year}). Make it sound extremely appealing to a user wanting to watch or download it in HD for free, without ads. Provide the result in exactly 2 plain text lines (No markdown, no bolding): Line 1 Arabic, Line 2 English."
+    prompt = f"Write a powerful, highly optimized, and comprehensive long-form SEO meta description and rich content for the {ar_type} '{title_ar}' ({year}). Include at least 100 relevant SEO keywords and entities to maximize search visibility. Provide the result in exactly 2 long paragraphs (approximately 150-200 words each, no markdown, no bolding, no bullet points): Paragraph 1 in Arabic, Paragraph 2 in English."
     
     payload = {
         "contents": [{"parts": [{"text": prompt}]}]
     }
     headers = {'Content-Type': 'application/json'}
-    try:
-        r = requests.post(url, json=payload, headers=headers, timeout=5)
-        if r.status_code == 200:
-            data = r.json()
-            if 'candidates' in data and len(data['candidates']) > 0:
-                text = data['candidates'][0]['content']['parts'][0]['text']
-                lines = [ln.strip() for ln in text.split('\n') if ln.strip()]
-                if len(lines) >= 2:
-                    return lines[0].replace('**', ''), lines[1].replace('**', '')
-    except Exception:
-        pass
+    
+    # Stay under 15 RPM limit (1 req / 4s)
+    # With 2 workers, this yields ~12 RPM max (safe)
+    time.sleep(5) 
+    for attempt in range(3):
+        try:
+            r = requests.post(url, json=payload, headers=headers, timeout=30)
+            if r.status_code == 200:
+                data = r.json()
+                if 'candidates' in data and len(data['candidates']) > 0:
+                    text = data['candidates'][0]['content']['parts'][0]['text']
+                    lines = [ln.strip() for ln in text.split('\n') if ln.strip()]
+                    if len(lines) >= 2:
+                        return lines[0].replace('**', ''), lines[1].replace('**', '')
+            elif r.status_code == 429:
+                wait_time = 21 if attempt == 0 else 40
+                print(f"Gemini Rate Limit hit. Waiting {wait_time}s...")
+                time.sleep(wait_time)
+                continue
+            else:
+                print(f"Gemini Error: {r.status_code} - {r.text}")
+                break
+        except Exception as e:
+            print(f"Gemini Exception: {e}")
+            time.sleep(2)
     return None, None
 
 def generate_seo_description(ar_data, en_data, title_ar, year, type_label):
     # Try Gemini First
     gemini_ar, gemini_en = generate_seo_with_gemini(title_ar, year, type_label)
     if gemini_ar and gemini_en:
-        return gemini_ar[:250], gemini_en[:250]
+        return gemini_ar[:2000], gemini_en[:2000]
         
     # Fallback to Original
     ar_desc = ar_data.get('overview', '') if ar_data else ''
@@ -402,7 +416,7 @@ def create_page(item_data, media_type, is_trend=False):
     html = MASTER_TEMPLATE
     replacements = {
         '{{TITLE_PAGE}}': f'{title_ar} — مشاهدة وتحميل {year} | TOMITO',
-        '{{META_DESC}}': f'مشاهدة وتحميل {title_ar} ({title_en}) {year} اون لاين بجودة HD. {desc_ar[:150]}',
+        '{{META_DESC}}': f'مشاهدة وتحميل {title_ar} ({title_en}) {year} اون لاين بجودة HD. {desc_ar[:160]}',
         '{{KEYWORDS}}': keywords,
         '{{TITLE_OG}}': f'{title_ar} / {title_en} — TOMITO',
         '{{OG_TYPE}}': 'video.movie' if media_type == 'movie' else 'video.tv_show',
@@ -683,7 +697,7 @@ def main(limit=20000):
     total = len(movie_ids) + len(tv_ids)
     print(f"\nProcessing {total} items with 10 workers...")
 
-    with ThreadPoolExecutor(max_workers=10) as ex:
+    with ThreadPoolExecutor(max_workers=2) as ex:
         futures = []
         for mid in movie_ids:
             futures.append(ex.submit(process_item, mid, 'movie'))
