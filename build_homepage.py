@@ -32,7 +32,7 @@ def card_html(item):
     title = item.get('title', '')
     folder = item.get('folder', 'movie')
     slug = item.get('slug', '')
-    href = f"{folder}/{slug}" # Clean URL
+    href = f"/{folder}/{slug}" # Clean URL
     rating = item.get('rating', '')
     badge = f"{rating}⭐" if rating else "حصري"
     
@@ -51,7 +51,7 @@ def build_carousel(trends):
     for item in trends:
         folder = item.get('folder', 'movie')
         slug = item.get('slug', '')
-        href = f"{folder}/{slug}"
+        href = f"/{folder}/{slug}"
         poster = item.get('poster', '/favicon.ico')
         title = item.get('title', '')
         rating = item.get('rating', '')
@@ -85,7 +85,7 @@ def build_carousel(trends):
     <section class="trending-container" id="trending">
       <div class="trending-header">
         <h2>🔥 التريند الآن</h2>
-        <a href="trending.html">عرض الكل &gt;</a>
+        <a href="/trending/">عرض الكل &gt;</a>
       </div>
       <div class="slim-carousel">
         {cards}
@@ -107,12 +107,14 @@ def build_trending_page(trends, base_html):
   </div>
 </section>'''
 
-    # Keep exactly the same master wrapper, just inject one section
-    page_html = base_html.replace('<!-- DYNAMIC CONTENT -->\n{movies_section}\n{series_section}\n{anime_section}', section)
+    # Replace sections reliably instead of relying on exact whitespace
+    page_html = base_html.replace('{movies_section}', section).replace('{series_section}', '').replace('{anime_section}', '')
     # Update title
     page_html = page_html.replace('<title>TOMITO', '<title>التريند الآن | TOMITO')
     
-    out_path = os.path.join(BASE_PATH, 'trending.html')
+    trending_dir = os.path.join(BASE_PATH, 'trending')
+    os.makedirs(trending_dir, exist_ok=True)
+    out_path = os.path.join(trending_dir, 'index.html')
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(page_html)
 
@@ -176,8 +178,8 @@ def build():
   <meta property="og:url" content="{SITE_URL}">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{SITE_URL}">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" href="/favicon.ico">
   <script type="application/ld+json">
   {{
     "@context": "https://schema.org",
@@ -200,8 +202,8 @@ def build():
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="#movies">أفلام</a></li>
-      <li><a href="#series">مسلسلات</a></li>
+      <li><a href="/#movies">أفلام</a></li>
+      <li><a href="/#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>

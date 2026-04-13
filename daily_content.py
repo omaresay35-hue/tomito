@@ -231,7 +231,7 @@ def main():
     with open(trend_sitemap_path, 'w', encoding='utf-8') as f:
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-        f.write(f'  <url>\n    <loc>https://nordrama.live/trending.html</loc>\n    <lastmod>{today_str}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n')
+        f.write(f'  <url>\n    <loc>https://nordrama.live/trending/</loc>\n    <lastmod>{today_str}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n')
         for item in trend_entries:
             slug = item.get('slug', '')
             folder = item.get('folder', 'movie')
