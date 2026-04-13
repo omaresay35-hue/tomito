@@ -311,6 +311,53 @@ def create_page(item_data, media_type):
     }
     return f"{folder}/{slug}", index_entry
 
+def fetch_actor_credits(actor_id):
+    """Fetch top 100 most recent movies + top 100 most recent TV shows for an actor from TMDB."""
+    data = get_tmdb_data(f"person/{actor_id}/combined_credits", {'language': 'en'})
+    if not data:
+        return [], []
+    cast = data.get('cast', [])
+    movies = sorted(
+        [c for c in cast if c.get('media_type') == 'movie' and c.get('poster_path') and c.get('release_date')],
+        key=lambda x: x.get('release_date', ''), reverse=True
+    )[:100]
+    tv_shows = sorted(
+        [c for c in cast if c.get('media_type') == 'tv' and c.get('poster_path') and c.get('first_air_date')],
+        key=lambda x: x.get('first_air_date', ''), reverse=True
+    )[:100]
+    return movies, tv_shows
+
+def build_filmography_html(movies, tv_shows):
+    """Build filmography HTML section with cards linking to existing pages."""
+    if not movies and not tv_shows:
+        return ''
+
+    def card(item, folder):
+        tmdb_id = item.get('id', '')
+        title = item.get('title') or item.get('name') or ''
+        poster = f"{IMAGE_BASE_URL}{item['poster_path']}"
+        slug_part = clean_slug(title)
+        slug = f"{tmdb_id}-{slug_part}" if slug_part else str(tmdb_id)
+        year = (item.get('release_date') or item.get('first_air_date') or '')[:4]
+        rating = round(item.get('vote_average', 0), 1)
+        badge = f"{rating}⭐" if rating else year
+        return f'''    <a class="cast-card" href="/{folder}/{slug}" style="text-decoration:none;">
+        <img src="{poster}" alt="{title}" loading="lazy" onerror="this.src='../favicon.ico'" style="width:100%;border-radius:8px;">
+        <span style="font-size:0.75rem;display:block;margin-top:4px;text-align:center;">{title}</span>
+        <span style="font-size:0.7rem;color:#aaa;display:block;text-align:center;">{badge}</span>
+    </a>'''
+
+    html = ''
+    if movies:
+        html += '<section class="cast-section"><h2 class="section-title">أفلامه — Movies</h2><div class="cast-grid">'
+        html += ''.join(card(m, 'movie') for m in movies)
+        html += '</div></section>'
+    if tv_shows:
+        html += '<section class="cast-section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="cast-grid">'
+        html += ''.join(card(t, 'tv') for t in tv_shows)
+        html += '</div></section>'
+    return html
+
 def create_actor_page(actor_id):
     ar = get_tmdb_data(f"person/{actor_id}", {'language': 'ar'})
     en = get_tmdb_data(f"person/{actor_id}", {'language': 'en'})
@@ -321,6 +368,10 @@ def create_actor_page(actor_id):
     bio_en = en.get('biography', '') or ''
     img_url = f"{IMAGE_BASE_URL}{en.get('profile_path')}" if en.get('profile_path') else "../favicon.ico"
     slug = f"{actor_id}-{clean_slug(name)}"
+
+    # Fetch filmography (100 movies + 100 tv)
+    movies, tv_shows = fetch_actor_credits(actor_id)
+    filmography_html = build_filmography_html(movies, tv_shows)
 
     seo_desc = f"تعرف على {name} — سيرته الذاتية وأهم أعماله. شاهد أفلام ومسلسلات {name} اون لاين بجودة عالية HD على NORDRAMA."
     keywords = f"{name}, ممثل, أفلام {name}, مسلسلات {name}, سيرة ذاتية, actor, filmography"
@@ -363,7 +414,7 @@ def create_actor_page(actor_id):
         '{{DESC_AR}}': bio_ar[:500],
         '{{DESC_EN}}': bio_en[:500],
         '{{TAGS_SECTION}}': '',
-        '{{EXTRA_CONTENT}}': '',
+        '{{EXTRA_CONTENT}}': filmography_html,
         '{{JSON_LD}}': json_ld_html,
         '{{FOLDER}}': 'actor',
         '{{TYPE_AR}}': 'ممثلين',
