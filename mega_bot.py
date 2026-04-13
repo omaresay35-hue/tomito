@@ -142,7 +142,8 @@ def fetch_details(tmdb_id, media_type):
     ar_data = get_tmdb_data(f"{media_type}/{tmdb_id}", {'language': 'ar'})
     en_data = get_tmdb_data(f"{media_type}/{tmdb_id}", {'language': 'en'})
     credits = get_tmdb_data(f"{media_type}/{tmdb_id}/credits", {})
-    return {'ar': ar_data, 'en': en_data, 'credits': credits}
+    similar = get_tmdb_data(f"{media_type}/{tmdb_id}/similar", {'language': 'en'})
+    return {'ar': ar_data, 'en': en_data, 'credits': credits, 'similar': similar}
 
 def build_keywords(title_ar, title_en, media_type, year, genres_ar):
     kw = [
@@ -216,22 +217,30 @@ def create_page(item_data, media_type):
     page_url = f"{SITE_URL}/{folder}/{slug}"
     keywords = build_keywords(title_ar, title_en, media_type, year, genres_ar)
 
-    # Cast section
-    cast_html = '<section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">'
-    actor_ids = set()
-    if credits and credits.get('cast'):
-        for actor in credits['cast'][:12]:
-            aid = actor.get('id')
-            aname = actor.get('name', '')
-            aprofile = actor.get('profile_path', '')
-            if aid: actor_ids.add(aid)
-            img_src = f"{IMAGE_BASE_URL}{aprofile}" if aprofile else "../favicon.ico"
-            cast_html += f'''
-            <a href="/actor/{aid}-{clean_slug(aname)}" class="cast-card">
-                <img src="{img_src}" alt="{aname}" loading="lazy" onerror="this.src='../favicon.ico'">
-                <span>{aname}</span>
-            </a>'''
-    cast_html += '</div></section>'
+    # Similar Content section (Replacing Cast as requested)
+    similar_html = ''
+    similar_data = item_data.get('similar', {})
+    if similar_data and similar_data.get('results'):
+        section_title = "أفلام مشابهة — Similar Movies" if media_type == 'movie' else "مسلسلات مشابهة — Similar Series"
+        similar_html = f'<section class="section"><h2 class="section-title">{section_title}</h2><div class="grid">'
+        for sim in similar_data['results'][:12]:
+            s_id = sim.get('id', '')
+            s_title = sim.get('title') or sim.get('name') or ''
+            s_poster = sim.get('poster_path', '')
+            if not s_poster: continue
+            poster_src = f"{IMAGE_BASE_URL}{s_poster}"
+            s_slug_part = clean_slug(s_title)
+            s_slug = f"{s_id}-{s_slug_part}" if s_slug_part else str(s_id)
+            s_year = (sim.get('release_date') or sim.get('first_air_date') or '')[:4]
+            s_rating = round(sim.get('vote_average', 0), 1)
+            s_badge = f"{s_rating}⭐" if s_rating else s_year
+            
+            similar_html += f'''    <a class="card" href="/{folder}/{s_slug}">
+      <img class="card-poster" src="{poster_src}" alt="{s_title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='../favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">{s_badge}</div></div>
+      <div class="card-bottom"><div class="card-title">{s_title}</div></div>
+    </a>'''
+        similar_html += '</div></section>'
 
     # Tags
     tags = [type_label, f"⭐ {rating}", year] + genres_en[:3]
@@ -284,7 +293,7 @@ def create_page(item_data, media_type):
         '{{DESC_AR}}': desc_ar,
         '{{DESC_EN}}': desc_en,
         '{{TAGS_SECTION}}': tags_html,
-        '{{EXTRA_CONTENT}}': cast_html,
+        '{{EXTRA_CONTENT}}': similar_html,
         '{{JSON_LD}}': json_ld_html,
         '{{FOLDER}}': folder,
         '{{TYPE_AR}}': type_label.split('|')[-1].strip(),
@@ -328,7 +337,7 @@ def fetch_actor_credits(actor_id):
     return movies, tv_shows
 
 def build_filmography_html(movies, tv_shows):
-    """Build filmography HTML section with cards linking to existing pages."""
+    """Build filmography HTML section with cards visually identical to the main site."""
     if not movies and not tv_shows:
         return ''
 
@@ -341,19 +350,21 @@ def build_filmography_html(movies, tv_shows):
         year = (item.get('release_date') or item.get('first_air_date') or '')[:4]
         rating = round(item.get('vote_average', 0), 1)
         badge = f"{rating}⭐" if rating else year
-        return f'''    <a class="cast-card" href="/{folder}/{slug}" style="text-decoration:none;">
-        <img src="{poster}" alt="{title}" loading="lazy" onerror="this.src='../favicon.ico'" style="width:100%;border-radius:8px;">
-        <span style="font-size:0.75rem;display:block;margin-top:4px;text-align:center;">{title}</span>
-        <span style="font-size:0.7rem;color:#aaa;display:block;text-align:center;">{badge}</span>
+        
+        # Using exact same card structure as the homepage `build_homepage.py`
+        return f'''    <a class="card" href="/{folder}/{slug}">
+      <img class="card-poster" src="{poster}" alt="{title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">{badge}</div></div>
+      <div class="card-bottom"><div class="card-title">{title}</div></div>
     </a>'''
 
     html = ''
     if movies:
-        html += '<section class="cast-section"><h2 class="section-title">أفلامه — Movies</h2><div class="cast-grid">'
+        html += '<section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">'
         html += ''.join(card(m, 'movie') for m in movies)
         html += '</div></section>'
     if tv_shows:
-        html += '<section class="cast-section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="cast-grid">'
+        html += '<section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">'
         html += ''.join(card(t, 'tv') for t in tv_shows)
         html += '</div></section>'
     return html
@@ -538,11 +549,6 @@ def main(limit=20000):
                     all_index.append(index_entry)
                     all_pages.append(url)
                     page_count[0] += 1
-                if details['credits'] and details['credits'].get('cast'):
-                    for a in details['credits']['cast'][:3]:
-                        if a.get('id'):
-                            with lock_index:
-                                actor_ids.add(a['id'])
         except Exception:
             errors[0] += 1
 
@@ -565,31 +571,7 @@ def main(limit=20000):
     print(f"\nContent pages created: {page_count[0]}")
     print(f"Errors: {errors[0]}")
 
-    # Actor pages (cap at 1000)
-    actor_list = list(actor_ids)[:1000]
-    print(f"\nProcessing {len(actor_list)} actor pages...")
-    actor_count = [0]
-    actor_pages = []
 
-    def process_actor(aid):
-        try:
-            result = create_actor_page(aid)
-            if result:
-                with lock_index:
-                    actor_count[0] += 1
-                    actor_pages.append(result)
-        except Exception:
-            pass
-
-    with ThreadPoolExecutor(max_workers=10) as ex:
-        futures = [ex.submit(process_actor, aid) for aid in actor_list]
-        done = 0
-        for f in as_completed(futures):
-            done += 1
-            if done % 500 == 0:
-                print(f"  Actors progress: {done}/{len(actor_list)}")
-
-    print(f"Actor pages created: {actor_count[0]}")
 
     # Save content index
     index_path = os.path.join(BASE_PATH, 'data', 'content_index.json')
@@ -600,10 +582,9 @@ def main(limit=20000):
     print(f"\nSaved content index: {len(all_index)} items → {index_path}")
 
     # Generate single unified sitemap
-    all_combined_pages = all_pages + actor_pages
-    generate_sitemap(SITE_URL, BASE_PATH, all_combined_pages)
+    generate_sitemap(SITE_URL, BASE_PATH, all_pages)
 
-    total_pages = page_count[0] + actor_count[0]
+    total_pages = page_count[0]
     print(f"\n{'='*50}")
     print(f"TOTAL PAGES GENERATED: {total_pages}")
     print(f"{'='*50}")
