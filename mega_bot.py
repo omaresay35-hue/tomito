@@ -8,6 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # --- Configuration ---
 TMDB_API_KEY = "882e741f7283dc9ba1654d4692ec30f6"
+GEMINI_API_KEY = "AIzaSyDBi1qVZaEV7950DvFWKg-t8feHUodLUCI"
 BASE_URL = "https://api.themoviedb.org/3"
 IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original"
 SITE_URL = "https://nordrama.live"
@@ -160,13 +161,41 @@ def build_keywords(title_ar, title_en, media_type, year, genres_ar):
     kw += genres_ar
     return ", ".join(kw[:20])
 
-def generate_seo_description(ar_data, en_data, title_ar, year):
+def generate_seo_with_gemini(title_ar, year, type_label):
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
+    ar_type = "فيلم" if "Movie" in type_label else "مسلسل"
+    prompt = f"Write a powerful, highly optimized SEO meta description for the {ar_type} '{title_ar}' ({year}). Make it sound extremely appealing to a user wanting to watch or download it in HD for free, without ads. Provide the result in exactly 2 plain text lines (No markdown, no bolding): Line 1 Arabic, Line 2 English."
+    
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}]
+    }
+    headers = {'Content-Type': 'application/json'}
+    try:
+        r = requests.post(url, json=payload, headers=headers, timeout=5)
+        if r.status_code == 200:
+            data = r.json()
+            if 'candidates' in data and len(data['candidates']) > 0:
+                text = data['candidates'][0]['content']['parts'][0]['text']
+                lines = [ln.strip() for ln in text.split('\n') if ln.strip()]
+                if len(lines) >= 2:
+                    return lines[0].replace('**', ''), lines[1].replace('**', '')
+    except Exception:
+        pass
+    return None, None
+
+def generate_seo_description(ar_data, en_data, title_ar, year, type_label):
+    # Try Gemini First
+    gemini_ar, gemini_en = generate_seo_with_gemini(title_ar, year, type_label)
+    if gemini_ar and gemini_en:
+        return gemini_ar[:250], gemini_en[:250]
+        
+    # Fallback to Original
     ar_desc = ar_data.get('overview', '') if ar_data else ''
     en_desc = en_data.get('overview', '') if en_data else ''
     seo_ar = f"مشاهدة وتحميل {title_ar} ({year}) اون لاين بجودة عالية HD مترجم حصرياً بدون اعلانات."
-    seo_en = f"Watch and download online in HD quality. Free streaming with English subtitles 2026."
-    full_ar = f"{ar_desc} {seo_ar}" if ar_desc else seo_ar
-    full_en = f"{en_desc} {seo_en}" if en_desc else seo_en
+    seo_en = f"Watch and download online in HD quality. Free streaming with English subtitles {year}."
+    full_ar = f"{ar_desc[:120]}... {seo_ar}" if len(ar_desc) > 30 else seo_ar
+    full_en = f"{en_desc[:120]}... {seo_en}" if len(en_desc) > 30 else seo_en
     return full_ar.strip(), full_en.strip()
 
 # --- Page Generation ---
@@ -192,7 +221,28 @@ def create_page(item_data, media_type):
     rating = round(data.get('vote_average', 0), 1)
     rating_count = data.get('vote_count', 1)
     if not rating_count or rating_count == 0: rating_count = 1
-    desc_ar, desc_en = generate_seo_description(ar, en, title_ar, year)
+
+    # Genres
+    genres_ar = [g.get('name', '') for g in (ar.get('genres', []) if ar else [])]
+    genres_en = [g.get('name', '') for g in (en.get('genres', []) if en else [])]
+
+    if media_type == 'movie':
+        watch_url = "#player"
+        folder = 'movie'
+        schema_type = 'Movie'
+        type_label = "Movie | فيلم"
+    elif 'anime' in media_type:
+        watch_url = f"{SITE_URL}/tv/{tmdb_id}/watch?season=1&episode=1"
+        folder = 'tv' # Keep as tv even for anime
+        schema_type = 'TVSeries'
+        type_label = "Anime | أنمي"
+    else:
+        watch_url = f"{SITE_URL}/tv/{tmdb_id}/watch?season=1&episode=1"
+        folder = 'tv'
+        schema_type = 'TVSeries'
+        type_label = "TV Series | مسلسل"
+
+    desc_ar, desc_en = generate_seo_description(ar, en, title_ar, year, type_label)
 
     # Genres
     genres_ar = [g.get('name', '') for g in (ar.get('genres', []) if ar else [])]

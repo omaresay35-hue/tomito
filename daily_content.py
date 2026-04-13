@@ -212,8 +212,29 @@ def main():
     log.info("Generating TV pages...")
     tv_entries, tv_pages = generate_pages(tv_ids, 'tv', all_index)
 
+    # -- Trending Export --
+    trend_entries = movie_entries + tv_entries
+    trend_path = os.path.join(BASE_PATH, 'data', 'latest_trend.json')
+    with open(trend_path, 'w', encoding='utf-8') as f:
+        json.dump(trend_entries, f, ensure_ascii=False, indent=2)
+    log.info(f"   Exported {len(trend_entries)} trending items to {trend_path}")
+
+    # Generate standalone trending sitemap
+    trend_sitemap_path = os.path.join(BASE_PATH, 'sitemap_trend.xml')
+    today_str = today.strftime('%Y-%m-%d')
+    with open(trend_sitemap_path, 'w', encoding='utf-8') as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        f.write(f'  <url>\n    <loc>https://nordrama.live/trending.html</loc>\n    <lastmod>{today_str}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n')
+        for item in trend_entries:
+            slug = item.get('slug', '')
+            folder = item.get('folder', 'movie')
+            f.write(f'  <url>\n    <loc>https://nordrama.live/{folder}/{slug}</loc>\n    <lastmod>{today_str}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.9</priority>\n  </url>\n')
+        f.write('</urlset>')
+    log.info(f"   Generated {trend_sitemap_path}")
+
     # -- Persist --
-    all_index += movie_entries + tv_entries
+    all_index += trend_entries
     all_pages  += movie_pages + tv_pages
     save_content_index(all_index)
     save_seen_ids(seen)
