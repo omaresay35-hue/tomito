@@ -1,0 +1,46 @@
+name: Daily Content Fetch (100 Movies + 100 TV)
+
+on:
+  schedule:
+    # 23:00 UTC = 00:00 Morocco (UTC+1)
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+jobs:
+  daily-content:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Run Daily Content Fetcher
+        run: |
+          python daily_content.py
+
+      - name: Commit and Push new pages
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git config --global core.quotepath false
+          git add movie/ tv/ data/content_index.json sitemap.xml \
+                  index.html daily_seen_ids.json daily_content.log || true
+          git commit -m "chore: daily fetch — 100 movies + 100 TV shows [skip ci]" \
+            || echo "No changes to commit"
+          git pull --rebase origin main
+          git push origin main
