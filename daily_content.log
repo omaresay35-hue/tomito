@@ -1,0 +1,23 @@
+2026-04-13 21:32:31,833 [INFO] === DAILY CONTENT RUN — 2026-04-13 21:32 ===
+2026-04-13 21:32:31,949 [INFO] Collecting movie IDs...
+2026-04-13 21:32:33,075 [INFO]   [movie] date=2026-04-13 → 37 found, total collected=37
+2026-04-13 21:32:35,193 [INFO]   [movie] date=2026-04-12 → 69 found, total collected=100
+2026-04-13 21:32:35,193 [INFO]   → 100 new movie IDs collected
+2026-04-13 21:32:35,194 [INFO] Generating movie pages...
+2026-04-13 21:36:30,770 [INFO]   [movie] pages generated: 79, errors: 0
+2026-04-13 21:36:30,770 [INFO] Collecting TV IDs...
+2026-04-13 21:36:31,620 [INFO]   [tv] date=2026-04-13 → 36 found, total collected=36
+2026-04-13 21:36:33,321 [INFO]   [tv] date=2026-04-12 → 25 found, total collected=61
+2026-04-13 21:36:33,667 [INFO]   [tv] date=2026-04-11 → 19 found, total collected=80
+2026-04-13 21:36:35,889 [INFO]   [tv] date=2026-04-10 → 15 found, total collected=95
+2026-04-13 21:36:39,870 [INFO]   [tv] date=2026-04-09 → 32 found, total collected=100
+2026-04-13 21:36:39,870 [INFO]   → 100 new TV IDs collected
+2026-04-13 21:36:39,870 [INFO] Generating TV pages...
+2026-04-13 21:42:34,140 [INFO]   [tv] pages generated: 69, errors: 0
+2026-04-13 21:42:34,148 [INFO]    Exported 148 trending items to /home/tomito/tomito/data/latest_trend.json
+2026-04-13 21:42:34,150 [INFO]    Generated /home/tomito/tomito/sitemap_trend.xml
+2026-04-13 21:42:34,567 [INFO] 
+✅ Done — 79 movies + 69 TV pages generated
+2026-04-13 21:42:34,567 [INFO]    Total index size: 10317 items
+2026-04-13 21:42:34,568 [INFO]    Seen IDs stored: movie=100, tv=100
+2026-04-13 21:42:34,747 [INFO]    Homepage rebuilt ✅

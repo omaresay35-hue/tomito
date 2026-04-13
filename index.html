@@ -81,6 +81,232 @@
 
   <!-- DYNAMIC CONTENT -->
 
+    
+    <style>
+    .trending-container { margin: 20px auto; padding: 0 5%; max-width: 1400px; }
+    .trending-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    .trending-header h2 { color: #fff; font-size: 1.3rem; margin: 0; font-weight: 700; display: flex; align-items: center; gap: 8px;}
+    .trending-header a { color: #FF6D1F; font-size: 0.95rem; text-decoration: none; font-weight: bold; background: rgba(255, 109, 31, 0.1); padding: 4px 12px; border-radius: 20px; transition: 0.2s;}
+    .trending-header a:hover { background: #FF6D1F; color: #fff; }
+    .slim-carousel { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 8px; scrollbar-width: none; -ms-overflow-style: none; }
+    .slim-carousel::-webkit-scrollbar { display: none; }
+    .trend-card { flex: 0 0 130px; position: relative; border-radius: 10px; overflow: hidden; display: block; aspect-ratio: 2/3; transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+    .trend-card:hover { transform: scale(1.05) translateY(-5px); z-index: 10; box-shadow: 0 8px 20px rgba(0,0,0,0.5); }
+    .trend-card img { width: 100%; height: 100%; object-fit: cover; }
+    .trend-badge { position: absolute; top: 6px; right: 6px; background: rgba(255, 109, 31, 0.9); color: #fff; font-size: 0.7rem; padding: 2px 6px; border-radius: 4px; z-index: 2; font-weight: bold; backdrop-filter: blur(4px); }
+    @media (max-width: 768px) { .trend-card { flex: 0 0 105px; } .trending-container { padding: 0 15px; } }
+    </style>
+    
+    <section class="trending-container" id="trending">
+      <div class="trending-header">
+        <h2>🔥 التريند الآن</h2>
+        <a href="trending.html">عرض الكل &gt;</a>
+      </div>
+      <div class="slim-carousel">
+        
+        <a href="movie/1564211-il-figlio-più-bello" class="trend-card" title="Il figlio più bello">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/8xjqh3g6lduw4IGD3602W2Jawjr.jpg" alt="Il figlio più bello" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1651973-clean-slate" class="trend-card" title="Clean Slate">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/oIfpaXavJjAoPT3gg54JlL9sVaC.jpg" alt="Clean Slate" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1595580-loss" class="trend-card" title="Loss">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/w78AqpVzUUnTpVFHmZNM6P43sGy.jpg" alt="Loss" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1667537-dolvia-2026" class="trend-card" title="Dolvia 2026">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/qPWQiE8UD8Vip4zLay1DF6X4JlQ.jpg" alt="Dolvia 2026" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1549286-the-devils-valley" class="trend-card" title="O Vale do Diabo / The Devil's Valley">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/px8V4DAczAhu3fkyQWvs97ifLEZ.jpg" alt="O Vale do Diabo / The Devil's Valley" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1377081-slowburn-shoot-an-indie-wrestling-story" class="trend-card" title="Slowburn Shoot: An Indie Wrestling Story">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/7tK3C42B8WVAj24J5ij0MMv0JeW.jpg" alt="Slowburn Shoot: An Indie Wrestling Story" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1664422-le-royaume-des-nuages" class="trend-card" title="Le royaume des nuages">
+            <div class="trend-badge">9.0⭐</div>
+            <img src="https://image.tmdb.org/t/p/original/fxhrpo40Y2D55WY5peEJTVskmNl.jpg" alt="Le royaume des nuages" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1659112-absentia" class="trend-card" title="Absentia">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/1DAWoEwR0W660wMwGkgxVRzzWvD.jpg" alt="Absentia" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1657953-stay-for-the-qa" class="trend-card" title="Stay for the Q&A">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/xB2uAqiy3JoBh6Y2YH5JVnLdPiB.jpg" alt="Stay for the Q&A" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1663942-the-heartbreak-kid-becoming-shawn-michaels" class="trend-card" title="The Heartbreak Kid: Becoming Shawn Michaels">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/34WbGapIiDeVwpe2icOvq3NC5BX.jpg" alt="The Heartbreak Kid: Becoming Shawn Michaels" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1657432-him-him-and-her" class="trend-card" title="Him, Him and Her">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/zlVYWA0xPHdXlbklAJewlvV1KEm.jpg" alt="Him, Him and Her" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1559961-pontifex-un-ponte-tra-la-misericordia-e-la-speranza" class="trend-card" title="Pontifex - Un ponte tra la misericordia e la speranza">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/tPU7Hv3vNmLsVcvkrFa4InsDksv.jpg" alt="Pontifex - Un ponte tra la misericordia e la speranza" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1659878-15-y-más" class="trend-card" title="1,5 y más">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/gRe0XGpm4vvYAOQG9T1LY2vYKxO.jpg" alt="1,5 y más" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1253767-deep-in-my-heart-is-a-song" class="trend-card" title="Deep in My Heart is a Song">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/qwwQpEJdr4z8nd541Kw3MVJP7JI.jpg" alt="Deep in My Heart is a Song" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1669138-vlog-axelou-la-descente-aux-enfers" class="trend-card" title="VLOG AXELOU : LA DESCENTE AUX ENFERS">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/t6qKg3gLauOF5bsvSdsYBschbrq.jpg" alt="VLOG AXELOU : LA DESCENTE AUX ENFERS" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1663116-to-dine-for" class="trend-card" title="To Dine For">
+            <div class="trend-badge">7.0⭐</div>
+            <img src="https://image.tmdb.org/t/p/original/w1QWVr3Cl35KqFWy9OtLpip64cp.jpg" alt="To Dine For" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1624022-jo-dzīve-ir-batls" class="trend-card" title="Jo dzīve ir batls">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/izi3G2T8vRGum73lzo47aBuziwI.jpg" alt="Jo dzīve ir batls" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1664390-lhomme-qui-a-fait-de-gaulle" class="trend-card" title="L'homme qui a fait de Gaulle">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/7JNoxnBaN8KDWAITCbceVCGHWmm.jpg" alt="L'homme qui a fait de Gaulle" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1664803-stood-up" class="trend-card" title="Stood Up">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/sbnmTWCQY3HbTlr0Sbt0j1K2MDi.jpg" alt="Stood Up" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1442075-seaper-powers-the-rescue" class="trend-card" title="Seaper Powers: The Rescue">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/6anewLizVd18JDkaCCmSduuhUqa.jpg" alt="Seaper Powers: The Rescue" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1666361-the-falicornia-institute-of-the-rats" class="trend-card" title="The Falicornia Institute of the Rats">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/lixHpoTITT35NMQaSsF83sDkDMc.jpg" alt="The Falicornia Institute of the Rats" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1665066-the-clock-maker" class="trend-card" title="The Clock Maker">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/DIoCZJJe16Ied434H57an8oJBZ.jpg" alt="The Clock Maker" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1669043-the-truths-of-robloxia" class="trend-card" title="The Truths Of Robloxia">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/eKCKNPRoEa9WLvSqoNLDYUGnNDV.jpg" alt="The Truths Of Robloxia" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1668003-shoemotion" class="trend-card" title="shoemotion">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/qKChCrmUGHKebF4NNjeiboJfNZw.jpg" alt="shoemotion" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1667187-riding-the-rails-with-geoffrey-baer" class="trend-card" title="Riding the Rails with Geoffrey Baer">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/tSWQOykh0gkM7YrE8wASZoDbSd7.jpg" alt="Riding the Rails with Geoffrey Baer" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1650226-she-finds-you-funny" class="trend-card" title="She Finds You Funny">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/cetab8huDlRl4R4eNpG1bTQlZuI.jpg" alt="She Finds You Funny" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1669823-forgive-you" class="trend-card" title="Forgive You">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/eZgh1CQEbIPi0Vn9kXuzxtiYzoz.jpg" alt="Forgive You" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1669775-ghermez-yavash" class="trend-card" title="Ghermez Yavash">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/mAltLQ3CEpKHAg8L1Nj75OEZIBg.jpg" alt="Ghermez Yavash" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1669662-sympathy" class="trend-card" title="Sympathy">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/jnOLwk1FjauZEAiLO8ymFG871oO.jpg" alt="Sympathy" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1669641-davidtuto" class="trend-card" title="davidtuto">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/rgzp5zyJ7ernDUKGIT2impvH1tJ.jpg" alt="davidtuto" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1669320-my-letter-to-the-south" class="trend-card" title="My Letter to the South">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/tTOjwBDHcconTFYgZSjbbjdUu8z.jpg" alt="My Letter to the South" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1669278-the-forest-of-oscar-geppetto" class="trend-card" title="The Forest of Oscar Geppetto">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/nNGhMU2GCJmgniM2h6RbTZrj5h0.jpg" alt="The Forest of Oscar Geppetto" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1669196-最优路径" class="trend-card" title="最优路径">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/1NVrOar4W06kooSkQAFSnIlgg4q.jpg" alt="最优路径" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1571583-henry" class="trend-card" title="Henry">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/dvIcKgXWcswNPRME1znfDcB7fGR.jpg" alt="Henry" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1129104-flavia" class="trend-card" title="Flavia">
+            <div class="trend-badge">7.0⭐</div>
+            <img src="https://image.tmdb.org/t/p/original/85RPmvLKhKH0LVk6SclSK2yHOy9.jpg" alt="Flavia" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1582296-legends-of-the-lost-ark" class="trend-card" title="Legends of the Lost Ark">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/uTEErm53Ej7dkE2vPWh1i5cHNL3.jpg" alt="Legends of the Lost Ark" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1604975-aew-dynasty-2026" class="trend-card" title="AEW Dynasty 2026">
+            <div class="trend-badge">8.5⭐</div>
+            <img src="https://image.tmdb.org/t/p/original/l04VtFearf9a5XrE5HFklS6nP5.jpg" alt="AEW Dynasty 2026" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1647886-s22" class="trend-card" title="S22">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/ikvCkb76JwmmjftgJMVdnGAPfHK.jpg" alt="S22" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1667469-zombies-become-generals-2" class="trend-card" title="僵尸参将2 / Zombies Become Generals 2">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/uRdRFk5pI2m7XHbPG7rt2qaQy5a.jpg" alt="僵尸参将2 / Zombies Become Generals 2" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1637982-vermilion" class="trend-card" title="Vermilion">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/zcSnp0rgrZOonXgXaYzUs73Junu.jpg" alt="Vermilion" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1660233-foil-and-doo-a-tale-of-two-jokers" class="trend-card" title="Foil and Doo: A Tale of Two Jokers">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/baUxTlRsaFdTyN8XbIde4oxftRw.jpg" alt="Foil and Doo: A Tale of Two Jokers" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1663789-les-empires-contre-attaquent" class="trend-card" title="Les Empires contre-attaquent">
+            <div class="trend-badge">8.0⭐</div>
+            <img src="https://image.tmdb.org/t/p/original/e4fFB3oAM7IltJ6lzEH98YrCUVd.jpg" alt="Les Empires contre-attaquent" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1560994-winter-hymns" class="trend-card" title="Winter Hymns">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/yBzQUwuOTdvVJHdn3iBL2tnL11O.jpg" alt="Winter Hymns" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1655204-getaway" class="trend-card" title="GetAway">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/1UgbE24XD8SyHukBkKcVtlW6NzD.jpg" alt="GetAway" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1636981-ten-thousand-reasons-for-revenge" class="trend-card" title="Ten Thousand Reasons for Revenge">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/xFkGNlxzaeHsxtRzf7ltUIXvniC.jpg" alt="Ten Thousand Reasons for Revenge" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1659035-mestre-zu" class="trend-card" title="Mestre Zu">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/gS4nD1CQcMo3opWkqb4QsK0Adlb.jpg" alt="Mestre Zu" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1665195-either-way-my-body-is-illegal" class="trend-card" title="Either Way My Body is Illegal">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/t4ZWIO75FpkTv49ryhmRBNb8qUA.jpg" alt="Either Way My Body is Illegal" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1601137-jerry-the-ginger-eater" class="trend-card" title="Jerry the Ginger Eater">
+            <div class="trend-badge">8.0⭐</div>
+            <img src="https://image.tmdb.org/t/p/original/qYZaNaUbjoZNB7kQPWQGezAO2uc.jpg" alt="Jerry the Ginger Eater" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1666017-a-taste-of-loyalty" class="trend-card" title="A Taste of Loyalty">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/dOgFEjiVlaLv2Ta3yOZHlgis6fE.jpg" alt="A Taste of Loyalty" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+        <a href="movie/1657207-apopcalipse-segundo-baby" class="trend-card" title="Apopcalipse Segundo Baby">
+            <div class="trend-badge">جديد</div>
+            <img src="https://image.tmdb.org/t/p/original/43vYRe9RZdU6UHnAE0qmpwyjbB8.jpg" alt="Apopcalipse Segundo Baby" loading="lazy" onerror="this.src='/favicon.ico'">
+        </a>
+      </div>
+    </section>
+    
 
 <section class="section" id="movies">
   <h2 class="section-title">أحدث الأفلام — Newest Movies</h2>
@@ -105,6 +331,11 @@
       <div class="card-overlay"><div class="card-meta">9.0⭐</div></div>
       <div class="card-bottom"><div class="card-title"></div></div>
     </a>
+    <a class="card" href="movie/1664422-le-royaume-des-nuages" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/fxhrpo40Y2D55WY5peEJTVskmNl.jpg" alt="Le royaume des nuages — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Le royaume des nuages</div></div>
+    </a>
     <a class="card" href="movie/1476928-na-willa" style="text-decoration:none;">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lz874WBix857NH2UpUC9oCOwRCx.jpg" alt="Na Willa — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.7⭐</div></div>
@@ -124,6 +355,11 @@
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2BZ0bij5ORSvfDepCDD8CqVcpaG.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.5⭐</div></div>
       <div class="card-bottom"><div class="card-title"></div></div>
+    </a>
+    <a class="card" href="movie/1604975-aew-dynasty-2026" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/l04VtFearf9a5XrE5HFklS6nP5.jpg" alt="AEW Dynasty 2026 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">AEW Dynasty 2026</div></div>
     </a>
     <a class="card" href="movie/1282440-happy-patel-khatarnak-jasoos" style="text-decoration:none;">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vsCkxiY2c26C6y4RyTVkpdXIfCW.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
@@ -194,6 +430,16 @@
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/25csgA1l0jpvvSRwdFgjrI7PDnk.jpg" alt="エヴァンゲリオン放送30周年記念特別興行 / EVANGELION 30th Anniversary Special Screening — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">エヴァンゲリオン放送30周年記念特別興行 / EVANGELION 30th Anniversary Special Screening</div></div>
+    </a>
+    <a class="card" href="movie/1663789-les-empires-contre-attaquent" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/e4fFB3oAM7IltJ6lzEH98YrCUVd.jpg" alt="Les Empires contre-attaquent — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Les Empires contre-attaquent</div></div>
+    </a>
+    <a class="card" href="movie/1601137-jerry-the-ginger-eater" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/qYZaNaUbjoZNB7kQPWQGezAO2uc.jpg" alt="Jerry the Ginger Eater — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Jerry the Ginger Eater</div></div>
     </a>
     <a class="card" href="movie/1604628-wild-london" style="text-decoration:none;">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3yTYwbilgxE240qShWxcNmp9WHZ.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
@@ -365,26 +611,6 @@
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wardriver</div></div>
     </a>
-    <a class="card" href="movie/1405769-i-can-only-imagine-2" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/A4A8YgAzBwDnlXDzuxoc5ZLchO7.jpg" alt="I Can Only Imagine 2 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
-      <div class="card-bottom"><div class="card-title">I Can Only Imagine 2</div></div>
-    </a>
-    <a class="card" href="movie/662707-starbright" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/m1Zl07DNYeSyNcz9hf8hDsS2oB5.jpg" alt="Starbright — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
-      <div class="card-bottom"><div class="card-title">Starbright</div></div>
-    </a>
-    <a class="card" href="movie/1116201-iron-lung" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sIwakdbMGS1krtgendTWpxTY9Hw.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
-      <div class="card-bottom"><div class="card-title"></div></div>
-    </a>
-    <a class="card" href="movie/1647134-gad-elmaleh-lui-même" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/eyWjavMEW0vJ4RzSuSInQSB3W6V.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
-      <div class="card-bottom"><div class="card-title"></div></div>
-    </a>
   </div>
 </section>
 
@@ -400,6 +626,21 @@
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pG7oNCHSjuajUFXpqjJ76fac5J7.jpg" alt="DOC — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">10.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">DOC</div></div>
+    </a>
+    <a class="card" href="tv/295357-fist-of-the-north-star-hokuto-no-ken" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/83bn9z4RiwO4PObgzd28ZtPWBkW.jpg" alt="北斗の拳 -FIST OF THE NORTH STAR- / Fist of the North Star: HOKUTO NO KEN — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">10.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">北斗の拳 -FIST OF THE NORTH STAR- / Fist of the North Star: HOKUTO NO KEN</div></div>
+    </a>
+    <a class="card" href="tv/319368-kirstens-vilde-år" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/hY8Y1dYI77liIu6n9lZOMnwu1yV.jpg" alt="Kirstens vilde år — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">10.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">Kirstens vilde år</div></div>
+    </a>
+    <a class="card" href="tv/318879-a-bailar" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sBLRPjalwvKpl9GXG26gqZD3wVu.jpg" alt="A bailar — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">10.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">A bailar</div></div>
     </a>
     <a class="card" href="tv/280049-hell-mode-the-hardcore-gamer-dominates-in-another-world-with-garbage-balancing" style="text-decoration:none;">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8ORt29GnG4gFNrQDUUSE1ZQP9Vm.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
@@ -421,10 +662,20 @@
       <div class="card-overlay"><div class="card-meta">9.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">التاج المثالي / Perfect Crown</div></div>
     </a>
+    <a class="card" href="tv/278573-perfect-crown" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/7ZlMvq3rt5taL8gxNai2xqpHZLb.jpg" alt="التاج المثالي / Perfect Crown — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.6⭐</div></div>
+      <div class="card-bottom"><div class="card-title">التاج المثالي / Perfect Crown</div></div>
+    </a>
     <a class="card" href="tv/315939-o11ce-new-generation" style="text-decoration:none;">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hqfAbHeJ5cIGz8gzwuIvuYn9O7z.jpg" alt="O11CE: Nueva generación / O11CE: New Generation — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">O11CE: Nueva generación / O11CE: New Generation</div></div>
+    </a>
+    <a class="card" href="tv/291403-a-hundred-scenes-of-awajima" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/WAbrf6kONFAdXtG5N1s7no4zEw.jpg" alt="淡島百景 / A Hundred Scenes of AWAJIMA — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">淡島百景 / A Hundred Scenes of AWAJIMA</div></div>
     </a>
     <a class="card" href="tv/294280-the-demon-kings-daughter-is-too-kind" style="text-decoration:none;">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gUpjTomq5J4aOpwAOJ3WB76kh5g.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
@@ -490,6 +741,11 @@
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1qGSBnrANHLX8C7KqGuPDCylns2.jpg" alt="とんがり帽子のアトリエ / Witch Hat Atelier — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">とんがり帽子のアトリエ / Witch Hat Atelier</div></div>
+    </a>
+    <a class="card" href="tv/281231-the-epoch-of-miyu" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/t6SWH3vJJyXQRvCEEJQh4f3aUeG.jpg" alt="蜜语纪 / The Epoch of Miyu — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">蜜语纪 / The Epoch of Miyu</div></div>
     </a>
     <a class="card" href="tv/314587-my-rival" style="text-decoration:none;">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cZVOZl7Xx2G1BdKC1Apx2GxobcO.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
@@ -601,6 +857,11 @@
       <div class="card-overlay"><div class="card-meta">8.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">+مسلسل الخلاط / Alkhallat+: The Series</div></div>
     </a>
+    <a class="card" href="tv/250220-the-miniature-wife" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/99SkFAS3S3iOtnplwH0byFUMiHK.jpg" alt="The Miniature Wife — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">8.7⭐</div></div>
+      <div class="card-bottom"><div class="card-title">The Miniature Wife</div></div>
+    </a>
     <a class="card" href="tv/287591-in-the-clear-moonlit-dusk" style="text-decoration:none;">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3061lEeTTSb5NtX0ASXnRSO7Mo5.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.6⭐</div></div>
@@ -656,47 +917,17 @@
       <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
       <div class="card-bottom"><div class="card-title"></div></div>
     </a>
-    <a class="card" href="tv/285636-time-flies" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/9n2HM0guy6Wn95EshDj7Uw6XWd2.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
-      <div class="card-bottom"><div class="card-title"></div></div>
-    </a>
-    <a class="card" href="tv/278043-you-and-i-are-polar-opposites" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/lLjcMT7fwuO5fgswb2drlbFwoTJ.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
-      <div class="card-bottom"><div class="card-title"></div></div>
-    </a>
-    <a class="card" href="tv/281495-the-devil-between-us" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/ky9Eit4aA3BFLQdrulRuDNdvWLS.jpg" alt="除恶 / The Devil Between Us — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
-      <div class="card-bottom"><div class="card-title">除恶 / The Devil Between Us</div></div>
-    </a>
-    <a class="card" href="tv/314297-blue-therapy" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/H8K1osuUf7OsMbtSVPvXJlcnWS.jpg" alt="Blue Therapy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
-      <div class="card-bottom"><div class="card-title">Blue Therapy</div></div>
-    </a>
-    <a class="card" href="tv/313138-always-meet-again" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/3UfAqEdXdiuV6qAVgzuihBVbsXz.jpg" alt="언제나 다시 만나 / Always Meet Again — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
-      <div class="card-bottom"><div class="card-title">언제나 다시 만나 / Always Meet Again</div></div>
-    </a>
-    <a class="card" href="tv/280632-how-dare-you" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/sgVBl9UD2s8GZDBia65WFkIViso.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
-      <div class="card-bottom"><div class="card-title"></div></div>
-    </a>
-    <a class="card" href="tv/279136-love-between-lines" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/orawdlwsGdfGDVWBYTPpCi87Myt.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
-      <div class="card-bottom"><div class="card-title"></div></div>
-    </a>
   </div>
 </section>
 
 <section class="section" id="anime">
   <h2 class="section-title">أنمي مترجم — Anime</h2>
   <div class="grid">
+    <a class="card" href="tv/295357-fist-of-the-north-star-hokuto-no-ken" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/83bn9z4RiwO4PObgzd28ZtPWBkW.jpg" alt="北斗の拳 -FIST OF THE NORTH STAR- / Fist of the North Star: HOKUTO NO KEN — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">10.0⭐</div></div>
+      <div class="card-bottom"><div class="card-title">北斗の拳 -FIST OF THE NORTH STAR- / Fist of the North Star: HOKUTO NO KEN</div></div>
+    </a>
     <a class="card" href="tv/280049-hell-mode-the-hardcore-gamer-dominates-in-another-world-with-garbage-balancing" style="text-decoration:none;">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8ORt29GnG4gFNrQDUUSE1ZQP9Vm.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.8⭐</div></div>
@@ -706,6 +937,11 @@
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3XjPuRha7S0K8ZV1ElxJJGIucsb.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.8⭐</div></div>
       <div class="card-bottom"><div class="card-title"></div></div>
+    </a>
+    <a class="card" href="tv/291403-a-hundred-scenes-of-awajima" style="text-decoration:none;">
+      <img class="card-poster" src="https://image.tmdb.org/t/p/original/WAbrf6kONFAdXtG5N1s7no4zEw.jpg" alt="淡島百景 / A Hundred Scenes of AWAJIMA — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+      <div class="card-overlay"><div class="card-meta">9.5⭐</div></div>
+      <div class="card-bottom"><div class="card-title">淡島百景 / A Hundred Scenes of AWAJIMA</div></div>
     </a>
     <a class="card" href="tv/294280-the-demon-kings-daughter-is-too-kind" style="text-decoration:none;">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gUpjTomq5J4aOpwAOJ3WB76kh5g.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
@@ -836,16 +1072,6 @@
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/25csgA1l0jpvvSRwdFgjrI7PDnk.jpg" alt="エヴァンゲリオン放送30周年記念特別興行 / EVANGELION 30th Anniversary Special Screening — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">エヴァンゲリオン放送30周年記念特別興行 / EVANGELION 30th Anniversary Special Screening</div></div>
-    </a>
-    <a class="card" href="tv/275902-kaya-chan-isnt-scary" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/jfWdGJ2HcaCMVRdOUBPd6ayYgz2.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
-      <div class="card-bottom"><div class="card-title"></div></div>
-    </a>
-    <a class="card" href="tv/276393-tamons-b-side" style="text-decoration:none;">
-      <img class="card-poster" src="https://image.tmdb.org/t/p/original/5X2Z4zEgMzKNLL3OrJccUjXKUUk.jpg" alt=" — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
-      <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
-      <div class="card-bottom"><div class="card-title"></div></div>
     </a>
   </div>
 </section>
