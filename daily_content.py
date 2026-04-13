@@ -214,10 +214,16 @@ def main():
 
     # -- Trending Export --
     trend_entries = movie_entries + tv_entries
-    trend_path = os.path.join(BASE_PATH, 'data', 'latest_trend.json')
-    with open(trend_path, 'w', encoding='utf-8') as f:
-        json.dump(trend_entries, f, ensure_ascii=False, indent=2)
-    log.info(f"   Exported {len(trend_entries)} trending items to {trend_path}")
+    
+    movie_trend_path = os.path.join(BASE_PATH, 'data', 'trend_movies.json')
+    with open(movie_trend_path, 'w', encoding='utf-8') as f:
+        json.dump(movie_entries, f, ensure_ascii=False, indent=2)
+        
+    tv_trend_path = os.path.join(BASE_PATH, 'data', 'trend_tv.json')
+    with open(tv_trend_path, 'w', encoding='utf-8') as f:
+        json.dump(tv_entries, f, ensure_ascii=False, indent=2)
+        
+    log.info(f"   Exported {len(movie_entries)} trend movies and {len(tv_entries)} trend tv shows to separated files.")
 
     # Generate standalone trending sitemap
     trend_sitemap_path = os.path.join(BASE_PATH, 'sitemap_trend.xml')

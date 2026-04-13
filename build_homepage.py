@@ -15,14 +15,16 @@ def load_index():
     return []
 
 def load_trending():
-    path = os.path.join(BASE_PATH, 'data', 'latest_trend.json')
-    if os.path.exists(path):
-        try:
-            with open(path, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except Exception:
-            pass
-    return []
+    trends = []
+    for fname in ['trend_movies.json', 'trend_tv.json']:
+        path = os.path.join(BASE_PATH, 'data', fname)
+        if os.path.exists(path):
+            try:
+                with open(path, 'r', encoding='utf-8') as f:
+                    trends.extend(json.load(f))
+            except Exception:
+                pass
+    return trends
 
 def card_html(item):
     """Generate a card HTML block for a content item."""
