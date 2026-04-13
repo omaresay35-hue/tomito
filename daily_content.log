@@ -21,3 +21,68 @@
 2026-04-13 21:42:34,567 [INFO]    Total index size: 10317 items
 2026-04-13 21:42:34,568 [INFO]    Seen IDs stored: movie=100, tv=100
 2026-04-13 21:42:34,747 [INFO]    Homepage rebuilt ✅
+2026-04-13 21:50:37,285 [INFO] === DAILY CONTENT RUN — 2026-04-13 21:50 ===
+2026-04-13 21:50:37,417 [INFO] Collecting movie IDs...
+2026-04-13 21:50:41,641 [INFO]   [movie] date=2026-04-13 → 37 found, total collected=0
+2026-04-13 21:50:49,601 [INFO]   [movie] date=2026-04-12 → 69 found, total collected=6
+2026-04-13 21:50:52,809 [INFO]   [movie] date=2026-04-11 → 108 found, total collected=100
+2026-04-13 21:50:52,809 [INFO]   → 100 new movie IDs collected
+2026-04-13 21:50:52,809 [INFO] Generating movie pages...
+2026-04-13 21:53:50,417 [INFO]   [movie] pages generated: 64, errors: 0
+2026-04-13 21:53:50,417 [INFO] Collecting TV IDs...
+2026-04-13 21:53:51,071 [INFO]   [tv] date=2026-04-13 → 36 found, total collected=0
+2026-04-13 21:53:51,749 [INFO]   [tv] date=2026-04-12 → 25 found, total collected=0
+2026-04-13 21:53:52,087 [INFO]   [tv] date=2026-04-11 → 19 found, total collected=0
+2026-04-13 21:53:52,376 [INFO]   [tv] date=2026-04-10 → 15 found, total collected=0
+2026-04-13 21:53:53,093 [INFO]   [tv] date=2026-04-09 → 32 found, total collected=27
+2026-04-13 21:53:54,058 [INFO]   [tv] date=2026-04-08 → 30 found, total collected=57
+2026-04-13 21:53:55,092 [INFO]   [tv] date=2026-04-07 → 30 found, total collected=87
+2026-04-13 21:53:55,936 [INFO]   [tv] date=2026-04-06 → 35 found, total collected=100
+2026-04-13 21:53:55,936 [INFO]   → 100 new TV IDs collected
+2026-04-13 21:53:55,936 [INFO] Generating TV pages...
+2026-04-13 21:55:15,605 [INFO] === DAILY CONTENT RUN — 2026-04-13 21:55 ===
+2026-04-13 21:55:15,704 [INFO] Collecting movie IDs...
+2026-04-13 21:55:16,314 [INFO]   [movie] date=2026-04-13 → 37 found, total collected=0
+2026-04-13 21:55:17,661 [INFO]   [movie] date=2026-04-12 → 69 found, total collected=6
+2026-04-13 21:55:19,968 [INFO]   [movie] date=2026-04-11 → 108 found, total collected=100
+2026-04-13 21:55:19,969 [INFO]   → 100 new movie IDs collected
+2026-04-13 21:55:19,969 [INFO] Generating movie pages...
+2026-04-13 21:57:57,456 [INFO]   [movie] pages generated: 64, errors: 0
+2026-04-13 21:57:57,456 [INFO] Collecting TV IDs...
+2026-04-13 21:58:00,278 [INFO]   [tv] date=2026-04-13 → 36 found, total collected=0
+2026-04-13 21:58:03,758 [INFO]   [tv] date=2026-04-12 → 25 found, total collected=0
+2026-04-13 21:58:04,006 [INFO]   [tv] date=2026-04-11 → 19 found, total collected=0
+2026-04-13 21:58:04,296 [INFO]   [tv] date=2026-04-10 → 15 found, total collected=0
+2026-04-13 21:58:04,857 [INFO]   [tv] date=2026-04-09 → 32 found, total collected=27
+2026-04-13 21:58:05,472 [INFO]   [tv] date=2026-04-08 → 30 found, total collected=57
+2026-04-13 21:58:06,636 [INFO]   [tv] date=2026-04-07 → 30 found, total collected=87
+2026-04-13 21:58:07,318 [INFO]   [tv] date=2026-04-06 → 35 found, total collected=100
+2026-04-13 21:58:07,319 [INFO]   → 100 new TV IDs collected
+2026-04-13 21:58:07,319 [INFO] Generating TV pages...
+2026-04-13 22:01:43,136 [INFO] === DAILY CONTENT RUN — 2026-04-13 22:01 ===
+2026-04-13 22:01:43,249 [INFO] Collecting movie IDs...
+2026-04-13 22:01:43,759 [INFO]   [movie] date=2026-04-13 → 37 found, total collected=0
+2026-04-13 22:01:44,918 [INFO]   [movie] date=2026-04-12 → 69 found, total collected=6
+2026-04-13 22:01:47,511 [INFO]   [movie] date=2026-04-11 → 108 found, total collected=100
+2026-04-13 22:01:47,512 [INFO]   → 100 new movie IDs collected
+2026-04-13 22:01:47,512 [INFO] Generating movie pages...
+2026-04-13 22:04:02,621 [INFO]   [movie] pages generated: 64, errors: 0
+2026-04-13 22:04:02,621 [INFO] Collecting TV IDs...
+2026-04-13 22:04:03,161 [INFO]   [tv] date=2026-04-13 → 36 found, total collected=0
+2026-04-13 22:04:03,708 [INFO]   [tv] date=2026-04-12 → 25 found, total collected=0
+2026-04-13 22:04:03,917 [INFO]   [tv] date=2026-04-11 → 19 found, total collected=0
+2026-04-13 22:04:04,145 [INFO]   [tv] date=2026-04-10 → 15 found, total collected=0
+2026-04-13 22:04:04,687 [INFO]   [tv] date=2026-04-09 → 32 found, total collected=27
+2026-04-13 22:04:05,247 [INFO]   [tv] date=2026-04-08 → 30 found, total collected=57
+2026-04-13 22:04:05,835 [INFO]   [tv] date=2026-04-07 → 30 found, total collected=87
+2026-04-13 22:04:06,461 [INFO]   [tv] date=2026-04-06 → 35 found, total collected=100
+2026-04-13 22:04:06,461 [INFO]   → 100 new TV IDs collected
+2026-04-13 22:04:06,461 [INFO] Generating TV pages...
+2026-04-13 22:06:52,785 [INFO]   [tv] pages generated: 90, errors: 0
+2026-04-13 22:06:52,794 [INFO]    Exported 64 trend movies and 90 trend tv shows to separated files.
+2026-04-13 22:06:52,794 [INFO]    Generated /home/tomito/tomito/sitemap_trend.xml
+2026-04-13 22:06:53,278 [INFO] 
+✅ Done — 64 movies + 90 TV pages generated
+2026-04-13 22:06:53,278 [INFO]    Total index size: 10471 items
+2026-04-13 22:06:53,278 [INFO]    Seen IDs stored: movie=200, tv=200
+2026-04-13 22:06:53,621 [INFO]    Homepage rebuilt ✅

@@ -169,7 +169,7 @@ def generate_pages(tmdb_ids: list, media_type: str,
             details = fetch_details(tmdb_id, media_type)
             if not details or (not details['ar'] and not details['en']):
                 continue
-            page_path, index_entry = create_page(details, media_type)
+            page_path, index_entry = create_page(details, media_type, is_trend=True)
             if page_path and index_entry:
                 new_entries.append(index_entry)
                 new_pages.append(page_path)

@@ -14,7 +14,7 @@ IMAGE_BASE_URL = "https://image.tmdb.org/t/p/original"
 SITE_URL = "https://nordrama.live"
 BUTTON_DOMAIN = "https://tomito.xyz"
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
-DIRS = ['movie', 'tv', 'actor', 'data']
+DIRS = ['movie', 'tv', 'movie-trend', 'tv-trend', 'actor', 'data']
 
 # SEO keyword banks
 SEO_AR = [
@@ -198,8 +198,7 @@ def generate_seo_description(ar_data, en_data, title_ar, year, type_label):
     full_en = f"{en_desc[:120]}... {seo_en}" if len(en_desc) > 30 else seo_en
     return full_ar.strip(), full_en.strip()
 
-# --- Page Generation ---
-def create_page(item_data, media_type):
+def create_page(item_data, media_type, is_trend=False):
     ar, en, credits = item_data['ar'], item_data['en'], item_data['credits']
     if not ar and not en:
         return None, None
@@ -222,23 +221,19 @@ def create_page(item_data, media_type):
     rating_count = data.get('vote_count', 1)
     if not rating_count or rating_count == 0: rating_count = 1
 
-    # Genres
-    genres_ar = [g.get('name', '') for g in (ar.get('genres', []) if ar else [])]
-    genres_en = [g.get('name', '') for g in (en.get('genres', []) if en else [])]
-
     if media_type == 'movie':
         watch_url = "#player"
-        folder = 'movie'
+        folder = 'movie-trend' if is_trend else 'movie'
         schema_type = 'Movie'
         type_label = "Movie | فيلم"
     elif 'anime' in media_type:
         watch_url = f"{SITE_URL}/tv/{tmdb_id}/watch?season=1&episode=1"
-        folder = 'tv' # Keep as tv even for anime
+        folder = 'tv-trend' if is_trend else 'tv'
         schema_type = 'TVSeries'
         type_label = "Anime | أنمي"
     else:
         watch_url = f"{SITE_URL}/tv/{tmdb_id}/watch?season=1&episode=1"
-        folder = 'tv'
+        folder = 'tv-trend' if is_trend else 'tv'
         schema_type = 'TVSeries'
         type_label = "TV Series | مسلسل"
 
@@ -291,6 +286,49 @@ def create_page(item_data, media_type):
       <div class="card-bottom"><div class="card-title">{s_title}</div></div>
     </a>'''
         similar_html += '</div></section>'
+    else:
+        # SEO fallback: rich bilingual description with ~100 keywords
+        ar_type = "فيلم" if media_type == 'movie' else "مسلسل"
+        en_type = "movie" if media_type == 'movie' else "TV series"
+        genre_ar_str = ' '.join(genres_ar[:5]) if genres_ar else "دراما أكشن إثارة"
+        genre_en_str = ', '.join(genres_en[:5]) if genres_en else "Drama, Action, Thriller"
+        ar_overview = (ar.get('overview', '') if ar else '') or ''
+        en_overview = (en.get('overview', '') if en else '') or ''
+
+        seo_ar = f"""
+<section class="section" style="padding:20px 5%;max-width:1400px;margin:auto;">
+  <h2 class="section-title">معلومات عن {title_ar}</h2>
+  <div style="color:#ccc;font-size:0.95rem;line-height:1.9;text-align:justify;">
+    <p>مشاهدة وتحميل {ar_type} {title_ar} ({title_en}) {year} اون لاين بجودة عالية HD مترجم كامل حصرياً على موقع TOMITO بدون اعلانات. 
+    {ar_overview[:300]}
+    </p>
+    <p>يمكنك الآن مشاهدة {title_ar} بجودة BluRay و WEB-DL و HDRip مجاناً بدون تسجيل. {ar_type} {title_ar} متاح للتحميل المباشر والمشاهدة اون لاين بدون اعلانات مزعجة. 
+    تصنيف: {genre_ar_str}. سنة الإنتاج: {year}. التقييم: {rating}/10.</p>
+    <p>كلمات مفتاحية: مشاهدة {title_ar}, تحميل {title_ar}, {title_ar} اون لاين, {title_ar} مترجم, {title_ar} HD, 
+    {title_ar} كامل, {title_ar} بدون اعلانات, {title_ar} مجاناً, {title_ar} {year}, {ar_type} {title_ar} مترجم عربي,
+    {title_ar} BluRay, {title_ar} 720p, {title_ar} 1080p, {title_ar} 4K, {title_ar} حصري,
+    افلام {year}, مسلسلات {year}, افلام اون لاين, مسلسلات اون لاين, موقع افلام, موقع مسلسلات,
+    {title_en} مترجم, watch {title_en}, download {title_en}, {title_en} free, {title_en} online,
+    {title_ar} جودة عالية, {title_ar} تحميل مباشر, {title_ar} ستريم, {title_ar} بث مباشر,
+    مشاهدة {ar_type} {title_ar} الحلقة, شاهد {title_ar} بدون اعلانات, nordrama {title_en},
+    TOMITO {title_ar}, {genre_ar_str} {year}, افضل افلام {year}, جديد الافلام, جديد المسلسلات.</p>
+  </div>
+  <hr style="border-color:#333;margin:20px 0;">
+  <h2 class="section-title">About {title_en}</h2>
+  <div style="color:#aaa;font-size:0.9rem;line-height:1.8;text-align:justify;">
+    <p>Watch and download {title_en} ({year}) online for free in HD quality with English subtitles. 
+    {en_overview[:300]}
+    </p>
+    <p>Stream {title_en} in BluRay, WEB-DL, HDRip quality without registration. Genre: {genre_en_str}. Year: {year}. Rating: {rating}/10.</p>
+    <p>Keywords: watch {title_en} online, download {title_en}, {title_en} free streaming, {title_en} HD, 
+    {title_en} full {en_type}, {title_en} no ads, {title_en} {year}, {title_en} subtitles,
+    {title_en} BluRay, {title_en} 720p, {title_en} 1080p, {title_en} 4K,
+    best {en_type}s {year}, new {en_type}s, free {en_type}s online, stream {en_type}s,
+    {title_en} watch free, {title_en} direct download, {title_en} TOMITO, {title_en} nordrama,
+    {genre_en_str} {en_type}s {year}, top rated {en_type}s, latest {en_type}s online free.</p>
+  </div>
+</section>"""
+        similar_html = seo_ar
 
     # Tags
     tags = [type_label, f"⭐ {rating}", year] + genres_en[:3]
