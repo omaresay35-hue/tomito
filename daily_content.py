@@ -157,28 +157,41 @@ def collect_new_ids(media_type: str, seen_ids: set, today: datetime) -> list:
 def generate_pages(tmdb_ids: list, media_type: str,
                    existing_index: list) -> tuple[list, list]:
     """
-    Generate HTML pages for the given IDs.
+    Generate HTML pages for the given IDs in parallel (2 workers).
     Returns (new_index_entries, new_page_paths).
     """
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+    import threading
+    
     new_entries = []
     new_pages   = []
     errors      = 0
+    lock        = threading.Lock()
 
-    for tmdb_id in tmdb_ids:
+    def process_one(tmdb_id):
+        nonlocal errors
         try:
             details = fetch_details(tmdb_id, media_type)
             if not details or (not details['ar'] and not details['en']):
-                continue
+                return
             page_path, index_entry = create_page(details, media_type, is_trend=True)
             if page_path and index_entry:
-                new_entries.append(index_entry)
-                new_pages.append(page_path)
+                with lock:
+                    new_entries.append(index_entry)
+                    new_pages.append(page_path)
         except Exception as e:
             log.warning(f"  Error generating {media_type} {tmdb_id}: {e}")
-            errors += 1
+            with lock:
+                errors += 1
+
+    with ThreadPoolExecutor(max_workers=2) as executor:
+        futures = [executor.submit(process_one, tid) for tid in tmdb_ids]
+        for f in as_completed(futures):
+            pass # results handled in closure
 
     log.info(f"  [{media_type}] pages generated: {len(new_pages)}, errors: {errors}")
     return new_entries, new_pages
+
 
 
 # ── Main ─────────────────────────────────────────────────────────────────────
