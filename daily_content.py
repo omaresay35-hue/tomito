@@ -8,6 +8,7 @@ import subprocess
 import random
 import argparse
 from datetime import datetime
+import concurrent.futures
 from concurrent.futures import ThreadPoolExecutor
 # Import new AI engine
 from ai_engine import generate_seo_content, BOT_MISSIONS, get_mission
@@ -111,9 +112,12 @@ def worker(tid, media_type, batch_entries, lock, counter, model_name):
             
     page_path, entry = create_page(details, media_type, is_trend=True)
     if page_path and entry:
+        logging.info(f"   ✅ [Done] {title}")
         with lock:
             batch_entries.append(entry)
             counter[0] += 1
+    else:
+        logging.warning(f"   ❌ [Failed] {title}")
 
 def main():
     parser = argparse.ArgumentParser()
@@ -159,8 +163,14 @@ def main():
         
         log.info(f"📦 Processing Batch {(i//BATCH_SIZE) + 1} ({len(batch_tasks)} items)...")
         with ThreadPoolExecutor(max_workers=3) as executor:
-            for tid, media_type in batch_tasks:
-                executor.submit(worker, tid, media_type, batch_entries, lock, counter, model_name)
+            futures = {executor.submit(worker, tid, mt, batch_entries, lock, counter, model_name): tid for (tid, mt) in batch_tasks}
+            for idx, future in enumerate(concurrent.futures.as_completed(futures), 1):
+                try:
+                    future.result()
+                    if idx % 5 == 0 or idx == len(batch_tasks):
+                        log.info(f"📊 Progress: {idx}/{len(batch_tasks)} items processed...")
+                except Exception as e:
+                    log.error(f"⚠️ Error processing item: {e}")
         
         if batch_entries:
             with lock:
