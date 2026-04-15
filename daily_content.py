@@ -23,8 +23,8 @@ from mega_bot import (
 )
 
 # -- Settings --
-BATCH_SIZE   = 5   # For testing, push every 5 pages
-TARGET_TOTAL = 10  # Target: 5 movies and 5 TV shows for testing
+BATCH_SIZE   = 50   # Push to git every 50 pages
+TARGET_TOTAL = 200  # Total goal per run (100 movies + 100 TV)
 SEEN_FILE    = os.path.join(BASE_PATH, 'daily_seen_ids.json')
 INDEX_FILE   = os.path.join(BASE_PATH, 'data', 'content_index.json')
 
