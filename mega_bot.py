@@ -478,9 +478,7 @@ def create_page(item_data, media_type, is_trend=False):
     for k, v in replacements.items():
         html = html.replace(k, v)
 
-    slug_dir = os.path.join(BASE_PATH, folder, slug)
-    os.makedirs(slug_dir, exist_ok=True)
-    path = os.path.join(slug_dir, "index.html")
+    path = os.path.join(BASE_PATH, folder, f"{slug}.html")
     with open(path, 'w', encoding='utf-8') as f:
         f.write(html)
 
@@ -622,9 +620,7 @@ def create_actor_page(actor_id):
     for k, v in replacements.items():
         html = html.replace(k, v)
 
-    slug_dir = os.path.join(BASE_PATH, 'actor', slug)
-    os.makedirs(slug_dir, exist_ok=True)
-    path = os.path.join(slug_dir, "index.html")
+    path = os.path.join(BASE_PATH, 'actor', f"{slug}.html")
     with open(path, 'w', encoding='utf-8') as f:
         f.write(html)
     return f"actor/{slug}"
@@ -742,9 +738,7 @@ def build_listing_pages():
 
         if not filtered: filtered = all_items[:200] # Fallback if empty
             
-        slug_dir = os.path.join(genre_dir, slug)
-        os.makedirs(slug_dir, exist_ok=True)
-        with open(os.path.join(slug_dir, "index.html"), 'w', encoding='utf-8') as f:
+        with open(os.path.join(genre_dir, f"{slug}.html"), 'w', encoding='utf-8') as f:
             f.write(render_list(mission['label'], filtered[::-1], f"genre/{slug}"))
 
     print("✅ Listing pages generated.")
