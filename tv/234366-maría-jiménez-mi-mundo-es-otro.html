@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,19 +75,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1396470-maría-jiménez" class="cast-card">
+            <a href="/actor/1396470-maría-jiménez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9ss8CchIhdxnR4kykjmd5KEVxk.jpg" alt="María Jiménez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>María Jiménez</span>
             </a>
-            <a href="/actor/3730342-miguel-poveda" class="cast-card">
+            <a href="/actor/3730342-miguel-poveda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nWXzML6MZl3Asty4xg95Dv26rw2.jpg" alt="Miguel Poveda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miguel Poveda</span>
             </a>
-            <a href="/actor/1152112-gonzalo-garcía-pelayo" class="cast-card">
+            <a href="/actor/1152112-gonzalo-garcía-pelayo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4xz0qXvjhaiV53rZhyv88rflOsm.jpg" alt="Gonzalo García-Pelayo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gonzalo García-Pelayo</span>
             </a>
-            <a href="/actor/4265262-alejandro-asunción-jiménez" class="cast-card">
+            <a href="/actor/4265262-alejandro-asunción-jiménez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alejandro Asunción Jiménez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alejandro Asunción Jiménez</span>
             </a></div></section>
@@ -95,13 +95,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

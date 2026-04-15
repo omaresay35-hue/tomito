@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Sin instrucciones</span>
   </nav>
 
@@ -71,39 +71,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/224870-paco-león" class="cast-card">
+            <a href="/actor/224870-paco-león.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dZd0Z3mUgXrE0y21KknLp40Ivuk.jpg" alt="Paco León" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paco León</span>
             </a>
-            <a href="/actor/3891651-maia-zaitegi" class="cast-card">
+            <a href="/actor/3891651-maia-zaitegi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Maia Zaitegi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maia Zaitegi</span>
             </a>
-            <a href="/actor/588183-silvia-alonso" class="cast-card">
+            <a href="/actor/588183-silvia-alonso.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AgXsHxxSBOy9JmtWy5o8y3cKprY.jpg" alt="Silvia Alonso" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Silvia Alonso</span>
             </a>
-            <a href="/actor/1565557-malcolm-sitté" class="cast-card">
+            <a href="/actor/1565557-malcolm-sitté.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6xk8QDgMIVugBev0tw6wXshtkdu.jpg" alt="Malcolm Sitté" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Malcolm Sitté</span>
             </a>
-            <a href="/actor/1003158-yailene-sierra" class="cast-card">
+            <a href="/actor/1003158-yailene-sierra.html" class="cast-card">
                 <img src="/favicon.ico" alt="Yailene Sierra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yailene Sierra</span>
             </a>
-            <a href="/actor/2158090-amber-shana-williams" class="cast-card">
+            <a href="/actor/2158090-amber-shana-williams.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kH0Z5ACXdv1f648UHP4b4s1vd4R.jpg" alt="Amber Shana Williams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amber Shana Williams</span>
             </a>
-            <a href="/actor/590309-gorka-aguinagalde" class="cast-card">
+            <a href="/actor/590309-gorka-aguinagalde.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2IBgDq7f7JvuPzfvcZROoVgSvXr.jpg" alt="Gorka Aguinagalde" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gorka Aguinagalde</span>
             </a>
-            <a href="/actor/3943610-philipp-boos" class="cast-card">
+            <a href="/actor/3943610-philipp-boos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r9aZWg8qGdiZoKx3Kwz38RQCjMX.jpg" alt="Philipp Boos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Philipp Boos</span>
             </a>
-            <a href="/actor/110126-younes-bachir" class="cast-card">
+            <a href="/actor/110126-younes-bachir.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bZoVjw8E0OWhNPtgTZ51mo3Vu0Q.jpg" alt="Younes Bachir" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Younes Bachir</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

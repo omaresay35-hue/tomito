@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,15 +75,15 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1777476-chiara-ferragni" class="cast-card">
+            <a href="/actor/1777476-chiara-ferragni.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lGzO8PmIjJwdn2WSkNRNtK11swZ.jpg" alt="Chiara Ferragni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chiara Ferragni</span>
             </a>
-            <a href="/actor/1598105-fedez" class="cast-card">
+            <a href="/actor/1598105-fedez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2KNLrxLcYUrUt0tDmDsW9rJ4pq2.jpg" alt="Fedez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fedez</span>
             </a>
-            <a href="/actor/3961712-valentina-ferragni" class="cast-card">
+            <a href="/actor/3961712-valentina-ferragni.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9T5r5l599cnx3kpV95XuIcoNyDq.jpg" alt="Valentina Ferragni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Valentina Ferragni</span>
             </a></div></section>
@@ -91,13 +91,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Silent Hill: Ascension</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2250311-michael-ursu" class="cast-card">
+            <a href="/actor/2250311-michael-ursu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/65ljNy6M2NWjxxA3DC8uax1ABzD.jpg" alt="Michael Ursu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Ursu</span>
             </a>
-            <a href="/actor/3043081-wilma-rivera" class="cast-card">
+            <a href="/actor/3043081-wilma-rivera.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/haxOMBzhpKTObBMsEdgmc3fWaX3.jpg" alt="Wilma Rivera" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wilma Rivera</span>
             </a>
-            <a href="/actor/3650050-laine-kelly" class="cast-card">
+            <a href="/actor/3650050-laine-kelly.html" class="cast-card">
                 <img src="/favicon.ico" alt="Laine Kelly" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laine Kelly</span>
             </a>
-            <a href="/actor/4530457-ishika-muchhal" class="cast-card">
+            <a href="/actor/4530457-ishika-muchhal.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ishika Muchhal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ishika Muchhal</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

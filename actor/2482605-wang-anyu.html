@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,31 +73,31 @@ He made his acting debut in 2019 with the youth drama Our Shiny Days. Since then
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1462229-pegasus-3">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1462229-pegasus-3.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hypEABFazVTU4zTZYcVFmaPYdIH.jpg" alt="Pegasus 3 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pegasus 3</div></div>
-    </a>    <a class="card" href="/movie/1402481-the-return-of-the-lame-hero">
+    </a>    <a class="card" href="/movie/1402481-the-return-of-the-lame-hero.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vP2tCUDhvgqTShBNdtfuGtqJH9R.jpg" alt="The Return of the Lame Hero — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Return of the Lame Hero</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/259857-be-passionately-in-love">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/259857-be-passionately-in-love.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lHwDCUgN5bjOgWgASt0BMgHQVIQ.jpg" alt="Be Passionately in Love — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Be Passionately in Love</div></div>
-    </a>    <a class="card" href="/tv/274260-romance-in-the-alley">
+    </a>    <a class="card" href="/tv/274260-romance-in-the-alley.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kKEGxNzMDkF09lniLvLSRh7Vuff.jpg" alt="Romance in the Alley — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Romance in the Alley</div></div>
-    </a>    <a class="card" href="/tv/216264-the-last-immortal">
+    </a>    <a class="card" href="/tv/216264-the-last-immortal.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/33zNWhfS3r0xWp7EaXtO9LDoB5Y.jpg" alt="The Last Immortal — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Last Immortal</div></div>
-    </a>    <a class="card" href="/tv/231620-natural-high">
+    </a>    <a class="card" href="/tv/231620-natural-high.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mmvlxQ5AXuHLfKvyqkgCDZfVzxM.jpg" alt="Natural High — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Natural High</div></div>
-    </a>    <a class="card" href="/tv/154770-hello-saturday">
+    </a>    <a class="card" href="/tv/154770-hello-saturday.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wsTjWy6NE2s3h0neChr0D92ddwI.jpg" alt="Hello Saturday — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Hello Saturday</div></div>
@@ -106,13 +106,6 @@ He made his acting debut in 2019 with the youth drama Our Shiny Days. Since then
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Uno equis dos</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/224870-paco-león" class="cast-card">
+            <a href="/actor/224870-paco-león.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dZd0Z3mUgXrE0y21KknLp40Ivuk.jpg" alt="Paco León" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paco León</span>
             </a>
-            <a href="/actor/984654-raúl-tejón" class="cast-card">
+            <a href="/actor/984654-raúl-tejón.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cKc2AQ8t7bn2XXceg7vYP3XlJIe.jpg" alt="Raúl Tejón" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Raúl Tejón</span>
             </a>
-            <a href="/actor/2443862-stéphanie-magnin" class="cast-card">
+            <a href="/actor/2443862-stéphanie-magnin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fPDyHTbQMS2hn6LVBNIZjeemCOc.jpg" alt="Stéphanie Magnin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stéphanie Magnin</span>
             </a>
-            <a href="/actor/1071955-adam-jezierski" class="cast-card">
+            <a href="/actor/1071955-adam-jezierski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ek6ShDVDB0vJycxYxwI6VjumLrS.jpg" alt="Adam Jezierski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Jezierski</span>
             </a>
-            <a href="/actor/1456436-kimberley-tell" class="cast-card">
+            <a href="/actor/1456436-kimberley-tell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aMULZpCS1xi7xZaLiEUsHLNq1RZ.jpg" alt="Kimberley Tell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kimberley Tell</span>
             </a>
-            <a href="/actor/1122944-silvia-vacas" class="cast-card">
+            <a href="/actor/1122944-silvia-vacas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rjLpdZk6GkYBVewwz1XPE5cjDWa.jpg" alt="Silvia Vacas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Silvia Vacas</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

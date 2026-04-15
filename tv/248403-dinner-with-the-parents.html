@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Dinner with the Parents</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/113224-michaela-watkins" class="cast-card">
+            <a href="/actor/113224-michaela-watkins.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qw8RqZ2fehR0ZlHWwyH9WFjc3Qh.jpg" alt="Michaela Watkins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michaela Watkins</span>
             </a>
-            <a href="/actor/1183546-dan-bakkedahl" class="cast-card">
+            <a href="/actor/1183546-dan-bakkedahl.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zHDMTZe3Xjvut57oTZixURBNDHi.jpg" alt="Dan Bakkedahl" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dan Bakkedahl</span>
             </a>
-            <a href="/actor/10556-carol-kane" class="cast-card">
+            <a href="/actor/10556-carol-kane.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3EOZ7B148lRwJcl3CmQhfpgubYQ.jpg" alt="Carol Kane" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carol Kane</span>
             </a>
-            <a href="/actor/4578999-henry-hall" class="cast-card">
+            <a href="/actor/4578999-henry-hall.html" class="cast-card">
                 <img src="/favicon.ico" alt="Henry Hall" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Henry Hall</span>
             </a>
-            <a href="/actor/3862504-daniel-thrasher" class="cast-card">
+            <a href="/actor/3862504-daniel-thrasher.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ddy6sUmNbcQSeWVF1sR8UT4nKPV.jpg" alt="Daniel Thrasher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Thrasher</span>
             </a>
-            <a href="/actor/59842-jon-glaser" class="cast-card">
+            <a href="/actor/59842-jon-glaser.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wJW4JrjHUo8SAptqlsfK3yZkBrx.jpg" alt="Jon Glaser" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jon Glaser</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

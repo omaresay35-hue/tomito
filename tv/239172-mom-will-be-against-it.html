@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Мама будет против</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1361251-dmitriy-brekotkin" class="cast-card">
+            <a href="/actor/1361251-dmitriy-brekotkin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4jjJRj50C0u4sac4y6qUf6z4dQo.jpg" alt="Dmitriy Brekotkin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dmitriy Brekotkin</span>
             </a>
-            <a href="/actor/1361259-sergey-ershov" class="cast-card">
+            <a href="/actor/1361259-sergey-ershov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dipyug4KpN3DcwYkFtrZtBj6Sh5.jpg" alt="Sergey Ershov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sergey Ershov</span>
             </a>
-            <a href="/actor/2897463-roman-postovalov" class="cast-card">
+            <a href="/actor/2897463-roman-postovalov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dzcqJymK5XQ6nViiHiddqlpmh7E.jpg" alt="Roman Postovalov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Roman Postovalov</span>
             </a>
-            <a href="/actor/2557452-kseniia-korneva" class="cast-card">
+            <a href="/actor/2557452-kseniia-korneva.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kpy1y0TPdgYgNAyKHlYcmCeomjf.jpg" alt="Kseniia Korneva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kseniia Korneva</span>
             </a>
-            <a href="/actor/225670-mikhail-tarabukin" class="cast-card">
+            <a href="/actor/225670-mikhail-tarabukin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Uzxiw0oQbfxjGyzsyEkYgM5J9h.jpg" alt="Mikhail Tarabukin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mikhail Tarabukin</span>
             </a>
-            <a href="/actor/1209116-evelina-bledans" class="cast-card">
+            <a href="/actor/1209116-evelina-bledans.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xLKThcLQL7a5mIJ0O0iHdTp1hKj.jpg" alt="Evelina Bledans" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Evelina Bledans</span>
             </a>
-            <a href="/actor/1361250-andrey-rozhkov" class="cast-card">
+            <a href="/actor/1361250-andrey-rozhkov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fKBA9PSPI1UoID7LEtxcsKFJPB.jpg" alt="Andrey Rozhkov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrey Rozhkov</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

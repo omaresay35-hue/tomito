@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>איסט סייד</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/82098-yehuda-levi" class="cast-card">
+            <a href="/actor/82098-yehuda-levi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zJttLNdFbYnepLJEapkohTLEdIX.jpg" alt="Yehuda Levi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yehuda Levi</span>
             </a>
-            <a href="/actor/3938385-gefen-kaminer" class="cast-card">
+            <a href="/actor/3938385-gefen-kaminer.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gefen Kaminer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gefen Kaminer</span>
             </a>
-            <a href="/actor/1260160-neta-riskin" class="cast-card">
+            <a href="/actor/1260160-neta-riskin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/z8gbYthPEpwDtZwOx26MVjHvu3q.jpg" alt="Neta Riskin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Neta Riskin</span>
             </a>
-            <a href="/actor/1275641-panos-koronis" class="cast-card">
+            <a href="/actor/1275641-panos-koronis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s74kfWjMVWLxLcGqh40irJzx1lb.jpg" alt="Panos Koronis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Panos Koronis</span>
             </a>
-            <a href="/actor/1097238-manos-gavras" class="cast-card">
+            <a href="/actor/1097238-manos-gavras.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vTdVOPYnKg5TYzh22q8dbihheRu.jpg" alt="Manos Gavras" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manos Gavras</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

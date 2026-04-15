@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Dedalus</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2280759-luka-zunic" class="cast-card">
+            <a href="/actor/2280759-luka-zunic.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pljxeyFAErAT0oGtJyM55bOaRO4.jpg" alt="Luka Zunic" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luka Zunic</span>
             </a>
-            <a href="/actor/1376137-matilde-gioli" class="cast-card">
+            <a href="/actor/1376137-matilde-gioli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9a6EoA8h6VPEe3WXcHkASk0k0Y.jpg" alt="Matilde Gioli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matilde Gioli</span>
             </a>
-            <a href="/actor/2414527-francesco-russo" class="cast-card">
+            <a href="/actor/2414527-francesco-russo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ak1V5yJPPXO2m7T0amBu1Epq83W.jpg" alt="Francesco Russo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francesco Russo</span>
             </a>
-            <a href="/actor/236877-giulio-beranek" class="cast-card">
+            <a href="/actor/236877-giulio-beranek.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kzelpPeE4Vu4wbz0tCKhkA1jMqX.jpg" alt="Giulio Beranek" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Giulio Beranek</span>
             </a>
-            <a href="/actor/1487573-giulia-elettra-gorietti" class="cast-card">
+            <a href="/actor/1487573-giulia-elettra-gorietti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a8AShW68SIykhm45W5VeXuJZ4Lv.jpg" alt="Giulia Elettra Gorietti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Giulia Elettra Gorietti</span>
             </a>
-            <a href="/actor/1075761-stella-pecollo" class="cast-card">
+            <a href="/actor/1075761-stella-pecollo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l6PplGuKHDTgVT6mwumSKXVyXEg.jpg" alt="Stella Pecollo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stella Pecollo</span>
             </a>
-            <a href="/actor/78538-gianmarco-tognazzi" class="cast-card">
+            <a href="/actor/78538-gianmarco-tognazzi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Bki40BsjJUFyyYX0wjoaf7SNK1.jpg" alt="Gianmarco Tognazzi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gianmarco Tognazzi</span>
             </a>
-            <a href="/actor/2275729-carolina-rey" class="cast-card">
+            <a href="/actor/2275729-carolina-rey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nPeCNpuh93eXFk9Awh3hKQ5QiN3.jpg" alt="Carolina Rey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carolina Rey</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

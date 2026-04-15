@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Kiseki 奇跡 ฤดูปาฏิหาริย์</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4434658-ekkapop-tata" class="cast-card">
+            <a href="/actor/4434658-ekkapop-tata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lBTQUQ6ZHDV6uhWBTBoKXxKbbq1.jpg" alt="Ekkapop Tata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ekkapop Tata</span>
             </a>
-            <a href="/actor/4170276-jirachot-chotticomporn" class="cast-card">
+            <a href="/actor/4170276-jirachot-chotticomporn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bBnPYES0iez3YTZdQFw6VXKrM7i.jpg" alt="Jirachot Chotticomporn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jirachot Chotticomporn</span>
             </a>
-            <a href="/actor/4170286-chattrin-chotticomporn" class="cast-card">
+            <a href="/actor/4170286-chattrin-chotticomporn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d90B5dHcqzFIuq5mfBgqV7jAHCY.jpg" alt="Chattrin Chotticomporn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chattrin Chotticomporn</span>
             </a>
-            <a href="/actor/3020763-tinnakorn-puwasakdiwong" class="cast-card">
+            <a href="/actor/3020763-tinnakorn-puwasakdiwong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dweXi3uBtuZCuY21RxJtHMfA1km.jpg" alt="Tinnakorn Puwasakdiwong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tinnakorn Puwasakdiwong</span>
             </a>
-            <a href="/actor/5749456-kritsana-panchai" class="cast-card">
+            <a href="/actor/5749456-kritsana-panchai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1kkEnawrAS30T8T8p39vaU1KYkm.jpg" alt="Kritsana Panchai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kritsana Panchai</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

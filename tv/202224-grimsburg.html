@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Grimsburg</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/65717-jon-hamm" class="cast-card">
+            <a href="/actor/65717-jon-hamm.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mrXE5fZbEDPc7BEE5G21J6qrwzi.jpg" alt="Jon Hamm" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jon Hamm</span>
             </a>
-            <a href="/actor/1215797-erinn-hayes" class="cast-card">
+            <a href="/actor/1215797-erinn-hayes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iesmfFl12Dgb8mb1jCKMGsIcQ9o.jpg" alt="Erinn Hayes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erinn Hayes</span>
             </a>
-            <a href="/actor/32905-rachel-dratch" class="cast-card">
+            <a href="/actor/32905-rachel-dratch.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j8vNwap7BM69dRz5zXVWvIn4lJ7.jpg" alt="Rachel Dratch" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rachel Dratch</span>
             </a>
-            <a href="/actor/21088-alan-tudyk" class="cast-card">
+            <a href="/actor/21088-alan-tudyk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jUuUbPuMGonFT5E2pcs4alfqaCN.jpg" alt="Alan Tudyk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alan Tudyk</span>
             </a>
-            <a href="/actor/24362-kevin-michael-richardson" class="cast-card">
+            <a href="/actor/24362-kevin-michael-richardson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xXt9Nh7RAT5bOen66TaXreNYmCl.jpg" alt="Kevin Michael Richardson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kevin Michael Richardson</span>
             </a>
-            <a href="/actor/2467979-greg-chun" class="cast-card">
+            <a href="/actor/2467979-greg-chun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zVvT0ypeW6QRaBthYWDzlWLPXRO.jpg" alt="Greg Chun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Greg Chun</span>
             </a>
-            <a href="/actor/519-martin-short" class="cast-card">
+            <a href="/actor/519-martin-short.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vWoZIOk7K8TSKu1IN90akswsWjZ.jpg" alt="Martin Short" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Martin Short</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

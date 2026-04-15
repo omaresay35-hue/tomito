@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>المؤثر الأول</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1240218-jang-keun-suk" class="cast-card">
+            <a href="/actor/1240218-jang-keun-suk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zqUpmzW8PjgGIQluS6Tory1yuoB.jpg" alt="Jang Keun-suk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jang Keun-suk</span>
             </a>
-            <a href="/actor/3527057-pani-bottle" class="cast-card">
+            <a href="/actor/3527057-pani-bottle.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hiTQwCCManGNBHWLa5rORYlnPeq.jpg" alt="Pani Bottle" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pani Bottle</span>
             </a>
-            <a href="/actor/4168421-jin-yong-jin" class="cast-card">
+            <a href="/actor/4168421-jin-yong-jin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bZ4fX6pXE8uKqlIumX1qPW1hNt3.jpg" alt="Jin Yong-jin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jin Yong-jin</span>
             </a>
-            <a href="/actor/2286908-risabae" class="cast-card">
+            <a href="/actor/2286908-risabae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wyWJ0O0poHhXCctyIb34dxjx3oS.jpg" alt="Risabae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Risabae</span>
             </a>
-            <a href="/actor/4821619-chahong" class="cast-card">
+            <a href="/actor/4821619-chahong.html" class="cast-card">
                 <img src="/favicon.ico" alt="Chahong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chahong</span>
             </a>
-            <a href="/actor/3903056-oking" class="cast-card">
+            <a href="/actor/3903056-oking.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zJRzNHi7VYcyrIbT2lR4UP2sCQ6.jpg" alt="OKING" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>OKING</span>
             </a>
-            <a href="/actor/4821636-great-library" class="cast-card">
+            <a href="/actor/4821636-great-library.html" class="cast-card">
                 <img src="/favicon.ico" alt="Great Library" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Great Library</span>
             </a>
-            <a href="/actor/5284619-eunji-pyo" class="cast-card">
+            <a href="/actor/5284619-eunji-pyo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5blRvoSObxRbQlIzBMNvH8G1kb1.jpg" alt="Eunji Pyo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eunji Pyo</span>
             </a>
-            <a href="/actor/6044198-lee-jeong-hyun" class="cast-card">
+            <a href="/actor/6044198-lee-jeong-hyun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sxuqzzPd2oETIlbQ3EdFU6KJ6vf.jpg" alt="Lee Jeong-hyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Jeong-hyun</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

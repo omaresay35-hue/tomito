@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسل</a> &gt; 
+    <a href="/index.html#series">مسلسل</a> &gt; 
     <span>Padre no hay más que uno, la serie</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1169140-daniel-pérez-prada" class="cast-card">
+            <a href="/actor/1169140-daniel-pérez-prada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xjxu8rfAhHFZjeeiyPGsz3O8Fjp.jpg" alt="Daniel Pérez Prada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Pérez Prada</span>
             </a>
-            <a href="/actor/234531-mariam-hernández" class="cast-card">
+            <a href="/actor/234531-mariam-hernández.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dnajO4auqajU63IIqZcuZfxJ41e.jpg" alt="Mariam Hernández" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariam Hernández</span>
             </a>
-            <a href="/actor/5698395-claudio-gallego" class="cast-card">
+            <a href="/actor/5698395-claudio-gallego.html" class="cast-card">
                 <img src="/favicon.ico" alt="Claudio Gallego" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Claudio Gallego</span>
             </a>
-            <a href="/actor/5698397-amanda-cárdenas" class="cast-card">
+            <a href="/actor/5698397-amanda-cárdenas.html" class="cast-card">
                 <img src="/favicon.ico" alt="Amanda Cárdenas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amanda Cárdenas</span>
             </a>
-            <a href="/actor/5698398-alberto-salvador" class="cast-card">
+            <a href="/actor/5698398-alberto-salvador.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alberto Salvador" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alberto Salvador</span>
             </a>
-            <a href="/actor/4243276-naia-de-las-heras" class="cast-card">
+            <a href="/actor/4243276-naia-de-las-heras.html" class="cast-card">
                 <img src="/favicon.ico" alt="Naia de las Heras" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Naia de las Heras</span>
             </a>
-            <a href="/actor/5698399-olivia-guerrero" class="cast-card">
+            <a href="/actor/5698399-olivia-guerrero.html" class="cast-card">
                 <img src="/favicon.ico" alt="Olivia Guerrero" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olivia Guerrero</span>
             </a>
-            <a href="/actor/145412-miriam-díaz-aroca" class="cast-card">
+            <a href="/actor/145412-miriam-díaz-aroca.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aazEpPWEhipwmxVDubZVpKr7eBn.jpg" alt="Miriam Díaz-Aroca" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miriam Díaz-Aroca</span>
             </a>
-            <a href="/actor/132447-rosario-pardo" class="cast-card">
+            <a href="/actor/132447-rosario-pardo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8bcWsjGHG7jwlgJ84O8d3XhmqAJ.jpg" alt="Rosario Pardo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rosario Pardo</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

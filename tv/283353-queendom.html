@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ซ่อนใจไว้ที่เธอ</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3842575-nattawadee-pipobpornchai" class="cast-card">
+            <a href="/actor/3842575-nattawadee-pipobpornchai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zftMmokgfmaxZWNjnJQwzrpccSE.jpg" alt="Nattawadee Pipobpornchai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nattawadee Pipobpornchai</span>
             </a>
-            <a href="/actor/5213651-tarradee-watancharoen" class="cast-card">
+            <a href="/actor/5213651-tarradee-watancharoen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wDaikwrnmDQL8FwsXkcgtkJmOwf.jpg" alt="Tarradee Watancharoen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tarradee Watancharoen</span>
             </a>
-            <a href="/actor/1868135-mashannoad-suvalmas" class="cast-card">
+            <a href="/actor/1868135-mashannoad-suvalmas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fEE5LHWNMcOduy1JsWdkAVPDU1o.jpg" alt="Mashannoad Suvalmas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mashannoad Suvalmas</span>
             </a>
-            <a href="/actor/3298853-chermawee-suwanpanuchoke" class="cast-card">
+            <a href="/actor/3298853-chermawee-suwanpanuchoke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2huVKiF2ZWrDEqQPbYiM0rUKlBr.jpg" alt="Chermawee Suwanpanuchoke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chermawee Suwanpanuchoke</span>
             </a>
-            <a href="/actor/570948-pimolrat-pisolyabutr" class="cast-card">
+            <a href="/actor/570948-pimolrat-pisolyabutr.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/20h6Ll8diuOPkmKdIGxLLxjGOxr.jpg" alt="Pimolrat Pisolyabutr" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pimolrat Pisolyabutr</span>
             </a>
-            <a href="/actor/4331756-jiraphat-sodjam" class="cast-card">
+            <a href="/actor/4331756-jiraphat-sodjam.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cuWaet2U6DrMaLGuLXtMfrRfZoW.jpg" alt="Jiraphat Sodjam" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jiraphat Sodjam</span>
             </a>
-            <a href="/actor/2494090-chinnawat-phattharathanachot" class="cast-card">
+            <a href="/actor/2494090-chinnawat-phattharathanachot.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jAtbzjMIUozrhsBuJjxVO2YuEJq.jpg" alt="Chinnawat Phattharathanachot" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chinnawat Phattharathanachot</span>
             </a>
-            <a href="/actor/1190454-supoj-janjareonborn" class="cast-card">
+            <a href="/actor/1190454-supoj-janjareonborn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d0KIzrcziDMZYaFLrKIAx9kqzTP.jpg" alt="Supoj Janjareonborn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Supoj Janjareonborn</span>
             </a>
-            <a href="/actor/5020870-karint-aongchum" class="cast-card">
+            <a href="/actor/5020870-karint-aongchum.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tvfTWu6dsGB3zLsrD4K9AIpQAzB.jpg" alt="Karint Aongchum" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karint Aongchum</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

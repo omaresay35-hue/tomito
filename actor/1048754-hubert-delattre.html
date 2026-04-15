@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/279307-twice-upon-a-time">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/279307-twice-upon-a-time.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/i7FV4FGChmjNtjmMR2yTqJTTdQS.jpg" alt="Twice Upon a Time — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Twice Upon a Time</div></div>
-    </a>    <a class="card" href="/tv/251983-erica">
+    </a>    <a class="card" href="/tv/251983-erica.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/izRp5FZzgGTx6JvGb1uCnQnZkDV.jpg" alt="Erica — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Erica</div></div>
-    </a>    <a class="card" href="/tv/229560-the-eclipse">
+    </a>    <a class="card" href="/tv/229560-the-eclipse.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/beTtkq3BSer0Yod8KYsGB38rsXe.jpg" alt="The Eclipse — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Eclipse</div></div>
-    </a>    <a class="card" href="/tv/211172-machine">
+    </a>    <a class="card" href="/tv/211172-machine.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/y60GpQoakoVXFKJDH6lbLOiVanv.jpg" alt="Machine — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Machine</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

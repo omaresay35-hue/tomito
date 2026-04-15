@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/270483-kombinaciya">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/270483-kombinaciya.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fI9Rhk8irApLZRkUzOsNBo2EGc9.jpg" alt="Kombinaciya — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kombinaciya</div></div>
-    </a>    <a class="card" href="/tv/251892-young-guns">
+    </a>    <a class="card" href="/tv/251892-young-guns.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yUeWzEFxXE97nEkEbdQhzMoqjY9.jpg" alt="Young Guns — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Young Guns</div></div>
-    </a>    <a class="card" href="/tv/229369-middle-of-nowhere">
+    </a>    <a class="card" href="/tv/229369-middle-of-nowhere.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gXRzu6OQUEmN5DApiGUwe3eivZC.jpg" alt="Middle of Nowhere — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Middle of Nowhere</div></div>
-    </a>    <a class="card" href="/tv/228652-вика-ураган">
+    </a>    <a class="card" href="/tv/228652-вика-ураган.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cF5SdMCumB70U187ZCkZggEwSvY.jpg" alt="Вика-ураган — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Вика-ураган</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>أمهات البطاريق</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2239208-masza-wągrocka" class="cast-card">
+            <a href="/actor/2239208-masza-wągrocka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ofM13hNiPRCsy5ySgWrpvp8FNi.jpg" alt="Masza Wągrocka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masza Wągrocka</span>
             </a>
-            <a href="/actor/1575924-barbara-wypych" class="cast-card">
+            <a href="/actor/1575924-barbara-wypych.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6NHkM0A7Uv9fF9V6xYoarI8pvVQ.jpg" alt="Barbara Wypych" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Barbara Wypych</span>
             </a>
-            <a href="/actor/140650-magdalena-różczka" class="cast-card">
+            <a href="/actor/140650-magdalena-różczka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7oh7C2212ZI28YmSIkyPnuMi0wV.jpg" alt="Magdalena Różczka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Magdalena Różczka</span>
             </a>
-            <a href="/actor/136798-tomasz-tyndyk" class="cast-card">
+            <a href="/actor/136798-tomasz-tyndyk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n46K3rItbHXe5nn1PQ7DKMDF2ka.jpg" alt="Tomasz Tyndyk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomasz Tyndyk</span>
             </a>
-            <a href="/actor/4718549-jan-lubas" class="cast-card">
+            <a href="/actor/4718549-jan-lubas.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jan Lubas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jan Lubas</span>
             </a>
-            <a href="/actor/5031269-tola-będzikowska" class="cast-card">
+            <a href="/actor/5031269-tola-będzikowska.html" class="cast-card">
                 <img src="/favicon.ico" alt="Tola Będzikowska" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tola Będzikowska</span>
             </a>
-            <a href="/actor/4718550-maksymilian-młodawski" class="cast-card">
+            <a href="/actor/4718550-maksymilian-młodawski.html" class="cast-card">
                 <img src="/favicon.ico" alt="Maksymilian Młodawski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maksymilian Młodawski</span>
             </a>
-            <a href="/actor/5210972-amelia-sarzyńska" class="cast-card">
+            <a href="/actor/5210972-amelia-sarzyńska.html" class="cast-card">
                 <img src="/favicon.ico" alt="Amelia Sarzyńska" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amelia Sarzyńska</span>
             </a>
-            <a href="/actor/1637041-sebastian-perdek" class="cast-card">
+            <a href="/actor/1637041-sebastian-perdek.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sKlCyv7OEcEynle3vKe7gjn47dq.jpg" alt="Sebastian Perdek" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sebastian Perdek</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

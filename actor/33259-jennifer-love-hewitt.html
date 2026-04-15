@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1083433-i-know-what-you-did-last-summer">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1083433-i-know-what-you-did-last-summer.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8FP2ObEGIiQYQCf83gL4ZVzwZF8.jpg" alt="I Know What You Did Last Summer — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">I Know What You Did Last Summer</div></div>
-    </a>    <a class="card" href="/movie/1341136-the-holiday-junkie">
+    </a>    <a class="card" href="/movie/1341136-the-holiday-junkie.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bRDVjnCeohsrPvdRcdX5CAVM8nu.jpg" alt="The Holiday Junkie — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Holiday Junkie</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/294219-a-killer-among-friends">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/294219-a-killer-among-friends.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eK2EsnQ7bSiSoRbUNENHtYf9WqU.jpg" alt="A Killer Among Friends — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Killer Among Friends</div></div>
-    </a>    <a class="card" href="/tv/204746-the-jennifer-hudson-show">
+    </a>    <a class="card" href="/tv/204746-the-jennifer-hudson-show.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/itMjVGw4abhhCDZFppmb7yGLrRa.jpg" alt="The Jennifer Hudson Show — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Jennifer Hudson Show</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

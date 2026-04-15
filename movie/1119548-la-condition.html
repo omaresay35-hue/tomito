@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>La Condition</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/145120-swann-arlaud" class="cast-card">
+            <a href="/actor/145120-swann-arlaud.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/khUOZImR7Uxt7LmW5ezS73UOuz2.jpg" alt="Swann Arlaud" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Swann Arlaud</span>
             </a>
-            <a href="/actor/1350986-galatea-bellugi" class="cast-card">
+            <a href="/actor/1350986-galatea-bellugi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l583mGk85A9tFkTCothEelPuxWU.jpg" alt="Galatea Bellugi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Galatea Bellugi</span>
             </a>
-            <a href="/actor/1735987-louise-chevillotte" class="cast-card">
+            <a href="/actor/1735987-louise-chevillotte.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sk7IqGiEFezQMdLXmmIHOD0wBz3.jpg" alt="Louise Chevillotte" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louise Chevillotte</span>
             </a>
-            <a href="/actor/19117-emmanuelle-devos" class="cast-card">
+            <a href="/actor/19117-emmanuelle-devos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bX1l2sTxoXVMRBky7rfD3lVEHud.jpg" alt="Emmanuelle Devos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emmanuelle Devos</span>
             </a>
-            <a href="/actor/3468014-aymeline-alix" class="cast-card">
+            <a href="/actor/3468014-aymeline-alix.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4Iap2sepwIoLxajT8MZPU39vyJJ.jpg" alt="Aymeline Alix" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aymeline Alix</span>
             </a>
-            <a href="/actor/2573491-pierre-philippe" class="cast-card">
+            <a href="/actor/2573491-pierre-philippe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ikxAeBLSF8n8J7ax0jfD0Q2KXCX.jpg" alt="Pierre Philippe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pierre Philippe</span>
             </a>
-            <a href="/actor/1033745-camille-rutherford" class="cast-card">
+            <a href="/actor/1033745-camille-rutherford.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Iq8Gi1YsGNQ3gnxaVptXj68zVY.jpg" alt="Camille Rutherford" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Camille Rutherford</span>
             </a>
-            <a href="/actor/62444-françois-chattot" class="cast-card">
+            <a href="/actor/62444-françois-chattot.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yexQlUQ01hkLX4juhlFC8rbbmMV.jpg" alt="François Chattot" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>François Chattot</span>
             </a>
-            <a href="/actor/1852482-jonathan-couzinié" class="cast-card">
+            <a href="/actor/1852482-jonathan-couzinié.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eTCZ0ilRLcO6eJhDQYRzKM8DDx1.jpg" alt="Jonathan Couzinié" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jonathan Couzinié</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

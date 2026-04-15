@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,31 +73,31 @@ Born in Vietnam, Quan immigrated to the United States as a child. As a child act
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1084242-zootopia-2">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1084242-zootopia-2.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/oJ7g2CifqpStmoYQyaLQgEU32qO.jpg" alt="Zootopia 2 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Zootopia 2</div></div>
-    </a>    <a class="card" href="/movie/777443-the-electric-state">
+    </a>    <a class="card" href="/movie/777443-the-electric-state.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tn6gDIrQMwHSivF01igLfbggmYD.jpg" alt="The Electric State — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Electric State</div></div>
-    </a>    <a class="card" href="/movie/1226406-love-hurts">
+    </a>    <a class="card" href="/movie/1226406-love-hurts.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/skPPVeHoTTVVSJlb0Ib5vrqiuA4.jpg" alt="Love Hurts — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Love Hurts</div></div>
-    </a>    <a class="card" href="/movie/1076708-music-by-john-williams">
+    </a>    <a class="card" href="/movie/1076708-music-by-john-williams.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dIZ3SzuT3YuAWX1fjdxDevbwQBX.jpg" alt="Music by John Williams — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Music by John Williams</div></div>
-    </a>    <a class="card" href="/movie/1011985-kung-fu-panda-4">
+    </a>    <a class="card" href="/movie/1011985-kung-fu-panda-4.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kDp1vUBnMpe8ak4rjgl3cLELqjU.jpg" alt="Kung Fu Panda 4 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kung Fu Panda 4</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/223249-100-years-of-warner-bros">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/223249-100-years-of-warner-bros.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vGotZtJzU5eGCndAO4lqxylPK5t.jpg" alt="100 Years of Warner Bros. — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">100 Years of Warner Bros.</div></div>
-    </a>    <a class="card" href="/tv/135615-american-born-chinese">
+    </a>    <a class="card" href="/tv/135615-american-born-chinese.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cwTYt6DKuMY6RSmQ269fpYH9ELN.jpg" alt="American Born Chinese — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">American Born Chinese</div></div>
@@ -106,13 +106,6 @@ Born in Vietnam, Quan immigrated to the United States as a child. As a child act
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

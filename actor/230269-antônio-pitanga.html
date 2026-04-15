@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1125851-malês">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1125851-malês.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zqqMdCnQfVuhAyxNI5Pxr2gt6b3.jpg" alt="Malês — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Malês</div></div>
-    </a>    <a class="card" href="/movie/1314750-same-old-west">
+    </a>    <a class="card" href="/movie/1314750-same-old-west.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/oIFBDkkX3CJiasgmANr2H4P2dsm.jpg" alt="Same Old West — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Same Old West</div></div>
-    </a>    <a class="card" href="/movie/1041390-a-vilã-das-nove">
+    </a>    <a class="card" href="/movie/1041390-a-vilã-das-nove.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ylOnA8QQgmzSF4uBdezztXqxxFc.jpg" alt="A Vilã das Nove — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Vilã das Nove</div></div>
-    </a>    <a class="card" href="/movie/235728-um-homem-célebre">
+    </a>    <a class="card" href="/movie/235728-um-homem-célebre.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/f4eojCSx5aDRKoOKgxDByXrtDHT.jpg" alt="Um Homem Célebre — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">10.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Um Homem Célebre</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/233519-anything-goes">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/233519-anything-goes.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4ub4Lbl2Ymn6bJ2ld6mKkKVy25m.jpg" alt="Anything Goes — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Anything Goes</div></div>
-    </a>    <a class="card" href="/tv/272730-children-of-the-church-steps">
+    </a>    <a class="card" href="/tv/272730-children-of-the-church-steps.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3Wnp1L4iy59hQDdJopcckVsFf08.jpg" alt="Children of the Church Steps — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Children of the Church Steps</div></div>
-    </a>    <a class="card" href="/tv/209085-perfect-love">
+    </a>    <a class="card" href="/tv/209085-perfect-love.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/g0Tb0bs0MBZoq37BpyFExcepbFX.jpg" alt="Perfect Love — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Perfect Love</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

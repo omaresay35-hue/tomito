@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>رحلة إلى مركز الأرض</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3088957-sebastian-garcia-huerta" class="cast-card">
+            <a href="/actor/3088957-sebastian-garcia-huerta.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5kjexaEhx6wIoATCs1c0BXzfJTU.jpg" alt="Sebastián García Huerta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sebastián García Huerta</span>
             </a>
-            <a href="/actor/59129-óscar-jaenada" class="cast-card">
+            <a href="/actor/59129-óscar-jaenada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qwphNLIwMyQW2ZLA0g0l1zFiB3w.jpg" alt="Óscar Jaenada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Óscar Jaenada</span>
             </a>
-            <a href="/actor/380973-margarita-rosa-de-francisco" class="cast-card">
+            <a href="/actor/380973-margarita-rosa-de-francisco.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bHkZODohuvtTru81HuEYrF8p9VA.jpg" alt="Margarita Rosa de Francisco" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Margarita Rosa de Francisco</span>
             </a>
-            <a href="/actor/3088958-mauricio-el-diablito-barrientos" class="cast-card">
+            <a href="/actor/3088958-mauricio-el-diablito-barrientos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gjbWDhGm7vVqGa70BM4Cd2cydYM.jpg" alt="Mauricio “El Diablito” Barrientos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mauricio “El Diablito” Barrientos</span>
             </a>
-            <a href="/actor/3088959-manuel-márquez" class="cast-card">
+            <a href="/actor/3088959-manuel-márquez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Manuel Márquez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manuel Márquez</span>
             </a>
-            <a href="/actor/81011-gabriel-goity" class="cast-card">
+            <a href="/actor/81011-gabriel-goity.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hAHbDad6k0VQwAGZn3w8F6WZD3U.jpg" alt="Gabriel Goity" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gabriel Goity</span>
             </a>
-            <a href="/actor/2537951-paola-miguel" class="cast-card">
+            <a href="/actor/2537951-paola-miguel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/NNOiMXbKU9IUlPtbGKp6kfflTV.jpg" alt="Paola Miguel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paola Miguel</span>
             </a>
-            <a href="/actor/2293180-valery-sais" class="cast-card">
+            <a href="/actor/2293180-valery-sais.html" class="cast-card">
                 <img src="/favicon.ico" alt="Valery Sais" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Valery Sais</span>
             </a>
-            <a href="/actor/1018058-alejandro-calva" class="cast-card">
+            <a href="/actor/1018058-alejandro-calva.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zd7yOpxs3vsHgZXmTD3ueydYA6B.jpg" alt="Alejandro Calva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alejandro Calva</span>
             </a>
-            <a href="/actor/2626036-yankel-stevan" class="cast-card">
+            <a href="/actor/2626036-yankel-stevan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a2D0aRbMQP0Xc5T092KFnRvflLW.jpg" alt="Yankel Stevan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yankel Stevan</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

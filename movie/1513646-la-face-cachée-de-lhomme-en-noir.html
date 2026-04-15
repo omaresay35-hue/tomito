@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>La face cachée de l'homme en noir</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3940126-audrey-crespo-mara" class="cast-card">
+            <a href="/actor/3940126-audrey-crespo-mara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qnNfSWxrR1nazLCxSQzIgMkuGIT.jpg" alt="Audrey Crespo-Mara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Audrey Crespo-Mara</span>
             </a>
-            <a href="/actor/1434969-thierry-ardisson" class="cast-card">
+            <a href="/actor/1434969-thierry-ardisson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1EfEQAGW9RAPD46d86JY8tUPK6q.jpg" alt="Thierry Ardisson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thierry Ardisson</span>
             </a>
-            <a href="/actor/1729570-manon-ardisson" class="cast-card">
+            <a href="/actor/1729570-manon-ardisson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lw3yF58Myf8a6RFPPvtLqYdeNHG.jpg" alt="Manon Ardisson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manon Ardisson</span>
             </a>
-            <a href="/actor/5567970-ninon-ardisson" class="cast-card">
+            <a href="/actor/5567970-ninon-ardisson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4RSLYjVL6bVJnFteit3wjjUur9l.jpg" alt="Ninon Ardisson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ninon Ardisson</span>
             </a>
-            <a href="/actor/5567972-gaston-ardisson" class="cast-card">
+            <a href="/actor/5567972-gaston-ardisson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/f9hBHoRFRI0WorirM0HhAyauOJK.jpg" alt="Gaston Ardisson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gaston Ardisson</span>
             </a>
-            <a href="/actor/5567974-patrick-ardisson" class="cast-card">
+            <a href="/actor/5567974-patrick-ardisson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tJBCGZ4nhYgUuktfn6YkCjBoSwi.jpg" alt="Patrick Ardisson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patrick Ardisson</span>
             </a>
-            <a href="/actor/2625495-catherine-barma" class="cast-card">
+            <a href="/actor/2625495-catherine-barma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sCmsELCbDr2TY5Af4ACX9BrN1OX.jpg" alt="Catherine Barma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Catherine Barma</span>
             </a>
-            <a href="/actor/5566426-anne-méaux" class="cast-card">
+            <a href="/actor/5566426-anne-méaux.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mTjghtrlKVxNIT3qkyKFCdeLftq.jpg" alt="Anne Méaux" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anne Méaux</span>
             </a>
-            <a href="/actor/235387-laurent-baffie" class="cast-card">
+            <a href="/actor/235387-laurent-baffie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s00N0A9UIQYXduRbwYrqanzdVsy.jpg" alt="Laurent Baffie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laurent Baffie</span>
             </a>
-            <a href="/actor/2638529-philippe-corti" class="cast-card">
+            <a href="/actor/2638529-philippe-corti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zVvX5PF5Qt1Ae3CkZqlOanmJgXB.jpg" alt="Philippe Corti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Philippe Corti</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

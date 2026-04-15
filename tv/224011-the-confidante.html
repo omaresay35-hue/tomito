@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Une amie dévouée</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/983929-laure-calamy" class="cast-card">
+            <a href="/actor/983929-laure-calamy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ov3BaihlXFRTzKTc7Hs5KWskEi4.jpg" alt="Laure Calamy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laure Calamy</span>
             </a>
-            <a href="/actor/1295193-arieh-worthalter" class="cast-card">
+            <a href="/actor/1295193-arieh-worthalter.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3X5A6dwrFUlGo7SZtnf2Fms4BBe.jpg" alt="Arieh Worthalter" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arieh Worthalter</span>
             </a>
-            <a href="/actor/2939756-ava-baya" class="cast-card">
+            <a href="/actor/2939756-ava-baya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8aTqpiRhXzrjpgj9ztNPwf6VN03.jpg" alt="Ava Baya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ava Baya</span>
             </a>
-            <a href="/actor/1183007-annabelle-lengronne" class="cast-card">
+            <a href="/actor/1183007-annabelle-lengronne.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qeKZt4lRQTItimExJoe625IOfAy.jpg" alt="Annabelle Lengronne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Annabelle Lengronne</span>
             </a>
-            <a href="/actor/1710851-alexis-manenti" class="cast-card">
+            <a href="/actor/1710851-alexis-manenti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n9YW0FkKhxlwMhFQz3U2OokuWFZ.jpg" alt="Alexis Manenti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexis Manenti</span>
             </a>
-            <a href="/actor/7282-anne-benoît" class="cast-card">
+            <a href="/actor/7282-anne-benoît.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2k8OfvyrzvxrSsSd3ye7b9xySwp.jpg" alt="Anne Benoît" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anne Benoît</span>
             </a>
-            <a href="/actor/1756715-james-flynn" class="cast-card">
+            <a href="/actor/1756715-james-flynn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uOEp0kld1ih0cdtpwNSZQCKWOYU.jpg" alt="James Flynn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Flynn</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

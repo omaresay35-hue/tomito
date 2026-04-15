@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Salitan</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4095689-angelica-hart" class="cast-card">
+            <a href="/actor/4095689-angelica-hart.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bMohhjKqkgPKaeOmwfDoiO0uZgs.jpg" alt="Angelica Hart" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Angelica Hart</span>
             </a>
-            <a href="/actor/2513207-nico-locco" class="cast-card">
+            <a href="/actor/2513207-nico-locco.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5mWKE2MAhdzpX6haB8734z1sisl.jpg" alt="Nico Locco" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nico Locco</span>
             </a>
-            <a href="/actor/3972818-matthew-francisco" class="cast-card">
+            <a href="/actor/3972818-matthew-francisco.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/535hNSYytvErtSeKlhQJn52M5f4.jpg" alt="Matthew Francisco" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthew Francisco</span>
             </a>
-            <a href="/actor/4463979-vern-kaye" class="cast-card">
+            <a href="/actor/4463979-vern-kaye.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/66Kr8j6IfT6uLg3qiOdYtlV4MXI.jpg" alt="Vern Kaye" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vern Kaye</span>
             </a>
-            <a href="/actor/93255-mercedes-cabral" class="cast-card">
+            <a href="/actor/93255-mercedes-cabral.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5qP4Zrd7iQwbfOPjun5QzvgeEg4.jpg" alt="Mercedes Cabral" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mercedes Cabral</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

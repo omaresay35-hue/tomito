@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Day One</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1030252-álex-gonzález" class="cast-card">
+            <a href="/actor/1030252-álex-gonzález.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wSshBfOlhrRbHG7SRJp8nDeOtnD.jpg" alt="Álex González" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Álex González</span>
             </a>
-            <a href="/actor/102228-asier-etxeandia" class="cast-card">
+            <a href="/actor/102228-asier-etxeandia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pi0zU6nfgUk7tulpgZaVtVZqHBY.jpg" alt="Asier Etxeandia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Asier Etxeandia</span>
             </a>
-            <a href="/actor/2527413-alba-planas" class="cast-card">
+            <a href="/actor/2527413-alba-planas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/b8QkKzOl0q5zddjp9Ti2krr9IAA.jpg" alt="Alba Planas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alba Planas</span>
             </a>
-            <a href="/actor/31384-jordi-mollà" class="cast-card">
+            <a href="/actor/31384-jordi-mollà.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9XsTmWLJ2qMXoUpcb105h6h5OUX.jpg" alt="Jordi Mollà" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jordi Mollà</span>
             </a>
-            <a href="/actor/1491344-renata-notni" class="cast-card">
+            <a href="/actor/1491344-renata-notni.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9K3ciInRuT5BiJ03HD4YTnRsunY.jpg" alt="Renata Notni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Renata Notni</span>
             </a>
-            <a href="/actor/31422-ivan-massagué" class="cast-card">
+            <a href="/actor/31422-ivan-massagué.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dmnJo2sGlfFjtKb8FDPlNjRhfyc.jpg" alt="Ivan Massagué" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ivan Massagué</span>
             </a>
-            <a href="/actor/2020241-mireia-oriol" class="cast-card">
+            <a href="/actor/2020241-mireia-oriol.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jYv0vqnPm4NLfiERpMpC2M789Z3.jpg" alt="Mireia Oriol" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mireia Oriol</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

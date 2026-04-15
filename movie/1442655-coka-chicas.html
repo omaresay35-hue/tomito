@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Coka Chicas</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1449871-zoé-marchal" class="cast-card">
+            <a href="/actor/1449871-zoé-marchal.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cAc417DqXCnygDvGTKE3K1Wb3hn.jpg" alt="Zoé Marchal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zoé Marchal</span>
             </a>
-            <a href="/actor/2054701-fadily-camara" class="cast-card">
+            <a href="/actor/2054701-fadily-camara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/thLH316iBF0M07isAzmwUv4HfsT.jpg" alt="Fadily Camara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fadily Camara</span>
             </a>
-            <a href="/actor/3265607-eva-huault" class="cast-card">
+            <a href="/actor/3265607-eva-huault.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4Ovo0oNkV6KLphyhgT30tY6UH0.jpg" alt="Eva Huault" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eva Huault</span>
             </a>
-            <a href="/actor/9831-vincent-regan" class="cast-card">
+            <a href="/actor/9831-vincent-regan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7VHu79GciN5QlQTmWdBS86eE2mu.jpg" alt="Vincent Regan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vincent Regan</span>
             </a>
-            <a href="/actor/1639308-axel-mansilla" class="cast-card">
+            <a href="/actor/1639308-axel-mansilla.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6K4SqbtixF56YPlqhRiY64yga6Y.jpg" alt="Axel Mansilla" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Axel Mansilla</span>
             </a>
-            <a href="/actor/1886418-judith-rodriguez-perez" class="cast-card">
+            <a href="/actor/1886418-judith-rodriguez-perez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Judith Rodriguez Perez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Judith Rodriguez Perez</span>
             </a>
-            <a href="/actor/3904004-victoria-santos" class="cast-card">
+            <a href="/actor/3904004-victoria-santos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6xUxBNjs1w0NQ9M7jmlcIwgKd1H.jpg" alt="Victoria Santos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Victoria Santos</span>
             </a>
-            <a href="/actor/1701843-jean-luis-burgos" class="cast-card">
+            <a href="/actor/1701843-jean-luis-burgos.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jean Luis Burgos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jean Luis Burgos</span>
             </a>
-            <a href="/actor/1989053-pachy-méndez" class="cast-card">
+            <a href="/actor/1989053-pachy-méndez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bW0Vxy36SJOPilQT1GaYCF3Zgg9.jpg" alt="Pachy Méndez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pachy Méndez</span>
             </a>
-            <a href="/actor/4790855-auro-sónico" class="cast-card">
+            <a href="/actor/4790855-auro-sónico.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6DChMXJ5IstnIc0V82sJBqNryu2.jpg" alt="Auro Sónico" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Auro Sónico</span>
             </a>
-            <a href="/actor/2079144-vicente-santos" class="cast-card">
+            <a href="/actor/2079144-vicente-santos.html" class="cast-card">
                 <img src="/favicon.ico" alt="Vicente Santos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vicente Santos</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>雨林爱发生</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3693678-dai-gaozheng" class="cast-card">
+            <a href="/actor/3693678-dai-gaozheng.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yku8OmgfaJDVkEKH8laynjU54um.jpg" alt="Dai Gaozheng" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dai Gaozheng</span>
             </a>
-            <a href="/actor/2646418-zheng-miao" class="cast-card">
+            <a href="/actor/2646418-zheng-miao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kxDiAN0R1UYs76pgCuUQUusvRfa.jpg" alt="Zheng Miao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zheng Miao</span>
             </a>
-            <a href="/actor/4859097-yuan-dasen" class="cast-card">
+            <a href="/actor/4859097-yuan-dasen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/39R8r7MhYDgccDqmHrT3BRIetvl.jpg" alt="Yuan Dasen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuan Dasen</span>
             </a>
-            <a href="/actor/4895017-quan-dinuo" class="cast-card">
+            <a href="/actor/4895017-quan-dinuo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oEdZjubUug08WmlQBfBWy7bj6nT.jpg" alt="Quan Dinuo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Quan Dinuo</span>
             </a>
-            <a href="/actor/4928220-zhang-yue" class="cast-card">
+            <a href="/actor/4928220-zhang-yue.html" class="cast-card">
                 <img src="/favicon.ico" alt="Zhang Yue" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Yue</span>
             </a>
-            <a href="/actor/4515683-yu-xi" class="cast-card">
+            <a href="/actor/4515683-yu-xi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rEQOIEPM8sWYVm4jlTBxtlfwe3L.jpg" alt="Yu Xi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yu Xi</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

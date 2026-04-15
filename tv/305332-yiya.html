@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Yiya</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1028517-cristina-banegas" class="cast-card">
+            <a href="/actor/1028517-cristina-banegas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8emCBHR63qIZlS7KusOOf8CeSGM.jpg" alt="Cristina Banegas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cristina Banegas</span>
             </a>
-            <a href="/actor/145025-julieta-zylberberg" class="cast-card">
+            <a href="/actor/145025-julieta-zylberberg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5U0DhTO4N9Vg2c7QMGDcqrtcsW6.jpg" alt="Julieta Zylberberg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julieta Zylberberg</span>
             </a>
-            <a href="/actor/93648-pablo-rago" class="cast-card">
+            <a href="/actor/93648-pablo-rago.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cHzWuAHTi9di6s0BF5x6gOhxJ1g.jpg" alt="Pablo Rago" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pablo Rago</span>
             </a>
-            <a href="/actor/929045-diego-cremonesi" class="cast-card">
+            <a href="/actor/929045-diego-cremonesi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2p6iBhM6HCYaeJdWuDmlbk0DMNA.jpg" alt="Diego Cremonesi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Diego Cremonesi</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -79,31 +79,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/62318-shin-ichiro-miki" class="cast-card">
+            <a href="/actor/62318-shin-ichiro-miki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yL9Tx2HZgK7t5AssYl6oGE9bjdj.jpg" alt="Shin-ichiro Miki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shin-ichiro Miki</span>
             </a>
-            <a href="/actor/1324646-ai-kakuma" class="cast-card">
+            <a href="/actor/1324646-ai-kakuma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o3tQSeeJAeafJNvQs2IKvpKY7av.jpg" alt="Ai Kakuma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ai Kakuma</span>
             </a>
-            <a href="/actor/1220947-ami-koshimizu" class="cast-card">
+            <a href="/actor/1220947-ami-koshimizu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e5sU0stGjTMtFoj0jjHH7OFUqYC.jpg" alt="Ami Koshimizu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ami Koshimizu</span>
             </a>
-            <a href="/actor/221772-wataru-hatano" class="cast-card">
+            <a href="/actor/221772-wataru-hatano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i1meHlOXLP2ubJZkmyGJONrxikQ.jpg" alt="Wataru Hatano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wataru Hatano</span>
             </a>
-            <a href="/actor/126704-tetsu-inada" class="cast-card">
+            <a href="/actor/126704-tetsu-inada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e8qQL1NKTHP8eOsZmV5LCkdHS9T.jpg" alt="Tetsu Inada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tetsu Inada</span>
             </a>
-            <a href="/actor/1256913-rumi-okubo" class="cast-card">
+            <a href="/actor/1256913-rumi-okubo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cf4cnFMllu1yO3X0gCGGDdl8GXW.jpg" alt="Rumi Okubo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rumi Okubo</span>
             </a>
-            <a href="/actor/65438-shinpachi-tsuji" class="cast-card">
+            <a href="/actor/65438-shinpachi-tsuji.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/af5ILJbixauO84bsuLOr8XSU9yd.jpg" alt="Shinpachi Tsuji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shinpachi Tsuji</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

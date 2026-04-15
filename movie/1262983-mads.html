@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>MadS</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3811652-milton-riche" class="cast-card">
+            <a href="/actor/3811652-milton-riche.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2C3Frd1UmRDzkv4YHJUzjAHKOKh.jpg" alt="Milton Riche" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Milton Riche</span>
             </a>
-            <a href="/actor/4608050-laurie-pavy" class="cast-card">
+            <a href="/actor/4608050-laurie-pavy.html" class="cast-card">
                 <img src="/favicon.ico" alt="Laurie Pavy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laurie Pavy</span>
             </a>
-            <a href="/actor/2740498-lucille-guillaume" class="cast-card">
+            <a href="/actor/2740498-lucille-guillaume.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yh24zaBJKpmMkDphtHEvSDPgbVo.jpg" alt="Lucille Guillaume" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucille Guillaume</span>
             </a>
-            <a href="/actor/4341735-yovel-lewkowski" class="cast-card">
+            <a href="/actor/4341735-yovel-lewkowski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d1pRevSrvKvHkkWEEmhf0oKhhwZ.jpg" alt="Yovel Lewkowski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yovel Lewkowski</span>
             </a>
-            <a href="/actor/5001289-sasha-rudakova" class="cast-card">
+            <a href="/actor/5001289-sasha-rudakova.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sasha Rudakova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sasha Rudakova</span>
             </a>
-            <a href="/actor/3477320-vincent-pasdermadjian" class="cast-card">
+            <a href="/actor/3477320-vincent-pasdermadjian.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2yTeySmZND6gOCzIUG6O7twdNt4.jpg" alt="Vincent Pasdermadjian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vincent Pasdermadjian</span>
             </a>
-            <a href="/actor/5018243-jeremiah-bourgeois" class="cast-card">
+            <a href="/actor/5018243-jeremiah-bourgeois.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jeremiah Bourgeois" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeremiah Bourgeois</span>
             </a>
-            <a href="/actor/3735933-najim-zeghoudi" class="cast-card">
+            <a href="/actor/3735933-najim-zeghoudi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Najim Zeghoudi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Najim Zeghoudi</span>
             </a>
-            <a href="/actor/5018245-valentine-goujon" class="cast-card">
+            <a href="/actor/5018245-valentine-goujon.html" class="cast-card">
                 <img src="/favicon.ico" alt="Valentine Goujon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Valentine Goujon</span>
             </a>
-            <a href="/actor/5018250-lyam-stiti" class="cast-card">
+            <a href="/actor/5018250-lyam-stiti.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lyam Stiti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lyam Stiti</span>
             </a>
-            <a href="/actor/5018253-guillaume-daar-aliabiev" class="cast-card">
+            <a href="/actor/5018253-guillaume-daar-aliabiev.html" class="cast-card">
                 <img src="/favicon.ico" alt="Guillaume Daar Aliabiev" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Guillaume Daar Aliabiev</span>
             </a>
-            <a href="/actor/2456951-gabriel-picq" class="cast-card">
+            <a href="/actor/2456951-gabriel-picq.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/agTaaILEn50fI7EJxq1kzxVJnbc.jpg" alt="Gabriel Picq" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gabriel Picq</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

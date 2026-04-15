@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,15 +71,15 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1438208-blind-vacation">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1438208-blind-vacation.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9fKeLVPOSiiTbpNCW5oZwOhUW0W.jpg" alt="Blind Vacation — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Blind Vacation</div></div>
-    </a>    <a class="card" href="/movie/876910-slovo-house-unfinished-novel">
+    </a>    <a class="card" href="/movie/876910-slovo-house-unfinished-novel.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/93N9ZdLXUzvnFbTXEMEZ9ObTzam.jpg" alt="“Slovo” House. Unfinished Novel — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">“Slovo” House. Unfinished Novel</div></div>
-    </a>    <a class="card" href="/movie/1185207-lessons-of-tolerance">
+    </a>    <a class="card" href="/movie/1185207-lessons-of-tolerance.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/52haFU4tAzayoHOuucBSF57zQtd.jpg" alt="Lessons of Tolerance — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Lessons of Tolerance</div></div>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

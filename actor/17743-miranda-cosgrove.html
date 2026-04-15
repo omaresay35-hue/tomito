@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1321439-the-wrong-paris">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1321439-the-wrong-paris.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/A0KRoR842OgNByCfw9iFHbWoeR9.jpg" alt="The Wrong Paris — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Wrong Paris</div></div>
-    </a>    <a class="card" href="/movie/519182-despicable-me-4">
+    </a>    <a class="card" href="/movie/519182-despicable-me-4.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wWba3TaojhK7NdycRhoQpsG0FaH.jpg" alt="Despicable Me 4 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Despicable Me 4</div></div>
-    </a>    <a class="card" href="/movie/1093231-mother-of-the-bride">
+    </a>    <a class="card" href="/movie/1093231-mother-of-the-bride.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vdTvwykMWvVgdaViBVRh8IFTku5.jpg" alt="Mother of the Bride — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Mother of the Bride</div></div>
-    </a>    <a class="card" href="/movie/1058303-drugstore-june">
+    </a>    <a class="card" href="/movie/1058303-drugstore-june.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zbWcd3e5ooHEmiJnEmRE8sE3bOP.jpg" alt="Drugstore June — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Drugstore June</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/898-just-jordan">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/898-just-jordan.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/a0gvMdHVanHYYF6MgN4yqcrS6Hc.jpg" alt="Just Jordan — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Just Jordan</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

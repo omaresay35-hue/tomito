@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Son Gün</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/109085-uğur-yücel" class="cast-card">
+            <a href="/actor/109085-uğur-yücel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i7vMhu8yLCK4wx4n624eYLmyGij.jpg" alt="Uğur Yücel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Uğur Yücel</span>
             </a>
-            <a href="/actor/1254927-erkan-petekkaya" class="cast-card">
+            <a href="/actor/1254927-erkan-petekkaya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hVqQ6TcKpsEFq3Dt9A9dNPDe4CH.jpg" alt="Erkan Petekkaya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erkan Petekkaya</span>
             </a>
-            <a href="/actor/1483856-cemal-toktas" class="cast-card">
+            <a href="/actor/1483856-cemal-toktas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y24yhgzL76O2X3hRXZaSBhzTQyl.jpg" alt="Cemal Toktas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cemal Toktas</span>
             </a>
-            <a href="/actor/237374-serhat-kılıç" class="cast-card">
+            <a href="/actor/237374-serhat-kılıç.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mhqfAxuR7DPOP3FRiI2SQKaSRn6.jpg" alt="Serhat Kılıç" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Serhat Kılıç</span>
             </a>
-            <a href="/actor/230759-ahmet-mümtaz-taylan" class="cast-card">
+            <a href="/actor/230759-ahmet-mümtaz-taylan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7BcirImyPmuD8PxMVKPx6xefunW.jpg" alt="Ahmet Mümtaz Taylan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ahmet Mümtaz Taylan</span>
             </a>
-            <a href="/actor/4050356-kürşat-demir" class="cast-card">
+            <a href="/actor/4050356-kürşat-demir.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sExNemU8JAIQR1dmdQo6vde4Rps.jpg" alt="Kürşat Demir" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kürşat Demir</span>
             </a>
-            <a href="/actor/1381257-nazan-kesal" class="cast-card">
+            <a href="/actor/1381257-nazan-kesal.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/u5bL6Cpgjun4PSuniYv2q3wDF1.jpg" alt="Nazan Kesal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nazan Kesal</span>
             </a>
-            <a href="/actor/1324296-yasemin-kay-allen" class="cast-card">
+            <a href="/actor/1324296-yasemin-kay-allen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zpR2VQ7yZfQXk0EcMjiPdpTEwM9.jpg" alt="Yasemin Kay Allen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yasemin Kay Allen</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

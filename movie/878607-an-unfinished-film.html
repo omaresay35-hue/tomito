@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>一部未完成的电影</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1016315-qin-hao" class="cast-card">
+            <a href="/actor/1016315-qin-hao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nBlIPKKCj5x4hBPLAKGacwTUdlQ.jpg" alt="Qin Hao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Qin Hao</span>
             </a>
-            <a href="/actor/1905812-mao-xiaorui" class="cast-card">
+            <a href="/actor/1905812-mao-xiaorui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kEAUethqXsnOlFWK8vz0ta6vM1h.jpg" alt="Mao Xiaorui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mao Xiaorui</span>
             </a>
-            <a href="/actor/1161018-qi-xi" class="cast-card">
+            <a href="/actor/1161018-qi-xi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aHsRvLngZL6uiagJ8DlctiHEcdo.jpg" alt="Qi Xi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Qi Xi</span>
             </a>
-            <a href="/actor/1371289-liang-ming" class="cast-card">
+            <a href="/actor/1371289-liang-ming.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9d3QcuoYErx8Di2ym9ABl1k1vsm.jpg" alt="Liang Ming" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liang Ming</span>
             </a>
-            <a href="/actor/1376106-huang-xuan" class="cast-card">
+            <a href="/actor/1376106-huang-xuan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dedh0tG92cerVlFOJRX3YRBI3Lk.jpg" alt="Huang Xuan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Huang Xuan</span>
             </a>
-            <a href="/actor/1086250-zhang-songwen" class="cast-card">
+            <a href="/actor/1086250-zhang-songwen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rz1mKSiuV5LuY0l0Y6HRGJGBeED.jpg" alt="Zhang Songwen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Songwen</span>
             </a>
-            <a href="/actor/972483-zeng-jian" class="cast-card">
+            <a href="/actor/972483-zeng-jian.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n0p77Jo8y0j2nshOTsDwf4uFztV.jpg" alt="Zeng Jian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zeng Jian</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

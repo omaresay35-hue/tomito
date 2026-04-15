@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1356587-the-lychee-road">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1356587-the-lychee-road.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zbTrwhUxxJ0BgDai1FflfeOELrO.jpg" alt="The Lychee Road — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Lychee Road</div></div>
-    </a>    <a class="card" href="/movie/1185528-legends-of-the-condor-heroes-the-gallants">
+    </a>    <a class="card" href="/movie/1185528-legends-of-the-condor-heroes-the-gallants.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fUCFEGFlMIFet9ja72JDAeG1he8.jpg" alt="Legends of the Condor Heroes: The Gallants — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Legends of the Condor Heroes: The Gallants</div></div>
-    </a>    <a class="card" href="/movie/1267574-be-my-friend">
+    </a>    <a class="card" href="/movie/1267574-be-my-friend.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2avzek1qbDV6vMsNjC00ofHSQVA.jpg" alt="Be My Friend — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Be My Friend</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/232441-you-are-desire">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/232441-you-are-desire.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/93J5YpXVuu67zMbBBWJl7hUtuSp.jpg" alt="You Are Desire — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">You Are Desire</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

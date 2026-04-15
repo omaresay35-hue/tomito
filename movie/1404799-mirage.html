@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>മിറാജ്</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/931520-asif-ali" class="cast-card">
+            <a href="/actor/931520-asif-ali.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5QMLoQ01BOVWRK0JKioJcwtM7EH.jpg" alt="Asif Ali" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Asif Ali</span>
             </a>
-            <a href="/actor/1620957-aparna-balamurali" class="cast-card">
+            <a href="/actor/1620957-aparna-balamurali.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8IdA0YxPHttgDQCi09pE28LWw0E.jpg" alt="Aparna Balamurali" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aparna Balamurali</span>
             </a>
-            <a href="/actor/85595-sampath-raj" class="cast-card">
+            <a href="/actor/85595-sampath-raj.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oQgoihP26Hyg6gMFVpACRAygZli.jpg" alt="Sampath Raj" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sampath Raj</span>
             </a>
-            <a href="/actor/2298643-hakkim-shajahan" class="cast-card">
+            <a href="/actor/2298643-hakkim-shajahan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/reEowrr3Gw4vKFfVUOhIT4EM4Es.jpg" alt="Hakkim Shajahan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hakkim Shajahan</span>
             </a>
-            <a href="/actor/1626995-hannah-reji-koshy" class="cast-card">
+            <a href="/actor/1626995-hannah-reji-koshy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7JiW2EsAwOrQqpbEpXHM1JZmgF0.jpg" alt="Hannah Reji Koshy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hannah Reji Koshy</span>
             </a>
-            <a href="/actor/5681451-arjun-gopan" class="cast-card">
+            <a href="/actor/5681451-arjun-gopan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/juiZoAd2gE583KZhH65KbQBXI3E.jpg" alt="Arjun Gopan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arjun Gopan</span>
             </a>
-            <a href="/actor/586636-saravanan" class="cast-card">
+            <a href="/actor/586636-saravanan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mrLYzEZr0w0dq7LS3CXfYdLVlpK.jpg" alt="Saravanan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saravanan</span>
             </a>
-            <a href="/actor/1274871-deepak-parambol" class="cast-card">
+            <a href="/actor/1274871-deepak-parambol.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ri2gQM9o9MmcZQZjjq6pQmdbIxb.jpg" alt="Deepak Parambol" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Deepak Parambol</span>
             </a>
-            <a href="/actor/1779708-madhan-kumar-dhakshinamoorthy" class="cast-card">
+            <a href="/actor/1779708-madhan-kumar-dhakshinamoorthy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3czfQIWLli5sci1WU8vy33x0Mmn.jpg" alt="Madhan Kumar Dhakshinamoorthy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Madhan Kumar Dhakshinamoorthy</span>
             </a>
-            <a href="/actor/4893623-guna-babu" class="cast-card">
+            <a href="/actor/4893623-guna-babu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tPpoUHov4rgA3ZgsbBFOFJME9l4.jpg" alt="Guna Babu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Guna Babu</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

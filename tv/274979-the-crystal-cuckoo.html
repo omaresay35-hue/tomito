@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>طائر الوقواق البلوري</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2164904-catalina-sopelana" class="cast-card">
+            <a href="/actor/2164904-catalina-sopelana.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mzbWt3yS1pgZKNH6R78WhqWkgSH.jpg" alt="Catalina Sopelana" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Catalina Sopelana</span>
             </a>
-            <a href="/actor/947514-itziar-ituño" class="cast-card">
+            <a href="/actor/947514-itziar-ituño.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l7XfYka8XxPj0fYjq22lvyxkJ7S.jpg" alt="Itziar Ituño" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Itziar Ituño</span>
             </a>
-            <a href="/actor/1063319-álex-garcía" class="cast-card">
+            <a href="/actor/1063319-álex-garcía.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2akoVhMvYUVN9HzfnK7ZnCp5P8s.jpg" alt="Álex García" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Álex García</span>
             </a>
-            <a href="/actor/31422-ivan-massagué" class="cast-card">
+            <a href="/actor/31422-ivan-massagué.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dmnJo2sGlfFjtKb8FDPlNjRhfyc.jpg" alt="Ivan Massagué" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ivan Massagué</span>
             </a>
-            <a href="/actor/119972-tomás-del-estal" class="cast-card">
+            <a href="/actor/119972-tomás-del-estal.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A0gwFprOk8r7vqUwriB9DQLUKG0.jpg" alt="Tomás del Estal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomás del Estal</span>
             </a>
-            <a href="/actor/2670619-alfons-nieto" class="cast-card">
+            <a href="/actor/2670619-alfons-nieto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fK7QSDxueWepMPaL4OeUt7WBNvZ.jpg" alt="Alfons Nieto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alfons Nieto</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

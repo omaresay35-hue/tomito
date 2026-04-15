@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Wellmania</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1928970-celeste-barber" class="cast-card">
+            <a href="/actor/1928970-celeste-barber.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ApCTt7XxDHyk7qJ6CUEi3bfdgtj.jpg" alt="Celeste Barber" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Celeste Barber</span>
             </a>
-            <a href="/actor/1637049-jj-fong" class="cast-card">
+            <a href="/actor/1637049-jj-fong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jznoSkWeAP1YA09sXGPn39G1HRV.jpg" alt="J.J. Fong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>J.J. Fong</span>
             </a>
-            <a href="/actor/1213288-lachlan-buchanan" class="cast-card">
+            <a href="/actor/1213288-lachlan-buchanan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/imIdochc8peA5Xn2j2o8vTPOjbR.jpg" alt="Lachlan Buchanan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lachlan Buchanan</span>
             </a>
-            <a href="/actor/217991-genevieve-mooy" class="cast-card">
+            <a href="/actor/217991-genevieve-mooy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dXfEibGGn3nat4Slue2q5KR3x8e.jpg" alt="Genevieve Mooy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Genevieve Mooy</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

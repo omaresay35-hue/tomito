@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/822119-captain-america-brave-new-world">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/822119-captain-america-brave-new-world.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pzIddUEMWhWzfvLI3TwxUG2wGoi.jpg" alt="Captain America: Brave New World — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Captain America: Brave New World</div></div>
-    </a>    <a class="card" href="/movie/2655-what-lies-beneath">
+    </a>    <a class="card" href="/movie/2655-what-lies-beneath.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2L3Cn0CizbSy2E9KJt1SiOSyb6p.jpg" alt="What Lies Beneath — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">What Lies Beneath</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/223768-pretty-baby-brooke-shields">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/223768-pretty-baby-brooke-shields.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sgEzuz9UPdJz9Eu5fl6LMA1J2Gm.jpg" alt="Pretty Baby: Brooke Shields — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pretty Baby: Brooke Shields</div></div>
-    </a>    <a class="card" href="/tv/136311-shrinking">
+    </a>    <a class="card" href="/tv/136311-shrinking.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zEFKMNPBKq6JG7uuDkzTQ9WwErn.jpg" alt="Shrinking — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Shrinking</div></div>
-    </a>    <a class="card" href="/tv/157744-1923">
+    </a>    <a class="card" href="/tv/157744-1923.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zgZRJZvZn5cpsWAB0zMUdad3iZd.jpg" alt="1923 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">1923</div></div>
-    </a>    <a class="card" href="/tv/10247-dan-august">
+    </a>    <a class="card" href="/tv/10247-dan-august.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3NIKscfzA1DKuocuuAcbVnebWdT.jpg" alt="Dan August — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dan August</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

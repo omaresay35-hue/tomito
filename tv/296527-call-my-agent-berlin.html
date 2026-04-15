@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Call My Agent Berlin</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1432927-seyneb-saleh" class="cast-card">
+            <a href="/actor/1432927-seyneb-saleh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5a4ifsjXcyq42LlHJPdEH7KPAH5.jpg" alt="Seyneb Saleh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Seyneb Saleh</span>
             </a>
-            <a href="/actor/1366985-michael-klammer" class="cast-card">
+            <a href="/actor/1366985-michael-klammer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/u47AlkNpQm0AMr9zY1DnFqXQJxW.jpg" alt="Michael Klammer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Klammer</span>
             </a>
-            <a href="/actor/25094-gabrielle-scharnitzky" class="cast-card">
+            <a href="/actor/25094-gabrielle-scharnitzky.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uvi36wWTsSd4UhO6p8gcPspWJN2.jpg" alt="Gabrielle Scharnitzky" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gabrielle Scharnitzky</span>
             </a>
-            <a href="/actor/1133520-lucas-gregorowicz" class="cast-card">
+            <a href="/actor/1133520-lucas-gregorowicz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/z5qyyFEtyoUt64qgxZCQ0we1g6h.jpg" alt="Lucas Gregorowicz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucas Gregorowicz</span>
             </a>
-            <a href="/actor/2354816-benny-opoku-arthur" class="cast-card">
+            <a href="/actor/2354816-benny-opoku-arthur.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5VZ0MHXXDYwcnBxRi2HYkfzjlJ7.jpg" alt="Benny Opoku-Arthur" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Benny Opoku-Arthur</span>
             </a>
-            <a href="/actor/2289677-dana-herfurth" class="cast-card">
+            <a href="/actor/2289677-dana-herfurth.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kTcclnI5IUMH9NCheCYzLPl2Gj4.jpg" alt="Dana Herfurth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dana Herfurth</span>
             </a>
-            <a href="/actor/1124361-janina-elkin" class="cast-card">
+            <a href="/actor/1124361-janina-elkin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AsCE5yoVm5ZCADZnkTLQvPiprkE.jpg" alt="Janina Elkin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Janina Elkin</span>
             </a>
-            <a href="/actor/1366159-karin-hanczewski" class="cast-card">
+            <a href="/actor/1366159-karin-hanczewski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ftYfADOsvgRLRoIJylpZnRMmpIn.jpg" alt="Karin Hanczewski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karin Hanczewski</span>
             </a>
-            <a href="/actor/2323422-taynara-wolf" class="cast-card">
+            <a href="/actor/2323422-taynara-wolf.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8NBCLI3ku4d5i3eXwUKBNUwnz6V.jpg" alt="Taynara Wolf" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taynara Wolf</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

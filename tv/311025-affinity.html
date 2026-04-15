@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>الانجذاب</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2730675-cui-yuxin" class="cast-card">
+            <a href="/actor/2730675-cui-yuxin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hy88IB9C0TFZH16m2aoplKEfFwx.jpg" alt="Cui Yuxin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cui Yuxin</span>
             </a>
-            <a href="/actor/3541107-fang-jin" class="cast-card">
+            <a href="/actor/3541107-fang-jin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zyFWHwiQkUoxD4gwhsJqXUIdaP8.jpg" alt="Fang Jin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fang Jin</span>
             </a>
-            <a href="/actor/2823870-wang-yijun" class="cast-card">
+            <a href="/actor/2823870-wang-yijun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jhVZlxiS1n8GlfQMXiMLMSNvFQr.jpg" alt="Wang Yijun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wang Yijun</span>
             </a>
-            <a href="/actor/2580771-gao-weiman" class="cast-card">
+            <a href="/actor/2580771-gao-weiman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4n8XToC5mCFiEryIfy2qr2gEfEj.jpg" alt="Gao Weiman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gao Weiman</span>
             </a>
-            <a href="/actor/3965172-wu-fei" class="cast-card">
+            <a href="/actor/3965172-wu-fei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jA5jwtCXIODNr1vbLjGPMiMrek6.jpg" alt="Wu Fei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wu Fei</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

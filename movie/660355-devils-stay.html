@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>사흘</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1244787-park-shin-yang" class="cast-card">
+            <a href="/actor/1244787-park-shin-yang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gruS0gJcCDYBwVOjP5Vzngcfiw4.jpg" alt="Park Shin-yang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Shin-yang</span>
             </a>
-            <a href="/actor/1299351-lee-min-ki" class="cast-card">
+            <a href="/actor/1299351-lee-min-ki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cS9o926nFrFaiWPGUXC07gSFGTA.jpg" alt="Lee Min-ki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Min-ki</span>
             </a>
-            <a href="/actor/1299244-lee-re" class="cast-card">
+            <a href="/actor/1299244-lee-re.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i1A5E4v5xRFammipC3H4jeOwczv.jpg" alt="Lee Re" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Re</span>
             </a>
-            <a href="/actor/1494834-tae-in-ho" class="cast-card">
+            <a href="/actor/1494834-tae-in-ho.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tQJuRcrWe9QUsHikSO6Ga2XIKcS.jpg" alt="Tae In-ho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tae In-ho</span>
             </a>
-            <a href="/actor/2206571-yun-jong-seok" class="cast-card">
+            <a href="/actor/2206571-yun-jong-seok.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3xCbxWx5dqtUQYANEZxOpGOsuYJ.jpg" alt="Yun Jong-seok" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yun Jong-seok</span>
             </a>
-            <a href="/actor/1191711-kil-hae-yeon" class="cast-card">
+            <a href="/actor/1191711-kil-hae-yeon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2mfEbiYfezKfC2XJ7WXcEARct.jpg" alt="Kil Hae-yeon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kil Hae-yeon</span>
             </a>
-            <a href="/actor/1444366-kim-ki-cheon" class="cast-card">
+            <a href="/actor/1444366-kim-ki-cheon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tEr1lwcAa8NyXLZ5684vkO0jtBM.jpg" alt="Kim Ki-cheon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Ki-cheon</span>
             </a>
-            <a href="/actor/2482161-park-min-jung" class="cast-card">
+            <a href="/actor/2482161-park-min-jung.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oYFw6sPeJ6Uem95U8tMzIQCBFXH.jpg" alt="Park Min-jung" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Min-jung</span>
             </a>
-            <a href="/actor/5420328-woo-min-ji" class="cast-card">
+            <a href="/actor/5420328-woo-min-ji.html" class="cast-card">
                 <img src="/favicon.ico" alt="Woo Min-ji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Woo Min-ji</span>
             </a>
-            <a href="/actor/1910031-kim-nam-woo" class="cast-card">
+            <a href="/actor/1910031-kim-nam-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k8DiZG65h57lR0qnDEQ3zHfsids.jpg" alt="Kim Nam-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Nam-woo</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

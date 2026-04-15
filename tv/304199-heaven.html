@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Niebo</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2773490-stanisław-linowski" class="cast-card">
+            <a href="/actor/2773490-stanisław-linowski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wf3P8fMUIwKMkq6yTrs89lbOCYe.jpg" alt="Stanisław Linowski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stanisław Linowski</span>
             </a>
-            <a href="/actor/140652-tomasz-kot" class="cast-card">
+            <a href="/actor/140652-tomasz-kot.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k4LgSV1p2FI8xhFwNOzBcDcEX7s.jpg" alt="Tomasz Kot" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomasz Kot</span>
             </a>
-            <a href="/actor/140650-magdalena-różczka" class="cast-card">
+            <a href="/actor/140650-magdalena-różczka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7oh7C2212ZI28YmSIkyPnuMi0wV.jpg" alt="Magdalena Różczka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Magdalena Różczka</span>
             </a>
-            <a href="/actor/3454559-zofia-jastrzębska" class="cast-card">
+            <a href="/actor/3454559-zofia-jastrzębska.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pB4rCXhLpRv0F9MYN7uodyc0NvX.jpg" alt="Zofia Jastrzębska" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zofia Jastrzębska</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

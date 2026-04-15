@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>씬</span>
   </nav>
 
@@ -71,19 +71,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1254557-kim-yoon-hye" class="cast-card">
+            <a href="/actor/1254557-kim-yoon-hye.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/747GCaTzw3owpL85uUTf4FJUWUL.jpg" alt="Kim Yoon-hye" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Yoon-hye</span>
             </a>
-            <a href="/actor/3999269-song-yi-jae" class="cast-card">
+            <a href="/actor/3999269-song-yi-jae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/klhII7GLoC5JjZHumVBmGTtgGBT.jpg" alt="Song Yi-jae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Song Yi-jae</span>
             </a>
-            <a href="/actor/3038411-park-ji-hoon" class="cast-card">
+            <a href="/actor/3038411-park-ji-hoon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a1lhJxxIBlJL7roIDY4dOEoRMML.jpg" alt="Park Ji-hoon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Ji-hoon</span>
             </a>
-            <a href="/actor/1978514-lee-sang-ah" class="cast-card">
+            <a href="/actor/1978514-lee-sang-ah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sVBWgooHkc1y3FPj3p8IHayz3B0.jpg" alt="Lee Sang-ah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Sang-ah</span>
             </a></div></section>
@@ -91,13 +91,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

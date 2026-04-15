@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,35 +75,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2420220-noah-kaye-bentley" class="cast-card">
+            <a href="/actor/2420220-noah-kaye-bentley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1XFtLgZ9ijVisZyrKWqGykAoaFU.jpg" alt="Noah Kaye Bentley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Noah Kaye Bentley</span>
             </a>
-            <a href="/actor/114446-jacob-bertrand" class="cast-card">
+            <a href="/actor/114446-jacob-bertrand.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eW01x0aRni5d2cEyKQJOxRYlbQ.jpg" alt="Jacob Bertrand" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jacob Bertrand</span>
             </a>
-            <a href="/actor/54427-kimberly-brooks" class="cast-card">
+            <a href="/actor/54427-kimberly-brooks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iPlCk1VQ8fnAtsMow6HlCZoQc0w.jpg" alt="Kimberly Brooks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kimberly Brooks</span>
             </a>
-            <a href="/actor/3386263-madigan-kacmar" class="cast-card">
+            <a href="/actor/3386263-madigan-kacmar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zKFH9kJO0wgNKvQfYLAiHYtNibc.jpg" alt="Madigan Kacmar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Madigan Kacmar</span>
             </a>
-            <a href="/actor/1469135-lilimar" class="cast-card">
+            <a href="/actor/1469135-lilimar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cRerzbUsq0TiWe6z0VGtLHz4JOa.jpg" alt="Lilimar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lilimar</span>
             </a>
-            <a href="/actor/971877-mick-wingert" class="cast-card">
+            <a href="/actor/971877-mick-wingert.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2Apga68BihekhCSPHNk5pXqC5Gq.jpg" alt="Mick Wingert" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mick Wingert</span>
             </a>
-            <a href="/actor/569-ethan-hawke" class="cast-card">
+            <a href="/actor/569-ethan-hawke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oojD9jSshvUT4t6AUySsBxoekHk.jpg" alt="Ethan Hawke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ethan Hawke</span>
             </a>
-            <a href="/actor/4040278-titus-blake" class="cast-card">
+            <a href="/actor/4040278-titus-blake.html" class="cast-card">
                 <img src="/favicon.ico" alt="Titus Blake" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Titus Blake</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

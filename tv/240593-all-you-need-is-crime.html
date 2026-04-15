@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Non ci resta che il crimine - La serie</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/146464-marco-giallini" class="cast-card">
+            <a href="/actor/146464-marco-giallini.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pa8134Q5oVRuC1xBMsQ73mpXN1v.jpg" alt="Marco Giallini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marco Giallini</span>
             </a>
-            <a href="/actor/78538-gianmarco-tognazzi" class="cast-card">
+            <a href="/actor/78538-gianmarco-tognazzi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Bki40BsjJUFyyYX0wjoaf7SNK1.jpg" alt="Gianmarco Tognazzi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gianmarco Tognazzi</span>
             </a>
-            <a href="/actor/229571-massimiliano-bruno" class="cast-card">
+            <a href="/actor/229571-massimiliano-bruno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nQEB4o661Ayv2aomKT6LoJekvZ5.jpg" alt="Massimiliano Bruno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Massimiliano Bruno</span>
             </a>
-            <a href="/actor/130359-giampaolo-morelli" class="cast-card">
+            <a href="/actor/130359-giampaolo-morelli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5KATYXO5KRV0VrFt6UhlQxFWm3m.jpg" alt="Giampaolo Morelli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Giampaolo Morelli</span>
             </a>
-            <a href="/actor/2189836-maurizio-lastrico" class="cast-card">
+            <a href="/actor/2189836-maurizio-lastrico.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qtmMwqo47vbyU6xE27ub64xoST2.jpg" alt="Maurizio Lastrico" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maurizio Lastrico</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

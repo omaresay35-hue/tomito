@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>الحبيبة</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/32-robin-wright" class="cast-card">
+            <a href="/actor/32-robin-wright.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d3rIv0y2p0jMsQ7ViR7O1606NZa.jpg" alt="Robin Wright" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robin Wright</span>
             </a>
-            <a href="/actor/1173984-olivia-cooke" class="cast-card">
+            <a href="/actor/1173984-olivia-cooke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7LYm4jGDq8IxAe4D6TTPkWwU0Ft.jpg" alt="Olivia Cooke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olivia Cooke</span>
             </a>
-            <a href="/actor/1800302-laurie-davidson" class="cast-card">
+            <a href="/actor/1800302-laurie-davidson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zLqCFqnOHKQOUmpnYRaGA2nt9Xn.jpg" alt="Laurie Davidson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laurie Davidson</span>
             </a>
-            <a href="/actor/94431-waleed-zuaiter" class="cast-card">
+            <a href="/actor/94431-waleed-zuaiter.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tQwaOBIEKnFxTjfTFKrMdSkdSUz.jpg" alt="Waleed Zuaiter" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Waleed Zuaiter</span>
             </a>
-            <a href="/actor/1198661-karen-henthorn" class="cast-card">
+            <a href="/actor/1198661-karen-henthorn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bkpZ1bHOHpRnLEF0r9QwjUBwY5b.jpg" alt="Karen Henthorn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karen Henthorn</span>
             </a>
-            <a href="/actor/31427-tanya-moodie" class="cast-card">
+            <a href="/actor/31427-tanya-moodie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2q8dUtZuZZzb6pgD4ptKvRu5Dew.jpg" alt="Tanya Moodie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tanya Moodie</span>
             </a>
-            <a href="/actor/1687354-shalom-brune-franklin" class="cast-card">
+            <a href="/actor/1687354-shalom-brune-franklin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i1obmLM04mtp2yUrYG16sQ5VRgw.jpg" alt="Shalom Brune-Franklin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shalom Brune-Franklin</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

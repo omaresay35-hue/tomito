@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Teenage Mutant Ninja Turtles: Chrome Alone 2 - Lost in New Jersey</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2343267-micah-abbey" class="cast-card">
+            <a href="/actor/2343267-micah-abbey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nfQGd7AblQuHloLY3R4Lr46jQhL.jpg" alt="Micah Abbey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Micah Abbey</span>
             </a>
-            <a href="/actor/3127719-shamon-brown-jr" class="cast-card">
+            <a href="/actor/3127719-shamon-brown-jr.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wLg3pI7xqV5swxHnH7IfcSL5wjN.jpg" alt="Shamon Brown Jr." loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shamon Brown Jr.</span>
             </a>
-            <a href="/actor/2239159-brady-noon" class="cast-card">
+            <a href="/actor/2239159-brady-noon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qn7dJS2XxKfSoJdK9BVgFiPEeCJ.jpg" alt="Brady Noon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brady Noon</span>
             </a>
-            <a href="/actor/1696351-nicolas-cantu" class="cast-card">
+            <a href="/actor/1696351-nicolas-cantu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ySFxLOQ9ejiZddviRVf9bhZvDsf.jpg" alt="Nicolas Cantu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicolas Cantu</span>
             </a>
-            <a href="/actor/464993-zach-woods" class="cast-card">
+            <a href="/actor/464993-zach-woods.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jolb1uMzDZGTKOKyhgeG3RIsL2W.jpg" alt="Zach Woods" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zach Woods</span>
             </a>
-            <a href="/actor/1180696-beck-bennett" class="cast-card">
+            <a href="/actor/1180696-beck-bennett.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xbcVvJ1a7qUIdyYb4PJewFlNFu4.jpg" alt="Beck Bennett" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Beck Bennett</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

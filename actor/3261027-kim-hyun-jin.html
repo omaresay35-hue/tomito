@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/289690-love-phobia">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/289690-love-phobia.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3hsCoGDAceyh1FnFHHLkozPNlSS.jpg" alt="Love Phobia — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Love Phobia</div></div>
-    </a>    <a class="card" href="/tv/285278-idol-i">
+    </a>    <a class="card" href="/tv/285278-idol-i.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pKJLNbUh4uO2jwGsMfP4B37pamS.jpg" alt="Idol I — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Idol I</div></div>
-    </a>    <a class="card" href="/tv/285770-nice-to-not-meet-you">
+    </a>    <a class="card" href="/tv/285770-nice-to-not-meet-you.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/h14bGZcVxYQzLoxC8KYqUVWvYfU.jpg" alt="Nice to Not Meet You — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Nice to Not Meet You</div></div>
-    </a>    <a class="card" href="/tv/262828-crushology-101">
+    </a>    <a class="card" href="/tv/262828-crushology-101.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9K4rTjVM9YLsYLeQxgKuea8qonE.jpg" alt="Crushology 101 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Crushology 101</div></div>
-    </a>    <a class="card" href="/tv/215000-my-sweet-mobster">
+    </a>    <a class="card" href="/tv/215000-my-sweet-mobster.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zlSvVgzBcVPx7cus93c3Amdb4py.jpg" alt="My Sweet Mobster — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">My Sweet Mobster</div></div>
-    </a>    <a class="card" href="/tv/234061-dreaming-of-a-freaking-fairy-tale">
+    </a>    <a class="card" href="/tv/234061-dreaming-of-a-freaking-fairy-tale.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ngrKR7Vnb38vzLVKmc63GYnsZh9.jpg" alt="Dreaming of a Freaking Fairy Tale — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dreaming of a Freaking Fairy Tale</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

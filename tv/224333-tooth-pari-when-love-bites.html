@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Tooth Pari: When Love Bites</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2368989-tanya-maniktala" class="cast-card">
+            <a href="/actor/2368989-tanya-maniktala.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qO1qHiX7ygRG8tWnKqpp0igiJpG.jpg" alt="Tanya Maniktala" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tanya Maniktala</span>
             </a>
-            <a href="/actor/1255248-shantanu-maheshwari" class="cast-card">
+            <a href="/actor/1255248-shantanu-maheshwari.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dLdWKFHLFOjlLWYxvHVfpk170mJ.jpg" alt="Shantanu Maheshwari" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shantanu Maheshwari</span>
             </a>
-            <a href="/actor/1093644-saswata-chatterjee" class="cast-card">
+            <a href="/actor/1093644-saswata-chatterjee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cVJVLDy7BNzIbFMcJBPOWeN0Kb.jpg" alt="Saswata Chatterjee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saswata Chatterjee</span>
             </a>
-            <a href="/actor/6501-tillotama-shome" class="cast-card">
+            <a href="/actor/6501-tillotama-shome.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/53kVIXddZaPy6mnKdZZFuOXLUII.jpg" alt="Tillotama Shome" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tillotama Shome</span>
             </a>
-            <a href="/actor/584324-revathi" class="cast-card">
+            <a href="/actor/584324-revathi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sXS4erG255VJlP7XYAduNBNPyDL.jpg" alt="Revathi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Revathi</span>
             </a>
-            <a href="/actor/229123-sikandar-kher" class="cast-card">
+            <a href="/actor/229123-sikandar-kher.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sULXachczStfQLegNVmxcvuUTWZ.jpg" alt="Sikandar Kher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sikandar Kher</span>
             </a>
-            <a href="/actor/227849-adil-hussain" class="cast-card">
+            <a href="/actor/227849-adil-hussain.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eCWVa1pH7mmz0i9Q0l4VEKs7g6m.jpg" alt="Adil Hussain" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adil Hussain</span>
             </a>
-            <a href="/actor/1176773-anjan-dutt" class="cast-card">
+            <a href="/actor/1176773-anjan-dutt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lgCiLJXy1GfKpWRoRu6q4B6SAuy.jpg" alt="Anjan Dutt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anjan Dutt</span>
             </a>
-            <a href="/actor/2058170-swaroopa-ghosh" class="cast-card">
+            <a href="/actor/2058170-swaroopa-ghosh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/12p3p0GMDagVZvelK4RgZfZ3pJt.jpg" alt="Swaroopa Ghosh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Swaroopa Ghosh</span>
             </a>
-            <a href="/actor/1465048-soham-maitra" class="cast-card">
+            <a href="/actor/1465048-soham-maitra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fyp0G5JChcYrctikVAZaNAfM0Oj.jpg" alt="Soham Maitra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Soham Maitra</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

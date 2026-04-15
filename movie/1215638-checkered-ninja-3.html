@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Ternet Ninja 3</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/66843-anders-matthesen" class="cast-card">
+            <a href="/actor/66843-anders-matthesen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/46X1sw2Y5i2aABqcdUZXM0WTGgW.jpg" alt="Anders Matthesen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anders Matthesen</span>
             </a>
-            <a href="/actor/1680371-flora-ofelia-hofmann-lindahl" class="cast-card">
+            <a href="/actor/1680371-flora-ofelia-hofmann-lindahl.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1DtWmw87HRcXoqeWoGb9hCI0KDb.jpg" alt="Flora Ofelia Hofmann Lindahl" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Flora Ofelia Hofmann Lindahl</span>
             </a>
-            <a href="/actor/2950667-louis-næss-schmidt" class="cast-card">
+            <a href="/actor/2950667-louis-næss-schmidt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ui4oiYjLrjYfrmg9KIfRlskeHSB.jpg" alt="Louis Næss-Schmidt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louis Næss-Schmidt</span>
             </a>
-            <a href="/actor/89962-emma-sehested-høeg" class="cast-card">
+            <a href="/actor/89962-emma-sehested-høeg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2bLj3PRuGY4RHdZ6rJT3pW5W3Gi.jpg" alt="Emma Sehested Høeg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emma Sehested Høeg</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

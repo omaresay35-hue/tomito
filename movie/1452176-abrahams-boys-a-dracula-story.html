@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Abraham's Boys: A Dracula Story</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/39389-titus-welliver" class="cast-card">
+            <a href="/actor/39389-titus-welliver.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3hTwn7Maktr6ONq1VvfqyRacjiv.jpg" alt="Titus Welliver" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Titus Welliver</span>
             </a>
-            <a href="/actor/78804-jocelin-donahue" class="cast-card">
+            <a href="/actor/78804-jocelin-donahue.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/z5Vbl6FUAIb0zaYKmnpBwQBj2XM.jpg" alt="Jocelin Donahue" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jocelin Donahue</span>
             </a>
-            <a href="/actor/3013234-brady-hepner" class="cast-card">
+            <a href="/actor/3013234-brady-hepner.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gdOm2ynlLWBgSOVdQuKAwFbVVAf.jpg" alt="Brady Hepner" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brady Hepner</span>
             </a>
-            <a href="/actor/2476450-judah-mackey" class="cast-card">
+            <a href="/actor/2476450-judah-mackey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/Ao323vUjqEN8FyNmzMDqCB7lStY.jpg" alt="Judah Mackey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Judah Mackey</span>
             </a>
-            <a href="/actor/1313564-aurora-perrineau" class="cast-card">
+            <a href="/actor/1313564-aurora-perrineau.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/QJKR8Ffn3MeVrq1EZJGGnHOv7V.jpg" alt="Aurora Perrineau" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aurora Perrineau</span>
             </a>
-            <a href="/actor/2710310-corteon-moore" class="cast-card">
+            <a href="/actor/2710310-corteon-moore.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6jHlhaUdAOKEMmODVyQOQB4YMwY.jpg" alt="Corteon Moore" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Corteon Moore</span>
             </a>
-            <a href="/actor/1270111-jonathan-howard" class="cast-card">
+            <a href="/actor/1270111-jonathan-howard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a02kAZBDWaFEnoN31oNsGsRtBv2.jpg" alt="Jonathan Howard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jonathan Howard</span>
             </a>
-            <a href="/actor/94304-larry-cedar" class="cast-card">
+            <a href="/actor/94304-larry-cedar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mvfn1YoL9ACp4n51HZOD0TMs2Ah.jpg" alt="Larry Cedar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Larry Cedar</span>
             </a>
-            <a href="/actor/5498721-paul-wong" class="cast-card">
+            <a href="/actor/5498721-paul-wong.html" class="cast-card">
                 <img src="/favicon.ico" alt="Paul Wong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paul Wong</span>
             </a>
-            <a href="/actor/2837548-fayna-sanchez" class="cast-card">
+            <a href="/actor/2837548-fayna-sanchez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zxEgXmJfAFa3zlSnTaz1YvuDLS0.jpg" alt="Fayna Sanchez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fayna Sanchez</span>
             </a>
-            <a href="/actor/1455749-nick-epper" class="cast-card">
+            <a href="/actor/1455749-nick-epper.html" class="cast-card">
                 <img src="/favicon.ico" alt="Nick Epper" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nick Epper</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Tires</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3730008-steve-gerben" class="cast-card">
+            <a href="/actor/3730008-steve-gerben.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ih16WqF2Dpt2tC8T2RSOlHnMlJo.jpg" alt="Steve Gerben" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steve Gerben</span>
             </a>
-            <a href="/actor/3231008-shane-gillis" class="cast-card">
+            <a href="/actor/3231008-shane-gillis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ijRXBDjfazwne2jxjWEaaWqPw2.jpg" alt="Shane Gillis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shane Gillis</span>
             </a>
-            <a href="/actor/3231024-chris-oconnor" class="cast-card">
+            <a href="/actor/3231024-chris-oconnor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a4DEaNKTdJNy60jqN0zm8gNAy8R.jpg" alt="Chris O'Connor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris O'Connor</span>
             </a>
-            <a href="/actor/3231021-kilah-fox" class="cast-card">
+            <a href="/actor/3231021-kilah-fox.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mYTrC28BnZNj72dTbwuYdSlIWNc.jpg" alt="Kilah Fox" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kilah Fox</span>
             </a>
-            <a href="/actor/1400595-stavros-halkias" class="cast-card">
+            <a href="/actor/1400595-stavros-halkias.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9QB7YGMk6O7hRgGWvK0OimTVzl7.jpg" alt="Stavros Halkias" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stavros Halkias</span>
             </a>
-            <a href="/actor/19159-thomas-haden-church" class="cast-card">
+            <a href="/actor/19159-thomas-haden-church.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/74NK9HCYvNafMggSp1PAK5Nwkpe.jpg" alt="Thomas Haden Church" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thomas Haden Church</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

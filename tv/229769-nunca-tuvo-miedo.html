@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,23 +75,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2870462-pepe-garza" class="cast-card">
+            <a href="/actor/2870462-pepe-garza.html" class="cast-card">
                 <img src="/favicon.ico" alt="Pepe Garza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pepe Garza</span>
             </a>
-            <a href="/actor/4150092-chalino-sanchez" class="cast-card">
+            <a href="/actor/4150092-chalino-sanchez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Chalino Sanchez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chalino Sanchez</span>
             </a>
-            <a href="/actor/4150094-los-tucanes-de-tijuana" class="cast-card">
+            <a href="/actor/4150094-los-tucanes-de-tijuana.html" class="cast-card">
                 <img src="/favicon.ico" alt="Los Tucanes de Tijuana" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Los Tucanes de Tijuana</span>
             </a>
-            <a href="/actor/4150096-adán-chalino-sánchez" class="cast-card">
+            <a href="/actor/4150096-adán-chalino-sánchez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Adán Chalino Sánchez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adán Chalino Sánchez</span>
             </a>
-            <a href="/actor/4150098-kanales" class="cast-card">
+            <a href="/actor/4150098-kanales.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kanales" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kanales</span>
             </a></div></section>
@@ -99,13 +99,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

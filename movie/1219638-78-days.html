@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>78 дана</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1153128-goran-bogdan" class="cast-card">
+            <a href="/actor/1153128-goran-bogdan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wXgePhVmM9xjuxepIGkpvz4mouT.jpg" alt="Goran Bogdan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Goran Bogdan</span>
             </a>
-            <a href="/actor/81236-jelena-đokić" class="cast-card">
+            <a href="/actor/81236-jelena-đokić.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dLZFWjHUb1RSbhNDP4tehPLvSdk.jpg" alt="Jelena Đokić" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jelena Đokić</span>
             </a>
-            <a href="/actor/1361870-pavle-čemerikić" class="cast-card">
+            <a href="/actor/1361870-pavle-čemerikić.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pzImH5Qe2hUcDWvZQkeBEaSpQBV.jpg" alt="Pavle Čemerikić" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pavle Čemerikić</span>
             </a>
-            <a href="/actor/4469133-milica-gicić" class="cast-card">
+            <a href="/actor/4469133-milica-gicić.html" class="cast-card">
                 <img src="/favicon.ico" alt="Milica Gicić" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Milica Gicić</span>
             </a>
-            <a href="/actor/4469132-viktorija-vasiljević" class="cast-card">
+            <a href="/actor/4469132-viktorija-vasiljević.html" class="cast-card">
                 <img src="/favicon.ico" alt="Viktorija Vasiljević" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Viktorija Vasiljević</span>
             </a>
-            <a href="/actor/4889714-andrija-martinović" class="cast-card">
+            <a href="/actor/4889714-andrija-martinović.html" class="cast-card">
                 <img src="/favicon.ico" alt="Andrija Martinović" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrija Martinović</span>
             </a>
-            <a href="/actor/4469134-tamara-gajević" class="cast-card">
+            <a href="/actor/4469134-tamara-gajević.html" class="cast-card">
                 <img src="/favicon.ico" alt="Tamara Gajević" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tamara Gajević</span>
             </a>
-            <a href="/actor/2982676-mile-cvijović" class="cast-card">
+            <a href="/actor/2982676-mile-cvijović.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mile Cvijović" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mile Cvijović</span>
             </a>
-            <a href="/actor/4889717-ivana-simović" class="cast-card">
+            <a href="/actor/4889717-ivana-simović.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ivana Simović" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ivana Simović</span>
             </a>
-            <a href="/actor/4889718-biljana-konstantinović" class="cast-card">
+            <a href="/actor/4889718-biljana-konstantinović.html" class="cast-card">
                 <img src="/favicon.ico" alt="Biljana Konstantinović" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Biljana Konstantinović</span>
             </a>
-            <a href="/actor/4469135-maša-ćirović" class="cast-card">
+            <a href="/actor/4469135-maša-ćirović.html" class="cast-card">
                 <img src="/favicon.ico" alt="Maša Ćirović" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maša Ćirović</span>
             </a>
-            <a href="/actor/1784439-danijel-cvetković" class="cast-card">
+            <a href="/actor/1784439-danijel-cvetković.html" class="cast-card">
                 <img src="/favicon.ico" alt="Danijel Cvetković" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Danijel Cvetković</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

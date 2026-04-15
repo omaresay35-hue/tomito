@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Jimmy and Stiggs</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1194699-joe-begos" class="cast-card">
+            <a href="/actor/1194699-joe-begos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gSyP5nv2psvNsKirhApxO3Oa1bD.jpg" alt="Joe Begos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joe Begos</span>
             </a>
-            <a href="/actor/1186713-matt-mercer" class="cast-card">
+            <a href="/actor/1186713-matt-mercer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qhNnCjYsC7K1nDQe7GQ9Qamzost.jpg" alt="Matt Mercer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matt Mercer</span>
             </a>
-            <a href="/actor/785-james-russo" class="cast-card">
+            <a href="/actor/785-james-russo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nubhNb5OUkzsrndD1BNqzp7MGyo.jpg" alt="James Russo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Russo</span>
             </a>
-            <a href="/actor/2259152-riley-dandy" class="cast-card">
+            <a href="/actor/2259152-riley-dandy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/quhAWkEcdiG7fJgxJxlqTKkfbFH.jpg" alt="Riley Dandy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Riley Dandy</span>
             </a>
-            <a href="/actor/1194701-josh-ethier" class="cast-card">
+            <a href="/actor/1194701-josh-ethier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8DROpoQtncbjneiMdvse47uoK8l.jpg" alt="Josh Ethier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josh Ethier</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

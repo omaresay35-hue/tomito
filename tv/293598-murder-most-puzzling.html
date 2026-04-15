@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Murder Most Puzzling</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/127164-phyllis-logan" class="cast-card">
+            <a href="/actor/127164-phyllis-logan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jRNfzD3bA5fyPxXRTiDbfNsTcOV.jpg" alt="Phyllis Logan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Phyllis Logan</span>
             </a>
-            <a href="/actor/1052255-charlotte-hope" class="cast-card">
+            <a href="/actor/1052255-charlotte-hope.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ApsyxD8gK7TFYav2LRwE68D3YEE.jpg" alt="Charlotte Hope" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charlotte Hope</span>
             </a>
-            <a href="/actor/231666-alistair-brammer" class="cast-card">
+            <a href="/actor/231666-alistair-brammer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9jYWbSSbpto6eCISIeKO9J1vTWe.jpg" alt="Alistair Brammer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alistair Brammer</span>
             </a>
-            <a href="/actor/2994722-nick-danan" class="cast-card">
+            <a href="/actor/2994722-nick-danan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nPp7I0cVmawuCdLhwP673sUHVrH.jpg" alt="Nick Danan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nick Danan</span>
             </a>
-            <a href="/actor/1072601-adam-best" class="cast-card">
+            <a href="/actor/1072601-adam-best.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ffdCaZO38G0SB5twN608oDCEgQ8.jpg" alt="Adam Best" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Best</span>
             </a>
-            <a href="/actor/2271645-ashionye-michelle-raccah" class="cast-card">
+            <a href="/actor/2271645-ashionye-michelle-raccah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kN3y72RQu3gtn2jAdcgw29Bj8Hn.jpg" alt="Ashionye Michelle Raccah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ashionye Michelle Raccah</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

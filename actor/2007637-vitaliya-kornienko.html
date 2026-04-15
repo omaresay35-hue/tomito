@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1248723-the-golden-key-a-new-pinocchio-story">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1248723-the-golden-key-a-new-pinocchio-story.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/An3iR7yPP6GKQi2SDscWlEMFXAC.jpg" alt="The Golden Key: A New Pinocchio Story — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Golden Key: A New Pinocchio Story</div></div>
-    </a>    <a class="card" href="/movie/1205088-ice-3">
+    </a>    <a class="card" href="/movie/1205088-ice-3.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tr3DwTTm7o3KzajZLW1whrprY6H.jpg" alt="Ice 3 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Ice 3</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/234291-daddys-daughters-new">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/234291-daddys-daughters-new.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lYmzkYVq33E0wCqA5E8bJacT4PF.jpg" alt="Daddy's Daughters. New — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Daddy's Daughters. New</div></div>
-    </a>    <a class="card" href="/tv/217472-against-all-odds">
+    </a>    <a class="card" href="/tv/217472-against-all-odds.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/u8PaM3UW1fc6i5r1WJ2x0guvJbN.jpg" alt="Against All Odds — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Against All Odds</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

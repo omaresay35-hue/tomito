@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>家族だから愛したんじゃなくて、愛したのが家族だった</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2797433-yuumi-kawai" class="cast-card">
+            <a href="/actor/2797433-yuumi-kawai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qDJUUlqjhsRBpLYPfm0xVFNbBTY.jpg" alt="Yuumi Kawai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuumi Kawai</span>
             </a>
-            <a href="/actor/144238-miki-sakai" class="cast-card">
+            <a href="/actor/144238-miki-sakai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2mBsw4PDSMe3mmgfkvgtpcnI0Ls.jpg" alt="Miki Sakai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miki Sakai</span>
             </a>
-            <a href="/actor/125950-ryo-nishikido" class="cast-card">
+            <a href="/actor/125950-ryo-nishikido.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/b2ssoRn7GBGt3dPHzXXi7xGdLQg.jpg" alt="Ryo Nishikido" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryo Nishikido</span>
             </a>
-            <a href="/actor/3213323-aoi-yoshida" class="cast-card">
+            <a href="/actor/3213323-aoi-yoshida.html" class="cast-card">
                 <img src="/favicon.ico" alt="Aoi Yoshida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aoi Yoshida</span>
             </a>
-            <a href="/actor/1098336-jun-miho" class="cast-card">
+            <a href="/actor/1098336-jun-miho.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kUoh0d0AMDEqCatSOXKBQoJa5Uy.jpg" alt="Jun Miho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jun Miho</span>
             </a>
-            <a href="/actor/2130094-momoko-fukuchi" class="cast-card">
+            <a href="/actor/2130094-momoko-fukuchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jY5XOJlw69VWixEHm7MJBjoipuU.jpg" alt="Momoko Fukuchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Momoko Fukuchi</span>
             </a>
-            <a href="/actor/1168936-eita-okuno" class="cast-card">
+            <a href="/actor/1168936-eita-okuno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lh6452i8TnGFl10hPaDInGIPozz.jpg" alt="Eita Okuno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eita Okuno</span>
             </a>
-            <a href="/actor/146817-kento-hayashi" class="cast-card">
+            <a href="/actor/146817-kento-hayashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cOVo6xZ3FaFIdkQuzKrMiMmJdsh.jpg" alt="Kento Hayashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kento Hayashi</span>
             </a>
-            <a href="/actor/1014996-kanji-furutachi" class="cast-card">
+            <a href="/actor/1014996-kanji-furutachi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lDhhTMzBlR9v5XbjOmfilG0PaFj.jpg" alt="Kanji Furutachi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kanji Furutachi</span>
             </a>
-            <a href="/actor/1063266-maho-yamada" class="cast-card">
+            <a href="/actor/1063266-maho-yamada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oDHXLA6wsJRBWwQrRGM062p3ThU.jpg" alt="Maho Yamada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maho Yamada</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

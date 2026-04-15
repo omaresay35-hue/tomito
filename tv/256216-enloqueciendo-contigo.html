@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Enloqueciendo contigo</span>
   </nav>
 
@@ -72,15 +72,15 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1186606-regina-blandón" class="cast-card">
+            <a href="/actor/1186606-regina-blandón.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/EOJMYO7k6DBJAnsqvNTSIOsxYM.jpg" alt="Regina Blandón" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Regina Blandón</span>
             </a>
-            <a href="/actor/1317100-memo-villegas" class="cast-card">
+            <a href="/actor/1317100-memo-villegas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/osMk6myAbs0W06nRiZUXfVzJxxI.jpg" alt="Memo Villegas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Memo Villegas</span>
             </a>
-            <a href="/actor/1332305-daniel-garcia" class="cast-card">
+            <a href="/actor/1332305-daniel-garcia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jWwDJ0xopeN250zNJykcp1VyX2o.jpg" alt="Daniel Garcia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Garcia</span>
             </a></div></section>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسل</a> &gt; 
+    <a href="/index.html#series">مسلسل</a> &gt; 
     <span>災</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/46691-teruyuki-kagawa" class="cast-card">
+            <a href="/actor/46691-teruyuki-kagawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5pQwTpjkjOI4Ul5NL0vVTA3tEFI.jpg" alt="Teruyuki Kagawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Teruyuki Kagawa</span>
             </a>
-            <a href="/actor/1744548-anne-nakamura" class="cast-card">
+            <a href="/actor/1744548-anne-nakamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1E74om6R0oaTedZoBfJ768kuisi.jpg" alt="Anne Nakamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anne Nakamura</span>
             </a>
-            <a href="/actor/930345-pistol-takehara" class="cast-card">
+            <a href="/actor/930345-pistol-takehara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lRtjDTiRCAExtMF4IdXPziXVkaW.jpg" alt="Pistol Takehara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pistol Takehara</span>
             </a>
-            <a href="/actor/72932-ryuhei-matsuda" class="cast-card">
+            <a href="/actor/72932-ryuhei-matsuda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tG3wMOri6LdDV0ccnP0nNNF5TM4.jpg" alt="Ryuhei Matsuda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryuhei Matsuda</span>
             </a>
-            <a href="/actor/2018504-sena-nakajima" class="cast-card">
+            <a href="/actor/2018504-sena-nakajima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o6oCJO0rtgwCEFSb8Yc4MuhPSp1.jpg" alt="Sena Nakajima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sena Nakajima</span>
             </a>
-            <a href="/actor/1466336-chika-uchida" class="cast-card">
+            <a href="/actor/1466336-chika-uchida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bPq1EY6NqNEkmc16gdXbrSJWUL8.jpg" alt="Chika Uchida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chika Uchida</span>
             </a>
-            <a href="/actor/3000189-miyachika-kaito" class="cast-card">
+            <a href="/actor/3000189-miyachika-kaito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t0V2fMcj36D20qR85UP0e0GMTak.jpg" alt="Miyachika Kaito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miyachika Kaito</span>
             </a>
-            <a href="/actor/2298936-jiro" class="cast-card">
+            <a href="/actor/2298936-jiro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dYubMnPvxyhqeeAnvU1DfHZbd8J.jpg" alt="Jiro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jiro</span>
             </a>
-            <a href="/actor/134829-maki-sakai" class="cast-card">
+            <a href="/actor/134829-maki-sakai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pIUqUvagooKEg40MfiurOjPvCgY.jpg" alt="Maki Sakai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maki Sakai</span>
             </a>
-            <a href="/actor/1241709-yumi-adachi" class="cast-card">
+            <a href="/actor/1241709-yumi-adachi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/g4UvMSxsTNluTdoNnjI5bgA9pyx.jpg" alt="Yumi Adachi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yumi Adachi</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

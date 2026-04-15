@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Sisters Grimm</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/42160-ariel-winter" class="cast-card">
+            <a href="/actor/42160-ariel-winter.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1h0XaXnieP5CdTAeRGuALBJmD4R.jpg" alt="Ariel Winter" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ariel Winter</span>
             </a>
-            <a href="/actor/5650792-leah-newman" class="cast-card">
+            <a href="/actor/5650792-leah-newman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7P9bceeqagukU5rcdtS7em8b3Bz.jpg" alt="Leah Newman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leah Newman</span>
             </a>
-            <a href="/actor/35159-laraine-newman" class="cast-card">
+            <a href="/actor/35159-laraine-newman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wlc9dpH0GdWiXBRDzGMuUQcoPKe.jpg" alt="Laraine Newman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laraine Newman</span>
             </a>
-            <a href="/actor/2026407-abubakar-salim" class="cast-card">
+            <a href="/actor/2026407-abubakar-salim.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cUddJiPnCTDDOBuk7jTmLsiODMb.jpg" alt="Abubakar Salim" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Abubakar Salim</span>
             </a>
-            <a href="/actor/2750233-billy-harris" class="cast-card">
+            <a href="/actor/2750233-billy-harris.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dCQJjTUDkorhmWeaurj8SY8FoS.jpg" alt="Billy Harris" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Billy Harris</span>
             </a>
-            <a href="/actor/2104260-harry-trevaldwyn" class="cast-card">
+            <a href="/actor/2104260-harry-trevaldwyn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uYHekOiCHZoob1tW11vTceplA2e.jpg" alt="Harry Trevaldwyn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Harry Trevaldwyn</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

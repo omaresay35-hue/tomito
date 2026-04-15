@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Hola Frida!</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1033011-olivia-ruiz" class="cast-card">
+            <a href="/actor/1033011-olivia-ruiz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/27acJQUGiErjL8HTioYm6aSjpCS.jpg" alt="Olivia Ruiz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olivia Ruiz</span>
             </a>
-            <a href="/actor/5380949-emma-rodriguez" class="cast-card">
+            <a href="/actor/5380949-emma-rodriguez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Emma Rodriguez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emma Rodriguez</span>
             </a>
-            <a href="/actor/5380951-rebeca-gonzales" class="cast-card">
+            <a href="/actor/5380951-rebeca-gonzales.html" class="cast-card">
                 <img src="/favicon.ico" alt="Rebeca Gonzales" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rebeca Gonzales</span>
             </a>
-            <a href="/actor/3181056-léo-côté" class="cast-card">
+            <a href="/actor/3181056-léo-côté.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5Yp0ikne5LlBcNGtvqiuHZOPlcc.jpg" alt="Léo Côté" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Léo Côté</span>
             </a>
-            <a href="/actor/574833-sophie-faucher" class="cast-card">
+            <a href="/actor/574833-sophie-faucher.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mFRSVv0YfTbEjSX2VgnMzYKbTPN.jpg" alt="Sophie Faucher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sophie Faucher</span>
             </a>
-            <a href="/actor/96592-manuel-tadros" class="cast-card">
+            <a href="/actor/96592-manuel-tadros.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9RItQpjt0bQc3HTFpthOocahXHX.jpg" alt="Manuel Tadros" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manuel Tadros</span>
             </a>
-            <a href="/actor/5380953-anne-girard" class="cast-card">
+            <a href="/actor/5380953-anne-girard.html" class="cast-card">
                 <img src="/favicon.ico" alt="Anne Girard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anne Girard</span>
             </a>
-            <a href="/actor/2743573-joey-bélanger" class="cast-card">
+            <a href="/actor/2743573-joey-bélanger.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tWx4pvZN0HW2SG8wxyVYz3LUK0x.jpg" alt="Joey Bélanger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joey Bélanger</span>
             </a>
-            <a href="/actor/3414141-nini-marcelle" class="cast-card">
+            <a href="/actor/3414141-nini-marcelle.html" class="cast-card">
                 <img src="/favicon.ico" alt="Nini Marcelle" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nini Marcelle</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

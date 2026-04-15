@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>الأرنب الأسود</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/23532-jason-bateman" class="cast-card">
+            <a href="/actor/23532-jason-bateman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8e6mt0vGjPo6eW52gqRuXy5YnfN.jpg" alt="Jason Bateman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jason Bateman</span>
             </a>
-            <a href="/actor/9642-jude-law" class="cast-card">
+            <a href="/actor/9642-jude-law.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nBGVXLHsNzlG7ouoh4bDggaGKN1.jpg" alt="Jude Law" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jude Law</span>
             </a>
-            <a href="/actor/587438-chris-coy" class="cast-card">
+            <a href="/actor/587438-chris-coy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qM89KmZYCOC9VVUle5OPMP0i5U8.jpg" alt="Chris Coy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Coy</span>
             </a>
-            <a href="/actor/1571661-troy-kotsur" class="cast-card">
+            <a href="/actor/1571661-troy-kotsur.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/24K3og12jGBGL9dqH5OYFdjF9wu.jpg" alt="Troy Kotsur" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Troy Kotsur</span>
             </a>
-            <a href="/actor/1036288-abbey-lee" class="cast-card">
+            <a href="/actor/1036288-abbey-lee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y4ZIuFjtglTjSLxhGTkzsCPFMQZ.jpg" alt="Abbey Lee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Abbey Lee</span>
             </a>
-            <a href="/actor/1345495-odessa-young" class="cast-card">
+            <a href="/actor/1345495-odessa-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/woaCgEcSzzwayaeVleiac0NCNRK.jpg" alt="Odessa Young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Odessa Young</span>
             </a>
-            <a href="/actor/110505-robin-de-jesús" class="cast-card">
+            <a href="/actor/110505-robin-de-jesús.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cnXFjsy7OaKBGtCV9nFD5rNvq0N.jpg" alt="Robin de Jesús" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robin de Jesús</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

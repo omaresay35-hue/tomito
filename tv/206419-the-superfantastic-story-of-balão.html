@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,19 +75,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3616011-simony" class="cast-card">
+            <a href="/actor/3616011-simony.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tfCAljmk5uSwxEogfsItxctwRZB.jpg" alt="Simony" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Simony</span>
             </a>
-            <a href="/actor/4102172-mike-biggs" class="cast-card">
+            <a href="/actor/4102172-mike-biggs.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bKfc1n4s2PXlnNAbiVfk6KXRUot.jpg" alt="Mike Biggs" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mike Biggs</span>
             </a>
-            <a href="/actor/2803676-vímerson-cavanilas" class="cast-card">
+            <a href="/actor/2803676-vímerson-cavanilas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xlVfxaYOiU238kj1V8VH1RJwTsf.jpg" alt="Vímerson Cavanilas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vímerson Cavanilas</span>
             </a>
-            <a href="/actor/4102161-jair-oliveira" class="cast-card">
+            <a href="/actor/4102161-jair-oliveira.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qazoXU6TSxFxgyA2hFQxrFYxYmQ.jpg" alt="Jair Oliveira" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jair Oliveira</span>
             </a></div></section>
@@ -95,13 +95,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

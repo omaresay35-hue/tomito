@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>チェンソーマン 総集篇</span>
   </nav>
 
@@ -74,19 +74,19 @@ In addition to the re-edited material, the compilation includes newly animated s
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3651176-kikunosuke-toya" class="cast-card">
+            <a href="/actor/3651176-kikunosuke-toya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tSAHe7tjN7luUD1Tx5yPSCuCnuD.jpg" alt="Kikunosuke Toya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kikunosuke Toya</span>
             </a>
-            <a href="/actor/2004086-tomori-kusunoki" class="cast-card">
+            <a href="/actor/2004086-tomori-kusunoki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t5aBzyYiJZDE6DWeTcGMrcQpiI5.jpg" alt="Tomori Kusunoki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomori Kusunoki</span>
             </a>
-            <a href="/actor/2812912-shogo-sakata" class="cast-card">
+            <a href="/actor/2812912-shogo-sakata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fRRPNBz3OCNRdmLdUTdpq7dGqxM.jpg" alt="Shogo Sakata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shogo Sakata</span>
             </a>
-            <a href="/actor/2359492-fairouz-ai" class="cast-card">
+            <a href="/actor/2359492-fairouz-ai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/coFu6WOVBZvqd1fw89vbHkiC0zB.jpg" alt="Fairouz Ai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fairouz Ai</span>
             </a></div></section>
@@ -94,13 +94,6 @@ In addition to the re-edited material, the compilation includes newly animated s
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

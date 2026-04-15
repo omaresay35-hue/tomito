@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Gigolò per caso</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/69036-christian-de-sica" class="cast-card">
+            <a href="/actor/69036-christian-de-sica.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1FwVC0L29NWD92hh99cE4uvyWQ7.jpg" alt="Christian De Sica" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christian De Sica</span>
             </a>
-            <a href="/actor/221078-pietro-sermonti" class="cast-card">
+            <a href="/actor/221078-pietro-sermonti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iXgW3HCdSFTXnRz2fbDUDBKui7l.jpg" alt="Pietro Sermonti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pietro Sermonti</span>
             </a>
-            <a href="/actor/88710-ambra-angiolini" class="cast-card">
+            <a href="/actor/88710-ambra-angiolini.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wNUCviAu6EPNJ328xRoFzjdzl2W.jpg" alt="Ambra Angiolini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ambra Angiolini</span>
             </a>
-            <a href="/actor/1273683-frank-matano" class="cast-card">
+            <a href="/actor/1273683-frank-matano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fix2qkBDFgzJ6f5Zi6maZhOWyZs.jpg" alt="Frank Matano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Frank Matano</span>
             </a>
-            <a href="/actor/67164-francesco-bruni" class="cast-card">
+            <a href="/actor/67164-francesco-bruni.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qrKm20sexiwYukFhCOzm1p7iba.jpg" alt="Francesco Bruni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francesco Bruni</span>
             </a>
-            <a href="/actor/128236-sabrina-ferilli" class="cast-card">
+            <a href="/actor/128236-sabrina-ferilli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qb6NEkjxcO9JeApIphcQPevm5SL.jpg" alt="Sabrina Ferilli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sabrina Ferilli</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

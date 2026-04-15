@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1416589-brother">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1416589-brother.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fhrJYQ1EuPGXqG4B4lqnUYP0TFZ.jpg" alt="Brother — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Brother</div></div>
-    </a>    <a class="card" href="/movie/1204186-white-courage">
+    </a>    <a class="card" href="/movie/1204186-white-courage.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/aL1geO7bgA35ROAPzurb7jwPUmJ.jpg" alt="White Courage — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">White Courage</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/255548-x-rated-queen">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/255548-x-rated-queen.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/A2BoRnDG9mje2Vo7JZXREYI8w0r.jpg" alt="X-Rated Queen — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">X-Rated Queen</div></div>
-    </a>    <a class="card" href="/tv/230372-absolute-beginners">
+    </a>    <a class="card" href="/tv/230372-absolute-beginners.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/AkLuQdpKGZT2FjPJSYY2dVmuQH5.jpg" alt="Absolute Beginners — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Absolute Beginners</div></div>
-    </a>    <a class="card" href="/tv/230371-infamy">
+    </a>    <a class="card" href="/tv/230371-infamy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gXTMb2O7CZ9fLGIq5lrD9gpfALs.jpg" alt="Infamy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Infamy</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

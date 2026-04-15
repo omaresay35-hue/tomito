@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Olympe, une femme dans la Révolution</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/37628-julie-gayet" class="cast-card">
+            <a href="/actor/37628-julie-gayet.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wt2ZtI2RFcOWcaUoXp8O5jv1bmx.jpg" alt="Julie Gayet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julie Gayet</span>
             </a>
-            <a href="/actor/71038-dimitri-storoge" class="cast-card">
+            <a href="/actor/71038-dimitri-storoge.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iOKXXQW3bn1BKAZQbTaztWfw8sJ.jpg" alt="Dimitri Storoge" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dimitri Storoge</span>
             </a>
-            <a href="/actor/1150410-pauline-serieys" class="cast-card">
+            <a href="/actor/1150410-pauline-serieys.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rliDNpcFzuD3HaMIcO2gI1OEMHm.jpg" alt="Pauline Serieys" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pauline Serieys</span>
             </a>
-            <a href="/actor/1356-jean-pierre-lorit" class="cast-card">
+            <a href="/actor/1356-jean-pierre-lorit.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xP0IO3ZEAUmriWN36pAqeExloDK.jpg" alt="Jean-Pierre Lorit" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jean-Pierre Lorit</span>
             </a>
-            <a href="/actor/2349100-pablo-cobo" class="cast-card">
+            <a href="/actor/2349100-pablo-cobo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6UZYU3owWmdwLWM2R8YG2T2kMa8.jpg" alt="Pablo Cobo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pablo Cobo</span>
             </a>
-            <a href="/actor/4397-émilie-gavois-kahn" class="cast-card">
+            <a href="/actor/4397-émilie-gavois-kahn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1UWOiaw6O7VlcCwujtJpZb9ATD2.jpg" alt="Émilie Gavois-Kahn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Émilie Gavois-Kahn</span>
             </a>
-            <a href="/actor/1171209-frédéric-noaille" class="cast-card">
+            <a href="/actor/1171209-frédéric-noaille.html" class="cast-card">
                 <img src="/favicon.ico" alt="Frédéric Noaille" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Frédéric Noaille</span>
             </a>
-            <a href="/actor/4350349-lucas-ferraton" class="cast-card">
+            <a href="/actor/4350349-lucas-ferraton.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lucas Ferraton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucas Ferraton</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

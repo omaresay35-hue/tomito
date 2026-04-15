@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1293968-heros-island">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1293968-heros-island.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hOyiLqx1Kkk6Lwzq2BwoBKo1pAC.jpg" alt="Hero's Island — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Hero's Island</div></div>
-    </a>    <a class="card" href="/movie/1379266-kokuho">
+    </a>    <a class="card" href="/movie/1379266-kokuho.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/a15F5KJ4mleusJR1YKP4zUyZaxG.jpg" alt="Kokuho — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kokuho</div></div>
-    </a>    <a class="card" href="/movie/1309057-yasuko-songs-of-days-past">
+    </a>    <a class="card" href="/movie/1309057-yasuko-songs-of-days-past.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wOzsVbaK2475wjXXhs8AHmFl2Zi.jpg" alt="Yasuko, Songs of Days Past — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Yasuko, Songs of Days Past</div></div>
-    </a>    <a class="card" href="/movie/1361934-teki-cometh">
+    </a>    <a class="card" href="/movie/1361934-teki-cometh.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jF0r585MwSvqgyUx1S2hV7AqQnS.jpg" alt="Teki Cometh — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Teki Cometh</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/315438-loved-one">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/315438-loved-one.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5HTYaVD7UGo2YAvDOnsFgfqQX4i.jpg" alt="LOVED ONE — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">2026</div></div>
       <div class="card-bottom"><div class="card-title">LOVED ONE</div></div>
-    </a>    <a class="card" href="/tv/275998-who-saw-the-peacock-dance-in-the-jungle">
+    </a>    <a class="card" href="/tv/275998-who-saw-the-peacock-dance-in-the-jungle.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hkIuKTn0YFLqdzumNWFbTYPVani.jpg" alt="Who Saw the Peacock Dance in the Jungle? — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Who Saw the Peacock Dance in the Jungle?</div></div>
-    </a>    <a class="card" href="/tv/239790-dear-radiance">
+    </a>    <a class="card" href="/tv/239790-dear-radiance.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qmp4cH94zbQsjj5bCXlgQT20uYY.jpg" alt="Dear Radiance — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dear Radiance</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

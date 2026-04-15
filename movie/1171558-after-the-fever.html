@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>熱のあとに</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/559413-ai-hashimoto" class="cast-card">
+            <a href="/actor/559413-ai-hashimoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2sTNnkzF5e6dogfHEsnD1aU36J4.jpg" alt="Ai Hashimoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ai Hashimoto</span>
             </a>
-            <a href="/actor/1328328-taiga-nakano" class="cast-card">
+            <a href="/actor/1328328-taiga-nakano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5mVGPU8dylxs7tnpI2VfeKkumoJ.jpg" alt="Taiga Nakano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taiga Nakano</span>
             </a>
-            <a href="/actor/2092978-mai-kiryu" class="cast-card">
+            <a href="/actor/2092978-mai-kiryu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2NsaouRvBljwKh0XWhbhfJ5T41V.jpg" alt="Mai Kiryu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mai Kiryu</span>
             </a>
-            <a href="/actor/134829-maki-sakai" class="cast-card">
+            <a href="/actor/134829-maki-sakai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pIUqUvagooKEg40MfiurOjPvCgY.jpg" alt="Maki Sakai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maki Sakai</span>
             </a>
-            <a href="/actor/115652-hana-kino" class="cast-card">
+            <a href="/actor/115652-hana-kino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fw0iijyjfFFzibOZN0FqoxBPvpe.jpg" alt="Hana Kino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hana Kino</span>
             </a>
-            <a href="/actor/3118980-yui-narumi" class="cast-card">
+            <a href="/actor/3118980-yui-narumi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2aSqUSGXkIOfOF4L0tUyvJYme9h.jpg" alt="Yui Narumi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yui Narumi</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

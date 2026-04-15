@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>المعهد</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/25130-ben-barnes" class="cast-card">
+            <a href="/actor/25130-ben-barnes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k0tAM9XK0s4n0VQq1jX5cGf9uAa.jpg" alt="Ben Barnes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ben Barnes</span>
             </a>
-            <a href="/actor/3224159-joe-freeman" class="cast-card">
+            <a href="/actor/3224159-joe-freeman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/z0AzrUstVOkw2wDanWtTFAvzvY2.jpg" alt="Joe Freeman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joe Freeman</span>
             </a>
-            <a href="/actor/4910530-simone-miller" class="cast-card">
+            <a href="/actor/4910530-simone-miller.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/IK00CWfqxWGPo71Nsy3aBcVs0Z.jpg" alt="Simone Miller" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Simone Miller</span>
             </a>
-            <a href="/actor/4958994-fionn-laird" class="cast-card">
+            <a href="/actor/4958994-fionn-laird.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rkXhob9jRnLsFJk04qSKi4og2rN.jpg" alt="Fionn Laird" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fionn Laird</span>
             </a>
-            <a href="/actor/2997200-hannah-galway" class="cast-card">
+            <a href="/actor/2997200-hannah-galway.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t9Ry8fAGQ0kuKP927JaDzLMkPnJ.jpg" alt="Hannah Galway" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hannah Galway</span>
             </a>
-            <a href="/actor/2320-julian-richings" class="cast-card">
+            <a href="/actor/2320-julian-richings.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9Qf044hlSHjjoRngbI8h7txPNwU.jpg" alt="Julian Richings" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julian Richings</span>
             </a>
-            <a href="/actor/19976-robert-joy" class="cast-card">
+            <a href="/actor/19976-robert-joy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kPY9ggs4qCi3oeEvkYP17Yvfm5r.jpg" alt="Robert Joy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robert Joy</span>
             </a>
-            <a href="/actor/5921-martin-roach" class="cast-card">
+            <a href="/actor/5921-martin-roach.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/izsQ0GWOC9vbwFCUD9VsNhtXLfh.jpg" alt="Martin Roach" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Martin Roach</span>
             </a>
-            <a href="/actor/18248-mary-louise-parker" class="cast-card">
+            <a href="/actor/18248-mary-louise-parker.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1ohhrIZ4OMlLx9DvHjPhQJAIP0F.jpg" alt="Mary-Louise Parker" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mary-Louise Parker</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

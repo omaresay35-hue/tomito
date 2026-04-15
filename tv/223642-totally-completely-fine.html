@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Totally Completely Fine</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1356758-thomasin-mckenzie" class="cast-card">
+            <a href="/actor/1356758-thomasin-mckenzie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/WOpnEFG5Q8LWxP81MtUrskmVox.jpg" alt="Thomasin McKenzie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thomasin McKenzie</span>
             </a>
-            <a href="/actor/3096837-contessa-treffone" class="cast-card">
+            <a href="/actor/3096837-contessa-treffone.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dTbOyfB1GdymGkkUAvvO56ZcmF4.jpg" alt="Contessa Treffone" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Contessa Treffone</span>
             </a>
-            <a href="/actor/1620979-devon-terrell" class="cast-card">
+            <a href="/actor/1620979-devon-terrell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kXdDkKxcs2HMBT0lScv4Toigv7.jpg" alt="Devon Terrell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Devon Terrell</span>
             </a>
-            <a href="/actor/218366-rowan-witt" class="cast-card">
+            <a href="/actor/218366-rowan-witt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2DBXtPC8HUL9pvxNhkdPbHA93kj.jpg" alt="Rowan Witt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rowan Witt</span>
             </a>
-            <a href="/actor/1371801-brandon-mcclelland" class="cast-card">
+            <a href="/actor/1371801-brandon-mcclelland.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cYZ3Sk95h3FzSwVm4MqF6AtDC32.jpg" alt="Brandon McClelland" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brandon McClelland</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

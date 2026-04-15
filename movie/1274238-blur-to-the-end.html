@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>blur: To the End</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/64188-damon-albarn" class="cast-card">
+            <a href="/actor/64188-damon-albarn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/BmEl6u4OqP18ZhMfG393McOotM.jpg" alt="Damon Albarn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Damon Albarn</span>
             </a>
-            <a href="/actor/18080-alex-james" class="cast-card">
+            <a href="/actor/18080-alex-james.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/votazUB86dVEIHEJcM4e1OLsExN.jpg" alt="Alex James" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alex James</span>
             </a>
-            <a href="/actor/108119-graham-coxon" class="cast-card">
+            <a href="/actor/108119-graham-coxon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ukdXKfn88RizOG7rZIQtOnIR7RD.jpg" alt="Graham Coxon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Graham Coxon</span>
             </a>
-            <a href="/actor/128963-dave-rowntree" class="cast-card">
+            <a href="/actor/128963-dave-rowntree.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3vvipmjUUkaREQF6DizIzbyqji2.jpg" alt="Dave Rowntree" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dave Rowntree</span>
             </a>
-            <a href="/actor/65301-phil-daniels" class="cast-card">
+            <a href="/actor/65301-phil-daniels.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6yNFNjo3cWEcuAUrl0CNQnAnQ5M.jpg" alt="Phil Daniels" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Phil Daniels</span>
             </a>
-            <a href="/actor/1342414-pauline-black" class="cast-card">
+            <a href="/actor/1342414-pauline-black.html" class="cast-card">
                 <img src="/favicon.ico" alt="Pauline Black" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pauline Black</span>
             </a>
-            <a href="/actor/1230253-steve-davis" class="cast-card">
+            <a href="/actor/1230253-steve-davis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pYjoG2MuaeoxnKfcopPvdbvsjGm.jpg" alt="Steve Davis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steve Davis</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

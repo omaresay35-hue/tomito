@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Questo mondo non mi renderà cattivo</span>
   </nav>
 
@@ -72,11 +72,11 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2091858-zerocalcare" class="cast-card">
+            <a href="/actor/2091858-zerocalcare.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j6ekOerVCBuugHxtttL1qSx0X2y.jpg" alt="Zerocalcare" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zerocalcare</span>
             </a>
-            <a href="/actor/56843-valerio-mastandrea" class="cast-card">
+            <a href="/actor/56843-valerio-mastandrea.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tE7JkSuyv2N8vtEN0YypsCAxW9B.jpg" alt="Valerio Mastandrea" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Valerio Mastandrea</span>
             </a></div></section>
@@ -84,13 +84,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

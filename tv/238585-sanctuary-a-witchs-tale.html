@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Sanctuary: A Witch's Tale</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/20054-elaine-cassidy" class="cast-card">
+            <a href="/actor/20054-elaine-cassidy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4pJCUt9JhraPZ2HJoPxbyrbKy5N.jpg" alt="Elaine Cassidy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elaine Cassidy</span>
             </a>
-            <a href="/actor/1546861-hazel-doupe" class="cast-card">
+            <a href="/actor/1546861-hazel-doupe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/72eUrm3lWQNO5p0tyimIkgHPDjs.jpg" alt="Hazel Doupe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hazel Doupe</span>
             </a>
-            <a href="/actor/2280650-stephanie-levi-john" class="cast-card">
+            <a href="/actor/2280650-stephanie-levi-john.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bNZm4H77c5cNx8FmOhvDoeJSR0G.jpg" alt="Stephanie Levi-John" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephanie Levi-John</span>
             </a>
-            <a href="/actor/85977-clive-standen" class="cast-card">
+            <a href="/actor/85977-clive-standen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4wYmTI77N6giNkJp6DOfSAsishK.jpg" alt="Clive Standen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Clive Standen</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

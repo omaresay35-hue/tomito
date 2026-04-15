@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,15 +73,15 @@ Connor previously appeared in the films Get Santa (2014), Rocketman (2019), a
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1241436-warfare">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1241436-warfare.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/l39TlELomwysfsr37vrvCV6rmaQ.jpg" alt="Warfare — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Warfare</div></div>
-    </a>    <a class="card" href="/movie/1184918-the-wild-robot">
+    </a>    <a class="card" href="/movie/1184918-the-wild-robot.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eG9lz41mJqsI4J6ubMtVqD26q2J.jpg" alt="The Wild Robot — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Wild Robot</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/124834-heartstopper">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/124834-heartstopper.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wJJt1HG62h3WoGnLcRIbO2nNNkg.jpg" alt="Heartstopper — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Heartstopper</div></div>
@@ -90,13 +90,6 @@ Connor previously appeared in the films Get Santa (2014), Rocketman (2019), a
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

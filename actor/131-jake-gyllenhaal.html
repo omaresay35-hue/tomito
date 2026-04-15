@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ He began acting as a child, making his acting debut in City Slickers (1991), fol
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1159831-the-bride">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1159831-the-bride.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lV8YHwGkYZsm6EfIqnhaSz2avKt.jpg" alt="The Bride! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Bride!</div></div>
-    </a>    <a class="card" href="/movie/359410-road-house">
+    </a>    <a class="card" href="/movie/359410-road-house.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fDEdtS4P0gJsxHDIt8dG8TR5dx1.jpg" alt="Road House — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Road House</div></div>
-    </a>    <a class="card" href="/movie/9777-proof">
+    </a>    <a class="card" href="/movie/9777-proof.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/h5z4JWhaPYMMXhYzwuK7SUgjmMm.jpg" alt="Proof — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Proof</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/156933-presumed-innocent">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/156933-presumed-innocent.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7MXg0BxuSRWz2yKc03M40du2mrc.jpg" alt="Presumed Innocent — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Presumed Innocent</div></div>
@@ -94,13 +94,6 @@ He began acting as a child, making his acting debut in City Slickers (1991), fol
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

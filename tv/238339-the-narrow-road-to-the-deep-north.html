@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Narrow Road to the Deep North</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2034418-jacob-elordi" class="cast-card">
+            <a href="/actor/2034418-jacob-elordi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1csUnKCfwqcsd796N8uPQoDRA6x.jpg" alt="Jacob Elordi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jacob Elordi</span>
             </a>
-            <a href="/actor/8785-ciarán-hinds" class="cast-card">
+            <a href="/actor/8785-ciarán-hinds.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d8wLIX9VYgwXRGSp1gmUdUxmApv.jpg" alt="Ciarán Hinds" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ciarán Hinds</span>
             </a>
-            <a href="/actor/1345495-odessa-young" class="cast-card">
+            <a href="/actor/1345495-odessa-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/woaCgEcSzzwayaeVleiac0NCNRK.jpg" alt="Odessa Young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Odessa Young</span>
             </a>
-            <a href="/actor/1385063-olivia-dejonge" class="cast-card">
+            <a href="/actor/1385063-olivia-dejonge.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/djwVsgwrsjlPRKL3o11kBxc7CK6.jpg" alt="Olivia DeJonge" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olivia DeJonge</span>
             </a>
-            <a href="/actor/61350-heather-mitchell" class="cast-card">
+            <a href="/actor/61350-heather-mitchell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4SxRlg8JA1EguchlyuHurOMVlji.jpg" alt="Heather Mitchell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Heather Mitchell</span>
             </a>
-            <a href="/actor/1871926-show-kasamatsu" class="cast-card">
+            <a href="/actor/1871926-show-kasamatsu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tDASDMyIZQFooUQimqrVCd4rN5I.jpg" alt="Show Kasamatsu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Show Kasamatsu</span>
             </a>
-            <a href="/actor/1284159-simon-baker" class="cast-card">
+            <a href="/actor/1284159-simon-baker.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8RPbdwSOJ3DEQDQaj05zBFaUu5f.jpg" alt="Simon Baker" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Simon Baker</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

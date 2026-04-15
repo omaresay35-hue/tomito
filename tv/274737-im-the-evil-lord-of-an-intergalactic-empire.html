@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>俺は星間国家の悪徳領主！</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1256603-natsuki-hanae" class="cast-card">
+            <a href="/actor/1256603-natsuki-hanae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/alTb0DlcPIbcwM08WSmxFai58sd.jpg" alt="Natsuki Hanae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natsuki Hanae</span>
             </a>
-            <a href="/actor/1452028-reina-ueda" class="cast-card">
+            <a href="/actor/1452028-reina-ueda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2WV61uVU7y6XGYqNHLMpP0sApdu.jpg" alt="Reina Ueda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reina Ueda</span>
             </a>
-            <a href="/actor/84508-takehito-koyasu" class="cast-card">
+            <a href="/actor/84508-takehito-koyasu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8uBkNDKPNmp9JWgMUI02NVyfhi1.jpg" alt="Takehito Koyasu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takehito Koyasu</span>
             </a>
-            <a href="/actor/1281498-mikako-komatsu" class="cast-card">
+            <a href="/actor/1281498-mikako-komatsu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/13tQEZ1tLdOmi7oGoRJ4xep1ODQ.jpg" alt="Mikako Komatsu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mikako Komatsu</span>
             </a>
-            <a href="/actor/1072776-ayana-taketatsu" class="cast-card">
+            <a href="/actor/1072776-ayana-taketatsu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5JyZSnHwP18DIcVSqlGUwccA2WE.jpg" alt="Ayana Taketatsu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayana Taketatsu</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

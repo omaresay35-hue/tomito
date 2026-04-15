@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>あなたがしてくれなくても</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2301723-nao" class="cast-card">
+            <a href="/actor/2301723-nao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rnZDY9UOjZcuuIVh9BpxjoGr55F.jpg" alt="Nao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nao</span>
             </a>
-            <a href="/actor/1384549-takanori-iwata" class="cast-card">
+            <a href="/actor/1384549-takanori-iwata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/c4YQfIROreyJBLja3zzhZPrYTwi.jpg" alt="Takanori Iwata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takanori Iwata</span>
             </a>
-            <a href="/actor/117975-eita-nagayama" class="cast-card">
+            <a href="/actor/117975-eita-nagayama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/10Q2xdJyMJ4Bngx8NDYtFbBcWLQ.jpg" alt="Eita Nagayama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eita Nagayama</span>
             </a>
-            <a href="/actor/2695029-minami-tanaka" class="cast-card">
+            <a href="/actor/2695029-minami-tanaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a4owLLPAec6N6cO5UWf8Uq5SsaI.jpg" alt="Minami Tanaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Minami Tanaka</span>
             </a>
-            <a href="/actor/2023708-honami-sato" class="cast-card">
+            <a href="/actor/2023708-honami-sato.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qh9aBsOfCwpQ0N3mjDUNVikzIbs.jpg" alt="Honami Sato" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Honami Sato</span>
             </a>
-            <a href="/actor/1509729-rena-takeda" class="cast-card">
+            <a href="/actor/1509729-rena-takeda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dPUhBBKWUvmglC5PbGbCUumat24.jpg" alt="Rena Takeda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rena Takeda</span>
             </a>
-            <a href="/actor/135374-nene-otsuka" class="cast-card">
+            <a href="/actor/135374-nene-otsuka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/48TFOrOB7oZOJ0LXbYQb7p5PE1z.jpg" alt="Nene Otsuka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nene Otsuka</span>
             </a>
-            <a href="/actor/1211811-megumi" class="cast-card">
+            <a href="/actor/1211811-megumi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9qqVBUuiszwHErmVx9wIXp6wPqk.jpg" alt="MEGUMI" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>MEGUMI</span>
             </a>
-            <a href="/actor/1398752-shohei-uno" class="cast-card">
+            <a href="/actor/1398752-shohei-uno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xgjFsFTr7oJYqWGaaJabFW47aVV.jpg" alt="Shohei Uno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shohei Uno</span>
             </a>
-            <a href="/actor/4715054-keigo-dei" class="cast-card">
+            <a href="/actor/4715054-keigo-dei.html" class="cast-card">
                 <img src="/favicon.ico" alt="Keigo Dei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keigo Dei</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

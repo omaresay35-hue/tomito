@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Les Graines du figuier sauvage</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1574748-soheila-golestani" class="cast-card">
+            <a href="/actor/1574748-soheila-golestani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lBoGDXEEInw4z0nHwdqT4xDXqBb.jpg" alt="Soheila Golestani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Soheila Golestani</span>
             </a>
-            <a href="/actor/1698967-misagh-zare" class="cast-card">
+            <a href="/actor/1698967-misagh-zare.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2ZWxNIAAphz582MNkpAuJyBcOiq.jpg" alt="Misagh Zare" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Misagh Zare</span>
             </a>
-            <a href="/actor/4710576-mahsa-rostami" class="cast-card">
+            <a href="/actor/4710576-mahsa-rostami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7IYW7HbwLhFIb65D5Q5LuYHer0U.jpg" alt="Mahsa Rostami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mahsa Rostami</span>
             </a>
-            <a href="/actor/3236474-setareh-maleki" class="cast-card">
+            <a href="/actor/3236474-setareh-maleki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x9eldecmS11TrnqhGnO1AtfltWD.jpg" alt="Setareh Maleki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Setareh Maleki</span>
             </a>
-            <a href="/actor/4734435-niousha-akhshi" class="cast-card">
+            <a href="/actor/4734435-niousha-akhshi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2ffYN2Qsxyo9fM05qjBJXM92qQS.jpg" alt="Niousha Akhshi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Niousha Akhshi</span>
             </a>
-            <a href="/actor/1813384-reza-akhlaghirad" class="cast-card">
+            <a href="/actor/1813384-reza-akhlaghirad.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eYvcgf3rayY1pRKnYwWpmpXJU45.jpg" alt="Reza Akhlaghirad" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reza Akhlaghirad</span>
             </a>
-            <a href="/actor/2505349-shiva-ordooie" class="cast-card">
+            <a href="/actor/2505349-shiva-ordooie.html" class="cast-card">
                 <img src="/favicon.ico" alt="Shiva Ordooie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shiva Ordooie</span>
             </a>
-            <a href="/actor/4277062-amineh-mazrouie-arani" class="cast-card">
+            <a href="/actor/4277062-amineh-mazrouie-arani.html" class="cast-card">
                 <img src="/favicon.ico" alt="Amineh Mazrouie Arani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amineh Mazrouie Arani</span>
             </a>
-            <a href="/actor/2051924-mohammad-kamal-alavi" class="cast-card">
+            <a href="/actor/2051924-mohammad-kamal-alavi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mohammad Kamal Alavi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mohammad Kamal Alavi</span>
             </a>
-            <a href="/actor/5200017-parisa-mohyedini" class="cast-card">
+            <a href="/actor/5200017-parisa-mohyedini.html" class="cast-card">
                 <img src="/favicon.ico" alt="Parisa Mohyedini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Parisa Mohyedini</span>
             </a>
-            <a href="/actor/5200018-barat-azimi" class="cast-card">
+            <a href="/actor/5200018-barat-azimi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Barat Azimi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Barat Azimi</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

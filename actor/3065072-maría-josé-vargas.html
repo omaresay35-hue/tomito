@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1327881-voice-of-shadows">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1327881-voice-of-shadows.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hffZQgrulC6jgneLuTANQrYgiui.jpg" alt="Voice of Shadows — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Voice of Shadows</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/274326-darío-gómez-el-rey-del-despecho">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/274326-darío-gómez-el-rey-del-despecho.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tP1bh0mWYgVoV3BseIZvlVPGxoQ.jpg" alt="Darío Gómez: El rey del despecho — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Darío Gómez: El rey del despecho</div></div>
-    </a>    <a class="card" href="/tv/231505-i-love-you-and-it-hurts">
+    </a>    <a class="card" href="/tv/231505-i-love-you-and-it-hurts.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3vkLoub7HsZZj9e6YOlgQrxyITS.jpg" alt="I Love You, and It Hurts — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">I Love You, and It Hurts</div></div>
-    </a>    <a class="card" href="/tv/231455-tía-alison">
+    </a>    <a class="card" href="/tv/231455-tía-alison.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xJtbFMxeGF6iFzpZMCZw7znVpLe.jpg" alt="Tía Alison — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Tía Alison</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

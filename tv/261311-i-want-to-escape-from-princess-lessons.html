@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>妃教育から逃げたい私</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1124536-haruka-shiraishi" class="cast-card">
+            <a href="/actor/1124536-haruka-shiraishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hrQxTVNGLi3jXC7v4kETArpA0dV.jpg" alt="Haruka Shiraishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Haruka Shiraishi</span>
             </a>
-            <a href="/actor/131563-jun-fukuyama" class="cast-card">
+            <a href="/actor/131563-jun-fukuyama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eT9eloyIaIkTvTqMmpcsAleP2hM.jpg" alt="Jun Fukuyama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jun Fukuyama</span>
             </a>
-            <a href="/actor/1255698-yuka-saitou" class="cast-card">
+            <a href="/actor/1255698-yuka-saitou.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rUF0jJ6Ig0RBD0VGehBpxiMPdDI.jpg" alt="Yuka Saitou" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuka Saitou</span>
             </a>
-            <a href="/actor/221772-wataru-hatano" class="cast-card">
+            <a href="/actor/221772-wataru-hatano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i1meHlOXLP2ubJZkmyGJONrxikQ.jpg" alt="Wataru Hatano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wataru Hatano</span>
             </a>
-            <a href="/actor/210350-mie-sonozaki" class="cast-card">
+            <a href="/actor/210350-mie-sonozaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iYnpn1e7Ba1oMK8ZdgAvqzxng9e.jpg" alt="Mie Sonozaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mie Sonozaki</span>
             </a>
-            <a href="/actor/1922640-shun-horie" class="cast-card">
+            <a href="/actor/1922640-shun-horie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1OFi5ofRX0B2ldTPF8ThzLI2wKa.jpg" alt="Shun Horie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shun Horie</span>
             </a>
-            <a href="/actor/1605644-rie-suegara" class="cast-card">
+            <a href="/actor/1605644-rie-suegara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1UBLJoxpVEWblEjFnGlq9U5kkGa.jpg" alt="Rie Suegara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rie Suegara</span>
             </a>
-            <a href="/actor/1922635-shunichi-toki" class="cast-card">
+            <a href="/actor/1922635-shunichi-toki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3hauO9r1NEzgXxk8d2ed1p5dnxM.jpg" alt="Shunichi Toki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shunichi Toki</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

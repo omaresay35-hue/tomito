@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>División Palermo</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2156628-santiago-korovsky" class="cast-card">
+            <a href="/actor/2156628-santiago-korovsky.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1Al3C4PmVLxj05kLs681W5kEZQ.jpg" alt="Santiago Korovsky" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Santiago Korovsky</span>
             </a>
-            <a href="/actor/131867-daniel-hendler" class="cast-card">
+            <a href="/actor/131867-daniel-hendler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Q36TGfbnm4CjuKVWz1XGmTiZtk.jpg" alt="Daniel Hendler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Hendler</span>
             </a>
-            <a href="/actor/1086355-pilar-gamboa" class="cast-card">
+            <a href="/actor/1086355-pilar-gamboa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nBhqzOm0SfEskzL3hacEQWhZd5b.jpg" alt="Pilar Gamboa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pilar Gamboa</span>
             </a>
-            <a href="/actor/3362517-hernán-cuevas" class="cast-card">
+            <a href="/actor/3362517-hernán-cuevas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oH0hnp2c46d9PDFsSIK8ecwQpkC.jpg" alt="Hernán Cuevas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hernán Cuevas</span>
             </a>
-            <a href="/actor/4062567-valeria-licciardi" class="cast-card">
+            <a href="/actor/4062567-valeria-licciardi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sz3UxYx51HX112F2XytGXr7zZvu.jpg" alt="Valeria Licciardi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Valeria Licciardi</span>
             </a>
-            <a href="/actor/4062569-facundo-bogarín" class="cast-card">
+            <a href="/actor/4062569-facundo-bogarín.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lJZV3JDQKiEefMynIPUn4E0m0W1.jpg" alt="Facundo Bogarín" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Facundo Bogarín</span>
             </a>
-            <a href="/actor/3944545-renato-condori" class="cast-card">
+            <a href="/actor/3944545-renato-condori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2FamNY5N8xtOWwZ2TRGabotJ6Lu.jpg" alt="Renato Condori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Renato Condori</span>
             </a>
-            <a href="/actor/5681534-santiago-demarco" class="cast-card">
+            <a href="/actor/5681534-santiago-demarco.html" class="cast-card">
                 <img src="/favicon.ico" alt="Santiago Demarco" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Santiago Demarco</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

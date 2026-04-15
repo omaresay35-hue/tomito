@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ある魔女が死ぬまで</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1643476-yoshino-aoyama" class="cast-card">
+            <a href="/actor/1643476-yoshino-aoyama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yPOprcT7tPKR3p79RMYtogTEXGr.jpg" alt="Yoshino Aoyama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshino Aoyama</span>
             </a>
-            <a href="/actor/624-yoshiko-sakakibara" class="cast-card">
+            <a href="/actor/624-yoshiko-sakakibara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bptHqpgbAxIzEoj6OMtt3ayOjgT.jpg" alt="Yoshiko Sakakibara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshiko Sakakibara</span>
             </a>
-            <a href="/actor/2388269-miharu-hanai" class="cast-card">
+            <a href="/actor/2388269-miharu-hanai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uJLbkjW9MlyHVSaSIh3rqCmapBb.jpg" alt="Miharu Hanai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miharu Hanai</span>
             </a>
-            <a href="/actor/1661870-aina-suzuki" class="cast-card">
+            <a href="/actor/1661870-aina-suzuki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bRLwfft4yckDTpLenlbTrt3FRRN.jpg" alt="Aina Suzuki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aina Suzuki</span>
             </a>
-            <a href="/actor/1256913-rumi-okubo" class="cast-card">
+            <a href="/actor/1256913-rumi-okubo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cf4cnFMllu1yO3X0gCGGDdl8GXW.jpg" alt="Rumi Okubo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rumi Okubo</span>
             </a>
-            <a href="/actor/2956795-hina-youmiya" class="cast-card">
+            <a href="/actor/2956795-hina-youmiya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tOy21NTNnKuZG48JCL673tTP16z.jpg" alt="Hina Youmiya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hina Youmiya</span>
             </a>
-            <a href="/actor/1588597-atsumi-tanezaki" class="cast-card">
+            <a href="/actor/1588597-atsumi-tanezaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6tM8GU7QvrdUCvR4kxqVUZivtvO.jpg" alt="Atsumi Tanezaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Atsumi Tanezaki</span>
             </a>
-            <a href="/actor/571993-shizuka-itoh" class="cast-card">
+            <a href="/actor/571993-shizuka-itoh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n47YvFPlJzl8HnsoDBtM8SUqG8q.jpg" alt="Shizuka Itoh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shizuka Itoh</span>
             </a>
-            <a href="/actor/1072774-yoko-hikasa" class="cast-card">
+            <a href="/actor/1072774-yoko-hikasa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mP3bj0s1gqJ6tCKFLhu4b1CkJj7.jpg" alt="Yoko Hikasa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoko Hikasa</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

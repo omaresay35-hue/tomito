@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>SANDA</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1325230-ayumu-murase" class="cast-card">
+            <a href="/actor/1325230-ayumu-murase.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3aGM6KpcCIEKOXP9510tzaKc8uw.jpg" alt="Ayumu Murase" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayumu Murase</span>
             </a>
-            <a href="/actor/89832-hiroki-touchi" class="cast-card">
+            <a href="/actor/89832-hiroki-touchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bU2vogWmnTWiQEwUADWlnBqAPhJ.jpg" alt="Hiroki Touchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiroki Touchi</span>
             </a>
-            <a href="/actor/1182773-umeka-shouji" class="cast-card">
+            <a href="/actor/1182773-umeka-shouji.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/PZWLxxNycIa2h7Ul973gECdP6s.jpg" alt="Umeka Shouji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Umeka Shouji</span>
             </a>
-            <a href="/actor/2889712-anna-nagase" class="cast-card">
+            <a href="/actor/2889712-anna-nagase.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gFKRUlUlqTD7jGdysg5IWIvgoCH.jpg" alt="Anna Nagase" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anna Nagase</span>
             </a>
-            <a href="/actor/2603957-yuuki-shin" class="cast-card">
+            <a href="/actor/2603957-yuuki-shin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pyOAlLSA9ZabbVy5HD8j9QuUdV8.jpg" alt="Yuuki Shin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuuki Shin</span>
             </a>
-            <a href="/actor/2440223-misato-matsuoka" class="cast-card">
+            <a href="/actor/2440223-misato-matsuoka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zSB8zgGwFGFq2EL3cWobQifsIXt.jpg" alt="Misato Matsuoka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Misato Matsuoka</span>
             </a>
-            <a href="/actor/90571-toshihiko-seki" class="cast-card">
+            <a href="/actor/90571-toshihiko-seki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7jUPvx4hxWZWZJgyiCwd8KxWuvI.jpg" alt="Toshihiko Seki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Toshihiko Seki</span>
             </a>
-            <a href="/actor/84505-hiroaki-hirata" class="cast-card">
+            <a href="/actor/84505-hiroaki-hirata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mMWEdlssJm3TVuXW4Wb7pQeX20Z.jpg" alt="Hiroaki Hirata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiroaki Hirata</span>
             </a>
-            <a href="/actor/90496-masako-nozawa" class="cast-card">
+            <a href="/actor/90496-masako-nozawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jxbXdejmPoiKnNoQz7Dkb80qC26.jpg" alt="Masako Nozawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masako Nozawa</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

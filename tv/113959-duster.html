@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Duster</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/142636-josh-holloway" class="cast-card">
+            <a href="/actor/142636-josh-holloway.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/biuhUJn5BDhXpfKvVW4dVUxvB44.jpg" alt="Josh Holloway" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josh Holloway</span>
             </a>
-            <a href="/actor/970769-rachel-hilson" class="cast-card">
+            <a href="/actor/970769-rachel-hilson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nweHoDB305tViP7998kI14QjCK3.jpg" alt="Rachel Hilson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rachel Hilson</span>
             </a>
-            <a href="/actor/2694073-asivak-koostachin" class="cast-card">
+            <a href="/actor/2694073-asivak-koostachin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4fU8StrLbYHSwiLOKjX0Bp2yrzI.jpg" alt="Asivak Koostachin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Asivak Koostachin</span>
             </a>
-            <a href="/actor/3924308-sydney-elisabeth" class="cast-card">
+            <a href="/actor/3924308-sydney-elisabeth.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sydney Elisabeth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sydney Elisabeth</span>
             </a>
-            <a href="/actor/1482604-benjamin-charles-watson" class="cast-card">
+            <a href="/actor/1482604-benjamin-charles-watson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r5mA9a7GSKoPDndeUFMf9r71HMR.jpg" alt="Benjamin Charles Watson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Benjamin Charles Watson</span>
             </a>
-            <a href="/actor/81106-camille-guaty" class="cast-card">
+            <a href="/actor/81106-camille-guaty.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l7LQt6VYq5aOpU4RvCUDx4f9vjz.jpg" alt="Camille Guaty" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Camille Guaty</span>
             </a>
-            <a href="/actor/3924309-adriana-aluna-martinez" class="cast-card">
+            <a href="/actor/3924309-adriana-aluna-martinez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n5BIgr0mNh8imRKvEGCasbBiucl.jpg" alt="Adriana Aluna Martinez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adriana Aluna Martinez</span>
             </a>
-            <a href="/actor/17305-greg-grunberg" class="cast-card">
+            <a href="/actor/17305-greg-grunberg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ir2QunLf6aTaowpEygbIcjiZLDB.jpg" alt="Greg Grunberg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Greg Grunberg</span>
             </a>
-            <a href="/actor/65827-keith-david" class="cast-card">
+            <a href="/actor/65827-keith-david.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hwykAZLSIP5Cb2bbauZ4CEEmq0u.jpg" alt="Keith David" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keith David</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

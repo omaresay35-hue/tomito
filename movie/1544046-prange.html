@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Prange - Man ist ja Nachbar</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/48778-bjarne-mädel" class="cast-card">
+            <a href="/actor/48778-bjarne-mädel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/f3ATMFiel3uobj7oygPPORqDpuh.jpg" alt="Bjarne Mädel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bjarne Mädel</span>
             </a>
-            <a href="/actor/18947-katharina-m-schubert" class="cast-card">
+            <a href="/actor/18947-katharina-m-schubert.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p7Sv8YmFoUUMjGN5pUurV24kCU5.jpg" alt="Katharina M. Schubert" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Katharina M. Schubert</span>
             </a>
-            <a href="/actor/52266-olli-dittrich" class="cast-card">
+            <a href="/actor/52266-olli-dittrich.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eGVykJjyLAtxYIiFSYxWrEEk80d.jpg" alt="Olli Dittrich" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olli Dittrich</span>
             </a>
-            <a href="/actor/1163295-angelika-richter" class="cast-card">
+            <a href="/actor/1163295-angelika-richter.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bTUbDQlGHgXAq3XCJqNr8O3h9ZR.jpg" alt="Angelika Richter" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Angelika Richter</span>
             </a>
-            <a href="/actor/44888-linn-reusse" class="cast-card">
+            <a href="/actor/44888-linn-reusse.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5lGdQXm8QM87ElEbkpnMAqd7JwG.jpg" alt="Linn Reusse" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Linn Reusse</span>
             </a>
-            <a href="/actor/1200392-maximilian-scheidt" class="cast-card">
+            <a href="/actor/1200392-maximilian-scheidt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2PYXUpyDZ3PLxFAsQo2Z8572KGw.jpg" alt="Maximilian Scheidt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maximilian Scheidt</span>
             </a>
-            <a href="/actor/5745012-michel-diercks" class="cast-card">
+            <a href="/actor/5745012-michel-diercks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6zbYIyadGTJAevn97qZPxMlIglb.jpg" alt="Michel Diercks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michel Diercks</span>
             </a>
-            <a href="/actor/5216254-boži-kocevski" class="cast-card">
+            <a href="/actor/5216254-boži-kocevski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7mFVsXCPUBlOq64J61K0t8E2TZ5.jpg" alt="Boži Kocevski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Boži Kocevski</span>
             </a>
-            <a href="/actor/544776-jan-georg-schütte" class="cast-card">
+            <a href="/actor/544776-jan-georg-schütte.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2D6fZlLQEKxsRbR7P1cNL9aJ69F.jpg" alt="Jan Georg Schütte" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jan Georg Schütte</span>
             </a>
-            <a href="/actor/4619-gabriela-maria-schmeide" class="cast-card">
+            <a href="/actor/4619-gabriela-maria-schmeide.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aeaViwEpw3XXi3UtigjoYFfereS.jpg" alt="Gabriela Maria Schmeide" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gabriela Maria Schmeide</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

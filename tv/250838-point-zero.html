@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Точка ноль</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/555741-marina-aleksandrova" class="cast-card">
+            <a href="/actor/555741-marina-aleksandrova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/76zEkZBJCK7oyzh2Lt5iQncKi2N.jpg" alt="Marina Aleksandrova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marina Aleksandrova</span>
             </a>
-            <a href="/actor/1924824-sergey-marin" class="cast-card">
+            <a href="/actor/1924824-sergey-marin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wydTqdGyElMEuCqAsmPspc5d42a.jpg" alt="Sergey Marin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sergey Marin</span>
             </a>
-            <a href="/actor/1098309-natalya-rogozhkina" class="cast-card">
+            <a href="/actor/1098309-natalya-rogozhkina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vr9OuI8x3DDomwkZLyF930ue7rn.jpg" alt="Natalya Rogozhkina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natalya Rogozhkina</span>
             </a>
-            <a href="/actor/2165749-mariia-ryshchenkova" class="cast-card">
+            <a href="/actor/2165749-mariia-ryshchenkova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hDtlh12X1fzM2MCt1KOfb6jn1rk.jpg" alt="Mariia Ryshchenkova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariia Ryshchenkova</span>
             </a>
-            <a href="/actor/119826-evgeny-mundum" class="cast-card">
+            <a href="/actor/119826-evgeny-mundum.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vgFc7wtc3wia7mE3frsRsmfaMaB.jpg" alt="Evgeny Mundum" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Evgeny Mundum</span>
             </a>
-            <a href="/actor/1018872-vsevolod-makarov" class="cast-card">
+            <a href="/actor/1018872-vsevolod-makarov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pmkPdFmGI0QIDaosvGHHSMZxbNx.jpg" alt="Vsevolod Makarov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vsevolod Makarov</span>
             </a>
-            <a href="/actor/1491814-maksim-emelyanov" class="cast-card">
+            <a href="/actor/1491814-maksim-emelyanov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6jCzt55hhbdarJQuOmgVcrwpTTH.jpg" alt="Maksim Emelyanov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maksim Emelyanov</span>
             </a>
-            <a href="/actor/3112829-darya-pozdnyakova" class="cast-card">
+            <a href="/actor/3112829-darya-pozdnyakova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hZ3hrLmTl4L9GYcetHqrs0WcVPO.jpg" alt="Darya Pozdnyakova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Darya Pozdnyakova</span>
             </a>
-            <a href="/actor/238105-sergey-makhovikov" class="cast-card">
+            <a href="/actor/238105-sergey-makhovikov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wSAUGs3FTQkrHX7hyq8cChmjQYf.jpg" alt="Sergey Makhovikov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sergey Makhovikov</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

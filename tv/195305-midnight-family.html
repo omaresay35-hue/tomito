@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Midnight Family</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/76857-joaquín-cosío" class="cast-card">
+            <a href="/actor/76857-joaquín-cosío.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ijMo3fMyY4VL1xyIj6ytiJrzaw9.jpg" alt="Joaquín Cosío" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joaquín Cosío</span>
             </a>
-            <a href="/actor/2153290-renata-vaca" class="cast-card">
+            <a href="/actor/2153290-renata-vaca.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zsa1B7cOTa1o7inR2zmoznxL9Hm.jpg" alt="Renata Vaca" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Renata Vaca</span>
             </a>
-            <a href="/actor/1413390-diego-calva" class="cast-card">
+            <a href="/actor/1413390-diego-calva.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lZ1sECPft5XHeVn6GFVmGReOWiJ.jpg" alt="Diego Calva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Diego Calva</span>
             </a>
-            <a href="/actor/3468226-sergio-bautista" class="cast-card">
+            <a href="/actor/3468226-sergio-bautista.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/67Lj239JTXj1o7XGpbCZOHs187u.jpg" alt="Sergio Bautista" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sergio Bautista</span>
             </a>
-            <a href="/actor/224507-dolores-heredia" class="cast-card">
+            <a href="/actor/224507-dolores-heredia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vQM2QmixTyU2kBr72qjuuOCmbQ.jpg" alt="Dolores Heredia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dolores Heredia</span>
             </a>
-            <a href="/actor/80494-josé-maría-de-tavira" class="cast-card">
+            <a href="/actor/80494-josé-maría-de-tavira.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dMDyQmqCqPPB1lZXpFg1elcMOXJ.jpg" alt="José María de Tavira" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>José María de Tavira</span>
             </a>
-            <a href="/actor/1706738-itzan-escamilla" class="cast-card">
+            <a href="/actor/1706738-itzan-escamilla.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hWCXTWXNytChyiUQUXbGIouW3am.jpg" alt="Itzan Escamilla" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Itzan Escamilla</span>
             </a>
-            <a href="/actor/2198256-mariana-gómez" class="cast-card">
+            <a href="/actor/2198256-mariana-gómez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/InW3rtiA4Ch0tj55rnsl4Bo0ae.jpg" alt="Mariana Gómez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariana Gómez</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

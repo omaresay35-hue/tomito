@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>وِل ترينت</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/72985-ramón-rodríguez" class="cast-card">
+            <a href="/actor/72985-ramón-rodríguez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1gobmVevxCWVhV7s6J2B0oWPDZj.jpg" alt="Ramón Rodríguez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ramón Rodríguez</span>
             </a>
-            <a href="/actor/21711-erika-christensen" class="cast-card">
+            <a href="/actor/21711-erika-christensen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2QQJgrGVe3Fr8x7y50dBpN2g9lS.jpg" alt="Erika Christensen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erika Christensen</span>
             </a>
-            <a href="/actor/1902798-iantha-richardson" class="cast-card">
+            <a href="/actor/1902798-iantha-richardson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nI4x1PDMH1iJ3hR2POpI2WvVwgZ.jpg" alt="Iantha Richardson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Iantha Richardson</span>
             </a>
-            <a href="/actor/51683-jake-mclaughlin" class="cast-card">
+            <a href="/actor/51683-jake-mclaughlin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/14ZiT9mSr50N2sNXbzEthiiyVH9.jpg" alt="Jake McLaughlin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jake McLaughlin</span>
             </a>
-            <a href="/actor/203683-sonja-sohn" class="cast-card">
+            <a href="/actor/203683-sonja-sohn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8zjUsesMnQSOJtXmFl9O37ZYdQ5.jpg" alt="Sonja Sohn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sonja Sohn</span>
             </a>
-            <a href="/actor/104785-kevin-daniels" class="cast-card">
+            <a href="/actor/104785-kevin-daniels.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/poBtBxOZ4VxNox0I3Fd5nysviNg.jpg" alt="Kevin Daniels" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kevin Daniels</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Such Brave Girls</span>
   </nav>
 
@@ -72,15 +72,15 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3246110-kat-sadler" class="cast-card">
+            <a href="/actor/3246110-kat-sadler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9RWlZkJWgCpVwwmvYKiXIzpiMZy.jpg" alt="Kat Sadler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kat Sadler</span>
             </a>
-            <a href="/actor/1244469-louise-brealey" class="cast-card">
+            <a href="/actor/1244469-louise-brealey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/c7K2WWGZVA4tKWT0gBcPoLwmz3C.jpg" alt="Louise Brealey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louise Brealey</span>
             </a>
-            <a href="/actor/4378675-lizzie-davidson" class="cast-card">
+            <a href="/actor/4378675-lizzie-davidson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/epuvIsRBRHgH8AH3W5UO9NjGKjo.jpg" alt="Lizzie Davidson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lizzie Davidson</span>
             </a></div></section>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

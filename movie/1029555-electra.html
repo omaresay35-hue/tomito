@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Electra</span>
   </nav>
 
@@ -71,19 +71,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2408703-maria-bakalova" class="cast-card">
+            <a href="/actor/2408703-maria-bakalova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vCz0ycZr1PgJVOAeS29fIiZE8pN.jpg" alt="Maria Bakalova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maria Bakalova</span>
             </a>
-            <a href="/actor/1287084-jack-farthing" class="cast-card">
+            <a href="/actor/1287084-jack-farthing.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xhriXePjVXTJcF2linudLgMnsKA.jpg" alt="Jack Farthing" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Farthing</span>
             </a>
-            <a href="/actor/131870-daryl-wein" class="cast-card">
+            <a href="/actor/131870-daryl-wein.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wCzmi4uQqttaOCLLpSMF5a6SMPO.jpg" alt="Daryl Wein" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daryl Wein</span>
             </a>
-            <a href="/actor/1371456-abigail-cowen" class="cast-card">
+            <a href="/actor/1371456-abigail-cowen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a5AZqqBkRZzHUeQAWDurZXcueDU.jpg" alt="Abigail Cowen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Abigail Cowen</span>
             </a></div></section>
@@ -91,13 +91,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

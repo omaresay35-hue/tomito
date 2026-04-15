@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>برنامج 8</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1530733-ryu-jun-yeol" class="cast-card">
+            <a href="/actor/1530733-ryu-jun-yeol.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ayjkSbxGkeiyE2JvbLlyNPNFxkn.jpg" alt="Ryu Jun-yeol" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryu Jun-yeol</span>
             </a>
-            <a href="/actor/1263930-chun-woo-hee" class="cast-card">
+            <a href="/actor/1263930-chun-woo-hee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y7ju1TdJWldSwqadHYSxLiyOFxW.jpg" alt="Chun Woo-hee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chun Woo-hee</span>
             </a>
-            <a href="/actor/571172-park-jeong-min" class="cast-card">
+            <a href="/actor/571172-park-jeong-min.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o0IKTRpUgNILXzWtskyMJM1NG4j.jpg" alt="Park Jeong-min" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Jeong-min</span>
             </a>
-            <a href="/actor/1467384-lee-yul-eum" class="cast-card">
+            <a href="/actor/1467384-lee-yul-eum.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1ia6C3jIPBdQ21LmuW5ZPSr8kXC.jpg" alt="Lee Yul-eum" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Yul-eum</span>
             </a>
-            <a href="/actor/1292971-park-hae-joon" class="cast-card">
+            <a href="/actor/1292971-park-hae-joon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/heNKjLHWCQXXfkDB1Hb2nhuhDCf.jpg" alt="Park Hae-joon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Hae-joon</span>
             </a>
-            <a href="/actor/2042978-lee-zoo-young" class="cast-card">
+            <a href="/actor/2042978-lee-zoo-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hDLNWV75lnH1zC8DYXnaFfIllvI.jpg" alt="Lee Zoo-young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Zoo-young</span>
             </a>
-            <a href="/actor/1077269-moon-jeong-hee" class="cast-card">
+            <a href="/actor/1077269-moon-jeong-hee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6V48aFHytTUAHG9EJ5JObUEbXOV.jpg" alt="Moon Jeong-hee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Moon Jeong-hee</span>
             </a>
-            <a href="/actor/573794-bae-sung-woo" class="cast-card">
+            <a href="/actor/573794-bae-sung-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qocgfpxNoLWtrbh4JDfZxhn4zSg.jpg" alt="Bae Sung-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bae Sung-woo</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

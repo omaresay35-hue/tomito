@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>السيرك الرقمي المدهش</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3687095-lizzie-freeman" class="cast-card">
+            <a href="/actor/3687095-lizzie-freeman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h6R9y6VegUkTqJVGIkBXjMHYuGB.jpg" alt="Lizzie Freeman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lizzie Freeman</span>
             </a>
-            <a href="/actor/4731554-alex-rochon" class="cast-card">
+            <a href="/actor/4731554-alex-rochon.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alex Rochon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alex Rochon</span>
             </a>
-            <a href="/actor/2443112-michael-kovach" class="cast-card">
+            <a href="/actor/2443112-michael-kovach.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qSSrEuA3XUBEFo3bxMOHQ6E6r7y.jpg" alt="Michael Kovach" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Kovach</span>
             </a>
-            <a href="/actor/4731557-amanda-hufford" class="cast-card">
+            <a href="/actor/4731557-amanda-hufford.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4c89ydeGf8b58DN0KBvaRFsqrEO.jpg" alt="Amanda Hufford" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amanda Hufford</span>
             </a>
-            <a href="/actor/2202340-marissa-lenti" class="cast-card">
+            <a href="/actor/2202340-marissa-lenti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wAeWZ0nCxImIlFj547RwOOEus1B.jpg" alt="Marissa Lenti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marissa Lenti</span>
             </a>
-            <a href="/actor/2025381-sean-chiplock" class="cast-card">
+            <a href="/actor/2025381-sean-chiplock.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6mSZGexsoSRWwcfyX6wLk7yV8iM.jpg" alt="Sean Chiplock" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sean Chiplock</span>
             </a>
-            <a href="/actor/4874418-ashley-nichols" class="cast-card">
+            <a href="/actor/4874418-ashley-nichols.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ashley Nichols" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ashley Nichols</span>
             </a>
-            <a href="/actor/4731551-gooseworx" class="cast-card">
+            <a href="/actor/4731551-gooseworx.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gooseworx" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gooseworx</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

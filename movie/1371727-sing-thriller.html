@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>دعونا نغنّي! أغنية ‫Thriller‫</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/10297-matthew-mcconaughey" class="cast-card">
+            <a href="/actor/10297-matthew-mcconaughey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lCySuYjhXix3FzQdS4oceDDrXKI.jpg" alt="Matthew McConaughey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthew McConaughey</span>
             </a>
-            <a href="/actor/1540615-tori-kelly" class="cast-card">
+            <a href="/actor/1540615-tori-kelly.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jNKEWJf4FMac3yCK6jsM6TfFJG5.jpg" alt="Tori Kelly" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tori Kelly</span>
             </a>
-            <a href="/actor/208519-nick-kroll" class="cast-card">
+            <a href="/actor/208519-nick-kroll.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ggDaWSVuEXryxTJ6sKo2kiEhZPL.jpg" alt="Nick Kroll" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nick Kroll</span>
             </a>
-            <a href="/actor/1245-scarlett-johansson" class="cast-card">
+            <a href="/actor/1245-scarlett-johansson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6bBCPmc55gzP7TR9Th4WbykrYd0.jpg" alt="Scarlett Johansson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Scarlett Johansson</span>
             </a>
-            <a href="/actor/1303037-taron-egerton" class="cast-card">
+            <a href="/actor/1303037-taron-egerton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uCaPhyKAQIfEzAWWCYIrO2004CB.jpg" alt="Taron Egerton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taron Egerton</span>
             </a>
-            <a href="/actor/52842-garth-jennings" class="cast-card">
+            <a href="/actor/52842-garth-jennings.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zl6ZWijGySSIYJRFalleAiGkxyQ.jpg" alt="Garth Jennings" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Garth Jennings</span>
             </a>
-            <a href="/actor/1683316-eric-hayes" class="cast-card">
+            <a href="/actor/1683316-eric-hayes.html" class="cast-card">
                 <img src="/favicon.ico" alt="Eric Hayes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eric Hayes</span>
             </a>
-            <a href="/actor/3455079-katherine-kelloway" class="cast-card">
+            <a href="/actor/3455079-katherine-kelloway.html" class="cast-card">
                 <img src="/favicon.ico" alt="Katherine Kelloway" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Katherine Kelloway</span>
             </a>
-            <a href="/actor/2001232-joy-poirel" class="cast-card">
+            <a href="/actor/2001232-joy-poirel.html" class="cast-card">
                 <img src="/favicon.ico" alt="Joy Poirel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joy Poirel</span>
             </a>
-            <a href="/actor/26473-fisher-stevens" class="cast-card">
+            <a href="/actor/26473-fisher-stevens.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wWC6wbLV56RJGtyytMmmGvi054t.jpg" alt="Fisher Stevens" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fisher Stevens</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

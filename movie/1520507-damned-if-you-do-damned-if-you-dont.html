@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Come ti muovi, sbagli</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/72769-gianni-di-gregorio" class="cast-card">
+            <a href="/actor/72769-gianni-di-gregorio.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1wlZqqnaAsvjKTXP8GBcFwew1cZ.jpg" alt="Gianni Di Gregorio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gianni Di Gregorio</span>
             </a>
-            <a href="/actor/1123262-greta-scarano" class="cast-card">
+            <a href="/actor/1123262-greta-scarano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sqx4AEA5Dn2J8Q2f8iyTtGA7mKt.jpg" alt="Greta Scarano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Greta Scarano</span>
             </a>
-            <a href="/actor/52639-tom-wlaschiha" class="cast-card">
+            <a href="/actor/52639-tom-wlaschiha.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3Qbdm6f7AFAImiRU1TTwQ5AtHMQ.jpg" alt="Tom Wlaschiha" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Wlaschiha</span>
             </a>
-            <a href="/actor/4157338-anna-losano" class="cast-card">
+            <a href="/actor/4157338-anna-losano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zjKgeQW4ZbQJURq11v52p8SxK7s.jpg" alt="Anna Losano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anna Losano</span>
             </a>
-            <a href="/actor/5594265-pietro-serpi" class="cast-card">
+            <a href="/actor/5594265-pietro-serpi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Pietro Serpi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pietro Serpi</span>
             </a>
-            <a href="/actor/68166-iaia-forte" class="cast-card">
+            <a href="/actor/68166-iaia-forte.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xJPwCODM1Onk0iSeffseIpUBe0k.jpg" alt="Iaia Forte" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Iaia Forte</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Votemos</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/99213-raúl-fernández-de-pablo" class="cast-card">
+            <a href="/actor/99213-raúl-fernández-de-pablo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xwdwrpgET4O7BD4rtnTdy8dhJST.jpg" alt="Raúl Fernández de Pablo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Raúl Fernández de Pablo</span>
             </a>
-            <a href="/actor/224731-clara-lago" class="cast-card">
+            <a href="/actor/224731-clara-lago.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xrXqYvjN7NdyPKOJ8ydDYRMsKHF.jpg" alt="Clara Lago" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Clara Lago</span>
             </a>
-            <a href="/actor/974519-tito-valverde" class="cast-card">
+            <a href="/actor/974519-tito-valverde.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1Xj7ih7Ya1CqjPykCsKE4EaknrY.jpg" alt="Tito Valverde" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tito Valverde</span>
             </a>
-            <a href="/actor/566330-gonzalo-de-castro" class="cast-card">
+            <a href="/actor/566330-gonzalo-de-castro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/abAM8NPul7V7g1B08wSM9QKht6Y.jpg" alt="Gonzalo de Castro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gonzalo de Castro</span>
             </a>
-            <a href="/actor/3102083-christian-checa" class="cast-card">
+            <a href="/actor/3102083-christian-checa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/54DlIxxcUz9GbqBCsdhOWms7eah.jpg" alt="Christian Checa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christian Checa</span>
             </a>
-            <a href="/actor/4365-neus-sanz" class="cast-card">
+            <a href="/actor/4365-neus-sanz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dv9ap03HnlWvDu7dy5SZAC5bcDf.jpg" alt="Neus Sanz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Neus Sanz</span>
             </a>
-            <a href="/actor/2620583-charo-reina" class="cast-card">
+            <a href="/actor/2620583-charo-reina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9mLkxKCNb9rU5pt4aXTAXBVYS4m.jpg" alt="Charo Reina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charo Reina</span>
             </a>
-            <a href="/actor/2708193-pepe-carrasco" class="cast-card">
+            <a href="/actor/2708193-pepe-carrasco.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qzRTYaA15tezmkSmGUvCH8kQIuj.jpg" alt="Pepe Carrasco" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pepe Carrasco</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

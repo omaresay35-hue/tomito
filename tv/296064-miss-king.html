@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>الآنسة كينغ</span>
   </nav>
 
@@ -74,39 +74,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1405924-non" class="cast-card">
+            <a href="/actor/1405924-non.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yBiPy9oeHZSZLuGuTUgGk0PONbd.jpg" alt="Non" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Non</span>
             </a>
-            <a href="/actor/125943-naohito-fujiki" class="cast-card">
+            <a href="/actor/125943-naohito-fujiki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/itfh6sPqDHhYdc4roDaz7s3YV4U.jpg" alt="Naohito Fujiki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Naohito Fujiki</span>
             </a>
-            <a href="/actor/227089-kana-kurashina" class="cast-card">
+            <a href="/actor/227089-kana-kurashina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4lfxz4MKbcvH4lL97vLldTNb7qC.jpg" alt="Kana Kurashina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kana Kurashina</span>
             </a>
-            <a href="/actor/72202-shido-nakamura" class="cast-card">
+            <a href="/actor/72202-shido-nakamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dMyf8ZoHD5xkld66h8bEw9QgQZI.jpg" alt="Shido Nakamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shido Nakamura</span>
             </a>
-            <a href="/actor/105404-kaoru-okunuki" class="cast-card">
+            <a href="/actor/105404-kaoru-okunuki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vZBEZts8ajyC2oqsYL88HanlOPm.jpg" alt="Kaoru Okunuki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaoru Okunuki</span>
             </a>
-            <a href="/actor/3687598-shoot-mori" class="cast-card">
+            <a href="/actor/3687598-shoot-mori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xI8glOtpHh62wevI7gV3a5xS5yb.jpg" alt="Shoot Mori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shoot Mori</span>
             </a>
-            <a href="/actor/3118980-yui-narumi" class="cast-card">
+            <a href="/actor/3118980-yui-narumi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2aSqUSGXkIOfOF4L0tUyvJYme9h.jpg" alt="Yui Narumi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yui Narumi</span>
             </a>
-            <a href="/actor/1079863-tokuma-nishioka" class="cast-card">
+            <a href="/actor/1079863-tokuma-nishioka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ficsdIO9qozn1XRGnUn51M8nvEM.jpg" alt="Tokuma Nishioka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tokuma Nishioka</span>
             </a>
-            <a href="/actor/145927-sayaka-yamaguchi" class="cast-card">
+            <a href="/actor/145927-sayaka-yamaguchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1Qy91DbJL01DmU9UiF8JZ1scFU4.jpg" alt="Sayaka Yamaguchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sayaka Yamaguchi</span>
             </a></div></section>
@@ -114,13 +114,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

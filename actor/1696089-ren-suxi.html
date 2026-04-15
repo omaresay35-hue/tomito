@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1401502-a-cool-fish-2">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1401502-a-cool-fish-2.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/iNOkivce2JAlyK2rOdQlHe0xkDc.jpg" alt="A Cool Fish 2 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Cool Fish 2</div></div>
-    </a>    <a class="card" href="/movie/1058027-the-hedgehog">
+    </a>    <a class="card" href="/movie/1058027-the-hedgehog.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pm4qaRxo8zQeznN1TPGIHV7Isfp.jpg" alt="The Hedgehog — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Hedgehog</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/281495-the-devil-between-us">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/281495-the-devil-between-us.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sK3RhSaWD1E8iOtfV5y1bPIYsjo.jpg" alt="The Devil Between Us — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Devil Between Us</div></div>
-    </a>    <a class="card" href="/tv/270860-endless-protection">
+    </a>    <a class="card" href="/tv/270860-endless-protection.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vFYbWMTs9qMHMnSF3ckWEgo17Uq.jpg" alt="Endless Protection — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Endless Protection</div></div>
-    </a>    <a class="card" href="/tv/238085-there-will-be-ample-time">
+    </a>    <a class="card" href="/tv/238085-there-will-be-ample-time.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6cUblTrnh6LX0M2zbx13IeTVtj0.jpg" alt="There Will Be Ample Time — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">There Will Be Ample Time</div></div>
-    </a>    <a class="card" href="/tv/225008-the-long-season">
+    </a>    <a class="card" href="/tv/225008-the-long-season.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tJLiKDYdfMskFkJXV1HnaQAdpGf.jpg" alt="The Long Season — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Long Season</div></div>
-    </a>    <a class="card" href="/tv/225008-the-long-season">
+    </a>    <a class="card" href="/tv/225008-the-long-season.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tJLiKDYdfMskFkJXV1HnaQAdpGf.jpg" alt="The Long Season — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Long Season</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

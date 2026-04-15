@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Per te</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1047948-edoardo-leo" class="cast-card">
+            <a href="/actor/1047948-edoardo-leo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/coKBvQI0zhAHz0DwiLEmgpaCvn4.jpg" alt="Edoardo Leo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Edoardo Leo</span>
             </a>
-            <a href="/actor/116532-teresa-saponangelo" class="cast-card">
+            <a href="/actor/116532-teresa-saponangelo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/g9iUJTCZieXzVTZgIbTVbd5HEU2.jpg" alt="Teresa Saponangelo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Teresa Saponangelo</span>
             </a>
-            <a href="/actor/5671055-javier-leoni" class="cast-card">
+            <a href="/actor/5671055-javier-leoni.html" class="cast-card">
                 <img src="/favicon.ico" alt="Javier Leoni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Javier Leoni</span>
             </a>
-            <a href="/actor/2391192-giorgio-montanini" class="cast-card">
+            <a href="/actor/2391192-giorgio-montanini.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x6FeIaZ7t568FeLvdu4p7eT6Z9O.jpg" alt="Giorgio Montanini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Giorgio Montanini</span>
             </a>
-            <a href="/actor/1608972-eleonora-giovanardi" class="cast-card">
+            <a href="/actor/1608972-eleonora-giovanardi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tyN9T7sMqyF8Os8lbijF6j8QGFQ.jpg" alt="Eleonora Giovanardi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eleonora Giovanardi</span>
             </a>
-            <a href="/actor/1026461-guia-jelo" class="cast-card">
+            <a href="/actor/1026461-guia-jelo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k1UiMpsYsXZbGrDw0ipXyokHtdj.jpg" alt="Guia Jelo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Guia Jelo</span>
             </a>
-            <a href="/actor/1673837-daniele-parisi" class="cast-card">
+            <a href="/actor/1673837-daniele-parisi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/FQ7gAoXOUtjbzuxAu2CV9fg4pS.jpg" alt="Daniele Parisi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniele Parisi</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

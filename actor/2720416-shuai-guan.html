@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1481390-curious-tales-of-a-temple">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1481390-curious-tales-of-a-temple.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/z1CNbHQe9LBIo8LfaLxLhhZ13ry.jpg" alt="Curious Tales of a Temple — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Curious Tales of a Temple</div></div>
-    </a>    <a class="card" href="/movie/1303336-into-the-mortal-world">
+    </a>    <a class="card" href="/movie/1303336-into-the-mortal-world.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qopVRov3ozCUBXUfkvviFlcTB1Z.jpg" alt="Into The Mortal World — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Into The Mortal World</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/272059-to-be-hero-x">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/272059-to-be-hero-x.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7ynNG9lYS9HIR8cYMgawO19VPkg.jpg" alt="TO BE HERO X — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">TO BE HERO X</div></div>
-    </a>    <a class="card" href="/tv/243327-honor-of-kings-chapter-of-glory">
+    </a>    <a class="card" href="/tv/243327-honor-of-kings-chapter-of-glory.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/clau3P6P6MEljsngIZBsydaQfy8.jpg" alt="Honor of Kings: Chapter of Glory — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Honor of Kings: Chapter of Glory</div></div>
-    </a>    <a class="card" href="/tv/139168-fabulous-beasts">
+    </a>    <a class="card" href="/tv/139168-fabulous-beasts.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jrMBgiD0Om2sgo8jGmlDmKG0oDZ.jpg" alt="Fabulous Beasts — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fabulous Beasts</div></div>
-    </a>    <a class="card" href="/tv/139168-fabulous-beasts">
+    </a>    <a class="card" href="/tv/139168-fabulous-beasts.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jrMBgiD0Om2sgo8jGmlDmKG0oDZ.jpg" alt="Fabulous Beasts — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fabulous Beasts</div></div>
-    </a>    <a class="card" href="/tv/139168-fabulous-beasts">
+    </a>    <a class="card" href="/tv/139168-fabulous-beasts.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jrMBgiD0Om2sgo8jGmlDmKG0oDZ.jpg" alt="Fabulous Beasts — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fabulous Beasts</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

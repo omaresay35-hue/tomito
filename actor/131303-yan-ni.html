@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ Description above from the Wikipedia article Yan Ni,licensed under CC-BY-SA, ful
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1129573-family-at-large">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1129573-family-at-large.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2B4rLgNib7nGgqfFDvMrz0LQXr9.jpg" alt="Family At Large — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Family At Large</div></div>
-    </a>    <a class="card" href="/movie/1543134-the-volunteers-peace-at-last">
+    </a>    <a class="card" href="/movie/1543134-the-volunteers-peace-at-last.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ifM7LfaIIkiQ03bXn5MVe87uLf9.jpg" alt="The Volunteers: Peace at Last — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Volunteers: Peace at Last</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/274260-romance-in-the-alley">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/274260-romance-in-the-alley.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kKEGxNzMDkF09lniLvLSRh7Vuff.jpg" alt="Romance in the Alley — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Romance in the Alley</div></div>
-    </a>    <a class="card" href="/tv/154770-hello-saturday">
+    </a>    <a class="card" href="/tv/154770-hello-saturday.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wsTjWy6NE2s3h0neChr0D92ddwI.jpg" alt="Hello Saturday — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Hello Saturday</div></div>
@@ -94,13 +94,6 @@ Description above from the Wikipedia article Yan Ni,licensed under CC-BY-SA, ful
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

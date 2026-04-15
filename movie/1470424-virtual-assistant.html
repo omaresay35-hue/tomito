@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Голосовой помощник</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2715100-polina-fedina" class="cast-card">
+            <a href="/actor/2715100-polina-fedina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qssXYkw2reLOx3DtU7GBaZjI05B.jpg" alt="Polina Fedina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Polina Fedina</span>
             </a>
-            <a href="/actor/2223667-ilya-antonenko" class="cast-card">
+            <a href="/actor/2223667-ilya-antonenko.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mzuxreMjchAXhF0FIYNzdk4xWfX.jpg" alt="Ilya Antonenko" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ilya Antonenko</span>
             </a>
-            <a href="/actor/1783719-boris-dergachev" class="cast-card">
+            <a href="/actor/1783719-boris-dergachev.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j8a8S0ckwg0Hk2b0hWD1eOFbiFa.jpg" alt="Boris Dergachev" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Boris Dergachev</span>
             </a>
-            <a href="/actor/5395152-violetta-onoprienko" class="cast-card">
+            <a href="/actor/5395152-violetta-onoprienko.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5ASVBxAM4wrzB2DGjwTUg6Tj9Bd.jpg" alt="Violetta Onoprienko" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Violetta Onoprienko</span>
             </a>
-            <a href="/actor/2777429-vladislav-tsenev" class="cast-card">
+            <a href="/actor/2777429-vladislav-tsenev.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q7JvP2YB2kizltYXJIS2cH5HjdG.jpg" alt="Vladislav Tsenev" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vladislav Tsenev</span>
             </a>
-            <a href="/actor/1998725-yuliya-dzhulai" class="cast-card">
+            <a href="/actor/1998725-yuliya-dzhulai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wjAuAQENAvToY20mJw9b1huTb79.jpg" alt="Yuliya Dzhulai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuliya Dzhulai</span>
             </a>
-            <a href="/actor/1198021-ilya-isaev" class="cast-card">
+            <a href="/actor/1198021-ilya-isaev.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/u3lcnxRwHhHNHJFSbgIuGTzW7Xp.jpg" alt="Ilya Isaev" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ilya Isaev</span>
             </a>
-            <a href="/actor/5940270-igor-prokopenko" class="cast-card">
+            <a href="/actor/5940270-igor-prokopenko.html" class="cast-card">
                 <img src="/favicon.ico" alt="Igor Prokopenko" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Igor Prokopenko</span>
             </a>
-            <a href="/actor/1899175-olga-zubkova" class="cast-card">
+            <a href="/actor/1899175-olga-zubkova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/btG5MZUXShaaDSNwfG99sdPlr7v.jpg" alt="Olga Zubkova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olga Zubkova</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

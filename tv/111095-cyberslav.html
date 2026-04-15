@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Киберслав</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5910794-иван-жарков" class="cast-card">
+            <a href="/actor/5910794-иван-жарков.html" class="cast-card">
                 <img src="/favicon.ico" alt="Иван Жарков" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Иван Жарков</span>
             </a>
-            <a href="/actor/2201917-valentina-lyapina" class="cast-card">
+            <a href="/actor/2201917-valentina-lyapina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hbF7kc1YKLrf4evr1qysKkZQJeS.jpg" alt="Valentina Lyapina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Valentina Lyapina</span>
             </a>
-            <a href="/actor/1427095-gleb-kalyuzhny" class="cast-card">
+            <a href="/actor/1427095-gleb-kalyuzhny.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8J15lGlzadaCJVTwr8nQvN3QDGx.jpg" alt="Gleb Kalyuzhny" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gleb Kalyuzhny</span>
             </a>
-            <a href="/actor/1821670-petr-ivashchenko" class="cast-card">
+            <a href="/actor/1821670-petr-ivashchenko.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pjCxavL98synjPnyweSfusZvGrl.jpg" alt="Petr Ivashchenko" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Petr Ivashchenko</span>
             </a>
-            <a href="/actor/1862314-stanislav-kontsevich" class="cast-card">
+            <a href="/actor/1862314-stanislav-kontsevich.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ktmSEjFfkym5CdoCAVrRgiHTeCI.jpg" alt="Stanislav Kontsevich" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stanislav Kontsevich</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

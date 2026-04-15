@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Goodbye Horses: The Many Lives of Q Lazzarus</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1352800-q-lazzarus" class="cast-card">
+            <a href="/actor/1352800-q-lazzarus.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/obb7hOUuzgI6neVbcNUSNbn8iEi.jpg" alt="Q Lazzarus" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Q Lazzarus</span>
             </a>
-            <a href="/actor/1080708-eva-aridjis" class="cast-card">
+            <a href="/actor/1080708-eva-aridjis.html" class="cast-card">
                 <img src="/favicon.ico" alt="Eva Aridjis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eva Aridjis</span>
             </a>
-            <a href="/actor/5424278-jon-bouillot" class="cast-card">
+            <a href="/actor/5424278-jon-bouillot.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jon Bouillot" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jon Bouillot</span>
             </a>
-            <a href="/actor/5424281-rick-duce" class="cast-card">
+            <a href="/actor/5424281-rick-duce.html" class="cast-card">
                 <img src="/favicon.ico" alt="Rick Duce" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rick Duce</span>
             </a>
-            <a href="/actor/5541946-james-luckey-lange" class="cast-card">
+            <a href="/actor/5541946-james-luckey-lange.html" class="cast-card">
                 <img src="/favicon.ico" alt="James Luckey Lange" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Luckey Lange</span>
             </a>
-            <a href="/actor/5541948-robert-lange" class="cast-card">
+            <a href="/actor/5541948-robert-lange.html" class="cast-card">
                 <img src="/favicon.ico" alt="Robert Lange" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robert Lange</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

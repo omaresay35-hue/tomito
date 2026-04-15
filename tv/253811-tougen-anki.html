@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Tougen Anki</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2534630-kazuki-ura" class="cast-card">
+            <a href="/actor/2534630-kazuki-ura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7eUgENWREmWSMnLPUFCQhvUSpdI.jpg" alt="Kazuki Ura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kazuki Ura</span>
             </a>
-            <a href="/actor/93801-hiroshi-kamiya" class="cast-card">
+            <a href="/actor/93801-hiroshi-kamiya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5aAAOlQ2hW5EqEQOzk4UeroxcTN.jpg" alt="Hiroshi Kamiya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiroshi Kamiya</span>
             </a>
-            <a href="/actor/1870205-koutaro-nishiyama" class="cast-card">
+            <a href="/actor/1870205-koutaro-nishiyama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6qKGsoetRrvOvlROdYx40CVlHtw.jpg" alt="Koutaro Nishiyama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koutaro Nishiyama</span>
             </a>
-            <a href="/actor/1835721-manaka-iwami" class="cast-card">
+            <a href="/actor/1835721-manaka-iwami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/leKMaCBswXG8u4mfQNQ7J3y6Xow.jpg" alt="Manaka Iwami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manaka Iwami</span>
             </a>
-            <a href="/actor/2812912-shogo-sakata" class="cast-card">
+            <a href="/actor/2812912-shogo-sakata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fRRPNBz3OCNRdmLdUTdpq7dGqxM.jpg" alt="Shogo Sakata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shogo Sakata</span>
             </a>
-            <a href="/actor/1256603-natsuki-hanae" class="cast-card">
+            <a href="/actor/1256603-natsuki-hanae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/alTb0DlcPIbcwM08WSmxFai58sd.jpg" alt="Natsuki Hanae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natsuki Hanae</span>
             </a>
-            <a href="/actor/5165062-kaito-miura" class="cast-card">
+            <a href="/actor/5165062-kaito-miura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9J12zLOhS6wbANizY9Dfg4hr9MS.jpg" alt="Kaito Miura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaito Miura</span>
             </a>
-            <a href="/actor/1950099-aimi" class="cast-card">
+            <a href="/actor/1950099-aimi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9mk1CHBZDmY2hh9BT5gb7yDMsQY.jpg" alt="Aimi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aimi</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>強くてニューサーガ</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1492992-yuma-uchida" class="cast-card">
+            <a href="/actor/1492992-yuma-uchida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2otstbLfQ7MXuFt1X8MFOb4OIgd.jpg" alt="Yuma Uchida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuma Uchida</span>
             </a>
-            <a href="/actor/119145-hiro-shimono" class="cast-card">
+            <a href="/actor/119145-hiro-shimono.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yrSDcgFefHtWkFmLnTrcw2t0MV.jpg" alt="Hiro Shimono" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiro Shimono</span>
             </a>
-            <a href="/actor/2359492-fairouz-ai" class="cast-card">
+            <a href="/actor/2359492-fairouz-ai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/coFu6WOVBZvqd1fw89vbHkiC0zB.jpg" alt="Fairouz Ai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fairouz Ai</span>
             </a>
-            <a href="/actor/1254672-asami-seto" class="cast-card">
+            <a href="/actor/1254672-asami-seto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iKKCPgKrNd4pJ0iBOC1SBZy2Y4Y.jpg" alt="Asami Seto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Asami Seto</span>
             </a>
-            <a href="/actor/1795137-minami-takahashi" class="cast-card">
+            <a href="/actor/1795137-minami-takahashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9SRX6yrHGtGEJxcnLyGFhOZkXSH.jpg" alt="Minami Takahashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Minami Takahashi</span>
             </a>
-            <a href="/actor/216448-hiroki-yasumoto" class="cast-card">
+            <a href="/actor/216448-hiroki-yasumoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vNIGLl0wFmdhdnulMssQ1qyNeBs.jpg" alt="Hiroki Yasumoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiroki Yasumoto</span>
             </a>
-            <a href="/actor/2208367-kaori-maeda" class="cast-card">
+            <a href="/actor/2208367-kaori-maeda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nj0DsfJ5tL96HlXvzThj7R022f2.jpg" alt="Kaori Maeda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaori Maeda</span>
             </a>
-            <a href="/actor/2019928-rie-hikisaka" class="cast-card">
+            <a href="/actor/2019928-rie-hikisaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A2qoMAgTD0uG49HhQLkHmWquSiP.jpg" alt="Rie Hikisaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rie Hikisaka</span>
             </a>
-            <a href="/actor/2030015-riho-sugiyama" class="cast-card">
+            <a href="/actor/2030015-riho-sugiyama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rPVn4cInZVECBWhoHozERc8XTTj.jpg" alt="Riho Sugiyama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Riho Sugiyama</span>
             </a>
-            <a href="/actor/126704-tetsu-inada" class="cast-card">
+            <a href="/actor/126704-tetsu-inada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e8qQL1NKTHP8eOsZmV5LCkdHS9T.jpg" alt="Tetsu Inada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tetsu Inada</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

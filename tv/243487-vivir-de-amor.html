@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Vivir de amor</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1892023-emmanuel-palomares" class="cast-card">
+            <a href="/actor/1892023-emmanuel-palomares.html" class="cast-card">
                 <img src="/favicon.ico" alt="Emmanuel Palomares" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emmanuel Palomares</span>
             </a>
-            <a href="/actor/1194018-gala-montes" class="cast-card">
+            <a href="/actor/1194018-gala-montes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fyhrI3BZxLHeoxexlaZSygopknh.jpg" alt="Gala Montes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gala Montes</span>
             </a>
-            <a href="/actor/1431456-juan-diego-covarrubias" class="cast-card">
+            <a href="/actor/1431456-juan-diego-covarrubias.html" class="cast-card">
                 <img src="/favicon.ico" alt="Juan Diego Covarrubias" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juan Diego Covarrubias</span>
             </a>
-            <a href="/actor/2407917-joshua-gutiérrez" class="cast-card">
+            <a href="/actor/2407917-joshua-gutiérrez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yVLKdvDar8t3O55gBIH1wbylGxu.jpg" alt="Joshua Gutiérrez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joshua Gutiérrez</span>
             </a>
-            <a href="/actor/1222333-eugenia-cauduro" class="cast-card">
+            <a href="/actor/1222333-eugenia-cauduro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9UZpuQwDcDyTA9ozHnM1K8nbWjD.jpg" alt="Eugenia Cauduro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eugenia Cauduro</span>
             </a>
-            <a href="/actor/1238183-rené-strickler" class="cast-card">
+            <a href="/actor/1238183-rené-strickler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6kruVvKtAS0884gL30guMp4GyCs.jpg" alt="René Strickler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>René Strickler</span>
             </a>
-            <a href="/actor/1254329-kimberly-dos-ramos" class="cast-card">
+            <a href="/actor/1254329-kimberly-dos-ramos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4jXZ7QubP2CWcMyuJ6GYDtAILyS.jpg" alt="Kimberly Dos Ramos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kimberly Dos Ramos</span>
             </a>
-            <a href="/actor/1233724-gabriela-spanic" class="cast-card">
+            <a href="/actor/1233724-gabriela-spanic.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cTtrFMJhWifDnBs0ZmmcsEXbcOQ.jpg" alt="Gabriela Spanic" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gabriela Spanic</span>
             </a>
-            <a href="/actor/2126384-amairani" class="cast-card">
+            <a href="/actor/2126384-amairani.html" class="cast-card">
                 <img src="/favicon.ico" alt="Amairani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amairani</span>
             </a>
-            <a href="/actor/3690007-patricio-josé" class="cast-card">
+            <a href="/actor/3690007-patricio-josé.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pXsOl6z9MvEA9CObgHijZwAKk5F.jpg" alt="Patricio José" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patricio José</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

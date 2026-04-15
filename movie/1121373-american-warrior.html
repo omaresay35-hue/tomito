@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>المحارب الأمريكي</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/11160-danny-trejo" class="cast-card">
+            <a href="/actor/11160-danny-trejo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7JrUkRGBscZ1Hy5JinaaXjjzSCF.jpg" alt="Danny Trejo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Danny Trejo</span>
             </a>
-            <a href="/actor/1029593-veronica-falcón" class="cast-card">
+            <a href="/actor/1029593-veronica-falcón.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8zRSwWfrDnHleSRDtIeHYuAVmFK.jpg" alt="Veronica Falcón" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Veronica Falcón</span>
             </a>
-            <a href="/actor/1219536-suleka-mathew" class="cast-card">
+            <a href="/actor/1219536-suleka-mathew.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rLxXR4hqNRBQn86vjfZHSyJilJK.jpg" alt="Suleka Mathew" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Suleka Mathew</span>
             </a>
-            <a href="/actor/2635157-andrew-gray" class="cast-card">
+            <a href="/actor/2635157-andrew-gray.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nS827rbYQyAmP7I97sC4exBhj65.jpg" alt="Andrew Gray" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrew Gray</span>
             </a>
-            <a href="/actor/208768-taylor-treadwell" class="cast-card">
+            <a href="/actor/208768-taylor-treadwell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t2UUOrL21CC2aRQ7wo0WlMYtk0D.jpg" alt="Taylor Treadwell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taylor Treadwell</span>
             </a>
-            <a href="/actor/169201-omi-vaidya" class="cast-card">
+            <a href="/actor/169201-omi-vaidya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/G37HGmfBM8b6pTczZrpJmTFIGl.jpg" alt="Omi Vaidya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Omi Vaidya</span>
             </a>
-            <a href="/actor/86155-ranjita-chakravarty" class="cast-card">
+            <a href="/actor/86155-ranjita-chakravarty.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ranjita Chakravarty" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ranjita Chakravarty</span>
             </a>
-            <a href="/actor/1819064-jaspal-binning" class="cast-card">
+            <a href="/actor/1819064-jaspal-binning.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jaspal Binning" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jaspal Binning</span>
             </a>
-            <a href="/actor/1639443-jacob-peacock" class="cast-card">
+            <a href="/actor/1639443-jacob-peacock.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jacob Peacock" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jacob Peacock</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

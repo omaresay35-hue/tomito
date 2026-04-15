@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1233243-the-last-redemption">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1233243-the-last-redemption.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xyKdcbzqX8pG17S4cLKURHlNlvN.jpg" alt="The Last Redemption — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Last Redemption</div></div>
-    </a>    <a class="card" href="/movie/1337886-silent-bite">
+    </a>    <a class="card" href="/movie/1337886-silent-bite.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8TznNxjQB7jkN79W4xzNtaD34EC.jpg" alt="Silent Bite — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Silent Bite</div></div>
-    </a>    <a class="card" href="/movie/1225377-the-mouse-trap">
+    </a>    <a class="card" href="/movie/1225377-the-mouse-trap.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3ovFaFeojLFIl5ClqhtgYMDS8sE.jpg" alt="The Mouse Trap — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Mouse Trap</div></div>
-    </a>    <a class="card" href="/movie/1330167-what-lurks-beneath">
+    </a>    <a class="card" href="/movie/1330167-what-lurks-beneath.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6LFSdNB610uSUZ08Y6xN4V3p8OV.jpg" alt="What Lurks Beneath — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">What Lurks Beneath</div></div>
-    </a>    <a class="card" href="/movie/283563-white-collar-hooligan-3">
+    </a>    <a class="card" href="/movie/283563-white-collar-hooligan-3.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9BLZmEyuFXzLAO5dd06YCtjKwzt.jpg" alt="White Collar Hooligan 3 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">White Collar Hooligan 3</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/221300-fubar">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/221300-fubar.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6fM34tcGFp3A0csyxJJomknZB4b.jpg" alt="FUBAR — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">FUBAR</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

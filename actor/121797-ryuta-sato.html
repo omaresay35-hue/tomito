@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,15 +71,15 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/235365-malice">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/235365-malice.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3VgmYXnw8d0NM5Z9tLcp5lVRjgR.jpg" alt="MALICE — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">MALICE</div></div>
-    </a>    <a class="card" href="/tv/86876-rondo">
+    </a>    <a class="card" href="/tv/86876-rondo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eGIMZqULGaLxtJQg7xNtWWSEG7u.jpg" alt="Rondo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Rondo</div></div>
-    </a>    <a class="card" href="/tv/1-pride">
+    </a>    <a class="card" href="/tv/1-pride.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rnahKduAA2VZFgrXemu97Fh6OD2.jpg" alt="Pride — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pride</div></div>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

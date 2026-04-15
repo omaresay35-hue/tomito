@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,51 +75,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1038002-conor-sweeney" class="cast-card">
+            <a href="/actor/1038002-conor-sweeney.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qnE2R4Bu5VLmBeKDcAwlVNaHozT.jpg" alt="Conor Sweeney" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Conor Sweeney</span>
             </a>
-            <a href="/actor/2865120-kristy-wordsworth" class="cast-card">
+            <a href="/actor/2865120-kristy-wordsworth.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kFMTIuFq4WDaNys8qwNZiXtHPCj.jpg" alt="Kristy Wordsworth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kristy Wordsworth</span>
             </a>
-            <a href="/actor/190919-adam-brooks" class="cast-card">
+            <a href="/actor/190919-adam-brooks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tlLasboHGnCp1hKm3UWj6vMe8PY.jpg" alt="Adam Brooks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Brooks</span>
             </a>
-            <a href="/actor/1038000-matthew-kennedy" class="cast-card">
+            <a href="/actor/1038000-matthew-kennedy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kVOgHnroIuZGeaFnN8junkZUvuM.jpg" alt="Matthew Kennedy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthew Kennedy</span>
             </a>
-            <a href="/actor/1123837-meredith-sweeney" class="cast-card">
+            <a href="/actor/1123837-meredith-sweeney.html" class="cast-card">
                 <img src="/favicon.ico" alt="Meredith Sweeney" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Meredith Sweeney</span>
             </a>
-            <a href="/actor/1035399-rich-evans" class="cast-card">
+            <a href="/actor/1035399-rich-evans.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cdNIgtVpEMDFYhifV2BfaHCZGx8.jpg" alt="Rich Evans" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rich Evans</span>
             </a>
-            <a href="/actor/57195-rob-schrab" class="cast-card">
+            <a href="/actor/57195-rob-schrab.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/migS0v62a3QkxDQe3MLcGRLux5f.jpg" alt="Rob Schrab" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rob Schrab</span>
             </a>
-            <a href="/actor/1408667-patrick-baxter" class="cast-card">
+            <a href="/actor/1408667-patrick-baxter.html" class="cast-card">
                 <img src="/favicon.ico" alt="Patrick Baxter" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patrick Baxter</span>
             </a>
-            <a href="/actor/1293988-kate-freund" class="cast-card">
+            <a href="/actor/1293988-kate-freund.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wBss3zoS2R5CiaHP1j9WhuenUXA.jpg" alt="Kate Freund" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kate Freund</span>
             </a>
-            <a href="/actor/1559372-brandi-boulet" class="cast-card">
+            <a href="/actor/1559372-brandi-boulet.html" class="cast-card">
                 <img src="/favicon.ico" alt="Brandi Boulet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brandi Boulet</span>
             </a>
-            <a href="/actor/229164-mike-stoklasa" class="cast-card">
+            <a href="/actor/229164-mike-stoklasa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vhVXLOfKYnCCHWq05Ei31z1o6hk.jpg" alt="Mike Stoklasa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mike Stoklasa</span>
             </a>
-            <a href="/actor/2955020-stuart-wellington" class="cast-card">
+            <a href="/actor/2955020-stuart-wellington.html" class="cast-card">
                 <img src="/favicon.ico" alt="Stuart Wellington" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stuart Wellington</span>
             </a></div></section>
@@ -127,13 +127,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

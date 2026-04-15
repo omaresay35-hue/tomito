@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,15 +71,15 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/255522-if-its-tuesday-its-murder">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/255522-if-its-tuesday-its-murder.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/abWa2F4O0WNAh6xVVwWID7BIDd1.jpg" alt="If It's Tuesday, It's Murder — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">If It's Tuesday, It's Murder</div></div>
-    </a>    <a class="card" href="/tv/274979-the-crystal-cuckoo">
+    </a>    <a class="card" href="/tv/274979-the-crystal-cuckoo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tsY3Kl793m2sXTMkQTajz0EOqCl.jpg" alt="The Crystal Cuckoo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Crystal Cuckoo</div></div>
-    </a>    <a class="card" href="/tv/248960-atasco">
+    </a>    <a class="card" href="/tv/248960-atasco.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hHgJJBvYUML7qvwjMmyvUXd5y5o.jpg" alt="Atasco — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Atasco</div></div>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/938150-wardriver">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/938150-wardriver.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ipTXhWCJgeg5RN0CpmFZYDzOzQi.jpg" alt="Wardriver — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wardriver</div></div>
-    </a>    <a class="card" href="/movie/86835-knight-of-cups">
+    </a>    <a class="card" href="/movie/86835-knight-of-cups.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xejFBC19Nc7Xi1MiIvcf84ZCy2g.jpg" alt="Knight of Cups — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Knight of Cups</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/215866-american-primeval">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/215866-american-primeval.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ff0s9OHGNSZL6cVteIb7LNvTnJD.jpg" alt="American Primeval — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">American Primeval</div></div>
-    </a>    <a class="card" href="/tv/10545-true-blood">
+    </a>    <a class="card" href="/tv/10545-true-blood.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ktEp6fzL4xzCWsSVtrcH8JaQNQy.jpg" alt="True Blood — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">True Blood</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>뒤주</span>
   </nav>
 
@@ -71,19 +71,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1256353-kim-in-seo" class="cast-card">
+            <a href="/actor/1256353-kim-in-seo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9GNiUsn1ntCAoyGpa6XABpZX3Xg.jpg" alt="Kim In-seo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim In-seo</span>
             </a>
-            <a href="/actor/4584068-park-ye-ri" class="cast-card">
+            <a href="/actor/4584068-park-ye-ri.html" class="cast-card">
                 <img src="/favicon.ico" alt="Park Ye-ri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Ye-ri</span>
             </a>
-            <a href="/actor/2378597-shin-gi-hwan" class="cast-card">
+            <a href="/actor/2378597-shin-gi-hwan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wrNGfyqbkWJFCMsQT4AtgwmbYWg.jpg" alt="Shin Gi-hwan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shin Gi-hwan</span>
             </a>
-            <a href="/actor/1715383-jung-sang-hoon" class="cast-card">
+            <a href="/actor/1715383-jung-sang-hoon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/grYaUj88IUp95AF4MhQgtv3FUxs.jpg" alt="Jung Sang-hoon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jung Sang-hoon</span>
             </a></div></section>
@@ -91,13 +91,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

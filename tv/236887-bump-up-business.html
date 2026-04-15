@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>범프 업 비즈니스</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3638070-mill" class="cast-card">
+            <a href="/actor/3638070-mill.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6zGRJLWFg6ze5QkSD5M6ZjtLcSD.jpg" alt="Mill" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mill</span>
             </a>
-            <a href="/actor/2984614-nine" class="cast-card">
+            <a href="/actor/2984614-nine.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mdzlhmFf1QQgH7DUK5HEEirYekj.jpg" alt="Nine" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nine</span>
             </a>
-            <a href="/actor/4189218-yoojung" class="cast-card">
+            <a href="/actor/4189218-yoojung.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p4EhdTa7zWGR28eE0Y7eY3Knv3d.jpg" alt="Yoojung" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoojung</span>
             </a>
-            <a href="/actor/4189224-kb" class="cast-card">
+            <a href="/actor/4189224-kb.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cmBzDhCJecQD2Y6N6mVjOl6coOT.jpg" alt="KB" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>KB</span>
             </a>
-            <a href="/actor/3638069-junji" class="cast-card">
+            <a href="/actor/3638069-junji.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kDLtynXb1ld0t2nKqm43VCYF7E.jpg" alt="Junji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Junji</span>
             </a>
-            <a href="/actor/3638067-rie" class="cast-card">
+            <a href="/actor/3638067-rie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/biAoXIbEFx5F6Fj1gTUUkhLbGxD.jpg" alt="RIE" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>RIE</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

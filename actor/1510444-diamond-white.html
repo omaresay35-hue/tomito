@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1246310-madeas-destination-wedding">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1246310-madeas-destination-wedding.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jwMwRucnAROgWo9WLLmIqzHmmzi.jpg" alt="Madea's Destination Wedding — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Madea's Destination Wedding</div></div>
-    </a>    <a class="card" href="/movie/1359227-lego-marvel-avengers-mission-demolition">
+    </a>    <a class="card" href="/movie/1359227-lego-marvel-avengers-mission-demolition.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/s3qM33JHOntz2D7o6FGRf5yuI1v.jpg" alt="LEGO Marvel Avengers: Mission Demolition — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">LEGO Marvel Avengers: Mission Demolition</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/138503-your-friendly-neighborhood-spider-man">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/138503-your-friendly-neighborhood-spider-man.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kjcsNeqF52YUQ2rUBGLMHwLkxvR.jpg" alt="Your Friendly Neighborhood Spider-Man — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Your Friendly Neighborhood Spider-Man</div></div>
-    </a>    <a class="card" href="/tv/234586-barbie-mysteries">
+    </a>    <a class="card" href="/tv/234586-barbie-mysteries.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zKfE4AevCL8RjfcrhfJZat5vWTb.jpg" alt="Barbie Mysteries — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Barbie Mysteries</div></div>
-    </a>    <a class="card" href="/tv/92788-marvels-moon-girl-and-devil-dinosaur">
+    </a>    <a class="card" href="/tv/92788-marvels-moon-girl-and-devil-dinosaur.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1oFkjiF9fT2asKWjRiJtlbhu3hn.jpg" alt="Marvel's Moon Girl and Devil Dinosaur — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Marvel's Moon Girl and Devil Dinosaur</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

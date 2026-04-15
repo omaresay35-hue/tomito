@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,11 +73,11 @@ National Velvet (1944) was Taylor's first success, and she starred in Father of 
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1279112-elizabeth-taylor-the-lost-tapes">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1279112-elizabeth-taylor-the-lost-tapes.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/aHeRe3fNLxr4eebkLN2WXXAkb53.jpg" alt="Elizabeth Taylor: The Lost Tapes — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Elizabeth Taylor: The Lost Tapes</div></div>
-    </a>    <a class="card" href="/movie/229962-young-toscanini">
+    </a>    <a class="card" href="/movie/229962-young-toscanini.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/62zgVuhip89h4QRlaiSqCDePk2D.jpg" alt="Young Toscanini — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Young Toscanini</div></div>
@@ -86,13 +86,6 @@ National Velvet (1944) was Taylor's first success, and she starred in Father of 
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

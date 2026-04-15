@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Zorro</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1846370-miguel-bernardeau" class="cast-card">
+            <a href="/actor/1846370-miguel-bernardeau.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dFA8oHPaFseIqlpCFKtsDwzhrz1.jpg" alt="Miguel Bernardeau" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miguel Bernardeau</span>
             </a>
-            <a href="/actor/1491344-renata-notni" class="cast-card">
+            <a href="/actor/1491344-renata-notni.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9K3ciInRuT5BiJ03HD4YTnRsunY.jpg" alt="Renata Notni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Renata Notni</span>
             </a>
-            <a href="/actor/2093691-dalia-xiuhcoatl" class="cast-card">
+            <a href="/actor/2093691-dalia-xiuhcoatl.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w4NwkMVODggvHGOlT0DloB9oVqg.jpg" alt="Dalia Xiuhcoatl" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dalia Xiuhcoatl</span>
             </a>
-            <a href="/actor/1318702-emiliano-zurita" class="cast-card">
+            <a href="/actor/1318702-emiliano-zurita.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ajXDJnYuy3cRgvTxJqd4sZWmZTD.jpg" alt="Emiliano Zurita" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emiliano Zurita</span>
             </a>
-            <a href="/actor/1027740-paco-tous" class="cast-card">
+            <a href="/actor/1027740-paco-tous.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uDGKTKKv9v2JRutCZJjKwpJVKOs.jpg" alt="Paco Tous" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paco Tous</span>
             </a>
-            <a href="/actor/100669-rodolfo-sancho" class="cast-card">
+            <a href="/actor/100669-rodolfo-sancho.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cZyfkakNsGpB0S2aAoWkBB8M14H.jpg" alt="Rodolfo Sancho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rodolfo Sancho</span>
             </a>
-            <a href="/actor/2627590-cristo-fernández" class="cast-card">
+            <a href="/actor/2627590-cristo-fernández.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/irx5BVVLSQWY9m5NrhqyxPekwIY.jpg" alt="Cristo Fernández" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cristo Fernández</span>
             </a>
-            <a href="/actor/16867-luis-tosar" class="cast-card">
+            <a href="/actor/16867-luis-tosar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7ZTdhzUCpG9jhsKJeTJbGn36v5F.jpg" alt="Luis Tosar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luis Tosar</span>
             </a>
-            <a href="/actor/2089244-romanni-villicaña" class="cast-card">
+            <a href="/actor/2089244-romanni-villicaña.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/SB13f5w3arELyGAFTolcRRQABr.jpg" alt="Romanni Villicaña" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Romanni Villicaña</span>
             </a>
-            <a href="/actor/3877533-dorian-sanz" class="cast-card">
+            <a href="/actor/3877533-dorian-sanz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rb2ViOWRdKaPr9ZQgudkKtG2GTV.jpg" alt="Dorian Sanz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dorian Sanz</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

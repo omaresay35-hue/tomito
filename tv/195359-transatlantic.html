@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Transatlantic</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/94098-gillian-jacobs" class="cast-card">
+            <a href="/actor/94098-gillian-jacobs.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9fGHBU38slGZ6aOdwLgvrVNwCV5.jpg" alt="Gillian Jacobs" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gillian Jacobs</span>
             </a>
-            <a href="/actor/1367617-cory-michael-smith" class="cast-card">
+            <a href="/actor/1367617-cory-michael-smith.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jrtM6Nv9rR5zHYNWIcV8p1qDNCW.jpg" alt="Cory Michael Smith" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cory Michael Smith</span>
             </a>
-            <a href="/actor/1824101-lucas-englander" class="cast-card">
+            <a href="/actor/1824101-lucas-englander.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i6zNNLMHg5bNMzrdT3DE456Ds2q.jpg" alt="Lucas Englander" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucas Englander</span>
             </a>
-            <a href="/actor/74541-corey-stoll" class="cast-card">
+            <a href="/actor/74541-corey-stoll.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/isWjevgnGKoVowmFf8HSov7mLJo.jpg" alt="Corey Stoll" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Corey Stoll</span>
             </a>
-            <a href="/actor/73386-ralph-amoussou" class="cast-card">
+            <a href="/actor/73386-ralph-amoussou.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/22gep1oow5U4KOVR7E1MNWch9PN.jpg" alt="Ralph Amoussou" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ralph Amoussou</span>
             </a>
-            <a href="/actor/1163394-deleila-piasko" class="cast-card">
+            <a href="/actor/1163394-deleila-piasko.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/znvCUDnP0U7huezholLgBUmVbHL.jpg" alt="Deleila Piasko" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Deleila Piasko</span>
             </a>
-            <a href="/actor/2564535-amit-rahav" class="cast-card">
+            <a href="/actor/2564535-amit-rahav.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uhdyUWg4AQVpxJO96KHewntPhQy.jpg" alt="Amit Rahav" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amit Rahav</span>
             </a>
-            <a href="/actor/1423713-grégory-montel" class="cast-card">
+            <a href="/actor/1423713-grégory-montel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nImuHSjUgi8v8CaYp5UAZTHbY0j.jpg" alt="Grégory Montel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Grégory Montel</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

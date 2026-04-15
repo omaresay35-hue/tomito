@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1239115-warlord">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1239115-warlord.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nS3KochvTBdSvNkHiLPxqN1cmUW.jpg" alt="Warlord — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Warlord</div></div>
-    </a>    <a class="card" href="/movie/1354652-the-stoic">
+    </a>    <a class="card" href="/movie/1354652-the-stoic.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8RyWAkp2I8MiappqzmnCFIO6trJ.jpg" alt="The Stoic — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Stoic</div></div>
-    </a>    <a class="card" href="/movie/1173019-assassins-guild">
+    </a>    <a class="card" href="/movie/1173019-assassins-guild.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zUv8lBLSrr1j2Nfz8NBDeWbuyHn.jpg" alt="Assassin's Guild — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Assassin's Guild</div></div>
-    </a>    <a class="card" href="/movie/1067341-warchief">
+    </a>    <a class="card" href="/movie/1067341-warchief.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zFGOcPh7qzkNhTVH2ER0rTz4mfi.jpg" alt="Warchief — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Warchief</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

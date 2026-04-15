@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1340076-untitled-home-invasion-romance">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1340076-untitled-home-invasion-romance.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/aBMnVU5yrsP5XMBZhG8aT2w6m9u.jpg" alt="Untitled Home Invasion Romance — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Untitled Home Invasion Romance</div></div>
-    </a>    <a class="card" href="/movie/937086-turn-me-on">
+    </a>    <a class="card" href="/movie/937086-turn-me-on.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tp8iokHkDfFSXwxTJ1sdhlFROsS.jpg" alt="Turn Me On — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Turn Me On</div></div>
-    </a>    <a class="card" href="/movie/1282960-detained">
+    </a>    <a class="card" href="/movie/1282960-detained.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lR7RTf2vsJl9lwCUmDyKCmU7X6L.jpg" alt="Detained — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Detained</div></div>
-    </a>    <a class="card" href="/movie/1011082-the-greatest-hits">
+    </a>    <a class="card" href="/movie/1011082-the-greatest-hits.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cve12HkI9psBUfmkx7FeBciaQN7.jpg" alt="The Greatest Hits — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Greatest Hits</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/214582-the-devils-plan">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/214582-the-devils-plan.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jNY6UVgvKz03yrSgCflkF5NF25K.jpg" alt="The Devil's Plan — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Devil's Plan</div></div>
-    </a>    <a class="card" href="/tv/154385-beef">
+    </a>    <a class="card" href="/tv/154385-beef.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wSPOstFgu3Ogs61H6A86txGcWCM.jpg" alt="BEEF — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">BEEF</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

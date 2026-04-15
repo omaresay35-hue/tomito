@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Poromafia</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/92428-samuli-edelmann" class="cast-card">
+            <a href="/actor/92428-samuli-edelmann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fR1rhQ9T7oHToDcTM8RwHimw1zQ.jpg" alt="Samuli Edelmann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samuli Edelmann</span>
             </a>
-            <a href="/actor/1313784-anna-maija-tuokko" class="cast-card">
+            <a href="/actor/1313784-anna-maija-tuokko.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ezIXD9kTXRiFgRYA56vgdY2gTu.jpg" alt="Anna-Maija Tuokko" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anna-Maija Tuokko</span>
             </a>
-            <a href="/actor/222326-aake-kalliala" class="cast-card">
+            <a href="/actor/222326-aake-kalliala.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/z9V195pysVRfUOsmDNAakiQryMi.jpg" alt="Aake Kalliala" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aake Kalliala</span>
             </a>
-            <a href="/actor/52398-mikael-persbrandt" class="cast-card">
+            <a href="/actor/52398-mikael-persbrandt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ppJ6sjgdqzLt5gN5YqqBD1IVxbu.jpg" alt="Mikael Persbrandt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mikael Persbrandt</span>
             </a>
-            <a href="/actor/88854-olavi-uusivirta" class="cast-card">
+            <a href="/actor/88854-olavi-uusivirta.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ni19ioCE0JJm4oUXgXx3vAc5F7q.jpg" alt="Olavi Uusivirta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olavi Uusivirta</span>
             </a>
-            <a href="/actor/124288-rea-mauranen" class="cast-card">
+            <a href="/actor/124288-rea-mauranen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jDcedq9IMDi82BPbHEppypLOuUn.jpg" alt="Rea Mauranen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rea Mauranen</span>
             </a>
-            <a href="/actor/76618-rune-temte" class="cast-card">
+            <a href="/actor/76618-rune-temte.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uTP4vXJzckoeIlFXnucVzr7ghCx.jpg" alt="Rune Temte" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rune Temte</span>
             </a>
-            <a href="/actor/88036-paavo-westerberg" class="cast-card">
+            <a href="/actor/88036-paavo-westerberg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lQ7lcMNoef8fUkqElXjF7FWZfCo.jpg" alt="Paavo Westerberg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paavo Westerberg</span>
             </a>
-            <a href="/actor/52357-kaija-pakarinen" class="cast-card">
+            <a href="/actor/52357-kaija-pakarinen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9wEKd2q2pQLFiXHL7m0snxuOC4Q.jpg" alt="Kaija Pakarinen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaija Pakarinen</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

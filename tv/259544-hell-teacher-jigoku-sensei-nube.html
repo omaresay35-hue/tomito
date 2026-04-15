@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>地獄先生ぬ～べ～</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/89878-ryotaro-okiayu" class="cast-card">
+            <a href="/actor/89878-ryotaro-okiayu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qbj3cFQqWwZ6x7S1jEpOJa57sEZ.jpg" alt="Ryotaro Okiayu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryotaro Okiayu</span>
             </a>
-            <a href="/actor/230472-ryoko-shiraishi" class="cast-card">
+            <a href="/actor/230472-ryoko-shiraishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9HiasuMo5zn0nOGLcFJGQ5VvjWy.jpg" alt="Ryoko Shiraishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryoko Shiraishi</span>
             </a>
-            <a href="/actor/1258548-aya-suzaki" class="cast-card">
+            <a href="/actor/1258548-aya-suzaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eCbCtnzFqr4aTpe3arDeRGazP5K.jpg" alt="Aya Suzaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aya Suzaki</span>
             </a>
-            <a href="/actor/223687-aya-endo" class="cast-card">
+            <a href="/actor/223687-aya-endo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s59Lip4dPC7rI3cz1pHs9vSmuvf.jpg" alt="Aya Endo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aya Endo</span>
             </a>
-            <a href="/actor/2019929-ryota-iwasaki" class="cast-card">
+            <a href="/actor/2019929-ryota-iwasaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2aIpmhJ6R49ijYapEAeaAFS9U8g.jpg" alt="Ryota Iwasaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryota Iwasaki</span>
             </a>
-            <a href="/actor/1693100-shiho-kokido" class="cast-card">
+            <a href="/actor/1693100-shiho-kokido.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qIOQOYnxDB8dbU8nJngCe5z7J2Q.jpg" alt="Shiho Kokido" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shiho Kokido</span>
             </a>
-            <a href="/actor/1309253-tomoyo-kurosawa" class="cast-card">
+            <a href="/actor/1309253-tomoyo-kurosawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eSRnva88YVcUXlDHdVrhier2SGU.jpg" alt="Tomoyo Kurosawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomoyo Kurosawa</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

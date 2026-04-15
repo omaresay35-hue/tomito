@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/982843-the-great-flood">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/982843-the-great-flood.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1tUOZQDgZaGqZtrB21MieiXARL2.jpg" alt="The Great Flood — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Great Flood</div></div>
-    </a>    <a class="card" href="/movie/1131759-omniscient-reader-the-prophecy">
+    </a>    <a class="card" href="/movie/1131759-omniscient-reader-the-prophecy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uXdKubg6wHG9poAsKweUM1zQpdy.jpg" alt="Omniscient Reader: The Prophecy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Omniscient Reader: The Prophecy</div></div>
-    </a>    <a class="card" href="/movie/696047-citizen-of-a-kind">
+    </a>    <a class="card" href="/movie/696047-citizen-of-a-kind.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gF2yhuzy1o0uVWuKQ799LwDXH1V.jpg" alt="Citizen of a Kind — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Citizen of a Kind</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/280946-typhoon-family">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/280946-typhoon-family.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wPbW5Ll3xNP1PT99Odh6kawkJSM.jpg" alt="Typhoon Family — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Typhoon Family</div></div>
-    </a>    <a class="card" href="/tv/110382-pachinko">
+    </a>    <a class="card" href="/tv/110382-pachinko.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wUTXdmL6oNjhiStGveOaPeuFOYQ.jpg" alt="Pachinko — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pachinko</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

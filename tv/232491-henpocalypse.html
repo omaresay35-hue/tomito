@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Henpocalypse!</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/65446-kate-oflynn" class="cast-card">
+            <a href="/actor/65446-kate-oflynn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/geATyp6VnB8lIZOaVOWRxP0y4r7.jpg" alt="Kate O'Flynn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kate O'Flynn</span>
             </a>
-            <a href="/actor/2080503-lucie-shorthouse" class="cast-card">
+            <a href="/actor/2080503-lucie-shorthouse.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wzFf42GcYOlPX181FB6w4Pn3D3p.jpg" alt="Lucie Shorthouse" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucie Shorthouse</span>
             </a>
-            <a href="/actor/1969777-callie-cooke" class="cast-card">
+            <a href="/actor/1969777-callie-cooke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kAKeZuL0ILQCtjIWniCnqmwpvNx.jpg" alt="Callie Cooke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Callie Cooke</span>
             </a>
-            <a href="/actor/42998-elizabeth-berrington" class="cast-card">
+            <a href="/actor/42998-elizabeth-berrington.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wFz71bIKTlQoa8v1s243TIh5wUm.jpg" alt="Elizabeth Berrington" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elizabeth Berrington</span>
             </a>
-            <a href="/actor/1382570-lauren-orourke" class="cast-card">
+            <a href="/actor/1382570-lauren-orourke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xqucM7j7zyMePn4bup7JH1USwE0.jpg" alt="Lauren O'Rourke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lauren O'Rourke</span>
             </a>
-            <a href="/actor/1780968-mariam-haque" class="cast-card">
+            <a href="/actor/1780968-mariam-haque.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xmfXR2hN5utfwOiDErZCMS9bm3X.jpg" alt="Mariam Haque" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariam Haque</span>
             </a>
-            <a href="/actor/1657582-ben-mcgregor" class="cast-card">
+            <a href="/actor/1657582-ben-mcgregor.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ben McGregor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ben McGregor</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

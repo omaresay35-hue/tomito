@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>القانون في لاس فيغاس</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/36801-adam-scott" class="cast-card">
+            <a href="/actor/36801-adam-scott.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/b82C29R6fGiPoqIglQ4lzS6q2YX.jpg" alt="Adam Scott" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Scott</span>
             </a>
-            <a href="/actor/2692283-janelle-james" class="cast-card">
+            <a href="/actor/2692283-janelle-james.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vLiXGdCRCfWhamrPdUGYiBRZk6y.jpg" alt="Janelle James" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Janelle James</span>
             </a>
-            <a href="/actor/65827-keith-david" class="cast-card">
+            <a href="/actor/65827-keith-david.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hwykAZLSIP5Cb2bbauZ4CEEmq0u.jpg" alt="Keith David" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keith David</span>
             </a>
-            <a href="/actor/17401-stephen-root" class="cast-card">
+            <a href="/actor/17401-stephen-root.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2Zwi6AydqQQ9InVdhjYcfJXNzkp.jpg" alt="Stephen Root" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephen Root</span>
             </a>
-            <a href="/actor/5002701-shannon-gisela" class="cast-card">
+            <a href="/actor/5002701-shannon-gisela.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2KKRtfMRoaBmpB1FBEXMgnYOIoN.jpg" alt="Shannon Gisela" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shannon Gisela</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

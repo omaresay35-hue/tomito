@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Django</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/73381-matthias-schoenaerts" class="cast-card">
+            <a href="/actor/73381-matthias-schoenaerts.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9mRssCj4si6f6IF3nJ2RB5w0J7g.jpg" alt="Matthias Schoenaerts" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthias Schoenaerts</span>
             </a>
-            <a href="/actor/142660-lisa-vicari" class="cast-card">
+            <a href="/actor/142660-lisa-vicari.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vgcvazU9vTHBrWacGc5lGKUNECz.jpg" alt="Lisa Vicari" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lisa Vicari</span>
             </a>
-            <a href="/actor/1356645-nicholas-pinnock" class="cast-card">
+            <a href="/actor/1356645-nicholas-pinnock.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ufGrGvx2JPLfFbMrNXAQWZoSI38.jpg" alt="Nicholas Pinnock" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicholas Pinnock</span>
             </a>
-            <a href="/actor/87722-noomi-rapace" class="cast-card">
+            <a href="/actor/87722-noomi-rapace.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zkg9wfbXZi9OqvwW2ku38zNC1Hk.jpg" alt="Noomi Rapace" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Noomi Rapace</span>
             </a>
-            <a href="/actor/2892821-jyuddah-jaymes" class="cast-card">
+            <a href="/actor/2892821-jyuddah-jaymes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hL0GSaOgot9sWEwFbs27Os0oh5C.jpg" alt="Jyuddah Jaymes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jyuddah Jaymes</span>
             </a>
-            <a href="/actor/1266860-eric-kole" class="cast-card">
+            <a href="/actor/1266860-eric-kole.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gFL0bPPNPPmqC7C8rYpe3SMWVRt.jpg" alt="Eric Kole" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eric Kole</span>
             </a>
-            <a href="/actor/2219112-benny-o-arthur" class="cast-card">
+            <a href="/actor/2219112-benny-o-arthur.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hFWkp2jf8sw3NFslAmZxmTFNM1b.jpg" alt="Benny O. Arthur" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Benny O. Arthur</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

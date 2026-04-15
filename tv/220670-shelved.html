@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Shelved</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1252072-lyndie-greenwood" class="cast-card">
+            <a href="/actor/1252072-lyndie-greenwood.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iMVjH7KxxGwVatb7eWEQ4GLZXPp.jpg" alt="Lyndie Greenwood" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lyndie Greenwood</span>
             </a>
-            <a href="/actor/2069639-chris-sandiford" class="cast-card">
+            <a href="/actor/2069639-chris-sandiford.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tqHXyyOqquUf4W7NHvcb72iU5Nz.jpg" alt="Chris Sandiford" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Sandiford</span>
             </a>
-            <a href="/actor/3315753-dakota-ray-hebert" class="cast-card">
+            <a href="/actor/3315753-dakota-ray-hebert.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ugN6t2pUJrddVUkImEpU33qiWIx.jpg" alt="Dakota Ray Hebert" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dakota Ray Hebert</span>
             </a>
-            <a href="/actor/948533-paul-braunstein" class="cast-card">
+            <a href="/actor/948533-paul-braunstein.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5WFAZe2AGttbi0LPg2MmmswL7Gn.jpg" alt="Paul Braunstein" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paul Braunstein</span>
             </a>
-            <a href="/actor/1722587-taylor-love" class="cast-card">
+            <a href="/actor/1722587-taylor-love.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cSzRcHoTJZlzlgBFuhtHkSABJXF.jpg" alt="Taylor Love" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taylor Love</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

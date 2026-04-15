@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Universal Basic Guys</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1354843-adam-malamut" class="cast-card">
+            <a href="/actor/1354843-adam-malamut.html" class="cast-card">
                 <img src="/favicon.ico" alt="Adam Malamut" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Malamut</span>
             </a>
-            <a href="/actor/2424678-craig-malamut" class="cast-card">
+            <a href="/actor/2424678-craig-malamut.html" class="cast-card">
                 <img src="/favicon.ico" alt="Craig Malamut" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Craig Malamut</span>
             </a>
-            <a href="/actor/4850650-talia-genevieve" class="cast-card">
+            <a href="/actor/4850650-talia-genevieve.html" class="cast-card">
                 <img src="/favicon.ico" alt="Talia Genevieve" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Talia Genevieve</span>
             </a>
-            <a href="/actor/61110-fred-armisen" class="cast-card">
+            <a href="/actor/61110-fred-armisen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lQ9AEIjbVcSeJ6THEJk72CMU5Qs.jpg" alt="Fred Armisen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fred Armisen</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

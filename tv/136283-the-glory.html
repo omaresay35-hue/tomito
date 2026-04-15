@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,39 +75,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/74421-song-hye-kyo" class="cast-card">
+            <a href="/actor/74421-song-hye-kyo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tlAX3f82Mf5h0rznpVBVK7nD2om.jpg" alt="Song Hye-kyo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Song Hye-kyo</span>
             </a>
-            <a href="/actor/2341408-lee-do-hyun" class="cast-card">
+            <a href="/actor/2341408-lee-do-hyun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xL9risCaUoKDxHzfiLq1ObmRnI7.jpg" alt="Lee Do-hyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Do-hyun</span>
             </a>
-            <a href="/actor/1329984-lim-ji-yeon" class="cast-card">
+            <a href="/actor/1329984-lim-ji-yeon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kXacAfyn5CCuCBd16XXhEVLyxCM.jpg" alt="Lim Ji-yeon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lim Ji-yeon</span>
             </a>
-            <a href="/actor/2084416-yeom-hye-ran" class="cast-card">
+            <a href="/actor/2084416-yeom-hye-ran.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xZxVHnbDdNxF6J8UhwBTkJGNKWx.jpg" alt="Yeom Hye-ran" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yeom Hye-ran</span>
             </a>
-            <a href="/actor/1140210-park-sung-hoon" class="cast-card">
+            <a href="/actor/1140210-park-sung-hoon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nSF8VW2IoZcAA910gKQxbu01umk.jpg" alt="Park Sung-hoon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Sung-hoon</span>
             </a>
-            <a href="/actor/2804996-jung-sung-il" class="cast-card">
+            <a href="/actor/2804996-jung-sung-il.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3VyIhJniatsImjmBJlkclPZJsEE.jpg" alt="Jung Sung-il" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jung Sung-il</span>
             </a>
-            <a href="/actor/3623817-kim-hieora" class="cast-card">
+            <a href="/actor/3623817-kim-hieora.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xeAi9a2wSRBBDsCEJulg8FiAJrK.jpg" alt="Kim Hieora" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Hieora</span>
             </a>
-            <a href="/actor/1929192-cha-joo-young" class="cast-card">
+            <a href="/actor/1929192-cha-joo-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zd5FDsiQkfpjdH5ZH1f3bgcx2Cq.jpg" alt="Cha Joo-young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cha Joo-young</span>
             </a>
-            <a href="/actor/2042979-kim-gun-woo" class="cast-card">
+            <a href="/actor/2042979-kim-gun-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sdFpIuQwzmbelx7EFLet2XzmGhH.jpg" alt="Kim Gun-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Gun-woo</span>
             </a></div></section>
@@ -115,13 +115,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

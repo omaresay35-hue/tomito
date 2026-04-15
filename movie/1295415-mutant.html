@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>المتحول</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/80374-patrick-tam-yiu-man" class="cast-card">
+            <a href="/actor/80374-patrick-tam-yiu-man.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aOus8OyhjMqJxnZsI0r5krej8TU.jpg" alt="Patrick Tam Yiu-Man" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patrick Tam Yiu-Man</span>
             </a>
-            <a href="/actor/1976642-dai-si" class="cast-card">
+            <a href="/actor/1976642-dai-si.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jHvg52JMzpdxFTbpN8Ot8sIJD65.jpg" alt="Dai Si" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dai Si</span>
             </a>
-            <a href="/actor/70437-richard-ng-man-tat" class="cast-card">
+            <a href="/actor/70437-richard-ng-man-tat.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l8Sfi9pT0YcyzGy0bt7XwY8OEBo.jpg" alt="Richard Ng Man-Tat" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Richard Ng Man-Tat</span>
             </a>
-            <a href="/actor/2881226-nie-rongxin" class="cast-card">
+            <a href="/actor/2881226-nie-rongxin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/u4qpxQRJ9dXtLnQII6onEtAsL5M.jpg" alt="Nie Rongxin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nie Rongxin</span>
             </a>
-            <a href="/actor/1594123-zhang-yakun" class="cast-card">
+            <a href="/actor/1594123-zhang-yakun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yzxHoshw69xUNIC9isRuF5Z35Zs.jpg" alt="Zhang Yakun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Yakun</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

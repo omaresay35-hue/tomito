@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>세상 참 예쁜 오드리</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1123505-kim-jung-nan" class="cast-card">
+            <a href="/actor/1123505-kim-jung-nan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/guaDtVcObvkRj2Jmku4kGw1HOVD.jpg" alt="Kim Jung-nan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Jung-nan</span>
             </a>
-            <a href="/actor/1901640-park-ji-hoon" class="cast-card">
+            <a href="/actor/1901640-park-ji-hoon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zbNZZ8o6qF3gaDndsq76h19Pe33.jpg" alt="Park Ji-hoon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Ji-hoon</span>
             </a>
-            <a href="/actor/3443908-kim-bo-young" class="cast-card">
+            <a href="/actor/3443908-kim-bo-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7bkTIOSKICJcATCcRTPY9BdTJSa.jpg" alt="Kim Bo-young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Bo-young</span>
             </a>
-            <a href="/actor/2150704-kim-ki-doo" class="cast-card">
+            <a href="/actor/2150704-kim-ki-doo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fmTh73oW5YKc39o0zHNIhiHS9p5.jpg" alt="Kim Ki-doo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Ki-doo</span>
             </a>
-            <a href="/actor/3019258-kim-yi-kyeong" class="cast-card">
+            <a href="/actor/3019258-kim-yi-kyeong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vPExQoWypIKPZGjlSHSazpMtmDa.jpg" alt="Kim Yi-kyeong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Yi-kyeong</span>
             </a>
-            <a href="/actor/2046478-ha-si-eun" class="cast-card">
+            <a href="/actor/2046478-ha-si-eun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lQcBXTWfvA7lXFcv1wtWMtr7i1Y.jpg" alt="Ha Si-eun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ha Si-eun</span>
             </a>
-            <a href="/actor/1352803-lee-pil-mo" class="cast-card">
+            <a href="/actor/1352803-lee-pil-mo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sVnDH47xdLtTs3dyHkZu6LzWkGn.jpg" alt="Lee Pil-mo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Pil-mo</span>
             </a>
-            <a href="/actor/1250036-jang-shin-young" class="cast-card">
+            <a href="/actor/1250036-jang-shin-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gQc21n01E4b3EA31purlfVTswm9.jpg" alt="Jang Shin-young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jang Shin-young</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

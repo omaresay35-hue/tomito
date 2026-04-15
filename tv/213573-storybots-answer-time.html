@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,23 +75,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/20750-judy-greer" class="cast-card">
+            <a href="/actor/20750-judy-greer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j5fyC7BdkhheN9A93ryEvHAP4Nl.jpg" alt="Judy Greer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Judy Greer</span>
             </a>
-            <a href="/actor/188982-erin-fitzgerald" class="cast-card">
+            <a href="/actor/188982-erin-fitzgerald.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fAMOm2xRjbR7nDUo3FsNVy61U70.jpg" alt="Erin Fitzgerald" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erin Fitzgerald</span>
             </a>
-            <a href="/actor/60279-fred-tatasciore" class="cast-card">
+            <a href="/actor/60279-fred-tatasciore.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7pxLvE4l5mQkGzHLIEwYrc9AMFe.jpg" alt="Fred Tatasciore" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fred Tatasciore</span>
             </a>
-            <a href="/actor/1348939-jeff-gill" class="cast-card">
+            <a href="/actor/1348939-jeff-gill.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jeff Gill" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeff Gill</span>
             </a>
-            <a href="/actor/1765345-gregg-spiridellis" class="cast-card">
+            <a href="/actor/1765345-gregg-spiridellis.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gregg Spiridellis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gregg Spiridellis</span>
             </a></div></section>
@@ -99,13 +99,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

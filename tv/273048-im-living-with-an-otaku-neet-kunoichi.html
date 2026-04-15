@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ニートくノ一となぜか同棲はじめました</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2774746-hinaki-yano" class="cast-card">
+            <a href="/actor/2774746-hinaki-yano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AaooiskwaqifXbXAficRnHyfUvj.jpg" alt="Hinaki Yano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hinaki Yano</span>
             </a>
-            <a href="/actor/2590390-shoya-ishige" class="cast-card">
+            <a href="/actor/2590390-shoya-ishige.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ohW9TNSoiL9n5SgLBbAj85wJXAA.jpg" alt="Shoya Ishige" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shoya Ishige</span>
             </a>
-            <a href="/actor/105816-shigeru-chiba" class="cast-card">
+            <a href="/actor/105816-shigeru-chiba.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mF5YJxApTYKBVFJDrEC9IrJ5ooV.jpg" alt="Shigeru Chiba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shigeru Chiba</span>
             </a>
-            <a href="/actor/2359492-fairouz-ai" class="cast-card">
+            <a href="/actor/2359492-fairouz-ai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/coFu6WOVBZvqd1fw89vbHkiC0zB.jpg" alt="Fairouz Ai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fairouz Ai</span>
             </a>
-            <a href="/actor/2467933-saya-aizawa" class="cast-card">
+            <a href="/actor/2467933-saya-aizawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3QoVKl1w7uBMf5ivJ4MccYkt4zR.jpg" alt="Saya Aizawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saya Aizawa</span>
             </a>
-            <a href="/actor/1597103-hina-kino" class="cast-card">
+            <a href="/actor/1597103-hina-kino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iwq0VvY3q4MPfn5ZTjsthhNcuyd.jpg" alt="Hina Kino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hina Kino</span>
             </a>
-            <a href="/actor/2103126-sho-nogami" class="cast-card">
+            <a href="/actor/2103126-sho-nogami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9uLxicGhfnxNIfFrg2cKTy4Uf6P.jpg" alt="Sho Nogami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sho Nogami</span>
             </a>
-            <a href="/actor/202806-yui-horie" class="cast-card">
+            <a href="/actor/202806-yui-horie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3TXfhSdsfEqPYi4ww0dBPGhVQm0.jpg" alt="Yui Horie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yui Horie</span>
             </a>
-            <a href="/actor/2839350-manatsu-murakami" class="cast-card">
+            <a href="/actor/2839350-manatsu-murakami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nuhIlyH91JuPdJRWMxWh1oASr8l.jpg" alt="Manatsu Murakami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manatsu Murakami</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

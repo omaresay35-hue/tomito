@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>White Lies</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/58502-natalie-dormer" class="cast-card">
+            <a href="/actor/58502-natalie-dormer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3OlkHjDKDj9NKkFWXfLk7gcb2C.jpg" alt="Natalie Dormer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natalie Dormer</span>
             </a>
-            <a href="/actor/1277543-brendon-daniels" class="cast-card">
+            <a href="/actor/1277543-brendon-daniels.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oHDSfLvYOGdAG0Jy23lNbJYJWIt.jpg" alt="Brendon Daniels" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brendon Daniels</span>
             </a>
-            <a href="/actor/2148316-daniel-schultz" class="cast-card">
+            <a href="/actor/2148316-daniel-schultz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kWYhbNWMMqfWkYdnryl2gLDBBjX.jpg" alt="Daniel Schultz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Schultz</span>
             </a>
-            <a href="/actor/3412790-morgan-santo" class="cast-card">
+            <a href="/actor/3412790-morgan-santo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zYNVCcwt7WIUbq6qpiZnhRlBFDi.jpg" alt="Morgan Santo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Morgan Santo</span>
             </a>
-            <a href="/actor/37093-langley-kirkwood" class="cast-card">
+            <a href="/actor/37093-langley-kirkwood.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tSKPfLCtWrXsmkZT31oAS4SLfUw.jpg" alt="Langley Kirkwood" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Langley Kirkwood</span>
             </a>
-            <a href="/actor/2440153-caely-jo-levy" class="cast-card">
+            <a href="/actor/2440153-caely-jo-levy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vl1WUFYeE26neBxqLoLxDCzJV62.jpg" alt="Caely-Jo Levy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Caely-Jo Levy</span>
             </a>
-            <a href="/actor/1459810-daniel-janks" class="cast-card">
+            <a href="/actor/1459810-daniel-janks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/prqatsvtoSMtykvxRNmiYs7vcfN.jpg" alt="Daniel Janks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Janks</span>
             </a>
-            <a href="/actor/107550-warrick-grier" class="cast-card">
+            <a href="/actor/107550-warrick-grier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r10e3Ae78PZvGE3sADiiW51hihx.jpg" alt="Warrick Grier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Warrick Grier</span>
             </a>
-            <a href="/actor/2427636-athenkosi-mfamela" class="cast-card">
+            <a href="/actor/2427636-athenkosi-mfamela.html" class="cast-card">
                 <img src="/favicon.ico" alt="Athenkosi Mfamela" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Athenkosi Mfamela</span>
             </a>
-            <a href="/actor/1472707-chi-mhende" class="cast-card">
+            <a href="/actor/1472707-chi-mhende.html" class="cast-card">
                 <img src="/favicon.ico" alt="Chi Mhende" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chi Mhende</span>
             </a>
-            <a href="/actor/4183102-lee-roodt" class="cast-card">
+            <a href="/actor/4183102-lee-roodt.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lee Roodt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Roodt</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

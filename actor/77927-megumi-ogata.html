@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1600672-evangelion-30th-anniversary-special-screening">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1600672-evangelion-30th-anniversary-special-screening.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/25csgA1l0jpvvSRwdFgjrI7PDnk.jpg" alt="EVANGELION 30th Anniversary Special Screening — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">EVANGELION 30th Anniversary Special Screening</div></div>
-    </a>    <a class="card" href="/movie/1539104-jujutsu-kaisen-execution">
+    </a>    <a class="card" href="/movie/1539104-jujutsu-kaisen-execution.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/v0s3dx6am0RzfsuK3KdEy8ZoCDs.jpg" alt="JUJUTSU KAISEN: Execution — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">JUJUTSU KAISEN: Execution</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/253811-tougen-anki">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/253811-tougen-anki.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vnasRNhwT5M3OvTAMzYn4i5fQcT.jpg" alt="Tougen Anki — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Tougen Anki</div></div>
-    </a>    <a class="card" href="/tv/233408-after-school-hanako-kun">
+    </a>    <a class="card" href="/tv/233408-after-school-hanako-kun.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6qtqmilWKwgbcz7l31aTvj7Edmu.jpg" alt="After-school Hanako-kun — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">After-school Hanako-kun</div></div>
-    </a>    <a class="card" href="/tv/199920-kamikatsu-working-for-god-in-a-godless-world">
+    </a>    <a class="card" href="/tv/199920-kamikatsu-working-for-god-in-a-godless-world.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/d82CH1EMSoC2VvYSTxCZHPboJYq.jpg" alt="KamiKatsu: Working for God in a Godless World — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">KamiKatsu: Working for God in a Godless World</div></div>
-    </a>    <a class="card" href="/tv/890-neon-genesis-evangelion">
+    </a>    <a class="card" href="/tv/890-neon-genesis-evangelion.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/y2ah9t0navXyIvoHg1uIbIHO3tt.jpg" alt="Neon Genesis Evangelion — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Neon Genesis Evangelion</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

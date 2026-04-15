@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1214537-never-look-away">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1214537-never-look-away.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gJFYxbqM2PEuy0hUzJRpWPAWT1G.jpg" alt="Never Look Away — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Never Look Away</div></div>
-    </a>    <a class="card" href="/movie/1075845-kiss-the-future">
+    </a>    <a class="card" href="/movie/1075845-kiss-the-future.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/98FcXwcOnylR4iYPLySHWLP7hKy.jpg" alt="Kiss the Future — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kiss the Future</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/147050-disclaimer">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/147050-disclaimer.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/m0ZB5DEJKare7NTdeR1UQpHYy4c.jpg" alt="Disclaimer — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Disclaimer</div></div>
-    </a>    <a class="card" href="/tv/261646-whats-next-the-future-with-bill-gates">
+    </a>    <a class="card" href="/tv/261646-whats-next-the-future-with-bill-gates.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/s2uNbATWA2qZTVgsrJeqWmQPb4V.jpg" alt="What's Next? The Future with Bill Gates — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">What's Next? The Future with Bill Gates</div></div>
-    </a>    <a class="card" href="/tv/209415-sunday-with-laura-kuenssberg">
+    </a>    <a class="card" href="/tv/209415-sunday-with-laura-kuenssberg.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/le6vaFe9E0en3znFhy8eFhP3DQV.jpg" alt="Sunday with Laura Kuenssberg — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">2.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sunday with Laura Kuenssberg</div></div>
-    </a>    <a class="card" href="/tv/209415-sunday-with-laura-kuenssberg">
+    </a>    <a class="card" href="/tv/209415-sunday-with-laura-kuenssberg.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/le6vaFe9E0en3znFhy8eFhP3DQV.jpg" alt="Sunday with Laura Kuenssberg — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">2.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sunday with Laura Kuenssberg</div></div>
-    </a>    <a class="card" href="/tv/209415-sunday-with-laura-kuenssberg">
+    </a>    <a class="card" href="/tv/209415-sunday-with-laura-kuenssberg.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/le6vaFe9E0en3znFhy8eFhP3DQV.jpg" alt="Sunday with Laura Kuenssberg — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">2.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sunday with Laura Kuenssberg</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

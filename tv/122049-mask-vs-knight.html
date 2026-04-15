@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Máscara contra Caballero</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/130368-luis-ernesto-franco" class="cast-card">
+            <a href="/actor/130368-luis-ernesto-franco.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wIGc57OVU1KSIzJr931rXYBzqCQ.jpg" alt="Luis Ernesto Franco" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luis Ernesto Franco</span>
             </a>
-            <a href="/actor/1372601-pamela-almanza" class="cast-card">
+            <a href="/actor/1372601-pamela-almanza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h6VgbR19K7fRjr2sS3FL9gVMazj.jpg" alt="Pamela Almanza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pamela Almanza</span>
             </a>
-            <a href="/actor/1327350-paola-fernández" class="cast-card">
+            <a href="/actor/1327350-paola-fernández.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kRfjEVZULgJNf8XC5PJETkoc7bx.jpg" alt="Paola Fernández" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paola Fernández</span>
             </a>
-            <a href="/actor/1917466-nicolasa-ortíz-monasterio" class="cast-card">
+            <a href="/actor/1917466-nicolasa-ortíz-monasterio.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1U791LXpmGCZUVaxCZi6dI5AFyA.jpg" alt="Nicolasa Ortíz Monasterio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicolasa Ortíz Monasterio</span>
             </a>
-            <a href="/actor/589123-enoc-leaño" class="cast-card">
+            <a href="/actor/589123-enoc-leaño.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ngoBlpmy5UGIo9vs14wbDaPZF3N.jpg" alt="Enoc Leaño" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Enoc Leaño</span>
             </a>
-            <a href="/actor/1043868-úrsula-pruneda" class="cast-card">
+            <a href="/actor/1043868-úrsula-pruneda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qkWx4P63xuLioQZNbTmYGlEbJ9h.jpg" alt="Úrsula Pruneda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Úrsula Pruneda</span>
             </a>
-            <a href="/actor/427262-eduardo-arroyuelo" class="cast-card">
+            <a href="/actor/427262-eduardo-arroyuelo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fHPBs7nPEg1bu2GUP7mIFhiah1I.jpg" alt="Eduardo Arroyuelo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eduardo Arroyuelo</span>
             </a>
-            <a href="/actor/2423233-fernando-memije" class="cast-card">
+            <a href="/actor/2423233-fernando-memije.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/huZsfq7Xsi402hSkEZnoTQ3wMOp.jpg" alt="Fernando Memije" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fernando Memije</span>
             </a>
-            <a href="/actor/3233644-mauricio-garza" class="cast-card">
+            <a href="/actor/3233644-mauricio-garza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ioHvIVQVhHbdtwK8rhoaXs2XZo7.jpg" alt="Mauricio Garza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mauricio Garza</span>
             </a>
-            <a href="/actor/1306685-alfonso-borbolla" class="cast-card">
+            <a href="/actor/1306685-alfonso-borbolla.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/60Pw7d3SNCIAf5Iw6QAaikIl9p.jpg" alt="Alfonso Borbolla" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alfonso Borbolla</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

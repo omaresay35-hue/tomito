@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>시스터</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1418762-jung-zi-so" class="cast-card">
+            <a href="/actor/1418762-jung-zi-so.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jsUPFmY1HlML92ubVtSE8L8ovz6.jpg" alt="Jung Zi-so" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jung Zi-so</span>
             </a>
-            <a href="/actor/1257624-lee-soo-hyuk" class="cast-card">
+            <a href="/actor/1257624-lee-soo-hyuk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/drqY2KOm6kcESbVPSNnOj4oa27b.jpg" alt="Lee Soo-hyuk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Soo-hyuk</span>
             </a>
-            <a href="/actor/1929192-cha-joo-young" class="cast-card">
+            <a href="/actor/1929192-cha-joo-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zd5FDsiQkfpjdH5ZH1f3bgcx2Cq.jpg" alt="Cha Joo-young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cha Joo-young</span>
             </a>
-            <a href="/actor/3582463-jung-ji-woo" class="cast-card">
+            <a href="/actor/3582463-jung-ji-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ePY68lxmCxWWFHFf7b5rQUUCoVT.jpg" alt="Jung Ji-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jung Ji-woo</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

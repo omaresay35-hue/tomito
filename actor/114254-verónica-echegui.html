@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1235913-i-am-not-that">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1235913-i-am-not-that.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/boO67d8MCPwtLR9fRFWfDjMvpz9.jpg" alt="I Am Not That — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">I Am Not That</div></div>
-    </a>    <a class="card" href="/movie/1209423-artificial-justice">
+    </a>    <a class="card" href="/movie/1209423-artificial-justice.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/x7twpnxfyDDCzzQnX9T3Zl9db1F.jpg" alt="Artificial Justice — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Artificial Justice</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/277752-city-of-shadows">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/277752-city-of-shadows.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/n4rguIB7Cf4h3l1IyqMo3THW5xn.jpg" alt="City of Shadows — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">City of Shadows</div></div>
-    </a>    <a class="card" href="/tv/230365-love-you-to-death">
+    </a>    <a class="card" href="/tv/230365-love-you-to-death.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/idX16kMNpuT8KZortTGwTh7SkFQ.jpg" alt="Love You to Death — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Love You to Death</div></div>
-    </a>    <a class="card" href="/tv/227554-cites-barcelona">
+    </a>    <a class="card" href="/tv/227554-cites-barcelona.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jStuS0GzjBQLo4Wli8DyLlLeQNb.jpg" alt="Cites Barcelona — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Cites Barcelona</div></div>
-    </a>    <a class="card" href="/tv/224490-the-patients-of-dr-garcía">
+    </a>    <a class="card" href="/tv/224490-the-patients-of-dr-garcía.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/y57ND50yq0nPmQpvLmMBKrnAvRB.jpg" alt="The Patients of Dr. García — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Patients of Dr. García</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

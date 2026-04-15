@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Lads</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2935861-marco-luraschi" class="cast-card">
+            <a href="/actor/2935861-marco-luraschi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h6LcGgUb1rJ32WvlZsZeccbO1mX.jpg" alt="Marco Luraschi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marco Luraschi</span>
             </a>
-            <a href="/actor/77191-jeanne-balibar" class="cast-card">
+            <a href="/actor/77191-jeanne-balibar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nvy943Oez5Grrulv3FzLjzN8OSM.jpg" alt="Jeanne Balibar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeanne Balibar</span>
             </a>
-            <a href="/actor/135665-marc-barbé" class="cast-card">
+            <a href="/actor/135665-marc-barbé.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wx6mwxsSrAZj3PAg8PkUSAQlTbo.jpg" alt="Marc Barbé" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marc Barbé</span>
             </a>
-            <a href="/actor/1566670-phénix-brossard" class="cast-card">
+            <a href="/actor/1566670-phénix-brossard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4ZZyj4yq6B9mkotECsyQQviJl8r.jpg" alt="Phénix Brossard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Phénix Brossard</span>
             </a>
-            <a href="/actor/2432596-ethelle-gonzalez-lardued" class="cast-card">
+            <a href="/actor/2432596-ethelle-gonzalez-lardued.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fLo7mFg2RUHhnBhJat6kb6vC5Ox.jpg" alt="Ethelle Gonzalez Lardued" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ethelle Gonzalez Lardued</span>
             </a>
-            <a href="/actor/146501-léon-vitale" class="cast-card">
+            <a href="/actor/146501-léon-vitale.html" class="cast-card">
                 <img src="/favicon.ico" alt="Léon Vitale" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Léon Vitale</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

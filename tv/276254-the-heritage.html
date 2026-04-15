@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Scheda</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1126248-magdalena-popławska" class="cast-card">
+            <a href="/actor/1126248-magdalena-popławska.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/f1bz0HdPPwZuQA73WoJkRzxASjf.jpg" alt="Magdalena Popławska" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Magdalena Popławska</span>
             </a>
-            <a href="/actor/12210-jacek-koman" class="cast-card">
+            <a href="/actor/12210-jacek-koman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t72LPCMYV7xkGeRel1tGPyP4V1r.jpg" alt="Jacek Koman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jacek Koman</span>
             </a>
-            <a href="/actor/1065359-grzegorz-damięcki" class="cast-card">
+            <a href="/actor/1065359-grzegorz-damięcki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bDc90Cbe3QkagE4UcF4aUtJm0a6.jpg" alt="Grzegorz Damięcki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Grzegorz Damięcki</span>
             </a>
-            <a href="/actor/566103-bartosz-gelner" class="cast-card">
+            <a href="/actor/566103-bartosz-gelner.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/byOQN7QpYeSGPphAZzUO0485JE3.jpg" alt="Bartosz Gelner" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bartosz Gelner</span>
             </a>
-            <a href="/actor/591428-wojciech-zieliński" class="cast-card">
+            <a href="/actor/591428-wojciech-zieliński.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yt48QlTQm123yfk2y4R20d8r4ay.jpg" alt="Wojciech Zieliński" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wojciech Zieliński</span>
             </a>
-            <a href="/actor/1618369-bartłomiej-kotschedoff" class="cast-card">
+            <a href="/actor/1618369-bartłomiej-kotschedoff.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dffqB6PsOeg5gevabtLkbFfnqyV.jpg" alt="Bartłomiej Kotschedoff" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bartłomiej Kotschedoff</span>
             </a>
-            <a href="/actor/2166471-karol-pocheć" class="cast-card">
+            <a href="/actor/2166471-karol-pocheć.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/JHMOmFQxpFOmNYStk21DXL4ua2.jpg" alt="Karol Pocheć" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karol Pocheć</span>
             </a>
-            <a href="/actor/1650372-michalina-łabacz" class="cast-card">
+            <a href="/actor/1650372-michalina-łabacz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/960l2Fl6aH3KYOGAQN2ZgCVMz5m.jpg" alt="Michalina Łabacz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michalina Łabacz</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

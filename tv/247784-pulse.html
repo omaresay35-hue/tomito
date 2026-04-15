@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>نبض وخفقان</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1318650-willa-fitzgerald" class="cast-card">
+            <a href="/actor/1318650-willa-fitzgerald.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hXvCqRAtmrfjozHtVNrBgXFzzao.jpg" alt="Willa Fitzgerald" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Willa Fitzgerald</span>
             </a>
-            <a href="/actor/1660946-colin-woodell" class="cast-card">
+            <a href="/actor/1660946-colin-woodell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sMd7ba1hWVm5E1Lf5VYcj82ouod.jpg" alt="Colin Woodell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Colin Woodell</span>
             </a>
-            <a href="/actor/1449329-jack-bannon" class="cast-card">
+            <a href="/actor/1449329-jack-bannon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eGX4dFdQz8bTYQXLasZkILvch8G.jpg" alt="Jack Bannon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Bannon</span>
             </a>
-            <a href="/actor/198847-jessie-t-usher" class="cast-card">
+            <a href="/actor/198847-jessie-t-usher.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bkFM2GHKU1rr6CRCgeaojY1TDCS.jpg" alt="Jessie T. Usher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jessie T. Usher</span>
             </a>
-            <a href="/actor/1906861-jessy-yates" class="cast-card">
+            <a href="/actor/1906861-jessy-yates.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cwE9qYmKCcpfRiOgpm91djTKCyH.jpg" alt="Jessy Yates" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jessy Yates</span>
             </a>
-            <a href="/actor/3217686-chelsea-muirhead" class="cast-card">
+            <a href="/actor/3217686-chelsea-muirhead.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/chIRzXrYwkOMmBtyGpqN7JTmJFL.jpg" alt="Chelsea Muirhead" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chelsea Muirhead</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

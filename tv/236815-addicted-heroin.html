@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>รักร้ายนายเสพติด</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1834147-vachiravit-paisarnkulwong" class="cast-card">
+            <a href="/actor/1834147-vachiravit-paisarnkulwong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aZv2DtHFNHLJFN0bfM7wpC4LjNV.jpg" alt="Vachiravit Paisarnkulwong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vachiravit Paisarnkulwong</span>
             </a>
-            <a href="/actor/1601205-nattapat-nimjirawat" class="cast-card">
+            <a href="/actor/1601205-nattapat-nimjirawat.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rltyvbPYVI9ahRi5FNsqou8iAaw.jpg" alt="Nattapat Nimjirawat" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nattapat Nimjirawat</span>
             </a>
-            <a href="/actor/3872661-vasin-traiprakhong" class="cast-card">
+            <a href="/actor/3872661-vasin-traiprakhong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5ByB0DQtp7dxT3LZEizR9HeLwvg.jpg" alt="Vasin Traiprakhong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vasin Traiprakhong</span>
             </a>
-            <a href="/actor/4244332-nawaphat-thannamongkhonsawat" class="cast-card">
+            <a href="/actor/4244332-nawaphat-thannamongkhonsawat.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yw7JI2Qx1Lqm87DYwN9gPXaGiix.jpg" alt="Nawaphat Thannamongkhonsawat" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nawaphat Thannamongkhonsawat</span>
             </a>
-            <a href="/actor/5032367-aey-supprawee-ponlathan" class="cast-card">
+            <a href="/actor/5032367-aey-supprawee-ponlathan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2d6b0e8qZaeEigW2bKoG6qRVnQO.jpg" alt="Aey Supprawee Ponlathan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aey Supprawee Ponlathan</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

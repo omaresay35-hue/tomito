@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1122099-the-ballad-of-wallis-island">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1122099-the-ballad-of-wallis-island.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/haS6bnqDqZoi5sYcCPJWaj2yMbB.jpg" alt="The Ballad of Wallis Island — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Ballad of Wallis Island</div></div>
-    </a>    <a class="card" href="/movie/696506-mickey-17">
+    </a>    <a class="card" href="/movie/696506-mickey-17.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg" alt="Mickey 17 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Mickey 17</div></div>
-    </a>    <a class="card" href="/movie/975773-wicked-little-letters">
+    </a>    <a class="card" href="/movie/975773-wicked-little-letters.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/scAU7YudKNVeZlOfgSEWntAUSJ.jpg" alt="Wicked Little Letters — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wicked Little Letters</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/253941-the-paper">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/253941-the-paper.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ySA5MvhoxTdezNUMe0ifPmhxH4w.jpg" alt="The Paper — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Paper</div></div>
-    </a>    <a class="card" href="/tv/900-skins">
+    </a>    <a class="card" href="/tv/900-skins.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1fC7UYY12Cy0TzNEjzV2K7gxPgi.jpg" alt="Skins — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Skins</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

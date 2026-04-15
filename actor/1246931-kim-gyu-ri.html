@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,15 +71,15 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1469823-the-pact">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1469823-the-pact.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7N1A0ZhfJLO9hIS92neHr6wRVyl.jpg" alt="The Pact — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Pact</div></div>
-    </a>    <a class="card" href="/movie/814193-1980-the-unforgettable-day">
+    </a>    <a class="card" href="/movie/814193-1980-the-unforgettable-day.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ijPoeXHYWw6qbqSy9hwGHojw1fP.jpg" alt="1980: The Unforgettable Day — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">1980: The Unforgettable Day</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/195747-green-mothers-club">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/195747-green-mothers-club.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1khpDFmRfKtBUJ2VMgJsKBf64PU.jpg" alt="Green Mothers' Club — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Green Mothers' Club</div></div>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

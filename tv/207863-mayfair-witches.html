@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Mayfair Witches</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/109513-alexandra-daddario" class="cast-card">
+            <a href="/actor/109513-alexandra-daddario.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mP3N1LTIaIG5Q0BHyt1XxjtIyYi.jpg" alt="Alexandra Daddario" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexandra Daddario</span>
             </a>
-            <a href="/actor/105875-tongayi-chirisa" class="cast-card">
+            <a href="/actor/105875-tongayi-chirisa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iNUnPz0fcz2kGYZ5lhkXo042iAl.jpg" alt="Tongayi Chirisa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tongayi Chirisa</span>
             </a>
-            <a href="/actor/78431-ben-feldman" class="cast-card">
+            <a href="/actor/78431-ben-feldman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/neArGlsh50NtcGzUM99Puz6TrFX.jpg" alt="Ben Feldman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ben Feldman</span>
             </a>
-            <a href="/actor/1951261-alyssa-jirrels" class="cast-card">
+            <a href="/actor/1951261-alyssa-jirrels.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x9VVL5yFEs3RWUvjkOsGFhuZWEJ.jpg" alt="Alyssa Jirrels" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alyssa Jirrels</span>
             </a>
-            <a href="/actor/54738-jack-huston" class="cast-card">
+            <a href="/actor/54738-jack-huston.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dopiwKGjFiWYlC4Pi5U9NNVgbgr.jpg" alt="Jack Huston" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Huston</span>
             </a>
-            <a href="/actor/64825-harry-hamlin" class="cast-card">
+            <a href="/actor/64825-harry-hamlin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fJZcgqLemEURV5r69XdTgjueghN.jpg" alt="Harry Hamlin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Harry Hamlin</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

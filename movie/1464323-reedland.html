@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Rietland</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5371516-gerrit-knobbe" class="cast-card">
+            <a href="/actor/5371516-gerrit-knobbe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cQyrvis4oiqaSdRlUHceP31NDp6.jpg" alt="Gerrit Knobbe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gerrit Knobbe</span>
             </a>
-            <a href="/actor/5371517-loïs-reinders" class="cast-card">
+            <a href="/actor/5371517-loïs-reinders.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yul1XFbwBG6a2HM4tJGidkdJDK4.jpg" alt="Loïs Reinders" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Loïs Reinders</span>
             </a>
-            <a href="/actor/4641919-susan-beijer" class="cast-card">
+            <a href="/actor/4641919-susan-beijer.html" class="cast-card">
                 <img src="/favicon.ico" alt="Susan Beijer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Susan Beijer</span>
             </a>
-            <a href="/actor/1152376-vincent-linthorst" class="cast-card">
+            <a href="/actor/1152376-vincent-linthorst.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tQQlGZjoo4pWOMtC4g6JP2DpP1L.jpg" alt="Vincent Linthorst" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vincent Linthorst</span>
             </a>
-            <a href="/actor/4215675-lana-lush" class="cast-card">
+            <a href="/actor/4215675-lana-lush.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ehcnZw0s6WniqC054WYv0ImMArQ.jpg" alt="Lana Lush" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lana Lush</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

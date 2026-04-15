@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>غير مألوف</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/36883-felix-kramer" class="cast-card">
+            <a href="/actor/36883-felix-kramer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/miTBzoeUCmJZjtkhiXQAwRKlukl.jpg" alt="Felix Kramer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Felix Kramer</span>
             </a>
-            <a href="/actor/34390-susanne-wolff" class="cast-card">
+            <a href="/actor/34390-susanne-wolff.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sSRzIz5TGJWsvHyMeZluZOxFJKN.jpg" alt="Susanne Wolff" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Susanne Wolff</span>
             </a>
-            <a href="/actor/3841-samuel-finzi" class="cast-card">
+            <a href="/actor/3841-samuel-finzi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pCMO1RAgikPaCt9wTOBnSZ2iM2S.jpg" alt="Samuel Finzi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samuel Finzi</span>
             </a>
-            <a href="/actor/1290462-natalia-belitski" class="cast-card">
+            <a href="/actor/1290462-natalia-belitski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5EPcoDxN0fC7PW3spk8x3r9JkOi.jpg" alt="Natalia Belitski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natalia Belitski</span>
             </a>
-            <a href="/actor/1073985-andreas-pietschmann" class="cast-card">
+            <a href="/actor/1073985-andreas-pietschmann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/72Srjd11dwvovxe1tyUKU0ml04u.jpg" alt="Andreas Pietschmann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andreas Pietschmann</span>
             </a>
-            <a href="/actor/3635788-maja-bons" class="cast-card">
+            <a href="/actor/3635788-maja-bons.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mWdXOxuMy4IYRYUQiYO0pgDkmjO.jpg" alt="Maja Bons" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maja Bons</span>
             </a>
-            <a href="/actor/1186435-genija-rykova" class="cast-card">
+            <a href="/actor/1186435-genija-rykova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qgYyIe0bMhn6TgI1RB8wMMZ2rt5.jpg" alt="Genija Rykova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Genija Rykova</span>
             </a>
-            <a href="/actor/6093-henry-hübchen" class="cast-card">
+            <a href="/actor/6093-henry-hübchen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bfObaQiK6YSoHlPP2bTDHRorL8U.jpg" alt="Henry Hübchen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Henry Hübchen</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

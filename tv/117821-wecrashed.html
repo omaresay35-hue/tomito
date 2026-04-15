@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,15 +75,15 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/7499-jared-leto" class="cast-card">
+            <a href="/actor/7499-jared-leto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ca3x0OfIKbJppZh8S1Alx3GfUZO.jpg" alt="Jared Leto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jared Leto</span>
             </a>
-            <a href="/actor/1813-anne-hathaway" class="cast-card">
+            <a href="/actor/1813-anne-hathaway.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg" alt="Anne Hathaway" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anne Hathaway</span>
             </a>
-            <a href="/actor/1983503-kyle-marvin" class="cast-card">
+            <a href="/actor/1983503-kyle-marvin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6i3BTrlNjsjZDIDMFnwMPcxzTiq.jpg" alt="Kyle Marvin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kyle Marvin</span>
             </a></div></section>
@@ -91,13 +91,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>เขาจ้างให้ผมจีบนักฆ่า</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2298243-kanaphan-puitrakul" class="cast-card">
+            <a href="/actor/2298243-kanaphan-puitrakul.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fbS2MqouXFBJSBtDBO8XfV43TvS.jpg" alt="Kanaphan Puitrakul" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kanaphan Puitrakul</span>
             </a>
-            <a href="/actor/2729027-thanawat-ratanakitpaisan" class="cast-card">
+            <a href="/actor/2729027-thanawat-ratanakitpaisan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fKollDjRw9RhrGr95NptGCQ9QHV.jpg" alt="Thanawat Ratanakitpaisan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thanawat Ratanakitpaisan</span>
             </a>
-            <a href="/actor/2509433-archen-aydin" class="cast-card">
+            <a href="/actor/2509433-archen-aydin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rRtyi43vqc4vUoPeukTAH2z0gRK.jpg" alt="Archen Aydin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Archen Aydin</span>
             </a>
-            <a href="/actor/3499270-natachai-boonprasert" class="cast-card">
+            <a href="/actor/3499270-natachai-boonprasert.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aLiXl4G0q6Oimhcco2CPhUHGb2P.jpg" alt="Natachai Boonprasert" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natachai Boonprasert</span>
             </a>
-            <a href="/actor/5088413-kanthee-limpitkranon" class="cast-card">
+            <a href="/actor/5088413-kanthee-limpitkranon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/snPGFoCVbRS1XX9OaSdodU1Eu2G.jpg" alt="Kanthee Limpitkranon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kanthee Limpitkranon</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

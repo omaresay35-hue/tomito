@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>ベイビーわるきゅーれ ナイスデイズ</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3144130-akari-takaishi" class="cast-card">
+            <a href="/actor/3144130-akari-takaishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qQURz3QiOVFHOo2azpL5cQOJg3a.jpg" alt="Akari Takaishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Akari Takaishi</span>
             </a>
-            <a href="/actor/3144131-saori-izawa" class="cast-card">
+            <a href="/actor/3144131-saori-izawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qw22T17zAdwgLqVYkOA1wrKP35G.jpg" alt="Saori Izawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saori Izawa</span>
             </a>
-            <a href="/actor/1488591-atomu-mizuishi" class="cast-card">
+            <a href="/actor/1488591-atomu-mizuishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pB6hjZC72FocSEQHMI7x3yZQ0f7.jpg" alt="Atomu Mizuishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Atomu Mizuishi</span>
             </a>
-            <a href="/actor/3183705-tomo-nakai" class="cast-card">
+            <a href="/actor/3183705-tomo-nakai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eIhDystP9bgrhN5A51WaSzew9CK.jpg" alt="Tomo Nakai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomo Nakai</span>
             </a>
-            <a href="/actor/4573690-mondo-otani" class="cast-card">
+            <a href="/actor/4573690-mondo-otani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aEenLmy7Ex3WCWxVeZ3FdVSmKrt.jpg" alt="Mondo Otani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mondo Otani</span>
             </a>
-            <a href="/actor/1116510-sosuke-ikematsu" class="cast-card">
+            <a href="/actor/1116510-sosuke-ikematsu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mNhgUAKfHdKQXhbhbAhKcRUHy30.jpg" alt="Sosuke Ikematsu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sosuke Ikematsu</span>
             </a>
-            <a href="/actor/1029275-atsuko-maeda" class="cast-card">
+            <a href="/actor/1029275-atsuko-maeda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7wyv9IXhBk4RI6VshP1QcHgPx9m.jpg" alt="Atsuko Maeda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Atsuko Maeda</span>
             </a>
-            <a href="/actor/4624305-kaibashira" class="cast-card">
+            <a href="/actor/4624305-kaibashira.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kaibashira" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaibashira</span>
             </a>
-            <a href="/actor/4804340-karuma" class="cast-card">
+            <a href="/actor/4804340-karuma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aHxlSTiMc3D77138Eb0Rg44EqZX.jpg" alt="Karuma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karuma</span>
             </a>
-            <a href="/actor/4814912-mr-bunny" class="cast-card">
+            <a href="/actor/4814912-mr-bunny.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mr. Bunny" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mr. Bunny</span>
             </a>
-            <a href="/actor/3694340-satoshi-kibe" class="cast-card">
+            <a href="/actor/3694340-satoshi-kibe.html" class="cast-card">
                 <img src="/favicon.ico" alt="Satoshi Kibe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Satoshi Kibe</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

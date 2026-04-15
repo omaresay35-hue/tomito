@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>In the Know</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/464993-zach-woods" class="cast-card">
+            <a href="/actor/464993-zach-woods.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jolb1uMzDZGTKOKyhgeG3RIsL2W.jpg" alt="Zach Woods" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zach Woods</span>
             </a>
-            <a href="/actor/17403-mike-judge" class="cast-card">
+            <a href="/actor/17403-mike-judge.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ol4kd4mSOK7Hx3r86ydez84bwEI.jpg" alt="Mike Judge" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mike Judge</span>
             </a>
-            <a href="/actor/52475-j-smith-cameron" class="cast-card">
+            <a href="/actor/52475-j-smith-cameron.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uHb7S8NHgXdst6TkLcv8zNgxSh3.jpg" alt="J. Smith-Cameron" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>J. Smith-Cameron</span>
             </a>
-            <a href="/actor/2438219-charlie-bushnell" class="cast-card">
+            <a href="/actor/2438219-charlie-bushnell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yIWpqZKvY645ktsNO4yTTUtXGPJ.jpg" alt="Charlie Bushnell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charlie Bushnell</span>
             </a>
-            <a href="/actor/2039030-carl-tart" class="cast-card">
+            <a href="/actor/2039030-carl-tart.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tSGLxpTVzO3NotWtc3wkzNPdhlR.jpg" alt="Carl Tart" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carl Tart</span>
             </a>
-            <a href="/actor/2636454-caitlin-reilly" class="cast-card">
+            <a href="/actor/2636454-caitlin-reilly.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ymyHfnt8uYu1s5OGALOzgOoyrmk.jpg" alt="Caitlin Reilly" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Caitlin Reilly</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

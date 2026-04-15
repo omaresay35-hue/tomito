@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>韶华若锦</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1982522-song-weilong" class="cast-card">
+            <a href="/actor/1982522-song-weilong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/91EBpDeOvBRQ4Kh6p15LQwWshdR.jpg" alt="Song Weilong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Song Weilong</span>
             </a>
-            <a href="/actor/3590388-bao-shangen" class="cast-card">
+            <a href="/actor/3590388-bao-shangen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mXe5qctfPpNJZQT42ROW0KZFp1P.jpg" alt="Bao Shangen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bao Shangen</span>
             </a>
-            <a href="/actor/2190499-dai-luwa" class="cast-card">
+            <a href="/actor/2190499-dai-luwa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4yJZSb5RAUprTdS2dW5TdiVAWp4.jpg" alt="Dai Luwa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dai Luwa</span>
             </a>
-            <a href="/actor/4147552-quan-yilun" class="cast-card">
+            <a href="/actor/4147552-quan-yilun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sg2QgHDX51EERbfN4eOmUn8djmH.jpg" alt="Quan Yilun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Quan Yilun</span>
             </a>
-            <a href="/actor/2869093-ke-ying" class="cast-card">
+            <a href="/actor/2869093-ke-ying.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7r33gbKAKDJUwH9XCmTwW9EOf0a.jpg" alt="Ke Ying" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ke Ying</span>
             </a>
-            <a href="/actor/2293240-qin-xiaoxuan" class="cast-card">
+            <a href="/actor/2293240-qin-xiaoxuan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/46j4qkhhKGIu6AbUnZCagPOB28t.jpg" alt="Qin Xiaoxuan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Qin Xiaoxuan</span>
             </a>
-            <a href="/actor/1824165-bai-shu" class="cast-card">
+            <a href="/actor/1824165-bai-shu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dj5Fl8QWEStjxnYb7Oshx6250rl.jpg" alt="Bai Shu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bai Shu</span>
             </a>
-            <a href="/actor/4579865-wang-ke" class="cast-card">
+            <a href="/actor/4579865-wang-ke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ze1gx51SaTRbUqAFbFj1FqJ5QDV.jpg" alt="Wang Ke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wang Ke</span>
             </a>
-            <a href="/actor/2496899-yang-boxiao" class="cast-card">
+            <a href="/actor/2496899-yang-boxiao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yrCjTVExTv8xWV4jJcDiobDr3Fc.jpg" alt="Yang Boxiao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yang Boxiao</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

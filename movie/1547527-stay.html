@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Stay</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/25382-megalyn-echikunwoke" class="cast-card">
+            <a href="/actor/25382-megalyn-echikunwoke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6MlcgFphohSBTvOTDMEQwQzs66A.jpg" alt="Megalyn Echikunwoke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Megalyn Echikunwoke</span>
             </a>
-            <a href="/actor/59014-mo-mcrae" class="cast-card">
+            <a href="/actor/59014-mo-mcrae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yU3VD12vMbG94xEvSBASWsFsL1B.jpg" alt="Mo McRae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mo McRae</span>
             </a>
-            <a href="/actor/60096-brandon-firla" class="cast-card">
+            <a href="/actor/60096-brandon-firla.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5GdvNqFcDb6qgKwqhWrnp4NFht7.jpg" alt="Brandon Firla" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brandon Firla</span>
             </a>
-            <a href="/actor/5586457-dominic-stephens" class="cast-card">
+            <a href="/actor/5586457-dominic-stephens.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dominic Stephens" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dominic Stephens</span>
             </a>
-            <a href="/actor/5692958-patrick-cloud" class="cast-card">
+            <a href="/actor/5692958-patrick-cloud.html" class="cast-card">
                 <img src="/favicon.ico" alt="Patrick Cloud" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patrick Cloud</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

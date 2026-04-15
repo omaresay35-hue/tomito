@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1416589-brother">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1416589-brother.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fhrJYQ1EuPGXqG4B4lqnUYP0TFZ.jpg" alt="Brother — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Brother</div></div>
-    </a>    <a class="card" href="/movie/1027009-kleks-academy-2">
+    </a>    <a class="card" href="/movie/1027009-kleks-academy-2.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/k1gPy1ABkhLYjlilSR1mYo2iVoE.jpg" alt="Kleks Academy 2 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kleks Academy 2</div></div>
-    </a>    <a class="card" href="/movie/1264939-unpredictable">
+    </a>    <a class="card" href="/movie/1264939-unpredictable.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/iUZ8UFnFMm6n7qbz4ci3IROz9KA.jpg" alt="Unpredictable — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Unpredictable</div></div>
-    </a>    <a class="card" href="/movie/1047917-scarborn">
+    </a>    <a class="card" href="/movie/1047917-scarborn.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/b4cZ2vg2NuGfe9YKhfYEHk2WNjt.jpg" alt="Scarborn — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Scarborn</div></div>
-    </a>    <a class="card" href="/movie/1026999-kleks-academy">
+    </a>    <a class="card" href="/movie/1026999-kleks-academy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ymbECZscR8BTkdvXziSinMIckAz.jpg" alt="Kleks Academy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kleks Academy</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

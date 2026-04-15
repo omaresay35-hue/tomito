@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>خل التفاح</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/481337-kaitlyn-dever" class="cast-card">
+            <a href="/actor/481337-kaitlyn-dever.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/np5rBCFRdeS1sXePL8uY09ktoC4.jpg" alt="Kaitlyn Dever" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaitlyn Dever</span>
             </a>
-            <a href="/actor/1129464-alycia-debnam-carey" class="cast-card">
+            <a href="/actor/1129464-alycia-debnam-carey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/Awcn5iv2Rwke3tXXFV67wIsFgXG.jpg" alt="Alycia Debnam-Carey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alycia Debnam-Carey</span>
             </a>
-            <a href="/actor/103390-aisha-dee" class="cast-card">
+            <a href="/actor/103390-aisha-dee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dmA3u8KDYcvv673893FNny0nn7G.jpg" alt="Aisha Dee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aisha Dee</span>
             </a>
-            <a href="/actor/1323881-mark-coles-smith" class="cast-card">
+            <a href="/actor/1323881-mark-coles-smith.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mFGf5GruME5dnAuKBG1kgzK8PJs.jpg" alt="Mark Coles Smith" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Coles Smith</span>
             </a>
-            <a href="/actor/1280060-tilda-cobham-hervey" class="cast-card">
+            <a href="/actor/1280060-tilda-cobham-hervey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7Ho0GsWSsbLGKWCgT9rEDk54gev.jpg" alt="Tilda Cobham-Hervey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tilda Cobham-Hervey</span>
             </a>
-            <a href="/actor/1255398-chai-hansen" class="cast-card">
+            <a href="/actor/1255398-chai-hansen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vd23G0qvY33W8EjSc92xYKG1h7J.jpg" alt="Chai Hansen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chai Hansen</span>
             </a>
-            <a href="/actor/123879-matt-nable" class="cast-card">
+            <a href="/actor/123879-matt-nable.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pgBnQepmJGApWaAwwlr6VMdmLY9.jpg" alt="Matt Nable" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matt Nable</span>
             </a>
-            <a href="/actor/219960-ashley-zukerman" class="cast-card">
+            <a href="/actor/219960-ashley-zukerman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zkxBS4EF9G8EhAe3VO8VVehGE0B.jpg" alt="Ashley Zukerman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ashley Zukerman</span>
             </a>
-            <a href="/actor/33449-essie-davis" class="cast-card">
+            <a href="/actor/33449-essie-davis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mwJrRr9bdlUZFZBNDTgWxAKAdqR.jpg" alt="Essie Davis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Essie Davis</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

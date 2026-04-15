@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Кеша должен умереть</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2016881-konstantin-bogomolov" class="cast-card">
+            <a href="/actor/2016881-konstantin-bogomolov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d0stSzv66g8X0RjHT8Y0AK6oY89.jpg" alt="Konstantin Bogomolov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Konstantin Bogomolov</span>
             </a>
-            <a href="/actor/584042-yuliya-aleksandrova" class="cast-card">
+            <a href="/actor/584042-yuliya-aleksandrova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/YQN39md12ePFgibB5z1qfdg3Hf.jpg" alt="Yuliya Aleksandrova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuliya Aleksandrova</span>
             </a>
-            <a href="/actor/1830562-aleksandra-rebenok" class="cast-card">
+            <a href="/actor/1830562-aleksandra-rebenok.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uKeh3hWQWjTXQC58NGyPwHAF3D5.jpg" alt="Aleksandra Rebenok" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aleksandra Rebenok</span>
             </a>
-            <a href="/actor/80998-yuliya-snigir" class="cast-card">
+            <a href="/actor/80998-yuliya-snigir.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/doOsxPl6VPJaLnXJoz4VIfADrVC.jpg" alt="Yuliya Snigir" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuliya Snigir</span>
             </a>
-            <a href="/actor/2299890-vasilisa-perelygina" class="cast-card">
+            <a href="/actor/2299890-vasilisa-perelygina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4PFVrW4ZvrzTDLJPsQpThkCxx2Y.jpg" alt="Vasilisa Perelygina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vasilisa Perelygina</span>
             </a>
-            <a href="/actor/125871-igor-vernik" class="cast-card">
+            <a href="/actor/125871-igor-vernik.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cSuPPiidQQod9d2hh0K3p4IwuGX.jpg" alt="Igor Vernik" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Igor Vernik</span>
             </a>
-            <a href="/actor/584045-olga-lapshina" class="cast-card">
+            <a href="/actor/584045-olga-lapshina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/g8RNLIB9hJXMZwRlQ5aK9dENEJj.jpg" alt="Olga Lapshina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olga Lapshina</span>
             </a>
-            <a href="/actor/2223567-aleksey-onezhen" class="cast-card">
+            <a href="/actor/2223567-aleksey-onezhen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1aESLXHjconEufqkJmIOUhvcJsB.jpg" alt="Aleksey Onezhen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aleksey Onezhen</span>
             </a>
-            <a href="/actor/2892433-leon-avtaev" class="cast-card">
+            <a href="/actor/2892433-leon-avtaev.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aAZcT1w3pOt6Lgy9pc5Jw09c435.jpg" alt="Leon Avtaev" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leon Avtaev</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

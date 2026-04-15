@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1403327-coartadas">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1403327-coartadas.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7Cpg0NQc2gZZfiBPRXfSwtXNKuq.jpg" alt="Coartadas — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Coartadas</div></div>
-    </a>    <a class="card" href="/movie/1526519-reversion">
+    </a>    <a class="card" href="/movie/1526519-reversion.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ebjesXVbxvqWzYw9PqOXsTsgNfx.jpg" alt="Reversion — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Reversion</div></div>
-    </a>    <a class="card" href="/movie/1151262-disco-ibiza-locomía">
+    </a>    <a class="card" href="/movie/1151262-disco-ibiza-locomía.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/veNhSeNyJN1ZXXqtDYdPhoxE9DR.jpg" alt="Disco, Ibiza, Locomía — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Disco, Ibiza, Locomía</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/242875-iron-reign">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/242875-iron-reign.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fc1oDqW2Gi1vzzloMwcRFXgtjdM.jpg" alt="Iron Reign — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Iron Reign</div></div>
-    </a>    <a class="card" href="/tv/209725-untameable">
+    </a>    <a class="card" href="/tv/209725-untameable.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/oVKHCqEDyEJSolnSdcm9XpQlqpF.jpg" alt="Untameable — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Untameable</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

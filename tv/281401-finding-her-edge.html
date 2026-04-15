@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>الرقص على جليد هش</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3002581-madelyn-keys" class="cast-card">
+            <a href="/actor/3002581-madelyn-keys.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cSdB1wZKJipIEielUo6JrQtsZ4y.jpg" alt="Madelyn Keys" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Madelyn Keys</span>
             </a>
-            <a href="/actor/5503707-alice-malakhov" class="cast-card">
+            <a href="/actor/5503707-alice-malakhov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zk7Eb301oD8qaWWtfUcCRQL2tyg.jpg" alt="Alice Malakhov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alice Malakhov</span>
             </a>
-            <a href="/actor/1089929-alexandra-beaton" class="cast-card">
+            <a href="/actor/1089929-alexandra-beaton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/luBazgWtZeK6WAaPKb9JUBPB0id.jpg" alt="Alexandra Beaton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexandra Beaton</span>
             </a>
-            <a href="/actor/205813-harmon-walsh" class="cast-card">
+            <a href="/actor/205813-harmon-walsh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3gyUy8Gg1AVwY6M6vFlPAkMD12d.jpg" alt="Harmon Walsh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Harmon Walsh</span>
             </a>
-            <a href="/actor/5014698-cale-ambrozic" class="cast-card">
+            <a href="/actor/5014698-cale-ambrozic.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3hyD8V9J8rhhCfwY1IAjQfTQk0a.jpg" alt="Cale Ambrozic" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cale Ambrozic</span>
             </a>
-            <a href="/actor/5029329-olly-atkins" class="cast-card">
+            <a href="/actor/5029329-olly-atkins.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t4wEzpGNagExbRP4InW8pce5Qsg.jpg" alt="Olly Atkins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olly Atkins</span>
             </a>
-            <a href="/actor/1203952-meredith-forlenza" class="cast-card">
+            <a href="/actor/1203952-meredith-forlenza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qvFc6Cd6j08MvkJ0MAdsP7zItOE.jpg" alt="Meredith Forlenza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Meredith Forlenza</span>
             </a>
-            <a href="/actor/1849310-niko-ceci" class="cast-card">
+            <a href="/actor/1849310-niko-ceci.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yKlgey8AaKEZsH7stNJAUMw4dbU.jpg" alt="Niko Ceci" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Niko Ceci</span>
             </a>
-            <a href="/actor/1274210-millie-davis" class="cast-card">
+            <a href="/actor/1274210-millie-davis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kjQiuMLLrpheJl3LRIp045Pd0bx.jpg" alt="Millie Davis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Millie Davis</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

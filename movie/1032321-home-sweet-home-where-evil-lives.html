@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Home Sweet Home - Wo das Böse wohnt</span>
   </nav>
 
@@ -71,31 +71,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1469678-nilam-farooq" class="cast-card">
+            <a href="/actor/1469678-nilam-farooq.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2M8DHtgA2lQS8QIKlfx2TJTrwbF.jpg" alt="Nilam Farooq" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nilam Farooq</span>
             </a>
-            <a href="/actor/5847-david-kross" class="cast-card">
+            <a href="/actor/5847-david-kross.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jRFxrLwiroTbGedG9uyXZghgxlX.jpg" alt="David Kross" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Kross</span>
             </a>
-            <a href="/actor/5646-justus-von-dohnányi" class="cast-card">
+            <a href="/actor/5646-justus-von-dohnányi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2zg2pY7w3X3z4FyYEqzlBHFZXK1.jpg" alt="Justus von Dohnányi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Justus von Dohnányi</span>
             </a>
-            <a href="/actor/1140005-olga-von-luckwald" class="cast-card">
+            <a href="/actor/1140005-olga-von-luckwald.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ogx6gm7WfK2t8HCjNg3xSb6LAQg.jpg" alt="Olga von Luckwald" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olga von Luckwald</span>
             </a>
-            <a href="/actor/1821057-anton-schneider" class="cast-card">
+            <a href="/actor/1821057-anton-schneider.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7pVIwS3oL1uPg9XQvY10B9QApiN.jpg" alt="Anton Schneider" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anton Schneider</span>
             </a>
-            <a href="/actor/2033219-karl-schaper" class="cast-card">
+            <a href="/actor/2033219-karl-schaper.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mXXltU4LF7skxUguK6loSBONfsZ.jpg" alt="Karl Schaper" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karl Schaper</span>
             </a>
-            <a href="/actor/2002962-sven-habermann" class="cast-card">
+            <a href="/actor/2002962-sven-habermann.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sven Habermann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sven Habermann</span>
             </a></div></section>
@@ -103,13 +103,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

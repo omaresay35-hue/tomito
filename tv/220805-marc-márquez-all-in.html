@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Marc Márquez: All In</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1402369-marc-márquez" class="cast-card">
+            <a href="/actor/1402369-marc-márquez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pO80eEA1q7aTvjhrniIoJbtBLDs.jpg" alt="Marc Márquez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marc Márquez</span>
             </a>
-            <a href="/actor/1087178-dani-pedrosa" class="cast-card">
+            <a href="/actor/1087178-dani-pedrosa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3ZoW20wxvIXs6szDSHjgqBgtwDP.jpg" alt="Dani Pedrosa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dani Pedrosa</span>
             </a>
-            <a href="/actor/928881-jorge-lorenzo" class="cast-card">
+            <a href="/actor/928881-jorge-lorenzo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hnqbhnNL7uMKwzTBD38iYeZP9Np.jpg" alt="Jorge Lorenzo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jorge Lorenzo</span>
             </a>
-            <a href="/actor/3606193-aleix-espargaró" class="cast-card">
+            <a href="/actor/3606193-aleix-espargaró.html" class="cast-card">
                 <img src="/favicon.ico" alt="Aleix Espargaró" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aleix Espargaró</span>
             </a>
-            <a href="/actor/2309871-carlos-sainz-jr" class="cast-card">
+            <a href="/actor/2309871-carlos-sainz-jr.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xA65q4vYUPEv59m3dD1Vwxiz4SL.jpg" alt="Carlos Sainz Jr." loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carlos Sainz Jr.</span>
             </a>
-            <a href="/actor/1448051-max-verstappen" class="cast-card">
+            <a href="/actor/1448051-max-verstappen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/68TocF4GUkomMgE2ngm2fIs4Qq8.jpg" alt="Max Verstappen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Max Verstappen</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

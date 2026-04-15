@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>El hijo zurdo</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/587931-maría-león" class="cast-card">
+            <a href="/actor/587931-maría-león.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/emO3kZWopALDhGYEJwbtcKd8gQZ.jpg" alt="María León" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>María León</span>
             </a>
-            <a href="/actor/2072194-tamara-casellas" class="cast-card">
+            <a href="/actor/2072194-tamara-casellas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nCXGGmFP7pyNrdUtrsDUIOVjyc.jpg" alt="Tamara Casellas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tamara Casellas</span>
             </a>
-            <a href="/actor/2570300-alberto-ruano" class="cast-card">
+            <a href="/actor/2570300-alberto-ruano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6GAVwmwf4aEFGBF6e0RFV2z1GfO.jpg" alt="Alberto Ruano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alberto Ruano</span>
             </a>
-            <a href="/actor/983289-marisol-membrillo" class="cast-card">
+            <a href="/actor/983289-marisol-membrillo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dyhAyT1a22FEJ0Q6hp6IWpGgqNx.jpg" alt="Marisol Membrillo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marisol Membrillo</span>
             </a>
-            <a href="/actor/3869163-hugo-welzel" class="cast-card">
+            <a href="/actor/3869163-hugo-welzel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zD7A0T2OypZ7Bga9DMoF7VSfL4h.jpg" alt="Hugo Welzel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hugo Welzel</span>
             </a>
-            <a href="/actor/3869167-numa-paredes" class="cast-card">
+            <a href="/actor/3869167-numa-paredes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/g9ccZ4j2hEFeand2aW0a2pFGgiz.jpg" alt="Numa Paredes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Numa Paredes</span>
             </a>
-            <a href="/actor/3961331-germán-rueda" class="cast-card">
+            <a href="/actor/3961331-germán-rueda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qzSGQ9WXfkBXplkdEKazrd6CDCs.jpg" alt="Germán Rueda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Germán Rueda</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

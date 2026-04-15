@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Dead and Buried</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1240397-annabel-scholey" class="cast-card">
+            <a href="/actor/1240397-annabel-scholey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mHSpshgtIB5PzSc4N16Pu6RtGVX.jpg" alt="Annabel Scholey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Annabel Scholey</span>
             </a>
-            <a href="/actor/228866-colin-morgan" class="cast-card">
+            <a href="/actor/228866-colin-morgan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jeSLhhfUIZR3UQGGhtYTk0J2I5.jpg" alt="Colin Morgan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Colin Morgan</span>
             </a>
-            <a href="/actor/2009731-kerri-quinn" class="cast-card">
+            <a href="/actor/2009731-kerri-quinn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iJhFmmj3LfROEJUU9BryA8gMC5x.jpg" alt="Kerri Quinn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kerri Quinn</span>
             </a>
-            <a href="/actor/1396602-waj-ali" class="cast-card">
+            <a href="/actor/1396602-waj-ali.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jRGHlAx1SXcEvdC52WplWByEpyd.jpg" alt="Waj Ali" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Waj Ali</span>
             </a>
-            <a href="/actor/17024-owen-roe" class="cast-card">
+            <a href="/actor/17024-owen-roe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7ojmv5J9yohpvA8Jli84h412Ptj.jpg" alt="Owen Roe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Owen Roe</span>
             </a>
-            <a href="/actor/1806821-niamh-walsh" class="cast-card">
+            <a href="/actor/1806821-niamh-walsh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aRbRV0ZdRdCzQcp18zY2OhtQjm0.jpg" alt="Niamh Walsh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Niamh Walsh</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

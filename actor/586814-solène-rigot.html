@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,27 +75,27 @@ The French newspaper L'Express reported that she grew up in the Paris suburb of 
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1439177-animal-totem">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1439177-animal-totem.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5mQOefrjyMEq8qaFagEVX2i4SH8.jpg" alt="Animal Totem — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Animal Totem</div></div>
-    </a>    <a class="card" href="/movie/988361-shepherds">
+    </a>    <a class="card" href="/movie/988361-shepherds.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8wxb1kb30QSOFMBx59nXqPB73nu.jpg" alt="Shepherds — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Shepherds</div></div>
-    </a>    <a class="card" href="/movie/712022-party-of-fools">
+    </a>    <a class="card" href="/movie/712022-party-of-fools.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bxuxZO6Qi6GlpRsE6CH7EmyhhEp.jpg" alt="Party of Fools — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Party of Fools</div></div>
-    </a>    <a class="card" href="/movie/236873-lulu-in-the-nude">
+    </a>    <a class="card" href="/movie/236873-lulu-in-the-nude.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ttf8EMBlU7yup93MDs9GnkisRQs.jpg" alt="Lulu in the Nude — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Lulu in the Nude</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/211172-machine">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/211172-machine.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/y60GpQoakoVXFKJDH6lbLOiVanv.jpg" alt="Machine — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Machine</div></div>
-    </a>    <a class="card" href="/tv/218656-piste-noire">
+    </a>    <a class="card" href="/tv/218656-piste-noire.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nzta29OwfQHMQHF8VQWieo5Nixb.jpg" alt="Piste noire — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Piste noire</div></div>
@@ -104,13 +104,6 @@ The French newspaper L'Express reported that she grew up in the Paris suburb of 
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

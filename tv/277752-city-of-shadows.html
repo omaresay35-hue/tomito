@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Ciudad de sombras</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/589477-isak-férriz" class="cast-card">
+            <a href="/actor/589477-isak-férriz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rFkVuTNGu8H8kRVjFB5pIu3gkrp.jpg" alt="Isak Férriz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isak Férriz</span>
             </a>
-            <a href="/actor/114254-verónica-echegui" class="cast-card">
+            <a href="/actor/114254-verónica-echegui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A6bHIHnDlmKY6pWOlgLNsUf60W5.jpg" alt="Verónica Echegui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Verónica Echegui</span>
             </a>
-            <a href="/actor/34053-ana-wagener" class="cast-card">
+            <a href="/actor/34053-ana-wagener.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y6sAOhd5OlKQLEXBdcCgJnvANoc.jpg" alt="Ana Wagener" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ana Wagener</span>
             </a>
-            <a href="/actor/592709-manolo-solo" class="cast-card">
+            <a href="/actor/592709-manolo-solo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hp422wUkCWW2lsitzJrANv4N92u.jpg" alt="Manolo Solo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manolo Solo</span>
             </a>
-            <a href="/actor/72673-irene-montalà" class="cast-card">
+            <a href="/actor/72673-irene-montalà.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dNV3Mhbd7OBB1tF3N3eYXDrhtYm.jpg" alt="Irene Montalà" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Irene Montalà</span>
             </a>
-            <a href="/actor/587932-marc-clotet" class="cast-card">
+            <a href="/actor/587932-marc-clotet.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sbO12BzVBcz6sfyc9eAmT7ZHPgX.jpg" alt="Marc Clotet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marc Clotet</span>
             </a>
-            <a href="/actor/938080-aina-clotet" class="cast-card">
+            <a href="/actor/938080-aina-clotet.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dY4AL2RRaXuGXUQeHAZeoNbwhob.jpg" alt="Aina Clotet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aina Clotet</span>
             </a>
-            <a href="/actor/560275-maría-adánez" class="cast-card">
+            <a href="/actor/560275-maría-adánez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rjnxRiyNJK8JLGVxfDihCFhB7um.jpg" alt="María Adánez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>María Adánez</span>
             </a>
-            <a href="/actor/1223378-jordi-rico" class="cast-card">
+            <a href="/actor/1223378-jordi-rico.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pJz59yNUCfsNRsJzCCJnTVZ3loL.jpg" alt="Jordi Rico" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jordi Rico</span>
             </a>
-            <a href="/actor/1459456-jordi-ballester" class="cast-card">
+            <a href="/actor/1459456-jordi-ballester.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dvf8N83vDyegYYLjnGxxVMoXSzu.jpg" alt="Jordi Ballester" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jordi Ballester</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1309336-perfect-match">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1309336-perfect-match.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/d1u5BVSM60JgA8XT4bWXwu83ywM.jpg" alt="Perfect Match — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Perfect Match</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/248226-the-bombing-of-pan-am-103">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/248226-the-bombing-of-pan-am-103.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9RR6jkc35HOJcZG3modHZwh3J3J.jpg" alt="The Bombing of Pan Am 103 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Bombing of Pan Am 103</div></div>
-    </a>    <a class="card" href="/tv/102621-kaos">
+    </a>    <a class="card" href="/tv/102621-kaos.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dDBTUSl3tRsOeKC1jZugBSFHy9I.jpg" alt="KAOS — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">KAOS</div></div>
-    </a>    <a class="card" href="/tv/157282-sister-boniface-mysteries">
+    </a>    <a class="card" href="/tv/157282-sister-boniface-mysteries.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kSIPIFoIUCUOMwoAs9kiuwCz1Ju.jpg" alt="Sister Boniface Mysteries — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sister Boniface Mysteries</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>American Born Chinese</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3033265-ben-wang" class="cast-card">
+            <a href="/actor/3033265-ben-wang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5A6JgNR9nlFVjuzJ1oOXyj2hfJo.jpg" alt="Ben Wang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ben Wang</span>
             </a>
-            <a href="/actor/1955219-sydney-taylor" class="cast-card">
+            <a href="/actor/1955219-sydney-taylor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eunr5RHWxBhOwp582NSOPnQwies.jpg" alt="Sydney Taylor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sydney Taylor</span>
             </a>
-            <a href="/actor/101015-chin-han" class="cast-card">
+            <a href="/actor/101015-chin-han.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3XJXmYm6r4Hvm3izOArU58fhQrT.jpg" alt="Chin Han" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chin Han</span>
             </a>
-            <a href="/actor/690-ke-huy-quan" class="cast-card">
+            <a href="/actor/690-ke-huy-quan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iestHyn7PLuVowj5Jaa1SGPboQ4.jpg" alt="Ke Huy Quan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ke Huy Quan</span>
             </a>
-            <a href="/actor/3325422-jimmy-liu" class="cast-card">
+            <a href="/actor/3325422-jimmy-liu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9KSTHDDf3dsANSOnjNQFNnOHS23.jpg" alt="Jimmy Liu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jimmy Liu</span>
             </a>
-            <a href="/actor/130761-yeo-yann-yann" class="cast-card">
+            <a href="/actor/130761-yeo-yann-yann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ncOxEFlrrR35kVZW5MgA1uGTUMx.jpg" alt="Yeo Yann Yann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yeo Yann Yann</span>
             </a>
-            <a href="/actor/64436-daniel-wu" class="cast-card">
+            <a href="/actor/64436-daniel-wu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w6fCmYDlTNYfgdXBZjZH107c9zJ.jpg" alt="Daniel Wu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Wu</span>
             </a>
-            <a href="/actor/1620-michelle-yeoh" class="cast-card">
+            <a href="/actor/1620-michelle-yeoh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i6fHvGt7Rb8oVyjjdQVV6vEHB94.jpg" alt="Michelle Yeoh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michelle Yeoh</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

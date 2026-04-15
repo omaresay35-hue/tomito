@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Dark Cuts: A Thriller Anthology</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1866692-anna-carvalho" class="cast-card">
+            <a href="/actor/1866692-anna-carvalho.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/c3drQPhcjsNRfiWGODI1jbF7Ofn.jpg" alt="Anna Carvalho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anna Carvalho</span>
             </a>
-            <a href="/actor/3180963-athena-reddy" class="cast-card">
+            <a href="/actor/3180963-athena-reddy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pCCnm1mq39TggFdfQpYlUn0n0p1.jpg" alt="Athena Reddy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Athena Reddy</span>
             </a>
-            <a href="/actor/996844-marco-quaglia" class="cast-card">
+            <a href="/actor/996844-marco-quaglia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w2oRqYtVa8B3ALOrBqajwp72YQf.jpg" alt="Marco Quaglia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marco Quaglia</span>
             </a>
-            <a href="/actor/4266047-amy-helene-carlson" class="cast-card">
+            <a href="/actor/4266047-amy-helene-carlson.html" class="cast-card">
                 <img src="/favicon.ico" alt="Amy-Helene Carlson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amy-Helene Carlson</span>
             </a>
-            <a href="/actor/3507286-william-lawrence-toussaint" class="cast-card">
+            <a href="/actor/3507286-william-lawrence-toussaint.html" class="cast-card">
                 <img src="/favicon.ico" alt="William Lawrence Toussaint" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>William Lawrence Toussaint</span>
             </a>
-            <a href="/actor/2085800-justine-hunter" class="cast-card">
+            <a href="/actor/2085800-justine-hunter.html" class="cast-card">
                 <img src="/favicon.ico" alt="Justine Hunter" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Justine Hunter</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>侵入者たちの晩餐</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/18054-rinko-kikuchi" class="cast-card">
+            <a href="/actor/18054-rinko-kikuchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lv4UuorZtC37VaFAHO205u4lS73.jpg" alt="Rinko Kikuchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rinko Kikuchi</span>
             </a>
-            <a href="/actor/560189-kami-hiraiwa" class="cast-card">
+            <a href="/actor/560189-kami-hiraiwa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/amqjs404ns5hQXwLUYXhPsck6AG.jpg" alt="Kami Hiraiwa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kami Hiraiwa</span>
             </a>
-            <a href="/actor/1357295-yoh-yoshida" class="cast-card">
+            <a href="/actor/1357295-yoh-yoshida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qEeSz9KLUjTTRr8MWYZJW9TDNQx.jpg" alt="Yoh Yoshida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoh Yoshida</span>
             </a>
-            <a href="/actor/1419914-mai-shiraishi" class="cast-card">
+            <a href="/actor/1419914-mai-shiraishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ugLYK6U1PKVfIV8sGdhGqCHbGzD.jpg" alt="Mai Shiraishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mai Shiraishi</span>
             </a>
-            <a href="/actor/1116510-sosuke-ikematsu" class="cast-card">
+            <a href="/actor/1116510-sosuke-ikematsu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mNhgUAKfHdKQXhbhbAhKcRUHy30.jpg" alt="Sosuke Ikematsu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sosuke Ikematsu</span>
             </a>
-            <a href="/actor/1723005-akihiro-kakuta" class="cast-card">
+            <a href="/actor/1723005-akihiro-kakuta.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y0amt9M8Aux2YOIVDgXvKvepspB.jpg" alt="Akihiro Kakuta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Akihiro Kakuta</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

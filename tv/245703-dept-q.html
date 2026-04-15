@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>قسم القضايا غير المحلولة</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1247-matthew-goode" class="cast-card">
+            <a href="/actor/1247-matthew-goode.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3XaKKl0bKswTWbJ0Lh9nZ4UdAQo.jpg" alt="Matthew Goode" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthew Goode</span>
             </a>
-            <a href="/actor/1125581-chloe-pirrie" class="cast-card">
+            <a href="/actor/1125581-chloe-pirrie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t5pUoG5kDk8F0uNQ1reMD8Cd4V0.jpg" alt="Chloe Pirrie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chloe Pirrie</span>
             </a>
-            <a href="/actor/1833-jamie-sives" class="cast-card">
+            <a href="/actor/1833-jamie-sives.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bdEyp4f1VUEepihC6vyqCGP6k2s.jpg" alt="Jamie Sives" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jamie Sives</span>
             </a>
-            <a href="/actor/1073425-alexej-manvelov" class="cast-card">
+            <a href="/actor/1073425-alexej-manvelov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/trZRsEMAdaMnGwYvy7j0P8l7jpL.jpg" alt="Alexej Manvelov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexej Manvelov</span>
             </a>
-            <a href="/actor/3548630-leah-byrne" class="cast-card">
+            <a href="/actor/3548630-leah-byrne.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lC0Zn7XYFSfFaafUkCmDZDMs7fl.jpg" alt="Leah Byrne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leah Byrne</span>
             </a>
-            <a href="/actor/9015-kelly-macdonald" class="cast-card">
+            <a href="/actor/9015-kelly-macdonald.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k0yVocTnTMWlNdaeOO7YRViCdhO.jpg" alt="Kelly Macdonald" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kelly Macdonald</span>
             </a>
-            <a href="/actor/71083-kate-dickie" class="cast-card">
+            <a href="/actor/71083-kate-dickie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mlFYUmZycpRa7TGgDTfP0xanE1Q.jpg" alt="Kate Dickie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kate Dickie</span>
             </a>
-            <a href="/actor/4771546-aaron-mcveigh" class="cast-card">
+            <a href="/actor/4771546-aaron-mcveigh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ixUZXdCVf2FPS4OHpLLlUusetJz.jpg" alt="Aaron McVeigh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aaron McVeigh</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>未来の黒幕系悪役令嬢モリアーティーの異世界完全犯罪白書</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2138291-ryota-suzuki" class="cast-card">
+            <a href="/actor/2138291-ryota-suzuki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4Xq18mQttuW2yfRCflnWoU7UqQ5.jpg" alt="Ryota Suzuki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryota Suzuki</span>
             </a>
-            <a href="/actor/2167411-yuri-noguchi" class="cast-card">
+            <a href="/actor/2167411-yuri-noguchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aiUx2lQXCdJC3kucA6dENXFL2yq.jpg" alt="Yuri Noguchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuri Noguchi</span>
             </a>
-            <a href="/actor/4779500-kurumi-sakamoto" class="cast-card">
+            <a href="/actor/4779500-kurumi-sakamoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sqNQN0cK9TUS78iJi1MNF1wZ1Dn.jpg" alt="Kurumi Sakamoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kurumi Sakamoto</span>
             </a>
-            <a href="/actor/2912798-saiko-moriya" class="cast-card">
+            <a href="/actor/2912798-saiko-moriya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3rGiKniRdzIpFKq13z3QSF0JmLl.jpg" alt="Saiko Moriya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saiko Moriya</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

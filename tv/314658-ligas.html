@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسل</a> &gt; 
+    <a href="/index.html#series">مسلسل</a> &gt; 
     <span>Avvocato Ligas</span>
   </nav>
 
@@ -71,39 +71,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/88469-luca-argentero" class="cast-card">
+            <a href="/actor/88469-luca-argentero.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m0vXuiMCBxSmDOfYuM1oFGI4qrv.jpg" alt="Luca Argentero" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luca Argentero</span>
             </a>
-            <a href="/actor/1491567-sergio-romano" class="cast-card">
+            <a href="/actor/1491567-sergio-romano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/blEs4ebKnLEyz5CNGj2veITfNit.jpg" alt="Sergio Romano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sergio Romano</span>
             </a>
-            <a href="/actor/1794066-flavio-furno" class="cast-card">
+            <a href="/actor/1794066-flavio-furno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qzvs3sdEmgZ0VoLgYBCwhGUDxPd.jpg" alt="Flavio Furno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Flavio Furno</span>
             </a>
-            <a href="/actor/4370648-matteo-bassi" class="cast-card">
+            <a href="/actor/4370648-matteo-bassi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Matteo Bassi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matteo Bassi</span>
             </a>
-            <a href="/actor/2504036-matteo-caremoli" class="cast-card">
+            <a href="/actor/2504036-matteo-caremoli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/26CNMp3pEs2iB3PhzsVSEEuui2T.jpg" alt="Matteo Caremoli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matteo Caremoli</span>
             </a>
-            <a href="/actor/2152019-eugenio-di-fraia" class="cast-card">
+            <a href="/actor/2152019-eugenio-di-fraia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1O7W8UUso4INDY6kcs1hSSth6sx.jpg" alt="Eugenio di Fraia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eugenio di Fraia</span>
             </a>
-            <a href="/actor/2469568-valeria-de-michele" class="cast-card">
+            <a href="/actor/2469568-valeria-de-michele.html" class="cast-card">
                 <img src="/favicon.ico" alt="Valeria De Michele" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Valeria De Michele</span>
             </a>
-            <a href="/actor/1932376-marina-occhionero" class="cast-card">
+            <a href="/actor/1932376-marina-occhionero.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/22MZ4UJ4DEMvlnewcQbZoMHdqNu.jpg" alt="Marina Occhionero" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marina Occhionero</span>
             </a>
-            <a href="/actor/1901421-barbara-chichiarelli" class="cast-card">
+            <a href="/actor/1901421-barbara-chichiarelli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hTaARRojE5OQjivkQTzTx3xHSwz.jpg" alt="Barbara Chichiarelli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Barbara Chichiarelli</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Swap</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2867257-jessica-lelia-greene" class="cast-card">
+            <a href="/actor/2867257-jessica-lelia-greene.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jm9Ta3C5OGZ5PZGECZDOGJqbOzZ.jpg" alt="Jessica Lelia Greene" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jessica Lelia Greene</span>
             </a>
-            <a href="/actor/91358-james-eastwood" class="cast-card">
+            <a href="/actor/91358-james-eastwood.html" class="cast-card">
                 <img src="/favicon.ico" alt="James Eastwood" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Eastwood</span>
             </a>
-            <a href="/actor/4869284-erin-anne-gray" class="cast-card">
+            <a href="/actor/4869284-erin-anne-gray.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tdwT30BuF8c2cf8P01PHhMGnuhK.jpg" alt="Erin Anne Gray" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erin Anne Gray</span>
             </a>
-            <a href="/actor/1949512-dallas-king" class="cast-card">
+            <a href="/actor/1949512-dallas-king.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dallas King" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dallas King</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

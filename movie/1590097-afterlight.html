@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Afterlight</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2729118-anna-fraser" class="cast-card">
+            <a href="/actor/2729118-anna-fraser.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lRQkLk06SDhDlYGsaLJXtbLFrUH.jpg" alt="Anna Fraser" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anna Fraser</span>
             </a>
-            <a href="/actor/1727934-ellise-chappell" class="cast-card">
+            <a href="/actor/1727934-ellise-chappell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aiEIDSUMLY8fZDxI3ODPJ75p9Ns.jpg" alt="Ellise Chappell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ellise Chappell</span>
             </a>
-            <a href="/actor/4766144-linda-jean-barry" class="cast-card">
+            <a href="/actor/4766144-linda-jean-barry.html" class="cast-card">
                 <img src="/favicon.ico" alt="Linda-Jean Barry" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Linda-Jean Barry</span>
             </a>
-            <a href="/actor/150814-clive-wood" class="cast-card">
+            <a href="/actor/150814-clive-wood.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4kUF3fyHePW5fcdQNlxGVJxiaZY.jpg" alt="Clive Wood" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Clive Wood</span>
             </a>
-            <a href="/actor/1944459-jacob-fortune-lloyd" class="cast-card">
+            <a href="/actor/1944459-jacob-fortune-lloyd.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vWP0TglQTAANp4ikgB7CCEBUJoP.jpg" alt="Jacob Fortune-Lloyd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jacob Fortune-Lloyd</span>
             </a>
-            <a href="/actor/4600544-stefan-trout" class="cast-card">
+            <a href="/actor/4600544-stefan-trout.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4wkucRpf8wjmIzJCjuTYOfpAk6A.jpg" alt="Stefan Trout" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stefan Trout</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

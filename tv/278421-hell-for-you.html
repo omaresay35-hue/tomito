@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>地獄の果てまで連れていく</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/129700-nozomi-sasaki" class="cast-card">
+            <a href="/actor/129700-nozomi-sasaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k5WCvK8Zrakp6uPizXYxPoPrxIq.jpg" alt="Nozomi Sasaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nozomi Sasaki</span>
             </a>
-            <a href="/actor/2031109-nagisa-shibuya" class="cast-card">
+            <a href="/actor/2031109-nagisa-shibuya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pj7OoX34s52uIUNMZk0xOGBf99N.jpg" alt="Nagisa Shibuya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nagisa Shibuya</span>
             </a>
-            <a href="/actor/2913858-yuki-inoue" class="cast-card">
+            <a href="/actor/2913858-yuki-inoue.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ffROmNKKAuups43UhmDHwZEeRVI.jpg" alt="Yuki Inoue" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuki Inoue</span>
             </a>
-            <a href="/actor/5124868-yoshizawa-shizuya" class="cast-card">
+            <a href="/actor/5124868-yoshizawa-shizuya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ogcO1ZYFW44AsIqoNyhJclvuXUq.jpg" alt="Yoshizawa Shizuya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshizawa Shizuya</span>
             </a>
-            <a href="/actor/52809-itsuji-itao" class="cast-card">
+            <a href="/actor/52809-itsuji-itao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pj67MEBcYe79dedigaPZsqK50pS.jpg" alt="Itsuji Itao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Itsuji Itao</span>
             </a>
-            <a href="/actor/1565127-yurina-yanagi" class="cast-card">
+            <a href="/actor/1565127-yurina-yanagi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rjSyX9JBpO2P1fxNYbEGJ2AjQd6.jpg" alt="Yurina Yanagi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yurina Yanagi</span>
             </a>
-            <a href="/actor/3166006-amu-fukao" class="cast-card">
+            <a href="/actor/3166006-amu-fukao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vLj7rmA5CFAriMiuDkLznkL6PWs.jpg" alt="Amu Fukao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amu Fukao</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

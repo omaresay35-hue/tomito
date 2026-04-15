@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Kuća od blata</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/67206-andrew-howard" class="cast-card">
+            <a href="/actor/67206-andrew-howard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kba1JeCUYHufjB933G5xPRhO8lV.jpg" alt="Andrew Howard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrew Howard</span>
             </a>
-            <a href="/actor/208470-philip-brodie" class="cast-card">
+            <a href="/actor/208470-philip-brodie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1S4hzhYjgMRfjCNmJ2VCSij20hF.jpg" alt="Philip Brodie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Philip Brodie</span>
             </a>
-            <a href="/actor/585467-kamka-tocinovski" class="cast-card">
+            <a href="/actor/585467-kamka-tocinovski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e5YdMbkH1AspZHehheK9SwFhM2P.jpg" alt="Kamka Tocinovski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kamka Tocinovski</span>
             </a>
-            <a href="/actor/2602918-joakim-tasić" class="cast-card">
+            <a href="/actor/2602918-joakim-tasić.html" class="cast-card">
                 <img src="/favicon.ico" alt="Joakim Tasić" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joakim Tasić</span>
             </a>
-            <a href="/actor/1892225-dušica-nastova" class="cast-card">
+            <a href="/actor/1892225-dušica-nastova.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dušica Nastova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dušica Nastova</span>
             </a>
-            <a href="/actor/2239976-srđan-petrović" class="cast-card">
+            <a href="/actor/2239976-srđan-petrović.html" class="cast-card">
                 <img src="/favicon.ico" alt="Srđan Petrović" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Srđan Petrović</span>
             </a>
-            <a href="/actor/1056308-predrag-momčilović" class="cast-card">
+            <a href="/actor/1056308-predrag-momčilović.html" class="cast-card">
                 <img src="/favicon.ico" alt="Predrag Momčilović" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Predrag Momčilović</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

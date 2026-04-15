@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Sphinx</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3282529-andrea-vass" class="cast-card">
+            <a href="/actor/3282529-andrea-vass.html" class="cast-card">
                 <img src="/favicon.ico" alt="Andrea Vass" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrea Vass</span>
             </a>
-            <a href="/actor/87345-rifka-lodeizen" class="cast-card">
+            <a href="/actor/87345-rifka-lodeizen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l5hLOMTloXy9WKSX3WNA5MyXnfk.jpg" alt="Rifka Lodeizen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rifka Lodeizen</span>
             </a>
-            <a href="/actor/144199-marcel-hensema" class="cast-card">
+            <a href="/actor/144199-marcel-hensema.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sb00s42PGW24rlxTFUBj0JbKcMv.jpg" alt="Marcel Hensema" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marcel Hensema</span>
             </a>
-            <a href="/actor/544096-sallie-harmsen" class="cast-card">
+            <a href="/actor/544096-sallie-harmsen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2JNkJ7UUAKwLkaPeOdzi0bQUzK4.jpg" alt="Sallie Harmsen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sallie Harmsen</span>
             </a>
-            <a href="/actor/1266933-joy-wielkens" class="cast-card">
+            <a href="/actor/1266933-joy-wielkens.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vXb0MmBBltNrm1wc6L2CDom2vzg.jpg" alt="Joy Wielkens" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joy Wielkens</span>
             </a>
-            <a href="/actor/1129760-ruth-becquart" class="cast-card">
+            <a href="/actor/1129760-ruth-becquart.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rQ8rDGAMD1Q3MCL62x5gQsFXAOV.jpg" alt="Ruth Becquart" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ruth Becquart</span>
             </a>
-            <a href="/actor/565648-benja-bruijning" class="cast-card">
+            <a href="/actor/565648-benja-bruijning.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jcVJvetcE5M0ekaRnOcUmnMMlFT.jpg" alt="Benja Bruijning" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Benja Bruijning</span>
             </a>
-            <a href="/actor/1965380-delilah-warcup-van-eyck" class="cast-card">
+            <a href="/actor/1965380-delilah-warcup-van-eyck.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sMEtqfeSPVaboc9LcmkcwoEzfLQ.jpg" alt="Delilah Warcup-van Eyck" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Delilah Warcup-van Eyck</span>
             </a>
-            <a href="/actor/3909888-sil-van-der-zwan" class="cast-card">
+            <a href="/actor/3909888-sil-van-der-zwan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/byjIoRzdvroizzTgIBtS9xrnHdX.jpg" alt="Sil van der Zwan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sil van der Zwan</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

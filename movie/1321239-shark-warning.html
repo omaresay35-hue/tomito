@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Shark Warning</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1794917-andrew-j-katers" class="cast-card">
+            <a href="/actor/1794917-andrew-j-katers.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9kR1k3o9PJ7796VdDKdbjZ32uu7.jpg" alt="Andrew J Katers" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrew J Katers</span>
             </a>
-            <a href="/actor/77321-david-chokachi" class="cast-card">
+            <a href="/actor/77321-david-chokachi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j5RTusstv11K2xMHdEIBjrWsGle.jpg" alt="David Chokachi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Chokachi</span>
             </a>
-            <a href="/actor/1821947-angela-cole" class="cast-card">
+            <a href="/actor/1821947-angela-cole.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dStUQtrUDG10HBFkHScyO1fIoog.jpg" alt="Angela Cole" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Angela Cole</span>
             </a>
-            <a href="/actor/4596072-lauren-pike" class="cast-card">
+            <a href="/actor/4596072-lauren-pike.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/spvNyAFjb2MiwULeHPgfOesC9vE.jpg" alt="Lauren Pike" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lauren Pike</span>
             </a>
-            <a href="/actor/1310170-rebecca-ritz" class="cast-card">
+            <a href="/actor/1310170-rebecca-ritz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5fY6wOYHJO3rQkOeotZYX9mzfMo.jpg" alt="Rebecca Ritz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rebecca Ritz</span>
             </a>
-            <a href="/actor/1255859-canyon-prince" class="cast-card">
+            <a href="/actor/1255859-canyon-prince.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9vtynf5cbyxaf8y9c45518Qh60k.jpg" alt="Canyon Prince" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Canyon Prince</span>
             </a>
-            <a href="/actor/4848773-james-dash" class="cast-card">
+            <a href="/actor/4848773-james-dash.html" class="cast-card">
                 <img src="/favicon.ico" alt="James Dash" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Dash</span>
             </a>
-            <a href="/actor/2969407-linh-bui" class="cast-card">
+            <a href="/actor/2969407-linh-bui.html" class="cast-card">
                 <img src="/favicon.ico" alt="Linh Bui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Linh Bui</span>
             </a>
-            <a href="/actor/3256832-deon-sams" class="cast-card">
+            <a href="/actor/3256832-deon-sams.html" class="cast-card">
                 <img src="/favicon.ico" alt="Deon Sams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Deon Sams</span>
             </a>
-            <a href="/actor/42207-doug-jeffery" class="cast-card">
+            <a href="/actor/42207-doug-jeffery.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7cwnh8pFBvR9yo5ZJRwmtGPHj6C.jpg" alt="Doug Jeffery" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Doug Jeffery</span>
             </a>
-            <a href="/actor/4929189-gordon-mudd" class="cast-card">
+            <a href="/actor/4929189-gordon-mudd.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gordon Mudd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gordon Mudd</span>
             </a>
-            <a href="/actor/6019979-jonas-silbor" class="cast-card">
+            <a href="/actor/6019979-jonas-silbor.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jonas Silbor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jonas Silbor</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

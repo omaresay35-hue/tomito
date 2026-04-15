@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>وادي السيارات</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/120130-giulia-michelini" class="cast-card">
+            <a href="/actor/120130-giulia-michelini.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kC3k7N3YCTXUKMioGr4oLtrqwYl.jpg" alt="Giulia Michelini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Giulia Michelini</span>
             </a>
-            <a href="/actor/88469-luca-argentero" class="cast-card">
+            <a href="/actor/88469-luca-argentero.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m0vXuiMCBxSmDOfYuM1oFGI4qrv.jpg" alt="Luca Argentero" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luca Argentero</span>
             </a>
-            <a href="/actor/3263221-caterina-forza" class="cast-card">
+            <a href="/actor/3263221-caterina-forza.html" class="cast-card">
                 <img src="/favicon.ico" alt="Caterina Forza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Caterina Forza</span>
             </a>
-            <a href="/actor/126399-andrea-montovoli" class="cast-card">
+            <a href="/actor/126399-andrea-montovoli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7Ru0815jzrtMKtY6xGvxPnDXlmo.jpg" alt="Andrea Montovoli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrea Montovoli</span>
             </a>
-            <a href="/actor/1093368-daniele-balconi" class="cast-card">
+            <a href="/actor/1093368-daniele-balconi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wtZsiKb25rP9DJVwrg5Xv0KtCci.jpg" alt="Daniele Balconi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniele Balconi</span>
             </a>
-            <a href="/actor/3624649-alessandro-cucca" class="cast-card">
+            <a href="/actor/3624649-alessandro-cucca.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pdoiFXbIGylZQ3SSJyMgDrbkcKL.jpg" alt="Alessandro Cucca" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alessandro Cucca</span>
             </a>
-            <a href="/actor/1654741-andrei-nova" class="cast-card">
+            <a href="/actor/1654741-andrei-nova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qW4RfbmHffTdiwmuEIQv3oyJ8YA.jpg" alt="Andrei Nova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrei Nova</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

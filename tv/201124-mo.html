@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,19 +75,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1293978-mo-amer" class="cast-card">
+            <a href="/actor/1293978-mo-amer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9rnpKVEjf4Vx5XobCRTCg3ws0v9.jpg" alt="Mo Amer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mo Amer</span>
             </a>
-            <a href="/actor/589722-teresa-ruiz" class="cast-card">
+            <a href="/actor/589722-teresa-ruiz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bu0bGNDzIpaVfrOBBb1PERirBB9.jpg" alt="Teresa Ruiz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Teresa Ruiz</span>
             </a>
-            <a href="/actor/3498565-farah-bsieso" class="cast-card">
+            <a href="/actor/3498565-farah-bsieso.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9h8fs0ZKr0gWouRCfyxlsfd3T1n.jpg" alt="Farah Bsieso" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Farah Bsieso</span>
             </a>
-            <a href="/actor/1163873-omar-elba" class="cast-card">
+            <a href="/actor/1163873-omar-elba.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w1qwzAxmaRXnU8Ucc1OIuzNX293.jpg" alt="Omar Elba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Omar Elba</span>
             </a></div></section>
@@ -95,13 +95,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

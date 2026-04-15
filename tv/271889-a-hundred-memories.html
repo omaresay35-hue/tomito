@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>مائة ذكرى</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2053219-kim-da-mi" class="cast-card">
+            <a href="/actor/2053219-kim-da-mi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tpb0eZLDvIaBVNLXFpxXAdPxooo.jpg" alt="Kim Da-mi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Da-mi</span>
             </a>
-            <a href="/actor/2256407-shin-ye-eun" class="cast-card">
+            <a href="/actor/2256407-shin-ye-eun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dGJRM6rEdk9NLdryDUg172XK5ip.jpg" alt="Shin Ye-eun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shin Ye-eun</span>
             </a>
-            <a href="/actor/4286509-heo-nam-jun" class="cast-card">
+            <a href="/actor/4286509-heo-nam-jun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zPF0zzfLjQBpEIbrbNpLDiwnimB.jpg" alt="Heo Nam-jun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Heo Nam-jun</span>
             </a>
-            <a href="/actor/2870995-lee-won-jeong" class="cast-card">
+            <a href="/actor/2870995-lee-won-jeong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hczrrDSomDouv3IH8ujed31qKN7.jpg" alt="Lee Won-jeong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Won-jeong</span>
             </a>
-            <a href="/actor/1855432-jeon-seong-woo" class="cast-card">
+            <a href="/actor/1855432-jeon-seong-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wpUQNHwwx6icC0zLdQQDruelvA8.jpg" alt="Jeon Seong-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeon Seong-woo</span>
             </a>
-            <a href="/actor/3762395-park-ye-ni" class="cast-card">
+            <a href="/actor/3762395-park-ye-ni.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zQplIBdjf5elAloeXQGXJXyrg74.jpg" alt="Park Ye-ni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Ye-ni</span>
             </a>
-            <a href="/actor/3038165-jung-bo-min" class="cast-card">
+            <a href="/actor/3038165-jung-bo-min.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ymf7ilHsQkKO14KFCysEEIa4Oit.jpg" alt="Jung Bo-min" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jung Bo-min</span>
             </a>
-            <a href="/actor/1551424-lee-min-ji" class="cast-card">
+            <a href="/actor/1551424-lee-min-ji.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yAed6xnew66EtJFDdeDBz4dECG3.jpg" alt="Lee Min-ji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Min-ji</span>
             </a>
-            <a href="/actor/141541-yoon-je-moon" class="cast-card">
+            <a href="/actor/141541-yoon-je-moon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ay4bL3m71dEPterBKxWzCmPpLNS.jpg" alt="Yoon Je-moon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoon Je-moon</span>
             </a>
-            <a href="/actor/2183220-kim-ji-hyun" class="cast-card">
+            <a href="/actor/2183220-kim-ji-hyun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qZ1ZCsoTovqazd1rtYB3yvaxCry.jpg" alt="Kim Ji-hyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Ji-hyun</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

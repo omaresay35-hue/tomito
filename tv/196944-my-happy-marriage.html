@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>زواجي السعيد</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1452028-reina-ueda" class="cast-card">
+            <a href="/actor/1452028-reina-ueda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2WV61uVU7y6XGYqNHLMpP0sApdu.jpg" alt="Reina Ueda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reina Ueda</span>
             </a>
-            <a href="/actor/1324666-kaito-ishikawa" class="cast-card">
+            <a href="/actor/1324666-kaito-ishikawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fzjIkotjUHHs3wgftM9tqdsG8ph.jpg" alt="Kaito Ishikawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaito Ishikawa</span>
             </a>
-            <a href="/actor/119145-hiro-shimono" class="cast-card">
+            <a href="/actor/119145-hiro-shimono.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yrSDcgFefHtWkFmLnTrcw2t0MV.jpg" alt="Hiro Shimono" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiro Shimono</span>
             </a>
-            <a href="/actor/114299-ryohei-kimura" class="cast-card">
+            <a href="/actor/114299-ryohei-kimura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m4GktFKhjrVTewsZtqTusInHZqT.jpg" alt="Ryohei Kimura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryohei Kimura</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

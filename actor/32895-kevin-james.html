@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ In 2004, James made his first film appearance in 50 First Dates, and the followi
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1291335-solo-mio">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1291335-solo-mio.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/efSsZJaddeq0LOABZqpCXdMxv9P.jpg" alt="Solo Mio — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Solo Mio</div></div>
-    </a>    <a class="card" href="/movie/1248226-playdate">
+    </a>    <a class="card" href="/movie/1248226-playdate.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fGodXWqJkkkbSebPIlxLSygV8GY.jpg" alt="Playdate — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Playdate</div></div>
-    </a>    <a class="card" href="/movie/1181540-guns-up">
+    </a>    <a class="card" href="/movie/1181540-guns-up.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3RokBWEkQqJRZEVP3DPwGm5MYh6.jpg" alt="Guns Up — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Guns Up</div></div>
-    </a>    <a class="card" href="/movie/928480-monster-summer">
+    </a>    <a class="card" href="/movie/928480-monster-summer.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zD2UZkh0DwbDEMuOKIR7jgwgulZ.jpg" alt="Monster Summer — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Monster Summer</div></div>
@@ -94,13 +94,6 @@ In 2004, James made his first film appearance in 50 First Dates, and the followi
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

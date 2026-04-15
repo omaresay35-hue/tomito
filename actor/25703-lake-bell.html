@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1032642-mother-couch">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1032642-mother-couch.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mUJeMGImIFFmq5Ck7pxOC9D8dr6.jpg" alt="Mother, Couch — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Mother, Couch</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/271267-the-chair-company">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/271267-the-chair-company.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2VktdoGvR0Pv6qj9P7vDsTIfw1l.jpg" alt="The Chair Company — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Chair Company</div></div>
-    </a>    <a class="card" href="/tv/200753-kite-man-hell-yeah">
+    </a>    <a class="card" href="/tv/200753-kite-man-hell-yeah.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cebce4aQiO4gRLiILxoZbzWUoEJ.jpg" alt="Kite Man: Hell Yeah! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kite Man: Hell Yeah!</div></div>
-    </a>    <a class="card" href="/tv/242965-after-midnight">
+    </a>    <a class="card" href="/tv/242965-after-midnight.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7O67hHXEaiW30UQdunBqlyPsfGh.jpg" alt="After Midnight — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">After Midnight</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

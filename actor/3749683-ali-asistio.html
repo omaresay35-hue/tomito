@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,15 +71,15 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1450432-arouse">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1450432-arouse.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uTcNSqa2XgouS8cZ2eoyc93QVgC.jpg" alt="Arouse — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Arouse</div></div>
-    </a>    <a class="card" href="/movie/1312871-ang-pintor-at-ang-paraluman">
+    </a>    <a class="card" href="/movie/1312871-ang-pintor-at-ang-paraluman.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kQ3bGwCwMxwwm0wM6faLCYQD6iB.jpg" alt="Ang Pintor At Ang Paraluman — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Ang Pintor At Ang Paraluman</div></div>
-    </a>    <a class="card" href="/movie/1226281-pantasya-ni-tami">
+    </a>    <a class="card" href="/movie/1226281-pantasya-ni-tami.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/iej9tjZsnWbfn6BirakJAygfaEq.jpg" alt="Pantasya ni Tami — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pantasya ni Tami</div></div>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>마당이 있는 집</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1237976-kim-tae-hee" class="cast-card">
+            <a href="/actor/1237976-kim-tae-hee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vFZZ2Gsu416CCD4QkYyVocgOa7C.jpg" alt="Kim Tae-hee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Tae-hee</span>
             </a>
-            <a href="/actor/1329984-lim-ji-yeon" class="cast-card">
+            <a href="/actor/1329984-lim-ji-yeon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kXacAfyn5CCuCBd16XXhEVLyxCM.jpg" alt="Lim Ji-yeon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lim Ji-yeon</span>
             </a>
-            <a href="/actor/147505-kim-seung-o" class="cast-card">
+            <a href="/actor/147505-kim-seung-o.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bvwsF0l3f2qs19GCUyHtAqGDL5P.jpg" alt="Kim Seung-o" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Seung-o</span>
             </a>
-            <a href="/actor/3475519-choi-jae-rim" class="cast-card">
+            <a href="/actor/3475519-choi-jae-rim.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uOW1aRzr3yzstuR9mup1dgFmn7n.jpg" alt="Choi Jae-rim" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Choi Jae-rim</span>
             </a>
-            <a href="/actor/3724287-cha-sung-je" class="cast-card">
+            <a href="/actor/3724287-cha-sung-je.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4O2bEPuPjnxdqlAPcO0dDPvZ4zx.jpg" alt="Cha Sung-je" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cha Sung-je</span>
             </a>
-            <a href="/actor/2238132-baek-hyun-joo" class="cast-card">
+            <a href="/actor/2238132-baek-hyun-joo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kAiaZeao9WPuprJ29U47WFkZ7dd.jpg" alt="Baek Hyun-joo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Baek Hyun-joo</span>
             </a>
-            <a href="/actor/2378201-jung-woon-sun" class="cast-card">
+            <a href="/actor/2378201-jung-woon-sun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6TTLKY8DyPDUnRxVMUcIr6seqOs.jpg" alt="Jung Woon-sun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jung Woon-sun</span>
             </a>
-            <a href="/actor/2204431-cha-mi-kyeong" class="cast-card">
+            <a href="/actor/2204431-cha-mi-kyeong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e1iTjY1FitE4vMu6s25Qmrf6qXc.jpg" alt="Cha Mi-kyeong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cha Mi-kyeong</span>
             </a>
-            <a href="/actor/6079187-최시아" class="cast-card">
+            <a href="/actor/6079187-최시아.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lvNC3J2DmBaBtR0UhLOe5ZRgz8U.jpg" alt="최시아" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>최시아</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

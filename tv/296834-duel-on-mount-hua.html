@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>华山论剑</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1174685-zhou-yiwei" class="cast-card">
+            <a href="/actor/1174685-zhou-yiwei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9XshIg3Uar7w4Dt7zfT4d9K1KVY.jpg" alt="Zhou Yiwei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhou Yiwei</span>
             </a>
-            <a href="/actor/1686321-gao-weiguang" class="cast-card">
+            <a href="/actor/1686321-gao-weiguang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iJE4p3pKMtcPG3V6kTKcHd85EZO.jpg" alt="Gao Weiguang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gao Weiguang</span>
             </a>
-            <a href="/actor/2337443-peter-ho" class="cast-card">
+            <a href="/actor/2337443-peter-ho.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7zXa53TqSE0jU5HWeF3K8iweC19.jpg" alt="Peter Ho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Peter Ho</span>
             </a>
-            <a href="/actor/1137149-ming-dao" class="cast-card">
+            <a href="/actor/1137149-ming-dao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1auKzPes5Eko91shqmYiwv7miZj.jpg" alt="Ming Dao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ming Dao</span>
             </a>
-            <a href="/actor/1088253-yu-jinwei" class="cast-card">
+            <a href="/actor/1088253-yu-jinwei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jCKIoARlOK7ngz9235ovAYbJB7U.jpg" alt="Yu Jinwei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yu Jinwei</span>
             </a>
-            <a href="/actor/2925143-pei-jiaxin" class="cast-card">
+            <a href="/actor/2925143-pei-jiaxin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/asi5YeBZDyFDCpkxRZ7BblkysXN.jpg" alt="Pei Jiaxin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pei Jiaxin</span>
             </a>
-            <a href="/actor/1859899-una-you" class="cast-card">
+            <a href="/actor/1859899-una-you.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5Q0Ho5x9a2sK1uD2P9qiKbHSRk7.jpg" alt="Una You" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Una You</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

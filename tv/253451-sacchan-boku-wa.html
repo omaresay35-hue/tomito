@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>さっちゃん、僕は。</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1736952-ren-ishikawa" class="cast-card">
+            <a href="/actor/1736952-ren-ishikawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/susjgREHJTPug5mbbSajazVi7Fm.jpg" alt="Ren Ishikawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ren Ishikawa</span>
             </a>
-            <a href="/actor/3750189-keito-kimura" class="cast-card">
+            <a href="/actor/3750189-keito-kimura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tD0jq6XhJe0VevR9JtHp7PiseyK.jpg" alt="Keito Kimura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keito Kimura</span>
             </a>
-            <a href="/actor/4699018-hinano-nakayama" class="cast-card">
+            <a href="/actor/4699018-hinano-nakayama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9MKfz90gALxNAv4rnEEc5GhmMHz.jpg" alt="Hinano Nakayama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hinano Nakayama</span>
             </a>
-            <a href="/actor/936282-dori-sakurada" class="cast-card">
+            <a href="/actor/936282-dori-sakurada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pQHayu4kmoJ8T7ebKsGBc7egHCa.jpg" alt="Dori Sakurada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dori Sakurada</span>
             </a>
-            <a href="/actor/1084912-taketo-tanaka" class="cast-card">
+            <a href="/actor/1084912-taketo-tanaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pzPJR4UluYQKUw7IqLHzzwtPW5q.jpg" alt="Taketo Tanaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taketo Tanaka</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

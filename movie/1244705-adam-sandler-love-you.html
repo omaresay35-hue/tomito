@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>آدم ساندلر: أحبكم</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/19292-adam-sandler" class="cast-card">
+            <a href="/actor/19292-adam-sandler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gLkLCsQdwDDPabRhKPB25nGtKwS.jpg" alt="Adam Sandler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Sandler</span>
             </a>
-            <a href="/actor/1627371-dan-bulla" class="cast-card">
+            <a href="/actor/1627371-dan-bulla.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gV9OiPo5i5whmLPLzueHQIBAEcp.jpg" alt="Dan Bulla" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dan Bulla</span>
             </a>
-            <a href="/actor/60949-rob-schneider" class="cast-card">
+            <a href="/actor/60949-rob-schneider.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kVHNFDOGDrC3LjDyYf5RaCd6auK.jpg" alt="Rob Schneider" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rob Schneider</span>
             </a>
-            <a href="/actor/60959-jackie-sandler" class="cast-card">
+            <a href="/actor/60959-jackie-sandler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7oLSJ2Ewlzg75m9dm2N9GqDQXvk.jpg" alt="Jackie Sandler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jackie Sandler</span>
             </a>
-            <a href="/actor/4910363-villiam-hafoka" class="cast-card">
+            <a href="/actor/4910363-villiam-hafoka.html" class="cast-card">
                 <img src="/favicon.ico" alt="Villiam Hafoka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Villiam Hafoka</span>
             </a>
-            <a href="/actor/2487846-mitchell-wenig" class="cast-card">
+            <a href="/actor/2487846-mitchell-wenig.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mitchell Wenig" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mitchell Wenig</span>
             </a>
-            <a href="/actor/4910364-jhirair-john-demirchyan" class="cast-card">
+            <a href="/actor/4910364-jhirair-john-demirchyan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jhirair John Demirchyan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jhirair John Demirchyan</span>
             </a>
-            <a href="/actor/1980002-joseph-vecsey" class="cast-card">
+            <a href="/actor/1980002-joseph-vecsey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r4URR1ZQXwtfvOqoy4Ujh5JeEuQ.jpg" alt="Joseph Vecsey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joseph Vecsey</span>
             </a>
-            <a href="/actor/4123506-robert-digby" class="cast-card">
+            <a href="/actor/4123506-robert-digby.html" class="cast-card">
                 <img src="/favicon.ico" alt="Robert Digby" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robert Digby</span>
             </a>
-            <a href="/actor/69500-lou-adler" class="cast-card">
+            <a href="/actor/69500-lou-adler.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lou Adler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lou Adler</span>
             </a>
-            <a href="/actor/154066-willie-tyler" class="cast-card">
+            <a href="/actor/154066-willie-tyler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wPdZXQYW3wxNHqJtEKlkzc7brYJ.jpg" alt="Willie Tyler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Willie Tyler</span>
             </a>
-            <a href="/actor/75377-ann-pala" class="cast-card">
+            <a href="/actor/75377-ann-pala.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ann Pala" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ann Pala</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

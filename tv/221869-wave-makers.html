@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>صنّاع موجة التغيير</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1746243-hsieh-ying-shiuan" class="cast-card">
+            <a href="/actor/1746243-hsieh-ying-shiuan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fwDJprZF61lqiaPRIdLltnfMvXC.jpg" alt="Hsieh Ying-shiuan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hsieh Ying-shiuan</span>
             </a>
-            <a href="/actor/581855-jag-huang" class="cast-card">
+            <a href="/actor/581855-jag-huang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mqgxq8vVRYB0OUtIOKkeaujqREV.jpg" alt="Jag Huang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jag Huang</span>
             </a>
-            <a href="/actor/2270252-gingle-wang" class="cast-card">
+            <a href="/actor/2270252-gingle-wang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cKBSigATU0e3IUcAeYHvuAS2EFU.jpg" alt="Gingle Wang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gingle Wang</span>
             </a>
-            <a href="/actor/1133858-leon-dai" class="cast-card">
+            <a href="/actor/1133858-leon-dai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/goUmabqYbnDBc1HocW2pW8lNjln.jpg" alt="Leon Dai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leon Dai</span>
             </a>
-            <a href="/actor/2685341-buffy-chen" class="cast-card">
+            <a href="/actor/2685341-buffy-chen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9P5gmLTPp3kx8zv840tahA6VzqS.jpg" alt="Buffy Chen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Buffy Chen</span>
             </a>
-            <a href="/actor/1341458-zhan-huai-yun" class="cast-card">
+            <a href="/actor/1341458-zhan-huai-yun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i4GPTyGmJySMGeSPxmPohyOoUJL.jpg" alt="Zhan Huai-yun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhan Huai-yun</span>
             </a>
-            <a href="/actor/2836726-devin-pan" class="cast-card">
+            <a href="/actor/2836726-devin-pan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nNDnHEELVrTRG3dKT1l1GCFd2jO.jpg" alt="Devin Pan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Devin Pan</span>
             </a>
-            <a href="/actor/581827-hu-wei-jie" class="cast-card">
+            <a href="/actor/581827-hu-wei-jie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uNgHbKpVJA4r9HPbPkdGKbGz31D.jpg" alt="Hu Wei-jie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hu Wei-jie</span>
             </a>
-            <a href="/actor/2296023-tammy-darshana-lai" class="cast-card">
+            <a href="/actor/2296023-tammy-darshana-lai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l7dMOnokmy63pjWn8yOCdelY7UG.jpg" alt="Tammy Darshana Lai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tammy Darshana Lai</span>
             </a>
-            <a href="/actor/3815801-liao-li-ling" class="cast-card">
+            <a href="/actor/3815801-liao-li-ling.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hfA1UXC27UctUuNT3YnJ47O8ejZ.jpg" alt="Liao Li-ling" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liao Li-ling</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

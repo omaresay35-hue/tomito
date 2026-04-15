@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Fiume o Morte!</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/36015-gabriele-dannunzio" class="cast-card">
+            <a href="/actor/36015-gabriele-dannunzio.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9aidqkFtwrU5r7BXW2o4RcbQDcJ.jpg" alt="Gabriele D'Annunzio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gabriele D'Annunzio</span>
             </a>
-            <a href="/actor/5296893-izet-medošević" class="cast-card">
+            <a href="/actor/5296893-izet-medošević.html" class="cast-card">
                 <img src="/favicon.ico" alt="Izet Medošević" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Izet Medošević</span>
             </a>
-            <a href="/actor/5296894-ćenan-beljulji" class="cast-card">
+            <a href="/actor/5296894-ćenan-beljulji.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ćenan Beljulji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ćenan Beljulji</span>
             </a>
-            <a href="/actor/5296895-albano-vučetić" class="cast-card">
+            <a href="/actor/5296895-albano-vučetić.html" class="cast-card">
                 <img src="/favicon.ico" alt="Albano Vučetić" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Albano Vučetić</span>
             </a>
-            <a href="/actor/5296897-tihomir-buterin" class="cast-card">
+            <a href="/actor/5296897-tihomir-buterin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Tihomir Buterin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tihomir Buterin</span>
             </a>
-            <a href="/actor/5296898-andrea-marsanich" class="cast-card">
+            <a href="/actor/5296898-andrea-marsanich.html" class="cast-card">
                 <img src="/favicon.ico" alt="Andrea Marsanich" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrea Marsanich</span>
             </a>
-            <a href="/actor/5296901-massimo-ronzani" class="cast-card">
+            <a href="/actor/5296901-massimo-ronzani.html" class="cast-card">
                 <img src="/favicon.ico" alt="Massimo Ronzani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Massimo Ronzani</span>
             </a>
-            <a href="/actor/5296903-milovan-večerina-cico" class="cast-card">
+            <a href="/actor/5296903-milovan-večerina-cico.html" class="cast-card">
                 <img src="/favicon.ico" alt="Milovan Večerina Cico" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Milovan Večerina Cico</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

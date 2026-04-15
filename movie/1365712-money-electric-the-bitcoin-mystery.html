@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Money Electric: The Bitcoin Mystery</span>
   </nav>
 
@@ -71,23 +71,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/116779-cullen-hoback" class="cast-card">
+            <a href="/actor/116779-cullen-hoback.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rsP14hjk1NpO7hyWNZykz0RkoPg.jpg" alt="Cullen Hoback" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cullen Hoback</span>
             </a>
-            <a href="/actor/1833785-roger-ver" class="cast-card">
+            <a href="/actor/1833785-roger-ver.html" class="cast-card">
                 <img src="/favicon.ico" alt="Roger Ver" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Roger Ver</span>
             </a>
-            <a href="/actor/4991456-peter-todd" class="cast-card">
+            <a href="/actor/4991456-peter-todd.html" class="cast-card">
                 <img src="/favicon.ico" alt="Peter Todd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Peter Todd</span>
             </a>
-            <a href="/actor/4991458-adam-back" class="cast-card">
+            <a href="/actor/4991458-adam-back.html" class="cast-card">
                 <img src="/favicon.ico" alt="Adam Back" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Back</span>
             </a>
-            <a href="/actor/4107041-ricardo-salinas-pliego" class="cast-card">
+            <a href="/actor/4107041-ricardo-salinas-pliego.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i1tUZM3UG4GDHVnucAhcJa7tTit.jpg" alt="Ricardo Salinas Pliego" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ricardo Salinas Pliego</span>
             </a></div></section>
@@ -95,13 +95,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

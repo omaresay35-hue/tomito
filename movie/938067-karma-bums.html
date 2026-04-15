@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Karma Bums</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5323785-brandon-odell" class="cast-card">
+            <a href="/actor/5323785-brandon-odell.html" class="cast-card">
                 <img src="/favicon.ico" alt="Brandon O'Dell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brandon O'Dell</span>
             </a>
-            <a href="/actor/5323786-william-cross-van-horn" class="cast-card">
+            <a href="/actor/5323786-william-cross-van-horn.html" class="cast-card">
                 <img src="/favicon.ico" alt="William Cross Van Horn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>William Cross Van Horn</span>
             </a>
-            <a href="/actor/5323770-keon-hedayati" class="cast-card">
+            <a href="/actor/5323770-keon-hedayati.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qow2t8GynIHmYYFReDtYuvWkpG2.jpg" alt="Keon Hedayati" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keon Hedayati</span>
             </a>
-            <a href="/actor/4744218-jackie-green" class="cast-card">
+            <a href="/actor/4744218-jackie-green.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jackie Green" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jackie Green</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

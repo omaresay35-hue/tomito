@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Querer</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1303016-nagore-aranburu" class="cast-card">
+            <a href="/actor/1303016-nagore-aranburu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ibNfgTrEH7GXaHtPXm1GFO984f3.jpg" alt="Nagore Aranburu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nagore Aranburu</span>
             </a>
-            <a href="/actor/227071-pedro-casablanc" class="cast-card">
+            <a href="/actor/227071-pedro-casablanc.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7oXGl8Nr2w7SaES4tbzjw4RYtF0.jpg" alt="Pedro Casablanc" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pedro Casablanc</span>
             </a>
-            <a href="/actor/1846370-miguel-bernardeau" class="cast-card">
+            <a href="/actor/1846370-miguel-bernardeau.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dFA8oHPaFseIqlpCFKtsDwzhrz1.jpg" alt="Miguel Bernardeau" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miguel Bernardeau</span>
             </a>
-            <a href="/actor/1915027-iván-pellicer" class="cast-card">
+            <a href="/actor/1915027-iván-pellicer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uhwAlJ5hbHri3TUmAno9NcOA1MV.jpg" alt="Iván Pellicer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Iván Pellicer</span>
             </a>
-            <a href="/actor/1179338-loreto-mauleón" class="cast-card">
+            <a href="/actor/1179338-loreto-mauleón.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/it0o3yDfJu4JAC9lBkvgQDKWPd6.jpg" alt="Loreto Mauleón" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Loreto Mauleón</span>
             </a>
-            <a href="/actor/2424427-miguel-garcés" class="cast-card">
+            <a href="/actor/2424427-miguel-garcés.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ki6tfBiG85CVKjNS0Er3SNcz5JU.jpg" alt="Miguel Garcés" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miguel Garcés</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

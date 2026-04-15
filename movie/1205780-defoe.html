@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Defoe</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3135673-jermain-defoe" class="cast-card">
+            <a href="/actor/3135673-jermain-defoe.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jermain Defoe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jermain Defoe</span>
             </a>
-            <a href="/actor/4379302-sandra-defoe" class="cast-card">
+            <a href="/actor/4379302-sandra-defoe.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sandra Defoe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sandra Defoe</span>
             </a>
-            <a href="/actor/4379303-gemma-lowery" class="cast-card">
+            <a href="/actor/4379303-gemma-lowery.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gemma Lowery" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gemma Lowery</span>
             </a>
-            <a href="/actor/1676095-harry-redknapp" class="cast-card">
+            <a href="/actor/1676095-harry-redknapp.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/47fzpnnyWdtgvUmKhRiuN9zmNqv.jpg" alt="Harry Redknapp" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Harry Redknapp</span>
             </a>
-            <a href="/actor/1216093-peter-crouch" class="cast-card">
+            <a href="/actor/1216093-peter-crouch.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jTCBt2hxHK0cFlULzhpeJ8X0DkL.jpg" alt="Peter Crouch" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Peter Crouch</span>
             </a>
-            <a href="/actor/2383456-joe-cole" class="cast-card">
+            <a href="/actor/2383456-joe-cole.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jmeAGPPYOMYuwvtglx20OQQVTBj.jpg" alt="Joe Cole" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joe Cole</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>وندر مان</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1639847-yahya-abdul-mateen-ii" class="cast-card">
+            <a href="/actor/1639847-yahya-abdul-mateen-ii.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/79VdVjUoiYGcgjOT9UmE5XIpoZM.jpg" alt="Yahya Abdul-Mateen II" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yahya Abdul-Mateen II</span>
             </a>
-            <a href="/actor/457386-arian-moayed" class="cast-card">
+            <a href="/actor/457386-arian-moayed.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ApY4Ql2xGnzy8LeWqcntAbEQHiB.jpg" alt="Arian Moayed" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arian Moayed</span>
             </a>
-            <a href="/actor/2267887-x-mayo" class="cast-card">
+            <a href="/actor/2267887-x-mayo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7rmo3N6EOzsKxvlk78NJLjEboys.jpg" alt="X Mayo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>X Mayo</span>
             </a>
-            <a href="/actor/2282-ben-kingsley" class="cast-card">
+            <a href="/actor/2282-ben-kingsley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vQtBqpF2HDdzbfXHDzR4u37i1Ac.jpg" alt="Ben Kingsley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ben Kingsley</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

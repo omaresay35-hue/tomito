@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>爱在天摇地动时</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3147466-han-leyao" class="cast-card">
+            <a href="/actor/3147466-han-leyao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wsmOvIPvpkjOW7z3PFh0dHerlVp.jpg" alt="Han Leyao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Han Leyao</span>
             </a>
-            <a href="/actor/2480231-leo-yang" class="cast-card">
+            <a href="/actor/2480231-leo-yang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dOjn9t7lUVlXdMsY6JUsNXSyccp.jpg" alt="Leo Yang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leo Yang</span>
             </a>
-            <a href="/actor/3176297-zhang-xinkai" class="cast-card">
+            <a href="/actor/3176297-zhang-xinkai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ggt3S7wZ4uhRJ61ap1eAoxsjN14.jpg" alt="Zhang Xinkai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Xinkai</span>
             </a>
-            <a href="/actor/5151770-wang-rong" class="cast-card">
+            <a href="/actor/5151770-wang-rong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fMMHFsHtjmj1w02dRoqN5bq7QgM.jpg" alt="Wang Rong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wang Rong</span>
             </a>
-            <a href="/actor/2513785-qi-hang" class="cast-card">
+            <a href="/actor/2513785-qi-hang.html" class="cast-card">
                 <img src="/favicon.ico" alt="Qi Hang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Qi Hang</span>
             </a>
-            <a href="/actor/5151773-zhou-yuting" class="cast-card">
+            <a href="/actor/5151773-zhou-yuting.html" class="cast-card">
                 <img src="/favicon.ico" alt="Zhou Yuting" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhou Yuting</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>La coleccionista</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/96686-belén-lópez" class="cast-card">
+            <a href="/actor/96686-belén-lópez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rl22Ll44NIitP1nUtORp90OUvGI.jpg" alt="Belén López" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Belén López</span>
             </a>
-            <a href="/actor/42123-assumpta-serna" class="cast-card">
+            <a href="/actor/42123-assumpta-serna.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bSiZG1PQAhdBjF0ucubXvTA7fuV.jpg" alt="Assumpta Serna" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Assumpta Serna</span>
             </a>
-            <a href="/actor/1176491-guilherme-filipe" class="cast-card">
+            <a href="/actor/1176491-guilherme-filipe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/VGmneNCR4DubXbVKcKcm0gbzXV.jpg" alt="Guilherme Filipe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Guilherme Filipe</span>
             </a>
-            <a href="/actor/1075560-maggie-civantos" class="cast-card">
+            <a href="/actor/1075560-maggie-civantos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gCDu8bx0Aklyhe0phKbzXUEY8RW.jpg" alt="Maggie Civantos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maggie Civantos</span>
             </a>
-            <a href="/actor/1033632-victoria-guerra" class="cast-card">
+            <a href="/actor/1033632-victoria-guerra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2baLSCRfyT4b9z9DcBqwVvHI1XF.jpg" alt="Victoria Guerra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Victoria Guerra</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

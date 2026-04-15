@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>カヤちゃんはコワくない</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4776137-azusa-tachibana" class="cast-card">
+            <a href="/actor/4776137-azusa-tachibana.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jMfPIQOYOLUUCcu6oJFcLJXmkQA.jpg" alt="Azusa Tachibana" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Azusa Tachibana</span>
             </a>
-            <a href="/actor/1296667-maaya-uchida" class="cast-card">
+            <a href="/actor/1296667-maaya-uchida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rq4glg2SZwGyt3TIxR3ElalKmhH.jpg" alt="Maaya Uchida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maaya Uchida</span>
             </a>
-            <a href="/actor/1324470-azusa-tadokoro" class="cast-card">
+            <a href="/actor/1324470-azusa-tadokoro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kYQX26kSAUdPn5tDgMzdbjDSZdO.jpg" alt="Azusa Tadokoro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Azusa Tadokoro</span>
             </a>
-            <a href="/actor/9706-toshiyuki-morikawa" class="cast-card">
+            <a href="/actor/9706-toshiyuki-morikawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hrzGBe4nokgkBNFekNo5hlXB2Bv.jpg" alt="Toshiyuki Morikawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Toshiyuki Morikawa</span>
             </a>
-            <a href="/actor/149894-yuki-kaji" class="cast-card">
+            <a href="/actor/149894-yuki-kaji.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8wKdPV11IwowfwoqGqMMNt9hmp6.jpg" alt="Yuki Kaji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuki Kaji</span>
             </a>
-            <a href="/actor/1566511-fukushi-ochiai" class="cast-card">
+            <a href="/actor/1566511-fukushi-ochiai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xE2FoiUjb9N51J7jg0U8eGmfK19.jpg" alt="Fukushi Ochiai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fukushi Ochiai</span>
             </a>
-            <a href="/actor/89903-mamiko-noto" class="cast-card">
+            <a href="/actor/89903-mamiko-noto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wCSD7Umgzc66p8VGXrrMZtSLSuS.jpg" alt="Mamiko Noto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mamiko Noto</span>
             </a>
-            <a href="/actor/1248340-haruka-tomatsu" class="cast-card">
+            <a href="/actor/1248340-haruka-tomatsu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/geVvuA2zMGE5xzfc20aDelJSelu.jpg" alt="Haruka Tomatsu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Haruka Tomatsu</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

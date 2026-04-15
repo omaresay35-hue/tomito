@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,39 +75,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3218467-jabari-banks" class="cast-card">
+            <a href="/actor/3218467-jabari-banks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nijQjuHduJO3u0J96w0Fv9nZeb2.jpg" alt="Jabari Banks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jabari Banks</span>
             </a>
-            <a href="/actor/33348-adrian-holmes" class="cast-card">
+            <a href="/actor/33348-adrian-holmes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aKtB0wGk4PTzNTZ4HKagUfDwcWr.jpg" alt="Adrian Holmes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adrian Holmes</span>
             </a>
-            <a href="/actor/5299-cassandra-freeman" class="cast-card">
+            <a href="/actor/5299-cassandra-freeman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lsA0PsgZu3uwrwFgQPxawy4LIss.jpg" alt="Cassandra Freeman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cassandra Freeman</span>
             </a>
-            <a href="/actor/175690-jimmy-akingbola" class="cast-card">
+            <a href="/actor/175690-jimmy-akingbola.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2eHdIFdhDm7XckqEzboCSGgKUrM.jpg" alt="Jimmy Akingbola" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jimmy Akingbola</span>
             </a>
-            <a href="/actor/2487162-olly-sholotan" class="cast-card">
+            <a href="/actor/2487162-olly-sholotan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q5drXxoRuNRS0VazmkFDpnSdOaY.jpg" alt="Olly Sholotan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olly Sholotan</span>
             </a>
-            <a href="/actor/1055595-coco-jones" class="cast-card">
+            <a href="/actor/1055595-coco-jones.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nlCyqeI93ESNFroLw8iP5TVeEPi.jpg" alt="Coco Jones" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Coco Jones</span>
             </a>
-            <a href="/actor/2258733-akira-akbar" class="cast-card">
+            <a href="/actor/2258733-akira-akbar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4h4MsWOx5hFysgycsKfOn1z6DBJ.jpg" alt="Akira Akbar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Akira Akbar</span>
             </a>
-            <a href="/actor/1778207-simone-joy-jones" class="cast-card">
+            <a href="/actor/1778207-simone-joy-jones.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bAHQGYjOWDHXm79L9j3GT3W39xR.jpg" alt="Simone Joy Jones" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Simone Joy Jones</span>
             </a>
-            <a href="/actor/2092218-jordan-l-jones" class="cast-card">
+            <a href="/actor/2092218-jordan-l-jones.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gDz5K662T30aSTtXt7CDv7nCY7C.jpg" alt="Jordan L. Jones" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jordan L. Jones</span>
             </a></div></section>
@@ -115,13 +115,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

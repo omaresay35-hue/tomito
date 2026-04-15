@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>アルネの事件簿</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1250465-mariya-ise" class="cast-card">
+            <a href="/actor/1250465-mariya-ise.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tQWlgrlQ70biWdg7x9E75CtwsuD.jpg" alt="Mariya Ise" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariya Ise</span>
             </a>
-            <a href="/actor/1254052-koki-uchiyama" class="cast-card">
+            <a href="/actor/1254052-koki-uchiyama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sllSm3iZZWVLTBrDZQRtWrZUfEj.jpg" alt="Koki Uchiyama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koki Uchiyama</span>
             </a>
-            <a href="/actor/1624956-aimi-tanaka" class="cast-card">
+            <a href="/actor/1624956-aimi-tanaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7eeRCbeq7kzqzpOwhK9kgS30O4P.jpg" alt="Aimi Tanaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aimi Tanaka</span>
             </a>
-            <a href="/actor/1922616-yuka-nukui" class="cast-card">
+            <a href="/actor/1922616-yuka-nukui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bTFcrrgj9B8QAXa1NKqlsrdwWka.jpg" alt="Yuka Nukui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuka Nukui</span>
             </a>
-            <a href="/actor/2864258-yuki-sakakihara" class="cast-card">
+            <a href="/actor/2864258-yuki-sakakihara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4Jj08itCNpPrN1Sr3uv26h1p740.jpg" alt="Yuki Sakakihara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuki Sakakihara</span>
             </a>
-            <a href="/actor/2603957-yuuki-shin" class="cast-card">
+            <a href="/actor/2603957-yuuki-shin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pyOAlLSA9ZabbVy5HD8j9QuUdV8.jpg" alt="Yuuki Shin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuuki Shin</span>
             </a>
-            <a href="/actor/1072774-yoko-hikasa" class="cast-card">
+            <a href="/actor/1072774-yoko-hikasa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mP3bj0s1gqJ6tCKFLhu4b1CkJj7.jpg" alt="Yoko Hikasa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoko Hikasa</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

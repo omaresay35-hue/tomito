@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Carpe Diem</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/49025-samuel-le-bihan" class="cast-card">
+            <a href="/actor/49025-samuel-le-bihan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jN4hwWfhFaE8v5TGiS6cg9HKOxe.jpg" alt="Samuel Le Bihan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samuel Le Bihan</span>
             </a>
-            <a href="/actor/81786-barbara-schulz" class="cast-card">
+            <a href="/actor/81786-barbara-schulz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w0vEnFq3NQrMWC9rlgDs8A3H9cz.jpg" alt="Barbara Schulz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Barbara Schulz</span>
             </a>
-            <a href="/actor/1439022-jisca-kalvanda" class="cast-card">
+            <a href="/actor/1439022-jisca-kalvanda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/knSIV8DqUDPo9UstRTojVUKdRy.jpg" alt="Jisca Kalvanda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jisca Kalvanda</span>
             </a>
-            <a href="/actor/20285-féodor-atkine" class="cast-card">
+            <a href="/actor/20285-féodor-atkine.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qCpSPJyM7v9p3fGBJV8ZqGETBr0.jpg" alt="Féodor Atkine" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Féodor Atkine</span>
             </a>
-            <a href="/actor/2621743-henri-giey" class="cast-card">
+            <a href="/actor/2621743-henri-giey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4AFZ4mYhytzq73xZlupin1onpV3.jpg" alt="Henri Giey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Henri Giey</span>
             </a>
-            <a href="/actor/1742224-camille-damour" class="cast-card">
+            <a href="/actor/1742224-camille-damour.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qXJidJKfr1YmOeZpSlsWzez4BJI.jpg" alt="Camille Damour" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Camille Damour</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

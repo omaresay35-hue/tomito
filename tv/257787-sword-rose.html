@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>وردة السيف</span>
   </nav>
 
@@ -76,43 +76,43 @@ Together, they confront not only the dangers of their mission but also the perso
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1557698-dilraba-dilmurat" class="cast-card">
+            <a href="/actor/1557698-dilraba-dilmurat.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bLa0rBHdZ4Su1l5Xh0cY4mTB70Z.jpg" alt="Dilraba Dilmurat" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dilraba Dilmurat</span>
             </a>
-            <a href="/actor/1480174-jin-shijia" class="cast-card">
+            <a href="/actor/1480174-jin-shijia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q8vtZEynxIODbPDIRUellNufUHH.jpg" alt="Jin Shijia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jin Shijia</span>
             </a>
-            <a href="/actor/110507-you-yongzhi" class="cast-card">
+            <a href="/actor/110507-you-yongzhi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bEFBbE2SXCZjbpJBXqUO5dM6tlu.jpg" alt="You Yongzhi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>You Yongzhi</span>
             </a>
-            <a href="/actor/5267303-li-zhi" class="cast-card">
+            <a href="/actor/5267303-li-zhi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wtKGVfBm3RV8uRd6gGTphEpJohg.jpg" alt="Li Zhi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Li Zhi</span>
             </a>
-            <a href="/actor/2725406-wang-yizhe" class="cast-card">
+            <a href="/actor/2725406-wang-yizhe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rtslmti1Myekjme5L4QhToLUtp6.jpg" alt="Wang Yizhe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wang Yizhe</span>
             </a>
-            <a href="/actor/2223245-gao-jicai" class="cast-card">
+            <a href="/actor/2223245-gao-jicai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/57KdkkmhhXQIx3w6SkN1hRtIgY2.jpg" alt="Gao Jicai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gao Jicai</span>
             </a>
-            <a href="/actor/5267322-xia-xing" class="cast-card">
+            <a href="/actor/5267322-xia-xing.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5BkeFusYtvNY3FpufjDDOHb35Pm.jpg" alt="Xia Xing" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xia Xing</span>
             </a>
-            <a href="/actor/2178009-feng-guoqiang" class="cast-card">
+            <a href="/actor/2178009-feng-guoqiang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yWvXyZ51p1u5LMDxki0ekx7zJIb.jpg" alt="Feng Guoqiang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Feng Guoqiang</span>
             </a>
-            <a href="/actor/3428916-na-zhidong" class="cast-card">
+            <a href="/actor/3428916-na-zhidong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/QHR71mBNFe75tVYBSrvmjVGuBL.jpg" alt="Na Zhidong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Na Zhidong</span>
             </a>
-            <a href="/actor/1276001-wang-daqi" class="cast-card">
+            <a href="/actor/1276001-wang-daqi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3C6E4UuI2BnBqcIQVdEpTxKDMQj.jpg" alt="Wang Daqi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wang Daqi</span>
             </a></div></section>
@@ -120,13 +120,6 @@ Together, they confront not only the dangers of their mission but also the perso
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

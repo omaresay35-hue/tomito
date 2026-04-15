@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ Mason was introduced to Pittsburgh CLO through the National High School Musical 
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1082543-national-anthem">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1082543-national-anthem.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sUFTNOFBoJzCGu8c9XRJAy7G6xu.jpg" alt="National Anthem — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">National Anthem</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/202102-quantum-leap">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/202102-quantum-leap.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wAoei8KMQ5SXpmABw43hbfQKS8q.jpg" alt="Quantum Leap — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Quantum Leap</div></div>
-    </a>    <a class="card" href="/tv/90802-the-sandman">
+    </a>    <a class="card" href="/tv/90802-the-sandman.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/q54qEgagGOYCq5D1903eBVMNkbo.jpg" alt="The Sandman — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Sandman</div></div>
-    </a>    <a class="card" href="/tv/135934-the-legend-of-vox-machina">
+    </a>    <a class="card" href="/tv/135934-the-legend-of-vox-machina.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/b5A0qkGrZJTyVv3gT6b8clFEz9R.jpg" alt="The Legend of Vox Machina — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Legend of Vox Machina</div></div>
@@ -94,13 +94,6 @@ Mason was introduced to Pittsburgh CLO through the National High School Musical 
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

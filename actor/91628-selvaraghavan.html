@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1318308-aaryan">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1318308-aaryan.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rRjh3zumdW89fNMe4tdjmALB1xG.jpg" alt="Aaryan — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Aaryan</div></div>
-    </a>    <a class="card" href="/movie/1421019-devils-double-next-level">
+    </a>    <a class="card" href="/movie/1421019-devils-double-next-level.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jS8XroVkuvsdXcCNnWUnaxj9XNX.jpg" alt="Devil's Double Next Level — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Devil's Double Next Level</div></div>
-    </a>    <a class="card" href="/movie/1323267-sorgavaasal">
+    </a>    <a class="card" href="/movie/1323267-sorgavaasal.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9poph8OdbAo2XUy9dJZpZGtOI6W.jpg" alt="Sorgavaasal — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sorgavaasal</div></div>
-    </a>    <a class="card" href="/movie/1136418-raayan">
+    </a>    <a class="card" href="/movie/1136418-raayan.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dHMbqpG7vZk1iEJaEkCCyixFbos.jpg" alt="Raayan — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Raayan</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

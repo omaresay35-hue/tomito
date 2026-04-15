@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ Evans was born in Staffordshire, England. He attended Milton Abbey School, in Do
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1443940-truth-treason">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1443940-truth-treason.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ArDLn658OjT3dMThIi4GDQJRuY3.jpg" alt="Truth & Treason — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Truth & Treason</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/306603-gone">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/306603-gone.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qnxKB5HlkAZZcyIiITIV7dAUX7u.jpg" alt="Gone — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Gone</div></div>
-    </a>    <a class="card" href="/tv/241548-moonflower-murders">
+    </a>    <a class="card" href="/tv/241548-moonflower-murders.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9Nvf4U5dba5Un1RlYemhD2sxZBN.jpg" alt="Moonflower Murders — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Moonflower Murders</div></div>
-    </a>    <a class="card" href="/tv/230225-black-cake">
+    </a>    <a class="card" href="/tv/230225-black-cake.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4jffJMsY4oQMJNP4iuaPMazWbRC.jpg" alt="Black Cake — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Black Cake</div></div>
@@ -94,13 +94,6 @@ Evans was born in Staffordshire, England. He attended Milton Abbey School, in Do
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

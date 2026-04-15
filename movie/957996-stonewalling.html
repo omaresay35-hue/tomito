@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,31 +75,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2608181-yao-honggui" class="cast-card">
+            <a href="/actor/2608181-yao-honggui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uAEFo1cSunGK31A2qbX99qfnRDS.jpg" alt="Yao Honggui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yao Honggui</span>
             </a>
-            <a href="/actor/3984263-liu-long" class="cast-card">
+            <a href="/actor/3984263-liu-long.html" class="cast-card">
                 <img src="/favicon.ico" alt="Liu Long" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liu Long</span>
             </a>
-            <a href="/actor/3984266-huang-xiaoxiong" class="cast-card">
+            <a href="/actor/3984266-huang-xiaoxiong.html" class="cast-card">
                 <img src="/favicon.ico" alt="Huang Xiaoxiong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Huang Xiaoxiong</span>
             </a>
-            <a href="/actor/3984269-xiao-zilong" class="cast-card">
+            <a href="/actor/3984269-xiao-zilong.html" class="cast-card">
                 <img src="/favicon.ico" alt="Xiao Zilong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xiao Zilong</span>
             </a>
-            <a href="/actor/3984273-cui-chu" class="cast-card">
+            <a href="/actor/3984273-cui-chu.html" class="cast-card">
                 <img src="/favicon.ico" alt="Cui Chu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cui Chu</span>
             </a>
-            <a href="/actor/3984275-ren-xiaoyu" class="cast-card">
+            <a href="/actor/3984275-ren-xiaoyu.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ren Xiaoyu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ren Xiaoyu</span>
             </a>
-            <a href="/actor/3984276-mo-zhihong" class="cast-card">
+            <a href="/actor/3984276-mo-zhihong.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mo Zhihong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mo Zhihong</span>
             </a></div></section>
@@ -107,13 +107,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

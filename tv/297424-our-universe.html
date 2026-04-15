@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>عالمنا</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3104322-bae-in-hyuk" class="cast-card">
+            <a href="/actor/3104322-bae-in-hyuk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eCERu5t4CPocNhNEggoX8AqigKa.jpg" alt="Bae In-hyuk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bae In-hyuk</span>
             </a>
-            <a href="/actor/1257587-roh-jeong-eui" class="cast-card">
+            <a href="/actor/1257587-roh-jeong-eui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pYFgOVsNxI1fIHuPWtuaSgojMCP.jpg" alt="Roh Jeong-eui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Roh Jeong-eui</span>
             </a>
-            <a href="/actor/3212104-park-seo-ham" class="cast-card">
+            <a href="/actor/3212104-park-seo-ham.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ptmdgudLjw6QHhgCoelJpRxTTRp.jpg" alt="Park Seo-ham" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Seo-ham</span>
             </a>
-            <a href="/actor/1680319-ku-sung-hwan" class="cast-card">
+            <a href="/actor/1680319-ku-sung-hwan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9oSGpqUOVVtL9vsAxZNWdsaKQM9.jpg" alt="Ku Sung-hwan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ku Sung-hwan</span>
             </a>
-            <a href="/actor/3807617-choi-gyu-ri" class="cast-card">
+            <a href="/actor/3807617-choi-gyu-ri.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/549OnaW045KgDQxdxaQpRF32Nwr.jpg" alt="Choi Gyu-ri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Choi Gyu-ri</span>
             </a>
-            <a href="/actor/3727909-oh-hyun-joong" class="cast-card">
+            <a href="/actor/3727909-oh-hyun-joong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6ecde0DCPkbQX0aB8JlDDFqs0oK.jpg" alt="Oh Hyun-joong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oh Hyun-joong</span>
             </a>
-            <a href="/actor/6024192-park-yoo-ho" class="cast-card">
+            <a href="/actor/6024192-park-yoo-ho.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pBYClXkanI03UNMS6L6YRAht3RQ.jpg" alt="Park Yoo-ho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Yoo-ho</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

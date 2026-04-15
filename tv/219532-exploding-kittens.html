@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>بسبس بومبا</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/192944-tom-ellis" class="cast-card">
+            <a href="/actor/192944-tom-ellis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zhjIyqpk5bsYgxsh5bSeS6VZtHm.jpg" alt="Tom Ellis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Ellis</span>
             </a>
-            <a href="/actor/209596-ally-maki" class="cast-card">
+            <a href="/actor/209596-ally-maki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jLeL0NSbV1j0snQugmFGzXhFbmv.jpg" alt="Ally Maki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ally Maki</span>
             </a>
-            <a href="/actor/1198148-mark-proksch" class="cast-card">
+            <a href="/actor/1198148-mark-proksch.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5sgun1ZeWUaoz5TSvC7rvYBeWCC.jpg" alt="Mark Proksch" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Proksch</span>
             </a>
-            <a href="/actor/1395348-sasheer-zamata" class="cast-card">
+            <a href="/actor/1395348-sasheer-zamata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cI5jWRJNGuECiATsSBGGb5B9VRg.jpg" alt="Sasheer Zamata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sasheer Zamata</span>
             </a>
-            <a href="/actor/26998-suzy-nakamura" class="cast-card">
+            <a href="/actor/26998-suzy-nakamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AkPYH6DKr0Bhv9kA2PTSGjpi11P.jpg" alt="Suzy Nakamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Suzy Nakamura</span>
             </a>
-            <a href="/actor/1114052-kenny-yates" class="cast-card">
+            <a href="/actor/1114052-kenny-yates.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9qDda0wlbOYKAEoc4aBwQthGEfr.jpg" alt="Kenny Yates" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kenny Yates</span>
             </a>
-            <a href="/actor/78798-tom-kenny" class="cast-card">
+            <a href="/actor/78798-tom-kenny.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dKOxpGnRkIMaPkZSHKIns99WxQa.jpg" alt="Tom Kenny" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Kenny</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

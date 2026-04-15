@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>الجثث</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1944459-jacob-fortune-lloyd" class="cast-card">
+            <a href="/actor/1944459-jacob-fortune-lloyd.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vWP0TglQTAANp4ikgB7CCEBUJoP.jpg" alt="Jacob Fortune-Lloyd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jacob Fortune-Lloyd</span>
             </a>
-            <a href="/actor/1394332-shira-haas" class="cast-card">
+            <a href="/actor/1394332-shira-haas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eZRs79ZMoctjDk0SbPhzMNcs34a.jpg" alt="Shira Haas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shira Haas</span>
             </a>
-            <a href="/actor/1409077-amaka-okafor" class="cast-card">
+            <a href="/actor/1409077-amaka-okafor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hUi3EuYVqzwyiSftOCZKAa67gn4.jpg" alt="Amaka Okafor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amaka Okafor</span>
             </a>
-            <a href="/actor/1390505-kyle-soller" class="cast-card">
+            <a href="/actor/1390505-kyle-soller.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rLzduQpYJnZJKkXv3jRc7MDHwoI.jpg" alt="Kyle Soller" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kyle Soller</span>
             </a>
-            <a href="/actor/21245-greta-scacchi" class="cast-card">
+            <a href="/actor/21245-greta-scacchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kgWjsnt0SWrypL6vkGQijJNkgS0.jpg" alt="Greta Scacchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Greta Scacchi</span>
             </a>
-            <a href="/actor/1115-stephen-graham" class="cast-card">
+            <a href="/actor/1115-stephen-graham.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yguEO9zFvuccq87kOJpFLsmUgvs.jpg" alt="Stephen Graham" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephen Graham</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

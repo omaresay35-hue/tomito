@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Habal</span>
   </nav>
 
@@ -71,35 +71,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4463307-athena-red" class="cast-card">
+            <a href="/actor/4463307-athena-red.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yD8vPUE4Jgueqn7rtvAPQl53SGj.jpg" alt="Athena Red" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Athena Red</span>
             </a>
-            <a href="/actor/5326859-karen-lopez" class="cast-card">
+            <a href="/actor/5326859-karen-lopez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e8ly5dCswOAu7HqmB7hdM1euDGr.jpg" alt="Karen Lopez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karen Lopez</span>
             </a>
-            <a href="/actor/4436738-jd-aguas" class="cast-card">
+            <a href="/actor/4436738-jd-aguas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sjZFtChwvFmzYHbkcOo8kz3yfCP.jpg" alt="JD Aguas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>JD Aguas</span>
             </a>
-            <a href="/actor/2252696-marlon-marcia" class="cast-card">
+            <a href="/actor/2252696-marlon-marcia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9LEfMCMhN0KX3XGANJggXLKx8fJ.jpg" alt="Marlon Marcia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marlon Marcia</span>
             </a>
-            <a href="/actor/5327357-queenie-de-mesa" class="cast-card">
+            <a href="/actor/5327357-queenie-de-mesa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1nmxrwgJW2eM8D2UpVRfWHK2wTw.jpg" alt="Queenie De Mesa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Queenie De Mesa</span>
             </a>
-            <a href="/actor/5327360-basti-flores" class="cast-card">
+            <a href="/actor/5327360-basti-flores.html" class="cast-card">
                 <img src="/favicon.ico" alt="Basti Flores" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Basti Flores</span>
             </a>
-            <a href="/actor/4875311-ivan-ponce" class="cast-card">
+            <a href="/actor/4875311-ivan-ponce.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ivan Ponce" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ivan Ponce</span>
             </a>
-            <a href="/actor/5651450-jodi-garcia" class="cast-card">
+            <a href="/actor/5651450-jodi-garcia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bYq7IQRCrVm8hVTlir1qKqll6ja.jpg" alt="Jodi Garcia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jodi Garcia</span>
             </a></div></section>
@@ -107,13 +107,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

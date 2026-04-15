@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>손가락만 까딱하면</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2858604-wooyeon" class="cast-card">
+            <a href="/actor/2858604-wooyeon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vimQfHRKzqnCsNPK1qHumHr51Uz.jpg" alt="Wooyeon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wooyeon</span>
             </a>
-            <a href="/actor/4406705-jeon-geon-hu" class="cast-card">
+            <a href="/actor/4406705-jeon-geon-hu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/igK0rEC6KCNrxD2MZdo3CUCZe3n.jpg" alt="Jeon Geon-hu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeon Geon-hu</span>
             </a>
-            <a href="/actor/3522078-yoo-kang-min" class="cast-card">
+            <a href="/actor/3522078-yoo-kang-min.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kv1KMZfz34fjmHt7E1HRwWnnhl7.jpg" alt="Yoo Kang-min" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoo Kang-min</span>
             </a>
-            <a href="/actor/2120582-lee-jin-woo" class="cast-card">
+            <a href="/actor/2120582-lee-jin-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kkRXsel6KxKwEnFXjxuATMa83tG.jpg" alt="Lee Jin-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Jin-woo</span>
             </a>
-            <a href="/actor/3978892-seo-soo-hee" class="cast-card">
+            <a href="/actor/3978892-seo-soo-hee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v5WLTMg1aGxsFJmPHKdjxPqwcmh.jpg" alt="Seo Soo-hee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Seo Soo-hee</span>
             </a>
-            <a href="/actor/4406700-eji" class="cast-card">
+            <a href="/actor/4406700-eji.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7A0GsrPCVORpGIQZTSPUHZthqo7.jpg" alt="E.ji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>E.ji</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

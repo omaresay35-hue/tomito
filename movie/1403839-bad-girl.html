@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>பேட் கேர்ள்</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2416813-anjali-sivaraman" class="cast-card">
+            <a href="/actor/2416813-anjali-sivaraman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3efawLGh2lcFuNDyDCd9vxXiMKs.jpg" alt="Anjali Sivaraman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anjali Sivaraman</span>
             </a>
-            <a href="/actor/1143736-shanti-priya" class="cast-card">
+            <a href="/actor/1143736-shanti-priya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q2VA10KH3syj4Bw1LZMMrpFP6Se.jpg" alt="Shanti Priya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shanti Priya</span>
             </a>
-            <a href="/actor/2918872-hridhu-haroon" class="cast-card">
+            <a href="/actor/2918872-hridhu-haroon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9Dz4Liv3a4EcQkNk3fCfIGheZCB.jpg" alt="Hridhu Haroon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hridhu Haroon</span>
             </a>
-            <a href="/actor/2102988-teejay" class="cast-card">
+            <a href="/actor/2102988-teejay.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a8mdbaSzPEEH0q0J7twCOKzfYWe.jpg" alt="Teejay" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Teejay</span>
             </a>
-            <a href="/actor/5125189-sashank-bommireddipalli" class="cast-card">
+            <a href="/actor/5125189-sashank-bommireddipalli.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sashank Bommireddipalli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sashank Bommireddipalli</span>
             </a>
-            <a href="/actor/1137473-saranya-ravichandran" class="cast-card">
+            <a href="/actor/1137473-saranya-ravichandran.html" class="cast-card">
                 <img src="/favicon.ico" alt="Saranya Ravichandran" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saranya Ravichandran</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

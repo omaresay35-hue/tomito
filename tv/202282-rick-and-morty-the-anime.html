@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Rick and Morty: The Anime</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1254100-yohei-tadano" class="cast-card">
+            <a href="/actor/1254100-yohei-tadano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cURhpjc2wfIRr1gRWYI0aSkZEhD.jpg" alt="Yohei Tadano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yohei Tadano</span>
             </a>
-            <a href="/actor/2295193-keisuke-chiba" class="cast-card">
+            <a href="/actor/2295193-keisuke-chiba.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nJKLGGhvnPsp8knJTNcP3XhNR1x.jpg" alt="Keisuke Chiba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keisuke Chiba</span>
             </a>
-            <a href="/actor/2837034-akiha-matsui" class="cast-card">
+            <a href="/actor/2837034-akiha-matsui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uNiIs7Id6LrpGboUqgGMVdzDl2C.jpg" alt="Akiha Matsui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Akiha Matsui</span>
             </a>
-            <a href="/actor/1253093-manabu-muraji" class="cast-card">
+            <a href="/actor/1253093-manabu-muraji.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l3YxHOtIEWjULyol8A36xLfBZKN.jpg" alt="Manabu Muraji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manabu Muraji</span>
             </a>
-            <a href="/actor/20329-takako-fuji" class="cast-card">
+            <a href="/actor/20329-takako-fuji.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/efoDNuBBboAhnzHIkiw72AFdSvX.jpg" alt="Takako Fuji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takako Fuji</span>
             </a>
-            <a href="/actor/1779029-hitomi-sasaki" class="cast-card">
+            <a href="/actor/1779029-hitomi-sasaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vTSAZyOVDNYfEBJcre8hkoto1Hd.jpg" alt="Hitomi Sasaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hitomi Sasaki</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

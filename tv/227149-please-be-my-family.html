@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>من فضلك كن عائلتي</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2247235-zheng-qiuhong" class="cast-card">
+            <a href="/actor/2247235-zheng-qiuhong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dqK5vy1976ftNN2f0S3TEYY63Nq.jpg" alt="Zheng Qiuhong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zheng Qiuhong</span>
             </a>
-            <a href="/actor/2407259-xie-binbin" class="cast-card">
+            <a href="/actor/2407259-xie-binbin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n8UqbZlSEcT7JPVxJvozkYYuS5f.jpg" alt="Xie Binbin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xie Binbin</span>
             </a>
-            <a href="/actor/2077850-zhu-yuanbing" class="cast-card">
+            <a href="/actor/2077850-zhu-yuanbing.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6lPgnIERzNrwb7TRKjSQWzeozJ8.jpg" alt="Zhu Yuanbing" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhu Yuanbing</span>
             </a>
-            <a href="/actor/2489605-sheng-huizi" class="cast-card">
+            <a href="/actor/2489605-sheng-huizi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/znJQrfstqp1OqIbyrJs65dMnmVx.jpg" alt="Sheng Huizi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sheng Huizi</span>
             </a>
-            <a href="/actor/3702649-jin-chong" class="cast-card">
+            <a href="/actor/3702649-jin-chong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bxYHLwoHr1ZE2i2EDEsQqVCjp8r.jpg" alt="Jin Chong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jin Chong</span>
             </a>
-            <a href="/actor/3136788-yang-xueer" class="cast-card">
+            <a href="/actor/3136788-yang-xueer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fFE9lqsSt7Fq59dpgLDzYYgRQIA.jpg" alt="Yang Xueer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yang Xueer</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

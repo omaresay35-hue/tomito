@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>The Book</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1441201-nahia-laiz" class="cast-card">
+            <a href="/actor/1441201-nahia-laiz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zhPVK93hZjRqDwGCY0EE4uc8gEz.jpg" alt="Nahia Laiz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nahia Laiz</span>
             </a>
-            <a href="/actor/1149052-abdelatif-hwidar" class="cast-card">
+            <a href="/actor/1149052-abdelatif-hwidar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zeJjozJIvaa0qlZRufSC0J2sr86.jpg" alt="Abdelatif Hwidar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Abdelatif Hwidar</span>
             </a>
-            <a href="/actor/2042760-miguel-ramiro" class="cast-card">
+            <a href="/actor/2042760-miguel-ramiro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v0RIRMLLBCzh0qOcaSZPGqICzc.jpg" alt="Miguel Ramiro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miguel Ramiro</span>
             </a>
-            <a href="/actor/5034715-celina-ruiz" class="cast-card">
+            <a href="/actor/5034715-celina-ruiz.html" class="cast-card">
                 <img src="/favicon.ico" alt="Celina Ruiz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Celina Ruiz</span>
             </a>
-            <a href="/actor/5034719-moncha-molina" class="cast-card">
+            <a href="/actor/5034719-moncha-molina.html" class="cast-card">
                 <img src="/favicon.ico" alt="Moncha Molina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Moncha Molina</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

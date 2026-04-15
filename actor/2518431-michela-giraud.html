@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1224447-mascarpone-the-rainbow-cake">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1224447-mascarpone-the-rainbow-cake.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mg11CIXKEPu5US71jXZlUcSGaR5.jpg" alt="Mascarpone: The Rainbow Cake — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Mascarpone: The Rainbow Cake</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/302590-rip-roast-in-peace">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/302590-rip-roast-in-peace.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ci2TWjr5hE6kamB8NrKzfN7gSSz.jpg" alt="R.I.P. - Roast-in-Peace — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">R.I.P. - Roast-in-Peace</div></div>
-    </a>    <a class="card" href="/tv/289237-il-baracchino">
+    </a>    <a class="card" href="/tv/289237-il-baracchino.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tzs8ZioGsoBqXQeMy9VHRZvWMY9.jpg" alt="Il Baracchino — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Il Baracchino</div></div>
-    </a>    <a class="card" href="/tv/281094-red-carpet-survival">
+    </a>    <a class="card" href="/tv/281094-red-carpet-survival.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/csUDYNLdbjAFjpmyvJivvicpeSB.jpg" alt="Red Carpet Survival — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Red Carpet Survival</div></div>
-    </a>    <a class="card" href="/tv/247171-lol-talent-show-be-funny-and-youre-in">
+    </a>    <a class="card" href="/tv/247171-lol-talent-show-be-funny-and-youre-in.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fIT9hVznY6je2olqmOb398ynqnf.jpg" alt="LOL Talent Show: Be Funny and You're In! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">LOL Talent Show: Be Funny and You're In!</div></div>
-    </a>    <a class="card" href="/tv/226680-gialappashow">
+    </a>    <a class="card" href="/tv/226680-gialappashow.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gczG92zbCmVDI2ahOpchGzr6895.jpg" alt="GialappaShow — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">GialappaShow</div></div>
-    </a>    <a class="card" href="/tv/215547-sono-lillo">
+    </a>    <a class="card" href="/tv/215547-sono-lillo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nNUM5KRhw2CJLYE85LD3pgtj7VR.jpg" alt="Sono Lillo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sono Lillo</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

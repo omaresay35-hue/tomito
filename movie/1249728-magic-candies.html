@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>あめだま</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5012797-haruto-shima" class="cast-card">
+            <a href="/actor/5012797-haruto-shima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/roSCVncCuldcf3xNyApz5HgQBJd.jpg" alt="Haruto Shima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Haruto Shima</span>
             </a>
-            <a href="/actor/1245661-hiroshi-iwasaki" class="cast-card">
+            <a href="/actor/1245661-hiroshi-iwasaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3THPpW2xkD0A7SVFmaUSxHeDzJG.jpg" alt="Hiroshi Iwasaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiroshi Iwasaki</span>
             </a>
-            <a href="/actor/552339-kazuhiro-yamaji" class="cast-card">
+            <a href="/actor/552339-kazuhiro-yamaji.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fgGTdhTiWViGmjl2kABHWzLIpZ0.jpg" alt="Kazuhiro Yamaji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kazuhiro Yamaji</span>
             </a>
-            <a href="/actor/127895-ikkei-watanabe" class="cast-card">
+            <a href="/actor/127895-ikkei-watanabe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jmhAcxErmPVlObc2N4n5YmEFnwH.jpg" alt="Ikkei Watanabe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ikkei Watanabe</span>
             </a>
-            <a href="/actor/1243818-sakiko-uran" class="cast-card">
+            <a href="/actor/1243818-sakiko-uran.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5wFfrw3fU1I2jYNXBn9wGr5uRZk.jpg" alt="Sakiko Uran" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sakiko Uran</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

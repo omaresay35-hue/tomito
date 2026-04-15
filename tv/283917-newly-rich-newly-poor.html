@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Nuevo Rico, Nuevo Pobre</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1780924-variel-sánchez" class="cast-card">
+            <a href="/actor/1780924-variel-sánchez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xsceVlnGZWj8lwIeJpjLejnEAqH.jpg" alt="Variel Sánchez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Variel Sánchez</span>
             </a>
-            <a href="/actor/3480683-lina-tejeiro" class="cast-card">
+            <a href="/actor/3480683-lina-tejeiro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ioCL7gwxXkkPSwfC6aXx8Abib0E.jpg" alt="Lina Tejeiro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lina Tejeiro</span>
             </a>
-            <a href="/actor/1240537-juan-manuel-guilera" class="cast-card">
+            <a href="/actor/1240537-juan-manuel-guilera.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/b48XGrTnLCVU914nxWHrAwpRNr.jpg" alt="Juan Manuel Guilera" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juan Manuel Guilera</span>
             </a>
-            <a href="/actor/4898043-laura-barjum" class="cast-card">
+            <a href="/actor/4898043-laura-barjum.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/auIkk2q1iBeHUH2FhoY7HYKffSi.jpg" alt="Laura Barjum" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laura Barjum</span>
             </a>
-            <a href="/actor/5070901-laura-taylor" class="cast-card">
+            <a href="/actor/5070901-laura-taylor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8LDjS0vTkwDjEht2HTbGciSLGps.jpg" alt="Laura Taylor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laura Taylor</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

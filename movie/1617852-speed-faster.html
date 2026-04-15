@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Speed Faster</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3525468-jason-park" class="cast-card">
+            <a href="/actor/3525468-jason-park.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jason Park" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jason Park</span>
             </a>
-            <a href="/actor/3677551-christopher-deon" class="cast-card">
+            <a href="/actor/3677551-christopher-deon.html" class="cast-card">
                 <img src="/favicon.ico" alt="Christopher Deon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christopher Deon</span>
             </a>
-            <a href="/actor/3677552-luke-dingess" class="cast-card">
+            <a href="/actor/3677552-luke-dingess.html" class="cast-card">
                 <img src="/favicon.ico" alt="Luke Dingess" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luke Dingess</span>
             </a>
-            <a href="/actor/5848448-maria-mae-lopez" class="cast-card">
+            <a href="/actor/5848448-maria-mae-lopez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Maria Mae Lopez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maria Mae Lopez</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>재즈처럼</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4611989-ji-ho-geun" class="cast-card">
+            <a href="/actor/4611989-ji-ho-geun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ajKCctF1nnZnApN6K9zcXUkdVMp.jpg" alt="Ji Ho-geun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ji Ho-geun</span>
             </a>
-            <a href="/actor/2950849-kim-jin-kwon" class="cast-card">
+            <a href="/actor/2950849-kim-jin-kwon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rFhnpsWlN5XgCohILwYNDcaPl62.jpg" alt="Kim Jin-kwon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Jin-kwon</span>
             </a>
-            <a href="/actor/4577150-song-han-gyeom" class="cast-card">
+            <a href="/actor/4577150-song-han-gyeom.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/57SOyKyFTYDCRjc1Z4RGLgvZynM.jpg" alt="Song Han-gyeom" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Song Han-gyeom</span>
             </a>
-            <a href="/actor/4611992-kim-jeong-ha" class="cast-card">
+            <a href="/actor/4611992-kim-jeong-ha.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5R8glPOlpUgobso81x6AiSA2rOb.jpg" alt="Kim Jeong-ha" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Jeong-ha</span>
             </a>
-            <a href="/actor/4030442-byun-sung-tae" class="cast-card">
+            <a href="/actor/4030442-byun-sung-tae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gmCnde8HAQKJ2ZRk9bLfzpM5zI.jpg" alt="Byun Sung-tae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Byun Sung-tae</span>
             </a>
-            <a href="/actor/2959875-go-jae-hyun" class="cast-card">
+            <a href="/actor/2959875-go-jae-hyun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9cMjrIRwaTvuzyoWOdysjFMfPgS.jpg" alt="Go Jae-hyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Go Jae-hyun</span>
             </a>
-            <a href="/actor/4627200-kim-min-ah" class="cast-card">
+            <a href="/actor/4627200-kim-min-ah.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kim Min-ah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Min-ah</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

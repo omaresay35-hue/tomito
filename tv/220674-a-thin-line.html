@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>A Thin Line</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1075020-saskia-rosendahl" class="cast-card">
+            <a href="/actor/1075020-saskia-rosendahl.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cuUFQveV590Qnfr4CgVq9Tp0ecV.jpg" alt="Saskia Rosendahl" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saskia Rosendahl</span>
             </a>
-            <a href="/actor/1847602-hanna-hilsdorf" class="cast-card">
+            <a href="/actor/1847602-hanna-hilsdorf.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3W1HGwcAQRPXgqoNQiXNhL0iEfX.jpg" alt="Hanna Hilsdorf" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hanna Hilsdorf</span>
             </a>
-            <a href="/actor/15486-peter-kurth" class="cast-card">
+            <a href="/actor/15486-peter-kurth.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1RQBjJtHiKb6l8S1qp2purktKcg.jpg" alt="Peter Kurth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Peter Kurth</span>
             </a>
-            <a href="/actor/550554-sebastian-hülk" class="cast-card">
+            <a href="/actor/550554-sebastian-hülk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qmEnennLfGF2ksDwbt3Pqdo49UQ.jpg" alt="Sebastian Hülk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sebastian Hülk</span>
             </a>
-            <a href="/actor/128859-hadewych-minis" class="cast-card">
+            <a href="/actor/128859-hadewych-minis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fYx0AoafmCqpzF3UWGf5MMNujli.jpg" alt="Hadewych Minis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hadewych Minis</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

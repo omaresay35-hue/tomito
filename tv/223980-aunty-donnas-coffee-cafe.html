@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Aunty Donna's Coffee Cafe</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1978250-mark-bonanno" class="cast-card">
+            <a href="/actor/1978250-mark-bonanno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uKMG7wk2T2xRoAcQO8eqyrE1mIW.jpg" alt="Mark Bonanno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Bonanno</span>
             </a>
-            <a href="/actor/1894813-broden-kelly" class="cast-card">
+            <a href="/actor/1894813-broden-kelly.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/biRFt6KdAGMlvWYiYUGjRiwAqrT.jpg" alt="Broden Kelly" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Broden Kelly</span>
             </a>
-            <a href="/actor/1978251-zachary-ruane" class="cast-card">
+            <a href="/actor/1978251-zachary-ruane.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l01v34uV1XwshG9zvAuuoJvgwF4.jpg" alt="Zachary Ruane" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zachary Ruane</span>
             </a>
-            <a href="/actor/1874115-gaby-seow" class="cast-card">
+            <a href="/actor/1874115-gaby-seow.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/htXHyG14kr0uHSZGCJ6XPpqm2Kl.jpg" alt="Gaby Seow" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gaby Seow</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

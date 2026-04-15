@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>A Christmas Less Traveled</span>
   </nav>
 
@@ -71,43 +71,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/31363-candace-cameron-bure" class="cast-card">
+            <a href="/actor/31363-candace-cameron-bure.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sDNFyYgyVmE5AGFCeLR0DVDzCji.jpg" alt="Candace Cameron Bure" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Candace Cameron Bure</span>
             </a>
-            <a href="/actor/33337-eric-johnson" class="cast-card">
+            <a href="/actor/33337-eric-johnson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oSwKvCo9duqcOfUAYPLdNHyXnna.jpg" alt="Eric Johnson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eric Johnson</span>
             </a>
-            <a href="/actor/20188-lynda-boyd" class="cast-card">
+            <a href="/actor/20188-lynda-boyd.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5mPaot3TlnlZBzf9VY0fBYWuJgm.jpg" alt="Lynda Boyd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lynda Boyd</span>
             </a>
-            <a href="/actor/579042-josh-collins" class="cast-card">
+            <a href="/actor/579042-josh-collins.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zAf4fiCpJxzYZp9YHlz5SQEN01p.jpg" alt="Josh Collins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josh Collins</span>
             </a>
-            <a href="/actor/2640724-jai-braithwaite" class="cast-card">
+            <a href="/actor/2640724-jai-braithwaite.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zkuu5zFh48I6nFk78DR62bgH0bt.jpg" alt="Jai Braithwaite" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jai Braithwaite</span>
             </a>
-            <a href="/actor/153842-bobby-stewart" class="cast-card">
+            <a href="/actor/153842-bobby-stewart.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dgeoeAD3cEdKussD6WBvqIsyO4s.jpg" alt="Bobby Stewart" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bobby Stewart</span>
             </a>
-            <a href="/actor/1417039-brittany-hobson" class="cast-card">
+            <a href="/actor/1417039-brittany-hobson.html" class="cast-card">
                 <img src="/favicon.ico" alt="Brittany Hobson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brittany Hobson</span>
             </a>
-            <a href="/actor/120323-frank-crudele" class="cast-card">
+            <a href="/actor/120323-frank-crudele.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/flYq1atbQpNZp2lWdKMEtP8uV9x.jpg" alt="Frank Crudele" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Frank Crudele</span>
             </a>
-            <a href="/actor/2963455-haven-gin" class="cast-card">
+            <a href="/actor/2963455-haven-gin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Haven Gin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Haven Gin</span>
             </a>
-            <a href="/actor/4970065-erin-marie-tyrrell" class="cast-card">
+            <a href="/actor/4970065-erin-marie-tyrrell.html" class="cast-card">
                 <img src="/favicon.ico" alt="Erin-Marie Tyrrell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erin-Marie Tyrrell</span>
             </a></div></section>
@@ -115,13 +115,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

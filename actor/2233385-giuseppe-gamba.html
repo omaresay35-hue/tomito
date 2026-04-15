@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1229913-the-roommate">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1229913-the-roommate.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zaRzz2BxjxIVb7ja0gSedj1Hn1E.jpg" alt="The Roommate — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Roommate</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/314006-doc">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/314006-doc.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pG7oNCHSjuajUFXpqjJ76fac5J7.jpg" alt="DOC — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">DOC</div></div>
-    </a>    <a class="card" href="/tv/283085-between-walls">
+    </a>    <a class="card" href="/tv/283085-between-walls.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tK0hOBpoUgxmzSbiF67drVJ18JF.jpg" alt="Between Walls — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Between Walls</div></div>
-    </a>    <a class="card" href="/tv/259730-the-accident">
+    </a>    <a class="card" href="/tv/259730-the-accident.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wMD1rnBwYAUe12JT6NHYaguXofs.jpg" alt="The Accident — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Accident</div></div>
-    </a>    <a class="card" href="/tv/219476-perdona-nuestros-pecados">
+    </a>    <a class="card" href="/tv/219476-perdona-nuestros-pecados.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/AepsNWQiPAZ5kBq9K0BSae9Hp3s.jpg" alt="Perdona nuestros pecados — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Perdona nuestros pecados</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

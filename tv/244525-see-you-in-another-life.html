@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Nos vemos en otra vida</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4499711-roberto-gutiérrez" class="cast-card">
+            <a href="/actor/4499711-roberto-gutiérrez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Roberto Gutiérrez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Roberto Gutiérrez</span>
             </a>
-            <a href="/actor/1376625-quim-àvila-conde" class="cast-card">
+            <a href="/actor/1376625-quim-àvila-conde.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qMDSgm9itwugdryf8W6MNhYkC17.jpg" alt="Quim Àvila Conde" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Quim Àvila Conde</span>
             </a>
-            <a href="/actor/1378136-pol-lópez" class="cast-card">
+            <a href="/actor/1378136-pol-lópez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/368WhG9jONooXjBla3SznuTf76Z.jpg" alt="Pol López" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pol López</span>
             </a>
-            <a href="/actor/2072194-tamara-casellas" class="cast-card">
+            <a href="/actor/2072194-tamara-casellas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nCXGGmFP7pyNrdUtrsDUIOVjyc.jpg" alt="Tamara Casellas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tamara Casellas</span>
             </a>
-            <a href="/actor/2486756-mourad-ouani" class="cast-card">
+            <a href="/actor/2486756-mourad-ouani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s49plaLo3GtiblwzKx8eopMqvH0.jpg" alt="Mourad Ouani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mourad Ouani</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

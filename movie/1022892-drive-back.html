@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Drive Back</span>
   </nav>
 
@@ -71,51 +71,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1288768-zack-gold" class="cast-card">
+            <a href="/actor/1288768-zack-gold.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qblL0qI0VHHCRlBVKRz1KsSB3w8.jpg" alt="Zack Gold" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zack Gold</span>
             </a>
-            <a href="/actor/2037815-whit-kunschik" class="cast-card">
+            <a href="/actor/2037815-whit-kunschik.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tsjpR2OMS7MJMo0FcwK5STPbtGM.jpg" alt="Whit Kunschik" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Whit Kunschik</span>
             </a>
-            <a href="/actor/1401541-travis-cluff" class="cast-card">
+            <a href="/actor/1401541-travis-cluff.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2cA2W0FQs2GV1VFutsAUrmdPvMY.jpg" alt="Travis Cluff" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Travis Cluff</span>
             </a>
-            <a href="/actor/139751-robert-lewis-stephenson" class="cast-card">
+            <a href="/actor/139751-robert-lewis-stephenson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hH4AbQG9MWyK9eV9CCyWAN1nLLX.jpg" alt="Robert Lewis Stephenson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robert Lewis Stephenson</span>
             </a>
-            <a href="/actor/1573661-tammy-kaitz" class="cast-card">
+            <a href="/actor/1573661-tammy-kaitz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A9klLXf5bucWmy67JCAzrV9mh7S.jpg" alt="Tammy Kaitz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tammy Kaitz</span>
             </a>
-            <a href="/actor/939333-jim-tuck" class="cast-card">
+            <a href="/actor/939333-jim-tuck.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jim Tuck" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jim Tuck</span>
             </a>
-            <a href="/actor/1151667-madonna-young-magee" class="cast-card">
+            <a href="/actor/1151667-madonna-young-magee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5EZdhoiLc3Pxt1pTbmVJaU3APOO.jpg" alt="Madonna Young Magee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Madonna Young Magee</span>
             </a>
-            <a href="/actor/2743309-crystal-foster" class="cast-card">
+            <a href="/actor/2743309-crystal-foster.html" class="cast-card">
                 <img src="/favicon.ico" alt="Crystal Foster" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Crystal Foster</span>
             </a>
-            <a href="/actor/5856493-eric-vue" class="cast-card">
+            <a href="/actor/5856493-eric-vue.html" class="cast-card">
                 <img src="/favicon.ico" alt="Eric Vue" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eric Vue</span>
             </a>
-            <a href="/actor/5856495-alan-dorfmeier" class="cast-card">
+            <a href="/actor/5856495-alan-dorfmeier.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alan Dorfmeier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alan Dorfmeier</span>
             </a>
-            <a href="/actor/5856496-codé-cluff" class="cast-card">
+            <a href="/actor/5856496-codé-cluff.html" class="cast-card">
                 <img src="/favicon.ico" alt="Codé Cluff" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Codé Cluff</span>
             </a>
-            <a href="/actor/5856498-zoltan-torok" class="cast-card">
+            <a href="/actor/5856498-zoltan-torok.html" class="cast-card">
                 <img src="/favicon.ico" alt="Zoltan Torok" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zoltan Torok</span>
             </a></div></section>
@@ -123,13 +123,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

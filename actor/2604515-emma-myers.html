@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,15 +73,15 @@ Emma Elizabeth Myers was born on April 2, 2002, in Orlando, Florida, to Nicole a
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/950387-a-minecraft-movie">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/950387-a-minecraft-movie.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yFHHfHcUgGAxziP1C3lLt0q2T4s.jpg" alt="A Minecraft Movie — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Minecraft Movie</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/218342-a-good-girls-guide-to-murder">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/218342-a-good-girls-guide-to-murder.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mzkstyDSsTRswCMRvoBD5ULPnIt.jpg" alt="A Good Girl's Guide to Murder — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Good Girl's Guide to Murder</div></div>
-    </a>    <a class="card" href="/tv/119051-wednesday">
+    </a>    <a class="card" href="/tv/119051-wednesday.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/36xXlhEpQqVVPuiZhfoQuaY4OlA.jpg" alt="Wednesday — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wednesday</div></div>
@@ -90,13 +90,6 @@ Emma Elizabeth Myers was born on April 2, 2002, in Orlando, Florida, to Nicole a
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

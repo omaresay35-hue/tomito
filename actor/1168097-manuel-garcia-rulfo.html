@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1234821-jurassic-world-rebirth">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1234821-jurassic-world-rebirth.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1RICxzeoNCAO5NpcRMIgg1XT6fm.jpg" alt="Jurassic World Rebirth — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Jurassic World Rebirth</div></div>
-    </a>    <a class="card" href="/movie/1505898-jurassic-world-rebirth-the-making-of-a-new-era">
+    </a>    <a class="card" href="/movie/1505898-jurassic-world-rebirth-the-making-of-a-new-era.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uJUzfTtbCUG1GXmVS24h8h0hXX3.jpg" alt="Jurassic World Rebirth: The Making of a New Era — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Jurassic World Rebirth: The Making of a New Era</div></div>
-    </a>    <a class="card" href="/movie/1069387-pedro-páramo">
+    </a>    <a class="card" href="/movie/1069387-pedro-páramo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gugzjPIalz5hy2RbVxqXCpXWanj.jpg" alt="Pedro Páramo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pedro Páramo</div></div>
-    </a>    <a class="card" href="/movie/1155605-down-the-rabbit-hole">
+    </a>    <a class="card" href="/movie/1155605-down-the-rabbit-hole.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/h5HdtvogDClJjNdtdIxGgOfaZjK.jpg" alt="Down the Rabbit Hole — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Down the Rabbit Hole</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/116799-the-lincoln-lawyer">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/116799-the-lincoln-lawyer.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4jSaIqEU8CPBBNn4iVCK6wzPjSx.jpg" alt="The Lincoln Lawyer — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Lincoln Lawyer</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

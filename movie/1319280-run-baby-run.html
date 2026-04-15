@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Run Baby Run</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5022157-cody-cowell" class="cast-card">
+            <a href="/actor/5022157-cody-cowell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x1Od5M81eCu8cHA8yNcov9v3ho3.jpg" alt="Cody Cowell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cody Cowell</span>
             </a>
-            <a href="/actor/1363147-oscar-foronda" class="cast-card">
+            <a href="/actor/1363147-oscar-foronda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9pJU9eZOZNp4jGr1lK2dRFBdxUa.jpg" alt="Oscar Foronda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oscar Foronda</span>
             </a>
-            <a href="/actor/4840570-catuxa-leira" class="cast-card">
+            <a href="/actor/4840570-catuxa-leira.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/usUNTs5glddoRBrOtzwqxSjC9s3.jpg" alt="Catuxa Leira" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Catuxa Leira</span>
             </a>
-            <a href="/actor/4975319-muriel-halloint" class="cast-card">
+            <a href="/actor/4975319-muriel-halloint.html" class="cast-card">
                 <img src="/favicon.ico" alt="Muriel Halloint" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Muriel Halloint</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

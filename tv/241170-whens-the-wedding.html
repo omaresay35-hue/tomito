@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Kiedy ślub?</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1522822-maria-dębska" class="cast-card">
+            <a href="/actor/1522822-maria-dębska.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yoMuNK2doLDZ2yAauCFpl2pdBgB.jpg" alt="Maria Dębska" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maria Dębska</span>
             </a>
-            <a href="/actor/1814793-eryk-kulm" class="cast-card">
+            <a href="/actor/1814793-eryk-kulm.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jDUZdaJYh40N6CmQiNYVaE5YBcw.jpg" alt="Eryk Kulm" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eryk Kulm</span>
             </a>
-            <a href="/actor/2239208-masza-wągrocka" class="cast-card">
+            <a href="/actor/2239208-masza-wągrocka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ofM13hNiPRCsy5ySgWrpvp8FNi.jpg" alt="Masza Wągrocka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masza Wągrocka</span>
             </a>
-            <a href="/actor/1345430-kamil-szeptycki" class="cast-card">
+            <a href="/actor/1345430-kamil-szeptycki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xWKYWTnkth3lwefaACb5iXHkTJD.jpg" alt="Kamil Szeptycki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kamil Szeptycki</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

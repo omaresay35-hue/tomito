@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>مارد الأمنيات</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1257671-kim-woo-bin" class="cast-card">
+            <a href="/actor/1257671-kim-woo-bin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AjMMxxWbTNdafyWuY41xAHFPVou.jpg" alt="Kim Woo-bin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Woo-bin</span>
             </a>
-            <a href="/actor/1014784-suzy" class="cast-card">
+            <a href="/actor/1014784-suzy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xdmQeM0UuwVGyZucc3eLhynlb7b.jpg" alt="Suzy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Suzy</span>
             </a>
-            <a href="/actor/1875711-ahn-eun-jin" class="cast-card">
+            <a href="/actor/1875711-ahn-eun-jin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/toT4KbM9gsPeWJNA7tiT25IUvIO.jpg" alt="Ahn Eun-jin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ahn Eun-jin</span>
             </a>
-            <a href="/actor/1926495-steve-sanghyun-noh" class="cast-card">
+            <a href="/actor/1926495-steve-sanghyun-noh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wdevvu2YLIvAPVEkScjO9JGbioq.jpg" alt="Steve Sanghyun Noh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steve Sanghyun Noh</span>
             </a>
-            <a href="/actor/1574622-ko-kyu-pil" class="cast-card">
+            <a href="/actor/1574622-ko-kyu-pil.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uP18ldneBx5WcmHmvwoyGVSBArY.jpg" alt="Ko Kyu-pil" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ko Kyu-pil</span>
             </a>
-            <a href="/actor/2042978-lee-zoo-young" class="cast-card">
+            <a href="/actor/2042978-lee-zoo-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hDLNWV75lnH1zC8DYXnaFfIllvI.jpg" alt="Lee Zoo-young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Zoo-young</span>
             </a>
-            <a href="/actor/587632-kim-mi-kyeong" class="cast-card">
+            <a href="/actor/587632-kim-mi-kyeong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bJLkarteB2O0duu5ABvM5QFRuax.jpg" alt="Kim Mi-kyeong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Mi-kyeong</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1396869-diés-iraé">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1396869-diés-iraé.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/123DlTiiezgLaJruVe7RiSi0RFf.jpg" alt="Diés Iraé — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Diés Iraé</div></div>
-    </a>    <a class="card" href="/movie/1296338-sumathi-valavu">
+    </a>    <a class="card" href="/movie/1296338-sumathi-valavu.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3xIDlnwjMf7kCOpFq8GMmW8on95.jpg" alt="Sumathi Valavu — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sumathi Valavu</div></div>
-    </a>    <a class="card" href="/movie/1180620-nunakkuzhi">
+    </a>    <a class="card" href="/movie/1180620-nunakkuzhi.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yL0HgiyFCdzWljVQxa0DK1GDV3u.jpg" alt="Nunakkuzhi — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Nunakkuzhi</div></div>
-    </a>    <a class="card" href="/movie/1184247-abraham-ozler">
+    </a>    <a class="card" href="/movie/1184247-abraham-ozler.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mOdLQjAinpHz5U1P2TRBQsZAi98.jpg" alt="Abraham Ozler — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Abraham Ozler</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

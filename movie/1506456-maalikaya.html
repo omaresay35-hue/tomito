@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Maalikaya</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4103293-jenn-rosa" class="cast-card">
+            <a href="/actor/4103293-jenn-rosa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/f2EItX0kOXJjDzZFZSFmGOVS8HB.jpg" alt="Jenn Rosa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jenn Rosa</span>
             </a>
-            <a href="/actor/5165492-aliya-raymundo" class="cast-card">
+            <a href="/actor/5165492-aliya-raymundo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qSZGqJscT4cPO7g4lqzYjGYc3Or.jpg" alt="Aliya Raymundo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aliya Raymundo</span>
             </a>
-            <a href="/actor/1348735-ruby-ruiz" class="cast-card">
+            <a href="/actor/1348735-ruby-ruiz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wBL1B8ekTxoK3gQE8gOw24gKfBG.jpg" alt="Ruby Ruiz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ruby Ruiz</span>
             </a>
-            <a href="/actor/4669945-sheena-cole" class="cast-card">
+            <a href="/actor/4669945-sheena-cole.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A7xBCbV6z2mi3i8sqL1INRaViHY.jpg" alt="Sheena Cole" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sheena Cole</span>
             </a>
-            <a href="/actor/5326859-karen-lopez" class="cast-card">
+            <a href="/actor/5326859-karen-lopez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e8ly5dCswOAu7HqmB7hdM1euDGr.jpg" alt="Karen Lopez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karen Lopez</span>
             </a>
-            <a href="/actor/1401573-mark-dionisio" class="cast-card">
+            <a href="/actor/1401573-mark-dionisio.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/29rcLa6859piOuVxBSq3fVD1P0U.jpg" alt="Mark Dionisio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Dionisio</span>
             </a>
-            <a href="/actor/4680507-izza-watanabe" class="cast-card">
+            <a href="/actor/4680507-izza-watanabe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yXvQvG6lVdBDm8mu3QzbN41Ongl.jpg" alt="Izza Watanabe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Izza Watanabe</span>
             </a>
-            <a href="/actor/2120295-wilma-hollis" class="cast-card">
+            <a href="/actor/2120295-wilma-hollis.html" class="cast-card">
                 <img src="/favicon.ico" alt="Wilma Hollis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wilma Hollis</span>
             </a>
-            <a href="/actor/3970304-jalyn-perez" class="cast-card">
+            <a href="/actor/3970304-jalyn-perez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pGEbAxrpiqjrYhM0IK6WDMWmoXX.jpg" alt="Jalyn Perez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jalyn Perez</span>
             </a>
-            <a href="/actor/5574619-dante-aragon" class="cast-card">
+            <a href="/actor/5574619-dante-aragon.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dante Aragon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dante Aragon</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

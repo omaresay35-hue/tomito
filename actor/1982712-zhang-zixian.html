@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1357295-malice">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1357295-malice.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ohE4QR7JB9ATYR3Scv4qEjCEjHB.jpg" alt="Malice — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Malice</div></div>
-    </a>    <a class="card" href="/movie/954905-art-college-1994">
+    </a>    <a class="card" href="/movie/954905-art-college-1994.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qLF8O01Vi9p1e2Czj19SWDbGbo4.jpg" alt="Art College 1994 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Art College 1994</div></div>
-    </a>    <a class="card" href="/movie/1197437-the-hutong-cowboy">
+    </a>    <a class="card" href="/movie/1197437-the-hutong-cowboy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rwMjHwItj3Dl4iJuGzvuY0bRrLo.jpg" alt="The Hutong Cowboy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Hutong Cowboy</div></div>
-    </a>    <a class="card" href="/movie/1022659-the-movie-emperor">
+    </a>    <a class="card" href="/movie/1022659-the-movie-emperor.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8gKjxerz72MsB4zPXb09VKPWfgo.jpg" alt="The Movie Emperor — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Movie Emperor</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/276548-good-will-society">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/276548-good-will-society.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7gUlJJUcVBsZZtqeGHfQF4SA3jC.jpg" alt="Good Will Society — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Good Will Society</div></div>
-    </a>    <a class="card" href="/tv/235586-in-the-name-of-the-brother">
+    </a>    <a class="card" href="/tv/235586-in-the-name-of-the-brother.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fcXHT8ySzIDzY0BbdIyWxcQJFbH.jpg" alt="In the Name of the Brother — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">In the Name of the Brother</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

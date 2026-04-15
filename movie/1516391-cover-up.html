@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>فضائح مخفية</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1508922-seymour-hersh" class="cast-card">
+            <a href="/actor/1508922-seymour-hersh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8ndZ1dRwDi5SrbgMt7k6FSAl2fl.jpg" alt="Seymour Hersh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Seymour Hersh</span>
             </a>
-            <a href="/actor/5941669-jeff-gerth" class="cast-card">
+            <a href="/actor/5941669-jeff-gerth.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jeff Gerth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeff Gerth</span>
             </a>
-            <a href="/actor/961214-david-obst" class="cast-card">
+            <a href="/actor/961214-david-obst.html" class="cast-card">
                 <img src="/favicon.ico" alt="David Obst" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Obst</span>
             </a>
-            <a href="/actor/13717-bob-woodward" class="cast-card">
+            <a href="/actor/13717-bob-woodward.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5hf9YjElQC9i3JuEIbHcqTFaNTm.jpg" alt="Bob Woodward" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bob Woodward</span>
             </a>
-            <a href="/actor/5941670-max-friedman" class="cast-card">
+            <a href="/actor/5941670-max-friedman.html" class="cast-card">
                 <img src="/favicon.ico" alt="Max Friedman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Max Friedman</span>
             </a>
-            <a href="/actor/5941671-amy-davidson-sorkin" class="cast-card">
+            <a href="/actor/5941671-amy-davidson-sorkin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Amy Davidson Sorkin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amy Davidson Sorkin</span>
             </a>
-            <a href="/actor/4005663-antonio-taguba" class="cast-card">
+            <a href="/actor/4005663-antonio-taguba.html" class="cast-card">
                 <img src="/favicon.ico" alt="Antonio Taguba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Antonio Taguba</span>
             </a>
-            <a href="/actor/5941674-camille-lo-sapio" class="cast-card">
+            <a href="/actor/5941674-camille-lo-sapio.html" class="cast-card">
                 <img src="/favicon.ico" alt="Camille Lo Sapio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Camille Lo Sapio</span>
             </a>
-            <a href="/actor/6005708-isador-hersh" class="cast-card">
+            <a href="/actor/6005708-isador-hersh.html" class="cast-card">
                 <img src="/favicon.ico" alt="Isador Hersh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isador Hersh</span>
             </a>
-            <a href="/actor/6005710-dorothy-hersh" class="cast-card">
+            <a href="/actor/6005710-dorothy-hersh.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dorothy Hersh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dorothy Hersh</span>
             </a>
-            <a href="/actor/6005711-alan-hersh" class="cast-card">
+            <a href="/actor/6005711-alan-hersh.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alan Hersh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alan Hersh</span>
             </a>
-            <a href="/actor/6005714-elizabeth-klein-hersh" class="cast-card">
+            <a href="/actor/6005714-elizabeth-klein-hersh.html" class="cast-card">
                 <img src="/favicon.ico" alt="Elizabeth Klein Hersh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elizabeth Klein Hersh</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

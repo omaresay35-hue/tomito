@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Kalakal</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5165492-aliya-raymundo" class="cast-card">
+            <a href="/actor/5165492-aliya-raymundo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qSZGqJscT4cPO7g4lqzYjGYc3Or.jpg" alt="Aliya Raymundo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aliya Raymundo</span>
             </a>
-            <a href="/actor/1649625-gold-aceron" class="cast-card">
+            <a href="/actor/1649625-gold-aceron.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/u1PRnWHIfI7A0KkDXJk5200CFBp.jpg" alt="Gold Aceron" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gold Aceron</span>
             </a>
-            <a href="/actor/4941335-jero-flores" class="cast-card">
+            <a href="/actor/4941335-jero-flores.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o9qmvNsceQg3RBcVCKLyCEk4uWo.jpg" alt="Jero Flores" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jero Flores</span>
             </a>
-            <a href="/actor/5419507-divine-villareal" class="cast-card">
+            <a href="/actor/5419507-divine-villareal.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cEXOaKUSM8ckxlHtc7MwonIvSm6.jpg" alt="Divine Villareal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Divine Villareal</span>
             </a>
-            <a href="/actor/5366738-zel-fernandez" class="cast-card">
+            <a href="/actor/5366738-zel-fernandez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mALtUkODVsnabfiTT6EJdEHoezA.jpg" alt="Zel Fernandez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zel Fernandez</span>
             </a>
-            <a href="/actor/4669945-sheena-cole" class="cast-card">
+            <a href="/actor/4669945-sheena-cole.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A7xBCbV6z2mi3i8sqL1INRaViHY.jpg" alt="Sheena Cole" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sheena Cole</span>
             </a>
-            <a href="/actor/4341490-horace-mendoza" class="cast-card">
+            <a href="/actor/4341490-horace-mendoza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i1L2QGoasNMbziSQEWBUKveBg5s.jpg" alt="Horace Mendoza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Horace Mendoza</span>
             </a>
-            <a href="/actor/5499900-ghen-gabriel" class="cast-card">
+            <a href="/actor/5499900-ghen-gabriel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9KfoXNZImywHIEtmdcfpbEcbqc3.jpg" alt="Ghen Gabriel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ghen Gabriel</span>
             </a>
-            <a href="/actor/5499897-jana-halbang" class="cast-card">
+            <a href="/actor/5499897-jana-halbang.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jana Halbang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jana Halbang</span>
             </a>
-            <a href="/actor/5499898-alliah-gonzales" class="cast-card">
+            <a href="/actor/5499898-alliah-gonzales.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5qr01iaDi55K2RkA41B6DbOYZzO.jpg" alt="Alliah Gonzales" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alliah Gonzales</span>
             </a>
-            <a href="/actor/5499902-banjo-roman" class="cast-card">
+            <a href="/actor/5499902-banjo-roman.html" class="cast-card">
                 <img src="/favicon.ico" alt="Banjo Roman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Banjo Roman</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

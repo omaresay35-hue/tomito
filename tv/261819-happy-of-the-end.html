@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ハッピー・オブ・ジ・エンド</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3419748-yuuki-beppu" class="cast-card">
+            <a href="/actor/3419748-yuuki-beppu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2DJgW3Z4wyawZGzFhGlp4ma5fiA.jpg" alt="Yuuki Beppu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuuki Beppu</span>
             </a>
-            <a href="/actor/4581275-sawamura-rei" class="cast-card">
+            <a href="/actor/4581275-sawamura-rei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gzxUMeqKc8pfaVx9Y1pKwjLTEMt.jpg" alt="Sawamura Rei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sawamura Rei</span>
             </a>
-            <a href="/actor/1098325-yuki-kubota" class="cast-card">
+            <a href="/actor/1098325-yuki-kubota.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qNfbTSx61ys4FAPgIfVM6NHVdoI.jpg" alt="Yuki Kubota" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuki Kubota</span>
             </a>
-            <a href="/actor/121751-so-yamanaka" class="cast-card">
+            <a href="/actor/121751-so-yamanaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i56TMAWeOVRgDfHPHUEpIBfyftV.jpg" alt="So Yamanaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>So Yamanaka</span>
             </a>
-            <a href="/actor/129827-yōsuke-asari" class="cast-card">
+            <a href="/actor/129827-yōsuke-asari.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a41N4Www1BKYF3ZEkuxYx2GZo2U.jpg" alt="Yōsuke Asari" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yōsuke Asari</span>
             </a>
-            <a href="/actor/1408881-miako-tadano" class="cast-card">
+            <a href="/actor/1408881-miako-tadano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/217J0Nb0dzjmoLr0zElGrmpxuPl.jpg" alt="Miako Tadano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miako Tadano</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

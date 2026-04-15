@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>To Barcelona, Forever</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/122888-ashley-williams" class="cast-card">
+            <a href="/actor/122888-ashley-williams.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kaZQMxVAX2Z0M0BKphkg7rT54pi.jpg" alt="Ashley Williams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ashley Williams</span>
             </a>
-            <a href="/actor/1212016-alison-sweeney" class="cast-card">
+            <a href="/actor/1212016-alison-sweeney.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xSFd60uTym5aTbQRGKOZ8EPxBDX.jpg" alt="Alison Sweeney" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alison Sweeney</span>
             </a>
-            <a href="/actor/588843-alejandro-tous" class="cast-card">
+            <a href="/actor/588843-alejandro-tous.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/izRqXzzR4zlRoeVjcf1ZyXbZWPi.jpg" alt="Alejandro Tous" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alejandro Tous</span>
             </a>
-            <a href="/actor/2949788-miguel-brocca" class="cast-card">
+            <a href="/actor/2949788-miguel-brocca.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eiVFKMopsaGcEGxcVqBDd8kc4hV.jpg" alt="Miguel Brocca" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miguel Brocca</span>
             </a>
-            <a href="/actor/2394933-paloma-montero" class="cast-card">
+            <a href="/actor/2394933-paloma-montero.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qwqSY79hHlrSAzag0XmiaSnzIaB.jpg" alt="Paloma Montero" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paloma Montero</span>
             </a>
-            <a href="/actor/2735017-josé-emilio-vera" class="cast-card">
+            <a href="/actor/2735017-josé-emilio-vera.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aTtIInM5x2Jf54cOqPkTFxHEUZB.jpg" alt="José Emilio Vera" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>José Emilio Vera</span>
             </a>
-            <a href="/actor/2931194-alex-sorian-brown" class="cast-card">
+            <a href="/actor/2931194-alex-sorian-brown.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fUJNzimIWqaYxUjNT6VlY0sfSqv.jpg" alt="Alex Sorian Brown" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alex Sorian Brown</span>
             </a>
-            <a href="/actor/2777639-natalia-braceli" class="cast-card">
+            <a href="/actor/2777639-natalia-braceli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h3BNKjqCQblr9oSzO2N0GTI0YFQ.jpg" alt="Natalia Braceli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natalia Braceli</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Astronauta</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1252323-marco-pigossi" class="cast-card">
+            <a href="/actor/1252323-marco-pigossi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2Rixkot6LFwxTfxASYjqJgEnQwZ.jpg" alt="Marco Pigossi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marco Pigossi</span>
             </a>
-            <a href="/actor/228029-mel-lisboa" class="cast-card">
+            <a href="/actor/228029-mel-lisboa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/co3jLgFeut9qnoMLwPIHvV96IAk.jpg" alt="Mel Lisboa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mel Lisboa</span>
             </a>
-            <a href="/actor/4987079-carol-crespo" class="cast-card">
+            <a href="/actor/4987079-carol-crespo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zFUUm5GW2zJDtn7uUE2yQ7z05bV.jpg" alt="Carol Crespo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carol Crespo</span>
             </a>
-            <a href="/actor/2984033-julia-ribas" class="cast-card">
+            <a href="/actor/2984033-julia-ribas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rhKL7OoFj5zXpsVhEKZB45wQMxL.jpg" alt="Julia Ribas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julia Ribas</span>
             </a>
-            <a href="/actor/2759802-francisco-junior" class="cast-card">
+            <a href="/actor/2759802-francisco-junior.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ayqAxfJ7jJ3sgxjBK7oAzwSJchm.jpg" alt="Francisco Junior" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francisco Junior</span>
             </a>
-            <a href="/actor/1707565-marco-frança" class="cast-card">
+            <a href="/actor/1707565-marco-frança.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xQTMIcngnHBQIrUvUdLFIBtuPgX.jpg" alt="Marco França" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marco França</span>
             </a>
-            <a href="/actor/4987080-ricardo-sawaya" class="cast-card">
+            <a href="/actor/4987080-ricardo-sawaya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2obo1uhzFzehigRU4HTpABQkxD9.jpg" alt="Ricardo Sawaya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ricardo Sawaya</span>
             </a>
-            <a href="/actor/3623016-nara-kelly" class="cast-card">
+            <a href="/actor/3623016-nara-kelly.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ygtaRW3AGRmacI5FLLoFN0be7EI.jpg" alt="Nara Kelly" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nara Kelly</span>
             </a>
-            <a href="/actor/1180400-francisco-freitas" class="cast-card">
+            <a href="/actor/1180400-francisco-freitas.html" class="cast-card">
                 <img src="/favicon.ico" alt="Francisco Freitas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francisco Freitas</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

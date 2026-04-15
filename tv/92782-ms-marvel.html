@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,31 +75,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2798462-iman-vellani" class="cast-card">
+            <a href="/actor/2798462-iman-vellani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jD2TNIyJQmdqijGTzhvdiYabYix.jpg" alt="Iman Vellani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Iman Vellani</span>
             </a>
-            <a href="/actor/570775-matt-lintz" class="cast-card">
+            <a href="/actor/570775-matt-lintz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oeOU0Hdwt6UCIiRILU1plMAq7VA.jpg" alt="Matt Lintz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matt Lintz</span>
             </a>
-            <a href="/actor/2346450-yasmeen-fletcher" class="cast-card">
+            <a href="/actor/2346450-yasmeen-fletcher.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dlFwMUnYiO4TqdlnDjA7cHEfWoh.jpg" alt="Yasmeen Fletcher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yasmeen Fletcher</span>
             </a>
-            <a href="/actor/1809782-zenobia-shroff" class="cast-card">
+            <a href="/actor/1809782-zenobia-shroff.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fwU2vIUq9W9eXRKxx9r3papdOkS.jpg" alt="Zenobia Shroff" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zenobia Shroff</span>
             </a>
-            <a href="/actor/1014905-mohan-kapur" class="cast-card">
+            <a href="/actor/1014905-mohan-kapur.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lL0J5DBOwN1pwLCvuo7uQ0ApjF.jpg" alt="Mohan Kapur" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mohan Kapur</span>
             </a>
-            <a href="/actor/2889306-saagar-shaikh" class="cast-card">
+            <a href="/actor/2889306-saagar-shaikh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hQsNsaJ8ekAHjJfkxfQPpH0qX5Q.jpg" alt="Saagar Shaikh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saagar Shaikh</span>
             </a>
-            <a href="/actor/2341794-rish-shah" class="cast-card">
+            <a href="/actor/2341794-rish-shah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mxk7ArOC6QjtGitmLDqLvJn6Ra6.jpg" alt="Rish Shah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rish Shah</span>
             </a></div></section>
@@ -107,13 +107,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

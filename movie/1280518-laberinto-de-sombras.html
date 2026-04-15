@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Laberinto de sombras</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2175984-allende-garcía" class="cast-card">
+            <a href="/actor/2175984-allende-garcía.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uED0rT0VtrPk9kBxyaqr6UN1BvC.jpg" alt="Allende García" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Allende García</span>
             </a>
-            <a href="/actor/4676410-miriam-ortas" class="cast-card">
+            <a href="/actor/4676410-miriam-ortas.html" class="cast-card">
                 <img src="/favicon.ico" alt="Miriam Ortas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miriam Ortas</span>
             </a>
-            <a href="/actor/2825719-fede-alonso" class="cast-card">
+            <a href="/actor/2825719-fede-alonso.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cWspyjAId5zr2OUrfUolBBbeol9.jpg" alt="Fede Alonso" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fede Alonso</span>
             </a>
-            <a href="/actor/2975031-josé-antonio-ortas-cayuela" class="cast-card">
+            <a href="/actor/2975031-josé-antonio-ortas-cayuela.html" class="cast-card">
                 <img src="/favicon.ico" alt="José Antonio Ortas Cayuela" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>José Antonio Ortas Cayuela</span>
             </a>
-            <a href="/actor/99812-fernando-esteso" class="cast-card">
+            <a href="/actor/99812-fernando-esteso.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qINXBdPAL6NAa2XNhuGABpKni6Z.jpg" alt="Fernando Esteso" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fernando Esteso</span>
             </a>
-            <a href="/actor/138702-juan-manuel-cifuentes" class="cast-card">
+            <a href="/actor/138702-juan-manuel-cifuentes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AgiFy7bOsDaY0goPszlEt9EhIBP.jpg" alt="Juan Manuel Cifuentes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juan Manuel Cifuentes</span>
             </a>
-            <a href="/actor/1765105-susana-béquer" class="cast-card">
+            <a href="/actor/1765105-susana-béquer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/krJqfrdiqyhBG3PqvYXy7aUHUH6.jpg" alt="Susana Béquer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Susana Béquer</span>
             </a>
-            <a href="/actor/1503840-daniel-albaladejo" class="cast-card">
+            <a href="/actor/1503840-daniel-albaladejo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ky7aQE7PAzNAfJp7UdF3cmfFqTw.jpg" alt="Daniel Albaladejo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Albaladejo</span>
             </a>
-            <a href="/actor/34792-miguel-molina" class="cast-card">
+            <a href="/actor/34792-miguel-molina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x2nmTfsnLGYRkpRDWH2O9JPyozG.jpg" alt="Miguel Molina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miguel Molina</span>
             </a>
-            <a href="/actor/1253386-nacho-guerreros" class="cast-card">
+            <a href="/actor/1253386-nacho-guerreros.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iMm1ypzPfSqprieXCsovaDihnN0.jpg" alt="Nacho Guerreros" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nacho Guerreros</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

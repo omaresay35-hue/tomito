@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,51 +75,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4178938-maya-de-vicq" class="cast-card">
+            <a href="/actor/4178938-maya-de-vicq.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xDtcH28EZHi4p5MoSQzsHvVWm5K.jpg" alt="Maya de Vicq" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maya de Vicq</span>
             </a>
-            <a href="/actor/1511036-eduarda-samara" class="cast-card">
+            <a href="/actor/1511036-eduarda-samara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7VzZBu8oDdlKv48dkQbAe5VMoa0.jpg" alt="Eduarda Samara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eduarda Samara</span>
             </a>
-            <a href="/actor/1016242-maeve-jinkings" class="cast-card">
+            <a href="/actor/1016242-maeve-jinkings.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s1pZd8CgUIll9ALVcgtUJhsB8uF.jpg" alt="Maeve Jinkings" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maeve Jinkings</span>
             </a>
-            <a href="/actor/589365-erom-cordeiro" class="cast-card">
+            <a href="/actor/589365-erom-cordeiro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6mRyylZGA7CNsHviNFNmMNZs4YF.jpg" alt="Erom Cordeiro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erom Cordeiro</span>
             </a>
-            <a href="/actor/4178939-ian-boechat" class="cast-card">
+            <a href="/actor/4178939-ian-boechat.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ian Boechat" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ian Boechat</span>
             </a>
-            <a href="/actor/2998906-kaique-brito" class="cast-card">
+            <a href="/actor/2998906-kaique-brito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lPOlBHgjaT1kuU77jY3fFvQntAi.jpg" alt="Kaique Brito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaique Brito</span>
             </a>
-            <a href="/actor/4178940-alaylson-emanuel" class="cast-card">
+            <a href="/actor/4178940-alaylson-emanuel.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alaylson Emanuel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alaylson Emanuel</span>
             </a>
-            <a href="/actor/4693475-lucas-da-silva" class="cast-card">
+            <a href="/actor/4693475-lucas-da-silva.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lucas da Silva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucas da Silva</span>
             </a>
-            <a href="/actor/4178941-elany-santos" class="cast-card">
+            <a href="/actor/4178941-elany-santos.html" class="cast-card">
                 <img src="/favicon.ico" alt="Elany Santos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elany Santos</span>
             </a>
-            <a href="/actor/4567134-clara-andrade" class="cast-card">
+            <a href="/actor/4567134-clara-andrade.html" class="cast-card">
                 <img src="/favicon.ico" alt="Clara Andrade" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Clara Andrade</span>
             </a>
-            <a href="/actor/4689313-eules-assis" class="cast-card">
+            <a href="/actor/4689313-eules-assis.html" class="cast-card">
                 <img src="/favicon.ico" alt="Eules Assis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eules Assis</span>
             </a>
-            <a href="/actor/4693386-wellington-da-silva" class="cast-card">
+            <a href="/actor/4693386-wellington-da-silva.html" class="cast-card">
                 <img src="/favicon.ico" alt="Wellington da Silva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wellington da Silva</span>
             </a></div></section>
@@ -127,13 +127,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

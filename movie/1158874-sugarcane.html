@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Sugarcane</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4191273-julian-brave-noisecat" class="cast-card">
+            <a href="/actor/4191273-julian-brave-noisecat.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2gdUAEGlMQTiOHAuBKIxfhv62Gg.jpg" alt="Julian Brave NoiseCat" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julian Brave NoiseCat</span>
             </a>
-            <a href="/actor/4501890-willie-sellars" class="cast-card">
+            <a href="/actor/4501890-willie-sellars.html" class="cast-card">
                 <img src="/favicon.ico" alt="Willie Sellars" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Willie Sellars</span>
             </a>
-            <a href="/actor/4501891-charlene-belleau" class="cast-card">
+            <a href="/actor/4501891-charlene-belleau.html" class="cast-card">
                 <img src="/favicon.ico" alt="Charlene Belleau" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charlene Belleau</span>
             </a>
-            <a href="/actor/4676826-ed-archie-noisecat" class="cast-card">
+            <a href="/actor/4676826-ed-archie-noisecat.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ed Archie Noisecat" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ed Archie Noisecat</span>
             </a>
-            <a href="/actor/4676827-chief-willie-sellars" class="cast-card">
+            <a href="/actor/4676827-chief-willie-sellars.html" class="cast-card">
                 <img src="/favicon.ico" alt="Chief Willie Sellars" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chief Willie Sellars</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

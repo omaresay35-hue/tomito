@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Dagr</span>
   </nav>
 
@@ -71,35 +71,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4391350-riz-moritz" class="cast-card">
+            <a href="/actor/4391350-riz-moritz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wSGfKoNNfwuYfyXt54K6yoxNNW7.jpg" alt="Riz Moritz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Riz Moritz</span>
             </a>
-            <a href="/actor/2206965-ellie-duckles" class="cast-card">
+            <a href="/actor/2206965-ellie-duckles.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/33WZXcneQF6dPrHjFDC2os5NGjC.jpg" alt="Ellie Duckles" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ellie Duckles</span>
             </a>
-            <a href="/actor/1929617-emma-king" class="cast-card">
+            <a href="/actor/1929617-emma-king.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5QAMvkW0yfKnN3ldWFFFMFrNfCu.jpg" alt="Emma King" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emma King</span>
             </a>
-            <a href="/actor/1657669-graham-butler" class="cast-card">
+            <a href="/actor/1657669-graham-butler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qmbR3PahAtEvAZA1yfIjVmk5r5b.jpg" alt="Graham Butler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Graham Butler</span>
             </a>
-            <a href="/actor/4391357-hattie-chapman" class="cast-card">
+            <a href="/actor/4391357-hattie-chapman.html" class="cast-card">
                 <img src="/favicon.ico" alt="Hattie Chapman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hattie Chapman</span>
             </a>
-            <a href="/actor/4391361-luca-thompson" class="cast-card">
+            <a href="/actor/4391361-luca-thompson.html" class="cast-card">
                 <img src="/favicon.ico" alt="Luca Thompson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luca Thompson</span>
             </a>
-            <a href="/actor/1311462-matt-barber" class="cast-card">
+            <a href="/actor/1311462-matt-barber.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4YBudaQzSoDbuEzonAPqRqbIFEk.jpg" alt="Matt Barber" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matt Barber</span>
             </a>
-            <a href="/actor/1306749-tori-butler-hart" class="cast-card">
+            <a href="/actor/1306749-tori-butler-hart.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ldGmTscD5OouuwPKBHrzYRu8APH.jpg" alt="Tori Butler-Hart" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tori Butler-Hart</span>
             </a></div></section>
@@ -107,13 +107,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

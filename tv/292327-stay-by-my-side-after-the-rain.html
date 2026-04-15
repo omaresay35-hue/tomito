@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>雨上がりの僕らについて</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3620926-masashi-ikeda" class="cast-card">
+            <a href="/actor/3620926-masashi-ikeda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yvFuBTNKS9oXESRkNSkRzg9bMZE.jpg" alt="Masashi Ikeda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masashi Ikeda</span>
             </a>
-            <a href="/actor/2773700-natsuki-hori" class="cast-card">
+            <a href="/actor/2773700-natsuki-hori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q76pb7ZGxZbXOdt51pd1xfSLWeX.jpg" alt="Natsuki Hori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natsuki Hori</span>
             </a>
-            <a href="/actor/1745511-miho-watanabe" class="cast-card">
+            <a href="/actor/1745511-miho-watanabe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mcwDNwYwDXlCyvPWp0V9aACZFNL.jpg" alt="Miho Watanabe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miho Watanabe</span>
             </a>
-            <a href="/actor/1063266-maho-yamada" class="cast-card">
+            <a href="/actor/1063266-maho-yamada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oDHXLA6wsJRBWwQrRGM062p3ThU.jpg" alt="Maho Yamada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maho Yamada</span>
             </a>
-            <a href="/actor/121750-reika-kirishima" class="cast-card">
+            <a href="/actor/121750-reika-kirishima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/htxRwdj2L0SxP18PzNIt21m6qEt.jpg" alt="Reika Kirishima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reika Kirishima</span>
             </a>
-            <a href="/actor/73188-koh-takasugi" class="cast-card">
+            <a href="/actor/73188-koh-takasugi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k7qrt41ONR7OipyyvNJGzYvpGaC.jpg" alt="Koh Takasugi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koh Takasugi</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

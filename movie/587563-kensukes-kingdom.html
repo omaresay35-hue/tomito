@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Kensuke's Kingdom</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/39658-sally-hawkins" class="cast-card">
+            <a href="/actor/39658-sally-hawkins.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1dtDq82dM2YQ17lBL4ZKPJo5LKw.jpg" alt="Sally Hawkins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sally Hawkins</span>
             </a>
-            <a href="/actor/2037-cillian-murphy" class="cast-card">
+            <a href="/actor/2037-cillian-murphy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dm6V24NjjvjMiCtbMkc8Y2WPm2e.jpg" alt="Cillian Murphy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cillian Murphy</span>
             </a>
-            <a href="/actor/1055230-raffey-cassidy" class="cast-card">
+            <a href="/actor/1055230-raffey-cassidy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5BJCaQHaNDWL9y6Mfa3NHQf3lno.jpg" alt="Raffey Cassidy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Raffey Cassidy</span>
             </a>
-            <a href="/actor/3480227-aaron-macgregor" class="cast-card">
+            <a href="/actor/3480227-aaron-macgregor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/viwvhwuwsC5a2SUHGDhwTI5asVz.jpg" alt="Aaron MacGregor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aaron MacGregor</span>
             </a>
-            <a href="/actor/3899-ken-watanabe" class="cast-card">
+            <a href="/actor/3899-ken-watanabe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w2t30L5Cmr34myAaUobLoSgsLfS.jpg" alt="Ken Watanabe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ken Watanabe</span>
             </a>
-            <a href="/actor/4135420-alfred-kodai-berglund" class="cast-card">
+            <a href="/actor/4135420-alfred-kodai-berglund.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alfred Kodai Berglund" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alfred Kodai Berglund</span>
             </a>
-            <a href="/actor/1181046-ken-ochiai" class="cast-card">
+            <a href="/actor/1181046-ken-ochiai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cPEm9txDkyLq1gsT5Ck7nINlIRZ.jpg" alt="Ken Ochiai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ken Ochiai</span>
             </a>
-            <a href="/actor/1278483-cavin-cornwall" class="cast-card">
+            <a href="/actor/1278483-cavin-cornwall.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1etICDFfgf9mSYnWW1oQ7UIte3L.jpg" alt="Cavin Cornwall" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cavin Cornwall</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

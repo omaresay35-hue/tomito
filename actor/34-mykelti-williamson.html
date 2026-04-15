@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1380682-the-last-rodeo">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1380682-the-last-rodeo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/62nu9AEIeyDNCQ2xJabq7gwb2zR.jpg" alt="The Last Rodeo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Last Rodeo</div></div>
-    </a>    <a class="card" href="/movie/1101448-unstoppable">
+    </a>    <a class="card" href="/movie/1101448-unstoppable.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xanYKxuFkDPrMngvm1NSHVGOEjS.jpg" alt="Unstoppable — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Unstoppable</div></div>
-    </a>    <a class="card" href="/movie/213439-double-tap">
+    </a>    <a class="card" href="/movie/213439-double-tap.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1Bnse7SjMkB1XUKK083DTnt32u1.jpg" alt="Double Tap — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Double Tap</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/241491-government-cheese">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/241491-government-cheese.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7K1HAVNCPig4zY7uuZ71OAMsSJT.jpg" alt="Government Cheese — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">3.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Government Cheese</div></div>
-    </a>    <a class="card" href="/tv/106379-fallout">
+    </a>    <a class="card" href="/tv/106379-fallout.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/c15BtJxCXMrISLVmysdsnZUPQft.jpg" alt="Fallout — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fallout</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

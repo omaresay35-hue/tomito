@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Motherland</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2537213-miriam-silverman" class="cast-card">
+            <a href="/actor/2537213-miriam-silverman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w5QU4eXOl3FprQZ4wJcjIykk24z.jpg" alt="Miriam Silverman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miriam Silverman</span>
             </a>
-            <a href="/actor/4451936-emily-arancio" class="cast-card">
+            <a href="/actor/4451936-emily-arancio.html" class="cast-card">
                 <img src="/favicon.ico" alt="Emily Arancio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emily Arancio</span>
             </a>
-            <a href="/actor/11318-holland-taylor" class="cast-card">
+            <a href="/actor/11318-holland-taylor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jt9yFB3nLfZQ0c1DcnvvcfA11gB.jpg" alt="Holland Taylor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Holland Taylor</span>
             </a>
-            <a href="/actor/21316-nestor-carbonell" class="cast-card">
+            <a href="/actor/21316-nestor-carbonell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4Xn03t2qDEMR2ecM7BtLwpvs3J0.jpg" alt="Nestor Carbonell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nestor Carbonell</span>
             </a>
-            <a href="/actor/2295754-arica-himmel" class="cast-card">
+            <a href="/actor/2295754-arica-himmel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/icO52TMiqeHMFPOyQ4GAeWy1YHn.jpg" alt="Arica Himmel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arica Himmel</span>
             </a>
-            <a href="/actor/2578460-julia-blanchard" class="cast-card">
+            <a href="/actor/2578460-julia-blanchard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rvfUNGCfmBph4KDMoLnqogPPyJH.jpg" alt="Julia Blanchard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julia Blanchard</span>
             </a>
-            <a href="/actor/1719595-molly-hager" class="cast-card">
+            <a href="/actor/1719595-molly-hager.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cYA1wGtnmkBtIQFswKLWu9tvuji.jpg" alt="Molly Hager" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Molly Hager</span>
             </a>
-            <a href="/actor/1846247-talia-thiesfield" class="cast-card">
+            <a href="/actor/1846247-talia-thiesfield.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zr9kzU7YU1FkNi1aUJDNiEtFxtM.jpg" alt="Talia Thiesfield" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Talia Thiesfield</span>
             </a>
-            <a href="/actor/3662324-nikhaar-kishnani" class="cast-card">
+            <a href="/actor/3662324-nikhaar-kishnani.html" class="cast-card">
                 <img src="/favicon.ico" alt="Nikhaar Kishnani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nikhaar Kishnani</span>
             </a>
-            <a href="/actor/3720237-pearl-shin" class="cast-card">
+            <a href="/actor/3720237-pearl-shin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Pearl Shin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pearl Shin</span>
             </a>
-            <a href="/actor/4265488-molly-carden" class="cast-card">
+            <a href="/actor/4265488-molly-carden.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AgfrqL20JKvPK0jXhBVwKBczNCN.jpg" alt="Molly Carden" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Molly Carden</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

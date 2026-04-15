@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,31 +73,31 @@ Jean-Marc Barr (born on 27 September 1960 in Bitburg, Rhineland-Palatinate, Germ
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1371347-meurtres-en-dentelles">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1371347-meurtres-en-dentelles.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/v8hS2UOERSkFrRO0zQY4gONWWlh.jpg" alt="Meurtres en dentelles — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Meurtres en dentelles</div></div>
-    </a>    <a class="card" href="/movie/145-breaking-the-waves">
+    </a>    <a class="card" href="/movie/145-breaking-the-waves.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dQWMcdHXUOSHtr7ypOCa5T79JMS.jpg" alt="Breaking the Waves — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Breaking the Waves</div></div>
-    </a>    <a class="card" href="/movie/26371-maurice">
+    </a>    <a class="card" href="/movie/26371-maurice.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8HhCyxxzoUqEBmVGK25Jq69LhVo.jpg" alt="Maurice — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Maurice</div></div>
-    </a>    <a class="card" href="/movie/242874-going-for-the-gold-the-bill-johnson-story">
+    </a>    <a class="card" href="/movie/242874-going-for-the-gold-the-bill-johnson-story.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jnF18AHzh0id1WoAg4zjNXGY5Gz.jpg" alt="Going for the Gold: The Bill Johnson Story — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Going for the Gold: The Bill Johnson Story</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/240558-king-conqueror">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/240558-king-conqueror.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8SW0c0tUFWjpWBz2UYr0U57a8kB.jpg" alt="King & Conqueror — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">King & Conqueror</div></div>
-    </a>    <a class="card" href="/tv/234820-sea-shadows">
+    </a>    <a class="card" href="/tv/234820-sea-shadows.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eL8T0TTupugFRfi8qVdog8V6xU9.jpg" alt="Sea Shadows — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sea Shadows</div></div>
-    </a>    <a class="card" href="/tv/244431-anthracite">
+    </a>    <a class="card" href="/tv/244431-anthracite.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/i6qdl7ycf1dheDih4g7m3OiZRC6.jpg" alt="Anthracite — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Anthracite</div></div>
@@ -106,13 +106,6 @@ Jean-Marc Barr (born on 27 September 1960 in Bitburg, Rhineland-Palatinate, Germ
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

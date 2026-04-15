@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1314750-same-old-west">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1314750-same-old-west.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/oIFBDkkX3CJiasgmANr2H4P2dsm.jpg" alt="Same Old West — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Same Old West</div></div>
-    </a>    <a class="card" href="/movie/1256620-white-house">
+    </a>    <a class="card" href="/movie/1256620-white-house.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uUxhRyS1Y8jZDQK8OxxA3jiXXEP.jpg" alt="White House — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">White House</div></div>
-    </a>    <a class="card" href="/movie/1179051-undercover-party-crasher">
+    </a>    <a class="card" href="/movie/1179051-undercover-party-crasher.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dcoc4C57lCpAzBr2qojFjRCKO9E.jpg" alt="Undercover Party Crasher — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Undercover Party Crasher</div></div>
-    </a>    <a class="card" href="/movie/1192209-noahs-ark">
+    </a>    <a class="card" href="/movie/1192209-noahs-ark.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/x6wH1kowr6uNFJ12CVKsRHzC0cm.jpg" alt="Noah's Ark — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Noah's Ark</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/198053-o-jogo-que-mudou-a-história">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/198053-o-jogo-que-mudou-a-história.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/trc7lqDTPpgvHLin4BDkWNJ6z6C.jpg" alt="O Jogo Que Mudou a História — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">O Jogo Que Mudou a História</div></div>
-    </a>    <a class="card" href="/tv/196421-the-others">
+    </a>    <a class="card" href="/tv/196421-the-others.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1kMnZxgszV84LrGwENNeb0ncbw1.jpg" alt="The Others — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Others</div></div>
-    </a>    <a class="card" href="/tv/209085-perfect-love">
+    </a>    <a class="card" href="/tv/209085-perfect-love.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/g0Tb0bs0MBZoq37BpyFExcepbFX.jpg" alt="Perfect Love — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Perfect Love</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

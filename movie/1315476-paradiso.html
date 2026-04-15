@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Paradiso</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4280731-lucia-zamora" class="cast-card">
+            <a href="/actor/4280731-lucia-zamora.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fY7mVKISNc8HES7FwD73kUiySt7.jpg" alt="Lucia Zamora" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucia Zamora</span>
             </a>
-            <a href="/actor/3380527-jorge-cañas" class="cast-card">
+            <a href="/actor/3380527-jorge-cañas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/b6lXlDf8lOnsRbTIqAQGlk8DIew.jpg" alt="Jorge Cañas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jorge Cañas</span>
             </a>
-            <a href="/actor/3573845-martin-taskov" class="cast-card">
+            <a href="/actor/3573845-martin-taskov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kgAzeB6MjjkrFGJn0tKcUko7pKp.jpg" alt="Martin Taskov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Martin Taskov</span>
             </a>
-            <a href="/actor/4987067-adela-trifonova" class="cast-card">
+            <a href="/actor/4987067-adela-trifonova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/52HWygyod2s5H7kWnAskZkZdDZU.jpg" alt="Adela Trifonova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adela Trifonova</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>妻、小学生になる。</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1096528-daisuke-hirakawa" class="cast-card">
+            <a href="/actor/1096528-daisuke-hirakawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8uDi5NxFdxFvfVyo4n5CeOSLWEf.jpg" alt="Daisuke Hirakawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daisuke Hirakawa</span>
             </a>
-            <a href="/actor/936275-aoi-yuuki" class="cast-card">
+            <a href="/actor/936275-aoi-yuuki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a5Mkd66GV1l3c9bZZtnvjUf33T2.jpg" alt="Aoi Yuuki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aoi Yuuki</span>
             </a>
-            <a href="/actor/2833585-maiko-nomura" class="cast-card">
+            <a href="/actor/2833585-maiko-nomura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rTA6YNVccrVv23AHTcukwAiKyvr.jpg" alt="Maiko Nomura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maiko Nomura</span>
             </a>
-            <a href="/actor/1149055-sachiko-kojima" class="cast-card">
+            <a href="/actor/1149055-sachiko-kojima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1WsHUDLy7Jvi5I1VY6uAT4ARnpM.jpg" alt="Sachiko Kojima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sachiko Kojima</span>
             </a>
-            <a href="/actor/1862765-mutsuki-iwanaka" class="cast-card">
+            <a href="/actor/1862765-mutsuki-iwanaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sf6pNjXI8uMUatZ5EhlZPWt8Xh5.jpg" alt="Mutsuki Iwanaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mutsuki Iwanaka</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

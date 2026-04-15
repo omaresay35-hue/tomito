@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,51 +75,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/57970-alex-e-jones" class="cast-card">
+            <a href="/actor/57970-alex-e-jones.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ocBpJoXZpQGGeThqB6KRnnUmAdy.jpg" alt="Alex E. Jones" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alex E. Jones</span>
             </a>
-            <a href="/actor/4673509-russell-dowden" class="cast-card">
+            <a href="/actor/4673509-russell-dowden.html" class="cast-card">
                 <img src="/favicon.ico" alt="Russell Dowden" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Russell Dowden</span>
             </a>
-            <a href="/actor/59431-rob-jacobson" class="cast-card">
+            <a href="/actor/59431-rob-jacobson.html" class="cast-card">
                 <img src="/favicon.ico" alt="Rob Jacobson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rob Jacobson</span>
             </a>
-            <a href="/actor/3385104-josh-owens" class="cast-card">
+            <a href="/actor/3385104-josh-owens.html" class="cast-card">
                 <img src="/favicon.ico" alt="Josh Owens" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josh Owens</span>
             </a>
-            <a href="/actor/4673516-christopher-jordan" class="cast-card">
+            <a href="/actor/4673516-christopher-jordan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Christopher Jordan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christopher Jordan</span>
             </a>
-            <a href="/actor/2830447-mark-barden" class="cast-card">
+            <a href="/actor/2830447-mark-barden.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mark Barden" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Barden</span>
             </a>
-            <a href="/actor/4673518-alissa-parker" class="cast-card">
+            <a href="/actor/4673518-alissa-parker.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alissa Parker" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alissa Parker</span>
             </a>
-            <a href="/actor/4673519-robbie-parker" class="cast-card">
+            <a href="/actor/4673519-robbie-parker.html" class="cast-card">
                 <img src="/favicon.ico" alt="Robbie Parker" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robbie Parker</span>
             </a>
-            <a href="/actor/4673508-neil-heslin" class="cast-card">
+            <a href="/actor/4673508-neil-heslin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Neil Heslin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Neil Heslin</span>
             </a>
-            <a href="/actor/4673521-daniel-jewiss" class="cast-card">
+            <a href="/actor/4673521-daniel-jewiss.html" class="cast-card">
                 <img src="/favicon.ico" alt="Daniel Jewiss" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Jewiss</span>
             </a>
-            <a href="/actor/1522270-scarlett-lewis" class="cast-card">
+            <a href="/actor/1522270-scarlett-lewis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/89c4CaWJxupVQ5KTVsxruQkHGWs.jpg" alt="Scarlett Lewis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Scarlett Lewis</span>
             </a>
-            <a href="/actor/3216456-nicole-hockley" class="cast-card">
+            <a href="/actor/3216456-nicole-hockley.html" class="cast-card">
                 <img src="/favicon.ico" alt="Nicole Hockley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicole Hockley</span>
             </a></div></section>
@@ -127,13 +127,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

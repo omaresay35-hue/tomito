@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Sunny</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/80591-rashida-jones" class="cast-card">
+            <a href="/actor/80591-rashida-jones.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cgWGm9eYCretBWeljPVtpRV7n6V.jpg" alt="Rashida Jones" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rashida Jones</span>
             </a>
-            <a href="/actor/13250-hidetoshi-nishijima" class="cast-card">
+            <a href="/actor/13250-hidetoshi-nishijima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3FBdbeMMWfyKmHS5j8IECwsZWcY.jpg" alt="Hidetoshi Nishijima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hidetoshi Nishijima</span>
             </a>
-            <a href="/actor/1373626-joanna-sotomura" class="cast-card">
+            <a href="/actor/1373626-joanna-sotomura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o3MIealo1siLGzvV8PHhXItG9wO.jpg" alt="Joanna Sotomura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joanna Sotomura</span>
             </a>
-            <a href="/actor/555631-judy-ongg" class="cast-card">
+            <a href="/actor/555631-judy-ongg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/msviA5PDxClR4e0z7nG79JeP8Dz.jpg" alt="Judy Ongg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Judy Ongg</span>
             </a>
-            <a href="/actor/25653-you" class="cast-card">
+            <a href="/actor/25653-you.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dTlCW7FOwVF1kbV1c7OLWXosL0Y.jpg" alt="YOU" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>YOU</span>
             </a>
-            <a href="/actor/3761378-annie-the-clumsy" class="cast-card">
+            <a href="/actor/3761378-annie-the-clumsy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sIIjhGq7lIhacC8b1Qnpw5pxYJA.jpg" alt="annie the clumsy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>annie the clumsy</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

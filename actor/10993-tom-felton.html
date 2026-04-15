@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ Born in Surrey, Felton began appearing in commercials and made his screen debut 
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1292695-they-will-kill-you">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1292695-they-will-kill-you.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6oI4oQKTWMVUlr8Ivqydp28Ruu6.jpg" alt="They Will Kill You — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">They Will Kill You</div></div>
-    </a>    <a class="card" href="/movie/1175174-fackham-hall">
+    </a>    <a class="card" href="/movie/1175174-fackham-hall.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fwpdRe6WGmzqXFEJYJVepDQ6jrw.jpg" alt="Fackham Hall — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fackham Hall</div></div>
-    </a>    <a class="card" href="/movie/1309012-altered">
+    </a>    <a class="card" href="/movie/1309012-altered.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6QlAcGRaUrgHcZ4WTBh5lsPnzKx.jpg" alt="Altered — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Altered</div></div>
-    </a>    <a class="card" href="/movie/912600-some-other-woman">
+    </a>    <a class="card" href="/movie/912600-some-other-woman.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kiXZm4lEuE5DbvUssNFi10X3J4J.jpg" alt="Some Other Woman — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Some Other Woman</div></div>
@@ -94,13 +94,6 @@ Born in Surrey, Felton began appearing in commercials and made his screen debut 
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

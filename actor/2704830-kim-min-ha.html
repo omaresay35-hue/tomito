@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/280946-typhoon-family">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/280946-typhoon-family.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wPbW5Ll3xNP1PT99Odh6kawkJSM.jpg" alt="Typhoon Family — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Typhoon Family</div></div>
-    </a>    <a class="card" href="/tv/239077-way-back-love">
+    </a>    <a class="card" href="/tv/239077-way-back-love.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8NQYhJ1tn40bcJGS5n0QBmdHd44.jpg" alt="Way Back Love — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Way Back Love</div></div>
-    </a>    <a class="card" href="/tv/226529-light-shop">
+    </a>    <a class="card" href="/tv/226529-light-shop.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/iRgH73xibpeNZ8zzPDkIpxuoKgC.jpg" alt="Light Shop — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Light Shop</div></div>
-    </a>    <a class="card" href="/tv/110382-pachinko">
+    </a>    <a class="card" href="/tv/110382-pachinko.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wUTXdmL6oNjhiStGveOaPeuFOYQ.jpg" alt="Pachinko — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pachinko</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

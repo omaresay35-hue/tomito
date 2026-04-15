@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Mors drenge</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4459-birthe-neumann" class="cast-card">
+            <a href="/actor/4459-birthe-neumann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bZa9JfPwcdSMfZnbL2VPysPdfwg.jpg" alt="Birthe Neumann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Birthe Neumann</span>
             </a>
-            <a href="/actor/3010793-adrian-hughes" class="cast-card">
+            <a href="/actor/3010793-adrian-hughes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vaWD540QdtdoegyrReY8GriIDMU.jpg" alt="Adrian Hughes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adrian Hughes</span>
             </a>
-            <a href="/actor/41903-jakob-cedergren" class="cast-card">
+            <a href="/actor/41903-jakob-cedergren.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y7HXkKrLrr9xAbNnt8ho1AeBDL8.jpg" alt="Jakob Cedergren" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jakob Cedergren</span>
             </a>
-            <a href="/actor/1994008-asta-kamma-august" class="cast-card">
+            <a href="/actor/1994008-asta-kamma-august.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jDnlJN2TIps8qf9CFZ7bHWJ5yO3.jpg" alt="Asta Kamma August" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Asta Kamma August</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

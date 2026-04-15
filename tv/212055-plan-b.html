@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Plan B</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1447280-carolina-bartczak" class="cast-card">
+            <a href="/actor/1447280-carolina-bartczak.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tQumydKvy6B2egz70Yd73kgokyP.jpg" alt="Carolina Bartczak" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carolina Bartczak</span>
             </a>
-            <a href="/actor/87575-arnold-pinnock" class="cast-card">
+            <a href="/actor/87575-arnold-pinnock.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7AET3sstZdRgoWlqgXdBcE935HE.jpg" alt="Arnold Pinnock" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arnold Pinnock</span>
             </a>
-            <a href="/actor/5630339-arianna-shannon" class="cast-card">
+            <a href="/actor/5630339-arianna-shannon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/psUf7boEgIKVrxA05ccKdrWuVav.jpg" alt="Arianna Shannon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arianna Shannon</span>
             </a>
-            <a href="/actor/1663890-jaeden-noel" class="cast-card">
+            <a href="/actor/1663890-jaeden-noel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8LiMI4qzWIc2uz5MZpPfisM5SqW.jpg" alt="Jaeden Noel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jaeden Noel</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1327690-one-mile-chapter-two">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1327690-one-mile-chapter-two.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3sjc9qXXmQoUWKQ3qIjS1nZaUJy.jpg" alt="One Mile: Chapter Two — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">One Mile: Chapter Two</div></div>
-    </a>    <a class="card" href="/movie/1327688-one-mile-chapter-one">
+    </a>    <a class="card" href="/movie/1327688-one-mile-chapter-one.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1GZaoYe0mQy211DgDSAxAXr30ul.jpg" alt="One Mile: Chapter One — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">One Mile: Chapter One</div></div>
-    </a>    <a class="card" href="/movie/1339166-shaman">
+    </a>    <a class="card" href="/movie/1339166-shaman.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ltLqm9f9Ma3iCFmfXNHenzPEqda.jpg" alt="Shaman — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Shaman</div></div>
-    </a>    <a class="card" href="/movie/1062276-dark-match">
+    </a>    <a class="card" href="/movie/1062276-dark-match.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6E6fBED3ix7FmrWUWZdeYG4vqK8.jpg" alt="Dark Match — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dark Match</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/242535-sight-unseen">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/242535-sight-unseen.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nCTVxygzAXh8uKDYoBCnI0Cy9E1.jpg" alt="Sight Unseen — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sight Unseen</div></div>
-    </a>    <a class="card" href="/tv/217211-the-irrational">
+    </a>    <a class="card" href="/tv/217211-the-irrational.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jJtOpfgV4iPu9RtxllHwZgn9dqI.jpg" alt="The Irrational — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Irrational</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

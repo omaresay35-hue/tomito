@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1278827-the-wedding-banquet">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1278827-the-wedding-banquet.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/48scEvAG0H4PBWTt86sJeazExpN.jpg" alt="The Wedding Banquet — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Wedding Banquet</div></div>
-    </a>    <a class="card" href="/movie/876127-dog-days">
+    </a>    <a class="card" href="/movie/876127-dog-days.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qGVzvsB34oR7MAJmO2P4DFOegjR.jpg" alt="Dog Days — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dog Days</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/154385-beef">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/154385-beef.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wSPOstFgu3Ogs61H6A86txGcWCM.jpg" alt="BEEF — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">BEEF</div></div>
-    </a>    <a class="card" href="/tv/110382-pachinko">
+    </a>    <a class="card" href="/tv/110382-pachinko.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wUTXdmL6oNjhiStGveOaPeuFOYQ.jpg" alt="Pachinko — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pachinko</div></div>
-    </a>    <a class="card" href="/tv/152483-the-boys-presents-diabolical">
+    </a>    <a class="card" href="/tv/152483-the-boys-presents-diabolical.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kZKfZWwFOAicgoKS2IO7oM1GuHZ.jpg" alt="The Boys Presents: Diabolical — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Boys Presents: Diabolical</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

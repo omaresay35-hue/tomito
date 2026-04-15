@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -77,27 +77,27 @@ Spaeny portrayed Priscilla Presley in the biographical film Priscilla (2023), fo
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/812583-wake-up-dead-man-a-knives-out-mystery">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/812583-wake-up-dead-man-a-knives-out-mystery.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qCOGGi8JBVEZMc3DVby8rUivyXz.jpg" alt="Wake Up Dead Man: A Knives Out Mystery — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wake Up Dead Man: A Knives Out Mystery</div></div>
-    </a>    <a class="card" href="/movie/1491034-netflix-tudum-2025">
+    </a>    <a class="card" href="/movie/1491034-netflix-tudum-2025.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jTZ5yiFpJPc19lA6uoT9zafHr0f.jpg" alt="Netflix Tudum 2025 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Netflix Tudum 2025</div></div>
-    </a>    <a class="card" href="/movie/945961-alien-romulus">
+    </a>    <a class="card" href="/movie/945961-alien-romulus.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2uSWRTtCG336nuBiG8jOTEUKSy8.jpg" alt="Alien: Romulus — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Alien: Romulus</div></div>
-    </a>    <a class="card" href="/movie/1309965-torn-asunder-waging-alex-garlands-civil-war">
+    </a>    <a class="card" href="/movie/1309965-torn-asunder-waging-alex-garlands-civil-war.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nKfHqk4cbigommkAxPrSL7lvjTA.jpg" alt="Torn Asunder: Waging Alex Garland's Civil War — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Torn Asunder: Waging Alex Garland's Civil War</div></div>
-    </a>    <a class="card" href="/movie/929590-civil-war">
+    </a>    <a class="card" href="/movie/929590-civil-war.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sh7Rg8Er3tFcN9BpKIPOMvALgZd.jpg" alt="Civil War — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Civil War</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/154385-beef">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/154385-beef.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wSPOstFgu3Ogs61H6A86txGcWCM.jpg" alt="BEEF — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">BEEF</div></div>
@@ -106,13 +106,6 @@ Spaeny portrayed Priscilla Presley in the biographical film Priscilla (2023), fo
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

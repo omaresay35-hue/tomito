@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Love Is a Dog's Best Friend</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/20373-arielle-kebbel" class="cast-card">
+            <a href="/actor/20373-arielle-kebbel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eFN9TTOFk4COQQsDSufChNd7GfP.jpg" alt="Arielle Kebbel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arielle Kebbel</span>
             </a>
-            <a href="/actor/77865-benjamin-hollingsworth" class="cast-card">
+            <a href="/actor/77865-benjamin-hollingsworth.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5dR2AbGdWHUsOu1HkW3x5fsTebw.jpg" alt="Benjamin Hollingsworth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Benjamin Hollingsworth</span>
             </a>
-            <a href="/actor/2446074-david-pinard" class="cast-card">
+            <a href="/actor/2446074-david-pinard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8vn6LZLFvxm1MhsLLMGzKMfvhgR.jpg" alt="David Pinard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Pinard</span>
             </a>
-            <a href="/actor/1390000-brian-quintero" class="cast-card">
+            <a href="/actor/1390000-brian-quintero.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nAnfn7NHjpjle2fHvFajzAwqsiL.jpg" alt="Brian Quintero" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brian Quintero</span>
             </a>
-            <a href="/actor/1232657-suzanne-cyr" class="cast-card">
+            <a href="/actor/1232657-suzanne-cyr.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oH2Eojqtn0tneGmzyqubaigIfgP.jpg" alt="Suzanne Cyr" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Suzanne Cyr</span>
             </a>
-            <a href="/actor/4794273-taylor-bernier" class="cast-card">
+            <a href="/actor/4794273-taylor-bernier.html" class="cast-card">
                 <img src="/favicon.ico" alt="Taylor Bernier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taylor Bernier</span>
             </a>
-            <a href="/actor/2859866-alison-mackay" class="cast-card">
+            <a href="/actor/2859866-alison-mackay.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2t6zjjyQNkJJDCLuYaGeVFo5THL.jpg" alt="Alison Mackay" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alison Mackay</span>
             </a>
-            <a href="/actor/3799985-holly-jade-balmer" class="cast-card">
+            <a href="/actor/3799985-holly-jade-balmer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7JDriCBRCo1NdWSHl8skHAD0F2y.jpg" alt="Holly Jade Balmer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Holly Jade Balmer</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

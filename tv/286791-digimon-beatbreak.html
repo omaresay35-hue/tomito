@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ديجمون كسر الإيقاع</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/19588-miyu-irino" class="cast-card">
+            <a href="/actor/19588-miyu-irino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8qEEhHUObNvGQr4e6eqLu5z4qTz.jpg" alt="Miyu Irino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miyu Irino</span>
             </a>
-            <a href="/actor/1164931-megumi-han" class="cast-card">
+            <a href="/actor/1164931-megumi-han.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cwnwrPg1YvB19TbfouC4ShGPmbQ.jpg" alt="Megumi Han" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Megumi Han</span>
             </a>
-            <a href="/actor/1309253-tomoyo-kurosawa" class="cast-card">
+            <a href="/actor/1309253-tomoyo-kurosawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eSRnva88YVcUXlDHdVrhier2SGU.jpg" alt="Tomoyo Kurosawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomoyo Kurosawa</span>
             </a>
-            <a href="/actor/1253972-mutsumi-tamura" class="cast-card">
+            <a href="/actor/1253972-mutsumi-tamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uvbBIRiBK6GDLEESiYSFWOVlaE4.jpg" alt="Mutsumi Tamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mutsumi Tamura</span>
             </a>
-            <a href="/actor/2930867-arisa-sekine" class="cast-card">
+            <a href="/actor/2930867-arisa-sekine.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/z8GTafCwhgx6cgjpuUWHOWXZCkg.jpg" alt="Arisa Sekine" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arisa Sekine</span>
             </a>
-            <a href="/actor/151182-misaki-kuno" class="cast-card">
+            <a href="/actor/151182-misaki-kuno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hVtE4gdKaqofYZmXXtlJs4Q9XTL.jpg" alt="Misaki Kuno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Misaki Kuno</span>
             </a>
-            <a href="/actor/2220797-yohei-azakami" class="cast-card">
+            <a href="/actor/2220797-yohei-azakami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rLIqw8pIjVIxPb5engrTbu9iOex.jpg" alt="Yohei Azakami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yohei Azakami</span>
             </a>
-            <a href="/actor/1991242-daiki-hamano" class="cast-card">
+            <a href="/actor/1991242-daiki-hamano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bykeH3Rhmx9PPFegYNi6s310cNa.jpg" alt="Daiki Hamano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daiki Hamano</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

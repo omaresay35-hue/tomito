@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>El extraño retorno de Diana Salazar</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1244197-angelique-boyer" class="cast-card">
+            <a href="/actor/1244197-angelique-boyer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/c73CU85L1sHganTpVUHnjw3gbba.jpg" alt="Angelique Boyer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Angelique Boyer</span>
             </a>
-            <a href="/actor/1240110-sebastián-rulli" class="cast-card">
+            <a href="/actor/1240110-sebastián-rulli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5RVVRhpExIGWE0lZYJSgMW0V3dR.jpg" alt="Sebastián Rulli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sebastián Rulli</span>
             </a>
-            <a href="/actor/1233729-arap-bethke" class="cast-card">
+            <a href="/actor/1233729-arap-bethke.html" class="cast-card">
                 <img src="/favicon.ico" alt="Arap Bethke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arap Bethke</span>
             </a>
-            <a href="/actor/1831842-cassandra-sánchez-navarro" class="cast-card">
+            <a href="/actor/1831842-cassandra-sánchez-navarro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hRsoMPc59W8vRYk5ltheDpcgdeT.jpg" alt="Cassandra Sánchez Navarro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cassandra Sánchez Navarro</span>
             </a>
-            <a href="/actor/1457967-sergio-mur" class="cast-card">
+            <a href="/actor/1457967-sergio-mur.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wS8bWqsm01ZQNuHpeAsQ8MGO8Xy.jpg" alt="Sergio Mur" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sergio Mur</span>
             </a>
-            <a href="/actor/1066816-sergio-reynoso" class="cast-card">
+            <a href="/actor/1066816-sergio-reynoso.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sergio Reynoso" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sergio Reynoso</span>
             </a>
-            <a href="/actor/224321-mónica-dionne" class="cast-card">
+            <a href="/actor/224321-mónica-dionne.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tVonMtXNKtixZ2dH9yzhT0l3Rmp.jpg" alt="Mónica Dionne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mónica Dionne</span>
             </a>
-            <a href="/actor/3288594-rubén-sáenz" class="cast-card">
+            <a href="/actor/3288594-rubén-sáenz.html" class="cast-card">
                 <img src="/favicon.ico" alt="Rubén Sáenz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rubén Sáenz</span>
             </a>
-            <a href="/actor/3230615-lorena-graniewicz" class="cast-card">
+            <a href="/actor/3230615-lorena-graniewicz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i3GL7NdMdwguyNlXosqjnDNTnaG.jpg" alt="Lorena Graniewicz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lorena Graniewicz</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

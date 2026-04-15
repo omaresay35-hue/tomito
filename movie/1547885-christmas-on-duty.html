@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Christmas on Duty</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/93377-janel-parrish" class="cast-card">
+            <a href="/actor/93377-janel-parrish.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2MZ3c8rnLC8E1mrOXVZ0v1bi7BR.jpg" alt="Janel Parrish" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Janel Parrish</span>
             </a>
-            <a href="/actor/1254635-parker-young" class="cast-card">
+            <a href="/actor/1254635-parker-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wrBquz08tLT4GpG30JBOvfTVy93.jpg" alt="Parker Young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Parker Young</span>
             </a>
-            <a href="/actor/31514-peter-jacobson" class="cast-card">
+            <a href="/actor/31514-peter-jacobson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nbXl6sgWDjCBYk1Kl5SC3BR11ME.jpg" alt="Peter Jacobson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Peter Jacobson</span>
             </a>
-            <a href="/actor/1362313-melanie-stone" class="cast-card">
+            <a href="/actor/1362313-melanie-stone.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eBIEWUr4zpQj0gQeIgvxnPCkN8n.jpg" alt="Melanie Stone" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Melanie Stone</span>
             </a>
-            <a href="/actor/1196615-scott-reeves" class="cast-card">
+            <a href="/actor/1196615-scott-reeves.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jqf0Y7wdvrwj6YG1EwJgQ3bvhDB.jpg" alt="Scott Reeves" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Scott Reeves</span>
             </a>
-            <a href="/actor/1828820-tina-gallo" class="cast-card">
+            <a href="/actor/1828820-tina-gallo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Tina Gallo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tina Gallo</span>
             </a>
-            <a href="/actor/4978719-ezra-moreland" class="cast-card">
+            <a href="/actor/4978719-ezra-moreland.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rIbpduei9mggFG8ZOgn4inrG7tG.jpg" alt="Ezra Moreland" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ezra Moreland</span>
             </a>
-            <a href="/actor/1210153-rocky-myers" class="cast-card">
+            <a href="/actor/1210153-rocky-myers.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eN5NK71ABZtso4QDrYFrhz2JRvZ.jpg" alt="Rocky Myers" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rocky Myers</span>
             </a>
-            <a href="/actor/92611-antonio-d-charity" class="cast-card">
+            <a href="/actor/92611-antonio-d-charity.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/S8T0ABox1qJYbl84GWkQNU7wvZ.jpg" alt="Antonio D. Charity" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Antonio D. Charity</span>
             </a>
-            <a href="/actor/5579716-erin-leshawn-wiley" class="cast-card">
+            <a href="/actor/5579716-erin-leshawn-wiley.html" class="cast-card">
                 <img src="/favicon.ico" alt="Erin LeShawn Wiley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erin LeShawn Wiley</span>
             </a>
-            <a href="/actor/3260685-aleta-myles" class="cast-card">
+            <a href="/actor/3260685-aleta-myles.html" class="cast-card">
                 <img src="/favicon.ico" alt="Aleta Myles" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aleta Myles</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

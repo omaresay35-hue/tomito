@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Wild Ones</span>
   </nav>
 
@@ -72,15 +72,15 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4936960-declan-burley" class="cast-card">
+            <a href="/actor/4936960-declan-burley.html" class="cast-card">
                 <img src="/favicon.ico" alt="Declan Burley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Declan Burley</span>
             </a>
-            <a href="/actor/1674031-vianet-djenguet" class="cast-card">
+            <a href="/actor/1674031-vianet-djenguet.html" class="cast-card">
                 <img src="/favicon.ico" alt="Vianet Djenguet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vianet Djenguet</span>
             </a>
-            <a href="/actor/2333575-aldo-kane" class="cast-card">
+            <a href="/actor/2333575-aldo-kane.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eNBfAbXd6wuK15NNcoO34tja1z9.jpg" alt="Aldo Kane" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aldo Kane</span>
             </a></div></section>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

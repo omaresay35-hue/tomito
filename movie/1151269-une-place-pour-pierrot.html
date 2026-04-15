@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Une place pour Pierrot</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/54227-marie-gillain" class="cast-card">
+            <a href="/actor/54227-marie-gillain.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ozjOiDR5ZIlDkbZQGJ46OeQoCbY.jpg" alt="Marie Gillain" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marie Gillain</span>
             </a>
-            <a href="/actor/223532-grégory-gadebois" class="cast-card">
+            <a href="/actor/223532-grégory-gadebois.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AvF337m0eGL9JLPEgG6Dy1T2Zu4.jpg" alt="Grégory Gadebois" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Grégory Gadebois</span>
             </a>
-            <a href="/actor/4731767-mathilde-labarthe" class="cast-card">
+            <a href="/actor/4731767-mathilde-labarthe.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mathilde Labarthe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mathilde Labarthe</span>
             </a>
-            <a href="/actor/56404-patrick-mille" class="cast-card">
+            <a href="/actor/56404-patrick-mille.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vxpQlYMyZNmDPD6JQrcnfRPdNI2.jpg" alt="Patrick Mille" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patrick Mille</span>
             </a>
-            <a href="/actor/225479-françois-vincentelli" class="cast-card">
+            <a href="/actor/225479-françois-vincentelli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hXZeZJMJpr94O74A5cocZ8WGMk0.jpg" alt="François Vincentelli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>François Vincentelli</span>
             </a>
-            <a href="/actor/15481-marianne-basler" class="cast-card">
+            <a href="/actor/15481-marianne-basler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/74bRbi3pfSAzkwpbWtS822LRoYU.jpg" alt="Marianne Basler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marianne Basler</span>
             </a>
-            <a href="/actor/1821298-jack-claudany" class="cast-card">
+            <a href="/actor/1821298-jack-claudany.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xQva5F1rV7NchkLWmos3d3KI3rQ.jpg" alt="Jack Claudany" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Claudany</span>
             </a>
-            <a href="/actor/54918-vincent-elbaz" class="cast-card">
+            <a href="/actor/54918-vincent-elbaz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uj2N223BJ1V78W8mNK20M3IGYus.jpg" alt="Vincent Elbaz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vincent Elbaz</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

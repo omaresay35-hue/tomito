@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>海市蜃楼</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2633279-fei-qiming" class="cast-card">
+            <a href="/actor/2633279-fei-qiming.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iOK3rNtt0bUrDOw5bYoohE3rfiA.jpg" alt="Fei Qiming" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fei Qiming</span>
             </a>
-            <a href="/actor/2343728-lv-xiaoyu" class="cast-card">
+            <a href="/actor/2343728-lv-xiaoyu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bLBJkHqqRAPPrjbjzhNzrj4nkhq.jpg" alt="Lv Xiaoyu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lv Xiaoyu</span>
             </a>
-            <a href="/actor/2406052-shao-zhuang" class="cast-card">
+            <a href="/actor/2406052-shao-zhuang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9P43lWhQ5lg7BOpumxIRIPQ6V8T.jpg" alt="Shao Zhuang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shao Zhuang</span>
             </a>
-            <a href="/actor/3762661-jin-zixuan" class="cast-card">
+            <a href="/actor/3762661-jin-zixuan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k7ugf26gcCgbuZg6JYdRI7PNjhQ.jpg" alt="Jin Zixuan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jin Zixuan</span>
             </a>
-            <a href="/actor/2047468-yang-yu" class="cast-card">
+            <a href="/actor/2047468-yang-yu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8dzRfIee44Rd9XMYFC7aylQJwPr.jpg" alt="Yang Yu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yang Yu</span>
             </a>
-            <a href="/actor/2047466-an-ning" class="cast-card">
+            <a href="/actor/2047466-an-ning.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vYRalKZO4wl0pdNitrZ3AqJUQWX.jpg" alt="An Ning" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>An Ning</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

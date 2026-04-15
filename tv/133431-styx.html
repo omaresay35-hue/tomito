@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Styx</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/76298-sebastien-dewaele" class="cast-card">
+            <a href="/actor/76298-sebastien-dewaele.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ixrwTUcqpCKoR2x1He2eAwC0kfr.jpg" alt="Sebastien Dewaele" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sebastien Dewaele</span>
             </a>
-            <a href="/actor/927675-loes-haverkort" class="cast-card">
+            <a href="/actor/927675-loes-haverkort.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7Mz5pEkDGCXWY5nhiwSn8yWDFjx.jpg" alt="Loes Haverkort" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Loes Haverkort</span>
             </a>
-            <a href="/actor/82420-koen-de-bouw" class="cast-card">
+            <a href="/actor/82420-koen-de-bouw.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7W1RMDnglVxwtg8ccrZmt7z9paH.jpg" alt="Koen De Bouw" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koen De Bouw</span>
             </a>
-            <a href="/actor/1171407-werner-kolf" class="cast-card">
+            <a href="/actor/1171407-werner-kolf.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yP9UwDUKd5P7QUhCg1IDLysIjrC.jpg" alt="Werner Kolf" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Werner Kolf</span>
             </a>
-            <a href="/actor/1378501-dahlia-pessemiers" class="cast-card">
+            <a href="/actor/1378501-dahlia-pessemiers.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tT4dKWOLzcNbjYMPGvxffAarr3v.jpg" alt="Dahlia Pessemiers" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dahlia Pessemiers</span>
             </a>
-            <a href="/actor/4103230-jul-goossens" class="cast-card">
+            <a href="/actor/4103230-jul-goossens.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ouM6MdO3gc9vTgnI5Hrwf3uE5En.jpg" alt="Jul Goossens" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jul Goossens</span>
             </a>
-            <a href="/actor/4353123-elena-missiaen" class="cast-card">
+            <a href="/actor/4353123-elena-missiaen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4RJyhYCJQIovkanGsOLNodtqPnN.jpg" alt="Elena Missiaen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elena Missiaen</span>
             </a>
-            <a href="/actor/2201881-lilith-pas" class="cast-card">
+            <a href="/actor/2201881-lilith-pas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ozjSWhzR945em4fcnJjRBjodoJx.jpg" alt="Lilith Pas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lilith Pas</span>
             </a>
-            <a href="/actor/1063768-anemone-valcke" class="cast-card">
+            <a href="/actor/1063768-anemone-valcke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oyEgsWmIoMBN8FVrnxNh7OAPnhF.jpg" alt="Anemone Valcke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anemone Valcke</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

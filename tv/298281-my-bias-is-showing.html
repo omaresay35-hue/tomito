@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>최애가 나타났다?!</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5314289-park-jin-woo" class="cast-card">
+            <a href="/actor/5314289-park-jin-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/22SrySkedtidWPJ37zeeJv7b1Dz.jpg" alt="Park Jin-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Jin-woo</span>
             </a>
-            <a href="/actor/3138765-kim-kang-min" class="cast-card">
+            <a href="/actor/3138765-kim-kang-min.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wG2DQVKy787CmPiXibQZYMy79vw.jpg" alt="Kim Kang-min" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Kang-min</span>
             </a>
-            <a href="/actor/1599816-shin-seong-ha" class="cast-card">
+            <a href="/actor/1599816-shin-seong-ha.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eXGHLTxvnBIAc1jQWOtovKfoOLJ.jpg" alt="Shin Seong-ha" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shin Seong-ha</span>
             </a>
-            <a href="/actor/5671359-김흥준" class="cast-card">
+            <a href="/actor/5671359-김흥준.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7Wn7eWPwTVFXbddJZUM040pCTn0.jpg" alt="김흥준" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>김흥준</span>
             </a>
-            <a href="/actor/5314564-han-jung-hoon" class="cast-card">
+            <a href="/actor/5314564-han-jung-hoon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sOAHZ5XHoxFg6Ez5X4TztSBIY2y.jpg" alt="Han Jung-hoon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Han Jung-hoon</span>
             </a>
-            <a href="/actor/5654514-min-yoo-jun" class="cast-card">
+            <a href="/actor/5654514-min-yoo-jun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ha1Vy6hHuKOUEWADiFFfy8phxIx.jpg" alt="Min Yoo-jun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Min Yoo-jun</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

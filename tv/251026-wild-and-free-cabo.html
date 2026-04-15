@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Sueltos en Los Cabos</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3550000-fernando-lozada" class="cast-card">
+            <a href="/actor/3550000-fernando-lozada.html" class="cast-card">
                 <img src="/favicon.ico" alt="Fernando Lozada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fernando Lozada</span>
             </a>
-            <a href="/actor/1240364-niurka-marcos" class="cast-card">
+            <a href="/actor/1240364-niurka-marcos.html" class="cast-card">
                 <img src="/favicon.ico" alt="Niurka Marcos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Niurka Marcos</span>
             </a>
-            <a href="/actor/3091865-carlos-capi-pérez" class="cast-card">
+            <a href="/actor/3091865-carlos-capi-pérez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nngw8NHBoNbzYdWJ5qV4Tfja0gI.jpg" alt="Carlos 'Capi' Pérez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carlos 'Capi' Pérez</span>
             </a>
-            <a href="/actor/4713738-kristal-silva" class="cast-card">
+            <a href="/actor/4713738-kristal-silva.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s3AYXEyw9G9ResvUVjWEjfkborC.jpg" alt="Kristal Silva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kristal Silva</span>
             </a>
-            <a href="/actor/3415165-victoria-volkova" class="cast-card">
+            <a href="/actor/3415165-victoria-volkova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r5YYUye2Flolkc27lSykno8qL8F.jpg" alt="Victoria Volkova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Victoria Volkova</span>
             </a>
-            <a href="/actor/4713739-celeste-cheles" class="cast-card">
+            <a href="/actor/4713739-celeste-cheles.html" class="cast-card">
                 <img src="/favicon.ico" alt="Celeste Cheles" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Celeste Cheles</span>
             </a>
-            <a href="/actor/4713740-fede-del-real" class="cast-card">
+            <a href="/actor/4713740-fede-del-real.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ilEyP1xZIHInfOV71gzuT25De4F.jpg" alt="Fede del Real" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fede del Real</span>
             </a>
-            <a href="/actor/4713741-yámir-gonzalez" class="cast-card">
+            <a href="/actor/4713741-yámir-gonzalez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Yámir Gonzalez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yámir Gonzalez</span>
             </a>
-            <a href="/actor/4713742-alexa-kawas" class="cast-card">
+            <a href="/actor/4713742-alexa-kawas.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alexa Kawas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexa Kawas</span>
             </a>
-            <a href="/actor/4713743-vladislav-klimovich" class="cast-card">
+            <a href="/actor/4713743-vladislav-klimovich.html" class="cast-card">
                 <img src="/favicon.ico" alt="Vladislav Klimovich" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vladislav Klimovich</span>
             </a>
-            <a href="/actor/4713744-angel-lozada" class="cast-card">
+            <a href="/actor/4713744-angel-lozada.html" class="cast-card">
                 <img src="/favicon.ico" alt="Angel Lozada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Angel Lozada</span>
             </a>
-            <a href="/actor/4713745-lari-ree" class="cast-card">
+            <a href="/actor/4713745-lari-ree.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lari Ree" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lari Ree</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

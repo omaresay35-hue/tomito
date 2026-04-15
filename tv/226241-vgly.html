@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Vgly</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1379379-benny-emmanuel" class="cast-card">
+            <a href="/actor/1379379-benny-emmanuel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rSqiumttAOg08Auypm5Z7FpdvMS.jpg" alt="Benny Emmanuel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Benny Emmanuel</span>
             </a>
-            <a href="/actor/2614141-juan-daniel-garcia-treviño" class="cast-card">
+            <a href="/actor/2614141-juan-daniel-garcia-treviño.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xAfi4GWcj77QoGwLyBY0o9PIzb0.jpg" alt="Juan Daniel Garcia Treviño" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juan Daniel Garcia Treviño</span>
             </a>
-            <a href="/actor/2771019-sasha-gonzález" class="cast-card">
+            <a href="/actor/2771019-sasha-gonzález.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uSEZovWlTA41AVOa50AMIeWoGdQ.jpg" alt="Sasha González" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sasha González</span>
             </a>
-            <a href="/actor/1197401-alejandro-lago" class="cast-card">
+            <a href="/actor/1197401-alejandro-lago.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rrnH71w7YhZU9yJQJUhn9Q5FG7H.jpg" alt="Alejandro Lago" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alejandro Lago</span>
             </a>
-            <a href="/actor/971363-norma-reyna" class="cast-card">
+            <a href="/actor/971363-norma-reyna.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wXrgKUxzi0TAeUwOyaZ8cFyq20k.jpg" alt="Norma Reyna" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Norma Reyna</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

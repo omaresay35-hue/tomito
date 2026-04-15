@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1602783-thaai-kizhavi">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1602783-thaai-kizhavi.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qbqRzqitfwAReJ3q2v9iMmpoh7k.jpg" alt="Thaai Kizhavi — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Thaai Kizhavi</div></div>
-    </a>    <a class="card" href="/movie/1193692-little-jaffna">
+    </a>    <a class="card" href="/movie/1193692-little-jaffna.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hdn61bN25IKO1mVj7ycgJ73wHZD.jpg" alt="Little Jaffna — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Little Jaffna</div></div>
-    </a>    <a class="card" href="/movie/1382447-nayanthara-beyond-the-fairy-tale">
+    </a>    <a class="card" href="/movie/1382447-nayanthara-beyond-the-fairy-tale.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mSzSIygYwt690vvlE4qkLv2N3RQ.jpg" alt="Nayanthara: Beyond the Fairy Tale — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Nayanthara: Beyond the Fairy Tale</div></div>
-    </a>    <a class="card" href="/movie/890116-merry-christmas">
+    </a>    <a class="card" href="/movie/890116-merry-christmas.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zF3cqcT8OlDTcKIFAoXVK1gO9qW.jpg" alt="Merry Christmas — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Merry Christmas</div></div>
-    </a>    <a class="card" href="/movie/239017-veera-thalattu">
+    </a>    <a class="card" href="/movie/239017-veera-thalattu.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xhlcOl26ZATVK8xojKkL5J2flaf.jpg" alt="Veera Thalattu — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Veera Thalattu</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

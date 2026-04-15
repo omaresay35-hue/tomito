@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>스트레이 키즈 : 더 도미네이트 익스피리언스</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2021730-bang-chan" class="cast-card">
+            <a href="/actor/2021730-bang-chan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7uZCoYd62ex6v97nGqJeOjlXhW7.jpg" alt="Bang Chan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bang Chan</span>
             </a>
-            <a href="/actor/2021737-lee-know" class="cast-card">
+            <a href="/actor/2021737-lee-know.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pwnURDeaVXM2fGvfg8Lac97fRNn.jpg" alt="Lee Know" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Know</span>
             </a>
-            <a href="/actor/2021739-changbin" class="cast-card">
+            <a href="/actor/2021739-changbin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p3b7mgNVnxK2NeLi2QSWV9lmMcO.jpg" alt="Changbin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Changbin</span>
             </a>
-            <a href="/actor/2021741-hyunjin" class="cast-card">
+            <a href="/actor/2021741-hyunjin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bvSSvxCELNewaWznct5kqAVnxfJ.jpg" alt="Hyunjin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hyunjin</span>
             </a>
-            <a href="/actor/2021743-han" class="cast-card">
+            <a href="/actor/2021743-han.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1XvUxbLfNvnB7etOOIQMHExOPMF.jpg" alt="Han" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Han</span>
             </a>
-            <a href="/actor/2021746-felix" class="cast-card">
+            <a href="/actor/2021746-felix.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aqLCbsWGHu8rr25QLC9Yj253hDw.jpg" alt="Felix" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Felix</span>
             </a>
-            <a href="/actor/2021748-seungmin" class="cast-card">
+            <a href="/actor/2021748-seungmin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7SqrHAAN1lyWkyBH8xSjh8Bn8I8.jpg" alt="Seungmin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Seungmin</span>
             </a>
-            <a href="/actor/2021749-in" class="cast-card">
+            <a href="/actor/2021749-in.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j88oImSJg5b5grsGhGVc2W4Sa7b.jpg" alt="I.N" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>I.N</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

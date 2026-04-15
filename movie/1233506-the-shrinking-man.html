@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>L'Homme qui rétrécit</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/56024-jean-dujardin" class="cast-card">
+            <a href="/actor/56024-jean-dujardin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iPtSWWoO8vajj6fIUQLQeuGOCsk.jpg" alt="Jean Dujardin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jean Dujardin</span>
             </a>
-            <a href="/actor/8791-marie-josée-croze" class="cast-card">
+            <a href="/actor/8791-marie-josée-croze.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d7sRQCDFijXaSnyiZpURknJAQFi.jpg" alt="Marie-Josée Croze" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marie-Josée Croze</span>
             </a>
-            <a href="/actor/3640440-daphné-richard" class="cast-card">
+            <a href="/actor/3640440-daphné-richard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rcjnsdNXwHBKLASwl7exwQYUxNA.jpg" alt="Daphné Richard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daphné Richard</span>
             </a>
-            <a href="/actor/1881010-serge-swysen" class="cast-card">
+            <a href="/actor/1881010-serge-swysen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/160fnVds8O8RYYRh2gzaPdqQlyc.jpg" alt="Serge Swysen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Serge Swysen</span>
             </a>
-            <a href="/actor/2749304-salim-talbi" class="cast-card">
+            <a href="/actor/2749304-salim-talbi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3hqdnBmRK8l6q4M9MGfhwnfMTFW.jpg" alt="Salim Talbi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Salim Talbi</span>
             </a>
-            <a href="/actor/195525-miranda-raison" class="cast-card">
+            <a href="/actor/195525-miranda-raison.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eEZi02e07nZ3qG6DA8dYRAVVEHh.jpg" alt="Miranda Raison" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miranda Raison</span>
             </a>
-            <a href="/actor/1793563-stéphanie-van-vyve" class="cast-card">
+            <a href="/actor/1793563-stéphanie-van-vyve.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wJSLWrz1jVemtN4MooPLU6cOOe3.jpg" alt="Stéphanie Van Vyve" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stéphanie Van Vyve</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

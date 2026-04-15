@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Assassin's Guild</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4248967-laura-masters" class="cast-card">
+            <a href="/actor/4248967-laura-masters.html" class="cast-card">
                 <img src="/favicon.ico" alt="Laura Masters" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laura Masters</span>
             </a>
-            <a href="/actor/3850295-rosanna-miles" class="cast-card">
+            <a href="/actor/3850295-rosanna-miles.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sxBIkJ5lzF3LAV6MXL7ATPwiIg6.jpg" alt="Rosanna Miles" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rosanna Miles</span>
             </a>
-            <a href="/actor/5017732-cellan-scott" class="cast-card">
+            <a href="/actor/5017732-cellan-scott.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/84UFbH29EXU27Yd6tLHDUPG9Dug.jpg" alt="Cellan Scott" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cellan Scott</span>
             </a>
-            <a href="/actor/4541827-brooke-mccloy" class="cast-card">
+            <a href="/actor/4541827-brooke-mccloy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l9nm1kKRIdmz1cfrDkA9V7B2Lec.jpg" alt="Brooke McCloy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brooke McCloy</span>
             </a>
-            <a href="/actor/4933504-scott-wright" class="cast-card">
+            <a href="/actor/4933504-scott-wright.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jP6gIwLSu6LkPLbgZa56ppwds2p.jpg" alt="Scott Wright" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Scott Wright</span>
             </a>
-            <a href="/actor/60349-ryan-gage" class="cast-card">
+            <a href="/actor/60349-ryan-gage.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rPeYxW5QrgI68TTaoP2iK8NfCW7.jpg" alt="Ryan Gage" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryan Gage</span>
             </a>
-            <a href="/actor/54014-david-hayman" class="cast-card">
+            <a href="/actor/54014-david-hayman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gTwOhUXKzdHn4CEO4VEPyJHleb1.jpg" alt="David Hayman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Hayman</span>
             </a>
-            <a href="/actor/549469-stuart-brennan" class="cast-card">
+            <a href="/actor/549469-stuart-brennan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iovoH2DnGo81TgzrDgdhnWSf3dh.jpg" alt="Stuart Brennan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stuart Brennan</span>
             </a>
-            <a href="/actor/1695412-mark-paul-wake" class="cast-card">
+            <a href="/actor/1695412-mark-paul-wake.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bbsYoiyKzOKOkZpj7z1RZYTn7uK.jpg" alt="Mark Paul Wake" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Paul Wake</span>
             </a>
-            <a href="/actor/185785-kerry-norton" class="cast-card">
+            <a href="/actor/185785-kerry-norton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zIza521PCLBGrmJ9LmJLTbTGvg5.jpg" alt="Kerry Norton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kerry Norton</span>
             </a>
-            <a href="/actor/3425159-jarreau-benjamin" class="cast-card">
+            <a href="/actor/3425159-jarreau-benjamin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jugGpoY0ecVwCSN0V2vGWQcGvWU.jpg" alt="Jarreau Benjamin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jarreau Benjamin</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

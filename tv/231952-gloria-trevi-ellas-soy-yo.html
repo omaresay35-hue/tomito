@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Gloria Trevi: Ellas soy yo</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1755180-scarlet-gruber" class="cast-card">
+            <a href="/actor/1755180-scarlet-gruber.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wYK2WJpkkJlPspF99UIv1hfMRyp.jpg" alt="Scarlet Gruber" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Scarlet Gruber</span>
             </a>
-            <a href="/actor/283391-jorge-poza" class="cast-card">
+            <a href="/actor/283391-jorge-poza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vSk1tUuzFlZXT0bwaY7rpCVsYFe.jpg" alt="Jorge Poza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jorge Poza</span>
             </a>
-            <a href="/actor/1238408-ingrid-martz" class="cast-card">
+            <a href="/actor/1238408-ingrid-martz.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ingrid Martz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ingrid Martz</span>
             </a>
-            <a href="/actor/4195992-bruno-romagnoli" class="cast-card">
+            <a href="/actor/4195992-bruno-romagnoli.html" class="cast-card">
                 <img src="/favicon.ico" alt="Bruno Romagnoli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bruno Romagnoli</span>
             </a>
-            <a href="/actor/2772876-jan" class="cast-card">
+            <a href="/actor/2772876-jan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kSDshNPoXW0RT6B1gKBvQ4Gcuvm.jpg" alt="Jan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jan</span>
             </a>
-            <a href="/actor/1066865-norma-herrera" class="cast-card">
+            <a href="/actor/1066865-norma-herrera.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2ASRcB2A4Vnq15FrvPoqemYrm8v.jpg" alt="Norma Herrera" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Norma Herrera</span>
             </a>
-            <a href="/actor/2365790-raquel-bigorra" class="cast-card">
+            <a href="/actor/2365790-raquel-bigorra.html" class="cast-card">
                 <img src="/favicon.ico" alt="Raquel Bigorra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Raquel Bigorra</span>
             </a>
-            <a href="/actor/940958-alberto-estrella" class="cast-card">
+            <a href="/actor/940958-alberto-estrella.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mbzQRSMSjGFl0CWdI9pG6fNn2L.jpg" alt="Alberto Estrella" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alberto Estrella</span>
             </a>
-            <a href="/actor/1238183-rené-strickler" class="cast-card">
+            <a href="/actor/1238183-rené-strickler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6kruVvKtAS0884gL30guMp4GyCs.jpg" alt="René Strickler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>René Strickler</span>
             </a>
-            <a href="/actor/4386204-wendy-guevara" class="cast-card">
+            <a href="/actor/4386204-wendy-guevara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sZGlnAGizi9XeCC5qK09ozZKxRz.jpg" alt="Wendy Guevara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wendy Guevara</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

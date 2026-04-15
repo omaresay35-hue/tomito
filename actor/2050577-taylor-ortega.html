@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/974573-another-simple-favor">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/974573-another-simple-favor.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zboCGZ4aIqPMd7VFI4HWnmc7KYJ.jpg" alt="Another Simple Favor — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Another Simple Favor</div></div>
-    </a>    <a class="card" href="/movie/1094138-jackpot">
+    </a>    <a class="card" href="/movie/1094138-jackpot.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7vv0NTaQGOO7M5ZMerp1vMFJsby.jpg" alt="Jackpot! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Jackpot!</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/291506-big-mistakes">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/291506-big-mistakes.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mgXTCQ86lV3oudr2KXXO5zGEqIb.jpg" alt="Big Mistakes — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Big Mistakes</div></div>
-    </a>    <a class="card" href="/tv/243316-the-four-seasons">
+    </a>    <a class="card" href="/tv/243316-the-four-seasons.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/w09XeYl096pwES8riRMZwEA9rnh.jpg" alt="The Four Seasons — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Four Seasons</div></div>
-    </a>    <a class="card" href="/tv/214087-universal-basic-guys">
+    </a>    <a class="card" href="/tv/214087-universal-basic-guys.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hdoEXYV82N3wMmWdvFinjyNOCt2.jpg" alt="Universal Basic Guys — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Universal Basic Guys</div></div>
-    </a>    <a class="card" href="/tv/242965-after-midnight">
+    </a>    <a class="card" href="/tv/242965-after-midnight.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7O67hHXEaiW30UQdunBqlyPsfGh.jpg" alt="After Midnight — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">After Midnight</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

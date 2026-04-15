@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,15 +73,15 @@ Description above from the Wikipedia article Fanny Ardant, licensed under CC-BY-
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1001402-back-to-alexandria">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1001402-back-to-alexandria.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gKfOAEEzFqlEntsGD4AVDHkX0Sn.jpg" alt="Back to Alexandria — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Back to Alexandria</div></div>
-    </a>    <a class="card" href="/movie/999151-rachels-game">
+    </a>    <a class="card" href="/movie/999151-rachels-game.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6LNCy3hvtCgsXBkg9FyPCdfWkMb.jpg" alt="Rachel's Game — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Rachel's Game</div></div>
-    </a>    <a class="card" href="/movie/1170824-american-star">
+    </a>    <a class="card" href="/movie/1170824-american-star.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/aFjxI9yMd142au1O74JlUttG4Ki.jpg" alt="American Star — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">American Star</div></div>
@@ -90,13 +90,6 @@ Description above from the Wikipedia article Fanny Ardant, licensed under CC-BY-
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

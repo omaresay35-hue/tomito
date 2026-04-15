@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1417539-alice-in-wonderland">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1417539-alice-in-wonderland.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7wQng3J0vvLBiWfSnjJzkuPnw7l.jpg" alt="Alice in Wonderland — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">3.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Alice in Wonderland</div></div>
-    </a>    <a class="card" href="/movie/1214077-pirates-of-the-barracuda-galaxy">
+    </a>    <a class="card" href="/movie/1214077-pirates-of-the-barracuda-galaxy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/Aqr83BP1Z5zGvbYMOKooBkJtdBh.jpg" alt="Pirates of the Barracuda Galaxy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pirates of the Barracuda Galaxy</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/270483-kombinaciya">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/270483-kombinaciya.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fI9Rhk8irApLZRkUzOsNBo2EGc9.jpg" alt="Kombinaciya — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kombinaciya</div></div>
-    </a>    <a class="card" href="/tv/235503-lada-gold">
+    </a>    <a class="card" href="/tv/235503-lada-gold.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3XDCNC2iU3sX87WPNPEmIt3ELAU.jpg" alt="Lada Gold — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Lada Gold</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

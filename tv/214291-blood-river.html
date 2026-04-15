@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Blood River</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1795152-antoine-reinartz" class="cast-card">
+            <a href="/actor/1795152-antoine-reinartz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/OHGtRqIim2cEHOYKPlbgNOV6Cb.jpg" alt="Antoine Reinartz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Antoine Reinartz</span>
             </a>
-            <a href="/actor/578512-marc-zinga" class="cast-card">
+            <a href="/actor/578512-marc-zinga.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kAX08gkt2rlfnQXgn6ASgjOYOoG.jpg" alt="Marc Zinga" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marc Zinga</span>
             </a>
-            <a href="/actor/1553327-igor-van-dessel" class="cast-card">
+            <a href="/actor/1553327-igor-van-dessel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3aDlkSz44dDSLoNPbJweOCGPCr5.jpg" alt="Igor van Dessel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Igor van Dessel</span>
             </a>
-            <a href="/actor/4898874-emma-brandau" class="cast-card">
+            <a href="/actor/4898874-emma-brandau.html" class="cast-card">
                 <img src="/favicon.ico" alt="Emma Brandau" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emma Brandau</span>
             </a>
-            <a href="/actor/3000121-matar-diouf" class="cast-card">
+            <a href="/actor/3000121-matar-diouf.html" class="cast-card">
                 <img src="/favicon.ico" alt="Matar Diouf" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matar Diouf</span>
             </a>
-            <a href="/actor/4898877-mouhamet-ndiack-samb" class="cast-card">
+            <a href="/actor/4898877-mouhamet-ndiack-samb.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mouhamet Ndiack Samb" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mouhamet Ndiack Samb</span>
             </a>
-            <a href="/actor/4898878-jeanne-déplace" class="cast-card">
+            <a href="/actor/4898878-jeanne-déplace.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jeanne Déplace" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeanne Déplace</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>رجل التشفير</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1349146-song-jae-rim" class="cast-card">
+            <a href="/actor/1349146-song-jae-rim.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yoGDZ8Dd5zfpoVttMZri2jwKi5i.jpg" alt="Song Jae-rim" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Song Jae-rim</span>
             </a>
-            <a href="/actor/1578882-an-woo-yeon" class="cast-card">
+            <a href="/actor/1578882-an-woo-yeon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jq98Uiwzu5PXQDyG759KoaLtyZe.jpg" alt="An Woo-yeon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>An Woo-yeon</span>
             </a>
-            <a href="/actor/1418840-min-sung-wook" class="cast-card">
+            <a href="/actor/1418840-min-sung-wook.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pgJbsoJlsETvxxpWXTiitE1uUg4.jpg" alt="Min Sung-wook" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Min Sung-wook</span>
             </a>
-            <a href="/actor/2776202-so-hee-jung" class="cast-card">
+            <a href="/actor/2776202-so-hee-jung.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qY2rwtgu32elzSf51J9f1gOIkXO.jpg" alt="So Hee-jung" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>So Hee-jung</span>
             </a>
-            <a href="/actor/2275278-cha-jung-won" class="cast-card">
+            <a href="/actor/2275278-cha-jung-won.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dTlOsFBn4Rlc0zVjDa0cC4qNNLB.jpg" alt="Cha Jung-won" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cha Jung-won</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

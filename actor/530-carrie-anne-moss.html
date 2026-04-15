@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1141182-die-alone">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1141182-die-alone.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dQdIj2OYELhLzECWONY932wGRxA.jpg" alt="Die Alone — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Die Alone</div></div>
-    </a>    <a class="card" href="/movie/1376913-keanu-reeves-the-one-and-only">
+    </a>    <a class="card" href="/movie/1376913-keanu-reeves-the-one-and-only.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zcM3twJ5E75MAz5lGggcU9N0Tf.jpg" alt="Keanu Reeves: The One and Only — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Keanu Reeves: The One and Only</div></div>
-    </a>    <a class="card" href="/movie/1109940-accidental-texan">
+    </a>    <a class="card" href="/movie/1109940-accidental-texan.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6c4v8x9xHHLX5FRTUewLNLwj1M8.jpg" alt="Accidental Texan — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Accidental Texan</div></div>
-    </a>    <a class="card" href="/movie/77-memento">
+    </a>    <a class="card" href="/movie/77-memento.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fKTPH2WvH8nHTXeBYBVhawtRqtR.jpg" alt="Memento — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Memento</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/114479-the-acolyte">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/114479-the-acolyte.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fW2nOB5EXEOh64qufAxeW4AU3AB.jpg" alt="The Acolyte — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Acolyte</div></div>
-    </a>    <a class="card" href="/tv/221300-fubar">
+    </a>    <a class="card" href="/tv/221300-fubar.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6fM34tcGFp3A0csyxJJomknZB4b.jpg" alt="FUBAR — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">FUBAR</div></div>
-    </a>    <a class="card" href="/tv/10494-nowhere-man">
+    </a>    <a class="card" href="/tv/10494-nowhere-man.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bMQ0IDjUs7tLf9XefBQGZ7AkvpP.jpg" alt="Nowhere Man — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Nowhere Man</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

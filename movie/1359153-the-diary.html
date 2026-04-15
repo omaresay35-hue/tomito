@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>El diario</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/238755-irene-azuela" class="cast-card">
+            <a href="/actor/238755-irene-azuela.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pz0kV2DxIYykWTejZ1Wm1FVzqjW.jpg" alt="Irene Azuela" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Irene Azuela</span>
             </a>
-            <a href="/actor/175615-mauricio-ochmann" class="cast-card">
+            <a href="/actor/175615-mauricio-ochmann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h5NuTsPV9HdsjPSuBG4vZtvKtlF.jpg" alt="Mauricio Ochmann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mauricio Ochmann</span>
             </a>
-            <a href="/actor/1050107-leonardo-ortizgris" class="cast-card">
+            <a href="/actor/1050107-leonardo-ortizgris.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wHcbad4Jc6ZDh9IcqtV3OWasZG4.jpg" alt="Leonardo Ortizgris" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leonardo Ortizgris</span>
             </a>
-            <a href="/actor/3599596-isabella-arroyo" class="cast-card">
+            <a href="/actor/3599596-isabella-arroyo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Isabella Arroyo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isabella Arroyo</span>
             </a>
-            <a href="/actor/2030459-yoshira-escárrega" class="cast-card">
+            <a href="/actor/2030459-yoshira-escárrega.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w8Ocp92FdaEVT8NDgEbUONfbyCr.jpg" alt="Yoshira Escárrega" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshira Escárrega</span>
             </a>
-            <a href="/actor/961830-sofía-álvarez" class="cast-card">
+            <a href="/actor/961830-sofía-álvarez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ncx2AgdpjgnQJzTfQnwtdxgvukC.jpg" alt="Sofía Álvarez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sofía Álvarez</span>
             </a>
-            <a href="/actor/4555368-juan-acosta" class="cast-card">
+            <a href="/actor/4555368-juan-acosta.html" class="cast-card">
                 <img src="/favicon.ico" alt="Juan Acosta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juan Acosta</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

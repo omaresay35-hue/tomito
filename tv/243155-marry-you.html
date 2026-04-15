@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>لنتزوج</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1330446-lee-yi-kyung" class="cast-card">
+            <a href="/actor/1330446-lee-yi-kyung.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/arIQjEhzxihRJvkOJjIksPA5EZM.jpg" alt="Lee Yi-kyung" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Yi-kyung</span>
             </a>
-            <a href="/actor/144134-jo-soo-min" class="cast-card">
+            <a href="/actor/144134-jo-soo-min.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9kwxRPk3LBktBkiLw6fB4hQmrBR.jpg" alt="Jo Soo-min" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jo Soo-min</span>
             </a>
-            <a href="/actor/2027339-koo-jun-hoe" class="cast-card">
+            <a href="/actor/2027339-koo-jun-hoe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zYL2UB1sqPhk24OD2vwAnWc9BVn.jpg" alt="Koo Jun-hoe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koo Jun-hoe</span>
             </a>
-            <a href="/actor/2068707-ji-su-yeon" class="cast-card">
+            <a href="/actor/2068707-ji-su-yeon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kTo0JM9pxm0FZj0Kj4JWrM3tTPW.jpg" alt="Ji Su-yeon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ji Su-yeon</span>
             </a>
-            <a href="/actor/572172-woo-hyeon" class="cast-card">
+            <a href="/actor/572172-woo-hyeon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aehiya292g9c9T9FmCJ6kz5smSU.jpg" alt="Woo Hyeon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Woo Hyeon</span>
             </a>
-            <a href="/actor/5075288-김미려" class="cast-card">
+            <a href="/actor/5075288-김미려.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wCGmU0WAQ7IlDUbx8IzJrXYK1PY.jpg" alt="김미려" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>김미려</span>
             </a>
-            <a href="/actor/6073378-백동현" class="cast-card">
+            <a href="/actor/6073378-백동현.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gaM17QkRSsg6TGmYMK106romWT4.jpg" alt="백동현" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>백동현</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

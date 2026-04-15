@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Home Turf</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/59750-nikki-deloach" class="cast-card">
+            <a href="/actor/59750-nikki-deloach.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dGL9llK6Q0rBrMJecmP36bZjdDp.jpg" alt="Nikki DeLoach" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nikki DeLoach</span>
             </a>
-            <a href="/actor/232525-warren-christie" class="cast-card">
+            <a href="/actor/232525-warren-christie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mUr3wvtwbWORU2yk4F0pJO1e8ia.jpg" alt="Warren Christie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Warren Christie</span>
             </a>
-            <a href="/actor/135529-yolanda-stange" class="cast-card">
+            <a href="/actor/135529-yolanda-stange.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/12jOYy5HivapQb161JHYGPSkwvg.jpg" alt="Yolanda Stange" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yolanda Stange</span>
             </a>
-            <a href="/actor/4777630-louis-boakye" class="cast-card">
+            <a href="/actor/4777630-louis-boakye.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vg4DQ9RhL5tu8xlOP15LTY0DjEy.jpg" alt="Louis Boakye" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louis Boakye</span>
             </a>
-            <a href="/actor/2560479-tanner-mckay" class="cast-card">
+            <a href="/actor/2560479-tanner-mckay.html" class="cast-card">
                 <img src="/favicon.ico" alt="Tanner McKay" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tanner McKay</span>
             </a>
-            <a href="/actor/2178240-jess-delvizo" class="cast-card">
+            <a href="/actor/2178240-jess-delvizo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jess DelVizo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jess DelVizo</span>
             </a>
-            <a href="/actor/5709603-aja-rytting" class="cast-card">
+            <a href="/actor/5709603-aja-rytting.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rai6Ztn9WYhWWJ83OEx9CCtcuM3.jpg" alt="Aja Rytting" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aja Rytting</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

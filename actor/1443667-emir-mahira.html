@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,15 +71,15 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1401052-tenung">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1401052-tenung.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zOKTUp2ZjzUBIZAayhOnx9QicQr.jpg" alt="Tenung — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Tenung</div></div>
-    </a>    <a class="card" href="/movie/1280089-the-siege-at-thorn-high">
+    </a>    <a class="card" href="/movie/1280089-the-siege-at-thorn-high.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uis9PJkI6WHRczCumsfPFaaUAxm.jpg" alt="The Siege at Thorn High — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Siege at Thorn High</div></div>
-    </a>    <a class="card" href="/movie/1339772-the-devils-bride">
+    </a>    <a class="card" href="/movie/1339772-the-devils-bride.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rRkM4hAoT9wMPsYeHj2SdgJ3lmz.jpg" alt="The Devil's Bride — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Devil's Bride</div></div>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

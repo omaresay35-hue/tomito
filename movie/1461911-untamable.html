@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Indomptables</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/147042-thomas-ngijol" class="cast-card">
+            <a href="/actor/147042-thomas-ngijol.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t1mteWGl9nn3qocsknyeGLSzc5P.jpg" alt="Thomas Ngijol" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thomas Ngijol</span>
             </a>
-            <a href="/actor/3389657-danilo-melande" class="cast-card">
+            <a href="/actor/3389657-danilo-melande.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2VEB2Y5GwQwkhTmOfiGE3LdHwsm.jpg" alt="Danilo Melande" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Danilo Melande</span>
             </a>
-            <a href="/actor/5377687-bienvenu-roland-mvoe" class="cast-card">
+            <a href="/actor/5377687-bienvenu-roland-mvoe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jEJDkommvZY45Ua5wqnwn3BabAu.jpg" alt="Bienvenu Roland Mvoe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bienvenu Roland Mvoe</span>
             </a>
-            <a href="/actor/3523479-thérèse-ngono" class="cast-card">
+            <a href="/actor/3523479-thérèse-ngono.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i0qcO0HPqZbroRIbAKn70AHzxGj.jpg" alt="Thérèse Ngono" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thérèse Ngono</span>
             </a>
-            <a href="/actor/5393517-ariane-ntomba" class="cast-card">
+            <a href="/actor/5393517-ariane-ntomba.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ariane Ntomba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ariane Ntomba</span>
             </a>
-            <a href="/actor/5393523-junior-bessala" class="cast-card">
+            <a href="/actor/5393523-junior-bessala.html" class="cast-card">
                 <img src="/favicon.ico" alt="Junior Bessala" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Junior Bessala</span>
             </a>
-            <a href="/actor/5393525-dimitri-amougou" class="cast-card">
+            <a href="/actor/5393525-dimitri-amougou.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dimitri Amougou" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dimitri Amougou</span>
             </a>
-            <a href="/actor/5393527-christol-le-prince-djomo" class="cast-card">
+            <a href="/actor/5393527-christol-le-prince-djomo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Christol le Prince Djomo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christol le Prince Djomo</span>
             </a>
-            <a href="/actor/5393529-terrence-samba-amougou" class="cast-card">
+            <a href="/actor/5393529-terrence-samba-amougou.html" class="cast-card">
                 <img src="/favicon.ico" alt="Terrence Samba Amougou" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Terrence Samba Amougou</span>
             </a>
-            <a href="/actor/5451462-olivier-fomedjo" class="cast-card">
+            <a href="/actor/5451462-olivier-fomedjo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Olivier Fomedjo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olivier Fomedjo</span>
             </a>
-            <a href="/actor/5451464-gaston-tsinapi" class="cast-card">
+            <a href="/actor/5451464-gaston-tsinapi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gaston Tsinapi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gaston Tsinapi</span>
             </a>
-            <a href="/actor/5451466-janvier-paul-nwind" class="cast-card">
+            <a href="/actor/5451466-janvier-paul-nwind.html" class="cast-card">
                 <img src="/favicon.ico" alt="Janvier Paul Nwind" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Janvier Paul Nwind</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

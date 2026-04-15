@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Wander to Wonder</span>
   </nav>
 
@@ -71,19 +71,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1886830-neil-salvage" class="cast-card">
+            <a href="/actor/1886830-neil-salvage.html" class="cast-card">
                 <img src="/favicon.ico" alt="Neil Salvage" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Neil Salvage</span>
             </a>
-            <a href="/actor/13014-toby-jones" class="cast-card">
+            <a href="/actor/13014-toby-jones.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1qNisdp4f1KstdfvAgYXMdrhwfk.jpg" alt="Toby Jones" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Toby Jones</span>
             </a>
-            <a href="/actor/990064-amanda-lawrence" class="cast-card">
+            <a href="/actor/990064-amanda-lawrence.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n0RmDWYo266XvrNlS0aZCXSOihn.jpg" alt="Amanda Lawrence" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amanda Lawrence</span>
             </a>
-            <a href="/actor/1508027-terence-dunn" class="cast-card">
+            <a href="/actor/1508027-terence-dunn.html" class="cast-card">
                 <img src="/favicon.ico" alt="Terence Dunn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Terence Dunn</span>
             </a></div></section>
@@ -91,13 +91,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>DarkGame</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/21662-ed-westwick" class="cast-card">
+            <a href="/actor/21662-ed-westwick.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sI2M7uu76HUkJk562siAK8vt50.jpg" alt="Ed Westwick" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ed Westwick</span>
             </a>
-            <a href="/actor/4081410-andrew-p-stephen" class="cast-card">
+            <a href="/actor/4081410-andrew-p-stephen.html" class="cast-card">
                 <img src="/favicon.ico" alt="Andrew P. Stephen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrew P. Stephen</span>
             </a>
-            <a href="/actor/2738647-natalya-tsvetkova" class="cast-card">
+            <a href="/actor/2738647-natalya-tsvetkova.html" class="cast-card">
                 <img src="/favicon.ico" alt="Natalya Tsvetkova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natalya Tsvetkova</span>
             </a>
-            <a href="/actor/4417886-lola-wayne" class="cast-card">
+            <a href="/actor/4417886-lola-wayne.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lola Wayne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lola Wayne</span>
             </a>
-            <a href="/actor/3400510-rory-alexander" class="cast-card">
+            <a href="/actor/3400510-rory-alexander.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zNhYuCmGcTQTZFS8KbY3tvdElUk.jpg" alt="Rory Alexander" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rory Alexander</span>
             </a>
-            <a href="/actor/4573226-andrew-mcgillan" class="cast-card">
+            <a href="/actor/4573226-andrew-mcgillan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Andrew McGillan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrew McGillan</span>
             </a>
-            <a href="/actor/3851511-miztli-rose" class="cast-card">
+            <a href="/actor/3851511-miztli-rose.html" class="cast-card">
                 <img src="/favicon.ico" alt="Miztli Rose" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miztli Rose</span>
             </a>
-            <a href="/actor/1287671-rick-yale" class="cast-card">
+            <a href="/actor/1287671-rick-yale.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ueu5fp4IZdqYMiwkSt8OcPeJ0Yw.jpg" alt="Rick Yale" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rick Yale</span>
             </a>
-            <a href="/actor/1282056-anthony-ofoegbu" class="cast-card">
+            <a href="/actor/1282056-anthony-ofoegbu.html" class="cast-card">
                 <img src="/favicon.ico" alt="Anthony Ofoegbu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anthony Ofoegbu</span>
             </a>
-            <a href="/actor/1200855-rose-reynolds" class="cast-card">
+            <a href="/actor/1200855-rose-reynolds.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5E9aCD8YWF52bldd5jAFYVfbqXI.jpg" alt="Rose Reynolds" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rose Reynolds</span>
             </a>
-            <a href="/actor/3130681-polina-pushkareva" class="cast-card">
+            <a href="/actor/3130681-polina-pushkareva.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cvgPS0xPvQmKVGts34vHZlh943L.jpg" alt="Polina Pushkareva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Polina Pushkareva</span>
             </a>
-            <a href="/actor/4417889-joe-urquhart" class="cast-card">
+            <a href="/actor/4417889-joe-urquhart.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/afC0ePzKTDrKEG4leK6pLM7HjAz.jpg" alt="Joe Urquhart" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joe Urquhart</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

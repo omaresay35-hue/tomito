@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>David</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2507851-brandon-engman" class="cast-card">
+            <a href="/actor/2507851-brandon-engman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9PhXVdDPb5NTEvD5dbFfTJnssQw.jpg" alt="Brandon Engman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brandon Engman</span>
             </a>
-            <a href="/actor/1822256-brian-stivale" class="cast-card">
+            <a href="/actor/1822256-brian-stivale.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ggNQronrHaUZnFZeolK0SGfW38V.jpg" alt="Brian Stivale" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brian Stivale</span>
             </a>
-            <a href="/actor/2805492-shahar-taboch" class="cast-card">
+            <a href="/actor/2805492-shahar-taboch.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hpuiheYJrOU4HYczWgCJNeBPWlZ.jpg" alt="Shahar Taboch" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shahar Taboch</span>
             </a>
-            <a href="/actor/1677363-aaron-tavaler" class="cast-card">
+            <a href="/actor/1677363-aaron-tavaler.html" class="cast-card">
                 <img src="/favicon.ico" alt="Aaron Tavaler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aaron Tavaler</span>
             </a>
-            <a href="/actor/5981973-hector" class="cast-card">
+            <a href="/actor/5981973-hector.html" class="cast-card">
                 <img src="/favicon.ico" alt="Hector" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hector</span>
             </a>
-            <a href="/actor/1259893-miri-mesika" class="cast-card">
+            <a href="/actor/1259893-miri-mesika.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v9tqyqIfG6V9Ezix0Bienpco9B5.jpg" alt="Miri Mesika" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miri Mesika</span>
             </a>
-            <a href="/actor/4271307-jack-wagman" class="cast-card">
+            <a href="/actor/4271307-jack-wagman.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jack Wagman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Wagman</span>
             </a>
-            <a href="/actor/5981987-jonathan-shaboo" class="cast-card">
+            <a href="/actor/5981987-jonathan-shaboo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jonathan Shaboo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jonathan Shaboo</span>
             </a>
-            <a href="/actor/5705674-sloan-lucas-muldown" class="cast-card">
+            <a href="/actor/5705674-sloan-lucas-muldown.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4eQoD8TdgDB1UbCRwiyLw2nyYYg.jpg" alt="Sloan Lucas Muldown" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sloan Lucas Muldown</span>
             </a>
-            <a href="/actor/3732705-mike-ciporkin" class="cast-card">
+            <a href="/actor/3732705-mike-ciporkin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mike Ciporkin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mike Ciporkin</span>
             </a>
-            <a href="/actor/4770237-katie-bernstein" class="cast-card">
+            <a href="/actor/4770237-katie-bernstein.html" class="cast-card">
                 <img src="/favicon.ico" alt="Katie Bernstein" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Katie Bernstein</span>
             </a>
-            <a href="/actor/2384065-lauren-daigle" class="cast-card">
+            <a href="/actor/2384065-lauren-daigle.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/56btNdIze3EGyV9tKOF0I13I1Yo.jpg" alt="Lauren Daigle" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lauren Daigle</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

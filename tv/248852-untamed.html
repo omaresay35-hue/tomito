@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>طبيعة جامحة</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/8783-eric-bana" class="cast-card">
+            <a href="/actor/8783-eric-bana.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xIjQVywxkymHbbSO7lD2F9f377W.jpg" alt="Eric Bana" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eric Bana</span>
             </a>
-            <a href="/actor/4783-sam-neill" class="cast-card">
+            <a href="/actor/4783-sam-neill.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iIfuxalf37xUayuGyK0zG7z6WEZ.jpg" alt="Sam Neill" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sam Neill</span>
             </a>
-            <a href="/actor/14892-rosemarie-dewitt" class="cast-card">
+            <a href="/actor/14892-rosemarie-dewitt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/44sxIdGtYN24R14OmnZbCpcd8J8.jpg" alt="Rosemarie DeWitt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rosemarie DeWitt</span>
             </a>
-            <a href="/actor/3174601-lily-santiago" class="cast-card">
+            <a href="/actor/3174601-lily-santiago.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pdGmjeg5YzZQfbUuS3KofQqDHTc.jpg" alt="Lily Santiago" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lily Santiago</span>
             </a>
-            <a href="/actor/85779-wilson-bethel" class="cast-card">
+            <a href="/actor/85779-wilson-bethel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xHLjGi9onJXwHoZALZ9pLBVnH5x.jpg" alt="Wilson Bethel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wilson Bethel</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

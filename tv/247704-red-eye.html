@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Red Eye</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/564035-jing-lusi" class="cast-card">
+            <a href="/actor/564035-jing-lusi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wRHyoIzILvvxCu6jGHhJ6jaPhsn.jpg" alt="Jing Lusi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jing Lusi</span>
             </a>
-            <a href="/actor/16628-martin-compston" class="cast-card">
+            <a href="/actor/16628-martin-compston.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4w5NVp8MWF51bRdcB4A91ecxHnv.jpg" alt="Martin Compston" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Martin Compston</span>
             </a>
-            <a href="/actor/984-nicholas-rowe" class="cast-card">
+            <a href="/actor/984-nicholas-rowe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mAR7cSZO9V9v0fFlDxiKDfvHlkQ.jpg" alt="Nicholas Rowe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicholas Rowe</span>
             </a>
-            <a href="/actor/1431255-trevor-white" class="cast-card">
+            <a href="/actor/1431255-trevor-white.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hqSsJnshRL3rydOrE2coMXRWufP.jpg" alt="Trevor White" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Trevor White</span>
             </a>
-            <a href="/actor/1808578-tom-forbes" class="cast-card">
+            <a href="/actor/1808578-tom-forbes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fuMUmFRoiYCDwzGriK1M5PKUfLU.jpg" alt="Tom Forbes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Forbes</span>
             </a>
-            <a href="/actor/2824297-cash-holland" class="cast-card">
+            <a href="/actor/2824297-cash-holland.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xuZkoBwQquF38a9dqz25srLWmA0.jpg" alt="Cash Holland" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cash Holland</span>
             </a>
-            <a href="/actor/3705003-steph-lacey" class="cast-card">
+            <a href="/actor/3705003-steph-lacey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kcjGwTXpEspBdy1n1A6MchhsLnH.jpg" alt="Steph Lacey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steph Lacey</span>
             </a>
-            <a href="/actor/974063-guy-williams" class="cast-card">
+            <a href="/actor/974063-guy-williams.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mujWfPBlilLt5XnNZQiMR85a6k5.jpg" alt="Guy Williams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Guy Williams</span>
             </a>
-            <a href="/actor/80366-lesley-sharp" class="cast-card">
+            <a href="/actor/80366-lesley-sharp.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oujHtdmwMCyppe9b7QHWJeNFN7i.jpg" alt="Lesley Sharp" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lesley Sharp</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

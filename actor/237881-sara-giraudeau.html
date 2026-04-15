@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1376415-the-money-maker">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1376415-the-money-maker.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8hBGDCNJmBljmKbmFvt6Nk3Feua.jpg" alt="The Money Maker — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Money Maker</div></div>
-    </a>    <a class="card" href="/movie/1289888-french-lover">
+    </a>    <a class="card" href="/movie/1289888-french-lover.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bLqPpqNoKbNbXysIeft1tLIl6KB.jpg" alt="French Lover — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">French Lover</div></div>
-    </a>    <a class="card" href="/movie/1235304-colours-of-time">
+    </a>    <a class="card" href="/movie/1235304-colours-of-time.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vaZBgB1Z3dkdu0LuvId0VoEHCBA.jpg" alt="Colours of Time — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Colours of Time</div></div>
-    </a>    <a class="card" href="/movie/1001473-sur-un-fil">
+    </a>    <a class="card" href="/movie/1001473-sur-un-fil.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gWRMxWPFkKDv5kh8eKkbYSTsITn.jpg" alt="Sur un fil — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sur un fil</div></div>
-    </a>    <a class="card" href="/movie/1102938-jims-story">
+    </a>    <a class="card" href="/movie/1102938-jims-story.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tUqCflwDzyPwmv8J5rUrVLoQUY.jpg" alt="Jim's Story — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Jim's Story</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/208920-everything-is-fine">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/208920-everything-is-fine.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gnClHiuu8TWPzWOVVHC8S94Hzlx.jpg" alt="Everything Is Fine — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Everything Is Fine</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

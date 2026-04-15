@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>My Way</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/6352-jane-fonda" class="cast-card">
+            <a href="/actor/6352-jane-fonda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5Yb3nmRWXXZAxNhfhEuOMdfyVNN.jpg" alt="Jane Fonda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jane Fonda</span>
             </a>
-            <a href="/actor/77260-paul-anka" class="cast-card">
+            <a href="/actor/77260-paul-anka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Qx0tMaYEPAWkUOwOnsnm4lZad5.jpg" alt="Paul Anka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paul Anka</span>
             </a>
-            <a href="/actor/1324766-jacques-revaux" class="cast-card">
+            <a href="/actor/1324766-jacques-revaux.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pGTwPPCZruWoYger4DbYktoHmX3.jpg" alt="Jacques Revaux" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jacques Revaux</span>
             </a>
-            <a href="/actor/82205-ben-harper" class="cast-card">
+            <a href="/actor/82205-ben-harper.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j8z2Btztf9ilF4Z9nuQzC8G4yby.jpg" alt="Ben Harper" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ben Harper</span>
             </a>
-            <a href="/actor/2334522-clara-luciani" class="cast-card">
+            <a href="/actor/2334522-clara-luciani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/GD2Ng21vxEX4i4TbGCpJeT81hu.jpg" alt="Clara Luciani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Clara Luciani</span>
             </a>
-            <a href="/actor/1926633-jean-philippe-rio-py" class="cast-card">
+            <a href="/actor/1926633-jean-philippe-rio-py.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jean-Philippe Rio-Py" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jean-Philippe Rio-Py</span>
             </a>
-            <a href="/actor/960067-ron-mael" class="cast-card">
+            <a href="/actor/960067-ron-mael.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A4pftIQASbhOsjapaNbrq5FtHIo.jpg" alt="Ron Mael" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ron Mael</span>
             </a>
-            <a href="/actor/961004-russell-mael" class="cast-card">
+            <a href="/actor/961004-russell-mael.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bD8deNHzbb6gUsKLlPDrFVllEKw.jpg" alt="Russell Mael" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Russell Mael</span>
             </a>
-            <a href="/actor/115440-sydney-sweeney" class="cast-card">
+            <a href="/actor/115440-sydney-sweeney.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qYiaSl0Eb7G3VaxOg8PxExCFwon.jpg" alt="Sydney Sweeney" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sydney Sweeney</span>
             </a>
-            <a href="/actor/5488-gabriel-yared" class="cast-card">
+            <a href="/actor/5488-gabriel-yared.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kqJzXNKsL5LJU1FZBjobHVSnnjp.jpg" alt="Gabriel Yared" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gabriel Yared</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

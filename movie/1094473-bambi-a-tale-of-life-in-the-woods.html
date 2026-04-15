@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Bambi, l'histoire d'une vie dans les bois</span>
   </nav>
 
@@ -72,15 +72,15 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/145755-mylène-farmer" class="cast-card">
+            <a href="/actor/145755-mylène-farmer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1VWG3F6tzU8cAgy1r42B8f838Gj.jpg" alt="Mylène Farmer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mylène Farmer</span>
             </a>
-            <a href="/actor/12776-senta-berger" class="cast-card">
+            <a href="/actor/12776-senta-berger.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A6vTzs8BVX2XgOofzo6UiThBaoV.jpg" alt="Senta Berger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Senta Berger</span>
             </a>
-            <a href="/actor/223083-arja-koriseva" class="cast-card">
+            <a href="/actor/223083-arja-koriseva.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eKAToKQJOYV2bnGrolL4GEgY8H9.jpg" alt="Arja Koriseva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arja Koriseva</span>
             </a></div></section>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

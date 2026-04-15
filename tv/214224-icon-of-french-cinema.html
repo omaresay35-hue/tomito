@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Icon of French Cinema</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/73937-judith-godrèche" class="cast-card">
+            <a href="/actor/73937-judith-godrèche.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wtoYVeYdi0Uv00eFbtEvUZCdEge.jpg" alt="Judith Godrèche" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Judith Godrèche</span>
             </a>
-            <a href="/actor/3779287-tess-barthélémy" class="cast-card">
+            <a href="/actor/3779287-tess-barthélémy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cU7GhvnL5ZkGQgoeIpoOwISY9Z0.jpg" alt="Tess Barthélémy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tess Barthélémy</span>
             </a>
-            <a href="/actor/1488078-liz-kingsman" class="cast-card">
+            <a href="/actor/1488078-liz-kingsman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sNCFfAVWGe4d4SLlUiNWvLk1Vwe.jpg" alt="Liz Kingsman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liz Kingsman</span>
             </a>
-            <a href="/actor/4195083-gina-cailin" class="cast-card">
+            <a href="/actor/4195083-gina-cailin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gina Cailin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gina Cailin</span>
             </a>
-            <a href="/actor/4195084-alma-struve" class="cast-card">
+            <a href="/actor/4195084-alma-struve.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alma Struve" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alma Struve</span>
             </a>
-            <a href="/actor/2987084-douglas-grauwels" class="cast-card">
+            <a href="/actor/2987084-douglas-grauwels.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rrYX29Iv6O0EykuJyyShBEzu4Xb.jpg" alt="Douglas Grauwels" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Douglas Grauwels</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

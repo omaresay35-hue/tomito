@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1043887-badass-ravi-kumar">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1043887-badass-ravi-kumar.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kqdb3ffSsyRlRjddG0XPpssy5ok.jpg" alt="Badass Ravi Kumar — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Badass Ravi Kumar</div></div>
-    </a>    <a class="card" href="/movie/753522-tera-kya-hoga-lovely">
+    </a>    <a class="card" href="/movie/753522-tera-kya-hoga-lovely.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6YyXQWbKqGjp8M4gQ8tUApPoCys.jpg" alt="Tera Kya Hoga Lovely — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Tera Kya Hoga Lovely</div></div>
-    </a>    <a class="card" href="/movie/206324-bhaag-milkha-bhaag">
+    </a>    <a class="card" href="/movie/206324-bhaag-milkha-bhaag.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bXywc0CEzS1fIshPWWi4V8A58U3.jpg" alt="Bhaag Milkha Bhaag — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Bhaag Milkha Bhaag</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/257669-pill">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/257669-pill.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gyXfVqYIBg1ly8xQuJtf79vM2k8.jpg" alt="Pill — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pill</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

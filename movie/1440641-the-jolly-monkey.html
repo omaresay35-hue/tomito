@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>The Jolly Monkey</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/23790-dominic-keating" class="cast-card">
+            <a href="/actor/23790-dominic-keating.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eRe4BJz9fTztlRKikDRHhmss6ee.jpg" alt="Dominic Keating" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dominic Keating</span>
             </a>
-            <a href="/actor/1226615-jane-hajduk" class="cast-card">
+            <a href="/actor/1226615-jane-hajduk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/le3e2QwdUmri2dKJ8aznI2nYMA0.jpg" alt="Jane Hajduk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jane Hajduk</span>
             </a>
-            <a href="/actor/3215546-courtney-fulk" class="cast-card">
+            <a href="/actor/3215546-courtney-fulk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o2kGfERsSon9ibjSduOOye8w6qp.jpg" alt="Courtney Fulk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Courtney Fulk</span>
             </a>
-            <a href="/actor/5315478-neirin-winter" class="cast-card">
+            <a href="/actor/5315478-neirin-winter.html" class="cast-card">
                 <img src="/favicon.ico" alt="Neirin Winter" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Neirin Winter</span>
             </a>
-            <a href="/actor/1515294-lisa-cole" class="cast-card">
+            <a href="/actor/1515294-lisa-cole.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kYcY2Rd4vAxfSOG7l1iCl5atbBN.jpg" alt="Lisa Cole" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lisa Cole</span>
             </a>
-            <a href="/actor/75755-anthony-jensen" class="cast-card">
+            <a href="/actor/75755-anthony-jensen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4BWRrZ6F2wi99kWJlPSq0wJaKcJ.jpg" alt="Anthony Jensen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anthony Jensen</span>
             </a>
-            <a href="/actor/4869169-landon-jacob-lee" class="cast-card">
+            <a href="/actor/4869169-landon-jacob-lee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tHxEAKTKTTwLPYvMQjnxCzipx9X.jpg" alt="Landon Jacob Lee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Landon Jacob Lee</span>
             </a>
-            <a href="/actor/3592226-aria-surrec" class="cast-card">
+            <a href="/actor/3592226-aria-surrec.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/siWZ70dD6mNLK36MG3rxBvAgXWM.jpg" alt="Aria Surrec" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aria Surrec</span>
             </a>
-            <a href="/actor/1288768-zack-gold" class="cast-card">
+            <a href="/actor/1288768-zack-gold.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qblL0qI0VHHCRlBVKRz1KsSB3w8.jpg" alt="Zack Gold" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zack Gold</span>
             </a>
-            <a href="/actor/3872932-saskia-norman" class="cast-card">
+            <a href="/actor/3872932-saskia-norman.html" class="cast-card">
                 <img src="/favicon.ico" alt="Saskia Norman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saskia Norman</span>
             </a>
-            <a href="/actor/114876-patrick-labyorteaux" class="cast-card">
+            <a href="/actor/114876-patrick-labyorteaux.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dTuCfBnVH8csjSo8FrOdaOjpegA.jpg" alt="Patrick Labyorteaux" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patrick Labyorteaux</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

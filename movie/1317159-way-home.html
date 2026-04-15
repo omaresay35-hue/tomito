@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Vejen hjem</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1018-nikolaj-lie-kaas" class="cast-card">
+            <a href="/actor/1018-nikolaj-lie-kaas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zRu68e0GSwHJC7QOcbO77xIAM9J.jpg" alt="Nikolaj Lie Kaas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nikolaj Lie Kaas</span>
             </a>
-            <a href="/actor/1552847-albert-rudbeck-lindhardt" class="cast-card">
+            <a href="/actor/1552847-albert-rudbeck-lindhardt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iEvh3kr3ZTfxjUdWvXCLPUUsx.jpg" alt="Albert Rudbeck Lindhardt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Albert Rudbeck Lindhardt</span>
             </a>
-            <a href="/actor/2661746-arian-kashef" class="cast-card">
+            <a href="/actor/2661746-arian-kashef.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zXM8gC6kxyXpSKfLe46GNm887xs.jpg" alt="Arian Kashef" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arian Kashef</span>
             </a>
-            <a href="/actor/1458362-besir-zeciri" class="cast-card">
+            <a href="/actor/1458362-besir-zeciri.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/13qjnv0nbIjzshbDEycHEg87Vyi.jpg" alt="Besir Zeciri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Besir Zeciri</span>
             </a>
-            <a href="/actor/1508552-harki-bhambra" class="cast-card">
+            <a href="/actor/1508552-harki-bhambra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5U7u9119kOJV1ELgOv8SamvOAtc.jpg" alt="Harki Bhambra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Harki Bhambra</span>
             </a>
-            <a href="/actor/1171128-tom-austen" class="cast-card">
+            <a href="/actor/1171128-tom-austen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6TC9gW3ZJzrNyFgsYDeWj8V6RYo.jpg" alt="Tom Austen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Austen</span>
             </a>
-            <a href="/actor/3553678-majd-eid" class="cast-card">
+            <a href="/actor/3553678-majd-eid.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pDRhVzW0PLYTYpdH2kYmsH8Ygyi.jpg" alt="Majd Eid" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Majd Eid</span>
             </a>
-            <a href="/actor/4895251-ahmad-al-sukar" class="cast-card">
+            <a href="/actor/4895251-ahmad-al-sukar.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ahmad Al-Sukar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ahmad Al-Sukar</span>
             </a>
-            <a href="/actor/4460-trine-dyrholm" class="cast-card">
+            <a href="/actor/4460-trine-dyrholm.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ntUn5eKFlQxbjPci5A99qJOjulY.jpg" alt="Trine Dyrholm" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Trine Dyrholm</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>C'est le monde à l'envers !</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/82304-michaël-youn" class="cast-card">
+            <a href="/actor/82304-michaël-youn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zSicg5cNaIUXZwkmFQReWy3U5Mf.jpg" alt="Michaël Youn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michaël Youn</span>
             </a>
-            <a href="/actor/81786-barbara-schulz" class="cast-card">
+            <a href="/actor/81786-barbara-schulz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w0vEnFq3NQrMWC9rlgDs8A3H9cz.jpg" alt="Barbara Schulz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Barbara Schulz</span>
             </a>
-            <a href="/actor/24465-éric-elmosnino" class="cast-card">
+            <a href="/actor/24465-éric-elmosnino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tBiMY94OLEUWbBaH7GJtAZ3TY37.jpg" alt="Éric Elmosnino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Éric Elmosnino</span>
             </a>
-            <a href="/actor/54324-valérie-bonneton" class="cast-card">
+            <a href="/actor/54324-valérie-bonneton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tHGojn1vMzGriINazQhMBBcG9u9.jpg" alt="Valérie Bonneton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Valérie Bonneton</span>
             </a>
-            <a href="/actor/78422-yannick-noah" class="cast-card">
+            <a href="/actor/78422-yannick-noah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rZhZ9UWiOVloddog0VNhwGUF4eL.jpg" alt="Yannick Noah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yannick Noah</span>
             </a>
-            <a href="/actor/7693-françois-berléand" class="cast-card">
+            <a href="/actor/7693-françois-berléand.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5TDYSUfCj8vaG5sqJXUU06Cvafa.jpg" alt="François Berléand" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>François Berléand</span>
             </a>
-            <a href="/actor/1907247-maïra-schmitt" class="cast-card">
+            <a href="/actor/1907247-maïra-schmitt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/acfnmF6AZqHGz7qKcpNsrdNA6sr.jpg" alt="Maïra Schmitt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maïra Schmitt</span>
             </a>
-            <a href="/actor/3415954-nathan-gruffy" class="cast-card">
+            <a href="/actor/3415954-nathan-gruffy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cl3HaBRAx7Nz92aYlIK2CcAe7wj.jpg" alt="Nathan Gruffy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nathan Gruffy</span>
             </a>
-            <a href="/actor/5378508-gaspard-lacorne" class="cast-card">
+            <a href="/actor/5378508-gaspard-lacorne.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gaspard Lacorne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gaspard Lacorne</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

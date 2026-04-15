@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>블랙핑크 월드투어 [본 핑크] 인 시네마</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1875840-jisoo" class="cast-card">
+            <a href="/actor/1875840-jisoo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/23qpgi6fFBjybTuIcKItQBEINb5.jpg" alt="JISOO" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>JISOO</span>
             </a>
-            <a href="/actor/1875841-jennie" class="cast-card">
+            <a href="/actor/1875841-jennie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nfd7lswcAPX88TwSRrrFRHEGYX1.jpg" alt="JENNIE" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>JENNIE</span>
             </a>
-            <a href="/actor/1875842-rosé" class="cast-card">
+            <a href="/actor/1875842-rosé.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qAu8cDQto6hbYa3YmVWvEjH4vuM.jpg" alt="ROSÉ" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>ROSÉ</span>
             </a>
-            <a href="/actor/1875844-lisa" class="cast-card">
+            <a href="/actor/1875844-lisa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qI8vV0rh9XWC7FObzEGDRSg4PBN.jpg" alt="LISA" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>LISA</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

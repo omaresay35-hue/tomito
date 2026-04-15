@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ささやくように恋を唄う</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3104695-hana-shimano" class="cast-card">
+            <a href="/actor/3104695-hana-shimano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2YiUCnvIRMEgjMrGoQ5OminkNUo.jpg" alt="Hana Shimano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hana Shimano</span>
             </a>
-            <a href="/actor/1254672-asami-seto" class="cast-card">
+            <a href="/actor/1254672-asami-seto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iKKCPgKrNd4pJ0iBOC1SBZy2Y4Y.jpg" alt="Asami Seto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Asami Seto</span>
             </a>
-            <a href="/actor/4579734-kana-sasakura" class="cast-card">
+            <a href="/actor/4579734-kana-sasakura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AcWrxpVOIhCith2Xm2RlatuWLq5.jpg" alt="Kana Sasakura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kana Sasakura</span>
             </a>
-            <a href="/actor/1281498-mikako-komatsu" class="cast-card">
+            <a href="/actor/1281498-mikako-komatsu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/13tQEZ1tLdOmi7oGoRJ4xep1ODQ.jpg" alt="Mikako Komatsu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mikako Komatsu</span>
             </a>
-            <a href="/actor/1820616-konomi-kohara" class="cast-card">
+            <a href="/actor/1820616-konomi-kohara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3SA4eE579Fqex1qpMPcF4bTRFyT.jpg" alt="Konomi Kohara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Konomi Kohara</span>
             </a>
-            <a href="/actor/1324646-ai-kakuma" class="cast-card">
+            <a href="/actor/1324646-ai-kakuma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o3tQSeeJAeafJNvQs2IKvpKY7av.jpg" alt="Ai Kakuma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ai Kakuma</span>
             </a>
-            <a href="/actor/3177036-yuna-nemoto" class="cast-card">
+            <a href="/actor/3177036-yuna-nemoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pz6bTCv25jHsVhM371Y4B7dZ0d9.jpg" alt="Yuna Nemoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuna Nemoto</span>
             </a>
-            <a href="/actor/1452028-reina-ueda" class="cast-card">
+            <a href="/actor/1452028-reina-ueda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2WV61uVU7y6XGYqNHLMpP0sApdu.jpg" alt="Reina Ueda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reina Ueda</span>
             </a>
-            <a href="/actor/1324927-chika-anzai" class="cast-card">
+            <a href="/actor/1324927-chika-anzai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lk3Az9O67qrXR69rctwDDHWqi9d.jpg" alt="Chika Anzai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chika Anzai</span>
             </a>
-            <a href="/actor/2251986-aoi-koga" class="cast-card">
+            <a href="/actor/2251986-aoi-koga.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uVpwheVV4aPROyY1toYv3v5HSPD.jpg" alt="Aoi Koga" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aoi Koga</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

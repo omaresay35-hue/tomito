@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>穏やか貴族の休暇のすすめ。</span>
   </nav>
 
@@ -72,11 +72,11 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1388751-soma-saito" class="cast-card">
+            <a href="/actor/1388751-soma-saito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8W8Y02Jmjivw0kk5PDih9dqiyd9.jpg" alt="Soma Saito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Soma Saito</span>
             </a>
-            <a href="/actor/1483496-yuuichirou-umehara" class="cast-card">
+            <a href="/actor/1483496-yuuichirou-umehara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lScrvZi4tKKpk3PbnIjLVjHVNJn.jpg" alt="Yuuichirou Umehara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuuichirou Umehara</span>
             </a></div></section>
@@ -84,13 +84,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

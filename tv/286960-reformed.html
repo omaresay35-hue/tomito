@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Le Sens des choses</span>
   </nav>
 
@@ -72,15 +72,15 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1983116-elsa-guedj" class="cast-card">
+            <a href="/actor/1983116-elsa-guedj.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bbjmjpjEBG7M2ZQYrJC83IQ9NzR.jpg" alt="Elsa Guedj" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elsa Guedj</span>
             </a>
-            <a href="/actor/24465-éric-elmosnino" class="cast-card">
+            <a href="/actor/24465-éric-elmosnino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tBiMY94OLEUWbBaH7GJtAZ3TY37.jpg" alt="Éric Elmosnino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Éric Elmosnino</span>
             </a>
-            <a href="/actor/1917498-vidal-arzoni" class="cast-card">
+            <a href="/actor/1917498-vidal-arzoni.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5LyethhEsxOEk1ssyW9V3jYN31B.jpg" alt="Vidal Arzoni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vidal Arzoni</span>
             </a></div></section>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

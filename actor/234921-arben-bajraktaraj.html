@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1246049-dracula">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1246049-dracula.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dYRqA50yd0nB3qBR7AtWEJJQ8q.jpg" alt="Dracula — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dracula</div></div>
-    </a>    <a class="card" href="/movie/861211-in-the-name-of-blood">
+    </a>    <a class="card" href="/movie/861211-in-the-name-of-blood.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4lG3ZiGYNWo4lnOvnbS5afVzNA.jpg" alt="In the Name of Blood — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">In the Name of Blood</div></div>
-    </a>    <a class="card" href="/movie/1080512-pandemonium">
+    </a>    <a class="card" href="/movie/1080512-pandemonium.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/TQ4WcuSgwdSdM7DtBKQdjBDGOZ.jpg" alt="Pandemonium — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pandemonium</div></div>
-    </a>    <a class="card" href="/movie/976734-canary-black">
+    </a>    <a class="card" href="/movie/976734-canary-black.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hhiR6uUbTYYvKoACkdAIQPS5c6f.jpg" alt="Canary Black — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Canary Black</div></div>
-    </a>    <a class="card" href="/movie/1196470-survive">
+    </a>    <a class="card" href="/movie/1196470-survive.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7fR3KxswtY8OHHZuOUB9td58CRX.jpg" alt="Survive — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Survive</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

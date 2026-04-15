@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>忘却バッテリー</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1613352-toshiki-masuda" class="cast-card">
+            <a href="/actor/1613352-toshiki-masuda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oMAk5Pu3aazmwFwiVOgyU7iW5ut.jpg" alt="Toshiki Masuda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Toshiki Masuda</span>
             </a>
-            <a href="/actor/93803-mamoru-miyano" class="cast-card">
+            <a href="/actor/93803-mamoru-miyano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nuok8ueG7k9hPZ09Tpr8e7Qn0ah.jpg" alt="Mamoru Miyano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mamoru Miyano</span>
             </a>
-            <a href="/actor/2220797-yohei-azakami" class="cast-card">
+            <a href="/actor/2220797-yohei-azakami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rLIqw8pIjVIxPb5engrTbu9iOex.jpg" alt="Yohei Azakami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yohei Azakami</span>
             </a>
-            <a href="/actor/1210634-nobunaga-shimazaki" class="cast-card">
+            <a href="/actor/1210634-nobunaga-shimazaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qke5rZusHsjSlvB0NKlJ5dQF5D.jpg" alt="Nobunaga Shimazaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nobunaga Shimazaki</span>
             </a>
-            <a href="/actor/149894-yuki-kaji" class="cast-card">
+            <a href="/actor/149894-yuki-kaji.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8wKdPV11IwowfwoqGqMMNt9hmp6.jpg" alt="Yuki Kaji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuki Kaji</span>
             </a>
-            <a href="/actor/1325033-yoshitaka-yamaya" class="cast-card">
+            <a href="/actor/1325033-yoshitaka-yamaya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jptl2nYlIMSs6oJViWyIWYvyXPj.jpg" alt="Yoshitaka Yamaya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshitaka Yamaya</span>
             </a>
-            <a href="/actor/1279666-takeo-otsuka" class="cast-card">
+            <a href="/actor/1279666-takeo-otsuka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wqeAMR0HOGUPBXz0TCNxDR51cQy.jpg" alt="Takeo Otsuka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takeo Otsuka</span>
             </a>
-            <a href="/actor/1370919-mark-ishii" class="cast-card">
+            <a href="/actor/1370919-mark-ishii.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iH8BhwcYKHtELXjx3yyeARzUrn7.jpg" alt="Mark Ishii" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Ishii</span>
             </a>
-            <a href="/actor/1324472-kengo-kawanishi" class="cast-card">
+            <a href="/actor/1324472-kengo-kawanishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s0CxrO6LixJBgqiHEUjKelAh8ei.jpg" alt="Kengo Kawanishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kengo Kawanishi</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

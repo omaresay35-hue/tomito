@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Aaron Hernandez and the Untold Murders of Bristol</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2511626-aaron-hernandez" class="cast-card">
+            <a href="/actor/2511626-aaron-hernandez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Aaron Hernandez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aaron Hernandez</span>
             </a>
-            <a href="/actor/5640069-brandon-zanauskas" class="cast-card">
+            <a href="/actor/5640069-brandon-zanauskas.html" class="cast-card">
                 <img src="/favicon.ico" alt="Brandon Zanauskas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brandon Zanauskas</span>
             </a>
-            <a href="/actor/5640071-lamare-brooks" class="cast-card">
+            <a href="/actor/5640071-lamare-brooks.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lamare Brooks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lamare Brooks</span>
             </a>
-            <a href="/actor/5640086-alex-bradley" class="cast-card">
+            <a href="/actor/5640086-alex-bradley.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alex Bradley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alex Bradley</span>
             </a>
-            <a href="/actor/5640122-domenic-deangelis" class="cast-card">
+            <a href="/actor/5640122-domenic-deangelis.html" class="cast-card">
                 <img src="/favicon.ico" alt="Domenic DeAngelis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Domenic DeAngelis</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

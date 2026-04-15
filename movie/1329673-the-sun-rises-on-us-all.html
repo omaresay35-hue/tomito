@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>日掛中天</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1569934-xin-zhilei" class="cast-card">
+            <a href="/actor/1569934-xin-zhilei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iiIGXK1MtB6pLpeVlgQi4cM1XWK.jpg" alt="Xin Zhilei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xin Zhilei</span>
             </a>
-            <a href="/actor/1086250-zhang-songwen" class="cast-card">
+            <a href="/actor/1086250-zhang-songwen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rz1mKSiuV5LuY0l0Y6HRGJGBeED.jpg" alt="Zhang Songwen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Songwen</span>
             </a>
-            <a href="/actor/936431-william-feng" class="cast-card">
+            <a href="/actor/936431-william-feng.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tSn5BIRw3Xdj3XYKIycjyNTgl49.jpg" alt="William Feng" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>William Feng</span>
             </a>
-            <a href="/actor/2925140-xue-yuanyuan" class="cast-card">
+            <a href="/actor/2925140-xue-yuanyuan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zFXzHfyI5cLDTBeKGcW9qgFLQdw.jpg" alt="Xue Yuanyuan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xue Yuanyuan</span>
             </a>
-            <a href="/actor/5851727-qiao-linkai" class="cast-card">
+            <a href="/actor/5851727-qiao-linkai.html" class="cast-card">
                 <img src="/favicon.ico" alt="Qiao Linkai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Qiao Linkai</span>
             </a>
-            <a href="/actor/2437705-yi-xinyun" class="cast-card">
+            <a href="/actor/2437705-yi-xinyun.html" class="cast-card">
                 <img src="/favicon.ico" alt="Yi Xinyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yi Xinyun</span>
             </a>
-            <a href="/actor/5851728-ye-peishi" class="cast-card">
+            <a href="/actor/5851728-ye-peishi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ye Peishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ye Peishi</span>
             </a>
-            <a href="/actor/3872261-shan-baozhong" class="cast-card">
+            <a href="/actor/3872261-shan-baozhong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wPsqhLBF47KoLejBxgpf3y9gB3f.jpg" alt="Shan Baozhong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shan Baozhong</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

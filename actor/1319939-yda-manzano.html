@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1337411-obsesyon">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1337411-obsesyon.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/trn8Iz80atofrlCP6VOEFRRacRK.jpg" alt="Obsesyon — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Obsesyon</div></div>
-    </a>    <a class="card" href="/movie/1312871-ang-pintor-at-ang-paraluman">
+    </a>    <a class="card" href="/movie/1312871-ang-pintor-at-ang-paraluman.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kQ3bGwCwMxwwm0wM6faLCYQD6iB.jpg" alt="Ang Pintor At Ang Paraluman — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Ang Pintor At Ang Paraluman</div></div>
-    </a>    <a class="card" href="/movie/1280468-sisid-marino">
+    </a>    <a class="card" href="/movie/1280468-sisid-marino.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1hHCveRsNE1DsBroSjTgyDo81Co.jpg" alt="Sisid Marino — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sisid Marino</div></div>
-    </a>    <a class="card" href="/movie/1280461-dirty-ice-cream">
+    </a>    <a class="card" href="/movie/1280461-dirty-ice-cream.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qrD5DuwYuzdwcT5MAeopA4vZfIN.jpg" alt="Dirty Ice Cream — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dirty Ice Cream</div></div>
-    </a>    <a class="card" href="/movie/1226306-katas">
+    </a>    <a class="card" href="/movie/1226306-katas.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/A4STltM7G30jZmagHnfmoXHzqi0.jpg" alt="Katas — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Katas</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/234785-halo-halo-x">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/234785-halo-halo-x.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nnaKYuPAg6flBjZGfhlIUb1q7Jt.jpg" alt="Halo-halo X — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Halo-halo X</div></div>
-    </a>    <a class="card" href="/tv/226761-sex-hub">
+    </a>    <a class="card" href="/tv/226761-sex-hub.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/n129IC6sf046sCWZgXsa2DMRxSO.jpg" alt="Sex Hub — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sex Hub</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

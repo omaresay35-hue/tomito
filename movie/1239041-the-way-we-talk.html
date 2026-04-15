@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>看我今天怎麼說</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1809911-neo-yau" class="cast-card">
+            <a href="/actor/1809911-neo-yau.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uoyHHtSNdoxMxsb507OMniYKN8e.jpg" alt="Neo Yau" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Neo Yau</span>
             </a>
-            <a href="/actor/3102289-chung-suet-ying" class="cast-card">
+            <a href="/actor/3102289-chung-suet-ying.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kAWBcYbbOYe0u1s5bAjVKasUYs2.jpg" alt="Chung Suet-ying" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chung Suet-ying</span>
             </a>
-            <a href="/actor/4511953-marco-ng" class="cast-card">
+            <a href="/actor/4511953-marco-ng.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1KB31pRE3mysKyiWjFY9MEWyEwF.jpg" alt="Marco Ng" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marco Ng</span>
             </a>
-            <a href="/actor/5374140-nathan-chun-hei-cheng" class="cast-card">
+            <a href="/actor/5374140-nathan-chun-hei-cheng.html" class="cast-card">
                 <img src="/favicon.ico" alt="Nathan Chun-Hei Cheng" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nathan Chun-Hei Cheng</span>
             </a>
-            <a href="/actor/5374142-wai-hang-wong" class="cast-card">
+            <a href="/actor/5374142-wai-hang-wong.html" class="cast-card">
                 <img src="/favicon.ico" alt="Wai-Hang Wong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wai-Hang Wong</span>
             </a>
-            <a href="/actor/3509141-hathy-law" class="cast-card">
+            <a href="/actor/3509141-hathy-law.html" class="cast-card">
                 <img src="/favicon.ico" alt="Hathy Law" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hathy Law</span>
             </a>
-            <a href="/actor/2566151-yuen-yee-man" class="cast-card">
+            <a href="/actor/2566151-yuen-yee-man.html" class="cast-card">
                 <img src="/favicon.ico" alt="Yuen Yee-Man" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuen Yee-Man</span>
             </a>
-            <a href="/actor/231732-adam-wong" class="cast-card">
+            <a href="/actor/231732-adam-wong.html" class="cast-card">
                 <img src="/favicon.ico" alt="Adam Wong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Wong</span>
             </a>
-            <a href="/actor/1627425-panther-chan-lui" class="cast-card">
+            <a href="/actor/1627425-panther-chan-lui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i2VFlGTfMSqHWv3LamEowpqx5CV.jpg" alt="Panther Chan Lui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Panther Chan Lui</span>
             </a>
-            <a href="/actor/2470837-kate-reilly" class="cast-card">
+            <a href="/actor/2470837-kate-reilly.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/95tUqpjWjOaOjL2Ncv34WepVJw2.jpg" alt="Kate Reilly" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kate Reilly</span>
             </a>
-            <a href="/actor/3836792-ivy-pang" class="cast-card">
+            <a href="/actor/3836792-ivy-pang.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ivy Pang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ivy Pang</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

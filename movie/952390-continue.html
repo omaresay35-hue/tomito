@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Continue</span>
   </nav>
 
@@ -71,39 +71,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1352022-nadine-crocker" class="cast-card">
+            <a href="/actor/1352022-nadine-crocker.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bSUJJ8h0AJjZJ5AiQaRNSx9hz7A.jpg" alt="Nadine Crocker" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nadine Crocker</span>
             </a>
-            <a href="/actor/79795-shiloh-fernandez" class="cast-card">
+            <a href="/actor/79795-shiloh-fernandez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lS3I6nLQ3VxmE6KRmjoXDskDBnn.jpg" alt="Shiloh Fernandez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shiloh Fernandez</span>
             </a>
-            <a href="/actor/124644-lio-tipton" class="cast-card">
+            <a href="/actor/124644-lio-tipton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jwLTUddwx1vGVcrpEGH87vVJsnY.jpg" alt="Lio Tipton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lio Tipton</span>
             </a>
-            <a href="/actor/1218223-kat-foster" class="cast-card">
+            <a href="/actor/1218223-kat-foster.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rWSlHrbQb2kfc0x0pH595iINsSh.jpg" alt="Kat Foster" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kat Foster</span>
             </a>
-            <a href="/actor/25933-emily-deschanel" class="cast-card">
+            <a href="/actor/25933-emily-deschanel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lU6NK06ZLfNSA8pV5flxOp4YBXN.jpg" alt="Emily Deschanel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emily Deschanel</span>
             </a>
-            <a href="/actor/46814-dale-dickey" class="cast-card">
+            <a href="/actor/46814-dale-dickey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jjGeQ4hJTXftegRHmrxK2IZnf9A.jpg" alt="Dale Dickey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dale Dickey</span>
             </a>
-            <a href="/actor/1487983-anthony-caravella" class="cast-card">
+            <a href="/actor/1487983-anthony-caravella.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4uwfneKR5FVh7pF2qmvMTzDocVf.jpg" alt="Anthony Caravella" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anthony Caravella</span>
             </a>
-            <a href="/actor/1712275-annapurna-sriram" class="cast-card">
+            <a href="/actor/1712275-annapurna-sriram.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4gCcVGVOE5RNkj4laxDihjgtfGq.jpg" alt="Annapurna Sriram" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Annapurna Sriram</span>
             </a>
-            <a href="/actor/1648859-jay-seals" class="cast-card">
+            <a href="/actor/1648859-jay-seals.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zxSCmnsaKPwbCfFXSyPs6YKlJhi.jpg" alt="Jay Seals" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jay Seals</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

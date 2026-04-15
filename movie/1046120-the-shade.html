@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>The Shade</span>
   </nav>
 
@@ -71,43 +71,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2198944-chris-galust" class="cast-card">
+            <a href="/actor/2198944-chris-galust.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7ZUFspn1ls98khjIqulda3X7Tgt.jpg" alt="Chris Galust" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Galust</span>
             </a>
-            <a href="/actor/3009420-mariel-molino" class="cast-card">
+            <a href="/actor/3009420-mariel-molino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sgx4XfRpS2YkkG6g3gMXz928iNA.jpg" alt="Mariel Molino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariel Molino</span>
             </a>
-            <a href="/actor/1737253-dylan-mctee" class="cast-card">
+            <a href="/actor/1737253-dylan-mctee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wVPAawiEjIB1oS8MONDm5Bqwc9r.jpg" alt="Dylan McTee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dylan McTee</span>
             </a>
-            <a href="/actor/60034-laura-benanti" class="cast-card">
+            <a href="/actor/60034-laura-benanti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/meoraoVzlCExK6RUFX2GqVNv0vw.jpg" alt="Laura Benanti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laura Benanti</span>
             </a>
-            <a href="/actor/2839-brendan-sexton-iii" class="cast-card">
+            <a href="/actor/2839-brendan-sexton-iii.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/36EvFVDqOKzUa91ixgGEAUPgnqA.jpg" alt="Brendan Sexton III" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brendan Sexton III</span>
             </a>
-            <a href="/actor/66101-michael-boatman" class="cast-card">
+            <a href="/actor/66101-michael-boatman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r1zMBznI1N24SmNGdFzZCjptVwP.jpg" alt="Michael Boatman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Boatman</span>
             </a>
-            <a href="/actor/3776980-sam-duncan" class="cast-card">
+            <a href="/actor/3776980-sam-duncan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sam Duncan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sam Duncan</span>
             </a>
-            <a href="/actor/1590310-germain-arroyo" class="cast-card">
+            <a href="/actor/1590310-germain-arroyo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8OWsX6qdMIKL8L8wa8iIeuDGSAz.jpg" alt="Germain Arroyo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Germain Arroyo</span>
             </a>
-            <a href="/actor/2600823-manny-dunn" class="cast-card">
+            <a href="/actor/2600823-manny-dunn.html" class="cast-card">
                 <img src="/favicon.ico" alt="Manny Dunn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manny Dunn</span>
             </a>
-            <a href="/actor/3777149-charlotte-stickles" class="cast-card">
+            <a href="/actor/3777149-charlotte-stickles.html" class="cast-card">
                 <img src="/favicon.ico" alt="Charlotte Stickles" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charlotte Stickles</span>
             </a></div></section>
@@ -115,13 +115,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

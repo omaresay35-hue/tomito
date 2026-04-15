@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/991610-invasion">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/991610-invasion.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wgg7V0xYmkKZjLQtYkToz4jDg1F.jpg" alt="Invasion — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Invasion</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/292664-the-kollective">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/292664-the-kollective.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qqCDLvhm7czEf739tiwganFK23t.jpg" alt="The Kollective — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Kollective</div></div>
-    </a>    <a class="card" href="/tv/257779-the-hunt">
+    </a>    <a class="card" href="/tv/257779-the-hunt.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yXoY0lZ6bTrJ3P3lQid8ZgqVEUU.jpg" alt="The Hunt — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Hunt</div></div>
-    </a>    <a class="card" href="/tv/214945-fallen">
+    </a>    <a class="card" href="/tv/214945-fallen.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7bDBqaLuWVqB3zN1p5OWnw7tB4f.jpg" alt="Fallen — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fallen</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

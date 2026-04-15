@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Promis le ciel</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/132429-aïssa-maïga" class="cast-card">
+            <a href="/actor/132429-aïssa-maïga.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9FF3z5T9W9FsSNJ367YlwpfGiqM.jpg" alt="Aïssa Maïga" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aïssa Maïga</span>
             </a>
-            <a href="/actor/3925337-laëtitia-ky" class="cast-card">
+            <a href="/actor/3925337-laëtitia-ky.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/c9LSLV56k4EtumDjtYs6D5K3jSB.jpg" alt="Laëtitia Ky" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laëtitia Ky</span>
             </a>
-            <a href="/actor/4487775-déborah-naney" class="cast-card">
+            <a href="/actor/4487775-déborah-naney.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iPmbu5ADixpol7tnTHyXDowWjL5.jpg" alt="Déborah Naney" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Déborah Naney</span>
             </a>
-            <a href="/actor/134100-mohamed-grayaâ" class="cast-card">
+            <a href="/actor/134100-mohamed-grayaâ.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/auIURJ3XtBknNgJSyrJEpJ242FB.jpg" alt="Mohamed Grayaâ" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mohamed Grayaâ</span>
             </a>
-            <a href="/actor/5403554-foued-zaazaa" class="cast-card">
+            <a href="/actor/5403554-foued-zaazaa.html" class="cast-card">
                 <img src="/favicon.ico" alt="Foued Zaazaa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Foued Zaazaa</span>
             </a>
-            <a href="/actor/5403553-estelle-dogbo" class="cast-card">
+            <a href="/actor/5403553-estelle-dogbo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Estelle Dogbo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Estelle Dogbo</span>
             </a>
-            <a href="/actor/5403555-touré-blamassi" class="cast-card">
+            <a href="/actor/5403555-touré-blamassi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Touré Blamassi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Touré Blamassi</span>
             </a>
-            <a href="/actor/4487774-sophie-tankou" class="cast-card">
+            <a href="/actor/4487774-sophie-tankou.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w8q9qJhJnP3ZgsDqfDhKFMjp7dE.jpg" alt="Sophie Tankou" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sophie Tankou</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

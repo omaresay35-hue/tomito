@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1019828-a-place-called-silence">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1019828-a-place-called-silence.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/psLDOC1iq5BfMLYUiu0Lp2We5uD.jpg" alt="A Place Called Silence — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Place Called Silence</div></div>
-    </a>    <a class="card" href="/movie/1029244-the-chronicles-of-libidoists">
+    </a>    <a class="card" href="/movie/1029244-the-chronicles-of-libidoists.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lj60EOZ1LvEmN42Vcl1WAncwJ0N.jpg" alt="The Chronicles of Libidoists — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Chronicles of Libidoists</div></div>
-    </a>    <a class="card" href="/movie/942074-fly-me-to-the-moon">
+    </a>    <a class="card" href="/movie/942074-fly-me-to-the-moon.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/k3ngePjqXqiJNJAzh7DjZWylOHF.jpg" alt="Fly Me to the Moon — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fly Me to the Moon</div></div>
-    </a>    <a class="card" href="/movie/1166073-breaking-and-re-entering">
+    </a>    <a class="card" href="/movie/1166073-breaking-and-re-entering.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cPn85RMPzt8S2SiAxKAFOpzMp2e.jpg" alt="Breaking and Re-entering — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Breaking and Re-entering</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/218177-at-the-moment">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/218177-at-the-moment.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qe6qvFD01iYxLEnSDVC3IE2m3gi.jpg" alt="At the Moment — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">At the Moment</div></div>
-    </a>    <a class="card" href="/tv/221847-living">
+    </a>    <a class="card" href="/tv/221847-living.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/A7BGl85huzvUFdcdy5iui5rSdaB.jpg" alt="Living — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Living</div></div>
-    </a>    <a class="card" href="/tv/158876-copycat-killer">
+    </a>    <a class="card" href="/tv/158876-copycat-killer.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xSkcZk9bh1wIkP2vpMA47Bdl6UI.jpg" alt="Copycat Killer — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Copycat Killer</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

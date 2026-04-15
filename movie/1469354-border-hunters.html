@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Border Hunters</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/14329-dean-norris" class="cast-card">
+            <a href="/actor/14329-dean-norris.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mKRrEbsxAX3ro700HsViFArRM7l.jpg" alt="Dean Norris" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dean Norris</span>
             </a>
-            <a href="/actor/2000659-julio-macias" class="cast-card">
+            <a href="/actor/2000659-julio-macias.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uyCFrzrUXfNn3VMz5xhsCr6EkFR.jpg" alt="Julio Macias" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julio Macias</span>
             </a>
-            <a href="/actor/2612357-danforth-comins" class="cast-card">
+            <a href="/actor/2612357-danforth-comins.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qkmqseaHqrtX7zBduJ1z0ypPKEl.jpg" alt="Danforth Comins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Danforth Comins</span>
             </a>
-            <a href="/actor/1309812-ramón-medína" class="cast-card">
+            <a href="/actor/1309812-ramón-medína.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ramón Medína" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ramón Medína</span>
             </a>
-            <a href="/actor/2127045-pía-sanz" class="cast-card">
+            <a href="/actor/2127045-pía-sanz.html" class="cast-card">
                 <img src="/favicon.ico" alt="Pía Sanz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pía Sanz</span>
             </a>
-            <a href="/actor/985456-eligio-meléndez" class="cast-card">
+            <a href="/actor/985456-eligio-meléndez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9fxr0eAMl2DXVv8as4juIGXkD08.jpg" alt="Eligio Meléndez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eligio Meléndez</span>
             </a>
-            <a href="/actor/5390894-christina-urias" class="cast-card">
+            <a href="/actor/5390894-christina-urias.html" class="cast-card">
                 <img src="/favicon.ico" alt="Christina Urias" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christina Urias</span>
             </a>
-            <a href="/actor/1488706-luis-velázquez" class="cast-card">
+            <a href="/actor/1488706-luis-velázquez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Luis Velázquez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luis Velázquez</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

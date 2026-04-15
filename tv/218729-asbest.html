@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Asbest</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3883170-lulu-hacke" class="cast-card">
+            <a href="/actor/3883170-lulu-hacke.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lulu Hacke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lulu Hacke</span>
             </a>
-            <a href="/actor/7805-wotan-wilke-möhring" class="cast-card">
+            <a href="/actor/7805-wotan-wilke-möhring.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1kBAiXcXhaZBKw3UZ9JxCT3XEMp.jpg" alt="Wotan Wilke Möhring" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wotan Wilke Möhring</span>
             </a>
-            <a href="/actor/3883172-koder-alian" class="cast-card">
+            <a href="/actor/3883172-koder-alian.html" class="cast-card">
                 <img src="/favicon.ico" alt="Koder Alian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koder Alian</span>
             </a>
-            <a href="/actor/683-jasmin-tabatabai" class="cast-card">
+            <a href="/actor/683-jasmin-tabatabai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dndUImgq5o664IzodTpK9lngzQY.jpg" alt="Jasmin Tabatabai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jasmin Tabatabai</span>
             </a>
-            <a href="/actor/5850-kida-khodr-ramadan" class="cast-card">
+            <a href="/actor/5850-kida-khodr-ramadan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uAUTW5TGcOoNlpGbciEzEAMb8CH.jpg" alt="Kida Khodr Ramadan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kida Khodr Ramadan</span>
             </a>
-            <a href="/actor/3933-stipe-erceg" class="cast-card">
+            <a href="/actor/3933-stipe-erceg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mqOqZfzp1QpOHrkPB9VNvVZ3Nqn.jpg" alt="Stipe Erceg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stipe Erceg</span>
             </a>
-            <a href="/actor/5847-david-kross" class="cast-card">
+            <a href="/actor/5847-david-kross.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jRFxrLwiroTbGedG9uyXZghgxlX.jpg" alt="David Kross" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Kross</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

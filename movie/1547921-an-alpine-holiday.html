@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>An Alpine Holiday</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/122888-ashley-williams" class="cast-card">
+            <a href="/actor/122888-ashley-williams.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kaZQMxVAX2Z0M0BKphkg7rT54pi.jpg" alt="Ashley Williams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ashley Williams</span>
             </a>
-            <a href="/actor/1037844-laci-j-mailey" class="cast-card">
+            <a href="/actor/1037844-laci-j-mailey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bK2nRgGeC0l8E6Ug3LTFy2ijqyF.jpg" alt="Laci J. Mailey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laci J. Mailey</span>
             </a>
-            <a href="/actor/2834402-julien-marlon-samani" class="cast-card">
+            <a href="/actor/2834402-julien-marlon-samani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4ellxKg5sQJJs0NEwLP0mzJG18E.jpg" alt="Julien Marlon Samani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julien Marlon Samani</span>
             </a>
-            <a href="/actor/2532985-véronique-frumy" class="cast-card">
+            <a href="/actor/2532985-véronique-frumy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aXVKP2v4y2KIj6yVkctdk6PawWw.jpg" alt="Véronique Frumy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Véronique Frumy</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

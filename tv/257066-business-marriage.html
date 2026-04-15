@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ビジネス婚―好きになったら離婚します―</span>
   </nav>
 
@@ -74,23 +74,23 @@ Despite feeling bewildered by the sudden proposal, the two, who share common int
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2606690-yuuka-sugai" class="cast-card">
+            <a href="/actor/2606690-yuuka-sugai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j4Ue5cwLqhR98FzkX2VgHbCyqh7.jpg" alt="Yuuka Sugai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuuka Sugai</span>
             </a>
-            <a href="/actor/1895290-takuya-kusakawa" class="cast-card">
+            <a href="/actor/1895290-takuya-kusakawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9N4lQ0OP9feKrs8nCL49GpSWk1n.jpg" alt="Takuya Kusakawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takuya Kusakawa</span>
             </a>
-            <a href="/actor/3139771-inoue-sora" class="cast-card">
+            <a href="/actor/3139771-inoue-sora.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lnKcOZkuThPCrsBvVZBiLOMOZld.jpg" alt="Inoue Sora" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Inoue Sora</span>
             </a>
-            <a href="/actor/1732479-natsumi-okamoto" class="cast-card">
+            <a href="/actor/1732479-natsumi-okamoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7i2aN3CTtkpqb7S0Moangt3RM17.jpg" alt="Natsumi Okamoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natsumi Okamoto</span>
             </a>
-            <a href="/actor/1015824-ayame-misaki" class="cast-card">
+            <a href="/actor/1015824-ayame-misaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7ViHWgrPifqwjMTGrzS7XI32VZs.jpg" alt="Ayame Misaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayame Misaki</span>
             </a></div></section>
@@ -98,13 +98,6 @@ Despite feeling bewildered by the sudden proposal, the two, who share common int
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

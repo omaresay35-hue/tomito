@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Merteuil</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1021689-anamaria-vartolomei" class="cast-card">
+            <a href="/actor/1021689-anamaria-vartolomei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jRU3453OyqirChIl2EEevhliAjq.jpg" alt="Anamaria Vartolomei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anamaria Vartolomei</span>
             </a>
-            <a href="/actor/9824-diane-kruger" class="cast-card">
+            <a href="/actor/9824-diane-kruger.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o5gVowcjVw4ThYi0L3883Y4X7kH.jpg" alt="Diane Kruger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Diane Kruger</span>
             </a>
-            <a href="/actor/83797-vincent-lacoste" class="cast-card">
+            <a href="/actor/83797-vincent-lacoste.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dacX50IDdHxfRTjyDeqQUXCVMkp.jpg" alt="Vincent Lacoste" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vincent Lacoste</span>
             </a>
-            <a href="/actor/2417980-lucas-bravo" class="cast-card">
+            <a href="/actor/2417980-lucas-bravo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uO6vMlJBMASyOQMisvnPehjsfJB.jpg" alt="Lucas Bravo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucas Bravo</span>
             </a>
-            <a href="/actor/1800818-noée-abita" class="cast-card">
+            <a href="/actor/1800818-noée-abita.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3dyRKujOLn1VsCo9ZQ6HOwMj4Ew.jpg" alt="Noée Abita" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Noée Abita</span>
             </a>
-            <a href="/actor/3551190-julien-de-saint-jean" class="cast-card">
+            <a href="/actor/3551190-julien-de-saint-jean.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7LgzmUUyAPSRhAT5a5v7l6aGviH.jpg" alt="Julien de Saint Jean" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julien de Saint Jean</span>
             </a>
-            <a href="/actor/1582907-fantine-harduin" class="cast-card">
+            <a href="/actor/1582907-fantine-harduin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1OPDUr31sXOevwYnCWsaKzCcQfV.jpg" alt="Fantine Harduin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fantine Harduin</span>
             </a>
-            <a href="/actor/3841400-samuel-kircher" class="cast-card">
+            <a href="/actor/3841400-samuel-kircher.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jU41TUM7swLrvV0ToX4sPLqxgDV.jpg" alt="Samuel Kircher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samuel Kircher</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

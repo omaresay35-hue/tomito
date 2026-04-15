@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>English Teacher</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1071699-brian-jordan-alvarez" class="cast-card">
+            <a href="/actor/1071699-brian-jordan-alvarez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fKOHVfG2TCmzcRdJhjkUgL2LJcz.jpg" alt="Brian Jordan Alvarez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brian Jordan Alvarez</span>
             </a>
-            <a href="/actor/1395056-stephanie-koenig" class="cast-card">
+            <a href="/actor/1395056-stephanie-koenig.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8NI5Xhgzxr4SSpN4frWDH2yMWod.jpg" alt="Stephanie Koenig" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephanie Koenig</span>
             </a>
-            <a href="/actor/15029-enrico-colantoni" class="cast-card">
+            <a href="/actor/15029-enrico-colantoni.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yxxy8IrGRwnRPbLmgyfwF26Feve.jpg" alt="Enrico Colantoni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Enrico Colantoni</span>
             </a>
-            <a href="/actor/1334289-sean-patton" class="cast-card">
+            <a href="/actor/1334289-sean-patton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iXbARsXtKwvPpD4LLqFAKlIxVb7.jpg" alt="Sean Patton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sean Patton</span>
             </a>
-            <a href="/actor/2109071-carmen-christopher" class="cast-card">
+            <a href="/actor/2109071-carmen-christopher.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4RBv7ZNkB0Ayk6Z3HLwLppywr4T.jpg" alt="Carmen Christopher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carmen Christopher</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

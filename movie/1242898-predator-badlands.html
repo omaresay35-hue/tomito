@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>المفترس: الأراضي القاحلة</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/18050-elle-fanning" class="cast-card">
+            <a href="/actor/18050-elle-fanning.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e8CUyxQSE99y5IOfzSLtHC0B0Ch.jpg" alt="Elle Fanning" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elle Fanning</span>
             </a>
-            <a href="/actor/3223391-dimitrius-schuster-koloamatangi" class="cast-card">
+            <a href="/actor/3223391-dimitrius-schuster-koloamatangi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rmIZTT1AZK3C9fYhEOtGKtSrF8E.jpg" alt="Dimitrius Schuster-Koloamatangi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dimitrius Schuster-Koloamatangi</span>
             </a>
-            <a href="/actor/1891826-ravi-narayan" class="cast-card">
+            <a href="/actor/1891826-ravi-narayan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iM9dr3AjXTt7IGpRzZlQVG7hINa.jpg" alt="Ravi Narayan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ravi Narayan</span>
             </a>
-            <a href="/actor/2253146-michael-homick" class="cast-card">
+            <a href="/actor/2253146-michael-homick.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a7IFYVtmNvBMJ7c20BVMc0LX6PT.jpg" alt="Michael Homick" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Homick</span>
             </a>
-            <a href="/actor/1636658-stefan-grube" class="cast-card">
+            <a href="/actor/1636658-stefan-grube.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7SJ13Np7xL20YJjPiUbM7PshdYA.jpg" alt="Stefan Grube" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stefan Grube</span>
             </a>
-            <a href="/actor/1440649-reuben-de-jong" class="cast-card">
+            <a href="/actor/1440649-reuben-de-jong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/opjLobu1AKKspKfYzY6AXrjUglt.jpg" alt="Reuben De Jong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reuben De Jong</span>
             </a>
-            <a href="/actor/1856011-cameron-brown" class="cast-card">
+            <a href="/actor/1856011-cameron-brown.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jLEKQbppMDHeiFX23bxrcmT5dmh.jpg" alt="Cameron Brown" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cameron Brown</span>
             </a>
-            <a href="/actor/1257565-alison-wright" class="cast-card">
+            <a href="/actor/1257565-alison-wright.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yVdCk5eWk5syRrBdxjrnJ1O2Rpg.jpg" alt="Alison Wright" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alison Wright</span>
             </a>
-            <a href="/actor/1179419-matt-duffer" class="cast-card">
+            <a href="/actor/1179419-matt-duffer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kXO5CnSxC0znMAICGxnPeuGP73U.jpg" alt="Matt Duffer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matt Duffer</span>
             </a>
-            <a href="/actor/1179422-ross-duffer" class="cast-card">
+            <a href="/actor/1179422-ross-duffer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7wdhSHgMLry5jBKJT1mdLT3BYaZ.jpg" alt="Ross Duffer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ross Duffer</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

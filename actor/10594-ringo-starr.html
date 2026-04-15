@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1260643-man-on-the-run">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1260643-man-on-the-run.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qX0hwcKvO3FNkI3JMBUnQ3wxKEI.jpg" alt="Man on the Run — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Man on the Run</div></div>
-    </a>    <a class="card" href="/movie/1371146-beatles-64">
+    </a>    <a class="card" href="/movie/1371146-beatles-64.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ny9fI756vTYVG3PrJwBUwXOeSBO.jpg" alt="Beatles '64 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Beatles '64</div></div>
-    </a>    <a class="card" href="/movie/1379227-larger-than-life-reign-of-the-boybands">
+    </a>    <a class="card" href="/movie/1379227-larger-than-life-reign-of-the-boybands.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5qS0A5ORiF6t4Mcpaga1lwmTSa2.jpg" alt="Larger than Life: Reign of the Boybands — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Larger than Life: Reign of the Boybands</div></div>
-    </a>    <a class="card" href="/movie/1372795-return-of-the-king-the-fall-and-rise-of-elvis-presley">
+    </a>    <a class="card" href="/movie/1372795-return-of-the-king-the-fall-and-rise-of-elvis-presley.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eijfr4QiMu1ZK2XfBNd9KjoRmau.jpg" alt="Return of the King: The Fall and Rise of Elvis Presley — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Return of the King: The Fall and Rise of Elvis Presley</div></div>
-    </a>    <a class="card" href="/movie/1265066-the-beach-boys">
+    </a>    <a class="card" href="/movie/1265066-the-beach-boys.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jqrKimzSHgXRJlYgDw9LYqtTXbC.jpg" alt="The Beach Boys — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Beach Boys</div></div>
-    </a>    <a class="card" href="/movie/209415-living-is-easy-with-eyes-closed">
+    </a>    <a class="card" href="/movie/209415-living-is-easy-with-eyes-closed.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/iT8hZ8bXFMtqUpOTdoK6dUww28M.jpg" alt="Living Is Easy with Eyes Closed — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Living Is Easy with Eyes Closed</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

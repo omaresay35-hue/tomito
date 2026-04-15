@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>รักใต้บรรทัด</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3321241-koraphat-lamnoi" class="cast-card">
+            <a href="/actor/3321241-koraphat-lamnoi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/llvobkzgCpG0ARwlgOIvz8372fF.jpg" alt="Koraphat Lamnoi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koraphat Lamnoi</span>
             </a>
-            <a href="/actor/3321240-pharinyakorn-khansawa" class="cast-card">
+            <a href="/actor/3321240-pharinyakorn-khansawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tz6LKlcIYBCETXNiIEq1DlnA2ZK.jpg" alt="Pharinyakorn Khansawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pharinyakorn Khansawa</span>
             </a>
-            <a href="/actor/2771763-sorntast-buangam" class="cast-card">
+            <a href="/actor/2771763-sorntast-buangam.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xDSTqrNB1PftuFoAzL79KgQ7zCR.jpg" alt="Sorntast Buangam" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sorntast Buangam</span>
             </a>
-            <a href="/actor/4179457-jassada-janmano" class="cast-card">
+            <a href="/actor/4179457-jassada-janmano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mTFj5zKBtyQ1xDc2zf1EQi1nyGo.jpg" alt="Jassada Janmano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jassada Janmano</span>
             </a>
-            <a href="/actor/1877890-willie-arawill-jartonk" class="cast-card">
+            <a href="/actor/1877890-willie-arawill-jartonk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ejKBg7AiCM7ORB8yRzpcux0oXXZ.jpg" alt="Willie Arawill Jartonk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Willie Arawill Jartonk</span>
             </a>
-            <a href="/actor/4855067-ruan-zeyi" class="cast-card">
+            <a href="/actor/4855067-ruan-zeyi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a7pv4bmoPOXcifc2aYZSoID9POe.jpg" alt="Ruan Zeyi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ruan Zeyi</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

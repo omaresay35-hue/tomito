@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Las viudas de los jueves</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1134885-omar-chaparro" class="cast-card">
+            <a href="/actor/1134885-omar-chaparro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fAIDrbtyHBcDDbRdRZ3bvNesKU7.jpg" alt="Omar Chaparro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Omar Chaparro</span>
             </a>
-            <a href="/actor/121469-cassandra-ciangherotti" class="cast-card">
+            <a href="/actor/121469-cassandra-ciangherotti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pXE7HqLKQApNzrIKreiPWXFyyiJ.jpg" alt="Cassandra Ciangherotti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cassandra Ciangherotti</span>
             </a>
-            <a href="/actor/238755-irene-azuela" class="cast-card">
+            <a href="/actor/238755-irene-azuela.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pz0kV2DxIYykWTejZ1Wm1FVzqjW.jpg" alt="Irene Azuela" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Irene Azuela</span>
             </a>
-            <a href="/actor/1071844-juan-pablo-medina" class="cast-card">
+            <a href="/actor/1071844-juan-pablo-medina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i5p0CRkTVePhDZk9lhOfYrIESap.jpg" alt="Juan Pablo Medina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juan Pablo Medina</span>
             </a>
-            <a href="/actor/544440-zuria-vega" class="cast-card">
+            <a href="/actor/544440-zuria-vega.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oaTw6Qz48KMY7xwAYOAJZ8HFIFb.jpg" alt="Zuria Vega" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zuria Vega</span>
             </a>
-            <a href="/actor/224515-alfonso-bassave" class="cast-card">
+            <a href="/actor/224515-alfonso-bassave.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aLlBeE3TZuYn8ABAp2oRN3n4ggy.jpg" alt="Alfonso Bassave" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alfonso Bassave</span>
             </a>
-            <a href="/actor/140604-pablo-cruz-guerrero" class="cast-card">
+            <a href="/actor/140604-pablo-cruz-guerrero.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/208LKmdjpDVbBXiQRpOLLYE5ddH.jpg" alt="Pablo Cruz Guerrero" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pablo Cruz Guerrero</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

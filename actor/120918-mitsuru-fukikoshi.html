@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1379045-after-the-quake">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1379045-after-the-quake.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cdW1Pfy4LzRx4NUWYTAUTHUgNjs.jpg" alt="After the Quake — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">After the Quake</div></div>
-    </a>    <a class="card" href="/movie/1406357-frontline-yokohama-bay">
+    </a>    <a class="card" href="/movie/1406357-frontline-yokohama-bay.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/b7uQiic2gQQt5yJOqNgmYAFztlV.jpg" alt="Frontline - Yokohama Bay — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Frontline - Yokohama Bay</div></div>
-    </a>    <a class="card" href="/movie/1312989-angry-squad-the-civil-servant-and-the-seven-swindlers">
+    </a>    <a class="card" href="/movie/1312989-angry-squad-the-civil-servant-and-the-seven-swindlers.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/23sjWvjXFbGbQZQ3bCffqgYolrC.jpg" alt="Angry Squad: The Civil Servant and the Seven Swindlers — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Angry Squad: The Civil Servant and the Seven Swindlers</div></div>
-    </a>    <a class="card" href="/movie/1201210-the-yin-yang-master-zero">
+    </a>    <a class="card" href="/movie/1201210-the-yin-yang-master-zero.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rPDepwJfcR5u4FBpRPaxi848nsq.jpg" alt="The Yin Yang Master Zero — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Yin Yang Master Zero</div></div>
-    </a>    <a class="card" href="/movie/1539783-広重ぶるう">
+    </a>    <a class="card" href="/movie/1539783-広重ぶるう.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/omwgKbjPCdLYw7f8i9FcMHCeTqA.jpg" alt="広重ぶるう — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">広重ぶるう</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/242332-hiroshige-blue">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/242332-hiroshige-blue.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sUES1wPfhnNiYzQo9JVzdGoe9Qr.jpg" alt="Hiroshige Blue — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Hiroshige Blue</div></div>
-    </a>    <a class="card" href="/tv/216228-the-days">
+    </a>    <a class="card" href="/tv/216228-the-days.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sr7HeOURI38pZjaF5qlP6xfvhKl.jpg" alt="THE DAYS — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">THE DAYS</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

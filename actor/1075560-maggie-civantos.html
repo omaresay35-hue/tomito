@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1329189-leo-lou">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1329189-leo-lou.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/y4A7TkHhwdEue6VG3tQJfmPW48p.jpg" alt="Leo & Lou — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Leo & Lou</div></div>
-    </a>    <a class="card" href="/movie/1310879-under-a-volcano">
+    </a>    <a class="card" href="/movie/1310879-under-a-volcano.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8joWkrzM7ss1t8JZlBffavbg4hg.jpg" alt="Under a Volcano — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Under a Volcano</div></div>
-    </a>    <a class="card" href="/movie/1217409-checkmate">
+    </a>    <a class="card" href="/movie/1217409-checkmate.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/o960Qx10rRRA4t44DsjeiYB3Dmh.jpg" alt="Checkmate — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Checkmate</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/304266-la-coleccionista">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/304266-la-coleccionista.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vJeO6iTAx9GuyJ67gKqOi67cXW6.jpg" alt="La coleccionista — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">La coleccionista</div></div>
-    </a>    <a class="card" href="/tv/237013-la-pasión-turca">
+    </a>    <a class="card" href="/tv/237013-la-pasión-turca.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wE9Hku1bdul7KvzkkiHxIpXLEXo.jpg" alt="La Pasión Turca — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">La Pasión Turca</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

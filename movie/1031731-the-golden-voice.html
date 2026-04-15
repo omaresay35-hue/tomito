@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>The Golden Voice</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1733-nick-nolte" class="cast-card">
+            <a href="/actor/1733-nick-nolte.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jpYzFBi6zfn8CHVaXmqgiOTas4V.jpg" alt="Nick Nolte" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nick Nolte</span>
             </a>
-            <a href="/actor/2575311-dharon-jones" class="cast-card">
+            <a href="/actor/2575311-dharon-jones.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dharon Jones" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dharon Jones</span>
             </a>
-            <a href="/actor/2478224-sydney-mae-díaz" class="cast-card">
+            <a href="/actor/2478224-sydney-mae-díaz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/69VWVOOpuvaVqV8tZzvmb7aarRN.jpg" alt="Sydney Mae Díaz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sydney Mae Díaz</span>
             </a>
-            <a href="/actor/2375338-carmen-ruby-floyd" class="cast-card">
+            <a href="/actor/2375338-carmen-ruby-floyd.html" class="cast-card">
                 <img src="/favicon.ico" alt="Carmen Ruby Floyd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carmen Ruby Floyd</span>
             </a>
-            <a href="/actor/2567008-lenny-steinline" class="cast-card">
+            <a href="/actor/2567008-lenny-steinline.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lenny Steinline" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lenny Steinline</span>
             </a>
-            <a href="/actor/2478711-debbie-lay" class="cast-card">
+            <a href="/actor/2478711-debbie-lay.html" class="cast-card">
                 <img src="/favicon.ico" alt="Debbie Lay" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Debbie Lay</span>
             </a>
-            <a href="/actor/118941-jennifer-butler" class="cast-card">
+            <a href="/actor/118941-jennifer-butler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/owrsOizn6Wx408XFPWihoHMAGKQ.jpg" alt="Jennifer Butler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jennifer Butler</span>
             </a>
-            <a href="/actor/1343492-mike-wilson" class="cast-card">
+            <a href="/actor/1343492-mike-wilson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1uPS5v8bCW2Jmo6oLq3IFiEADAm.jpg" alt="Mike Wilson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mike Wilson</span>
             </a>
-            <a href="/actor/1760268-chris-james-boylan" class="cast-card">
+            <a href="/actor/1760268-chris-james-boylan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Chris James Boylan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris James Boylan</span>
             </a>
-            <a href="/actor/3557767-asa-white" class="cast-card">
+            <a href="/actor/3557767-asa-white.html" class="cast-card">
                 <img src="/favicon.ico" alt="Asa White" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Asa White</span>
             </a>
-            <a href="/actor/2545089-marguerite-mastromatto" class="cast-card">
+            <a href="/actor/2545089-marguerite-mastromatto.html" class="cast-card">
                 <img src="/favicon.ico" alt="Marguerite Mastromatto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marguerite Mastromatto</span>
             </a>
-            <a href="/actor/3727772-sonya-giddings" class="cast-card">
+            <a href="/actor/3727772-sonya-giddings.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p85XlYQ1vsiy4ZIvAZ7ofMQUVVD.jpg" alt="Sonya Giddings" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sonya Giddings</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

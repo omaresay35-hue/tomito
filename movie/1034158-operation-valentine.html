@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>ఆపరేషన్ వాలెంటైన్</span>
   </nav>
 
@@ -71,43 +71,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1407562-varun-tej" class="cast-card">
+            <a href="/actor/1407562-varun-tej.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2N9LTqRxLpeCCyNTYUpnVBhZiZU.jpg" alt="Varun Tej" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Varun Tej</span>
             </a>
-            <a href="/actor/2355774-manushi-chhillar" class="cast-card">
+            <a href="/actor/2355774-manushi-chhillar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/he5xXEXAlxUwYAGjNS9D2D5oZnJ.jpg" alt="Manushi Chhillar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manushi Chhillar</span>
             </a>
-            <a href="/actor/1423932-mir-sarwar" class="cast-card">
+            <a href="/actor/1423932-mir-sarwar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vyyRELWNWFOWKq9ubWIqWpF6KCj.jpg" alt="Mir Sarwar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mir Sarwar</span>
             </a>
-            <a href="/actor/1913620-ruhani-sharma" class="cast-card">
+            <a href="/actor/1913620-ruhani-sharma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/epmEZVlfYhHXNsOzTdcA0hJ35Y5.jpg" alt="Ruhani Sharma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ruhani Sharma</span>
             </a>
-            <a href="/actor/2422210-paresh-pahuja" class="cast-card">
+            <a href="/actor/2422210-paresh-pahuja.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eoqUy5KRCXlt0vI4vajnhfN1M8y.jpg" alt="Paresh Pahuja" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paresh Pahuja</span>
             </a>
-            <a href="/actor/1563575-shataf-figar" class="cast-card">
+            <a href="/actor/1563575-shataf-figar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sgQskf2R4c7302nNj5CG1invLsC.jpg" alt="Shataf Figar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shataf Figar</span>
             </a>
-            <a href="/actor/1378575-abhinav-gomatam" class="cast-card">
+            <a href="/actor/1378575-abhinav-gomatam.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vRBY5Xw1aBaYmj61NfiYvS3Vbfb.jpg" alt="Abhinav Gomatam" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Abhinav Gomatam</span>
             </a>
-            <a href="/actor/85595-sampath-raj" class="cast-card">
+            <a href="/actor/85595-sampath-raj.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oQgoihP26Hyg6gMFVpACRAygZli.jpg" alt="Sampath Raj" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sampath Raj</span>
             </a>
-            <a href="/actor/1438182-vaibhav-tatwawadi" class="cast-card">
+            <a href="/actor/1438182-vaibhav-tatwawadi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pw6IBvvZyEssdfJvtTbq01ta1l.jpg" alt="Vaibhav Tatwawadi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vaibhav Tatwawadi</span>
             </a>
-            <a href="/actor/1278968-ashwath-bhatt" class="cast-card">
+            <a href="/actor/1278968-ashwath-bhatt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hSJyFIy8Mvj59YQlcluhd9Xf97F.jpg" alt="Ashwath Bhatt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ashwath Bhatt</span>
             </a></div></section>
@@ -115,13 +115,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

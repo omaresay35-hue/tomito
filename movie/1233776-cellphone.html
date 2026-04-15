@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Cellphone</span>
   </nav>
 
@@ -71,27 +71,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1356785-whitney-rose-pynn" class="cast-card">
+            <a href="/actor/1356785-whitney-rose-pynn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bW8ZefsdPvlg2VHgTMnp6yEYSLI.jpg" alt="Whitney Rose Pynn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Whitney Rose Pynn</span>
             </a>
-            <a href="/actor/4501930-justin-malik-jackson" class="cast-card">
+            <a href="/actor/4501930-justin-malik-jackson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aOAK8R5OjVsxsDEIePm8F9tg7Bm.jpg" alt="Justin Malik Jackson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Justin Malik Jackson</span>
             </a>
-            <a href="/actor/3675401-jared-noble" class="cast-card">
+            <a href="/actor/3675401-jared-noble.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7K2boXXs1bXcCTW1yvaYgZvRLyy.jpg" alt="Jared Noble" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jared Noble</span>
             </a>
-            <a href="/actor/4502766-isaac-versaw" class="cast-card">
+            <a href="/actor/4502766-isaac-versaw.html" class="cast-card">
                 <img src="/favicon.ico" alt="Isaac Versaw" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isaac Versaw</span>
             </a>
-            <a href="/actor/2135875-katherine-barber" class="cast-card">
+            <a href="/actor/2135875-katherine-barber.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oeFr99RfXvv5sLJGd2r0pAt7B9N.jpg" alt="Katherine Barber" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Katherine Barber</span>
             </a>
-            <a href="/actor/56890-malcolm-mcdowell" class="cast-card">
+            <a href="/actor/56890-malcolm-mcdowell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hL8ep4Hqj6izX7IlzE7Bbcfq62w.jpg" alt="Malcolm McDowell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Malcolm McDowell</span>
             </a></div></section>
@@ -99,13 +99,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

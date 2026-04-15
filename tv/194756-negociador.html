@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Negociador</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/450870-malvino-salvador" class="cast-card">
+            <a href="/actor/450870-malvino-salvador.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wFCBexeFH5URyHEHZwmRSrwc9iN.jpg" alt="Malvino Salvador" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Malvino Salvador</span>
             </a>
-            <a href="/actor/1798899-barbara-reis" class="cast-card">
+            <a href="/actor/1798899-barbara-reis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t7XVn7NXNYsdwJZHNEr6jn0tawr.jpg" alt="Barbara Reis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Barbara Reis</span>
             </a>
-            <a href="/actor/1782319-césar-mello" class="cast-card">
+            <a href="/actor/1782319-césar-mello.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i5YKGwm6132In84GO1KFvPHmjwv.jpg" alt="César Mello" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>César Mello</span>
             </a>
-            <a href="/actor/1085274-emílio-de-mello" class="cast-card">
+            <a href="/actor/1085274-emílio-de-mello.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s1Q1hHGzHf5CV4J4CjGcosIyO1E.jpg" alt="Emílio de Mello" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emílio de Mello</span>
             </a>
-            <a href="/actor/52534-rodrigo-dos-santos" class="cast-card">
+            <a href="/actor/52534-rodrigo-dos-santos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5CLF8IMkrtasoTHpJsjqPOj3r9o.jpg" alt="Rodrigo dos Santos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rodrigo dos Santos</span>
             </a>
-            <a href="/actor/189656-lee-taylor" class="cast-card">
+            <a href="/actor/189656-lee-taylor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ylMjegqeoGOjNHeI2caA75f2jwL.jpg" alt="Lee Taylor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Taylor</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

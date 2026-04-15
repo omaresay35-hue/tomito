@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Jossain on valo joka ei sammu</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2207680-samuel-kujala" class="cast-card">
+            <a href="/actor/2207680-samuel-kujala.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3poNIgA11tsmLZxXxIaBxwlBm3D.jpg" alt="Samuel Kujala" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samuel Kujala</span>
             </a>
-            <a href="/actor/4936016-anna-rosaliina-kauno" class="cast-card">
+            <a href="/actor/4936016-anna-rosaliina-kauno.html" class="cast-card">
                 <img src="/favicon.ico" alt="Anna Rosaliina Kauno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anna Rosaliina Kauno</span>
             </a>
-            <a href="/actor/2964031-camille-auer" class="cast-card">
+            <a href="/actor/2964031-camille-auer.html" class="cast-card">
                 <img src="/favicon.ico" alt="Camille Auer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Camille Auer</span>
             </a>
-            <a href="/actor/2114443-kaisa-leena-koskenkorva" class="cast-card">
+            <a href="/actor/2114443-kaisa-leena-koskenkorva.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kaisa-Leena Koskenkorva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaisa-Leena Koskenkorva</span>
             </a>
-            <a href="/actor/148389-mari-rantasila" class="cast-card">
+            <a href="/actor/148389-mari-rantasila.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fXruthOtA8rcGkyUgYxuKoBcI43.jpg" alt="Mari Rantasila" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mari Rantasila</span>
             </a>
-            <a href="/actor/1377445-jarkko-pajunen" class="cast-card">
+            <a href="/actor/1377445-jarkko-pajunen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pzUBxVKkqZGy0E63FX3jN93yx8F.jpg" alt="Jarkko Pajunen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jarkko Pajunen</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

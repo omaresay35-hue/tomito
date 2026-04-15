@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Wormtown</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3272460-caitlin-mcwethy" class="cast-card">
+            <a href="/actor/3272460-caitlin-mcwethy.html" class="cast-card">
                 <img src="/favicon.ico" alt="Caitlin McWethy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Caitlin McWethy</span>
             </a>
-            <a href="/actor/5321687-rachel-ryu" class="cast-card">
+            <a href="/actor/5321687-rachel-ryu.html" class="cast-card">
                 <img src="/favicon.ico" alt="Rachel Ryu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rachel Ryu</span>
             </a>
-            <a href="/actor/2395462-emily-soppe" class="cast-card">
+            <a href="/actor/2395462-emily-soppe.html" class="cast-card">
                 <img src="/favicon.ico" alt="Emily Soppe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emily Soppe</span>
             </a>
-            <a href="/actor/2967101-maggie-lou-rader" class="cast-card">
+            <a href="/actor/2967101-maggie-lou-rader.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/35ni6ZaUQXCF5Hdw1dj9AMZJuGs.jpg" alt="Maggie Lou Rader" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maggie Lou Rader</span>
             </a>
-            <a href="/actor/4683879-aj-baldwin" class="cast-card">
+            <a href="/actor/4683879-aj-baldwin.html" class="cast-card">
                 <img src="/favicon.ico" alt="A.J. Baldwin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>A.J. Baldwin</span>
             </a>
-            <a href="/actor/2589577-jordan-mullins" class="cast-card">
+            <a href="/actor/2589577-jordan-mullins.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dxIaDU6GL1CvHDX58ZeGFRxgkpi.jpg" alt="Jordan Mullins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jordan Mullins</span>
             </a>
-            <a href="/actor/2688319-jim-azelvandre" class="cast-card">
+            <a href="/actor/2688319-jim-azelvandre.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jim Azelvandre" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jim Azelvandre</span>
             </a>
-            <a href="/actor/5321722-madison-murrah" class="cast-card">
+            <a href="/actor/5321722-madison-murrah.html" class="cast-card">
                 <img src="/favicon.ico" alt="Madison Murrah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Madison Murrah</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

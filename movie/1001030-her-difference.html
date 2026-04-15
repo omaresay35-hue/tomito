@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Différente</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1029285-jehnny-beth" class="cast-card">
+            <a href="/actor/1029285-jehnny-beth.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lMSMHufDKEtTsKYuxDKcMZDtDb7.jpg" alt="Jehnny Beth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jehnny Beth</span>
             </a>
-            <a href="/actor/2032782-thibaut-évrard" class="cast-card">
+            <a href="/actor/2032782-thibaut-évrard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/imffvqFEZ3WmDd0bRuyeCXz3ILh.jpg" alt="Thibaut Évrard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thibaut Évrard</span>
             </a>
-            <a href="/actor/53905-mireille-perrier" class="cast-card">
+            <a href="/actor/53905-mireille-perrier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hgOD97FhLyqNzw5fDq1Rpg3qcuE.jpg" alt="Mireille Perrier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mireille Perrier</span>
             </a>
-            <a href="/actor/3993968-emmanuelle-schaaff" class="cast-card">
+            <a href="/actor/3993968-emmanuelle-schaaff.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tYhKPE3wkbVQLzRIEUY82b9jjcx.jpg" alt="Emmanuelle Schaaff" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emmanuelle Schaaff</span>
             </a>
-            <a href="/actor/2507861-irina-muluile" class="cast-card">
+            <a href="/actor/2507861-irina-muluile.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/b9VWwudclfo8kgAuzhUS3Zrhgnm.jpg" alt="Irina Muluile" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Irina Muluile</span>
             </a>
-            <a href="/actor/5412022-julie-dachez" class="cast-card">
+            <a href="/actor/5412022-julie-dachez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Julie Dachez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julie Dachez</span>
             </a>
-            <a href="/actor/5412023-fabienne-casalis" class="cast-card">
+            <a href="/actor/5412023-fabienne-casalis.html" class="cast-card">
                 <img src="/favicon.ico" alt="Fabienne Casalis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fabienne Casalis</span>
             </a>
-            <a href="/actor/5412024-philippe-le-gall" class="cast-card">
+            <a href="/actor/5412024-philippe-le-gall.html" class="cast-card">
                 <img src="/favicon.ico" alt="Philippe Le Gall" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Philippe Le Gall</span>
             </a>
-            <a href="/actor/3040364-johnny-montreuil" class="cast-card">
+            <a href="/actor/3040364-johnny-montreuil.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mz4oO5Bff1PvGXjwy761M6gBThr.jpg" alt="Johnny Montreuil" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Johnny Montreuil</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

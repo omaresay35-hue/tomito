@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1258509-the-love-that-remains">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1258509-the-love-that-remains.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/igNHWsxXZeGegiPttjQCv5ImAu7.jpg" alt="The Love That Remains — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Love That Remains</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/274061-whiskey-on-the-rocks">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/274061-whiskey-on-the-rocks.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eFKnR4F6lqcoUDgNts87EsW3Sv9.jpg" alt="Whiskey on the Rocks — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Whiskey on the Rocks</div></div>
-    </a>    <a class="card" href="/tv/244207-the-helicopter-heist">
+    </a>    <a class="card" href="/tv/244207-the-helicopter-heist.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fKZyNZJCIrAll8thK4QyNVkRHy5.jpg" alt="The Helicopter Heist — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Helicopter Heist</div></div>
-    </a>    <a class="card" href="/tv/245441-veronika">
+    </a>    <a class="card" href="/tv/245441-veronika.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4DKJwKWaq8XzyXp6KPfwEBs8JTl.jpg" alt="Veronika — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Veronika</div></div>
-    </a>    <a class="card" href="/tv/238974-valdes-christmas-the-guardian-of-the-forest">
+    </a>    <a class="card" href="/tv/238974-valdes-christmas-the-guardian-of-the-forest.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/idJKawoYmPnL64ADLFtfHOPkhx.jpg" alt="Valde's Christmas - The Guardian of the Forest — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Valde's Christmas - The Guardian of the Forest</div></div>
-    </a>    <a class="card" href="/tv/218711-estonia">
+    </a>    <a class="card" href="/tv/218711-estonia.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gC9AfdIkKkCBRMaHwDF7bvHkv6V.jpg" alt="Estonia — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Estonia</div></div>
-    </a>    <a class="card" href="/tv/2873-the-eagle-a-crime-odyssey">
+    </a>    <a class="card" href="/tv/2873-the-eagle-a-crime-odyssey.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/oTuHsoyVPlzDnUQ4noA0tgmyWN1.jpg" alt="The Eagle: A Crime Odyssey — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Eagle: A Crime Odyssey</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

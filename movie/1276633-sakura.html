@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>朽ちないサクラ</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1348015-hana-sugisaki" class="cast-card">
+            <a href="/actor/1348015-hana-sugisaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j6Na9rSyCk8o8VphebNDWar84NN.jpg" alt="Hana Sugisaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hana Sugisaki</span>
             </a>
-            <a href="/actor/1668193-riku-hagiwara" class="cast-card">
+            <a href="/actor/1668193-riku-hagiwara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yX2Zjhy7FdPwLexGxG8sgoSgakN.jpg" alt="Riku Hagiwara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Riku Hagiwara</span>
             </a>
-            <a href="/actor/82875-kosuke-toyohara" class="cast-card">
+            <a href="/actor/82875-kosuke-toyohara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3lpCmqbi2AtUAuDzKDZPt03Wytr.jpg" alt="Kosuke Toyohara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kosuke Toyohara</span>
             </a>
-            <a href="/actor/1039220-ken-yasuda" class="cast-card">
+            <a href="/actor/1039220-ken-yasuda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mSEnXFHj8MnighBVG0yZdKOVyxI.jpg" alt="Ken Yasuda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ken Yasuda</span>
             </a>
-            <a href="/actor/553431-tomoko-fujita" class="cast-card">
+            <a href="/actor/553431-tomoko-fujita.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vhfwF72mxqoN8aZ7vQDuXWAgnpl.jpg" alt="Tomoko Fujita" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomoko Fujita</span>
             </a>
-            <a href="/actor/552538-yuya-endo" class="cast-card">
+            <a href="/actor/552538-yuya-endo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wkM6ZBelFelI4iHu4kH3CCC1y2m.jpg" alt="Yuya Endo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuya Endo</span>
             </a>
-            <a href="/actor/1154045-taro-suruga" class="cast-card">
+            <a href="/actor/1154045-taro-suruga.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4ev9icsBZQrbSDP5YLfW1H2nhRd.jpg" alt="Taro Suruga" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taro Suruga</span>
             </a>
-            <a href="/actor/1841387-minosuke-bando" class="cast-card">
+            <a href="/actor/1841387-minosuke-bando.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zVIHl0H5Vf9IJH8nZXIAu5VIXJk.jpg" alt="Minosuke Bando" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Minosuke Bando</span>
             </a>
-            <a href="/actor/1921422-kokoro-morita" class="cast-card">
+            <a href="/actor/1921422-kokoro-morita.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s3tOWi6sV5VWCIkHICRh0b8O4jD.jpg" alt="Kokoro Morita" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kokoro Morita</span>
             </a>
-            <a href="/actor/86976-soko-wada" class="cast-card">
+            <a href="/actor/86976-soko-wada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/70523YCmM4VZqmlPeZEk0lcBIak.jpg" alt="Soko Wada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Soko Wada</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

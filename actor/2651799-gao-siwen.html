@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,15 +71,15 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/318441-destined-love">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/318441-destined-love.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cl4MVpFptJr2h0kHGc5D9mn2wAG.jpg" alt="Destined Love — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">2026</div></div>
       <div class="card-bottom"><div class="card-title">Destined Love</div></div>
-    </a>    <a class="card" href="/tv/308508-strange-chronicles-of-tang">
+    </a>    <a class="card" href="/tv/308508-strange-chronicles-of-tang.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vLj74PM5xATIy7RTa3dERe0mzp8.jpg" alt="Strange Chronicles of Tang — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Strange Chronicles of Tang</div></div>
-    </a>    <a class="card" href="/tv/211089-strange-tales-of-tang-dynasty">
+    </a>    <a class="card" href="/tv/211089-strange-tales-of-tang-dynasty.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nyhBueT07zQS7wWLYFDNO8LdO3N.jpg" alt="Strange Tales of Tang Dynasty — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Strange Tales of Tang Dynasty</div></div>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

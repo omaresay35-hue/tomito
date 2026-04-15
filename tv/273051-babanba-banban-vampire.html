@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>مصاص الدماء رانمارو</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/110665-daisuke-namikawa" class="cast-card">
+            <a href="/actor/110665-daisuke-namikawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iw0X8oDutxaBAri3Ifga8nhdUJK.jpg" alt="Daisuke Namikawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daisuke Namikawa</span>
             </a>
-            <a href="/actor/1350418-yusuke-kobayashi" class="cast-card">
+            <a href="/actor/1350418-yusuke-kobayashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y4ukKDSobZJNuB4H3k89hkrKCDC.jpg" alt="Yusuke Kobayashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yusuke Kobayashi</span>
             </a>
-            <a href="/actor/2862191-mayuko-kazama" class="cast-card">
+            <a href="/actor/2862191-mayuko-kazama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lWRGpyrrbq9KmBZc1yjeS1EwXkd.jpg" alt="Mayuko Kazama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mayuko Kazama</span>
             </a>
-            <a href="/actor/1613379-taku-yashiro" class="cast-card">
+            <a href="/actor/1613379-taku-yashiro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eVdB6myaNJ4h38UU9hHHlsaCWHn.jpg" alt="Taku Yashiro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taku Yashiro</span>
             </a>
-            <a href="/actor/1888529-akira-sekine" class="cast-card">
+            <a href="/actor/1888529-akira-sekine.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/czYoPzAEK1gI7RxRiPyDSFYRm5x.jpg" alt="Akira Sekine" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Akira Sekine</span>
             </a>
-            <a href="/actor/24647-katsuyuki-konishi" class="cast-card">
+            <a href="/actor/24647-katsuyuki-konishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nYM5cH6U7cp4x9dIzW0enmEKmeV.jpg" alt="Katsuyuki Konishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Katsuyuki Konishi</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

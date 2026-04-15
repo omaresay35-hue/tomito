@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Mega-Brands That Built America</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1225725-adam-richman" class="cast-card">
+            <a href="/actor/1225725-adam-richman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aADl1bcjaZirJLzyJSGPsfkSyaV.jpg" alt="Adam Richman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Richman</span>
             </a>
-            <a href="/actor/55152-campbell-scott" class="cast-card">
+            <a href="/actor/55152-campbell-scott.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lJCxZpQru76zBeuZGxc0Gm5Pm9y.jpg" alt="Campbell Scott" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Campbell Scott</span>
             </a>
-            <a href="/actor/4250549-gary-hoover" class="cast-card">
+            <a href="/actor/4250549-gary-hoover.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gary Hoover" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gary Hoover</span>
             </a>
-            <a href="/actor/1321835-don-wildman" class="cast-card">
+            <a href="/actor/1321835-don-wildman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/doEnxbLzlRPUnJPZqSOee0w8Cv5.jpg" alt="Don Wildman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Don Wildman</span>
             </a>
-            <a href="/actor/5530037-jason-liebig" class="cast-card">
+            <a href="/actor/5530037-jason-liebig.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wQOjCrBpdLJxJs2PfExpEknk7Gc.jpg" alt="Jason Liebig" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jason Liebig</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

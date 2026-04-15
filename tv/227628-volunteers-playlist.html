@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Плейлист волонтёра</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1611607-ivan-yankovsky" class="cast-card">
+            <a href="/actor/1611607-ivan-yankovsky.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/goSBzDVo7T3xvWuibARQ4y7YM7k.jpg" alt="Ivan Yankovsky" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ivan Yankovsky</span>
             </a>
-            <a href="/actor/236816-shamil-khamatov" class="cast-card">
+            <a href="/actor/236816-shamil-khamatov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lBY8SbU5dNeNvG3EjslFzQmKGZL.jpg" alt="Shamil Khamatov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shamil Khamatov</span>
             </a>
-            <a href="/actor/2012560-evgeniya-gromova" class="cast-card">
+            <a href="/actor/2012560-evgeniya-gromova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pvSKmtlH8q9fVqXZwlFIl3CgKie.jpg" alt="Evgeniya Gromova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Evgeniya Gromova</span>
             </a>
-            <a href="/actor/1602638-artem-fedotov" class="cast-card">
+            <a href="/actor/1602638-artem-fedotov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jzTDAAm7Thjpn8OByDJFH4Rf6bg.jpg" alt="Artem Fedotov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Artem Fedotov</span>
             </a>
-            <a href="/actor/1744790-dmitry-chebotarev" class="cast-card">
+            <a href="/actor/1744790-dmitry-chebotarev.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/63ZsvCgB4Uc5MFDPvNYeUCmk1vp.jpg" alt="Dmitry Chebotarev" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dmitry Chebotarev</span>
             </a>
-            <a href="/actor/1797563-darya-rudenok" class="cast-card">
+            <a href="/actor/1797563-darya-rudenok.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8OdNBfiR3XZpPL9G3mzrgru2BGs.jpg" alt="Darya Rudenok" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Darya Rudenok</span>
             </a>
-            <a href="/actor/2463299-mila-ershova" class="cast-card">
+            <a href="/actor/2463299-mila-ershova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hT8apUnYK2PEjGQ5VzW6DdlaIa5.jpg" alt="Mila Ershova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mila Ershova</span>
             </a>
-            <a href="/actor/1441615-marina-vasilyeva" class="cast-card">
+            <a href="/actor/1441615-marina-vasilyeva.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/st6jDHZU3bIBfcFgX96u6NxSm5a.jpg" alt="Marina Vasilyeva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marina Vasilyeva</span>
             </a>
-            <a href="/actor/128851-aleksandra-ursulyak" class="cast-card">
+            <a href="/actor/128851-aleksandra-ursulyak.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5iGuxYIDSZFTkdST4SOL4wN5olm.jpg" alt="Aleksandra Ursulyak" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aleksandra Ursulyak</span>
             </a>
-            <a href="/actor/5213447-марго-адаева" class="cast-card">
+            <a href="/actor/5213447-марго-адаева.html" class="cast-card">
                 <img src="/favicon.ico" alt="Марго Адаева" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Марго Адаева</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

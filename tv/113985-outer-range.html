@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,43 +75,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/16851-josh-brolin" class="cast-card">
+            <a href="/actor/16851-josh-brolin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sX2etBbIkxRaCsATyw5ZpOVMPTD.jpg" alt="Josh Brolin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josh Brolin</span>
             </a>
-            <a href="/actor/17606-imogen-poots" class="cast-card">
+            <a href="/actor/17606-imogen-poots.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7uMFX0ecPZT2tc8L5DFFNbUckc9.jpg" alt="Imogen Poots" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Imogen Poots</span>
             </a>
-            <a href="/actor/3127-lili-taylor" class="cast-card">
+            <a href="/actor/3127-lili-taylor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vWcMUi3QyvCr3QuFbjtwyPx7WtU.jpg" alt="Lili Taylor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lili Taylor</span>
             </a>
-            <a href="/actor/207442-tom-pelphrey" class="cast-card">
+            <a href="/actor/207442-tom-pelphrey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eRmK7HvM5FK1Czx9oQspRERbf0o.jpg" alt="Tom Pelphrey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Pelphrey</span>
             </a>
-            <a href="/actor/220615-tamara-podemski" class="cast-card">
+            <a href="/actor/220615-tamara-podemski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nqcdt9ko2XGA5XXqGX6ybxD5AKw.jpg" alt="Tamara Podemski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tamara Podemski</span>
             </a>
-            <a href="/actor/1700685-lewis-pullman" class="cast-card">
+            <a href="/actor/1700685-lewis-pullman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ws3WR1F2DfjtLLbK8XOGHEZbX1A.jpg" alt="Lewis Pullman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lewis Pullman</span>
             </a>
-            <a href="/actor/199586-noah-reid" class="cast-card">
+            <a href="/actor/199586-noah-reid.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fMIRF0rPO7orxBSAAVhjJ5TAmBS.jpg" alt="Noah Reid" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Noah Reid</span>
             </a>
-            <a href="/actor/65772-shaun-sipos" class="cast-card">
+            <a href="/actor/65772-shaun-sipos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eLyeDUDYW3wQxKRP1kNFI20vIqO.jpg" alt="Shaun Sipos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shaun Sipos</span>
             </a>
-            <a href="/actor/1685356-isabel-arraiza" class="cast-card">
+            <a href="/actor/1685356-isabel-arraiza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7y91M7Bcneff9d8KC8tQCoLoOJQ.jpg" alt="Isabel Arraiza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isabel Arraiza</span>
             </a>
-            <a href="/actor/2149560-olive-abercrombie" class="cast-card">
+            <a href="/actor/2149560-olive-abercrombie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2q1TNJf4SMUm1oprLLccjHkH1SI.jpg" alt="Olive Abercrombie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olive Abercrombie</span>
             </a></div></section>
@@ -119,13 +119,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>طعام الدهليز اللذيذ</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1975220-kentaro-kumagai" class="cast-card">
+            <a href="/actor/1975220-kentaro-kumagai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hsSdTc4PBuLOQedZMsTS6AHvC8l.jpg" alt="Kentaro Kumagai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kentaro Kumagai</span>
             </a>
-            <a href="/actor/1407597-sayaka-senbongi" class="cast-card">
+            <a href="/actor/1407597-sayaka-senbongi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yLRKX9DPDGgTRKBQRFTUh3pvbU0.jpg" alt="Sayaka Senbongi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sayaka Senbongi</span>
             </a>
-            <a href="/actor/1849550-asuna-tomari" class="cast-card">
+            <a href="/actor/1849550-asuna-tomari.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1UrGvjjGi5p0GvVugjbzGutU6vu.jpg" alt="Asuna Tomari" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Asuna Tomari</span>
             </a>
-            <a href="/actor/126282-hiroshi-naka" class="cast-card">
+            <a href="/actor/126282-hiroshi-naka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9EmVmKWMczAd6qIGnmoYB2JBb7i.jpg" alt="Hiroshi Naka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiroshi Naka</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1218762-jingle-bell-heist">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1218762-jingle-bell-heist.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rVOQF2Ucekug1B80A9crVx7Jn90.jpg" alt="Jingle Bell Heist — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Jingle Bell Heist</div></div>
-    </a>    <a class="card" href="/movie/1017633-how-to-date-billy-walsh">
+    </a>    <a class="card" href="/movie/1017633-how-to-date-billy-walsh.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5qcHcoJL3otMwJPKnbV5M3a1jQd.jpg" alt="How to Date Billy Walsh — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">How to Date Billy Walsh</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/255355-amandaland">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/255355-amandaland.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nQygz8vgRJwZFoCycpqfXgT8iRL.jpg" alt="Amandaland — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Amandaland</div></div>
-    </a>    <a class="card" href="/tv/241112-no-good-deed">
+    </a>    <a class="card" href="/tv/241112-no-good-deed.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4DHRgkvn8nY5yWBcFIu0urJr6bU.jpg" alt="No Good Deed — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">No Good Deed</div></div>
-    </a>    <a class="card" href="/tv/214162-animal-control">
+    </a>    <a class="card" href="/tv/214162-animal-control.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/h2dXm0CXMkycA9LrZbXMUD8SuTL.jpg" alt="Animal Control — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Animal Control</div></div>
-    </a>    <a class="card" href="/tv/901-the-sarah-silverman-program">
+    </a>    <a class="card" href="/tv/901-the-sarah-silverman-program.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mNDxMDBSbUNK4PtioCC9uZmAPg0.jpg" alt="The Sarah Silverman Program. — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Sarah Silverman Program.</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

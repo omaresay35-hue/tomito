@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1372586-pérdida-total">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1372586-pérdida-total.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6Z1oA2wzFKSSgj3nI5mfwQOXA1P.jpg" alt="Pérdida Total — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Pérdida Total</div></div>
-    </a>    <a class="card" href="/movie/1359153-the-diary">
+    </a>    <a class="card" href="/movie/1359153-the-diary.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8yx3EK6omL8mD8mcmHR7nmiboex.jpg" alt="The Diary — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Diary</div></div>
-    </a>    <a class="card" href="/movie/1309923-non-negotiable">
+    </a>    <a class="card" href="/movie/1309923-non-negotiable.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bHQG4UsLMFCy91gfLAFRpnCOPdP.jpg" alt="Non Negotiable — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Non Negotiable</div></div>
-    </a>    <a class="card" href="/movie/216927-wadley">
+    </a>    <a class="card" href="/movie/216927-wadley.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kC6ktIS8uyosZtFgjTPJcDXYDmG.jpg" alt="Wadley — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wadley</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/219432-no-traces">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/219432-no-traces.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3ntoxRFjM1Zs71WJGXqEDfolO4u.jpg" alt="No Traces — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">No Traces</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

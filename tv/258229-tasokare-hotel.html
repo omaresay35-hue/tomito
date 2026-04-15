@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>誰ソ彼ホテル</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1851484-rika-momokawa" class="cast-card">
+            <a href="/actor/1851484-rika-momokawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qCnmgPjHUyD6NhpMiXzdQOB5niu.jpg" alt="Rika Momokawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rika Momokawa</span>
             </a>
-            <a href="/actor/1824188-koudai-sakai" class="cast-card">
+            <a href="/actor/1824188-koudai-sakai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/b4hiaAJY5sjIpJlTQf3A0DyqdCn.jpg" alt="Koudai Sakai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koudai Sakai</span>
             </a>
-            <a href="/actor/1922600-yusuke-shirai" class="cast-card">
+            <a href="/actor/1922600-yusuke-shirai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qY9HxzSkv2yl1xUeSRkMJyzC3xP.jpg" alt="Yusuke Shirai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yusuke Shirai</span>
             </a>
-            <a href="/actor/1315198-kanehira-yamamoto" class="cast-card">
+            <a href="/actor/1315198-kanehira-yamamoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8cDkO8oCkqsPliIqwFdnmJqHzDT.jpg" alt="Kanehira Yamamoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kanehira Yamamoto</span>
             </a>
-            <a href="/actor/1791499-yuki-nagano" class="cast-card">
+            <a href="/actor/1791499-yuki-nagano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aH6EOPMc3ssVmfDT5D03SjmsxWW.jpg" alt="Yuki Nagano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuki Nagano</span>
             </a>
-            <a href="/actor/2043259-takashi-narumi" class="cast-card">
+            <a href="/actor/2043259-takashi-narumi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/64KI71rJU3cwMhTSaedlrLAZrwF.jpg" alt="Takashi Narumi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takashi Narumi</span>
             </a>
-            <a href="/actor/1960712-natsue-sasamoto" class="cast-card">
+            <a href="/actor/1960712-natsue-sasamoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cao8lzCnb80CdSxMPkjBQbWep5q.jpg" alt="Natsue Sasamoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natsue Sasamoto</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

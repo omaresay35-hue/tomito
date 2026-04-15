@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>جرائم القتل في أوري</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2820442-carla-sehn" class="cast-card">
+            <a href="/actor/2820442-carla-sehn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e4YOM8dHLwCr9OExX9iFGpCaqes.jpg" alt="Carla Sehn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carla Sehn</span>
             </a>
-            <a href="/actor/2141745-kardo-razzazi" class="cast-card">
+            <a href="/actor/2141745-kardo-razzazi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/98ORKOZFDEDjutqAcARyr4ITE8K.jpg" alt="Kardo Razzazi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kardo Razzazi</span>
             </a>
-            <a href="/actor/225091-charlie-gustafsson" class="cast-card">
+            <a href="/actor/225091-charlie-gustafsson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ac6aXbihuOKr4KsU9imnY4WjCvq.jpg" alt="Charlie Gustafsson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charlie Gustafsson</span>
             </a>
-            <a href="/actor/1042031-francisco-sobrado" class="cast-card">
+            <a href="/actor/1042031-francisco-sobrado.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bXWcYHhc2hu6OYzEbdTfsgtjblF.jpg" alt="Francisco Sobrado" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francisco Sobrado</span>
             </a>
-            <a href="/actor/235374-pia-johansson" class="cast-card">
+            <a href="/actor/235374-pia-johansson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5M6xF3Uq5v86k9ZeXecBeJ8nCde.jpg" alt="Pia Johansson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pia Johansson</span>
             </a>
-            <a href="/actor/2217105-maxida-märak" class="cast-card">
+            <a href="/actor/2217105-maxida-märak.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7qAelkb3hKe3hpdsJ93G1Re6rwH.jpg" alt="Maxida Märak" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maxida Märak</span>
             </a>
-            <a href="/actor/4818626-cora-watson" class="cast-card">
+            <a href="/actor/4818626-cora-watson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qWtzAqhDR9bLi0znL4QTfqvSfaS.jpg" alt="Cora Watson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cora Watson</span>
             </a>
-            <a href="/actor/213487-cecilia-forss" class="cast-card">
+            <a href="/actor/213487-cecilia-forss.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mutGaRS2YbySqxyUvGQNYWLeJKX.jpg" alt="Cecilia Forss" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cecilia Forss</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

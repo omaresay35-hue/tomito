@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>火凤燎原</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2723046-shen-lei" class="cast-card">
+            <a href="/actor/2723046-shen-lei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sZplvI3vJ2drydzRS2ZCD71BEBU.jpg" alt="Shen Lei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shen Lei</span>
             </a>
-            <a href="/actor/4063232-du-guangyi" class="cast-card">
+            <a href="/actor/4063232-du-guangyi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Du Guangyi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Du Guangyi</span>
             </a>
-            <a href="/actor/2922428-zhang-qi" class="cast-card">
+            <a href="/actor/2922428-zhang-qi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9HORzwKbTahaVYovsMerNCdcuv4.jpg" alt="Zhang Qi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Qi</span>
             </a>
-            <a href="/actor/4063299-lin-jing" class="cast-card">
+            <a href="/actor/4063299-lin-jing.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lin Jing" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lin Jing</span>
             </a>
-            <a href="/actor/3171093-zhao-qianjing" class="cast-card">
+            <a href="/actor/3171093-zhao-qianjing.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6QRgZZZhwee5md1W5kgeCEScvQI.jpg" alt="Zhao Qianjing" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhao Qianjing</span>
             </a>
-            <a href="/actor/4063314-zheng-jingtian" class="cast-card">
+            <a href="/actor/4063314-zheng-jingtian.html" class="cast-card">
                 <img src="/favicon.ico" alt="Zheng Jingtian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zheng Jingtian</span>
             </a>
-            <a href="/actor/4063321-jiang-ke" class="cast-card">
+            <a href="/actor/4063321-jiang-ke.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jiang Ke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jiang Ke</span>
             </a>
-            <a href="/actor/2195110-fu-chong" class="cast-card">
+            <a href="/actor/2195110-fu-chong.html" class="cast-card">
                 <img src="/favicon.ico" alt="Fu Chong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fu Chong</span>
             </a>
-            <a href="/actor/3373518-lyu-liang" class="cast-card">
+            <a href="/actor/3373518-lyu-liang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/luVsFKyt8vnAxPAdHbGX3btFpxu.jpg" alt="Lyu Liang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lyu Liang</span>
             </a>
-            <a href="/actor/3171082-cheng-yuzhu" class="cast-card">
+            <a href="/actor/3171082-cheng-yuzhu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1OoKCFRvTACC1O25qMqtditbCTb.jpg" alt="Cheng Yuzhu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cheng Yuzhu</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

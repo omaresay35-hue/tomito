@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1543797-samurai-vengeance">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1543797-samurai-vengeance.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ks2xQQw2HMbDzz9TdTMW2PoMYLy.jpg" alt="Samurai Vengeance — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Samurai Vengeance</div></div>
-    </a>    <a class="card" href="/movie/1418217-the-final-piece">
+    </a>    <a class="card" href="/movie/1418217-the-final-piece.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tyf6yVVaDrFjOWrf8JkgaSgY8Aa.jpg" alt="The Final Piece — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Final Piece</div></div>
-    </a>    <a class="card" href="/movie/1379266-kokuho">
+    </a>    <a class="card" href="/movie/1379266-kokuho.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/a15F5KJ4mleusJR1YKP4zUyZaxG.jpg" alt="Kokuho — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kokuho</div></div>
-    </a>    <a class="card" href="/movie/587563-kensukes-kingdom">
+    </a>    <a class="card" href="/movie/587563-kensukes-kingdom.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9M8tTHbYFrGxCXxNMvAkvRbhtER.jpg" alt="Kensuke's Kingdom — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kensuke's Kingdom</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/260293-unbound">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/260293-unbound.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pB9Hi2Jip4NSdZRIZVb1bNtuNEE.jpg" alt="Unbound — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Unbound</div></div>
-    </a>    <a class="card" href="/tv/90296-tokyo-vice">
+    </a>    <a class="card" href="/tv/90296-tokyo-vice.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/za5QWRfCLwgRLLVXUkx3NUSAm6G.jpg" alt="Tokyo Vice — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Tokyo Vice</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

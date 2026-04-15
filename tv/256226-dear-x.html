@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>عزيزي إكس</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/140335-kim-yoo-jung" class="cast-card">
+            <a href="/actor/140335-kim-yoo-jung.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eFcMTDIgzSGLHZYXcsf1M42cvFt.jpg" alt="Kim Yoo-jung" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Yoo-jung</span>
             </a>
-            <a href="/actor/2260418-kim-young-dae" class="cast-card">
+            <a href="/actor/2260418-kim-young-dae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eF0ymiYRrCmoFncGf6mxRjhWelZ.jpg" alt="Kim Young-dae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Young-dae</span>
             </a>
-            <a href="/actor/2152558-kim-do-hoon" class="cast-card">
+            <a href="/actor/2152558-kim-do-hoon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3ISggEbubgBtZiDV7kMVm09X0MG.jpg" alt="Kim Do-hoon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Do-hoon</span>
             </a>
-            <a href="/actor/1467384-lee-yul-eum" class="cast-card">
+            <a href="/actor/1467384-lee-yul-eum.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1ia6C3jIPBdQ21LmuW5ZPSr8kXC.jpg" alt="Lee Yul-eum" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Yul-eum</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

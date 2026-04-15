@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1370559-tired-of-killing">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1370559-tired-of-killing.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8mqhOxfI1JHOx8ynqhowlLTF3oj.jpg" alt="Tired Of Killing — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Tired Of Killing</div></div>
-    </a>    <a class="card" href="/movie/1517117-orfeo">
+    </a>    <a class="card" href="/movie/1517117-orfeo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/is8ESjWqjdlGXV2VzVXUezVESYe.jpg" alt="Orfeo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Orfeo</div></div>
-    </a>    <a class="card" href="/movie/1299046-diamonds">
+    </a>    <a class="card" href="/movie/1299046-diamonds.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rvtFJBLnDalT61QtguRGOrii0hM.jpg" alt="Diamonds — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Diamonds</div></div>
-    </a>    <a class="card" href="/movie/612491-superheroes">
+    </a>    <a class="card" href="/movie/612491-superheroes.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9ZDnrgn6Iw9z2XtaQ99G0p1DFP0.jpg" alt="Superheroes — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Superheroes</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/205482-the-lions-of-sicily">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/205482-the-lions-of-sicily.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rsP3NpgqNaJTdEduwFzd4dgukMx.jpg" alt="The Lions of Sicily — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Lions of Sicily</div></div>
-    </a>    <a class="card" href="/tv/226680-gialappashow">
+    </a>    <a class="card" href="/tv/226680-gialappashow.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gczG92zbCmVDI2ahOpchGzr6895.jpg" alt="GialappaShow — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">GialappaShow</div></div>
-    </a>    <a class="card" href="/tv/125359-django">
+    </a>    <a class="card" href="/tv/125359-django.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eQ4GRmP0EEkxjwlPbZlVn7HLoZp.jpg" alt="Django — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Django</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

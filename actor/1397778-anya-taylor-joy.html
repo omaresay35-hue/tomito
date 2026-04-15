@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,27 +75,27 @@ Tay</p>
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1226863-the-super-mario-galaxy-movie">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1226863-the-super-mario-galaxy-movie.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eJGWx219ZcEMVQJhAgMiqo8tYY.jpg" alt="The Super Mario Galaxy Movie — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Super Mario Galaxy Movie</div></div>
-    </a>    <a class="card" href="/movie/1504199-its-a-mad-max-world">
+    </a>    <a class="card" href="/movie/1504199-its-a-mad-max-world.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/aL6JGWMt0Op6OLSS1TZJZVmhJNf.jpg" alt="It’s a Mad Max World — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">It’s a Mad Max World</div></div>
-    </a>    <a class="card" href="/movie/950396-the-gorge">
+    </a>    <a class="card" href="/movie/950396-the-gorge.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7iMBZzVZtG0oBug4TfqDb9ZxAOa.jpg" alt="The Gorge — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Gorge</div></div>
-    </a>    <a class="card" href="/movie/786892-furiosa-a-mad-max-saga">
+    </a>    <a class="card" href="/movie/786892-furiosa-a-mad-max-saga.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/iADOJ8Zymht2JPMoy3R7xceZprc.jpg" alt="Furiosa: A Mad Max Saga — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Furiosa: A Mad Max Saga</div></div>
-    </a>    <a class="card" href="/movie/693134-dune-part-two">
+    </a>    <a class="card" href="/movie/693134-dune-part-two.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1pdfLvkbY9ohJlCjQH2CZjjYVvJ.jpg" alt="Dune: Part Two — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dune: Part Two</div></div>
-    </a>    <a class="card" href="/movie/784047-creating-the-queens-gambit">
+    </a>    <a class="card" href="/movie/784047-creating-the-queens-gambit.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gKxPyeItCrOscP8On4y5sG3WY9A.jpg" alt="Creating The Queen's Gambit — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Creating The Queen's Gambit</div></div>
@@ -104,13 +104,6 @@ Tay</p>
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

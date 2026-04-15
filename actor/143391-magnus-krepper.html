@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1436061-fabian-and-the-deadly-wedding">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1436061-fabian-and-the-deadly-wedding.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2T4gc5njZ0JJVYLn6Q8VxS9RoM6.jpg" alt="Fabian and the Deadly Wedding — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fabian and the Deadly Wedding</div></div>
-    </a>    <a class="card" href="/movie/1053927-eternal">
+    </a>    <a class="card" href="/movie/1053927-eternal.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tmXAytaq3vSX00fjEbGL9W35M6q.jpg" alt="Eternal — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Eternal</div></div>
-    </a>    <a class="card" href="/movie/916723-what-remains">
+    </a>    <a class="card" href="/movie/916723-what-remains.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7sRXV5sUsSU22WvQOsb3XxKFebC.jpg" alt="What Remains — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">What Remains</div></div>
-    </a>    <a class="card" href="/movie/1104027-hunters-on-a-white-field">
+    </a>    <a class="card" href="/movie/1104027-hunters-on-a-white-field.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vTnH446v2GlUyNSxwtmjD24q2HG.jpg" alt="Hunters on a White Field — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Hunters on a White Field</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/281555-to-cook-a-bear">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/281555-to-cook-a-bear.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/71dqddtGqtCWLJApvZuznxvIzvj.jpg" alt="To Cook a Bear — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">To Cook a Bear</div></div>
-    </a>    <a class="card" href="/tv/218131-blackwater">
+    </a>    <a class="card" href="/tv/218131-blackwater.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sePPXfvn7ihTzS9hDN5EjwuzsCt.jpg" alt="Blackwater — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Blackwater</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

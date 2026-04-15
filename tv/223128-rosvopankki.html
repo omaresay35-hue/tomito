@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Rosvopankki</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1646726-pekka-strang" class="cast-card">
+            <a href="/actor/1646726-pekka-strang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/24ws8BfBwfc8ggDOjPddJQbpFuQ.jpg" alt="Pekka Strang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pekka Strang</span>
             </a>
-            <a href="/actor/88848-amanda-pilke" class="cast-card">
+            <a href="/actor/88848-amanda-pilke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dYQbzHfolo50Sjs8tYiOFtdSvoC.jpg" alt="Amanda Pilke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amanda Pilke</span>
             </a>
-            <a href="/actor/1656765-tuulia-eloranta" class="cast-card">
+            <a href="/actor/1656765-tuulia-eloranta.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/14HZVsC87078VHe15vUp4sfegB.jpg" alt="Tuulia Eloranta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tuulia Eloranta</span>
             </a>
-            <a href="/actor/1079292-juha-kukkonen" class="cast-card">
+            <a href="/actor/1079292-juha-kukkonen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8GUIv3Vkdc2N5lGLFYnwMiVmnpn.jpg" alt="Juha Kukkonen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juha Kukkonen</span>
             </a>
-            <a href="/actor/938671-ville-tiihonen" class="cast-card">
+            <a href="/actor/938671-ville-tiihonen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pie6NpwkFn5RXzczXn0wHrbZ3Jz.jpg" alt="Ville Tiihonen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ville Tiihonen</span>
             </a>
-            <a href="/actor/1093402-kai-vaine" class="cast-card">
+            <a href="/actor/1093402-kai-vaine.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eNACRI2TsP1NTaremh0tgyOIUxI.jpg" alt="Kai Vaine" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kai Vaine</span>
             </a>
-            <a href="/actor/1904563-olli-rahkonen" class="cast-card">
+            <a href="/actor/1904563-olli-rahkonen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pTdPK0IzIIkrt62zUbvwtmHZQVB.jpg" alt="Olli Rahkonen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olli Rahkonen</span>
             </a>
-            <a href="/actor/124285-hannu-pekka-björkman" class="cast-card">
+            <a href="/actor/124285-hannu-pekka-björkman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eAPWK3ScccXfgMgDEOPipwwPLS1.jpg" alt="Hannu-Pekka Björkman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hannu-Pekka Björkman</span>
             </a>
-            <a href="/actor/234256-carl-kristian-rundman" class="cast-card">
+            <a href="/actor/234256-carl-kristian-rundman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ziUmk1J1QVaZBGIChkilzSougpG.jpg" alt="Carl-Kristian Rundman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carl-Kristian Rundman</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

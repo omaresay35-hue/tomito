@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Intercambiadas</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/545346-silvia-navarro" class="cast-card">
+            <a href="/actor/545346-silvia-navarro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tYkCV1MsqXtXZ7A9SnCwfuw1hU1.jpg" alt="Silvia Navarro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Silvia Navarro</span>
             </a>
-            <a href="/actor/2153303-michelle-rodríguez" class="cast-card">
+            <a href="/actor/2153303-michelle-rodríguez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nLuOLXauZhInejLSFqUl18nfoHn.jpg" alt="Michelle Rodríguez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michelle Rodríguez</span>
             </a>
-            <a href="/actor/133759-mauricio-islas" class="cast-card">
+            <a href="/actor/133759-mauricio-islas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aBoTJspsUppKXicP5nrL9IfRON9.jpg" alt="Mauricio Islas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mauricio Islas</span>
             </a>
-            <a href="/actor/1018058-alejandro-calva" class="cast-card">
+            <a href="/actor/1018058-alejandro-calva.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zd7yOpxs3vsHgZXmTD3ueydYA6B.jpg" alt="Alejandro Calva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alejandro Calva</span>
             </a>
-            <a href="/actor/3658307-kaled-acab" class="cast-card">
+            <a href="/actor/3658307-kaled-acab.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/c4xkpGSXTphRNziOcKKNcVsYJcT.jpg" alt="Kaled Acab" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaled Acab</span>
             </a>
-            <a href="/actor/2152771-cassandra-iturralde" class="cast-card">
+            <a href="/actor/2152771-cassandra-iturralde.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pNEGZk5bz0ixsDDZ8doc5r502AE.jpg" alt="Cassandra Iturralde" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cassandra Iturralde</span>
             </a>
-            <a href="/actor/2230590-erick-chapa" class="cast-card">
+            <a href="/actor/2230590-erick-chapa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h4sjvDniBW4M3QDlpYENxLiTmoL.jpg" alt="Erick Chapa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erick Chapa</span>
             </a>
-            <a href="/actor/1271517-ana-gonzalez-bello" class="cast-card">
+            <a href="/actor/1271517-ana-gonzalez-bello.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kZEc6KQaHmfHMyU2y2EkaLFQhcl.jpg" alt="Ana Gonzalez Bello" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ana Gonzalez Bello</span>
             </a>
-            <a href="/actor/1044127-alejandro-cuétara" class="cast-card">
+            <a href="/actor/1044127-alejandro-cuétara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/doCO439CVHiJ3onkSn7X1C4H9DV.jpg" alt="Alejandro Cuétara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alejandro Cuétara</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Les Sentinelles</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2447101-louis-peres" class="cast-card">
+            <a href="/actor/2447101-louis-peres.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/otfeN9M56LsCG60MDrMlLGcYgmr.jpg" alt="Louis Peres" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louis Peres</span>
             </a>
-            <a href="/actor/2032782-thibaut-évrard" class="cast-card">
+            <a href="/actor/2032782-thibaut-évrard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/imffvqFEZ3WmDd0bRuyeCXz3ILh.jpg" alt="Thibaut Évrard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thibaut Évrard</span>
             </a>
-            <a href="/actor/231457-kacey-mottet-klein" class="cast-card">
+            <a href="/actor/231457-kacey-mottet-klein.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ggOHPk5DHQzf9t4Qm4sohmtcNVf.jpg" alt="Kacey Mottet Klein" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kacey Mottet Klein</span>
             </a>
-            <a href="/actor/1835130-carl-malapa" class="cast-card">
+            <a href="/actor/1835130-carl-malapa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sMavnd5U6ZlZYf4h3gW6T7JinZm.jpg" alt="Carl Malapa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carl Malapa</span>
             </a>
-            <a href="/actor/82183-olivia-ross" class="cast-card">
+            <a href="/actor/82183-olivia-ross.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5CSTFYU5WrhTqhN9ewN6NWDxOcc.jpg" alt="Olivia Ross" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olivia Ross</span>
             </a>
-            <a href="/actor/47335-ouassini-embarek" class="cast-card">
+            <a href="/actor/47335-ouassini-embarek.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/52wWbIrMi1KcsGB1UL6ydBGHNED.jpg" alt="Ouassini Embarek" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ouassini Embarek</span>
             </a>
-            <a href="/actor/141635-pauline-étienne" class="cast-card">
+            <a href="/actor/141635-pauline-étienne.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oR65XubUv0Wn4hhLJqImPIXrHrC.jpg" alt="Pauline Étienne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pauline Étienne</span>
             </a>
-            <a href="/actor/1102328-nastya-golubeva-carax" class="cast-card">
+            <a href="/actor/1102328-nastya-golubeva-carax.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/88f6k7CHWXHV356NsmtcopMsK9S.jpg" alt="Nastya Golubeva Carax" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nastya Golubeva Carax</span>
             </a>
-            <a href="/actor/1169737-noam-morgensztern" class="cast-card">
+            <a href="/actor/1169737-noam-morgensztern.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/coDyPa5OugCeHkAhsWxV69cPhaZ.jpg" alt="Noam Morgensztern" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Noam Morgensztern</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

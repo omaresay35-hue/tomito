@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>خان الذهب</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3933707-saif-al-shareef" class="cast-card">
+            <a href="/actor/3933707-saif-al-shareef.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mQDqu5WNtT0QgbEfq8DAIMGD3md.jpg" alt="Saif Al-Shareef" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saif Al-Shareef</span>
             </a>
-            <a href="/actor/3933706-ruwaida-shaheen" class="cast-card">
+            <a href="/actor/3933706-ruwaida-shaheen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4azV4NtggrSfWQC2Jk3MYaiumKt.jpg" alt="Ruwaida Shaheen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ruwaida Shaheen</span>
             </a>
-            <a href="/actor/3474855-ghassan-ismail" class="cast-card">
+            <a href="/actor/3474855-ghassan-ismail.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fsenoeBqzS52ZFcP2tAjYrwNP3T.jpg" alt="Ghassan Ismail" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ghassan Ismail</span>
             </a>
-            <a href="/actor/3938787-sara-al-bhrany" class="cast-card">
+            <a href="/actor/3938787-sara-al-bhrany.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8amKpIfXbpJ1cnHuD7NDXaiJG8H.jpg" alt="Sara Al Bhrany" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sara Al Bhrany</span>
             </a>
-            <a href="/actor/3943687-amira-jawad" class="cast-card">
+            <a href="/actor/3943687-amira-jawad.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lv6IopY9TAKT8OxjJzrII4rhNY3.jpg" alt="Amira Jawad" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amira Jawad</span>
             </a>
-            <a href="/actor/3476377-sami-kaftan" class="cast-card">
+            <a href="/actor/3476377-sami-kaftan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/edpwUfsE5gZz4NCABjYoloIuMLg.jpg" alt="Sami Kaftan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sami Kaftan</span>
             </a>
-            <a href="/actor/3513203-ahmed-nassim" class="cast-card">
+            <a href="/actor/3513203-ahmed-nassim.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/opqbva7Tn2Umo7O8P6pxLJVKwrN.jpg" alt="Ahmed Nassim" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ahmed Nassim</span>
             </a>
-            <a href="/actor/2984469-sam-rahmani" class="cast-card">
+            <a href="/actor/2984469-sam-rahmani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7Q5XAf14N59yM1HG7LqUAYmFpf7.jpg" alt="Sam Rahmani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sam Rahmani</span>
             </a>
-            <a href="/actor/4599804-nagham-al-masoudi" class="cast-card">
+            <a href="/actor/4599804-nagham-al-masoudi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/74ZKr2L4I8eGcaXj6YbByCJzGwb.jpg" alt="Nagham Al Masoudi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nagham Al Masoudi</span>
             </a>
-            <a href="/actor/3977971-ashraqat-ghanem" class="cast-card">
+            <a href="/actor/3977971-ashraqat-ghanem.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s2R7S6QcVeZtzCBv53FaTmHQheq.jpg" alt="Ashraqat Ghanem" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ashraqat Ghanem</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

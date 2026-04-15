@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1235246-christmas-karma">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1235246-christmas-karma.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/axkX8p8OyvGTsr8q2MXO3EjMwqO.jpg" alt="Christmas Karma — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Christmas Karma</div></div>
-    </a>    <a class="card" href="/movie/1042650-widow-clicquot">
+    </a>    <a class="card" href="/movie/1042650-widow-clicquot.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eYnHRMGtbbHt1XLNwgx2LNcUvsZ.jpg" alt="Widow Clicquot — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Widow Clicquot</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/253376-the-girlfriend">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/253376-the-girlfriend.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ktrp3tdZ5IQpFux4nLy8z70bt3n.jpg" alt="The Girlfriend — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Girlfriend</div></div>
-    </a>    <a class="card" href="/tv/274479-lynley">
+    </a>    <a class="card" href="/tv/274479-lynley.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nBwCKjg3CNonSWMmE7VghNc4qBm.jpg" alt="Lynley — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Lynley</div></div>
-    </a>    <a class="card" href="/tv/116135-vikings-valhalla">
+    </a>    <a class="card" href="/tv/116135-vikings-valhalla.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rDFy1fUU6OC3Mm0CLFB7u0fGwVN.jpg" alt="Vikings: Valhalla — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Vikings: Valhalla</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

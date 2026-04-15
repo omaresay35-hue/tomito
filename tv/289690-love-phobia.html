@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسل</a> &gt; 
+    <a href="/index.html#series">مسلسل</a> &gt; 
     <span>رهاب الحب</span>
   </nav>
 
@@ -75,43 +75,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1875826-yeon-woo" class="cast-card">
+            <a href="/actor/1875826-yeon-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aXroCR7GA9DKnTxppJComTHrRvC.jpg" alt="Yeon Woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yeon Woo</span>
             </a>
-            <a href="/actor/3261027-kim-hyun-jin" class="cast-card">
+            <a href="/actor/3261027-kim-hyun-jin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2bKZb6DK01ERmBciiTlMEMnisKl.jpg" alt="Kim Hyun-jin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Hyun-jin</span>
             </a>
-            <a href="/actor/1984373-jo-yoon-seo" class="cast-card">
+            <a href="/actor/1984373-jo-yoon-seo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5ErUcSZih2Ht0sIZJhVFbkSRZZW.jpg" alt="Jo Yoon-seo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jo Yoon-seo</span>
             </a>
-            <a href="/actor/2858603-choi-byung-chan" class="cast-card">
+            <a href="/actor/2858603-choi-byung-chan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uePeUDNXQaBfUpLEhZ9hyNUK0ST.jpg" alt="Choi Byung-chan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Choi Byung-chan</span>
             </a>
-            <a href="/actor/39256-im-ji-eun" class="cast-card">
+            <a href="/actor/39256-im-ji-eun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vCN0sbmE06VsiLFO2uegQzCZEzH.jpg" alt="Im Ji-eun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Im Ji-eun</span>
             </a>
-            <a href="/actor/5332713-han-gyu-min" class="cast-card">
+            <a href="/actor/5332713-han-gyu-min.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gCLloxiAvxvlFw77ZS2aw8deUJi.jpg" alt="Han Gyu-min" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Han Gyu-min</span>
             </a>
-            <a href="/actor/3641074-lee-ji-hae" class="cast-card">
+            <a href="/actor/3641074-lee-ji-hae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2DLWad0wLiHhxuT2CUsqmFVu6id.jpg" alt="Lee Ji-hae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Ji-hae</span>
             </a>
-            <a href="/actor/1491887-kim-ki-nam" class="cast-card">
+            <a href="/actor/1491887-kim-ki-nam.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wJ76NNToLrbjXchgGATCdypkv6A.jpg" alt="Kim Ki-nam" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Ki-nam</span>
             </a>
-            <a href="/actor/5497754-kim-so-ha" class="cast-card">
+            <a href="/actor/5497754-kim-so-ha.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kim So Ha" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim So Ha</span>
             </a>
-            <a href="/actor/4369557-hwang-ha-jung" class="cast-card">
+            <a href="/actor/4369557-hwang-ha-jung.html" class="cast-card">
                 <img src="/favicon.ico" alt="Hwang Ha-jung" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hwang Ha-jung</span>
             </a></div></section>
@@ -119,13 +119,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

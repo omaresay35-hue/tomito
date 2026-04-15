@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1091181-family-pack">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1091181-family-pack.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uL1dR0L65GZgy3h2gvZcxDu0bRG.jpg" alt="Family Pack — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Family Pack</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/251983-erica">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/251983-erica.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/izRp5FZzgGTx6JvGb1uCnQnZkDV.jpg" alt="Erica — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Erica</div></div>
-    </a>    <a class="card" href="/tv/222176-cats-eyes">
+    </a>    <a class="card" href="/tv/222176-cats-eyes.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sk2qhWP7EyhcvHjvdsCbjInqJGw.jpg" alt="Cat's Eyes — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Cat's Eyes</div></div>
-    </a>    <a class="card" href="/tv/222662-land-of-blood-and-wisdom">
+    </a>    <a class="card" href="/tv/222662-land-of-blood-and-wisdom.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sngxXuqwGvfkKP7gJ9MAy7dz4yD.jpg" alt="Land of Blood and Wisdom — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Land of Blood and Wisdom</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

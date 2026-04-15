@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Mikadono Sanshimai Wa Angai, Choroi</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3042847-minami-hinata" class="cast-card">
+            <a href="/actor/3042847-minami-hinata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q90Z5krEzTMOqJSM4DAjJNUE6Xq.jpg" alt="Minami Hinata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Minami Hinata</span>
             </a>
-            <a href="/actor/2539429-yurina-amami" class="cast-card">
+            <a href="/actor/2539429-yurina-amami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/peSPIgRkaiowkDTNfw7GpbW2J5Z.jpg" alt="Yurina Amami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yurina Amami</span>
             </a>
-            <a href="/actor/2251986-aoi-koga" class="cast-card">
+            <a href="/actor/2251986-aoi-koga.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uVpwheVV4aPROyY1toYv3v5HSPD.jpg" alt="Aoi Koga" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aoi Koga</span>
             </a>
-            <a href="/actor/1643476-yoshino-aoyama" class="cast-card">
+            <a href="/actor/1643476-yoshino-aoyama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yPOprcT7tPKR3p79RMYtogTEXGr.jpg" alt="Yoshino Aoyama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshino Aoyama</span>
             </a>
-            <a href="/actor/934841-masaya-matsukaze" class="cast-card">
+            <a href="/actor/934841-masaya-matsukaze.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tUd3ybETFz4hBGLnaqt3VreGeDJ.jpg" alt="Masaya Matsukaze" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masaya Matsukaze</span>
             </a>
-            <a href="/actor/1254671-ai-kayano" class="cast-card">
+            <a href="/actor/1254671-ai-kayano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pfM0EcMpzPGChxM4sdPjCpPFKch.jpg" alt="Ai Kayano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ai Kayano</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

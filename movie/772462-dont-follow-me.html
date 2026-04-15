@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>No Me Sigas</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2092476-karla-rodríguez-coronado" class="cast-card">
+            <a href="/actor/2092476-karla-rodríguez-coronado.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ll0jiVSdiKB3kW6k3DbmwIOUzOP.jpg" alt="Karla Rodríguez Coronado" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karla Rodríguez Coronado</span>
             </a>
-            <a href="/actor/2626036-yankel-stevan" class="cast-card">
+            <a href="/actor/2626036-yankel-stevan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a2D0aRbMQP0Xc5T092KFnRvflLW.jpg" alt="Yankel Stevan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yankel Stevan</span>
             </a>
-            <a href="/actor/5477662-julia-maque" class="cast-card">
+            <a href="/actor/5477662-julia-maque.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ntgNULYyQMaeIx7ERNiEQW02E97.jpg" alt="Julia Maque" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julia Maque</span>
             </a>
-            <a href="/actor/5780764-cesar-serrano-prado-parker" class="cast-card">
+            <a href="/actor/5780764-cesar-serrano-prado-parker.html" class="cast-card">
                 <img src="/favicon.ico" alt="Cesar Serrano Prado "Parker"" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cesar Serrano Prado "Parker"</span>
             </a>
-            <a href="/actor/2784005-maría-ulloa" class="cast-card">
+            <a href="/actor/2784005-maría-ulloa.html" class="cast-card">
                 <img src="/favicon.ico" alt="María Ulloa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>María Ulloa</span>
             </a>
-            <a href="/actor/4542565-miranda-garcía" class="cast-card">
+            <a href="/actor/4542565-miranda-garcía.html" class="cast-card">
                 <img src="/favicon.ico" alt="Miranda García" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miranda García</span>
             </a>
-            <a href="/actor/5780766-luz-maría-meza" class="cast-card">
+            <a href="/actor/5780766-luz-maría-meza.html" class="cast-card">
                 <img src="/favicon.ico" alt="Luz María Meza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luz María Meza</span>
             </a>
-            <a href="/actor/4807833-fernanda-chicurel" class="cast-card">
+            <a href="/actor/4807833-fernanda-chicurel.html" class="cast-card">
                 <img src="/favicon.ico" alt="Fernanda Chicurel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fernanda Chicurel</span>
             </a>
-            <a href="/actor/5780767-victoria-yamasaki" class="cast-card">
+            <a href="/actor/5780767-victoria-yamasaki.html" class="cast-card">
                 <img src="/favicon.ico" alt="Victoria Yamasaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Victoria Yamasaki</span>
             </a>
-            <a href="/actor/3615478-ximena-garcía-lecuona" class="cast-card">
+            <a href="/actor/3615478-ximena-garcía-lecuona.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wlSRWX2c1tGmCIMeN4ew6Ux9Hr5.jpg" alt="Ximena García Lecuona" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ximena García Lecuona</span>
             </a>
-            <a href="/actor/5780769-joel-marroquín" class="cast-card">
+            <a href="/actor/5780769-joel-marroquín.html" class="cast-card">
                 <img src="/favicon.ico" alt="Joel Marroquín" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joel Marroquín</span>
             </a>
-            <a href="/actor/5780770-robbie-martínez" class="cast-card">
+            <a href="/actor/5780770-robbie-martínez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Robbie Martínez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robbie Martínez</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

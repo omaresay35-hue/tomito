@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>沈黙の艦隊 北極海大海戦</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/45999-takao-osawa" class="cast-card">
+            <a href="/actor/45999-takao-osawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nxSOEoENPw6NIYOckna94WICPAE.jpg" alt="Takao Osawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takao Osawa</span>
             </a>
-            <a href="/actor/46363-aya-ueto" class="cast-card">
+            <a href="/actor/46363-aya-ueto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9r4qBKsyyFWSKTEfMgHYnFfxig1.jpg" alt="Aya Ueto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aya Ueto</span>
             </a>
-            <a href="/actor/229360-aoi-nakamura" class="cast-card">
+            <a href="/actor/229360-aoi-nakamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/melP3Udhsm8jpesyHURSFh3gGEL.jpg" alt="Aoi Nakamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aoi Nakamura</span>
             </a>
-            <a href="/actor/80865-takashi-sasano" class="cast-card">
+            <a href="/actor/80865-takashi-sasano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/172tux6gIAzCP1quDE0KqrUzNQL.jpg" alt="Takashi Sasano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takashi Sasano</span>
             </a>
-            <a href="/actor/13280-yui-natsukawa" class="cast-card">
+            <a href="/actor/13280-yui-natsukawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iHyLA3cVmMecr6slSSeMoc2ISFg.jpg" alt="Yui Natsukawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yui Natsukawa</span>
             </a>
-            <a href="/actor/1290336-yoshi-sakō" class="cast-card">
+            <a href="/actor/1290336-yoshi-sakō.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fQIKHNb8OvBd9Au0ombAjvzfHqO.jpg" alt="Yoshi Sakō" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshi Sakō</span>
             </a>
-            <a href="/actor/55784-yosuke-eguchi" class="cast-card">
+            <a href="/actor/55784-yosuke-eguchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lRLNrQ4Nv4CdWxWwAUQsu3p3NGR.jpg" alt="Yosuke Eguchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yosuke Eguchi</span>
             </a>
-            <a href="/actor/2090099-kou-maehara" class="cast-card">
+            <a href="/actor/2090099-kou-maehara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fpcOA4a1kJ5lFK8iUaWIEhoenhk.jpg" alt="Kou Maehara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kou Maehara</span>
             </a>
-            <a href="/actor/1897451-koudai-matsuoka" class="cast-card">
+            <a href="/actor/1897451-koudai-matsuoka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lqediXs7p4JDJazmIAmJjtR4jvB.jpg" alt="Koudai Matsuoka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koudai Matsuoka</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

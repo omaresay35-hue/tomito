@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Royal Crackers</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3614378-jason-ruiz" class="cast-card">
+            <a href="/actor/3614378-jason-ruiz.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jason Ruiz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jason Ruiz</span>
             </a>
-            <a href="/actor/1181310-andrew-santino" class="cast-card">
+            <a href="/actor/1181310-andrew-santino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oMIPMiKGFfWURfgFpBjqoU6T8xA.jpg" alt="Andrew Santino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrew Santino</span>
             </a>
-            <a href="/actor/200237-jessica-st-clair" class="cast-card">
+            <a href="/actor/200237-jessica-st-clair.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lKIgq19oEx5ashQFF3QRYwMx0wz.jpg" alt="Jessica St. Clair" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jessica St. Clair</span>
             </a>
-            <a href="/actor/1838652-david-gborie" class="cast-card">
+            <a href="/actor/1838652-david-gborie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/csoG0PKiB8lAB2wujErbcaQkolG.jpg" alt="David Gborie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Gborie</span>
             </a>
-            <a href="/actor/23211-maile-flanagan" class="cast-card">
+            <a href="/actor/23211-maile-flanagan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nrdXF7YEztWgG66HB7oSJYn2XeD.jpg" alt="Maile Flanagan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maile Flanagan</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Class of '09</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/51072-kate-mara" class="cast-card">
+            <a href="/actor/51072-kate-mara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oKnhaekgHUQqL7uVa7yn6alySgB.jpg" alt="Kate Mara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kate Mara</span>
             </a>
-            <a href="/actor/226366-brian-tyree-henry" class="cast-card">
+            <a href="/actor/226366-brian-tyree-henry.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1UgDnFt3OteCJQPiUelWzIR5bvT.jpg" alt="Brian Tyree Henry" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brian Tyree Henry</span>
             </a>
-            <a href="/actor/1344374-sepideh-moafi" class="cast-card">
+            <a href="/actor/1344374-sepideh-moafi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7Z9BvGgwdLqlRJJft38cepGY1TZ.jpg" alt="Sepideh Moafi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sepideh Moafi</span>
             </a>
-            <a href="/actor/22541-brian-j-smith" class="cast-card">
+            <a href="/actor/22541-brian-j-smith.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sAlWlK9mtX9BVGFybx7wQ9SSzTp.jpg" alt="Brian J. Smith" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brian J. Smith</span>
             </a>
-            <a href="/actor/1224010-jon-jon-briones" class="cast-card">
+            <a href="/actor/1224010-jon-jon-briones.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rMLbpS7OgWcrDMKcJxrfk54Lm56.jpg" alt="Jon Jon Briones" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jon Jon Briones</span>
             </a>
-            <a href="/actor/31649-brooke-smith" class="cast-card">
+            <a href="/actor/31649-brooke-smith.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zD6SyVPGnrtnHvC0QtucEDxDTk5.jpg" alt="Brooke Smith" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brooke Smith</span>
             </a>
-            <a href="/actor/1682679-rosalind-eleazar" class="cast-card">
+            <a href="/actor/1682679-rosalind-eleazar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9Tb1rLSnyCfnZXYixfjWJuQJig9.jpg" alt="Rosalind Eleazar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rosalind Eleazar</span>
             </a>
-            <a href="/actor/94791-jake-mcdorman" class="cast-card">
+            <a href="/actor/94791-jake-mcdorman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zjAyeIH98VIO6udwdlzeGWtbTfv.jpg" alt="Jake McDorman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jake McDorman</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

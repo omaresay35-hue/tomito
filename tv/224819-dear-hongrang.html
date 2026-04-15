@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>عزيزي هونغرانغ</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1879169-lee-jae-wook" class="cast-card">
+            <a href="/actor/1879169-lee-jae-wook.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9dsWM2kiXO4utrg4GctdXDvhOKD.jpg" alt="Lee Jae-wook" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Jae-wook</span>
             </a>
-            <a href="/actor/1256349-cho-bo-ah" class="cast-card">
+            <a href="/actor/1256349-cho-bo-ah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1torx99sDl20pTzMI9XHaPuVP96.jpg" alt="Cho Bo-ah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cho Bo-ah</span>
             </a>
-            <a href="/actor/1865300-jung-ga-ram" class="cast-card">
+            <a href="/actor/1865300-jung-ga-ram.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nuG7pXpapuedmIEeTdHw7313t4A.jpg" alt="Jung Ga-ram" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jung Ga-ram</span>
             </a>
-            <a href="/actor/1299243-uhm-ji-won" class="cast-card">
+            <a href="/actor/1299243-uhm-ji-won.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/21ln2aJX0BWCWURqpDW2CjKL9BB.jpg" alt="Uhm Ji-won" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Uhm Ji-won</span>
             </a>
-            <a href="/actor/564844-park-byung-eun" class="cast-card">
+            <a href="/actor/564844-park-byung-eun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8lDiEHjbBxPD8VNu1kGifMXhPUn.jpg" alt="Park Byung-eun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Byung-eun</span>
             </a>
-            <a href="/actor/1223134-kim-jae-uck" class="cast-card">
+            <a href="/actor/1223134-kim-jae-uck.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nRKpyplqobE3jnP0mewURo4VDNV.jpg" alt="Kim Jae-uck" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Jae-uck</span>
             </a>
-            <a href="/actor/1694435-park-myung-hoon" class="cast-card">
+            <a href="/actor/1694435-park-myung-hoon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5SucrxkigHss7UuJKrkfAZX5MXz.jpg" alt="Park Myung-hoon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Myung-hoon</span>
             </a>
-            <a href="/actor/566375-jo-jae-yun" class="cast-card">
+            <a href="/actor/566375-jo-jae-yun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eFAeusBo0tXQ1Ul596YKl5dV4Rv.jpg" alt="Jo Jae-yun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jo Jae-yun</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

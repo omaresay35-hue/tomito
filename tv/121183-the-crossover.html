@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Crossover</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/15543-derek-luke" class="cast-card">
+            <a href="/actor/15543-derek-luke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sJR0LET3ppMwyqIMdV0B0LL9ObB.jpg" alt="Derek Luke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Derek Luke</span>
             </a>
-            <a href="/actor/2010431-jalyn-hall" class="cast-card">
+            <a href="/actor/2010431-jalyn-hall.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rvNRd4avXebBOYWuzjAW6bsgK2u.jpg" alt="Jalyn Hall" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jalyn Hall</span>
             </a>
-            <a href="/actor/1823186-amir-oneil" class="cast-card">
+            <a href="/actor/1823186-amir-oneil.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lHozcQlscv9FV3YmHKU2cA2eTyu.jpg" alt="Amir O'Neil" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amir O'Neil</span>
             </a>
-            <a href="/actor/1166341-sabrina-revelle" class="cast-card">
+            <a href="/actor/1166341-sabrina-revelle.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wvMw17GiZ55gQSC6gcCBVNRFM6b.jpg" alt="Sabrina Revelle" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sabrina Revelle</span>
             </a>
-            <a href="/actor/2733818-deja-monique-cruz" class="cast-card">
+            <a href="/actor/2733818-deja-monique-cruz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/khLcb8r17UsqhHgCSIiE7fmowBz.jpg" alt="Deja Monique Cruz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Deja Monique Cruz</span>
             </a>
-            <a href="/actor/3451246-trevor-raine-bush" class="cast-card">
+            <a href="/actor/3451246-trevor-raine-bush.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t9SLS0FUvTqD7H0tFmpUIDYhoT0.jpg" alt="Trevor Raine Bush" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Trevor Raine Bush</span>
             </a>
-            <a href="/actor/1652371-daveed-diggs" class="cast-card">
+            <a href="/actor/1652371-daveed-diggs.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/codalhZzB4LvJTSGOnOyrTEsqsF.jpg" alt="Daveed Diggs" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daveed Diggs</span>
             </a>
-            <a href="/actor/3451239-skyla-ilece" class="cast-card">
+            <a href="/actor/3451239-skyla-ilece.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2i6I7PraIqN1WiJyKXKz56AJdjh.jpg" alt="Skyla I'Lece" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Skyla I'Lece</span>
             </a>
-            <a href="/actor/1725465-darone-okolie" class="cast-card">
+            <a href="/actor/1725465-darone-okolie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m9P6OiZDoMxwocT1m4Y5nkJmS0i.jpg" alt="Darone Okolie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Darone Okolie</span>
             </a>
-            <a href="/actor/4179047-himie-freeman" class="cast-card">
+            <a href="/actor/4179047-himie-freeman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h1OLYOFRpIkdNEFzSxA5clxYOvA.jpg" alt="Himie Freeman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Himie Freeman</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

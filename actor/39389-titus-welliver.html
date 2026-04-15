@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1452176-abrahams-boys-a-dracula-story">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1452176-abrahams-boys-a-dracula-story.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/owUZI7rRIN85TnXJY8gD9LdMiGU.jpg" alt="Abraham's Boys: A Dracula Story — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Abraham's Boys: A Dracula Story</div></div>
-    </a>    <a class="card" href="/movie/1299652-watchmen-chapter-ii">
+    </a>    <a class="card" href="/movie/1299652-watchmen-chapter-ii.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/apzbE0pcmKz4RTWFVP7XXdg3VCZ.jpg" alt="Watchmen: Chapter II — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Watchmen: Chapter II</div></div>
-    </a>    <a class="card" href="/movie/1155058-watchmen-chapter-i">
+    </a>    <a class="card" href="/movie/1155058-watchmen-chapter-i.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tE2vZ6HdlmKaBh0wpsvHCf7HJKo.jpg" alt="Watchmen: Chapter I — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Watchmen: Chapter I</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/239826-ballard">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/239826-ballard.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vHQGu6ducKC7JcDU6lqWyx7tWW5.jpg" alt="Ballard — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Ballard</div></div>
-    </a>    <a class="card" href="/tv/128904-dark-winds">
+    </a>    <a class="card" href="/tv/128904-dark-winds.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kDlrMN0P9ByrEH2GoRbBFeZHbcf.jpg" alt="Dark Winds — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dark Winds</div></div>
-    </a>    <a class="card" href="/tv/153657-bosch-legacy">
+    </a>    <a class="card" href="/tv/153657-bosch-legacy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/usknS4tr8FUTm3FVWyLbWEPSGHa.jpg" alt="Bosch: Legacy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Bosch: Legacy</div></div>
-    </a>    <a class="card" href="/tv/1409-sons-of-anarchy">
+    </a>    <a class="card" href="/tv/1409-sons-of-anarchy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kiy8BHtIHAslh81rvFcZ4wbNGdY.jpg" alt="Sons of Anarchy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sons of Anarchy</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

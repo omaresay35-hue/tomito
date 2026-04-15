@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>نجمة الباليه</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/7002-luke-kirby" class="cast-card">
+            <a href="/actor/7002-luke-kirby.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jyR24wKg77yJg2O2RTzyRdcNAYq.jpg" alt="Luke Kirby" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luke Kirby</span>
             </a>
-            <a href="/actor/4273-charlotte-gainsbourg" class="cast-card">
+            <a href="/actor/4273-charlotte-gainsbourg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/54RgTfNxhiTsaZfmCXWYLeZgMlC.jpg" alt="Charlotte Gainsbourg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charlotte Gainsbourg</span>
             </a>
-            <a href="/actor/939099-lou-de-laâge" class="cast-card">
+            <a href="/actor/939099-lou-de-laâge.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/98UpC1wRj4EoY4M94wIBqD4mkRc.jpg" alt="Lou de Laâge" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lou de Laâge</span>
             </a>
-            <a href="/actor/130228-gideon-glick" class="cast-card">
+            <a href="/actor/130228-gideon-glick.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3nf1wh0bG5KoInS26FBtsIoRa6A.jpg" alt="Gideon Glick" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gideon Glick</span>
             </a>
-            <a href="/actor/2225865-david-alvarez" class="cast-card">
+            <a href="/actor/2225865-david-alvarez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gQ9VIVXq6N11LMhVaEEGmRD5uqA.jpg" alt="David Alvarez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Alvarez</span>
             </a>
-            <a href="/actor/3828736-ivan-du-pontavice" class="cast-card">
+            <a href="/actor/3828736-ivan-du-pontavice.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pcmHDKmHczIQHp9VqNZcW8VeVEw.jpg" alt="Ivan du Pontavice" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ivan du Pontavice</span>
             </a>
-            <a href="/actor/5397092-taïs-vinolo" class="cast-card">
+            <a href="/actor/5397092-taïs-vinolo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A0Rh3TtoSEJWcL2Y1UkmhpTUwJ1.jpg" alt="Taïs Vinolo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taïs Vinolo</span>
             </a>
-            <a href="/actor/26717-david-haig" class="cast-card">
+            <a href="/actor/26717-david-haig.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dRlqWCY89CRCfDMYRSSPpZbK6f2.jpg" alt="David Haig" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Haig</span>
             </a>
-            <a href="/actor/5397097-lamay-zhang" class="cast-card">
+            <a href="/actor/5397097-lamay-zhang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mJRypTkZaoRAOpxoHxFnpsimpZp.jpg" alt="LaMay Zhang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>LaMay Zhang</span>
             </a>
-            <a href="/actor/4001-simon-callow" class="cast-card">
+            <a href="/actor/4001-simon-callow.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/no6qlnMrWeUzSt1FjD2Vf9x992e.jpg" alt="Simon Callow" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Simon Callow</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

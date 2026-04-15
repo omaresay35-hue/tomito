@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>द साबरमती रिपोर्ट</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1208682-vikrant-massey" class="cast-card">
+            <a href="/actor/1208682-vikrant-massey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zvpP52P7CtVXYONmvWrH1aOcRTx.jpg" alt="Vikrant Massey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vikrant Massey</span>
             </a>
-            <a href="/actor/1210037-raashii-khanna" class="cast-card">
+            <a href="/actor/1210037-raashii-khanna.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8nx3hzFdge51Cb5BcocIe4ShumU.jpg" alt="Raashii Khanna" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Raashii Khanna</span>
             </a>
-            <a href="/actor/1252084-ridhi-dogra" class="cast-card">
+            <a href="/actor/1252084-ridhi-dogra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7uSK4fvDDPtpKcTBfR0ogKhl3DN.jpg" alt="Ridhi Dogra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ridhi Dogra</span>
             </a>
-            <a href="/actor/2452194-nazneen-patni" class="cast-card">
+            <a href="/actor/2452194-nazneen-patni.html" class="cast-card">
                 <img src="/favicon.ico" alt="Nazneen Patni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nazneen Patni</span>
             </a>
-            <a href="/actor/1696240-barkha-singh" class="cast-card">
+            <a href="/actor/1696240-barkha-singh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uVgXb8jVrlqZrUzQbRKgnzgw54M.jpg" alt="Barkha Singh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Barkha Singh</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

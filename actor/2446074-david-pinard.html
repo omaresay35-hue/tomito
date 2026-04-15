@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1450527-forbidden-fruits">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1450527-forbidden-fruits.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/t3hvrrrqvRoURz4y1A1aCys6WD9.jpg" alt="Forbidden Fruits — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Forbidden Fruits</div></div>
-    </a>    <a class="card" href="/movie/1433842-relationship-goals">
+    </a>    <a class="card" href="/movie/1433842-relationship-goals.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/o7dVxvZIKnAB7k1eeeWp2k14Es7.jpg" alt="Relationship Goals — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Relationship Goals</div></div>
-    </a>    <a class="card" href="/movie/1547918-we-met-in-december">
+    </a>    <a class="card" href="/movie/1547918-we-met-in-december.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wJfUBJXLDBkDzLvFTj8hKqF6Xy3.jpg" alt="We Met in December — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">We Met in December</div></div>
-    </a>    <a class="card" href="/movie/1546343-love-is-a-dogs-best-friend">
+    </a>    <a class="card" href="/movie/1546343-love-is-a-dogs-best-friend.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jP7DxjtJGMP572N76wvC3HLBUXK.jpg" alt="Love Is a Dog's Best Friend — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Love Is a Dog's Best Friend</div></div>
-    </a>    <a class="card" href="/movie/1381839-a-bluegrass-christmas">
+    </a>    <a class="card" href="/movie/1381839-a-bluegrass-christmas.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wRLz8viRayU8mXZGsdA4teKCOCY.jpg" alt="A Bluegrass Christmas — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Bluegrass Christmas</div></div>
-    </a>    <a class="card" href="/movie/1221673-paging-mr-darcy">
+    </a>    <a class="card" href="/movie/1221673-paging-mr-darcy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5GnFR8qCyC1p4woK3kE5CnRRdx7.jpg" alt="Paging Mr. Darcy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Paging Mr. Darcy</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/221300-fubar">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/221300-fubar.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6fM34tcGFp3A0csyxJJomknZB4b.jpg" alt="FUBAR — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">FUBAR</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

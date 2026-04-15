@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Somnium</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1440577-chloë-levine" class="cast-card">
+            <a href="/actor/1440577-chloë-levine.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/g00AlQl7LzlERqLK94pSkbQOLM9.jpg" alt="Chloë Levine" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chloë Levine</span>
             </a>
-            <a href="/actor/1011103-will-peltz" class="cast-card">
+            <a href="/actor/1011103-will-peltz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i9Qn65lRD2A6GCG3r6BD5cIrfXo.jpg" alt="Will Peltz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Will Peltz</span>
             </a>
-            <a href="/actor/169244-peter-vack" class="cast-card">
+            <a href="/actor/169244-peter-vack.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iMK6qfo8uoGarj2xl6yyAZvHIIO.jpg" alt="Peter Vack" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Peter Vack</span>
             </a>
-            <a href="/actor/1243099-grace-van-dien" class="cast-card">
+            <a href="/actor/1243099-grace-van-dien.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1yKimLonnxA4Fu1a7WW0thxeBeT.jpg" alt="Grace Van Dien" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Grace Van Dien</span>
             </a>
-            <a href="/actor/1382574-clarissa-thibeaux" class="cast-card">
+            <a href="/actor/1382574-clarissa-thibeaux.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/liKfLs72xW46BfsHZ5sEL1EzgwQ.jpg" alt="Clarissa Thibeaux" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Clarissa Thibeaux</span>
             </a>
-            <a href="/actor/1565513-draya-michele" class="cast-card">
+            <a href="/actor/1565513-draya-michele.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rzTcv2JM35ZTO7SEV46L9qKs8xZ.jpg" alt="Draya Michele" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Draya Michele</span>
             </a>
-            <a href="/actor/51670-johnathon-schaech" class="cast-card">
+            <a href="/actor/51670-johnathon-schaech.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/13hf3VhszBoykxF7lNER2ur4Z9B.jpg" alt="Johnathon Schaech" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Johnathon Schaech</span>
             </a>
-            <a href="/actor/1602205-gillian-white" class="cast-card">
+            <a href="/actor/1602205-gillian-white.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sMeG4f1Opc2ivxOFehTHikWyCZl.jpg" alt="Gillian White" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gillian White</span>
             </a>
-            <a href="/actor/1773168-steve-eifert" class="cast-card">
+            <a href="/actor/1773168-steve-eifert.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2cmouno9Lz9hVuQvrb350epJZw9.jpg" alt="Steve Eifert" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steve Eifert</span>
             </a>
-            <a href="/actor/3018269-bries-vannon" class="cast-card">
+            <a href="/actor/3018269-bries-vannon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m6tPjdnMCCVRM2eKzrjKqAmSDjl.jpg" alt="Bries Vannon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bries Vannon</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

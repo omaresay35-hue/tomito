@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Gomorra - Le Origini</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5496136-luca-lubrano" class="cast-card">
+            <a href="/actor/5496136-luca-lubrano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iUhIkigX8aCRbBqFoEEQFCBM3VX.jpg" alt="Luca Lubrano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luca Lubrano</span>
             </a>
-            <a href="/actor/1880994-francesco-pellegrino" class="cast-card">
+            <a href="/actor/1880994-francesco-pellegrino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n4OoM3rzSeoO04jZlFWhCjR1lsX.jpg" alt="Francesco Pellegrino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francesco Pellegrino</span>
             </a>
-            <a href="/actor/5800112-tullia-venezia" class="cast-card">
+            <a href="/actor/5800112-tullia-venezia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yuBULsa033bPqkpgvCeocmiynSv.jpg" alt="Tullia Venezia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tullia Venezia</span>
             </a>
-            <a href="/actor/2864052-fabiola-balestriere" class="cast-card">
+            <a href="/actor/2864052-fabiola-balestriere.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5IIqUTU33nXlhWq0E91Fy0cStuG.jpg" alt="Fabiola Balestriere" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fabiola Balestriere</span>
             </a>
-            <a href="/actor/5617589-mattia-francesco-cozzolino" class="cast-card">
+            <a href="/actor/5617589-mattia-francesco-cozzolino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/foU7PJ4iXxbhftkSdIw948VfknQ.jpg" alt="Mattia Francesco Cozzolino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mattia Francesco Cozzolino</span>
             </a>
-            <a href="/actor/1794066-flavio-furno" class="cast-card">
+            <a href="/actor/1794066-flavio-furno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qzvs3sdEmgZ0VoLgYBCwhGUDxPd.jpg" alt="Flavio Furno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Flavio Furno</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

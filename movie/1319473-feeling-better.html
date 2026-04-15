@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Nonostante</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/56843-valerio-mastandrea" class="cast-card">
+            <a href="/actor/56843-valerio-mastandrea.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tE7JkSuyv2N8vtEN0YypsCAxW9B.jpg" alt="Valerio Mastandrea" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Valerio Mastandrea</span>
             </a>
-            <a href="/actor/74909-dolores-fonzi" class="cast-card">
+            <a href="/actor/74909-dolores-fonzi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4axi3Dz8zKK0b1kk54tPOeywb84.jpg" alt="Dolores Fonzi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dolores Fonzi</span>
             </a>
-            <a href="/actor/1871368-lino-musella" class="cast-card">
+            <a href="/actor/1871368-lino-musella.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xZuVRh6zyh4fo5QsxERHu25l3P4.jpg" alt="Lino Musella" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lino Musella</span>
             </a>
-            <a href="/actor/2391192-giorgio-montanini" class="cast-card">
+            <a href="/actor/2391192-giorgio-montanini.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x6FeIaZ7t568FeLvdu4p7eT6Z9O.jpg" alt="Giorgio Montanini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Giorgio Montanini</span>
             </a>
-            <a href="/actor/1960351-justin-alexander-korovkin" class="cast-card">
+            <a href="/actor/1960351-justin-alexander-korovkin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pUF1RMxYw9xVzg83viX1OYYadeV.jpg" alt="Justin Alexander Korovkin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Justin Alexander Korovkin</span>
             </a>
-            <a href="/actor/1204168-barbara-ronchi" class="cast-card">
+            <a href="/actor/1204168-barbara-ronchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ns7BPE6oqznPDW536ymNC5AywCS.jpg" alt="Barbara Ronchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Barbara Ronchi</span>
             </a>
-            <a href="/actor/8774-luca-lionello" class="cast-card">
+            <a href="/actor/8774-luca-lionello.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tBjJS35BSvbPc0m5ApqTWq8St66.jpg" alt="Luca Lionello" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luca Lionello</span>
             </a>
-            <a href="/actor/56654-laura-morante" class="cast-card">
+            <a href="/actor/56654-laura-morante.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dHPaab9C8how2C8tj3TseePEa7k.jpg" alt="Laura Morante" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laura Morante</span>
             </a>
-            <a href="/actor/93728-claudia-della-seta" class="cast-card">
+            <a href="/actor/93728-claudia-della-seta.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xIwuSCTFxJIoBn7EDpESdL8CjkO.jpg" alt="Claudia Della Seta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Claudia Della Seta</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

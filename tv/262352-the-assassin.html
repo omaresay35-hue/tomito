@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Assassin</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/22809-keeley-hawes" class="cast-card">
+            <a href="/actor/22809-keeley-hawes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9Zt8IHLR1PGso3fSV155LZ1jPCE.jpg" alt="Keeley Hawes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keeley Hawes</span>
             </a>
-            <a href="/actor/1281-freddie-highmore" class="cast-card">
+            <a href="/actor/1281-freddie-highmore.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9larfGVg8ALIVFkr7cZzv4Emh1F.jpg" alt="Freddie Highmore" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Freddie Highmore</span>
             </a>
-            <a href="/actor/1244276-gerald-kyd" class="cast-card">
+            <a href="/actor/1244276-gerald-kyd.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jxcGeOxJuKm8z3IOozc8lbUlvg8.jpg" alt="Gerald Kyd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gerald Kyd</span>
             </a>
-            <a href="/actor/1687354-shalom-brune-franklin" class="cast-card">
+            <a href="/actor/1687354-shalom-brune-franklin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i1obmLM04mtp2yUrYG16sQ5VRgw.jpg" alt="Shalom Brune-Franklin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shalom Brune-Franklin</span>
             </a>
-            <a href="/actor/1620979-devon-terrell" class="cast-card">
+            <a href="/actor/1620979-devon-terrell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kXdDkKxcs2HMBT0lScv4Toigv7.jpg" alt="Devon Terrell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Devon Terrell</span>
             </a>
-            <a href="/actor/93236-david-dencik" class="cast-card">
+            <a href="/actor/93236-david-dencik.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2BPsGhw8lGhe6HNs1aLu4Q1XeVn.jpg" alt="David Dencik" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Dencik</span>
             </a>
-            <a href="/actor/11150-gina-gershon" class="cast-card">
+            <a href="/actor/11150-gina-gershon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tpx72NUZwxZlcUgqWRxwbpvJjYo.jpg" alt="Gina Gershon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gina Gershon</span>
             </a>
-            <a href="/actor/52760-alan-dale" class="cast-card">
+            <a href="/actor/52760-alan-dale.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3BcpSoKBOwHX0wxaPZpOJ5buO89.jpg" alt="Alan Dale" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alan Dale</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

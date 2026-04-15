@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>فقط من أجل الحب</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1879666-bai-lu" class="cast-card">
+            <a href="/actor/1879666-bai-lu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aRcUVDRO2wewQe0NXJ0RfzSgvUa.jpg" alt="Bai Lu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bai Lu</span>
             </a>
-            <a href="/actor/2050456-dylan-wang" class="cast-card">
+            <a href="/actor/2050456-dylan-wang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x05cU32ATgu1ekqoySAvF84TmCZ.jpg" alt="Dylan Wang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dylan Wang</span>
             </a>
-            <a href="/actor/1914924-miles-wei" class="cast-card">
+            <a href="/actor/1914924-miles-wei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vR3Jr5DQULKi0ndD6mG1uo7lTnz.jpg" alt="Miles Wei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miles Wei</span>
             </a>
-            <a href="/actor/2560309-liu-dongqin" class="cast-card">
+            <a href="/actor/2560309-liu-dongqin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gjorcdLLMvyfdFsqdHV46P7ZTkL.jpg" alt="Liu Dongqin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liu Dongqin</span>
             </a>
-            <a href="/actor/1897341-jiang-peiyao" class="cast-card">
+            <a href="/actor/1897341-jiang-peiyao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dPXXxRNpU8r1V0vpFpEmdIspkPU.jpg" alt="Jiang Peiyao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jiang Peiyao</span>
             </a>
-            <a href="/actor/2518577-shen-yujie" class="cast-card">
+            <a href="/actor/2518577-shen-yujie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uuuxrNW2br6qD0bSTCxrJccv3kQ.jpg" alt="Shen Yujie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shen Yujie</span>
             </a>
-            <a href="/actor/4090231-liu-minghao" class="cast-card">
+            <a href="/actor/4090231-liu-minghao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kGKKRzcWrIJ1E7zO4FBj5RIuWk.jpg" alt="Liu Minghao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liu Minghao</span>
             </a>
-            <a href="/actor/108832-kou-zhenhai" class="cast-card">
+            <a href="/actor/108832-kou-zhenhai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/npqnUlI3gWK55Y5TEVNxnCFTjxJ.jpg" alt="Kou Zhenhai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kou Zhenhai</span>
             </a>
-            <a href="/actor/2861814-yang-minna" class="cast-card">
+            <a href="/actor/2861814-yang-minna.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/79NsqfICimwPKhfMxxhLptpluHL.jpg" alt="Yang Minna" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yang Minna</span>
             </a>
-            <a href="/actor/3151066-zheng-shuhuan" class="cast-card">
+            <a href="/actor/3151066-zheng-shuhuan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/esx4jzkjpspyKOYqJp29qeANYLC.jpg" alt="Zheng Shuhuan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zheng Shuhuan</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

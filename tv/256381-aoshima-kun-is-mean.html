@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>青島くんはいじわる</span>
   </nav>
 
@@ -76,35 +76,35 @@ As they pretend to be together, Aoshima somehow starts to become interested in Y
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1419892-shota-watanabe" class="cast-card">
+            <a href="/actor/1419892-shota-watanabe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/Ai7LBZBaS5VmHgy3vg9UO8w3lwA.jpg" alt="Shota Watanabe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shota Watanabe</span>
             </a>
-            <a href="/actor/1744548-anne-nakamura" class="cast-card">
+            <a href="/actor/1744548-anne-nakamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1E74om6R0oaTedZoBfJ768kuisi.jpg" alt="Anne Nakamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anne Nakamura</span>
             </a>
-            <a href="/actor/1186981-junki-tozuka" class="cast-card">
+            <a href="/actor/1186981-junki-tozuka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/52FABffTBlqXQJclmiai4dudwQ1.jpg" alt="Junki Tozuka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Junki Tozuka</span>
             </a>
-            <a href="/actor/1419910-manatsu-akimoto" class="cast-card">
+            <a href="/actor/1419910-manatsu-akimoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rsemfCru0tYdFmY8D7M9LXToHxa.jpg" alt="Manatsu Akimoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manatsu Akimoto</span>
             </a>
-            <a href="/actor/236719-ryoko-kobayashi" class="cast-card">
+            <a href="/actor/236719-ryoko-kobayashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/neV7U6fLdmFlyGzgoEXdw25WVhW.jpg" alt="Ryoko Kobayashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryoko Kobayashi</span>
             </a>
-            <a href="/actor/144418-tae-kimura" class="cast-card">
+            <a href="/actor/144418-tae-kimura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nENSbtdlmj8uJAiXsEnDdoT4uNR.jpg" alt="Tae Kimura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tae Kimura</span>
             </a>
-            <a href="/actor/2091024-shuko-ito" class="cast-card">
+            <a href="/actor/2091024-shuko-ito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ww5mmjloM3JW5L7AZOVpmxpPTIL.jpg" alt="Shuko Ito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shuko Ito</span>
             </a>
-            <a href="/actor/550589-akiko-yada" class="cast-card">
+            <a href="/actor/550589-akiko-yada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jXnUvgQQp7BsnbIOPFMX4xj5xE9.jpg" alt="Akiko Yada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Akiko Yada</span>
             </a></div></section>
@@ -112,13 +112,6 @@ As they pretend to be together, Aoshima somehow starts to become interested in Y
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

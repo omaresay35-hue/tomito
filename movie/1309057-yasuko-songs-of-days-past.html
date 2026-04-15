@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>ゆきてかへらぬ</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1454976-suzu-hirose" class="cast-card">
+            <a href="/actor/1454976-suzu-hirose.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rLBh5L2vwjF8cuSuVR0RydlzuID.jpg" alt="Suzu Hirose" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Suzu Hirose</span>
             </a>
-            <a href="/actor/3811388-taisei-kido" class="cast-card">
+            <a href="/actor/3811388-taisei-kido.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/biKmbMevTPbIWjF9VBq2dMO8rcl.jpg" alt="Taisei Kido" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taisei Kido</span>
             </a>
-            <a href="/actor/124402-masaki-okada" class="cast-card">
+            <a href="/actor/124402-masaki-okada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5pc3TDWVI4tDmpAo6tnnBKui6Kp.jpg" alt="Masaki Okada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masaki Okada</span>
             </a>
-            <a href="/actor/1528803-shinsuke-kato" class="cast-card">
+            <a href="/actor/1528803-shinsuke-kato.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2xFpp9BvXrDbmWvizu5h5hPl16f.jpg" alt="Shinsuke Kato" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shinsuke Kato</span>
             </a>
-            <a href="/actor/1060296-tortoise-matsumoto" class="cast-card">
+            <a href="/actor/1060296-tortoise-matsumoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ibF8yWO6UGp54CmTL2LAuedl7Qc.jpg" alt="Tortoise Matsumoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tortoise Matsumoto</span>
             </a>
-            <a href="/actor/1181049-kumi-takiuchi" class="cast-card">
+            <a href="/actor/1181049-kumi-takiuchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/94OaV1cZLMQotk5102MKNBJqpHZ.jpg" alt="Kumi Takiuchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kumi Takiuchi</span>
             </a>
-            <a href="/actor/68703-tamiyo-kusakari" class="cast-card">
+            <a href="/actor/68703-tamiyo-kusakari.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bhApIWYJJC9MfqzNlgDl0QaBWQH.jpg" alt="Tamiyo Kusakari" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tamiyo Kusakari</span>
             </a>
-            <a href="/actor/1650713-shunsuke-tanaka" class="cast-card">
+            <a href="/actor/1650713-shunsuke-tanaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5W7vuBcB57lqQS2O7PuG5pRHF1X.jpg" alt="Shunsuke Tanaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shunsuke Tanaka</span>
             </a>
-            <a href="/actor/3140423-sawako-fujima" class="cast-card">
+            <a href="/actor/3140423-sawako-fujima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v69wYAQWwsCw6UoAXkepa8zrNRB.jpg" alt="Sawako Fujima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sawako Fujima</span>
             </a>
-            <a href="/actor/111639-tasuku-emoto" class="cast-card">
+            <a href="/actor/111639-tasuku-emoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bWFDE4bXUQxmyUey6sA5S84A3vG.jpg" alt="Tasuku Emoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tasuku Emoto</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

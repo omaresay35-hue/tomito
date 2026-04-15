@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Hvis ingen går i fella</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/76556-pål-sverre-hagen" class="cast-card">
+            <a href="/actor/76556-pål-sverre-hagen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eJzuZZfFBaMSgcbR3Pe5zBxEC3z.jpg" alt="Pål Sverre Hagen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pål Sverre Hagen</span>
             </a>
-            <a href="/actor/1904884-sara-khorami" class="cast-card">
+            <a href="/actor/1904884-sara-khorami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jh49k9oVAVGdApgSCiRyJmrAgoG.jpg" alt="Sara Khorami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sara Khorami</span>
             </a>
-            <a href="/actor/3126191-flo-fagerli" class="cast-card">
+            <a href="/actor/3126191-flo-fagerli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yem43JCCG9xpjTT1IuosGtmZVNA.jpg" alt="Flo Fagerli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Flo Fagerli</span>
             </a>
-            <a href="/actor/2856423-vegard-strand-eide" class="cast-card">
+            <a href="/actor/2856423-vegard-strand-eide.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qQ0AVbgyjgAvmEXNZbu1CG3MTji.jpg" alt="Vegard Strand Eide" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vegard Strand Eide</span>
             </a>
-            <a href="/actor/71187-jon-øigarden" class="cast-card">
+            <a href="/actor/71187-jon-øigarden.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kUkQP35OdAUtAr7lw7O9RNfFRL4.jpg" alt="Jon Øigarden" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jon Øigarden</span>
             </a>
-            <a href="/actor/76555-jakob-oftebro" class="cast-card">
+            <a href="/actor/76555-jakob-oftebro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ypyMSXwABVXHjTOfpEHW008cw1A.jpg" alt="Jakob Oftebro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jakob Oftebro</span>
             </a>
-            <a href="/actor/76917-charlotte-frogner" class="cast-card">
+            <a href="/actor/76917-charlotte-frogner.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xAaBmAepMzWoHuoI5sl1feYEKYx.jpg" alt="Charlotte Frogner" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charlotte Frogner</span>
             </a>
-            <a href="/actor/1934734-jonis-josef" class="cast-card">
+            <a href="/actor/1934734-jonis-josef.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qQFCG2sOL5dfOKfYpOxs0QMopDU.jpg" alt="Jonis Josef" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jonis Josef</span>
             </a>
-            <a href="/actor/3097194-vivild-falk-berg" class="cast-card">
+            <a href="/actor/3097194-vivild-falk-berg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kR5lOHYLgZc3QiGep1SJPMVMCWy.jpg" alt="Vivild Falk Berg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vivild Falk Berg</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

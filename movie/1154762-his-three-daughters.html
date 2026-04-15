@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>أب وبناته الثلاث</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1308445-carrie-coon" class="cast-card">
+            <a href="/actor/1308445-carrie-coon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vWChiHhXFjZVKC6HbACyyRFmdW4.jpg" alt="Carrie Coon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carrie Coon</span>
             </a>
-            <a href="/actor/10871-natasha-lyonne" class="cast-card">
+            <a href="/actor/10871-natasha-lyonne.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2QJoTBEIeYyjGSDot9qxv2ayPH3.jpg" alt="Natasha Lyonne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natasha Lyonne</span>
             </a>
-            <a href="/actor/550843-elizabeth-olsen" class="cast-card">
+            <a href="/actor/550843-elizabeth-olsen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wIU675y4dofIDVuhaNWPizJNtep.jpg" alt="Elizabeth Olsen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elizabeth Olsen</span>
             </a>
-            <a href="/actor/6067-jay-o-sanders" class="cast-card">
+            <a href="/actor/6067-jay-o-sanders.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/z8btmLryEZlLkBah2XhZFydmty4.jpg" alt="Jay O. Sanders" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jay O. Sanders</span>
             </a>
-            <a href="/actor/1607522-jovan-adepo" class="cast-card">
+            <a href="/actor/1607522-jovan-adepo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aJcuEbYru85meNGzM0oSeW3nsd6.jpg" alt="Jovan Adepo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jovan Adepo</span>
             </a>
-            <a href="/actor/1825175-rudy-galvan" class="cast-card">
+            <a href="/actor/1825175-rudy-galvan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zuA5pO2fnlAdu8rTsdZLftCMLEg.jpg" alt="Rudy Galvan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rudy Galvan</span>
             </a>
-            <a href="/actor/3134994-jose-febus" class="cast-card">
+            <a href="/actor/3134994-jose-febus.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jose Febus" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jose Febus</span>
             </a>
-            <a href="/actor/2513973-randy-ramos-jr" class="cast-card">
+            <a href="/actor/2513973-randy-ramos-jr.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eNzrWNBxST2OtkcPA2WSibtUFPx.jpg" alt="Randy Ramos Jr." loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Randy Ramos Jr.</span>
             </a>
-            <a href="/actor/3013677-jasmine-bracey" class="cast-card">
+            <a href="/actor/3013677-jasmine-bracey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eJ4OKi4ZsnCAYQSF2ycNbbgBT6r.jpg" alt="Jasmine Bracey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jasmine Bracey</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

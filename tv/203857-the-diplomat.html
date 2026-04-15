@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>هيئة دبلوماسية</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/41292-keri-russell" class="cast-card">
+            <a href="/actor/41292-keri-russell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/u81mC6vZwliDRfnX1DpdGmmex61.jpg" alt="Keri Russell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keri Russell</span>
             </a>
-            <a href="/actor/17328-rufus-sewell" class="cast-card">
+            <a href="/actor/17328-rufus-sewell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yc2EWyg45GO03YqDttaEhjvegiE.jpg" alt="Rufus Sewell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rufus Sewell</span>
             </a>
-            <a href="/actor/55411-david-gyasi" class="cast-card">
+            <a href="/actor/55411-david-gyasi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4Kj6BI2Ki6tpAVzc4S6lh1Xzua3.jpg" alt="David Gyasi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Gyasi</span>
             </a>
-            <a href="/actor/1323810-ali-ahn" class="cast-card">
+            <a href="/actor/1323810-ali-ahn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tK2JL02YuCInio9czdxT77R6i52.jpg" alt="Ali Ahn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ali Ahn</span>
             </a>
-            <a href="/actor/139549-rory-kinnear" class="cast-card">
+            <a href="/actor/139549-rory-kinnear.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8aEABMeHXOozwE5DrMxUlCM9mpG.jpg" alt="Rory Kinnear" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rory Kinnear</span>
             </a>
-            <a href="/actor/5377-ato-essandoh" class="cast-card">
+            <a href="/actor/5377-ato-essandoh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kkQFtsIxVUMuYDrVGeRfX2IG2F8.jpg" alt="Ato Essandoh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ato Essandoh</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

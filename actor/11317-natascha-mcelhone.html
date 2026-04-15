@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/2103-solaris">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/2103-solaris.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/drdrB1hEZmzFlK1xtW5HMxK3LUJ.jpg" alt="Solaris — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Solaris</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/255661-young-sherlock">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/255661-young-sherlock.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/h3s0Cd2JppeWA4UjTuSRauL52P7.jpg" alt="Young Sherlock — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Young Sherlock</div></div>
-    </a>    <a class="card" href="/tv/292664-the-kollective">
+    </a>    <a class="card" href="/tv/292664-the-kollective.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qqCDLvhm7czEf739tiwganFK23t.jpg" alt="The Kollective — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Kollective</div></div>
-    </a>    <a class="card" href="/tv/52814-halo">
+    </a>    <a class="card" href="/tv/52814-halo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4UmNhZCEu8Vt3byMvNxNEPyf8EY.jpg" alt="Halo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Halo</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

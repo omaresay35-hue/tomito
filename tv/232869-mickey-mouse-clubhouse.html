@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Mickey Mouse Clubhouse+</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1235060-bret-iwan" class="cast-card">
+            <a href="/actor/1235060-bret-iwan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/14m82iewt4tDjaaOmsYWMr6TKQ8.jpg" alt="Bret Iwan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bret Iwan</span>
             </a>
-            <a href="/actor/1382187-kaitlyn-robrock" class="cast-card">
+            <a href="/actor/1382187-kaitlyn-robrock.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1joOQrgyU9ap9W1cvimh01XmKcO.jpg" alt="Kaitlyn Robrock" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaitlyn Robrock</span>
             </a>
-            <a href="/actor/84213-bill-farmer" class="cast-card">
+            <a href="/actor/84213-bill-farmer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lhezx68R12s5Bsv7d77BrQb7tWA.jpg" alt="Bill Farmer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bill Farmer</span>
             </a>
-            <a href="/actor/34478-tony-anselmo" class="cast-card">
+            <a href="/actor/34478-tony-anselmo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8ocCq9OxVg7A0g7hf7EqeT0QenX.jpg" alt="Tony Anselmo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tony Anselmo</span>
             </a>
-            <a href="/actor/34983-tress-macneille" class="cast-card">
+            <a href="/actor/34983-tress-macneille.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gI2LsgByvSffQY34vabVnPmrHzw.jpg" alt="Tress MacNeille" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tress MacNeille</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

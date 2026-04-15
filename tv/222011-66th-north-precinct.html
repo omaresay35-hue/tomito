@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Pohjoisen tähti</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1565980-saara-kotkaniemi" class="cast-card">
+            <a href="/actor/1565980-saara-kotkaniemi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8AInHdcB2iWLerxLAUYH8t0fWQR.jpg" alt="Saara Kotkaniemi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saara Kotkaniemi</span>
             </a>
-            <a href="/actor/2282419-karim-rapatti" class="cast-card">
+            <a href="/actor/2282419-karim-rapatti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rZusL8AuEJeyJyfxK5TheFDeQoM.jpg" alt="Karim Rapatti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karim Rapatti</span>
             </a>
-            <a href="/actor/1248569-iina-kuustonen" class="cast-card">
+            <a href="/actor/1248569-iina-kuustonen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sNvQ4niMUgOHR5lPo2azBh5cyZX.jpg" alt="Iina Kuustonen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Iina Kuustonen</span>
             </a>
-            <a href="/actor/3010479-stella-leppikorpi" class="cast-card">
+            <a href="/actor/3010479-stella-leppikorpi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uyw7s9lNvzQEGhtVgWzCsNmTcV5.jpg" alt="Stella Leppikorpi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stella Leppikorpi</span>
             </a>
-            <a href="/actor/147737-eero-saarinen" class="cast-card">
+            <a href="/actor/147737-eero-saarinen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4qEK8ih7ILrDopBv1SJahm1wJ9Y.jpg" alt="Eero Saarinen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eero Saarinen</span>
             </a>
-            <a href="/actor/935865-katariina-kaitue" class="cast-card">
+            <a href="/actor/935865-katariina-kaitue.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pRzoewJohH4IRiWb1DaORbeh5va.jpg" alt="Katariina Kaitue" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Katariina Kaitue</span>
             </a>
-            <a href="/actor/568086-heikki-ranta" class="cast-card">
+            <a href="/actor/568086-heikki-ranta.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e0UiCpnB4K7rVngq3xglfS5RAOO.jpg" alt="Heikki Ranta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Heikki Ranta</span>
             </a>
-            <a href="/actor/220769-sari-siikander" class="cast-card">
+            <a href="/actor/220769-sari-siikander.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kpkmqrVhHRrY2hC2cCyTHZfB5Rw.jpg" alt="Sari Siikander" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sari Siikander</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

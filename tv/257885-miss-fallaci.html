@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Miss Fallaci</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1097436-miriam-leone" class="cast-card">
+            <a href="/actor/1097436-miriam-leone.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kOl4gte94tJKXl8csCEYIxhZV0B.jpg" alt="Miriam Leone" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miriam Leone</span>
             </a>
-            <a href="/actor/2189836-maurizio-lastrico" class="cast-card">
+            <a href="/actor/2189836-maurizio-lastrico.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qtmMwqo47vbyU6xE27ub64xoST2.jpg" alt="Maurizio Lastrico" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maurizio Lastrico</span>
             </a>
-            <a href="/actor/1361737-francesca-agostini" class="cast-card">
+            <a href="/actor/1361737-francesca-agostini.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6RG8eb29BJggpUqJaDw18pZVBGv.jpg" alt="Francesca Agostini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francesca Agostini</span>
             </a>
-            <a href="/actor/1446001-francesco-colella" class="cast-card">
+            <a href="/actor/1446001-francesco-colella.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xi1ZgYDpGZ0lBsEMAxgK3vLBJd2.jpg" alt="Francesco Colella" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francesco Colella</span>
             </a>
-            <a href="/actor/1167615-rosanna-gentili" class="cast-card">
+            <a href="/actor/1167615-rosanna-gentili.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pQea6O65l28a5K7Sjbbipu0EKBk.jpg" alt="Rosanna Gentili" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rosanna Gentili</span>
             </a>
-            <a href="/actor/128455-giordano-de-plano" class="cast-card">
+            <a href="/actor/128455-giordano-de-plano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AiEXOH47KxTKG5ukjVe3UuGN7sn.jpg" alt="Giordano De Plano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Giordano De Plano</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Laid</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1381186-stephanie-hsu" class="cast-card">
+            <a href="/actor/1381186-stephanie-hsu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8gb3lfIHKQAGOQyeC4ynQPsCiHr.jpg" alt="Stephanie Hsu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephanie Hsu</span>
             </a>
-            <a href="/actor/206966-zosia-mamet" class="cast-card">
+            <a href="/actor/206966-zosia-mamet.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8G4n5CMVhzKfYworKrc9Pd2QjHm.jpg" alt="Zosia Mamet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zosia Mamet</span>
             </a>
-            <a href="/actor/11665-michael-angarano" class="cast-card">
+            <a href="/actor/11665-michael-angarano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q4SOVndGsnCmSZKBllLaJCNM72c.jpg" alt="Michael Angarano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Angarano</span>
             </a>
-            <a href="/actor/2088733-tommy-martinez" class="cast-card">
+            <a href="/actor/2088733-tommy-martinez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hPPWLxCSoehYnDaOrC6O0HxXPjT.jpg" alt="Tommy Martinez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tommy Martinez</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

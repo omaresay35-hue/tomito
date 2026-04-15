@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Van Gogh by Vincent</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1410407-zahra-ahmadi" class="cast-card">
+            <a href="/actor/1410407-zahra-ahmadi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/WlF6GWX98ilKoaaRwCR9cV97lX.jpg" alt="Zahra Ahmadi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zahra Ahmadi</span>
             </a>
-            <a href="/actor/5397950-jack-etchells" class="cast-card">
+            <a href="/actor/5397950-jack-etchells.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jack Etchells" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Etchells</span>
             </a>
-            <a href="/actor/4593515-adam-woolley" class="cast-card">
+            <a href="/actor/4593515-adam-woolley.html" class="cast-card">
                 <img src="/favicon.ico" alt="Adam Woolley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Woolley</span>
             </a>
-            <a href="/actor/5397952-frances-christie" class="cast-card">
+            <a href="/actor/5397952-frances-christie.html" class="cast-card">
                 <img src="/favicon.ico" alt="Frances Christie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Frances Christie</span>
             </a>
-            <a href="/actor/5397953-neil-lebeter" class="cast-card">
+            <a href="/actor/5397953-neil-lebeter.html" class="cast-card">
                 <img src="/favicon.ico" alt="Neil Lebeter" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Neil Lebeter</span>
             </a>
-            <a href="/actor/5397954-curtis-holder" class="cast-card">
+            <a href="/actor/5397954-curtis-holder.html" class="cast-card">
                 <img src="/favicon.ico" alt="Curtis Holder" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Curtis Holder</span>
             </a>
-            <a href="/actor/5397958-ruth-millington" class="cast-card">
+            <a href="/actor/5397958-ruth-millington.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ruth Millington" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ruth Millington</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

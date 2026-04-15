@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Уроки толерантності</span>
   </nav>
 
@@ -71,31 +71,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1828907-olena-uzliuk" class="cast-card">
+            <a href="/actor/1828907-olena-uzliuk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/otI0RFhG2ld0JP1fs6C4gXtJHf7.jpg" alt="Olena Uzliuk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olena Uzliuk</span>
             </a>
-            <a href="/actor/1752024-oleksandr-yarema" class="cast-card">
+            <a href="/actor/1752024-oleksandr-yarema.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1n6tXmrxynDa1qGJ8KWaqksLyOe.jpg" alt="Oleksandr Yarema" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oleksandr Yarema</span>
             </a>
-            <a href="/actor/2427469-akmal-huriezov" class="cast-card">
+            <a href="/actor/2427469-akmal-huriezov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9utQUfBwO2xa4goHdMoulT59Jf6.jpg" alt="Akmal Huriezov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Akmal Huriezov</span>
             </a>
-            <a href="/actor/1997787-oleksandr-piskunov" class="cast-card">
+            <a href="/actor/1997787-oleksandr-piskunov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qr5J2lgULRywsG2dgnTAJwwZFfs.jpg" alt="Oleksandr Piskunov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oleksandr Piskunov</span>
             </a>
-            <a href="/actor/3034974-karolina-mruha" class="cast-card">
+            <a href="/actor/3034974-karolina-mruha.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ltn3bsnhWylht3iFbLo3kL1cIJf.jpg" alt="Karolina Mruha" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karolina Mruha</span>
             </a>
-            <a href="/actor/1404337-borys-heorhiyevskyi" class="cast-card">
+            <a href="/actor/1404337-borys-heorhiyevskyi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1BSacc3pL9gLE46w5RTgJIrWwZ5.jpg" alt="Borys Heorhiyevskyi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Borys Heorhiyevskyi</span>
             </a>
-            <a href="/actor/1828906-nina-naboka" class="cast-card">
+            <a href="/actor/1828906-nina-naboka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zU9sZNF5MHH3ylfenExY2z6BSuD.jpg" alt="Nina Naboka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nina Naboka</span>
             </a></div></section>
@@ -103,13 +103,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

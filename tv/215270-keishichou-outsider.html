@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>警視庁アウトサイダー</span>
   </nav>
 
@@ -74,35 +74,35 @@ A case comes up, where a housekeeper, working at a professor's house, is stabbed
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/13250-hidetoshi-nishijima" class="cast-card">
+            <a href="/actor/13250-hidetoshi-nishijima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3FBdbeMMWfyKmHS5j8IECwsZWcY.jpg" alt="Hidetoshi Nishijima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hidetoshi Nishijima</span>
             </a>
-            <a href="/actor/105403-gaku-hamada" class="cast-card">
+            <a href="/actor/105403-gaku-hamada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ynU2RcHBVbTX7aaXiaSKY7njvpx.jpg" alt="Gaku Hamada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gaku Hamada</span>
             </a>
-            <a href="/actor/1547747-moka-kamishiraishi" class="cast-card">
+            <a href="/actor/1547747-moka-kamishiraishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aBF4RdFWZbxyYVnQslgl3F5uCzR.jpg" alt="Moka Kamishiraishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Moka Kamishiraishi</span>
             </a>
-            <a href="/actor/234645-toshiro-yanagiba" class="cast-card">
+            <a href="/actor/234645-toshiro-yanagiba.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mYD0e645s3qXdSBPkfwCFlaFTnu.jpg" alt="Toshiro Yanagiba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Toshiro Yanagiba</span>
             </a>
-            <a href="/actor/107708-hikari-ishida" class="cast-card">
+            <a href="/actor/107708-hikari-ishida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d5XdsUDwyk59UH8GEK2EHL37fZp.jpg" alt="Hikari Ishida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hikari Ishida</span>
             </a>
-            <a href="/actor/112859-yûka" class="cast-card">
+            <a href="/actor/112859-yûka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fabTnLkk3cmBfa9qZLjWhzemkNC.jpg" alt="Yûka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yûka</span>
             </a>
-            <a href="/actor/132153-maho-nonami" class="cast-card">
+            <a href="/actor/132153-maho-nonami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uIwdESy1OgHnP1Onu7mb6XsF4n1.jpg" alt="Maho Nonami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maho Nonami</span>
             </a>
-            <a href="/actor/2606730-neru-nagahama" class="cast-card">
+            <a href="/actor/2606730-neru-nagahama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yBoBWNt1CMSFf82uC6DKdZ6ba0L.jpg" alt="Neru Nagahama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Neru Nagahama</span>
             </a></div></section>
@@ -110,13 +110,6 @@ A case comes up, where a housekeeper, working at a professor's house, is stabbed
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

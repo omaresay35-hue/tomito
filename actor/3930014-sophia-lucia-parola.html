@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,15 +71,15 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/937941-shelby-oaks">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/937941-shelby-oaks.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/i3omY4P6QUzFQlEeclWY92RuXCH.jpg" alt="Shelby Oaks — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Shelby Oaks</div></div>
-    </a>    <a class="card" href="/movie/1281732-last-known-location">
+    </a>    <a class="card" href="/movie/1281732-last-known-location.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pmz3HMKOXFQbZX0KYA9GNVtv7OZ.jpg" alt="Last Known Location — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">3.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Last Known Location</div></div>
-    </a>    <a class="card" href="/movie/967847-ghostbusters-frozen-empire">
+    </a>    <a class="card" href="/movie/967847-ghostbusters-frozen-empire.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/e1J2oNzSBdou01sUvriVuoYp0pJ.jpg" alt="Ghostbusters: Frozen Empire — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Ghostbusters: Frozen Empire</div></div>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

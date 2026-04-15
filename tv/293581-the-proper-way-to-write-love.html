@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>恋愛ルビの正しいふりかた</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2164443-genki-iwahashi" class="cast-card">
+            <a href="/actor/2164443-genki-iwahashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/du2ICcqmZKsTJGUxsUlGIV3QM22.jpg" alt="Genki Iwahashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Genki Iwahashi</span>
             </a>
-            <a href="/actor/3529684-satoru-soma" class="cast-card">
+            <a href="/actor/3529684-satoru-soma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rDLSgS0nPJxL0f3scA1Nw1EIgcK.jpg" alt="Satoru Soma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Satoru Soma</span>
             </a>
-            <a href="/actor/4509967-nanami-asahi" class="cast-card">
+            <a href="/actor/4509967-nanami-asahi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zSzBMKEF6sp2YWqjNJdhmnHNL88.jpg" alt="Nanami Asahi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nanami Asahi</span>
             </a>
-            <a href="/actor/4622690-saya-emori" class="cast-card">
+            <a href="/actor/4622690-saya-emori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3UmvCaFc1CFLVXaaNtt0JvYCJq0.jpg" alt="Saya Emori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saya Emori</span>
             </a>
-            <a href="/actor/5517420-dai-nakai" class="cast-card">
+            <a href="/actor/5517420-dai-nakai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6T5W6QbwaSwa3euyFCptHLPSNne.jpg" alt="Dai Nakai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dai Nakai</span>
             </a>
-            <a href="/actor/3713347-ayano-kubota" class="cast-card">
+            <a href="/actor/3713347-ayano-kubota.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/STqUPIlY3MNHbhcL10Sef0C5f8.jpg" alt="Ayano Kubota" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayano Kubota</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

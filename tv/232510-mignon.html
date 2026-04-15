@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>민용</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4209737-oh-minhyeok" class="cast-card">
+            <a href="/actor/4209737-oh-minhyeok.html" class="cast-card">
                 <img src="/favicon.ico" alt="Oh Minhyeok" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oh Minhyeok</span>
             </a>
-            <a href="/actor/4216539-kim-minju" class="cast-card">
+            <a href="/actor/4216539-kim-minju.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kim Minju" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Minju</span>
             </a>
-            <a href="/actor/4209738-min-seung-woo" class="cast-card">
+            <a href="/actor/4209738-min-seung-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sUDbIMX5XfAcYck4Qe2tjJZrHv4.jpg" alt="Min Seung-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Min Seung-woo</span>
             </a>
-            <a href="/actor/4209739-jeong-uihan" class="cast-card">
+            <a href="/actor/4209739-jeong-uihan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jeong Uihan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeong Uihan</span>
             </a>
-            <a href="/actor/4209740-park-jookwang" class="cast-card">
+            <a href="/actor/4209740-park-jookwang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4ROb99NyQEGdbHghYnTwqGQT93o.jpg" alt="Park Jookwang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Jookwang</span>
             </a>
-            <a href="/actor/1584816-lee-gyu-chang" class="cast-card">
+            <a href="/actor/1584816-lee-gyu-chang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aOlRoKKjThpegbjYEnQLrTZudKJ.jpg" alt="Lee Gyu-chang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Gyu-chang</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

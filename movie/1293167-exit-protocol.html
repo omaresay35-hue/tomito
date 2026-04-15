@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>بروتوكول الخروج</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/136154-scott-martin" class="cast-card">
+            <a href="/actor/136154-scott-martin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mAjyI9ACaJxSvLaQoE9KEZY3pJ.jpg" alt="Scott Martin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Scott Martin</span>
             </a>
-            <a href="/actor/16644-dolph-lundgren" class="cast-card">
+            <a href="/actor/16644-dolph-lundgren.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fB1tOws6Gav0xE8LYlELEb82hJt.jpg" alt="Dolph Lundgren" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dolph Lundgren</span>
             </a>
-            <a href="/actor/64856-michael-jai-white" class="cast-card">
+            <a href="/actor/64856-michael-jai-white.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/YPoHYuzR37wFpPpwEXZYQlhLln.jpg" alt="Michael Jai White" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Jai White</span>
             </a>
-            <a href="/actor/1352662-charlotte-kirk" class="cast-card">
+            <a href="/actor/1352662-charlotte-kirk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tAsWBIetFUWNYw3Z1fHQlCdWvNI.jpg" alt="Charlotte Kirk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charlotte Kirk</span>
             </a>
-            <a href="/actor/2018208-lina-maya" class="cast-card">
+            <a href="/actor/2018208-lina-maya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dNJPVxYolRVzZ4ngKcQSbXh9jQv.jpg" alt="Lina Maya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lina Maya</span>
             </a>
-            <a href="/actor/1070194-stephanie-beran" class="cast-card">
+            <a href="/actor/1070194-stephanie-beran.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q5OrMKyh7TuQ8NSjVowCNp2Lvpw.jpg" alt="Stephanie Beran" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephanie Beran</span>
             </a>
-            <a href="/actor/3970295-jb-yowell" class="cast-card">
+            <a href="/actor/3970295-jb-yowell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cVtR3Cjo57L5avQcDo626mgqr82.jpg" alt="J.B. Yowell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>J.B. Yowell</span>
             </a>
-            <a href="/actor/583845-aaron-mcpherson" class="cast-card">
+            <a href="/actor/583845-aaron-mcpherson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rBeV0ZXhYc0cXC2L0vr50ZmjYyn.jpg" alt="Aaron McPherson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aaron McPherson</span>
             </a>
-            <a href="/actor/1070188-clint-glenn-hummel" class="cast-card">
+            <a href="/actor/1070188-clint-glenn-hummel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jgfqoBbCPCGFpXOGoBzXXhJ5Nlm.jpg" alt="Clint Glenn Hummel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Clint Glenn Hummel</span>
             </a>
-            <a href="/actor/1983569-jack-sheehan" class="cast-card">
+            <a href="/actor/1983569-jack-sheehan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jack Sheehan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Sheehan</span>
             </a>
-            <a href="/actor/111895-christian-cardona" class="cast-card">
+            <a href="/actor/111895-christian-cardona.html" class="cast-card">
                 <img src="/favicon.ico" alt="Christian Cardona" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christian Cardona</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

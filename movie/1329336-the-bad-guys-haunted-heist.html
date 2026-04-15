@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>الأشرار: سرقة وأشباح</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/972294-michael-godere" class="cast-card">
+            <a href="/actor/972294-michael-godere.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cwC5R5ErDsP81Dwo6154Ld5uves.jpg" alt="Michael Godere" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Godere</span>
             </a>
-            <a href="/actor/3320600-ezekiel-ajeigbe" class="cast-card">
+            <a href="/actor/3320600-ezekiel-ajeigbe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uU6UCcQlyyXZ0hbergglsyVxlUm.jpg" alt="Ezekiel Ajeigbe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ezekiel Ajeigbe</span>
             </a>
-            <a href="/actor/3700657-raul-ceballos" class="cast-card">
+            <a href="/actor/3700657-raul-ceballos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Pq2Igpm0x7XmkokP4yfGi3GdVr.jpg" alt="Raul Ceballos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Raul Ceballos</span>
             </a>
-            <a href="/actor/1217648-chris-diamantopoulos" class="cast-card">
+            <a href="/actor/1217648-chris-diamantopoulos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oenBtpk0RTId4wacQKYU4cPcq8Z.jpg" alt="Chris Diamantopoulos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Diamantopoulos</span>
             </a>
-            <a href="/actor/1213391-mallory-low" class="cast-card">
+            <a href="/actor/1213391-mallory-low.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/amS893X6E4w2n3Go73HkbuYZjI9.jpg" alt="Mallory Low" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mallory Low</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Oi vita mia</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1302692-pio-dantini" class="cast-card">
+            <a href="/actor/1302692-pio-dantini.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1Hep4UT5dv2finVUOcFDqeXqwmk.jpg" alt="Pio D'Antini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pio D'Antini</span>
             </a>
-            <a href="/actor/1302693-amedeo-grieco" class="cast-card">
+            <a href="/actor/1302693-amedeo-grieco.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8bRdX1gfOV8UKBQoPlHCv7Hf0Hh.jpg" alt="Amedeo Grieco" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amedeo Grieco</span>
             </a>
-            <a href="/actor/1985821-ester-pantano" class="cast-card">
+            <a href="/actor/1985821-ester-pantano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ps6YI48klrB4poMFmUmB9N7qLnl.jpg" alt="Ester Pantano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ester Pantano</span>
             </a>
-            <a href="/actor/80230-lino-banfi" class="cast-card">
+            <a href="/actor/80230-lino-banfi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j7ZOhttsQ6SeDS2c5hgxEOjlRrp.jpg" alt="Lino Banfi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lino Banfi</span>
             </a>
-            <a href="/actor/3952040-emanuele-pacca" class="cast-card">
+            <a href="/actor/3952040-emanuele-pacca.html" class="cast-card">
                 <img src="/favicon.ico" alt="Emanuele Pacca" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emanuele Pacca</span>
             </a>
-            <a href="/actor/1343614-cristina-marino" class="cast-card">
+            <a href="/actor/1343614-cristina-marino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5OFaQD28dJ9VB3Y4fLIExymcuVk.jpg" alt="Cristina Marino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cristina Marino</span>
             </a>
-            <a href="/actor/4198624-mariana-lupo" class="cast-card">
+            <a href="/actor/4198624-mariana-lupo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mariana Lupo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariana Lupo</span>
             </a>
-            <a href="/actor/5864417-adriana-de-meo" class="cast-card">
+            <a href="/actor/5864417-adriana-de-meo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Adriana De Meo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adriana De Meo</span>
             </a>
-            <a href="/actor/5864419-emanuele-la-torre" class="cast-card">
+            <a href="/actor/5864419-emanuele-la-torre.html" class="cast-card">
                 <img src="/favicon.ico" alt="Emanuele La Torre" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emanuele La Torre</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

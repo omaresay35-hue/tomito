@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,15 +73,15 @@ Scott Thomas made her film debut in Under the Cherry Moon (1986), and won the Ev
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/985602-my-mothers-wedding">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/985602-my-mothers-wedding.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/feHTwv3BplNlLW3o9LtW2kqZLJg.jpg" alt="My Mother's Wedding — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">My Mother's Wedding</div></div>
-    </a>    <a class="card" href="/movie/225193-weep-no-more-my-lady">
+    </a>    <a class="card" href="/movie/225193-weep-no-more-my-lady.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eyBRj1Wm2y2Dj7Z3YUBOKexJGkb.jpg" alt="Weep No More, My Lady — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">3.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Weep No More, My Lady</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/95480-slow-horses">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/95480-slow-horses.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dnpatlJrEPiDSn5fzgzvxtiSnMo.jpg" alt="Slow Horses — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Slow Horses</div></div>
@@ -90,13 +90,6 @@ Scott Thomas made her film debut in Under the Cherry Moon (1986), and won the Ev
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

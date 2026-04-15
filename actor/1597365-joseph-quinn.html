@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/617126-the-fantastic-4-first-steps">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/617126-the-fantastic-4-first-steps.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nf5qaSEvyYSNeFH0YhSs5EsBLX9.jpg" alt="The Fantastic 4: First Steps — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Fantastic 4: First Steps</div></div>
-    </a>    <a class="card" href="/movie/1241436-warfare">
+    </a>    <a class="card" href="/movie/1241436-warfare.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/l39TlELomwysfsr37vrvCV6rmaQ.jpg" alt="Warfare — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Warfare</div></div>
-    </a>    <a class="card" href="/movie/558449-gladiator-ii">
+    </a>    <a class="card" href="/movie/558449-gladiator-ii.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg" alt="Gladiator II — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Gladiator II</div></div>
-    </a>    <a class="card" href="/movie/762441-a-quiet-place-day-one">
+    </a>    <a class="card" href="/movie/762441-a-quiet-place-day-one.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hU42CRk14JuPEdqZG3AWmagiPAP.jpg" alt="A Quiet Place: Day One — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Quiet Place: Day One</div></div>
-    </a>    <a class="card" href="/movie/996087-hoard">
+    </a>    <a class="card" href="/movie/996087-hoard.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/81VQOyGSnyMxE2SWf0bgnHAAKeT.jpg" alt="Hoard — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Hoard</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

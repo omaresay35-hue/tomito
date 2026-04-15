@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>冒険者になりたいと都に出て行った娘がSランクになってた</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/221773-saori-hayami" class="cast-card">
+            <a href="/actor/221773-saori-hayami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gLv9lO7dlUbIsmyJUvgegqAAXki.jpg" alt="Saori Hayami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saori Hayami</span>
             </a>
-            <a href="/actor/9721-junichi-suwabe" class="cast-card">
+            <a href="/actor/9721-junichi-suwabe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4S7c3n3r07A83HvkLrnWZGVhiHg.jpg" alt="Junichi Suwabe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Junichi Suwabe</span>
             </a>
-            <a href="/actor/2102121-maki-kawase" class="cast-card">
+            <a href="/actor/2102121-maki-kawase.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3LgHKyXM33oOtBzmYTDesftIzY0.jpg" alt="Maki Kawase" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maki Kawase</span>
             </a>
-            <a href="/actor/1256913-rumi-okubo" class="cast-card">
+            <a href="/actor/1256913-rumi-okubo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cf4cnFMllu1yO3X0gCGGDdl8GXW.jpg" alt="Rumi Okubo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rumi Okubo</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

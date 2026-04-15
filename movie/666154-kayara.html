@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>كيارا</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2907003-naomi-serrano" class="cast-card">
+            <a href="/actor/2907003-naomi-serrano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wpS5sLVriFIIhXvss2qUZIZFgGY.jpg" alt="Naomi Serrano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Naomi Serrano</span>
             </a>
-            <a href="/actor/2749594-nate-begle" class="cast-card">
+            <a href="/actor/2749594-nate-begle.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wKiMFMmxiqrd2DE3dIbcmzuhk2D.jpg" alt="Nate Begle" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nate Begle</span>
             </a>
-            <a href="/actor/4829658-charles-gonzales" class="cast-card">
+            <a href="/actor/4829658-charles-gonzales.html" class="cast-card">
                 <img src="/favicon.ico" alt="Charles Gonzales" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charles Gonzales</span>
             </a>
-            <a href="/actor/6054726-arthur-romero" class="cast-card">
+            <a href="/actor/6054726-arthur-romero.html" class="cast-card">
                 <img src="/favicon.ico" alt="Arthur Romero" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arthur Romero</span>
             </a>
-            <a href="/actor/6054727-edgar-garcia" class="cast-card">
+            <a href="/actor/6054727-edgar-garcia.html" class="cast-card">
                 <img src="/favicon.ico" alt="Edgar Garcia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Edgar Garcia</span>
             </a>
-            <a href="/actor/4544352-kolbe-garza" class="cast-card">
+            <a href="/actor/4544352-kolbe-garza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cxZo1mDwe5yla7uMBu4zyAoaE1q.jpg" alt="Kolbe Garza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kolbe Garza</span>
             </a>
-            <a href="/actor/5214551-jaynalie-rios" class="cast-card">
+            <a href="/actor/5214551-jaynalie-rios.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jaynalie Rios" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jaynalie Rios</span>
             </a>
-            <a href="/actor/4513653-amaury-dupont" class="cast-card">
+            <a href="/actor/4513653-amaury-dupont.html" class="cast-card">
                 <img src="/favicon.ico" alt="Amaury Dupont" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amaury Dupont</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

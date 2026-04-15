@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Sob a Chama da Candeia</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/110989-eva-ras" class="cast-card">
+            <a href="/actor/110989-eva-ras.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eseW8iLUUoIkgN9KtTZeH3pug1h.jpg" alt="Eva Ras" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eva Ras</span>
             </a>
-            <a href="/actor/1122430-márcia-breia" class="cast-card">
+            <a href="/actor/1122430-márcia-breia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mHDQqd4zdUuf8XGULVMsi7LVF6G.jpg" alt="Márcia Breia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Márcia Breia</span>
             </a>
-            <a href="/actor/1625815-dinis-gomes" class="cast-card">
+            <a href="/actor/1625815-dinis-gomes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aNCIVCdBOXbfAwIlfnC9KxqEeZB.jpg" alt="Dinis Gomes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dinis Gomes</span>
             </a>
-            <a href="/actor/1171979-catarina-lacerda" class="cast-card">
+            <a href="/actor/1171979-catarina-lacerda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/icxP5j4b0fmGDRHdPs76ryNOK6t.jpg" alt="Catarina Lacerda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Catarina Lacerda</span>
             </a>
-            <a href="/actor/2282516-pedro-bernardino" class="cast-card">
+            <a href="/actor/2282516-pedro-bernardino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lRjYn5Br3rnXHVT5Bt6u6R81K41.jpg" alt="Pedro Bernardino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pedro Bernardino</span>
             </a>
-            <a href="/actor/1575213-ângela-marques" class="cast-card">
+            <a href="/actor/1575213-ângela-marques.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aDhLkSUluilyonkpGTNR8IdViRz.jpg" alt="Ângela Marques" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ângela Marques</span>
             </a>
-            <a href="/actor/3790598-manuel-nabais" class="cast-card">
+            <a href="/actor/3790598-manuel-nabais.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pAvrflEP7UksgcTcOw5QH2YEI8P.jpg" alt="Manuel Nabais" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manuel Nabais</span>
             </a>
-            <a href="/actor/5920999-luísa-guerra" class="cast-card">
+            <a href="/actor/5920999-luísa-guerra.html" class="cast-card">
                 <img src="/favicon.ico" alt="Luísa Guerra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luísa Guerra</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

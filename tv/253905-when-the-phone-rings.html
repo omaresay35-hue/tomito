@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>حين يرنّ الهاتف</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/587675-yoo-yeon-seok" class="cast-card">
+            <a href="/actor/587675-yoo-yeon-seok.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cB95no6uPnMu5FdlVWK3cO9k5xR.jpg" alt="Yoo Yeon-seok" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoo Yeon-seok</span>
             </a>
-            <a href="/actor/1466233-chae-soo-bin" class="cast-card">
+            <a href="/actor/1466233-chae-soo-bin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t8inEDMgceg8EFLvgglvXzemklf.jpg" alt="Chae Soo-bin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chae Soo-bin</span>
             </a>
-            <a href="/actor/4286509-heo-nam-jun" class="cast-card">
+            <a href="/actor/4286509-heo-nam-jun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zPF0zzfLjQBpEIbrbNpLDiwnimB.jpg" alt="Heo Nam-jun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Heo Nam-jun</span>
             </a>
-            <a href="/actor/3159475-jang-gyu-ri" class="cast-card">
+            <a href="/actor/3159475-jang-gyu-ri.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jBpVYZQgwBWaOt1P3KP1OSI3WjJ.jpg" alt="Jang Gyu-ri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jang Gyu-ri</span>
             </a>
-            <a href="/actor/3758320-lee-doo-seok" class="cast-card">
+            <a href="/actor/3758320-lee-doo-seok.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/slfoiusX9IrWAB0oi9IbOJ2ih23.jpg" alt="Lee Doo-seok" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Doo-seok</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

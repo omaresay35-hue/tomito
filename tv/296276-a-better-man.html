@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Ølhunden Berit</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/77976-anders-baasmo-christiansen" class="cast-card">
+            <a href="/actor/77976-anders-baasmo-christiansen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lscnOAUqyja8BHQACtjWCOTOKG7.jpg" alt="Anders Baasmo Christiansen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anders Baasmo Christiansen</span>
             </a>
-            <a href="/actor/1908557-ingrid-unnur-giæver" class="cast-card">
+            <a href="/actor/1908557-ingrid-unnur-giæver.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ueUBEbPGfqXfjri0NISx2A75K0G.jpg" alt="Ingrid Unnur Giæver" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ingrid Unnur Giæver</span>
             </a>
-            <a href="/actor/2121726-jonas-strand-gravli" class="cast-card">
+            <a href="/actor/2121726-jonas-strand-gravli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wl1V04jmgUI4a0TzwXrjlFhjlXF.jpg" alt="Jonas Strand Gravli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jonas Strand Gravli</span>
             </a>
-            <a href="/actor/3801784-irena-sikorskytė" class="cast-card">
+            <a href="/actor/3801784-irena-sikorskytė.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iF3i1z4C6WEX5tRL2i4rwGzS84A.jpg" alt="Irena Sikorskytė" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Irena Sikorskytė</span>
             </a>
-            <a href="/actor/3342150-victoria-ose" class="cast-card">
+            <a href="/actor/3342150-victoria-ose.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9MidYhFJPVgM6yHnWIbvXekz3mT.jpg" alt="Victoria Ose" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Victoria Ose</span>
             </a>
-            <a href="/actor/4776279-torbjørn-aamodt" class="cast-card">
+            <a href="/actor/4776279-torbjørn-aamodt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kFLUe8vQqiy3pEqjXP2FqvNJDZ5.jpg" alt="Torbjørn Aamodt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Torbjørn Aamodt</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

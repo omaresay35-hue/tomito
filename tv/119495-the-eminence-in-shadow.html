@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -77,35 +77,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1732278-seiichiro-yamashita" class="cast-card">
+            <a href="/actor/1732278-seiichiro-yamashita.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zym6WY3rxL4FdbHoLzG2CnqnR7.jpg" alt="Seiichiro Yamashita" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Seiichiro Yamashita</span>
             </a>
-            <a href="/actor/1254672-asami-seto" class="cast-card">
+            <a href="/actor/1254672-asami-seto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iKKCPgKrNd4pJ0iBOC1SBZy2Y4Y.jpg" alt="Asami Seto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Asami Seto</span>
             </a>
-            <a href="/actor/1325949-inori-minase" class="cast-card">
+            <a href="/actor/1325949-inori-minase.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cqOrQDUbbQLKpujzcK47YqjFdNp.jpg" alt="Inori Minase" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Inori Minase</span>
             </a>
-            <a href="/actor/1498127-suzuko-mimori" class="cast-card">
+            <a href="/actor/1498127-suzuko-mimori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zsUuNDI3rLh0ngDUUWcwfjQn9Od.jpg" alt="Suzuko Mimori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Suzuko Mimori</span>
             </a>
-            <a href="/actor/2359492-fairouz-ai" class="cast-card">
+            <a href="/actor/2359492-fairouz-ai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/coFu6WOVBZvqd1fw89vbHkiC0zB.jpg" alt="Fairouz Ai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fairouz Ai</span>
             </a>
-            <a href="/actor/1116333-hisako-kanemoto" class="cast-card">
+            <a href="/actor/1116333-hisako-kanemoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qyJPQaehMc4Sy5jaTfIJLdrll2v.jpg" alt="Hisako Kanemoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hisako Kanemoto</span>
             </a>
-            <a href="/actor/1922614-reina-kondo" class="cast-card">
+            <a href="/actor/1922614-reina-kondo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yxxLyu5Ya8NftpY5NVR7uy1tzau.jpg" alt="Reina Kondo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reina Kondo</span>
             </a>
-            <a href="/actor/1116334-rina-hidaka" class="cast-card">
+            <a href="/actor/1116334-rina-hidaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7JupZGvqcq4dRxiTKpPxzg8NUS4.jpg" alt="Rina Hidaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rina Hidaka</span>
             </a></div></section>
@@ -113,13 +113,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>異世界でもふもふなでなでするためにがんばってます。</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1324646-ai-kakuma" class="cast-card">
+            <a href="/actor/1324646-ai-kakuma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o3tQSeeJAeafJNvQs2IKvpKY7av.jpg" alt="Ai Kakuma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ai Kakuma</span>
             </a>
-            <a href="/actor/1428440-genki-okawa" class="cast-card">
+            <a href="/actor/1428440-genki-okawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nWTFYAF9phuYsoxc7Ta4X1TDJ12.jpg" alt="Genki Okawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Genki Okawa</span>
             </a>
-            <a href="/actor/1149051-taketora" class="cast-card">
+            <a href="/actor/1149051-taketora.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dn4fHs34JrTmcEKrqflvd11B03Z.jpg" alt="Taketora" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taketora</span>
             </a>
-            <a href="/actor/1249235-tomoaki-maeno" class="cast-card">
+            <a href="/actor/1249235-tomoaki-maeno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w3lEuXSbEyzzNyO3YnxsF6wm2N5.jpg" alt="Tomoaki Maeno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomoaki Maeno</span>
             </a>
-            <a href="/actor/9716-kenji-nomura" class="cast-card">
+            <a href="/actor/9716-kenji-nomura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rmTziYxlPje4PiKhPgqMEHu9Axd.jpg" alt="Kenji Nomura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kenji Nomura</span>
             </a>
-            <a href="/actor/62318-shin-ichiro-miki" class="cast-card">
+            <a href="/actor/62318-shin-ichiro-miki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yL9Tx2HZgK7t5AssYl6oGE9bjdj.jpg" alt="Shin-ichiro Miki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shin-ichiro Miki</span>
             </a>
-            <a href="/actor/3128816-shuichiro-umeda" class="cast-card">
+            <a href="/actor/3128816-shuichiro-umeda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dCr870q8ojD6qpD1hmS1sdvh2pe.jpg" alt="Shuichiro Umeda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shuichiro Umeda</span>
             </a>
-            <a href="/actor/2241362-haruki-iwata" class="cast-card">
+            <a href="/actor/2241362-haruki-iwata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8RLhDmrskY3p2xlMgVkL6Kh8jUg.jpg" alt="Haruki Iwata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Haruki Iwata</span>
             </a>
-            <a href="/actor/40327-toru-furuya" class="cast-card">
+            <a href="/actor/40327-toru-furuya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2et31Lo8I0gRbyYFaOu3TBRby7U.jpg" alt="Toru Furuya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Toru Furuya</span>
             </a>
-            <a href="/actor/3061612-kiryuu-kouji" class="cast-card">
+            <a href="/actor/3061612-kiryuu-kouji.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n1yJ5GIw2VdpAFl15DTZdX2cKYF.jpg" alt="Kiryuu Kouji" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kiryuu Kouji</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

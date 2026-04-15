@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The 'Burbs</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/74688-keke-palmer" class="cast-card">
+            <a href="/actor/74688-keke-palmer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fXiKInUmPLs5F53yv2KZSuCXHJZ.jpg" alt="Keke Palmer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keke Palmer</span>
             </a>
-            <a href="/actor/212285-jack-whitehall" class="cast-card">
+            <a href="/actor/212285-jack-whitehall.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qBHLpjH3Dad9ZoZsrcMplIPwkHC.jpg" alt="Jack Whitehall" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Whitehall</span>
             </a>
-            <a href="/actor/100602-julia-duffy" class="cast-card">
+            <a href="/actor/100602-julia-duffy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oyHm2KIci8LyP6QSljjldmg0JbK.jpg" alt="Julia Duffy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julia Duffy</span>
             </a>
-            <a href="/actor/1226294-paula-pell" class="cast-card">
+            <a href="/actor/1226294-paula-pell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aQZsAcaac2zzLBMhb15O2mrSrpx.jpg" alt="Paula Pell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paula Pell</span>
             </a>
-            <a href="/actor/1198148-mark-proksch" class="cast-card">
+            <a href="/actor/1198148-mark-proksch.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5sgun1ZeWUaoz5TSvC7rvYBeWCC.jpg" alt="Mark Proksch" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Proksch</span>
             </a>
-            <a href="/actor/2503733-kapil-talwalkar" class="cast-card">
+            <a href="/actor/2503733-kapil-talwalkar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6uPsuinFnhw3hMMwQmZ2RfLRmTU.jpg" alt="Kapil Talwalkar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kapil Talwalkar</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

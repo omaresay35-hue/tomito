@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Fin de fiesta</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2953543-edith-martínez-val" class="cast-card">
+            <a href="/actor/2953543-edith-martínez-val.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ssOJCNllctO3wRlTzZFMqr1BKra.jpg" alt="Edith Martínez-Val" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Edith Martínez-Val</span>
             </a>
-            <a href="/actor/3643421-sonia-barba" class="cast-card">
+            <a href="/actor/3643421-sonia-barba.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sonia Barba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sonia Barba</span>
             </a>
-            <a href="/actor/1169141-beatriz-arjona" class="cast-card">
+            <a href="/actor/1169141-beatriz-arjona.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jxIFEzPxyPWKzw9MMD2pf7hHyz1.jpg" alt="Beatriz Arjona" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Beatriz Arjona</span>
             </a>
-            <a href="/actor/1036040-frank-feys" class="cast-card">
+            <a href="/actor/1036040-frank-feys.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xnUFPC9Fohaz5nVS2SUtmb4lPzA.jpg" alt="Frank Feys" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Frank Feys</span>
             </a>
-            <a href="/actor/1909479-carlos-bernardino" class="cast-card">
+            <a href="/actor/1909479-carlos-bernardino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lkyskhpzOX1nEbnJT452Wm0yYA0.jpg" alt="Carlos Bernardino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carlos Bernardino</span>
             </a>
-            <a href="/actor/4940163-gonzalo-validiez" class="cast-card">
+            <a href="/actor/4940163-gonzalo-validiez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/omIz87VTx0mgbnt2ln3Q0WIG6px.jpg" alt="Gonzalo Validiez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gonzalo Validiez</span>
             </a>
-            <a href="/actor/1331588-josé-manuel-seda" class="cast-card">
+            <a href="/actor/1331588-josé-manuel-seda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sTkfJeYfoJ8aZzjDXBl969KTGqu.jpg" alt="José Manuel Seda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>José Manuel Seda</span>
             </a>
-            <a href="/actor/5685634-patricia-garcía-méndez" class="cast-card">
+            <a href="/actor/5685634-patricia-garcía-méndez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Patricia García Méndez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patricia García Méndez</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

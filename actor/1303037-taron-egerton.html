@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,27 +73,27 @@ Egerton has starred in several biographical films, portraying military officer 
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1196573-she-rides-shotgun">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1196573-she-rides-shotgun.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nvqW8mOm818QDio3GKKmPLK8kXj.jpg" alt="She Rides Shotgun — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">She Rides Shotgun</div></div>
-    </a>    <a class="card" href="/movie/1005331-carry-on">
+    </a>    <a class="card" href="/movie/1005331-carry-on.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sjMN7DRi4sGiledsmllEw5HJjPy.jpg" alt="Carry-On — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Carry-On</div></div>
-    </a>    <a class="card" href="/movie/1371727-sing-thriller">
+    </a>    <a class="card" href="/movie/1371727-sing-thriller.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zdT3LmTSNL4GAsS3cKjaCBzOrId.jpg" alt="Sing: Thriller — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sing: Thriller</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/215995-smoke">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/215995-smoke.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/c6xRvQCL07MVNamjfVU2an600q9.jpg" alt="Smoke — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Smoke</div></div>
-    </a>    <a class="card" href="/tv/155537-black-bird">
+    </a>    <a class="card" href="/tv/155537-black-bird.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qu312pwM61NPTr7nexvovCClDNP.jpg" alt="Black Bird — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Black Bird</div></div>
-    </a>    <a class="card" href="/tv/2343-lewis">
+    </a>    <a class="card" href="/tv/2343-lewis.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/etyCA64joFB2jGJFWZPUYczVbvf.jpg" alt="Lewis — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Lewis</div></div>
@@ -102,13 +102,6 @@ Egerton has starred in several biographical films, portraying military officer 
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

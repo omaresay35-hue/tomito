@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Touch Me</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/999817-olivia-taylor-dudley" class="cast-card">
+            <a href="/actor/999817-olivia-taylor-dudley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dcYv3aYSMNbGcYHehUjeEg1UwqY.jpg" alt="Olivia Taylor Dudley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olivia Taylor Dudley</span>
             </a>
-            <a href="/actor/17441-lou-taylor-pucci" class="cast-card">
+            <a href="/actor/17441-lou-taylor-pucci.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/25lfbMJruSG5Kmv1zdKfMyrZWB9.jpg" alt="Lou Taylor Pucci" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lou Taylor Pucci</span>
             </a>
-            <a href="/actor/222143-jordan-gavaris" class="cast-card">
+            <a href="/actor/222143-jordan-gavaris.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ClIWbJx4T93QxRextCaEpMQVHS.jpg" alt="Jordan Gavaris" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jordan Gavaris</span>
             </a>
-            <a href="/actor/146004-marlene-forte" class="cast-card">
+            <a href="/actor/146004-marlene-forte.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qBhO3tT3VzF1bxUhw3ylmQsfTwP.jpg" alt="Marlene Forte" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marlene Forte</span>
             </a>
-            <a href="/actor/15423-paget-brewster" class="cast-card">
+            <a href="/actor/15423-paget-brewster.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nq9ZuGPvzyfS8dOuPWTQUw7Igxg.jpg" alt="Paget Brewster" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paget Brewster</span>
             </a>
-            <a href="/actor/2747613-ashley-lauren-nedd" class="cast-card">
+            <a href="/actor/2747613-ashley-lauren-nedd.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ashley Lauren Nedd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ashley Lauren Nedd</span>
             </a>
-            <a href="/actor/5316222-jj-phillips" class="cast-card">
+            <a href="/actor/5316222-jj-phillips.html" class="cast-card">
                 <img src="/favicon.ico" alt="JJ Phillips" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>JJ Phillips</span>
             </a>
-            <a href="/actor/2342629-yumarie-morales" class="cast-card">
+            <a href="/actor/2342629-yumarie-morales.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wayqCpuQJVR0Ps9cMr8cmGp2gfz.jpg" alt="Yumarie Morales" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yumarie Morales</span>
             </a>
-            <a href="/actor/5316225-eli-lucas" class="cast-card">
+            <a href="/actor/5316225-eli-lucas.html" class="cast-card">
                 <img src="/favicon.ico" alt="Eli Lucas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eli Lucas</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

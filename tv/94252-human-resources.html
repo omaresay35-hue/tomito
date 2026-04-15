@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,35 +75,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1093920-aidy-bryant" class="cast-card">
+            <a href="/actor/1093920-aidy-bryant.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3v2X5d2335dYXzIT4yKBZ0qqGth.jpg" alt="Aidy Bryant" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aidy Bryant</span>
             </a>
-            <a href="/actor/79082-randall-park" class="cast-card">
+            <a href="/actor/79082-randall-park.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/u1QpbjVIKegk79DJG9HFmg9Ljv4.jpg" alt="Randall Park" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Randall Park</span>
             </a>
-            <a href="/actor/74688-keke-palmer" class="cast-card">
+            <a href="/actor/74688-keke-palmer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fXiKInUmPLs5F53yv2KZSuCXHJZ.jpg" alt="Keke Palmer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keke Palmer</span>
             </a>
-            <a href="/actor/11207-david-thewlis" class="cast-card">
+            <a href="/actor/11207-david-thewlis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sNuYyT8ocLlQr3TdAW9CoKVbCU8.jpg" alt="David Thewlis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Thewlis</span>
             </a>
-            <a href="/actor/1773530-brandon-kyle-goodman" class="cast-card">
+            <a href="/actor/1773530-brandon-kyle-goodman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9FuXR9JlYtlybTVDT1toCbgaVYK.jpg" alt="Brandon Kyle Goodman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brandon Kyle Goodman</span>
             </a>
-            <a href="/actor/52792-maya-rudolph" class="cast-card">
+            <a href="/actor/52792-maya-rudolph.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bpEVMFMyHEQ8wLdii9WKB279w8p.jpg" alt="Maya Rudolph" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maya Rudolph</span>
             </a>
-            <a href="/actor/208519-nick-kroll" class="cast-card">
+            <a href="/actor/208519-nick-kroll.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ggDaWSVuEXryxTJ6sKo2kiEhZPL.jpg" alt="Nick Kroll" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nick Kroll</span>
             </a>
-            <a href="/actor/21063-pamela-adlon" class="cast-card">
+            <a href="/actor/21063-pamela-adlon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5eIRHUbNOH7ibXa0IfUfFvj5I5L.jpg" alt="Pamela Adlon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pamela Adlon</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

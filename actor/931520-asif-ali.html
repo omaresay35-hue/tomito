@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ Asif Ali made his acting debut with the Malayalam film Ritu (2009) directed by S
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1404799-mirage">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1404799-mirage.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yLkc12tgINrE7KzSpjsFJnG0C6d.jpg" alt="Mirage — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Mirage</div></div>
-    </a>    <a class="card" href="/movie/1290954-rekhachithram">
+    </a>    <a class="card" href="/movie/1290954-rekhachithram.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ulIAyiSVQZL1Ov6K2Tjf6wPlzFi.jpg" alt="Rekhachithram — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Rekhachithram</div></div>
-    </a>    <a class="card" href="/movie/1025125-kishkindha-kaandam">
+    </a>    <a class="card" href="/movie/1025125-kishkindha-kaandam.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rniBYHDRs6e8qMkPr4D4ZE5uMhF.jpg" alt="Kishkindha Kaandam — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kishkindha Kaandam</div></div>
-    </a>    <a class="card" href="/movie/1151560-varshangalkku-shesham">
+    </a>    <a class="card" href="/movie/1151560-varshangalkku-shesham.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dVLqE9aEszo8yrc8TDk3bloYHHS.jpg" alt="Varshangalkku Shesham — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Varshangalkku Shesham</div></div>
@@ -94,13 +94,6 @@ Asif Ali made his acting debut with the Malayalam film Ritu (2009) directed by S
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

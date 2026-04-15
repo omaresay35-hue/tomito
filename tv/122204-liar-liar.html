@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ライアー・ライアー</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2784795-genta-nakamura" class="cast-card">
+            <a href="/actor/2784795-genta-nakamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bl3pu2fsaNfHqnZQSDugY4V1CE0.jpg" alt="Genta Nakamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Genta Nakamura</span>
             </a>
-            <a href="/actor/2013412-yukina-shuto" class="cast-card">
+            <a href="/actor/2013412-yukina-shuto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mxIpJabfqqJWNjJBzEnJrRDyOsE.jpg" alt="Yukina Shuto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yukina Shuto</span>
             </a>
-            <a href="/actor/3080027-wakana-kuramochi" class="cast-card">
+            <a href="/actor/3080027-wakana-kuramochi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xQJa1LDearn5rf1TAOmVveuXzl.jpg" alt="Wakana Kuramochi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wakana Kuramochi</span>
             </a>
-            <a href="/actor/1563026-rika-tachibana" class="cast-card">
+            <a href="/actor/1563026-rika-tachibana.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kXQIX7yYTucgaxkERxxj6TCueWx.jpg" alt="Rika Tachibana" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rika Tachibana</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

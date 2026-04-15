@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>バジーノイズ</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3436445-takumi-kawanishi" class="cast-card">
+            <a href="/actor/3436445-takumi-kawanishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5ZsOzlheMtqS0pDkgJkpabd2UF.jpg" alt="Takumi Kawanishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takumi Kawanishi</span>
             </a>
-            <a href="/actor/1401338-hiyori-sakurada" class="cast-card">
+            <a href="/actor/1401338-hiyori-sakurada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/62ZKkbRas0oecXFcuIyzuKlom62.jpg" alt="Hiyori Sakurada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiyori Sakurada</span>
             </a>
-            <a href="/actor/85005-kai-inowaki" class="cast-card">
+            <a href="/actor/85005-kai-inowaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3g9eION4PljkXjlEgoyxVWv8SWx.jpg" alt="Kai Inowaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kai Inowaki</span>
             </a>
-            <a href="/actor/1574954-shuntaro-yanagi" class="cast-card">
+            <a href="/actor/1574954-shuntaro-yanagi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/z9sPHsSAxpKFt0s4QyTdLepT3qB.jpg" alt="Shuntaro Yanagi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shuntaro Yanagi</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

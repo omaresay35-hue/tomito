@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Towards Zero</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5657-anjelica-huston" class="cast-card">
+            <a href="/actor/5657-anjelica-huston.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6hnYeHa7Rc1w1MmQ3JsLSIb7yCX.jpg" alt="Anjelica Huston" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anjelica Huston</span>
             </a>
-            <a href="/actor/551020-oliver-jackson-cohen" class="cast-card">
+            <a href="/actor/551020-oliver-jackson-cohen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dd84B5U7Zd2kAh7is35Yhn1qTZK.jpg" alt="Oliver Jackson-Cohen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oliver Jackson-Cohen</span>
             </a>
-            <a href="/actor/3708146-ella-lily-hyland" class="cast-card">
+            <a href="/actor/3708146-ella-lily-hyland.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/u1F8to9aP5zKMW0LSHeOl7bkaF0.jpg" alt="Ella Lily Hyland" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ella Lily Hyland</span>
             </a>
-            <a href="/actor/1694711-mimi-keene" class="cast-card">
+            <a href="/actor/1694711-mimi-keene.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7bUgfaycm0f6PgEn3eLo8oANByO.jpg" alt="Mimi Keene" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mimi Keene</span>
             </a>
-            <a href="/actor/61011-clarke-peters" class="cast-card">
+            <a href="/actor/61011-clarke-peters.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ouDHDpocxXgXrosF3vShAEkOjHL.jpg" alt="Clarke Peters" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Clarke Peters</span>
             </a>
-            <a href="/actor/29528-matthew-rhys" class="cast-card">
+            <a href="/actor/29528-matthew-rhys.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8uktKexgPn0tsW3dsXVNqkqiNh7.jpg" alt="Matthew Rhys" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthew Rhys</span>
             </a>
-            <a href="/actor/1503076-anjana-vasan" class="cast-card">
+            <a href="/actor/1503076-anjana-vasan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qLj1EERaN9lIDdPTenjBYYSNir6.jpg" alt="Anjana Vasan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anjana Vasan</span>
             </a>
-            <a href="/actor/2725175-khalil-ben-gharbia" class="cast-card">
+            <a href="/actor/2725175-khalil-ben-gharbia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jeL1Fm4HWqIkxJAUQTYnlfKCO7x.jpg" alt="Khalil Ben Gharbia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Khalil Ben Gharbia</span>
             </a>
-            <a href="/actor/1287084-jack-farthing" class="cast-card">
+            <a href="/actor/1287084-jack-farthing.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xhriXePjVXTJcF2linudLgMnsKA.jpg" alt="Jack Farthing" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Farthing</span>
             </a>
-            <a href="/actor/2211274-adam-hugill" class="cast-card">
+            <a href="/actor/2211274-adam-hugill.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o0XToJB2MrTtNm5n2g3UYxcMNrV.jpg" alt="Adam Hugill" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Hugill</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

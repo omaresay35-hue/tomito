@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Bardot</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3783-brigitte-bardot" class="cast-card">
+            <a href="/actor/3783-brigitte-bardot.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xitdKLPSsavii74yGJ73cwMzBOC.jpg" alt="Brigitte Bardot" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brigitte Bardot</span>
             </a>
-            <a href="/actor/16862-claude-lelouch" class="cast-card">
+            <a href="/actor/16862-claude-lelouch.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d7s7Ifc2JS0Hzm31YAgVtK5vuKc.jpg" alt="Claude Lelouch" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Claude Lelouch</span>
             </a>
-            <a href="/actor/56367-naomi-campbell" class="cast-card">
+            <a href="/actor/56367-naomi-campbell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/szSm9TgGVS8clzNQFGyWDfaq6OG.jpg" alt="Naomi Campbell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Naomi Campbell</span>
             </a>
-            <a href="/actor/87201-paul-watson" class="cast-card">
+            <a href="/actor/87201-paul-watson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4P8jhFyTyV8jzGdPCMiC5mv83A4.jpg" alt="Paul Watson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paul Watson</span>
             </a>
-            <a href="/actor/1250729-stella-mccartney" class="cast-card">
+            <a href="/actor/1250729-stella-mccartney.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4br4cq93UZUh64qs4IveHg55O5y.jpg" alt="Stella McCartney" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stella McCartney</span>
             </a>
-            <a href="/actor/2568953-hugo-clément" class="cast-card">
+            <a href="/actor/2568953-hugo-clément.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sc9Vs12WIp5PytGswcTQ6haaUZQ.jpg" alt="Hugo Clément" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hugo Clément</span>
             </a>
-            <a href="/actor/1057155-allain-bougrain-dubourg" class="cast-card">
+            <a href="/actor/1057155-allain-bougrain-dubourg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7kqYWFmLpxTtWKN6Nxo9ozkxvxz.jpg" alt="Allain Bougrain-Dubourg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Allain Bougrain-Dubourg</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>L-Pop</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2367727-andrea-de-alba" class="cast-card">
+            <a href="/actor/2367727-andrea-de-alba.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/whZy3kK4ngU3qGABV492iCdYbQn.jpg" alt="Andrea de Alba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrea de Alba</span>
             </a>
-            <a href="/actor/4261841-isan-beomhyun-lee" class="cast-card">
+            <a href="/actor/4261841-isan-beomhyun-lee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/Q2SDcZzoMdVexU9KLlawmqE5wo.jpg" alt="Isan Beomhyun Lee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isan Beomhyun Lee</span>
             </a>
-            <a href="/actor/1319077-alicia-jaziz-zapién" class="cast-card">
+            <a href="/actor/1319077-alicia-jaziz-zapién.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bP31nuiVtmcwCpFi9C6vecIIH2I.jpg" alt="Alicia Jaziz Zapién" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alicia Jaziz Zapién</span>
             </a>
-            <a href="/actor/3627557-ji-moon" class="cast-card">
+            <a href="/actor/3627557-ji-moon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r6Z9udnETL6lRlJgDcknxxdmi0s.jpg" alt="Ji Moon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ji Moon</span>
             </a>
-            <a href="/actor/1487906-arantza-ruiz" class="cast-card">
+            <a href="/actor/1487906-arantza-ruiz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iVrwTFygTRzwj3AodMF1aEU5ZDy.jpg" alt="Arantza Ruiz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arantza Ruiz</span>
             </a>
-            <a href="/actor/3627560-diego-casba" class="cast-card">
+            <a href="/actor/3627560-diego-casba.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4TWxemvJvAlEsrAqoItJwGcpJ8u.jpg" alt="Diego Casba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Diego Casba</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

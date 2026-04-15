@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Sweeney Todd: Slice & Dice</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/218107-terry-bird" class="cast-card">
+            <a href="/actor/218107-terry-bird.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4Hp7cPOsZIXn6G2OngGh0LsjYxF.jpg" alt="Terry Bird" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Terry Bird</span>
             </a>
-            <a href="/actor/1539575-jo-dyson" class="cast-card">
+            <a href="/actor/1539575-jo-dyson.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jo Dyson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jo Dyson</span>
             </a>
-            <a href="/actor/1590838-steven-brandon" class="cast-card">
+            <a href="/actor/1590838-steven-brandon.html" class="cast-card">
                 <img src="/favicon.ico" alt="Steven Brandon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steven Brandon</span>
             </a>
-            <a href="/actor/1921313-lee-brown" class="cast-card">
+            <a href="/actor/1921313-lee-brown.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2aeRWv4L3VY4IFq3l52AiWBa4EY.jpg" alt="Lee Brown" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Brown</span>
             </a>
-            <a href="/actor/2734689-alexander-simkin" class="cast-card">
+            <a href="/actor/2734689-alexander-simkin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oclwdtf5M3EPuFB0UDdY0H9AX5g.jpg" alt="Alexander Simkin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexander Simkin</span>
             </a>
-            <a href="/actor/1154841-jason-ford" class="cast-card">
+            <a href="/actor/1154841-jason-ford.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/140urbbzcU9KZMwEnSK9k7YbDfw.jpg" alt="Jason Ford" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jason Ford</span>
             </a>
-            <a href="/actor/2062955-toby-wynn-davies" class="cast-card">
+            <a href="/actor/2062955-toby-wynn-davies.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5UIQn9iFFY1LCdsML4XhQTb47JJ.jpg" alt="Toby Wynn-Davies" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Toby Wynn-Davies</span>
             </a>
-            <a href="/actor/1511823-ian-ralph" class="cast-card">
+            <a href="/actor/1511823-ian-ralph.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ian Ralph" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ian Ralph</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>阿龍</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/78257-ronald-cheng-chung-kei" class="cast-card">
+            <a href="/actor/78257-ronald-cheng-chung-kei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1LoxVbamS7sxQP8TdtSeozNSKpB.jpg" alt="Ronald Cheng Chung-Kei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ronald Cheng Chung-Kei</span>
             </a>
-            <a href="/actor/556829-chrissie-chau-sau-na" class="cast-card">
+            <a href="/actor/556829-chrissie-chau-sau-na.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pvZ6SDvitfA8IYCJvaA1qpJG33A.jpg" alt="Chrissie Chau Sau-Na" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chrissie Chau Sau-Na</span>
             </a>
-            <a href="/actor/140478-philip-keung-ho-man" class="cast-card">
+            <a href="/actor/140478-philip-keung-ho-man.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sy07oaWguC4Q4c45dRkFuRTYld0.jpg" alt="Philip Keung Ho-Man" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Philip Keung Ho-Man</span>
             </a>
-            <a href="/actor/235521-jiang-chao" class="cast-card">
+            <a href="/actor/235521-jiang-chao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q7Y4kNRkIK1GrfCZSuP7GqRKw85.jpg" alt="Jiang Chao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jiang Chao</span>
             </a>
-            <a href="/actor/1619664-fu-shun-ying" class="cast-card">
+            <a href="/actor/1619664-fu-shun-ying.html" class="cast-card">
                 <img src="/favicon.ico" alt="Fu Shun-Ying" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fu Shun-Ying</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

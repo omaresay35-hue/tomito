@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>التيار العكر</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1613836-rowoon" class="cast-card">
+            <a href="/actor/1613836-rowoon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sWf7wAG4upRgIkWuDfNvUog1UHc.jpg" alt="Rowoon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rowoon</span>
             </a>
-            <a href="/actor/2256407-shin-ye-eun" class="cast-card">
+            <a href="/actor/2256407-shin-ye-eun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dGJRM6rEdk9NLdryDUg172XK5ip.jpg" alt="Shin Ye-eun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shin Ye-eun</span>
             </a>
-            <a href="/actor/3212104-park-seo-ham" class="cast-card">
+            <a href="/actor/3212104-park-seo-ham.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ptmdgudLjw6QHhgCoelJpRxTTRp.jpg" alt="Park Seo-ham" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Seo-ham</span>
             </a>
-            <a href="/actor/1078674-park-ji-hwan" class="cast-card">
+            <a href="/actor/1078674-park-ji-hwan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jgydG4s0GsZ2YR5lmjd8T9aawBy.jpg" alt="Park Ji-hwan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Ji-hwan</span>
             </a>
-            <a href="/actor/1572347-jeon-bae-soo" class="cast-card">
+            <a href="/actor/1572347-jeon-bae-soo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7EhOO3xFN5FvEJwl0b0Eudab5bI.jpg" alt="Jeon Bae-soo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeon Bae-soo</span>
             </a>
-            <a href="/actor/1258630-choi-won-young" class="cast-card">
+            <a href="/actor/1258630-choi-won-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fd6mthn1EonRrsk2WTtfQhzHCgn.jpg" alt="Choi Won-young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Choi Won-young</span>
             </a>
-            <a href="/actor/1418581-choi-gwi-hwa" class="cast-card">
+            <a href="/actor/1418581-choi-gwi-hwa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aYiS6jQNNmOSfzcobDs12pLOOjj.jpg" alt="Choi Gwi-hwa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Choi Gwi-hwa</span>
             </a>
-            <a href="/actor/2139736-ahn-seung-gyun" class="cast-card">
+            <a href="/actor/2139736-ahn-seung-gyun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pvejeYZvrKubKQlJ81mXEjx4Hkl.jpg" alt="Ahn Seung-gyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ahn Seung-gyun</span>
             </a>
-            <a href="/actor/2807683-kim-cheol-yun" class="cast-card">
+            <a href="/actor/2807683-kim-cheol-yun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bHgohoYj5lW2qJNW2YahMxlSbKT.jpg" alt="Kim Cheol-yun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Cheol-yun</span>
             </a>
-            <a href="/actor/5588822-cho-yu-jin" class="cast-card">
+            <a href="/actor/5588822-cho-yu-jin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d8IlXwvrCnQkQyw5GfzcIAghYu3.jpg" alt="Cho Yu-jin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cho Yu-jin</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

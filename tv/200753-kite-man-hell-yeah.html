@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Kite Man: Hell Yeah!</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1184279-matt-oberg" class="cast-card">
+            <a href="/actor/1184279-matt-oberg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kMMqMnG9TGYCcgldFAFUUajoomq.jpg" alt="Matt Oberg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matt Oberg</span>
             </a>
-            <a href="/actor/2692283-janelle-james" class="cast-card">
+            <a href="/actor/2692283-janelle-james.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vLiXGdCRCfWhamrPdUGYiBRZk6y.jpg" alt="Janelle James" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Janelle James</span>
             </a>
-            <a href="/actor/441567-james-adomian" class="cast-card">
+            <a href="/actor/441567-james-adomian.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/auQ2a6mGhPiujtlSqDNSk6l7i1G.jpg" alt="James Adomian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Adomian</span>
             </a>
-            <a href="/actor/1381186-stephanie-hsu" class="cast-card">
+            <a href="/actor/1381186-stephanie-hsu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8gb3lfIHKQAGOQyeC4ynQPsCiHr.jpg" alt="Stephanie Hsu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephanie Hsu</span>
             </a>
-            <a href="/actor/783-jonathan-banks" class="cast-card">
+            <a href="/actor/783-jonathan-banks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bswk26L13PvY4iMTwUTAsepXCLv.jpg" alt="Jonathan Banks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jonathan Banks</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

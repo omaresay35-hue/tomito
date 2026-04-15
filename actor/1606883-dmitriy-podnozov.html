@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1168197-this-summer-will-end">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1168197-this-summer-will-end.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/amZjholKvXg8a3s79xX9psVUMwn.jpg" alt="This Summer Will End — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">This Summer Will End</div></div>
-    </a>    <a class="card" href="/movie/1008445-the-poet">
+    </a>    <a class="card" href="/movie/1008445-the-poet.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gKSFoDzpxRU6TRDtbXTPlNfGlGD.jpg" alt="The Poet — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Poet</div></div>
-    </a>    <a class="card" href="/movie/1267217-sugar-baby">
+    </a>    <a class="card" href="/movie/1267217-sugar-baby.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kcREsnVDEFFXmt5GuPwyGqyDuDJ.jpg" alt="Sugar Baby — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sugar Baby</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/245651-fear-of-the-neva">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/245651-fear-of-the-neva.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/oQjFxWSDYsivylkJ6wGFvhEgwCi.jpg" alt="Fear of the Neva — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fear of the Neva</div></div>
-    </a>    <a class="card" href="/tv/224028-samsara">
+    </a>    <a class="card" href="/tv/224028-samsara.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/g5uuUjD0zeK9T7ytyCibOGP5RLO.jpg" alt="Samsara — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Samsara</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

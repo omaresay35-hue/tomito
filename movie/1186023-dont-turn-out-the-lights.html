@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Don't Turn Out the Lights</span>
   </nav>
 
@@ -71,39 +71,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3353782-bella-delong" class="cast-card">
+            <a href="/actor/3353782-bella-delong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bPJssmyVKMmaq1BICJu1SzcBdMq.jpg" alt="Bella DeLong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bella DeLong</span>
             </a>
-            <a href="/actor/3097784-amber-janea" class="cast-card">
+            <a href="/actor/3097784-amber-janea.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/Hrzijj4TcLiBfAHDjgWgQUPAyS.jpg" alt="Amber Janea" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amber Janea</span>
             </a>
-            <a href="/actor/4300093-daryl-tofa" class="cast-card">
+            <a href="/actor/4300093-daryl-tofa.html" class="cast-card">
                 <img src="/favicon.ico" alt="Daryl Tofa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daryl Tofa</span>
             </a>
-            <a href="/actor/2385475-finley-rose-slater" class="cast-card">
+            <a href="/actor/2385475-finley-rose-slater.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tFboYsJd77BOaaBopGYYuFQ8mwi.jpg" alt="Finley Rose Slater" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Finley Rose Slater</span>
             </a>
-            <a href="/actor/5028706-ana-zambrana" class="cast-card">
+            <a href="/actor/5028706-ana-zambrana.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7n72ATFXLbwycFoalxvH82eIck4.jpg" alt="Ana Zambrana" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ana Zambrana</span>
             </a>
-            <a href="/actor/1241324-bobby-tisdale" class="cast-card">
+            <a href="/actor/1241324-bobby-tisdale.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zZmqafzGsf3rNAfRgOPiOPrK3dC.jpg" alt="Bobby Tisdale" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bobby Tisdale</span>
             </a>
-            <a href="/actor/2910171-john-bucy" class="cast-card">
+            <a href="/actor/2910171-john-bucy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a41u0dNBGv3t42Gg2TZhYjcI0Bm.jpg" alt="John Bucy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Bucy</span>
             </a>
-            <a href="/actor/3320212-jarrett-austin-brown" class="cast-card">
+            <a href="/actor/3320212-jarrett-austin-brown.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jarrett Austin Brown" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jarrett Austin Brown</span>
             </a>
-            <a href="/actor/6084002-jasper-cole" class="cast-card">
+            <a href="/actor/6084002-jasper-cole.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jasper Cole" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jasper Cole</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

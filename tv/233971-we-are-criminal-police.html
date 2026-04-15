@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>我是刑警</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1344903-yu-hewei" class="cast-card">
+            <a href="/actor/1344903-yu-hewei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rtHbXVr0NUWYkV1vqCCdhgyyNXG.jpg" alt="Yu Hewei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yu Hewei</span>
             </a>
-            <a href="/actor/1194773-ding-yongdai" class="cast-card">
+            <a href="/actor/1194773-ding-yongdai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hB1xrY9K0jwhWsbLEbsJl55h98T.jpg" alt="Ding Yongdai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ding Yongdai</span>
             </a>
-            <a href="/actor/1637225-bai-fan" class="cast-card">
+            <a href="/actor/1637225-bai-fan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dWFg6bwXRcCzBsO1tjsM1T549uI.jpg" alt="Bai Fan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bai Fan</span>
             </a>
-            <a href="/actor/3093272-huang-man" class="cast-card">
+            <a href="/actor/3093272-huang-man.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sIv8K2FpOdhBUclAMGwty8vMO6C.jpg" alt="Huang Man" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Huang Man</span>
             </a>
-            <a href="/actor/237829-wu-xiaoyu" class="cast-card">
+            <a href="/actor/237829-wu-xiaoyu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oX12K1PLVqVtF4VVDP3lZwrYSB4.jpg" alt="Wu Xiaoyu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wu Xiaoyu</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

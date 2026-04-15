@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Losmen Melati</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1828182-alexandra-gottardo" class="cast-card">
+            <a href="/actor/1828182-alexandra-gottardo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/annWGBK66lhdx1q9YAirilIQqvi.jpg" alt="Alexandra Gottardo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexandra Gottardo</span>
             </a>
-            <a href="/actor/2138500-kiki-narendra" class="cast-card">
+            <a href="/actor/2138500-kiki-narendra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5NQPn3HukEpRic0W9SSpz89X1ZO.jpg" alt="Kiki Narendra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kiki Narendra</span>
             </a>
-            <a href="/actor/1158143-dwi-sasono" class="cast-card">
+            <a href="/actor/1158143-dwi-sasono.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3l5aJxHeDI2wMajtZJEzLXRFPES.jpg" alt="Dwi Sasono" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dwi Sasono</span>
             </a>
-            <a href="/actor/1617089-fandy-christian" class="cast-card">
+            <a href="/actor/1617089-fandy-christian.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wMWlWOYoSm8NLWiwQsuEXzeAb10.jpg" alt="Fandy Christian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fandy Christian</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

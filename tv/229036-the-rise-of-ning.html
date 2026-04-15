@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>锦绣安宁</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3028958-zhang-wanyi" class="cast-card">
+            <a href="/actor/3028958-zhang-wanyi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wG7GZ5XRUgwTMiAQS1gvgJEABKl.jpg" alt="Zhang Wanyi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Wanyi</span>
             </a>
-            <a href="/actor/2174695-ren-min" class="cast-card">
+            <a href="/actor/2174695-ren-min.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3PKeDlZVW3b3R0dBjfqvxtHOXRn.jpg" alt="Ren Min" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ren Min</span>
             </a>
-            <a href="/actor/3167855-ci-sha" class="cast-card">
+            <a href="/actor/3167855-ci-sha.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eWytg5M0VUCb0aHEKpUDijQ7JxF.jpg" alt="Ci Sha" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ci Sha</span>
             </a>
-            <a href="/actor/2712514-dong-siyi" class="cast-card">
+            <a href="/actor/2712514-dong-siyi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xYCsC5XCuCXsVpYy1zcmP5r6HZ5.jpg" alt="Dong Siyi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dong Siyi</span>
             </a>
-            <a href="/actor/3149730-wu-yuheng" class="cast-card">
+            <a href="/actor/3149730-wu-yuheng.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1uygmqdtcY6boX98qBhQpk1T81E.jpg" alt="Wu Yuheng" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wu Yuheng</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

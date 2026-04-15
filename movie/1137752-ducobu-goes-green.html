@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,51 +75,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/47829-élie-semoun" class="cast-card">
+            <a href="/actor/47829-élie-semoun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gjJpIq92ubeKgAAvK6yexZycIlv.jpg" alt="Élie Semoun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Élie Semoun</span>
             </a>
-            <a href="/actor/4562691-damien-pauwels" class="cast-card">
+            <a href="/actor/4562691-damien-pauwels.html" class="cast-card">
                 <img src="/favicon.ico" alt="Damien Pauwels" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Damien Pauwels</span>
             </a>
-            <a href="/actor/999406-émilie-caen" class="cast-card">
+            <a href="/actor/999406-émilie-caen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/inBbVbSWtYd0I3VjQR9wsrrCGmA.jpg" alt="Émilie Caen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Émilie Caen</span>
             </a>
-            <a href="/actor/21171-gérard-jugnot" class="cast-card">
+            <a href="/actor/21171-gérard-jugnot.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8fvIsaf0a5e60IvtNddKCcOZXFO.jpg" alt="Gérard Jugnot" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gérard Jugnot</span>
             </a>
-            <a href="/actor/65572-frédérique-bel" class="cast-card">
+            <a href="/actor/65572-frédérique-bel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vbIDJ3azN8cvgxLA3PmC1XB3YyC.jpg" alt="Frédérique Bel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Frédérique Bel</span>
             </a>
-            <a href="/actor/1631566-loïc-legendre" class="cast-card">
+            <a href="/actor/1631566-loïc-legendre.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/TNK4kkxmOF1N5p67KPhhA3itOt.jpg" alt="Loïc Legendre" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Loïc Legendre</span>
             </a>
-            <a href="/actor/4562690-louise-riguidel-huon" class="cast-card">
+            <a href="/actor/4562690-louise-riguidel-huon.html" class="cast-card">
                 <img src="/favicon.ico" alt="Louise Riguidel Huon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louise Riguidel Huon</span>
             </a>
-            <a href="/actor/1179908-caroline-anglade" class="cast-card">
+            <a href="/actor/1179908-caroline-anglade.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4tyUsgfkUih5CU8uoIeK2wYvEcH.jpg" alt="Caroline Anglade" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Caroline Anglade</span>
             </a>
-            <a href="/actor/5440-françois-levantal" class="cast-card">
+            <a href="/actor/5440-françois-levantal.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gKZUbm7NIQbAOQmncBIegE6VOcf.jpg" alt="François Levantal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>François Levantal</span>
             </a>
-            <a href="/actor/78421-nicolas-marié" class="cast-card">
+            <a href="/actor/78421-nicolas-marié.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qbfZbRhyAi3rgerGmxoXAvQbQN8.jpg" alt="Nicolas Marié" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicolas Marié</span>
             </a>
-            <a href="/actor/3797253-nicolas-grand-duc" class="cast-card">
+            <a href="/actor/3797253-nicolas-grand-duc.html" class="cast-card">
                 <img src="/favicon.ico" alt="Nicolas Grand Duc" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicolas Grand Duc</span>
             </a>
-            <a href="/actor/1958979-simon-torreton" class="cast-card">
+            <a href="/actor/1958979-simon-torreton.html" class="cast-card">
                 <img src="/favicon.ico" alt="Simon Torreton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Simon Torreton</span>
             </a></div></section>
@@ -127,13 +127,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Not Dead Yet</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/180486-gina-rodriguez" class="cast-card">
+            <a href="/actor/180486-gina-rodriguez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2Mw6L8gpAhnXAgmJZkz85YxVmOt.jpg" alt="Gina Rodriguez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gina Rodriguez</span>
             </a>
-            <a href="/actor/1181326-hannah-simone" class="cast-card">
+            <a href="/actor/1181326-hannah-simone.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vF2K5xd73ZvRhBjFuIfiSTLMNYB.jpg" alt="Hannah Simone" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hannah Simone</span>
             </a>
-            <a href="/actor/50773-lauren-ash" class="cast-card">
+            <a href="/actor/50773-lauren-ash.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/epqqdgixhKhCzDs8Vb6bmoQJtDN.jpg" alt="Lauren Ash" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lauren Ash</span>
             </a>
-            <a href="/actor/1260039-rick-glassman" class="cast-card">
+            <a href="/actor/1260039-rick-glassman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uw7uYfQcvjHX3eFpcS8rBfaXi9t.jpg" alt="Rick Glassman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rick Glassman</span>
             </a>
-            <a href="/actor/1610942-josh-banday" class="cast-card">
+            <a href="/actor/1610942-josh-banday.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/47dbW4ph07vGkTrW0B9ijEbWY9S.jpg" alt="Josh Banday" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josh Banday</span>
             </a>
-            <a href="/actor/1305249-angela-elayne-gibbs" class="cast-card">
+            <a href="/actor/1305249-angela-elayne-gibbs.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a4Bz73bOzU1WiiID4SHaA26h96Q.jpg" alt="Angela Elayne Gibbs" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Angela Elayne Gibbs</span>
             </a>
-            <a href="/actor/18-brad-garrett" class="cast-card">
+            <a href="/actor/18-brad-garrett.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/813ffbpoaoaJRdoe1yrbivboWKp.jpg" alt="Brad Garrett" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brad Garrett</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

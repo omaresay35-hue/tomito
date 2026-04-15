@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Stöld</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3996778-elin-kristina-oskal" class="cast-card">
+            <a href="/actor/3996778-elin-kristina-oskal.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pDWwdp22Gzffw9pt4L1dlxCMLfK.jpg" alt="Elin Kristina Oskal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elin Kristina Oskal</span>
             </a>
-            <a href="/actor/213486-martin-wallström" class="cast-card">
+            <a href="/actor/213486-martin-wallström.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6zIR09NCAc2IyGnTwQLOCvieWp.jpg" alt="Martin Wallström" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Martin Wallström</span>
             </a>
-            <a href="/actor/4507788-magnus-kuhmunen" class="cast-card">
+            <a href="/actor/4507788-magnus-kuhmunen.html" class="cast-card">
                 <img src="/favicon.ico" alt="Magnus Kuhmunen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Magnus Kuhmunen</span>
             </a>
-            <a href="/actor/2300365-pávva-pittja" class="cast-card">
+            <a href="/actor/2300365-pávva-pittja.html" class="cast-card">
                 <img src="/favicon.ico" alt="Pávva Pittja" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pávva Pittja</span>
             </a>
-            <a href="/actor/3996779-lars-ánte-wasara" class="cast-card">
+            <a href="/actor/3996779-lars-ánte-wasara.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lars-Ánte Wasara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lars-Ánte Wasara</span>
             </a>
-            <a href="/actor/1606567-dakota-trancher-williams" class="cast-card">
+            <a href="/actor/1606567-dakota-trancher-williams.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uHBRbHywepkNt75AtdSaHnKyJ0Q.jpg" alt="Dakota Trancher Williams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dakota Trancher Williams</span>
             </a>
-            <a href="/actor/4507785-ida-persson-labba" class="cast-card">
+            <a href="/actor/4507785-ida-persson-labba.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ida Persson Labba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ida Persson Labba</span>
             </a>
-            <a href="/actor/3404846-matias-tunold" class="cast-card">
+            <a href="/actor/3404846-matias-tunold.html" class="cast-card">
                 <img src="/favicon.ico" alt="Matias Tunold" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matias Tunold</span>
             </a>
-            <a href="/actor/3616685-jakob-granqvist" class="cast-card">
+            <a href="/actor/3616685-jakob-granqvist.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jakob Granqvist" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jakob Granqvist</span>
             </a>
-            <a href="/actor/3262213-juho-kuusamo" class="cast-card">
+            <a href="/actor/3262213-juho-kuusamo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qAOat87HQUlxbyy6ad1B0QTFYoz.jpg" alt="Juho Kuusamo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juho Kuusamo</span>
             </a>
-            <a href="/actor/4797915-charlotte-lindmark" class="cast-card">
+            <a href="/actor/4797915-charlotte-lindmark.html" class="cast-card">
                 <img src="/favicon.ico" alt="Charlotte Lindmark" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charlotte Lindmark</span>
             </a>
-            <a href="/actor/4797916-john-anderberg" class="cast-card">
+            <a href="/actor/4797916-john-anderberg.html" class="cast-card">
                 <img src="/favicon.ico" alt="John Anderberg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Anderberg</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

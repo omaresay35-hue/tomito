@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1533843-the-incredible-adventures-of-shurik">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1533843-the-incredible-adventures-of-shurik.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6h3ayqUOnsgW4F4kjTFpniJCwxv.jpg" alt="The Incredible Adventures of Shurik — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Incredible Adventures of Shurik</div></div>
-    </a>    <a class="card" href="/movie/1260854-volchok">
+    </a>    <a class="card" href="/movie/1260854-volchok.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xKkKrAZM3L123tBoY47vDgghE6Z.jpg" alt="Volchok — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Volchok</div></div>
-    </a>    <a class="card" href="/movie/1260853-rodnina">
+    </a>    <a class="card" href="/movie/1260853-rodnina.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dBsXuFQdS2n2asxRDLTjwDk6EMc.jpg" alt="Rodnina — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Rodnina</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/233105-chronicles-of-the-russian-revolution">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/233105-chronicles-of-the-russian-revolution.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8p5CkFRxK2rz2KdnVghsx0A5oZN.jpg" alt="Chronicles of the Russian Revolution — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Chronicles of the Russian Revolution</div></div>
-    </a>    <a class="card" href="/tv/244197-daring">
+    </a>    <a class="card" href="/tv/244197-daring.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/otiquk8nNWkSyTsrrl7sHMnw68U.jpg" alt="Daring — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Daring</div></div>
-    </a>    <a class="card" href="/tv/219806-king-jester">
+    </a>    <a class="card" href="/tv/219806-king-jester.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5t6iLiVBululasgxut5Pz1maVS1.jpg" alt="King & Jester — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">King & Jester</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

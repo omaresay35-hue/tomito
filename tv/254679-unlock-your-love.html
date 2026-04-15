@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>รักได้ไหม ยัยตัวร้าย</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4344568-jiratchaya-komontut" class="cast-card">
+            <a href="/actor/4344568-jiratchaya-komontut.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iggglHhcopLuPnR1U4ZTHUdw39G.jpg" alt="Jiratchaya Komontut" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jiratchaya Komontut</span>
             </a>
-            <a href="/actor/4344567-near-inthira" class="cast-card">
+            <a href="/actor/4344567-near-inthira.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/DGMkuBlvYT5UjIRsgULjsW3zCM.jpg" alt="Near Inthira" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Near Inthira</span>
             </a>
-            <a href="/actor/1341694-rita-ramnarong" class="cast-card">
+            <a href="/actor/1341694-rita-ramnarong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/g9DIpvWOm83JIWcEOFMIsP3eVgj.jpg" alt="Rita Ramnarong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rita Ramnarong</span>
             </a>
-            <a href="/actor/3606449-nawaporn-chansuk" class="cast-card">
+            <a href="/actor/3606449-nawaporn-chansuk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j15yIvsxxW9cDnZGgf8guHexfga.jpg" alt="Nawaporn Chansuk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nawaporn Chansuk</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

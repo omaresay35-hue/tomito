@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Mistletoe Murders</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/198927-sarah-drew" class="cast-card">
+            <a href="/actor/198927-sarah-drew.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/65hUM3Egh5roemP3Cgn0bA38rDj.jpg" alt="Sarah Drew" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sarah Drew</span>
             </a>
-            <a href="/actor/212772-peter-mooney" class="cast-card">
+            <a href="/actor/212772-peter-mooney.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q7t6QvWDodQFeTuGbmUWbLsB5o6.jpg" alt="Peter Mooney" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Peter Mooney</span>
             </a>
-            <a href="/actor/5105027-sierra-marilyn-riley" class="cast-card">
+            <a href="/actor/5105027-sierra-marilyn-riley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xa2AhWsvQw5suynQHhSVQi4DcTC.jpg" alt="Sierra Marilyn Riley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sierra Marilyn Riley</span>
             </a>
-            <a href="/actor/1603702-kylee-evans" class="cast-card">
+            <a href="/actor/1603702-kylee-evans.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6MV3ptZAmsbLThnFU4kNDvLknUP.jpg" alt="Kylee Evans" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kylee Evans</span>
             </a>
-            <a href="/actor/88929-jean-yoon" class="cast-card">
+            <a href="/actor/88929-jean-yoon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ce8sXtsy7HNGWG0xqSo4QTaghjM.jpg" alt="Jean Yoon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jean Yoon</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

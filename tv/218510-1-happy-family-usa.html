@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>أسعد عائلة في أمريكا</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1382987-ramy-youssef" class="cast-card">
+            <a href="/actor/1382987-ramy-youssef.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uLQWOoq11TKqnLfJBu90aKEGj8O.jpg" alt="Ramy Youssef" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ramy Youssef</span>
             </a>
-            <a href="/actor/61178-alia-shawkat" class="cast-card">
+            <a href="/actor/61178-alia-shawkat.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aUc0hlILKfDKhlKnWQliGjkQL9a.jpg" alt="Alia Shawkat" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alia Shawkat</span>
             </a>
-            <a href="/actor/3877844-salma-hindy" class="cast-card">
+            <a href="/actor/3877844-salma-hindy.html" class="cast-card">
                 <img src="/favicon.ico" alt="Salma Hindy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Salma Hindy</span>
             </a>
-            <a href="/actor/3549481-randa-jarrar" class="cast-card">
+            <a href="/actor/3549481-randa-jarrar.html" class="cast-card">
                 <img src="/favicon.ico" alt="Randa Jarrar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Randa Jarrar</span>
             </a>
-            <a href="/actor/16855-mandy-moore" class="cast-card">
+            <a href="/actor/16855-mandy-moore.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gEMfAKZAbBRzvBDj42DambFs9to.jpg" alt="Mandy Moore" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mandy Moore</span>
             </a>
-            <a href="/actor/1631358-chris-redd" class="cast-card">
+            <a href="/actor/1631358-chris-redd.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nTisigWhjdQ10puFLTay9bqYl6s.jpg" alt="Chris Redd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Redd</span>
             </a>
-            <a href="/actor/1819081-akaash-singh" class="cast-card">
+            <a href="/actor/1819081-akaash-singh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zcfFudAUjqRuXsL96US1ODw1Z2U.jpg" alt="Akaash Singh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Akaash Singh</span>
             </a>
-            <a href="/actor/1105322-whitmer-thomas" class="cast-card">
+            <a href="/actor/1105322-whitmer-thomas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ivz8rehM5WFKsUpDSULUFgPYyze.jpg" alt="Whitmer Thomas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Whitmer Thomas</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

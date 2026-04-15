@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>彼のいる生活</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3678784-ryuga-sato" class="cast-card">
+            <a href="/actor/3678784-ryuga-sato.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aYtlPKIs45IySkrExZFtyCXU2JE.jpg" alt="Ryuga Sato" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryuga Sato</span>
             </a>
-            <a href="/actor/4093013-sakai-sho" class="cast-card">
+            <a href="/actor/4093013-sakai-sho.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8SC9YablPoWGVwYMkWQ7kcDnsAq.jpg" alt="Sakai Sho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sakai Sho</span>
             </a>
-            <a href="/actor/2747833-hinami-mori" class="cast-card">
+            <a href="/actor/2747833-hinami-mori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gfoF54U08KvYoB7VFXOpG1FwzYY.jpg" alt="Hinami Mori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hinami Mori</span>
             </a>
-            <a href="/actor/4581275-sawamura-rei" class="cast-card">
+            <a href="/actor/4581275-sawamura-rei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gzxUMeqKc8pfaVx9Y1pKwjLTEMt.jpg" alt="Sawamura Rei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sawamura Rei</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

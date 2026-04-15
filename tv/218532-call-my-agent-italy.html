@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Call My Agent: Italia</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/128222-michele-di-mauro" class="cast-card">
+            <a href="/actor/128222-michele-di-mauro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nWmUjpK9HhZpgXmycOYMWKxUNUj.jpg" alt="Michele Di Mauro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michele Di Mauro</span>
             </a>
-            <a href="/actor/1709506-marzia-ubaldi" class="cast-card">
+            <a href="/actor/1709506-marzia-ubaldi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nrKCpgduwNirLoPnj9RVU7jC6q3.jpg" alt="Marzia Ubaldi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marzia Ubaldi</span>
             </a>
-            <a href="/actor/2189836-maurizio-lastrico" class="cast-card">
+            <a href="/actor/2189836-maurizio-lastrico.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qtmMwqo47vbyU6xE27ub64xoST2.jpg" alt="Maurizio Lastrico" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maurizio Lastrico</span>
             </a>
-            <a href="/actor/1689522-emanuela-fanelli" class="cast-card">
+            <a href="/actor/1689522-emanuela-fanelli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iBnInh4sJq0VQKITiHPp4R5gJWc.jpg" alt="Emanuela Fanelli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emanuela Fanelli</span>
             </a>
-            <a href="/actor/2414527-francesco-russo" class="cast-card">
+            <a href="/actor/2414527-francesco-russo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ak1V5yJPPXO2m7T0amBu1Epq83W.jpg" alt="Francesco Russo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francesco Russo</span>
             </a>
-            <a href="/actor/124760-sara-lazzaro" class="cast-card">
+            <a href="/actor/124760-sara-lazzaro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/crvJdjJ9ziABMud5eUrRTrcSJk8.jpg" alt="Sara Lazzaro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sara Lazzaro</span>
             </a>
-            <a href="/actor/3602749-paola-buratto" class="cast-card">
+            <a href="/actor/3602749-paola-buratto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tcBiMrEGPy8CMkkFOig9SpojO1s.jpg" alt="Paola Buratto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paola Buratto</span>
             </a>
-            <a href="/actor/3253833-paola-gioia-kaze-formisano" class="cast-card">
+            <a href="/actor/3253833-paola-gioia-kaze-formisano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i3XwyN68H2s2OCVyt2FwUJ2TFjF.jpg" alt="Paola Gioia Kaze Formisano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paola Gioia Kaze Formisano</span>
             </a>
-            <a href="/actor/1507968-manuela-mandracchia" class="cast-card">
+            <a href="/actor/1507968-manuela-mandracchia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/u2M55ytUMFGyoUjJIYnWOMpYYt4.jpg" alt="Manuela Mandracchia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manuela Mandracchia</span>
             </a>
-            <a href="/actor/2654763-sara-drago" class="cast-card">
+            <a href="/actor/2654763-sara-drago.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x7ULWU1mEm9k6trVczmod3U69MQ.jpg" alt="Sara Drago" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sara Drago</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

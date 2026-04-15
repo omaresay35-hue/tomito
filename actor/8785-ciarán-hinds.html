@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1125701-midwinter-break">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1125701-midwinter-break.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vkMOruokVnD05xSiwI2hWBzG7UD.jpg" alt="Midwinter Break — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Midwinter Break</div></div>
-    </a>    <a class="card" href="/movie/1140498-is-this-thing-on">
+    </a>    <a class="card" href="/movie/1140498-is-this-thing-on.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/YD6QzcokTMe3EViM0hLbNCxf4y.jpg" alt="Is This Thing On? — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Is This Thing On?</div></div>
-    </a>    <a class="card" href="/movie/975615-words-of-war">
+    </a>    <a class="card" href="/movie/975615-words-of-war.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fszN3PSB40FYsFzkHvNZrXLes0M.jpg" alt="Words of War — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Words of War</div></div>
-    </a>    <a class="card" href="/movie/669359-cottontail">
+    </a>    <a class="card" href="/movie/669359-cottontail.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5VxsKWPYwqYaY9nuBmbjCsWlQhw.jpg" alt="Cottontail — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Cottontail</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/238339-the-narrow-road-to-the-deep-north">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/238339-the-narrow-road-to-the-deep-north.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/g0QMGxXtoNnMXz4QN2U05ijvqBe.jpg" alt="The Narrow Road to the Deep North — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Narrow Road to the Deep North</div></div>
-    </a>    <a class="card" href="/tv/84773-the-lord-of-the-rings-the-rings-of-power">
+    </a>    <a class="card" href="/tv/84773-the-lord-of-the-rings-the-rings-of-power.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kf5Hz70tjNAHg4swGDzOr9BfoZ1.jpg" alt="The Lord of the Rings: The Rings of Power — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Lord of the Rings: The Rings of Power</div></div>
-    </a>    <a class="card" href="/tv/2583-prime-suspect">
+    </a>    <a class="card" href="/tv/2583-prime-suspect.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vhlbnMgz9hBouXWmxBS2RjFC03S.jpg" alt="Prime Suspect — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Prime Suspect</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

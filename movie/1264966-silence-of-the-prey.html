@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Silence of the Prey</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1990654-monte-bezell" class="cast-card">
+            <a href="/actor/1990654-monte-bezell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jwVb4vsVu2IQ7F9S4FCR3XMktxE.jpg" alt="Monte Bezell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Monte Bezell</span>
             </a>
-            <a href="/actor/4713186-michael-doyle" class="cast-card">
+            <a href="/actor/4713186-michael-doyle.html" class="cast-card">
                 <img src="/favicon.ico" alt="Michael Doyle" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Doyle</span>
             </a>
-            <a href="/actor/2659174-lorianna-izrailova" class="cast-card">
+            <a href="/actor/2659174-lorianna-izrailova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k1t1yo7Cr4nLT4ydPIYEy238JuK.jpg" alt="Lorianna Izrailova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lorianna Izrailova</span>
             </a>
-            <a href="/actor/2250105-karyna-kudzina" class="cast-card">
+            <a href="/actor/2250105-karyna-kudzina.html" class="cast-card">
                 <img src="/favicon.ico" alt="Karyna Kudzina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karyna Kudzina</span>
             </a>
-            <a href="/actor/1358980-chris-lapanta" class="cast-card">
+            <a href="/actor/1358980-chris-lapanta.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kJaOrtEUUs9BOoVKewWS6UxGiOF.jpg" alt="Chris LaPanta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris LaPanta</span>
             </a>
-            <a href="/actor/4640308-rebecca-packer" class="cast-card">
+            <a href="/actor/4640308-rebecca-packer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lBrJP25xmQuIpNyCfufEvLnMesB.jpg" alt="Rebecca Packer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rebecca Packer</span>
             </a>
-            <a href="/actor/3111016-tim-shelburne" class="cast-card">
+            <a href="/actor/3111016-tim-shelburne.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nuUHi6jMT4OgYrax5k5ffKtPQbu.jpg" alt="Tim Shelburne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tim Shelburne</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

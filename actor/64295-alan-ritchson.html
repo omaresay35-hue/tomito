@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1265609-war-machine">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1265609-war-machine.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tlPgDzwIE7VYYIIAGCTUOnN4wI1.jpg" alt="War Machine — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">War Machine</div></div>
-    </a>    <a class="card" href="/movie/1248226-playdate">
+    </a>    <a class="card" href="/movie/1248226-playdate.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fGodXWqJkkkbSebPIlxLSygV8GY.jpg" alt="Playdate — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Playdate</div></div>
-    </a>    <a class="card" href="/movie/799583-the-ministry-of-ungentlemanly-warfare">
+    </a>    <a class="card" href="/movie/799583-the-ministry-of-ungentlemanly-warfare.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8aF0iAKH9MJMYAZdi0Slg77RYa2.jpg" alt="The Ministry of Ungentlemanly Warfare — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Ministry of Ungentlemanly Warfare</div></div>
-    </a>    <a class="card" href="/movie/974036-ordinary-angels">
+    </a>    <a class="card" href="/movie/974036-ordinary-angels.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wdi9kEU4W2UeBTtdqOPZISGMtDR.jpg" alt="Ordinary Angels — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Ordinary Angels</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/108978-reacher">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/108978-reacher.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/31GlRQMiDunO8cl3NxTz34U64rf.jpg" alt="Reacher — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Reacher</div></div>
-    </a>    <a class="card" href="/tv/1620-csi-miami">
+    </a>    <a class="card" href="/tv/1620-csi-miami.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pNW64pjaHvf6purNaFhq4SHYRfl.jpg" alt="CSI: Miami — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">CSI: Miami</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

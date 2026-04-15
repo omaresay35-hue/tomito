@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>監禁区域レベルＸ</span>
   </nav>
 
@@ -74,19 +74,19 @@ The world might be ending! And there might be a massive new life-form on the roo
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1325034-sora-amamiya" class="cast-card">
+            <a href="/actor/1325034-sora-amamiya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4ZZcdFH4QgbIC8AeJ3BLG1ue7G5.jpg" alt="Sora Amamiya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sora Amamiya</span>
             </a>
-            <a href="/actor/1324468-ryota-osaka" class="cast-card">
+            <a href="/actor/1324468-ryota-osaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d2TGy8Qkxe90tGDr9MCXFGkhbPl.jpg" alt="Ryota Osaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryota Osaka</span>
             </a>
-            <a href="/actor/3062238-mirei-kumagai" class="cast-card">
+            <a href="/actor/3062238-mirei-kumagai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/am7ZUNVkmu1dbTaRAAInygucwIf.jpg" alt="Mirei Kumagai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mirei Kumagai</span>
             </a>
-            <a href="/actor/1806851-yoshiyuki-shimozuma" class="cast-card">
+            <a href="/actor/1806851-yoshiyuki-shimozuma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5ntYA722ZFWTES3iIrfhQjmzfPD.jpg" alt="Yoshiyuki Shimozuma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshiyuki Shimozuma</span>
             </a></div></section>
@@ -94,13 +94,6 @@ The world might be ending! And there might be a massive new life-form on the roo
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

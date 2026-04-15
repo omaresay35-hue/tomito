@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>君は冥土様。</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2835109-toshiki-kumagai" class="cast-card">
+            <a href="/actor/2835109-toshiki-kumagai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/18bGMZ4FdYPTFnFLgwJpYbVC9wT.jpg" alt="Toshiki Kumagai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Toshiki Kumagai</span>
             </a>
-            <a href="/actor/1452028-reina-ueda" class="cast-card">
+            <a href="/actor/1452028-reina-ueda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2WV61uVU7y6XGYqNHLMpP0sApdu.jpg" alt="Reina Ueda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reina Ueda</span>
             </a>
-            <a href="/actor/1325964-eriko-matsui" class="cast-card">
+            <a href="/actor/1325964-eriko-matsui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/atMgu6hwHQisLA2tK8aVmevZYh6.jpg" alt="Eriko Matsui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eriko Matsui</span>
             </a>
-            <a href="/actor/3162774-hikaru-iida" class="cast-card">
+            <a href="/actor/3162774-hikaru-iida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jwy5HpVGSIiwnRX2m9hR32KPVBy.jpg" alt="Hikaru Iida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hikaru Iida</span>
             </a>
-            <a href="/actor/1691384-lynn" class="cast-card">
+            <a href="/actor/1691384-lynn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eJ2NqgzpnzNbT6Nt9EpDfzqNeZM.jpg" alt="Lynn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lynn</span>
             </a>
-            <a href="/actor/3049705-konomi-inagaki" class="cast-card">
+            <a href="/actor/3049705-konomi-inagaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qYizWDjykF0j5foMvKGYyRta037.jpg" alt="Konomi Inagaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Konomi Inagaki</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

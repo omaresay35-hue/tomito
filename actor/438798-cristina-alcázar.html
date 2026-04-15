@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1447457-golpes">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1447457-golpes.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jDKla4N5XzjLVDl449E684YWx0g.jpg" alt="Golpes — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Golpes</div></div>
-    </a>    <a class="card" href="/movie/1078744-escape">
+    </a>    <a class="card" href="/movie/1078744-escape.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9yTWVCapYo63Mc93CHxEyIdSEqo.jpg" alt="Escape — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Escape</div></div>
-    </a>    <a class="card" href="/movie/1175075-checkmates">
+    </a>    <a class="card" href="/movie/1175075-checkmates.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/epxMmvLaQmInLeRNOIMfRaJrhSZ.jpg" alt="Checkmates — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Checkmates</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/258982-shared-custody">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/258982-shared-custody.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bfzyaXdeZQvPU0e85WkgoxItQmV.jpg" alt="Shared Custody — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Shared Custody</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

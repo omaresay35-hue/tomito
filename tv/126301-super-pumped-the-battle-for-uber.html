@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,27 +75,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/24045-joseph-gordon-levitt" class="cast-card">
+            <a href="/actor/24045-joseph-gordon-levitt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/z2FA8js799xqtfiFjBTicFYdfk.jpg" alt="Joseph Gordon-Levitt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joseph Gordon-Levitt</span>
             </a>
-            <a href="/actor/3497-kyle-chandler" class="cast-card">
+            <a href="/actor/3497-kyle-chandler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/66n7XNj1dyYkzCBWR3Lq8Vz4PJ1.jpg" alt="Kyle Chandler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kyle Chandler</span>
             </a>
-            <a href="/actor/58356-kerry-bishé" class="cast-card">
+            <a href="/actor/58356-kerry-bishé.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2bUBBFrTgHxAhLS5OxutSrrTPja.jpg" alt="Kerry Bishé" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kerry Bishé</span>
             </a>
-            <a href="/actor/1362974-babak-tafti" class="cast-card">
+            <a href="/actor/1362974-babak-tafti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ybXVTUHNyyvT30l8TDrh9P6LyxZ.jpg" alt="Babak Tafti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Babak Tafti</span>
             </a>
-            <a href="/actor/1461038-jon-bass" class="cast-card">
+            <a href="/actor/1461038-jon-bass.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2eo9pMyPhA9mBaSrNlD6UP3Nkyw.jpg" alt="Jon Bass" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jon Bass</span>
             </a>
-            <a href="/actor/3571928-bridget-gao-hollitt" class="cast-card">
+            <a href="/actor/3571928-bridget-gao-hollitt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8DE1PHLsv76YM0i6lfkEpe4x2rH.jpg" alt="Bridget Gao-Hollitt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bridget Gao-Hollitt</span>
             </a></div></section>
@@ -103,13 +103,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Watching You</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/103390-aisha-dee" class="cast-card">
+            <a href="/actor/103390-aisha-dee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dmA3u8KDYcvv673893FNny0nn7G.jpg" alt="Aisha Dee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aisha Dee</span>
             </a>
-            <a href="/actor/1056053-josh-helman" class="cast-card">
+            <a href="/actor/1056053-josh-helman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1thwLjrgvFv7ifjyVtTKQh23OCh.jpg" alt="Josh Helman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josh Helman</span>
             </a>
-            <a href="/actor/1255398-chai-hansen" class="cast-card">
+            <a href="/actor/1255398-chai-hansen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vd23G0qvY33W8EjSc92xYKG1h7J.jpg" alt="Chai Hansen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chai Hansen</span>
             </a>
-            <a href="/actor/187400-laura-gordon" class="cast-card">
+            <a href="/actor/187400-laura-gordon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7Gro37r1iqm4Wiyf2QlvMPgSeza.jpg" alt="Laura Gordon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laura Gordon</span>
             </a>
-            <a href="/actor/3617056-olivia-vasquez" class="cast-card">
+            <a href="/actor/3617056-olivia-vasquez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wOU3Sn97fsSLVXlaefMippkrA9R.jpg" alt="Olivia Vasquez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olivia Vasquez</span>
             </a>
-            <a href="/actor/1494146-luke-cook" class="cast-card">
+            <a href="/actor/1494146-luke-cook.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9hoh0d88uhOuXu0kQTXoQb5Qfjv.jpg" alt="Luke Cook" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luke Cook</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

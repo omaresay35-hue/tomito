@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Silencio</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2422770-lucía-díez" class="cast-card">
+            <a href="/actor/2422770-lucía-díez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eRYTD11AY2Qe93hClVyPKzfsk16.jpg" alt="Lucía Díez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucía Díez</span>
             </a>
-            <a href="/actor/587931-maría-león" class="cast-card">
+            <a href="/actor/587931-maría-león.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/emO3kZWopALDhGYEJwbtcKd8gQZ.jpg" alt="María León" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>María León</span>
             </a>
-            <a href="/actor/138716-ana-polvorosa" class="cast-card">
+            <a href="/actor/138716-ana-polvorosa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ql3zaKbPWt3XLdz84sAzSPI1wt.jpg" alt="Ana Polvorosa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ana Polvorosa</span>
             </a>
-            <a href="/actor/399-mariola-fuentes" class="cast-card">
+            <a href="/actor/399-mariola-fuentes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cWElWUCtJ1ecAzs55ppm1kJR4Bd.jpg" alt="Mariola Fuentes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariola Fuentes</span>
             </a>
-            <a href="/actor/45060-leticia-dolera" class="cast-card">
+            <a href="/actor/45060-leticia-dolera.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rzWekaXWoC9HKIZkOf7hddQDtFI.jpg" alt="Leticia Dolera" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leticia Dolera</span>
             </a>
-            <a href="/actor/2962298-carolina-rubio" class="cast-card">
+            <a href="/actor/2962298-carolina-rubio.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a7pz9SELYmoxRU5NtJqHRqdiwqJ.jpg" alt="Carolina Rubio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carolina Rubio</span>
             </a>
-            <a href="/actor/2025254-omar-ayuso" class="cast-card">
+            <a href="/actor/2025254-omar-ayuso.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/c4bAqv3PoSVK4ov7cw076NNqg6f.jpg" alt="Omar Ayuso" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Omar Ayuso</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Hotel Mondial</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1424878-louis-held" class="cast-card">
+            <a href="/actor/1424878-louis-held.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v550QFusMdpa9Plfeq1MkzS76WR.jpg" alt="Louis Held" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louis Held</span>
             </a>
-            <a href="/actor/27625-gesine-cukrowski" class="cast-card">
+            <a href="/actor/27625-gesine-cukrowski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vLQLpz9iJPb8lMRxGJPfp6utdNV.jpg" alt="Gesine Cukrowski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gesine Cukrowski</span>
             </a>
-            <a href="/actor/2591836-richard-kreutz" class="cast-card">
+            <a href="/actor/2591836-richard-kreutz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iiLZRbsDsFf0SLyXub3ju0TpfAK.jpg" alt="Richard Kreutz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Richard Kreutz</span>
             </a>
-            <a href="/actor/3109657-sarah-palarczyk" class="cast-card">
+            <a href="/actor/3109657-sarah-palarczyk.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sarah Palarczyk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sarah Palarczyk</span>
             </a>
-            <a href="/actor/1158813-salvatore-greco" class="cast-card">
+            <a href="/actor/1158813-salvatore-greco.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t35wAnPN3P7U4NSNRgp0k173lAi.jpg" alt="Salvatore Greco" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Salvatore Greco</span>
             </a>
-            <a href="/actor/1221642-daniel-aichinger" class="cast-card">
+            <a href="/actor/1221642-daniel-aichinger.html" class="cast-card">
                 <img src="/favicon.ico" alt="Daniel Aichinger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Aichinger</span>
             </a>
-            <a href="/actor/2894596-nhung-hong" class="cast-card">
+            <a href="/actor/2894596-nhung-hong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/apNBxBboGq9DVywZhJFCSNDL7PS.jpg" alt="Nhung Hong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nhung Hong</span>
             </a>
-            <a href="/actor/3560415-agnes-mann" class="cast-card">
+            <a href="/actor/3560415-agnes-mann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eB76BHNsHgmCfHppbIq08Gxte5U.jpg" alt="Agnes Mann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Agnes Mann</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

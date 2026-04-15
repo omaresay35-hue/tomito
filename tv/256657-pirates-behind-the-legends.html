@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Pirates: Behind the Legends</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1329-billy-boyd" class="cast-card">
+            <a href="/actor/1329-billy-boyd.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uiWlsIOakNnUgda21PJF9wswzEJ.jpg" alt="Billy Boyd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Billy Boyd</span>
             </a>
-            <a href="/actor/4785300-anne-chambers" class="cast-card">
+            <a href="/actor/4785300-anne-chambers.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mqjPKHIyURhIlcJK0AtYTww86Ey.jpg" alt="Anne Chambers" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anne Chambers</span>
             </a>
-            <a href="/actor/2600202-harcourt-t-fuller" class="cast-card">
+            <a href="/actor/2600202-harcourt-t-fuller.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uYaGtFSQWaJYTG6ePIVafDETcaC.jpg" alt="Harcourt T. Fuller" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Harcourt T. Fuller</span>
             </a>
-            <a href="/actor/4785302-iszi-lawrence" class="cast-card">
+            <a href="/actor/4785302-iszi-lawrence.html" class="cast-card">
                 <img src="/favicon.ico" alt="Iszi Lawrence" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Iszi Lawrence</span>
             </a>
-            <a href="/actor/3877747-martin-mares" class="cast-card">
+            <a href="/actor/3877747-martin-mares.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lXGaZyK11VlB59tjujYbL3ioOzW.jpg" alt="Martin Mares" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Martin Mares</span>
             </a>
-            <a href="/actor/4785305-richard-blakemore" class="cast-card">
+            <a href="/actor/4785305-richard-blakemore.html" class="cast-card">
                 <img src="/favicon.ico" alt="Richard Blakemore" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Richard Blakemore</span>
             </a>
-            <a href="/actor/4785306-hannah-cusworth" class="cast-card">
+            <a href="/actor/4785306-hannah-cusworth.html" class="cast-card">
                 <img src="/favicon.ico" alt="Hannah Cusworth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hannah Cusworth</span>
             </a>
-            <a href="/actor/4785307-connie-kelleher" class="cast-card">
+            <a href="/actor/4785307-connie-kelleher.html" class="cast-card">
                 <img src="/favicon.ico" alt="Connie Kelleher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Connie Kelleher</span>
             </a>
-            <a href="/actor/4785308-mark-hanna" class="cast-card">
+            <a href="/actor/4785308-mark-hanna.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mark Hanna" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Hanna</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

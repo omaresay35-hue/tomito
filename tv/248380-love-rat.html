@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Love Rat</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/76900-sally-lindsay" class="cast-card">
+            <a href="/actor/76900-sally-lindsay.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tDBnkr1zKVydqAjjoA55XKs0hM1.jpg" alt="Sally Lindsay" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sally Lindsay</span>
             </a>
-            <a href="/actor/26862-neil-morrissey" class="cast-card">
+            <a href="/actor/26862-neil-morrissey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bT3W6odSIPkPXSm7zO3rZs16S9i.jpg" alt="Neil Morrissey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Neil Morrissey</span>
             </a>
-            <a href="/actor/1244276-gerald-kyd" class="cast-card">
+            <a href="/actor/1244276-gerald-kyd.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jxcGeOxJuKm8z3IOozc8lbUlvg8.jpg" alt="Gerald Kyd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gerald Kyd</span>
             </a>
-            <a href="/actor/178622-ramon-tikaram" class="cast-card">
+            <a href="/actor/178622-ramon-tikaram.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wtBLiI8tzeqPLMB9uswkyFhChva.jpg" alt="Ramon Tikaram" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ramon Tikaram</span>
             </a>
-            <a href="/actor/1667349-imogen-king" class="cast-card">
+            <a href="/actor/1667349-imogen-king.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uESIvOrkOtcjsrxCyqlAK6H9ocK.jpg" alt="Imogen King" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Imogen King</span>
             </a>
-            <a href="/actor/3072892-louiza-patikas" class="cast-card">
+            <a href="/actor/3072892-louiza-patikas.html" class="cast-card">
                 <img src="/favicon.ico" alt="Louiza Patikas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louiza Patikas</span>
             </a>
-            <a href="/actor/2013256-joanna-kalafatis" class="cast-card">
+            <a href="/actor/2013256-joanna-kalafatis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vv1VsMlQWmXC53MRMKtEalBzTdz.jpg" alt="Joanna Kalafatis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joanna Kalafatis</span>
             </a>
-            <a href="/actor/1726321-camilla-roholm" class="cast-card">
+            <a href="/actor/1726321-camilla-roholm.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/feaxjgK6F8egTGwlmrZHvN9TftR.jpg" alt="Camilla Roholm" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Camilla Roholm</span>
             </a>
-            <a href="/actor/3257056-rina-mahoney" class="cast-card">
+            <a href="/actor/3257056-rina-mahoney.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wzF1y516jDm4qUBNFqlslmDYqsW.jpg" alt="Rina Mahoney" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rina Mahoney</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,31 +73,31 @@ Description above from the Wikipedia article Brittany O'Grady, licensed under CC
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1312228-in-our-blood">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1312228-in-our-blood.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/s7fxMJ7KNnq14FaXV3lIEthkRcQ.jpg" alt="In Our Blood — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">In Our Blood</div></div>
-    </a>    <a class="card" href="/movie/1290159-a-house-of-dynamite">
+    </a>    <a class="card" href="/movie/1290159-a-house-of-dynamite.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/AiJ8L90ftPAwVf3SDx7Fj9IMZoy.jpg" alt="A House of Dynamite — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">A House of Dynamite</div></div>
-    </a>    <a class="card" href="/movie/1238379-the-best-you-can">
+    </a>    <a class="card" href="/movie/1238379-the-best-you-can.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2JYSb2qiOSkAdCuIRmXRWBecAAr.jpg" alt="The Best You Can — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Best You Can</div></div>
-    </a>    <a class="card" href="/movie/1052280-its-whats-inside">
+    </a>    <a class="card" href="/movie/1052280-its-whats-inside.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6jzwaLoDurD6Jn2ILb42nFcn3xq.jpg" alt="It's What's Inside — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">It's What's Inside</div></div>
-    </a>    <a class="card" href="/movie/891933-sometimes-i-think-about-dying">
+    </a>    <a class="card" href="/movie/891933-sometimes-i-think-about-dying.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lp0dtmNtOW88A13GZjGoKZko7S8.jpg" alt="Sometimes I Think About Dying — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sometimes I Think About Dying</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/226285-elsbeth">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/226285-elsbeth.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7lnNSbT90qwtrn1h9TvEkVFMz2P.jpg" alt="Elsbeth — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Elsbeth</div></div>
-    </a>    <a class="card" href="/tv/139099-the-consultant">
+    </a>    <a class="card" href="/tv/139099-the-consultant.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dbmnbPdDIgH9RR1Cs0SkG4DaYgF.jpg" alt="The Consultant — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Consultant</div></div>
@@ -106,13 +106,6 @@ Description above from the Wikipedia article Brittany O'Grady, licensed under CC
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

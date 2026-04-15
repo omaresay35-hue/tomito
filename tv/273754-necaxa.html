@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Necaxa</span>
   </nav>
 
@@ -72,15 +72,15 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/52605-eva-longoria" class="cast-card">
+            <a href="/actor/52605-eva-longoria.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1u26GLWK1DE7gBugyI9P3OMFq4A.jpg" alt="Eva Longoria" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eva Longoria</span>
             </a>
-            <a href="/actor/10859-ryan-reynolds" class="cast-card">
+            <a href="/actor/10859-ryan-reynolds.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/trzgptffGvAlAT6MEu01fz47cLW.jpg" alt="Ryan Reynolds" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryan Reynolds</span>
             </a>
-            <a href="/actor/78597-rob-mac" class="cast-card">
+            <a href="/actor/78597-rob-mac.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gcep3ItyxaZ3ljH1IS6Lfkm8IAs.jpg" alt="Rob Mac" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rob Mac</span>
             </a></div></section>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

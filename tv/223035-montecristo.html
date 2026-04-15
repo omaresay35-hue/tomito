@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Montecristo</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/972671-william-levy" class="cast-card">
+            <a href="/actor/972671-william-levy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dqFP6DYo2tJhFpQ4dopdrltjNcd.jpg" alt="William Levy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>William Levy</span>
             </a>
-            <a href="/actor/34054-roberto-enríquez" class="cast-card">
+            <a href="/actor/34054-roberto-enríquez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mjvYOSXwDfQSq8BHv6YlFDVgE5B.jpg" alt="Roberto Enríquez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Roberto Enríquez</span>
             </a>
-            <a href="/actor/1284938-juan-fernández" class="cast-card">
+            <a href="/actor/1284938-juan-fernández.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/biMQMuVw79qKcWLXHebZmAO9lvj.jpg" alt="Juan Fernández" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juan Fernández</span>
             </a>
-            <a href="/actor/974031-esmeralda-pimentel" class="cast-card">
+            <a href="/actor/974031-esmeralda-pimentel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9wqHEG7LcKZlfVE087gQmTV0Ep1.jpg" alt="Esmeralda Pimentel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Esmeralda Pimentel</span>
             </a>
-            <a href="/actor/100667-silvia-abascal" class="cast-card">
+            <a href="/actor/100667-silvia-abascal.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eyCPRiZ96RN6dFa556d3b3trzK1.jpg" alt="Silvia Abascal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Silvia Abascal</span>
             </a>
-            <a href="/actor/1500572-guiomar-puerta" class="cast-card">
+            <a href="/actor/1500572-guiomar-puerta.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fJXyBGhYbXMN23erH1Kj0NyzkgH.jpg" alt="Guiomar Puerta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Guiomar Puerta</span>
             </a>
-            <a href="/actor/3993897-franky-martínez" class="cast-card">
+            <a href="/actor/3993897-franky-martínez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Franky Martínez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Franky Martínez</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

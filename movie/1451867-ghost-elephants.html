@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Ghost Elephants</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/6818-werner-herzog" class="cast-card">
+            <a href="/actor/6818-werner-herzog.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qKlz1oM482Xf0jTPfLiR6qXlLYK.jpg" alt="Werner Herzog" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Werner Herzog</span>
             </a>
-            <a href="/actor/2767649-steve-boyes" class="cast-card">
+            <a href="/actor/2767649-steve-boyes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lD8Y9frwW2pGihlm395W5qvDAT9.jpg" alt="Steve Boyes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steve Boyes</span>
             </a>
-            <a href="/actor/5663291-kerllen-costa" class="cast-card">
+            <a href="/actor/5663291-kerllen-costa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4CAJprv8jeyQ6Dz4bClr8UzUbxJ.jpg" alt="Kerllen Costa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kerllen Costa</span>
             </a>
-            <a href="/actor/5663294-xui" class="cast-card">
+            <a href="/actor/5663294-xui.html" class="cast-card">
                 <img src="/favicon.ico" alt="Xui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xui</span>
             </a>
-            <a href="/actor/5663295-xui-dawid" class="cast-card">
+            <a href="/actor/5663295-xui-dawid.html" class="cast-card">
                 <img src="/favicon.ico" alt="Xui Dawid" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xui Dawid</span>
             </a>
-            <a href="/actor/5663296-kobus" class="cast-card">
+            <a href="/actor/5663296-kobus.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kobus" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kobus</span>
             </a>
-            <a href="/actor/6057679-gary-trower" class="cast-card">
+            <a href="/actor/6057679-gary-trower.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gary Trower" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gary Trower</span>
             </a>
-            <a href="/actor/6057720-jordana-meyer" class="cast-card">
+            <a href="/actor/6057720-jordana-meyer.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jordana Meyer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jordana Meyer</span>
             </a>
-            <a href="/actor/6057749-regedor-kaketche" class="cast-card">
+            <a href="/actor/6057749-regedor-kaketche.html" class="cast-card">
                 <img src="/favicon.ico" alt="Regedor Kaketche" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Regedor Kaketche</span>
             </a>
-            <a href="/actor/6057761-antónio-luhoke" class="cast-card">
+            <a href="/actor/6057761-antónio-luhoke.html" class="cast-card">
                 <img src="/favicon.ico" alt="António Luhoke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>António Luhoke</span>
             </a>
-            <a href="/actor/6057796-melissa-hawkins" class="cast-card">
+            <a href="/actor/6057796-melissa-hawkins.html" class="cast-card">
                 <img src="/favicon.ico" alt="Melissa Hawkins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Melissa Hawkins</span>
             </a>
-            <a href="/actor/6057797-mary-faith-flores" class="cast-card">
+            <a href="/actor/6057797-mary-faith-flores.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mary Faith Flores" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mary Faith Flores</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

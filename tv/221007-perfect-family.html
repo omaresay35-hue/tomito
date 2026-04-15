@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>خفايا العائلة المثالية</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2633250-park-ju-hyun" class="cast-card">
+            <a href="/actor/2633250-park-ju-hyun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2xfmCqWWNE3wLAUg2WlByP9kvMP.jpg" alt="Park Ju-hyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Ju-hyun</span>
             </a>
-            <a href="/actor/232408-yoon-se-a" class="cast-card">
+            <a href="/actor/232408-yoon-se-a.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dPQ005nG45oB1PCtXktv4osML3t.jpg" alt="Yoon Se-a" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoon Se-a</span>
             </a>
-            <a href="/actor/79577-kim-byong-chul" class="cast-card">
+            <a href="/actor/79577-kim-byong-chul.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ynyE7u1u6SdUBFL1OmmxGVHX6g7.jpg" alt="Kim Byong-chul" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Byong-chul</span>
             </a>
-            <a href="/actor/1256345-l" class="cast-card">
+            <a href="/actor/1256345-l.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yRGyUlcIuGkjedE2TLheKuyCVOG.jpg" alt="L" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>L</span>
             </a>
-            <a href="/actor/1255392-yoon-sang-hyun" class="cast-card">
+            <a href="/actor/1255392-yoon-sang-hyun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/66UoDVZcRVxDCMRyvO6kP7FBN9e.jpg" alt="Yoon Sang-hyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoon Sang-hyun</span>
             </a>
-            <a href="/actor/2987021-choi-ye-bin" class="cast-card">
+            <a href="/actor/2987021-choi-ye-bin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1V1ZELL7L6eWT4aEiWCq8XmgVF3.jpg" alt="Choi Ye-bin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Choi Ye-bin</span>
             </a>
-            <a href="/actor/3789579-lee-si-woo" class="cast-card">
+            <a href="/actor/3789579-lee-si-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sZpz9PqEYrr9Rvt6Npf6c5VNDkn.jpg" alt="Lee Si-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Si-woo</span>
             </a>
-            <a href="/actor/4957251-shim-ji-yu" class="cast-card">
+            <a href="/actor/4957251-shim-ji-yu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cGaN9m8uxCjIndzSkq56iuAyFRS.jpg" alt="Shim Ji-yu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shim Ji-yu</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

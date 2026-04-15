@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Sugar</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/72466-colin-farrell" class="cast-card">
+            <a href="/actor/72466-colin-farrell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oyQVfpowL9eSudYhwoPGkd9WxS7.jpg" alt="Colin Farrell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Colin Farrell</span>
             </a>
-            <a href="/actor/1532312-kirby-howell-baptiste" class="cast-card">
+            <a href="/actor/1532312-kirby-howell-baptiste.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a5ZU74d53re7OepRAvUGRzUEEez.jpg" alt="Kirby Howell-Baptiste" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kirby Howell-Baptiste</span>
             </a>
-            <a href="/actor/39388-amy-ryan" class="cast-card">
+            <a href="/actor/39388-amy-ryan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bItqd1QUNpdegjBXNaVuFFPEZU4.jpg" alt="Amy Ryan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amy Ryan</span>
             </a>
-            <a href="/actor/118937-dennis-boutsikaris" class="cast-card">
+            <a href="/actor/118937-dennis-boutsikaris.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eholEaSnVKzse1l7ph6hDsfTTi7.jpg" alt="Dennis Boutsikaris" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dennis Boutsikaris</span>
             </a>
-            <a href="/actor/127048-nate-corddry" class="cast-card">
+            <a href="/actor/127048-nate-corddry.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uQXtMimmxvhdqQusgpQQnc0CnBz.jpg" alt="Nate Corddry" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nate Corddry</span>
             </a>
-            <a href="/actor/1472892-alex-hernandez" class="cast-card">
+            <a href="/actor/1472892-alex-hernandez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9St75rKolzCNpTXNRiBUM7YANn4.jpg" alt="Alex Hernandez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alex Hernandez</span>
             </a>
-            <a href="/actor/2505-james-cromwell" class="cast-card">
+            <a href="/actor/2505-james-cromwell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/17AIez58rJyk7EzU5a9L2r6Tn3u.jpg" alt="James Cromwell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Cromwell</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

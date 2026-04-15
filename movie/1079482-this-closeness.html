@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>This Closeness</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2354295-kit-zauhar" class="cast-card">
+            <a href="/actor/2354295-kit-zauhar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/snuKsRcSLQbL9y6D0nVdCR9WpHE.jpg" alt="Kit Zauhar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kit Zauhar</span>
             </a>
-            <a href="/actor/1885429-zane-pais" class="cast-card">
+            <a href="/actor/1885429-zane-pais.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tNCRR9yUMkiCZqS0j6IV3J2CTWj.jpg" alt="Zane Pais" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zane Pais</span>
             </a>
-            <a href="/actor/1515335-ian-edlund" class="cast-card">
+            <a href="/actor/1515335-ian-edlund.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eAh5QgwxSlM8bOcE7SN68SFLJBW.jpg" alt="Ian Edlund" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ian Edlund</span>
             </a>
-            <a href="/actor/1806227-jessie-pinnick" class="cast-card">
+            <a href="/actor/1806227-jessie-pinnick.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p1mRcGbQw3bqENkxBEKvh8ckAkD.jpg" alt="Jessie Pinnick" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jessie Pinnick</span>
             </a>
-            <a href="/actor/4612923-kate-williams" class="cast-card">
+            <a href="/actor/4612923-kate-williams.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kate Williams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kate Williams</span>
             </a>
-            <a href="/actor/59201-lisa-emery" class="cast-card">
+            <a href="/actor/59201-lisa-emery.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n1BUX990xFUXtvY8fDkbUox6sHh.jpg" alt="Lisa Emery" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lisa Emery</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسل</a> &gt; 
+    <a href="/index.html#series">مسلسل</a> &gt; 
     <span>许你十年</span>
   </nav>
 
@@ -71,19 +71,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1591363-lin-fengsong" class="cast-card">
+            <a href="/actor/1591363-lin-fengsong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fHuXu83YRE2L1hmcavFpIxYm6Im.jpg" alt="Lin Fengsong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lin Fengsong</span>
             </a>
-            <a href="/actor/1591364-chen-wen" class="cast-card">
+            <a href="/actor/1591364-chen-wen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rQWBLkU6kYIxUft9G9bR6rxDQVZ.jpg" alt="Chen Wen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chen Wen</span>
             </a>
-            <a href="/actor/4628714-wang-peiwei" class="cast-card">
+            <a href="/actor/4628714-wang-peiwei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/skhbzijN3APIkMs97BGKCqiSFBM.jpg" alt="Wang Peiwei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wang Peiwei</span>
             </a>
-            <a href="/actor/5954946-hu-heran" class="cast-card">
+            <a href="/actor/5954946-hu-heran.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/56mxHucoOCRMbmHhEmEg9xNNjUQ.jpg" alt="Hu Heran" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hu Heran</span>
             </a></div></section>
@@ -91,13 +91,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

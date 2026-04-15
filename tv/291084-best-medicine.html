@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Best Medicine</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2694-josh-charles" class="cast-card">
+            <a href="/actor/2694-josh-charles.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xmFdIoFKVRNUmXaslBlErA3UHfF.jpg" alt="Josh Charles" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josh Charles</span>
             </a>
-            <a href="/actor/123725-abigail-spencer" class="cast-card">
+            <a href="/actor/123725-abigail-spencer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uf96FDHVoFMwoiP5He4SPLCmwri.jpg" alt="Abigail Spencer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Abigail Spencer</span>
             </a>
-            <a href="/actor/426216-josh-segarra" class="cast-card">
+            <a href="/actor/426216-josh-segarra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vXhukEBgpI8jmCUCSGcpJCNzXHV.jpg" alt="Josh Segarra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josh Segarra</span>
             </a>
-            <a href="/actor/1680347-cree-cicchino" class="cast-card">
+            <a href="/actor/1680347-cree-cicchino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/49WAoaceTvvsgGKCQ8WOxNdfOdl.jpg" alt="Cree Cicchino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cree Cicchino</span>
             </a>
-            <a href="/actor/8873-annie-potts" class="cast-card">
+            <a href="/actor/8873-annie-potts.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hWIzkAH7jkSkxBfwdudxbSPxeno.jpg" alt="Annie Potts" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Annie Potts</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

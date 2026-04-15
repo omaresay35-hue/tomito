@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,27 +75,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3400506-zhang-pei" class="cast-card">
+            <a href="/actor/3400506-zhang-pei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ggAYlp5ZYDma79wH7unTW2LL3Ld.jpg" alt="Zhang Pei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Pei</span>
             </a>
-            <a href="/actor/3873864-yanyi-chen" class="cast-card">
+            <a href="/actor/3873864-yanyi-chen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cAsOTUlOwBmDdfkCh1DkQpDEPkq.jpg" alt="Yanyi Chen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yanyi Chen</span>
             </a>
-            <a href="/actor/3873885-bingtian-wang" class="cast-card">
+            <a href="/actor/3873885-bingtian-wang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aN13oEDhVCliz0Vzp5P381SVlOL.jpg" alt="Bingtian Wang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bingtian Wang</span>
             </a>
-            <a href="/actor/3873898-xiangjin-luan" class="cast-card">
+            <a href="/actor/3873898-xiangjin-luan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jEeBlgezjHpsdNo4r2Y9iQw1mu3.jpg" alt="Xiangjin Luan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xiangjin Luan</span>
             </a>
-            <a href="/actor/3873953-yang-miao" class="cast-card">
+            <a href="/actor/3873953-yang-miao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iiTUht7KvrKnAnqcK53cI1iN4rs.jpg" alt="Yang Miao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yang Miao</span>
             </a>
-            <a href="/actor/4208650-wen-liu" class="cast-card">
+            <a href="/actor/4208650-wen-liu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/z4jaQYsvSgfgNZ7JOfbaJwx0f8i.jpg" alt="Wen Liu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wen Liu</span>
             </a></div></section>
@@ -103,13 +103,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,31 +73,31 @@ In 2022, Jonsson appeared on the Evening Standard list of Londoners to watch and
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1307373-wasteman">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1307373-wasteman.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lKK9ImwpoTCwDZKgYpjIIJCnlf0.jpg" alt="Wasteman — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wasteman</div></div>
-    </a>    <a class="card" href="/movie/604079-the-long-walk">
+    </a>    <a class="card" href="/movie/604079-the-long-walk.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wobVTa99eW0ht6c1rNNzLkazPtR.jpg" alt="The Long Walk — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Long Walk</div></div>
-    </a>    <a class="card" href="/movie/1079244-bonhoeffer-pastor-spy-assassin">
+    </a>    <a class="card" href="/movie/1079244-bonhoeffer-pastor-spy-assassin.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9WtImcI6k9XOcnPmSeN2Kzpf4ay.jpg" alt="Bonhoeffer: Pastor. Spy. Assassin — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Bonhoeffer: Pastor. Spy. Assassin</div></div>
-    </a>    <a class="card" href="/movie/945961-alien-romulus">
+    </a>    <a class="card" href="/movie/945961-alien-romulus.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2uSWRTtCG336nuBiG8jOTEUKSy8.jpg" alt="Alien: Romulus — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Alien: Romulus</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/241361-too-much">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/241361-too-much.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rCLrhHqN26gS4eNrM27hY8XJXOt.jpg" alt="Too Much — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Too Much</div></div>
-    </a>    <a class="card" href="/tv/275277-the-road-trip">
+    </a>    <a class="card" href="/tv/275277-the-road-trip.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ncKjneFlDSy9kWezDa4qoju0vz2.jpg" alt="The Road Trip — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Road Trip</div></div>
-    </a>    <a class="card" href="/tv/230364-murder-is-easy">
+    </a>    <a class="card" href="/tv/230364-murder-is-easy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4Ced0ExBzhOsEsMBdghOm0OqurG.jpg" alt="Murder Is Easy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Murder Is Easy</div></div>
@@ -106,13 +106,6 @@ In 2022, Jonsson appeared on the Evening Standard list of Londoners to watch and
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

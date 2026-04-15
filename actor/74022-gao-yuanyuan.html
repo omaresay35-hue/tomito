@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/478798-sons-of-the-neon-night">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/478798-sons-of-the-neon-night.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fNaUvdCzyNeMZFQOnfCWvMoxEeG.jpg" alt="Sons of the Neon Night — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sons of the Neon Night</div></div>
-    </a>    <a class="card" href="/movie/1272676-g-for-gap">
+    </a>    <a class="card" href="/movie/1272676-g-for-gap.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/658G3OUdjYtVoqUaTmUOFmVPBCF.jpg" alt="G for Gap — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">G for Gap</div></div>
-    </a>    <a class="card" href="/movie/287420-dont-go-breaking-my-heart-2">
+    </a>    <a class="card" href="/movie/287420-dont-go-breaking-my-heart-2.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sZgeZseM8NvLuiwqRuX50v3P4dj.jpg" alt="Don't Go Breaking My Heart 2 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Don't Go Breaking My Heart 2</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/261588-the-secret-path">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/261588-the-secret-path.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/FugMAsnNyp2BV6PWCMxMRj81ze.jpg" alt="The Secret Path — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Secret Path</div></div>
-    </a>    <a class="card" href="/tv/257161-amazing-night">
+    </a>    <a class="card" href="/tv/257161-amazing-night.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nQFCp0Tlfqq3NhF2kiNAGwXLfnX.jpg" alt="Amazing Night — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Amazing Night</div></div>
-    </a>    <a class="card" href="/tv/154770-hello-saturday">
+    </a>    <a class="card" href="/tv/154770-hello-saturday.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wsTjWy6NE2s3h0neChr0D92ddwI.jpg" alt="Hello Saturday — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Hello Saturday</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

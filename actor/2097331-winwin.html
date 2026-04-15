@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1305781-blades-of-the-guardians-wind-rises-in-the-desert">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1305781-blades-of-the-guardians-wind-rises-in-the-desert.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4QZwryGm8l7N5XdEjPchNPl0BV7.jpg" alt="Blades of the Guardians: Wind Rises in the Desert — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Blades of the Guardians: Wind Rises in the Desert</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/242762-moonlit-reunion">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/242762-moonlit-reunion.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pOy5ysYxiHth3ZfW9NjrtJuauxF.jpg" alt="Moonlit Reunion — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Moonlit Reunion</div></div>
-    </a>    <a class="card" href="/tv/254821-perfect-match">
+    </a>    <a class="card" href="/tv/254821-perfect-match.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vbh685TBLEfQKXjYomVEmVztmJ9.jpg" alt="Perfect Match — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Perfect Match</div></div>
-    </a>    <a class="card" href="/tv/213086-snow-fall">
+    </a>    <a class="card" href="/tv/213086-snow-fall.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/oqr5gP5CQUPpXk7bPAHXLmfDMJ3.jpg" alt="Snow Fall — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Snow Fall</div></div>
-    </a>    <a class="card" href="/tv/204746-the-jennifer-hudson-show">
+    </a>    <a class="card" href="/tv/204746-the-jennifer-hudson-show.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/itMjVGw4abhhCDZFppmb7yGLrRa.jpg" alt="The Jennifer Hudson Show — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Jennifer Hudson Show</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

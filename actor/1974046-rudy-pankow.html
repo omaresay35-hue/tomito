@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,15 +71,15 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1367642-reminders-of-him">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1367642-reminders-of-him.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7L6rceYgzQ0NeHD7PRDNrRoQ291.jpg" alt="Reminders of Him — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Reminders of Him</div></div>
-    </a>    <a class="card" href="/movie/1079346-5lbs-of-pressure">
+    </a>    <a class="card" href="/movie/1079346-5lbs-of-pressure.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/toEJOPYvM7Na0XwM8exg8aHq553.jpg" alt="5lbs of Pressure — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">5lbs of Pressure</div></div>
-    </a>    <a class="card" href="/movie/1109940-accidental-texan">
+    </a>    <a class="card" href="/movie/1109940-accidental-texan.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6c4v8x9xHHLX5FRTUewLNLwj1M8.jpg" alt="Accidental Texan — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Accidental Texan</div></div>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

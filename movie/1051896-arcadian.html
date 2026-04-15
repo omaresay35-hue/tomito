@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Arcadian</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2963-nicolas-cage" class="cast-card">
+            <a href="/actor/2963-nicolas-cage.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y1RtezurZYveYkVNRht7CwEgSYY.jpg" alt="Nicolas Cage" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicolas Cage</span>
             </a>
-            <a href="/actor/1274508-jaeden-martell" class="cast-card">
+            <a href="/actor/1274508-jaeden-martell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oR7ZJsOHMNFzM1HeugV4a4qCMSF.jpg" alt="Jaeden Martell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jaeden Martell</span>
             </a>
-            <a href="/actor/1810651-maxwell-jenkins" class="cast-card">
+            <a href="/actor/1810651-maxwell-jenkins.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7pAqHa0aMHpK6Z717g2WMxzpYya.jpg" alt="Maxwell Jenkins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maxwell Jenkins</span>
             </a>
-            <a href="/actor/2270402-sadie-soverall" class="cast-card">
+            <a href="/actor/2270402-sadie-soverall.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/42Px418cE5HMWhio5qBRk4K8XHO.jpg" alt="Sadie Soverall" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sadie Soverall</span>
             </a>
-            <a href="/actor/1321622-samantha-coughlan" class="cast-card">
+            <a href="/actor/1321622-samantha-coughlan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oTcw7AFY52UYyIjPLp9ZjySwivy.jpg" alt="Samantha Coughlan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samantha Coughlan</span>
             </a>
-            <a href="/actor/1542962-joel-gillman" class="cast-card">
+            <a href="/actor/1542962-joel-gillman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gc2A2XYhQRwK0il81rFBvUpnT7d.jpg" alt="Joel Gillman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joel Gillman</span>
             </a>
-            <a href="/actor/1010264-joe-dixon" class="cast-card">
+            <a href="/actor/1010264-joe-dixon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vUJuFAxmmm3awOSDHQF8kuDjr11.jpg" alt="Joe Dixon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joe Dixon</span>
             </a>
-            <a href="/actor/4441379-daire-mcmahon" class="cast-card">
+            <a href="/actor/4441379-daire-mcmahon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jN9I0jErNNTR8ury8YVgej7Z9wn.jpg" alt="Daire McMahon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daire McMahon</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

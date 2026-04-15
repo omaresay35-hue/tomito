@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/289690-love-phobia">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/289690-love-phobia.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3hsCoGDAceyh1FnFHHLkozPNlSS.jpg" alt="Love Phobia — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Love Phobia</div></div>
-    </a>    <a class="card" href="/tv/226649-the-tale-of-lady-ok">
+    </a>    <a class="card" href="/tv/226649-the-tale-of-lady-ok.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3cfo9NH2wZ0fm8TbiN7L8NREM0Q.jpg" alt="The Tale of Lady Ok — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Tale of Lady Ok</div></div>
-    </a>    <a class="card" href="/tv/260835-dog-knows-everything">
+    </a>    <a class="card" href="/tv/260835-dog-knows-everything.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mYxKKGBMuCPaVFCzNC5VF2Kqo2x.jpg" alt="Dog Knows Everything — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dog Knows Everything</div></div>
-    </a>    <a class="card" href="/tv/218632-bitter-sweet-hell">
+    </a>    <a class="card" href="/tv/218632-bitter-sweet-hell.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zuuDEN1QcXBNVoZ05PwWHZarJY8.jpg" alt="Bitter Sweet Hell — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Bitter Sweet Hell</div></div>
-    </a>    <a class="card" href="/tv/215320-numbers">
+    </a>    <a class="card" href="/tv/215320-numbers.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1aKjOBF9NReK7IQZDRngoQRBwMO.jpg" alt="Numbers — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Numbers</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

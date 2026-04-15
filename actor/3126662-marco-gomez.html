@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1302004-kaskasero">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1302004-kaskasero.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qSpFNnFC3il0bdhyynzJgwlMRnv.jpg" alt="Kaskasero — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kaskasero</div></div>
-    </a>    <a class="card" href="/movie/1262599-dayo">
+    </a>    <a class="card" href="/movie/1262599-dayo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/JYgbVEMgW53uGVu2NvGJziCoTN.jpg" alt="Dayo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dayo</div></div>
-    </a>    <a class="card" href="/movie/1241750-mapanukso">
+    </a>    <a class="card" href="/movie/1241750-mapanukso.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2Ilc4sNRh6NL1nXiJ4XyzXdsL3.jpg" alt="Mapanukso — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Mapanukso</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/203906-high-school-on-sex">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/203906-high-school-on-sex.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tBOQVr2XfNKjUnB7O4tOM3olomr.jpg" alt="High (School) On Sex — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">High (School) On Sex</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

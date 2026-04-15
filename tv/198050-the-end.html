@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Fim</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/130303-fábio-assunção" class="cast-card">
+            <a href="/actor/130303-fábio-assunção.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/owyB5DjfKjir0OaTXRxUIh8EX6r.jpg" alt="Fábio Assunção" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fábio Assunção</span>
             </a>
-            <a href="/actor/973901-marjorie-estiano" class="cast-card">
+            <a href="/actor/973901-marjorie-estiano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3affZ1HBujLZkIzLgs8kgdsPV8v.jpg" alt="Marjorie Estiano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marjorie Estiano</span>
             </a>
-            <a href="/actor/138328-débora-falabella" class="cast-card">
+            <a href="/actor/138328-débora-falabella.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vgJVa3mFtNSmeYUQuUslDglPrEp.jpg" alt="Débora Falabella" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Débora Falabella</span>
             </a>
-            <a href="/actor/225099-bruno-mazzeo" class="cast-card">
+            <a href="/actor/225099-bruno-mazzeo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yLK7edlLN0w8bmifZOPLhpxrDbG.jpg" alt="Bruno Mazzeo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bruno Mazzeo</span>
             </a>
-            <a href="/actor/1995287-laila-garin" class="cast-card">
+            <a href="/actor/1995287-laila-garin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7EElFM2XrgAKVmrtN7Bm4a2GwNZ.jpg" alt="Laila Garin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laila Garin</span>
             </a>
-            <a href="/actor/1471569-emílio-dantas" class="cast-card">
+            <a href="/actor/1471569-emílio-dantas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xCiS1H0D3ljgp64dWDoRcKTzlfq.jpg" alt="Emílio Dantas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emílio Dantas</span>
             </a>
-            <a href="/actor/1700755-david-junior" class="cast-card">
+            <a href="/actor/1700755-david-junior.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kCjugq8PaAGvthZF3QNhyYuGONK.jpg" alt="David Junior" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Junior</span>
             </a>
-            <a href="/actor/2266943-heloísa-jorge" class="cast-card">
+            <a href="/actor/2266943-heloísa-jorge.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i556iRWHSF4bv0wAl36qYNrjdEN.jpg" alt="Heloísa Jorge" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Heloísa Jorge</span>
             </a>
-            <a href="/actor/571470-thelmo-fernandes" class="cast-card">
+            <a href="/actor/571470-thelmo-fernandes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7pml9uBwEwH9e2Ch6BrpuDmK8Zs.jpg" alt="Thelmo Fernandes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thelmo Fernandes</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

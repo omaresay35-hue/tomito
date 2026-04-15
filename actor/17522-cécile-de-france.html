@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,31 +73,31 @@ Description above from the Wikipedia article Cécile de France, licensed under C
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1197125-louise">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1197125-louise.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/62GcSVw9fE8paRDTCHDycZvQ26p.jpg" alt="Louise — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Louise</div></div>
-    </a>    <a class="card" href="/movie/1315702-the-residence">
+    </a>    <a class="card" href="/movie/1315702-the-residence.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cQwcaFe7rADsEDRDhS3TQTmfzLC.jpg" alt="The Residence — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Residence</div></div>
-    </a>    <a class="card" href="/movie/1235304-colours-of-time">
+    </a>    <a class="card" href="/movie/1235304-colours-of-time.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vaZBgB1Z3dkdu0LuvId0VoEHCBA.jpg" alt="Colours of Time — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Colours of Time</div></div>
-    </a>    <a class="card" href="/movie/1156104-call-of-water">
+    </a>    <a class="card" href="/movie/1156104-call-of-water.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3OlqCaJ8KECISjCzYXeg7pR6uEb.jpg" alt="Call of Water — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Call of Water</div></div>
-    </a>    <a class="card" href="/movie/995749-bonnard-pierre-and-marthe">
+    </a>    <a class="card" href="/movie/995749-bonnard-pierre-and-marthe.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1QOJAXMGV3wMVM2CwvuJQRtiLx8.jpg" alt="Bonnard, Pierre and Marthe — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Bonnard, Pierre and Marthe</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/121459-greek-salad">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/121459-greek-salad.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jYWqzYQIl4aGuDOciSp8g2H3eWF.jpg" alt="Greek Salad — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Greek Salad</div></div>
-    </a>    <a class="card" href="/tv/211240-the-swarm">
+    </a>    <a class="card" href="/tv/211240-the-swarm.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/m8Z2LJsMLCAYExcysHXs7oaTILI.jpg" alt="The Swarm — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Swarm</div></div>
@@ -106,13 +106,6 @@ Description above from the Wikipedia article Cécile de France, licensed under C
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

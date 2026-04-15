@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>الأفق المفقود</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1329372-tom-fairfoot" class="cast-card">
+            <a href="/actor/1329372-tom-fairfoot.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zSQsVHjESRAv694Ko9EqeMYAZUJ.jpg" alt="Tom Fairfoot" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Fairfoot</span>
             </a>
-            <a href="/actor/5728202-aimee-botes" class="cast-card">
+            <a href="/actor/5728202-aimee-botes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/idgZrzvcp64LDJCC3A52KpORFcx.jpg" alt="Aimee Botes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aimee Botes</span>
             </a>
-            <a href="/actor/5920886-kayla-osburn" class="cast-card">
+            <a href="/actor/5920886-kayla-osburn.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kayla Osburn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kayla Osburn</span>
             </a>
-            <a href="/actor/5959827-lebogang-mzwimbi" class="cast-card">
+            <a href="/actor/5959827-lebogang-mzwimbi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lebogang Mzwimbi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lebogang Mzwimbi</span>
             </a>
-            <a href="/actor/5920893-ryan-massie" class="cast-card">
+            <a href="/actor/5920893-ryan-massie.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ryan Massie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryan Massie</span>
             </a>
-            <a href="/actor/4460642-llewellyn-cordier" class="cast-card">
+            <a href="/actor/4460642-llewellyn-cordier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aJKNBlXz3bEA7rT3cH60ZsolccB.jpg" alt="Llewellyn Cordier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Llewellyn Cordier</span>
             </a>
-            <a href="/actor/5133172-farai-chigudu" class="cast-card">
+            <a href="/actor/5133172-farai-chigudu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xbpyEF3udjHEV0bWRFJktZithbL.jpg" alt="Farai Chigudu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Farai Chigudu</span>
             </a>
-            <a href="/actor/2605168-alonso-grandio" class="cast-card">
+            <a href="/actor/2605168-alonso-grandio.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m7vYtjGsdMf6nHxL6GNyw7fhWLl.jpg" alt="Alonso Grandio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alonso Grandio</span>
             </a>
-            <a href="/actor/5798646-joseph-clarke" class="cast-card">
+            <a href="/actor/5798646-joseph-clarke.html" class="cast-card">
                 <img src="/favicon.ico" alt="Joseph Clarke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joseph Clarke</span>
             </a>
-            <a href="/actor/5798642-prudence-buthelezi" class="cast-card">
+            <a href="/actor/5798642-prudence-buthelezi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Prudence Buthelezi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Prudence Buthelezi</span>
             </a>
-            <a href="/actor/5798648-nico-engelbrecht" class="cast-card">
+            <a href="/actor/5798648-nico-engelbrecht.html" class="cast-card">
                 <img src="/favicon.ico" alt="Nico Engelbrecht" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nico Engelbrecht</span>
             </a>
-            <a href="/actor/5763273-leo-gumede" class="cast-card">
+            <a href="/actor/5763273-leo-gumede.html" class="cast-card">
                 <img src="/favicon.ico" alt="Leo Gumede" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leo Gumede</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

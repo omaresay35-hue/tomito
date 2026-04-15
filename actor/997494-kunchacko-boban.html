@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ Throughout the late ’90s and early 2000s, he cemented his image with hits like
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1281091-officer-on-duty">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1281091-officer-on-duty.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ucwirgaK4v9ylQyDkwoXJtDIlf7.jpg" alt="Officer on Duty — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Officer on Duty</div></div>
-    </a>    <a class="card" href="/movie/1177224-bougainvillea">
+    </a>    <a class="card" href="/movie/1177224-bougainvillea.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lH5bWsODh1QU6aia1ZpaC79kq2j.jpg" alt="Bougainvillea — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Bougainvillea</div></div>
-    </a>    <a class="card" href="/movie/214875-race">
+    </a>    <a class="card" href="/movie/214875-race.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7aNFb2tNyvB7Pxsef2E7srN4x34.jpg" alt="Race — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Race</div></div>
-    </a>    <a class="card" href="/movie/234556-lollipop">
+    </a>    <a class="card" href="/movie/234556-lollipop.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dDidJ22mp1BR5UzosmgQ4W6v4Yn.jpg" alt="Lollipop — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Lollipop</div></div>
@@ -94,13 +94,6 @@ Throughout the late ’90s and early 2000s, he cemented his image with hits like
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

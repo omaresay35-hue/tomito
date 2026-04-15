@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Volta Priscila</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4970448-priscila-belfort" class="cast-card">
+            <a href="/actor/4970448-priscila-belfort.html" class="cast-card">
                 <img src="/favicon.ico" alt="Priscila Belfort" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Priscila Belfort</span>
             </a>
-            <a href="/actor/4970449-jovita-belfort" class="cast-card">
+            <a href="/actor/4970449-jovita-belfort.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jovita Belfort" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jovita Belfort</span>
             </a>
-            <a href="/actor/81514-vitor-belfort" class="cast-card">
+            <a href="/actor/81514-vitor-belfort.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kRJuA1GEhAzo1FkSj83Ag98y849.jpg" alt="Vitor Belfort" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vitor Belfort</span>
             </a>
-            <a href="/actor/4970434-joana-prado" class="cast-card">
+            <a href="/actor/4970434-joana-prado.html" class="cast-card">
                 <img src="/favicon.ico" alt="Joana Prado" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joana Prado</span>
             </a>
-            <a href="/actor/4970450-josé-marcos-belfort" class="cast-card">
+            <a href="/actor/4970450-josé-marcos-belfort.html" class="cast-card">
                 <img src="/favicon.ico" alt="José Marcos Belfort" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>José Marcos Belfort</span>
             </a>
-            <a href="/actor/2146595-sonia-abrão" class="cast-card">
+            <a href="/actor/2146595-sonia-abrão.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hbg35aeHVhkNqiuc0qtjM06tqEJ.jpg" alt="Sonia Abrão" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sonia Abrão</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

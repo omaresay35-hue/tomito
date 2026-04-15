@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1213898-border-2">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1213898-border-2.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wUcttG71zo9deP4m9sDhYPUcvi5.jpg" alt="Border 2 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Border 2</div></div>
-    </a>    <a class="card" href="/movie/1282440-happy-patel-khatarnak-jasoos">
+    </a>    <a class="card" href="/movie/1282440-happy-patel-khatarnak-jasoos.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tZJBXGNyDanSne6a2TLRU45Uhwu.jpg" alt="Happy Patel: Khatarnak Jasoos — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Happy Patel: Khatarnak Jasoos</div></div>
-    </a>    <a class="card" href="/movie/1187058-munjya">
+    </a>    <a class="card" href="/movie/1187058-munjya.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/31zAzJs8O7dXcE0laUcBoaaNvwu.jpg" alt="Munjya — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Munjya</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/247043-the-bads-of-bollywood">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/247043-the-bads-of-bollywood.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6QFnXFx5XJAp0SxMd9g23cbti4m.jpg" alt="The Ba***ds of Bollywood — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Ba***ds of Bollywood</div></div>
-    </a>    <a class="card" href="/tv/235356-kaala-paani">
+    </a>    <a class="card" href="/tv/235356-kaala-paani.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wQJFHysapAr1eXB5BWNSRbfgTbU.jpg" alt="Kaala Paani — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kaala Paani</div></div>
-    </a>    <a class="card" href="/tv/230034-kohrra">
+    </a>    <a class="card" href="/tv/230034-kohrra.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/oZbiASZweEKFOHsl56QTeNJ6a8R.jpg" alt="Kohrra — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kohrra</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

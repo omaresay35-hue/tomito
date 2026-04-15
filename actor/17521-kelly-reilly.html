@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/940139-here">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/940139-here.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/79euHUJJtfgeGU63ef38KtNjXEn.jpg" alt="Here — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Here</div></div>
-    </a>    <a class="card" href="/movie/1170000-little-wing">
+    </a>    <a class="card" href="/movie/1170000-little-wing.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nEMc5IK3rkAtKCMhzBe3CX2Wpds.jpg" alt="Little Wing — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Little Wing</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/262262-under-salt-marsh">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/262262-under-salt-marsh.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hQK2X9gAetMpqFl5qWssOgtNi4o.jpg" alt="Under Salt Marsh — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Under Salt Marsh</div></div>
-    </a>    <a class="card" href="/tv/121459-greek-salad">
+    </a>    <a class="card" href="/tv/121459-greek-salad.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jYWqzYQIl4aGuDOciSp8g2H3eWF.jpg" alt="Greek Salad — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Greek Salad</div></div>
-    </a>    <a class="card" href="/tv/2583-prime-suspect">
+    </a>    <a class="card" href="/tv/2583-prime-suspect.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vhlbnMgz9hBouXWmxBS2RjFC03S.jpg" alt="Prime Suspect — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Prime Suspect</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

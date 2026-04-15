@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Pirate Bay</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4980135-simon-gregor-carlsson" class="cast-card">
+            <a href="/actor/4980135-simon-gregor-carlsson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eAxQtKGPciKKklyeVSBqg6nhsmi.jpg" alt="Simon Gregor Carlsson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Simon Gregor Carlsson</span>
             </a>
-            <a href="/actor/4980141-arvid-swedrup" class="cast-card">
+            <a href="/actor/4980141-arvid-swedrup.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/FgQ8qUT28cZZ6vd3nb1QnC81Hw.jpg" alt="Arvid Swedrup" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arvid Swedrup</span>
             </a>
-            <a href="/actor/4980139-willjam-lempling" class="cast-card">
+            <a href="/actor/4980139-willjam-lempling.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p8cVm9i258pxv3hKwscaSwOgu4H.jpg" alt="Willjam Lempling" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Willjam Lempling</span>
             </a>
-            <a href="/actor/83896-robin-stegmar" class="cast-card">
+            <a href="/actor/83896-robin-stegmar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9wLMHwKFeSm5aoxun31rVJUff9d.jpg" alt="Robin Stegmar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robin Stegmar</span>
             </a>
-            <a href="/actor/18068-helena-bergström" class="cast-card">
+            <a href="/actor/18068-helena-bergström.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pwjVRSw8pn88yDAVktpM1Cbu53S.jpg" alt="Helena Bergström" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Helena Bergström</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

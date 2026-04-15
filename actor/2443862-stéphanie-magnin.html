@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1451296-one-x-two">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1451296-one-x-two.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/q42qOEkYYfe7cUy3EWUHYTbRUAJ.jpg" alt="One X Two — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">One X Two</div></div>
-    </a>    <a class="card" href="/movie/1451288-the-stepmothers-bond">
+    </a>    <a class="card" href="/movie/1451288-the-stepmothers-bond.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6QuOnj9x3gDbdLWAVIxuzZltEuf.jpg" alt="The Stepmother's Bond — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Stepmother's Bond</div></div>
-    </a>    <a class="card" href="/movie/1369105-everything-i-dont-know">
+    </a>    <a class="card" href="/movie/1369105-everything-i-dont-know.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/915xBmH2YErsMzOjtStN6VXCCtw.jpg" alt="Everything I Don't Know — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Everything I Don't Know</div></div>
-    </a>    <a class="card" href="/movie/977548-saturn-return">
+    </a>    <a class="card" href="/movie/977548-saturn-return.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4NtkEJNctcf2MztNBA6RX4RS9Iw.jpg" alt="Saturn Return — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Saturn Return</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/226411-mía-es-la-venganza">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/226411-mía-es-la-venganza.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wysp5AcY9JpLjje5NunKYw7Mrtc.jpg" alt="Mía es la venganza — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Mía es la venganza</div></div>
-    </a>    <a class="card" href="/tv/195237-poor-devil">
+    </a>    <a class="card" href="/tv/195237-poor-devil.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/x7g8NHyB7b9Vlj6NqtXGoQkwbsS.jpg" alt="Poor Devil — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Poor Devil</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

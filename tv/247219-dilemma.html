@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>العقدة</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/109137-bergüzar-korel" class="cast-card">
+            <a href="/actor/109137-bergüzar-korel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/94mq389luGnWLjcMIzWeJsLPGto.jpg" alt="Bergüzar Korel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bergüzar Korel</span>
             </a>
-            <a href="/actor/147628-caner-cindoruk" class="cast-card">
+            <a href="/actor/147628-caner-cindoruk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3YSQLSHulP0X0vuAdan8UUDvbC4.jpg" alt="Caner Cindoruk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Caner Cindoruk</span>
             </a>
-            <a href="/actor/1483880-serkan-altunorak" class="cast-card">
+            <a href="/actor/1483880-serkan-altunorak.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6mZ4mH9GgfMtCeaBJzUt8GfuVir.jpg" alt="Serkan Altunorak" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Serkan Altunorak</span>
             </a>
-            <a href="/actor/3603819-kaan-mirac-sezen" class="cast-card">
+            <a href="/actor/3603819-kaan-mirac-sezen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9cQe32heKx6LQx1Gy8Iz0Pz0NCr.jpg" alt="Kaan Mirac Sezen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaan Mirac Sezen</span>
             </a>
-            <a href="/actor/3941066-elif-uslusoy" class="cast-card">
+            <a href="/actor/3941066-elif-uslusoy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rPJnmvEFlSTDWfQ6rHjGq9XbrYr.jpg" alt="Elif Uslusoy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elif Uslusoy</span>
             </a>
-            <a href="/actor/1590337-i̇brahim-selim" class="cast-card">
+            <a href="/actor/1590337-i̇brahim-selim.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3EAJVfqgEZCM17RTWfUIEJ1iKv3.jpg" alt="İbrahim Selim" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>İbrahim Selim</span>
             </a>
-            <a href="/actor/4931252-itır-esen" class="cast-card">
+            <a href="/actor/4931252-itır-esen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9zncZHQhAGVDiB9qtR7MnWam1H.jpg" alt="Itır Esen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Itır Esen</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

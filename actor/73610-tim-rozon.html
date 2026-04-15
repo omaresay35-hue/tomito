@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1472951-infiltrate">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1472951-infiltrate.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8Cw8GF9wG63kF8pRRXwOx2kXGt.jpg" alt="Infiltrate — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Infiltrate</div></div>
-    </a>    <a class="card" href="/movie/1305717-hunting-grounds">
+    </a>    <a class="card" href="/movie/1305717-hunting-grounds.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cgZjpqRQt9sk6XMCwZ3B1NPAaoy.jpg" alt="Hunting Grounds — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Hunting Grounds</div></div>
-    </a>    <a class="card" href="/movie/1011477-karate-kid-legends">
+    </a>    <a class="card" href="/movie/1011477-karate-kid-legends.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/c90Lt7OQGsOmhv6x4JoFdoHzw5l.jpg" alt="Karate Kid: Legends — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Karate Kid: Legends</div></div>
-    </a>    <a class="card" href="/movie/1242765-wynonna-earp-vengeance">
+    </a>    <a class="card" href="/movie/1242765-wynonna-earp-vengeance.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xobQ2MsXEoKcs3OdWNvY4vdFeVy.jpg" alt="Wynonna Earp: Vengeance — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wynonna Earp: Vengeance</div></div>
-    </a>    <a class="card" href="/movie/1027452-spread">
+    </a>    <a class="card" href="/movie/1027452-spread.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/duF8oeH3AE5rBe4T4x39RZpE5ub.jpg" alt="Spread — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Spread</div></div>
-    </a>    <a class="card" href="/movie/1179521-calamity-jane">
+    </a>    <a class="card" href="/movie/1179521-calamity-jane.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3XwylJi2GRLAEqhIUb9tf9ue4Hn.jpg" alt="Calamity Jane — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Calamity Jane</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/228026-law-order-toronto-criminal-intent">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/228026-law-order-toronto-criminal-intent.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eqD7W5EGue5Nvg0BNEnoRyMQAcz.jpg" alt="Law & Order Toronto: Criminal Intent — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Law & Order Toronto: Criminal Intent</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

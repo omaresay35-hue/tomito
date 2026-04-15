@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Valensole 1965</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/544833-matthias-van-khache" class="cast-card">
+            <a href="/actor/544833-matthias-van-khache.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xfvNIbmbSXPVMqKCAgzgcpo5JsG.jpg" alt="Matthias Van Khache" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthias Van Khache</span>
             </a>
-            <a href="/actor/56402-vahina-giocante" class="cast-card">
+            <a href="/actor/56402-vahina-giocante.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bho9cZPO1VGWKKcpQz5b5vHf9Pa.jpg" alt="Vahina Giocante" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vahina Giocante</span>
             </a>
-            <a href="/actor/2527891-sasha-gravat-harsch" class="cast-card">
+            <a href="/actor/2527891-sasha-gravat-harsch.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rbaqb82ddvRNNAlNcGfQKOrcDlO.jpg" alt="Sasha Gravat Harsch" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sasha Gravat Harsch</span>
             </a>
-            <a href="/actor/1732197-olivia-gotanègre" class="cast-card">
+            <a href="/actor/1732197-olivia-gotanègre.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6sGKFvanGBFbEb6Cz8jvtzDsAjz.jpg" alt="Olivia Gotanègre" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olivia Gotanègre</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Buccaneers</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1633001-kristine-froseth" class="cast-card">
+            <a href="/actor/1633001-kristine-froseth.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/plgE7OleHgqZrdazFzbkv18UsRN.jpg" alt="Kristine Froseth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kristine Froseth</span>
             </a>
-            <a href="/actor/1485380-alisha-boe" class="cast-card">
+            <a href="/actor/1485380-alisha-boe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d97PBeHPYIJ4hshqoe2ahRJ2NIq.jpg" alt="Alisha Boe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alisha Boe</span>
             </a>
-            <a href="/actor/3209735-aubri-ibrag" class="cast-card">
+            <a href="/actor/3209735-aubri-ibrag.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dDZPAMkGq6ArHODY583Q0a8SyRg.jpg" alt="Aubri Ibrag" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aubri Ibrag</span>
             </a>
-            <a href="/actor/1667787-imogen-waterhouse" class="cast-card">
+            <a href="/actor/1667787-imogen-waterhouse.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rlQmb1NXvfzh6Pp3ZuXubNAWWdJ.jpg" alt="Imogen Waterhouse" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Imogen Waterhouse</span>
             </a>
-            <a href="/actor/1520451-josie-totah" class="cast-card">
+            <a href="/actor/1520451-josie-totah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/125iM9BTPVDfRjKGVSqmvgeGsai.jpg" alt="Josie Totah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josie Totah</span>
             </a>
-            <a href="/actor/3912097-matthew-broome" class="cast-card">
+            <a href="/actor/3912097-matthew-broome.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nSjPuDG5IVQfyMU8TkZl0ZQkLu6.jpg" alt="Matthew Broome" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthew Broome</span>
             </a>
-            <a href="/actor/1945738-josh-dylan" class="cast-card">
+            <a href="/actor/1945738-josh-dylan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3JxYuaQF6RddYo6zcpf1UX9J5Ry.jpg" alt="Josh Dylan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josh Dylan</span>
             </a>
-            <a href="/actor/3912096-guy-remmers" class="cast-card">
+            <a href="/actor/3912096-guy-remmers.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pGDZkLaTLlLQvz1tlSEtkrr92lk.jpg" alt="Guy Remmers" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Guy Remmers</span>
             </a>
-            <a href="/actor/1462430-mia-threapleton" class="cast-card">
+            <a href="/actor/1462430-mia-threapleton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cw2jEobhRkdI2GeskQbfZ5AMW51.jpg" alt="Mia Threapleton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mia Threapleton</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,43 +75,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1809957-chiemi-tanaka" class="cast-card">
+            <a href="/actor/1809957-chiemi-tanaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/870hS8RmnvtmHKV2baMTUS7ltyJ.jpg" alt="Chiemi Tanaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chiemi Tanaka</span>
             </a>
-            <a href="/actor/2276004-natsumi-murakami" class="cast-card">
+            <a href="/actor/2276004-natsumi-murakami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vo68scnifwyDMzKblCn0wrvJhiL.jpg" alt="Natsumi Murakami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natsumi Murakami</span>
             </a>
-            <a href="/actor/992869-ayane-sakura" class="cast-card">
+            <a href="/actor/992869-ayane-sakura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yPbTmntASE9psPIMhNGU5oo6vIH.jpg" alt="Ayane Sakura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayane Sakura</span>
             </a>
-            <a href="/actor/1164931-megumi-han" class="cast-card">
+            <a href="/actor/1164931-megumi-han.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cwnwrPg1YvB19TbfouC4ShGPmbQ.jpg" alt="Megumi Han" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Megumi Han</span>
             </a>
-            <a href="/actor/1356201-yu-serizawa" class="cast-card">
+            <a href="/actor/1356201-yu-serizawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mQITB0XYHCZjYef39xsHnSHIH56.jpg" alt="Yu Serizawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yu Serizawa</span>
             </a>
-            <a href="/actor/1647556-yuya-hirose" class="cast-card">
+            <a href="/actor/1647556-yuya-hirose.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jRe7ICqrCsaEWVD8jAmJdc7XwnQ.jpg" alt="Yuya Hirose" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuya Hirose</span>
             </a>
-            <a href="/actor/1264228-yoji-ueda" class="cast-card">
+            <a href="/actor/1264228-yoji-ueda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fHvIfE0Q7ab0DFlkNVFcXvTKX9y.jpg" alt="Yoji Ueda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoji Ueda</span>
             </a>
-            <a href="/actor/184460-tomoko-kaneda" class="cast-card">
+            <a href="/actor/184460-tomoko-kaneda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oj2f7KpJLas78N19GvBS41ydZCa.jpg" alt="Tomoko Kaneda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomoko Kaneda</span>
             </a>
-            <a href="/actor/552683-hochu-otsuka" class="cast-card">
+            <a href="/actor/552683-hochu-otsuka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3RHQcrsWnAFK6AifSis1lMq08cR.jpg" alt="Hochu Otsuka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hochu Otsuka</span>
             </a>
-            <a href="/actor/1241498-daisuke-ono" class="cast-card">
+            <a href="/actor/1241498-daisuke-ono.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5rjl28lx84JjRS0hzq3Ajvx2dhp.jpg" alt="Daisuke Ono" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daisuke Ono</span>
             </a></div></section>
@@ -119,13 +119,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

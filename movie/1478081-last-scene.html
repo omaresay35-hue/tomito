@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>ラストシーン</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1328328-taiga-nakano" class="cast-card">
+            <a href="/actor/1328328-taiga-nakano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5mVGPU8dylxs7tnpI2VfeKkumoJ.jpg" alt="Taiga Nakano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taiga Nakano</span>
             </a>
-            <a href="/actor/2130094-momoko-fukuchi" class="cast-card">
+            <a href="/actor/2130094-momoko-fukuchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jY5XOJlw69VWixEHm7MJBjoipuU.jpg" alt="Momoko Fukuchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Momoko Fukuchi</span>
             </a>
-            <a href="/actor/1404981-daisuke-kuroda" class="cast-card">
+            <a href="/actor/1404981-daisuke-kuroda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bBwirsQ3ZvH1hNeNXXJGrpm3Ocu.jpg" alt="Daisuke Kuroda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daisuke Kuroda</span>
             </a>
-            <a href="/actor/123739-lily-franky" class="cast-card">
+            <a href="/actor/123739-lily-franky.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2MIG7VSbgekrvqUpChs931NLp6B.jpg" alt="Lily Franky" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lily Franky</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

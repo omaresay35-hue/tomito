@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>犬になったら好きな人に拾われた。</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3128816-shuichiro-umeda" class="cast-card">
+            <a href="/actor/3128816-shuichiro-umeda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dCr870q8ojD6qpD1hmS1sdvh2pe.jpg" alt="Shuichiro Umeda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shuichiro Umeda</span>
             </a>
-            <a href="/actor/2467933-saya-aizawa" class="cast-card">
+            <a href="/actor/2467933-saya-aizawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3QoVKl1w7uBMf5ivJ4MccYkt4zR.jpg" alt="Saya Aizawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saya Aizawa</span>
             </a>
-            <a href="/actor/2409802-mayu-sagara" class="cast-card">
+            <a href="/actor/2409802-mayu-sagara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/34nn1h3Mg2TsvOQs9DJViogVurp.jpg" alt="Mayu Sagara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mayu Sagara</span>
             </a>
-            <a href="/actor/2380499-yurie-kozakai" class="cast-card">
+            <a href="/actor/2380499-yurie-kozakai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mbIMcptHLQir3wrAnnSSAR5uRR1.jpg" alt="Yurie Kozakai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yurie Kozakai</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

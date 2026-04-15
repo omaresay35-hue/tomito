@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>旅と日々</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/93995-shim-eun-kyung" class="cast-card">
+            <a href="/actor/93995-shim-eun-kyung.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kgtHFruNAjOuAuba3wXdYzYFzAW.jpg" alt="Shim Eun-kyung" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shim Eun-kyung</span>
             </a>
-            <a href="/actor/58596-shinichi-tsutsumi" class="cast-card">
+            <a href="/actor/58596-shinichi-tsutsumi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t3E5FKE7UGbdlnA8gy9lx03otIk.jpg" alt="Shinichi Tsutsumi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shinichi Tsutsumi</span>
             </a>
-            <a href="/actor/2797433-yuumi-kawai" class="cast-card">
+            <a href="/actor/2797433-yuumi-kawai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qDJUUlqjhsRBpLYPfm0xVFNbBTY.jpg" alt="Yuumi Kawai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuumi Kawai</span>
             </a>
-            <a href="/actor/4956315-mansaku-takada" class="cast-card">
+            <a href="/actor/4956315-mansaku-takada.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mansaku Takada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mansaku Takada</span>
             </a>
-            <a href="/actor/73139-shiro-sano" class="cast-card">
+            <a href="/actor/73139-shiro-sano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pdPx52iDMEkramZZYnwh1VIP7jq.jpg" alt="Shiro Sano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shiro Sano</span>
             </a>
-            <a href="/actor/20708-yoichiro-saito" class="cast-card">
+            <a href="/actor/20708-yoichiro-saito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1pU5WwEE3DtV4M9nhtUt4p3wrwa.jpg" alt="Yoichiro Saito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoichiro Saito</span>
             </a>
-            <a href="/actor/2145148-shinichiro-matsuura" class="cast-card">
+            <a href="/actor/2145148-shinichiro-matsuura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h7LVT8jYTV8MHYu3N0QPwnoq0QB.jpg" alt="Shinichiro Matsuura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shinichiro Matsuura</span>
             </a>
-            <a href="/actor/1385839-tomomitsu-adachi" class="cast-card">
+            <a href="/actor/1385839-tomomitsu-adachi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oHl0D6F1FBH0Y3IvZT7quWhoGmk.jpg" alt="Tomomitsu Adachi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomomitsu Adachi</span>
             </a>
-            <a href="/actor/1905332-ariei-umefune" class="cast-card">
+            <a href="/actor/1905332-ariei-umefune.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/juSUACtFm8egUbr5VAfR8TAgB3L.jpg" alt="Ariei Umefune" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ariei Umefune</span>
             </a>
-            <a href="/actor/3222485-ryutaro-yasumitsu" class="cast-card">
+            <a href="/actor/3222485-ryutaro-yasumitsu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zUTOwkJ8q9lvPvEshzhMnxXaopq.jpg" alt="Ryutaro Yasumitsu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryutaro Yasumitsu</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

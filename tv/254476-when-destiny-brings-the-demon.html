@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>献鱼</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2165598-arthur-chen" class="cast-card">
+            <a href="/actor/2165598-arthur-chen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rP046czFxScpvRiinBAwJtc3302.jpg" alt="Arthur Chen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arthur Chen</span>
             </a>
-            <a href="/actor/3066782-wang-yinglu" class="cast-card">
+            <a href="/actor/3066782-wang-yinglu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d6KZ9WWIGdiOtuU0kbxSIA53ng.jpg" alt="Wang Yinglu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wang Yinglu</span>
             </a>
-            <a href="/actor/2850866-wang-yiting" class="cast-card">
+            <a href="/actor/2850866-wang-yiting.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2Snv38YItpx3bQ4BMhDViHSh7qN.jpg" alt="Wang Yiting" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wang Yiting</span>
             </a>
-            <a href="/actor/3788274-gao-han" class="cast-card">
+            <a href="/actor/3788274-gao-han.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hMz9cKmW8tt7YWIigyAhsXG8qN4.jpg" alt="Gao Han" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gao Han</span>
             </a>
-            <a href="/actor/3149730-wu-yuheng" class="cast-card">
+            <a href="/actor/3149730-wu-yuheng.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1uygmqdtcY6boX98qBhQpk1T81E.jpg" alt="Wu Yuheng" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wu Yuheng</span>
             </a>
-            <a href="/actor/4120132-wang-yajia" class="cast-card">
+            <a href="/actor/4120132-wang-yajia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lmSbBxbedHZFLDpCRpEzm4ntzqq.jpg" alt="Wang Yajia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wang Yajia</span>
             </a>
-            <a href="/actor/2349719-zhao-shunran" class="cast-card">
+            <a href="/actor/2349719-zhao-shunran.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2J6CXckJOt3qol2c5lXf0Ge2ygI.jpg" alt="Zhao Shunran" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhao Shunran</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

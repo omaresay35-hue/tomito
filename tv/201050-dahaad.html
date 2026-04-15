@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>दहाड़</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/130958-sonakshi-sinha" class="cast-card">
+            <a href="/actor/130958-sonakshi-sinha.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7HaI5owaKzOb6Qdtwifp29uhHk2.jpg" alt="Sonakshi Sinha" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sonakshi Sinha</span>
             </a>
-            <a href="/actor/1551045-vijay-varma" class="cast-card">
+            <a href="/actor/1551045-vijay-varma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/SVKmw30OYNFqSZwZ8BCMBZjRtB.jpg" alt="Vijay Varma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vijay Varma</span>
             </a>
-            <a href="/actor/1047711-gulshan-devaiah" class="cast-card">
+            <a href="/actor/1047711-gulshan-devaiah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6fOS4P9KiPFvIuLyvIUfMyXiF29.jpg" alt="Gulshan Devaiah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gulshan Devaiah</span>
             </a>
-            <a href="/actor/1061615-sohum-shah" class="cast-card">
+            <a href="/actor/1061615-sohum-shah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5B7hSdq9hWEICHVxZtiL2ekwpzx.jpg" alt="Sohum Shah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sohum Shah</span>
             </a>
-            <a href="/actor/547430-zoa-morani" class="cast-card">
+            <a href="/actor/547430-zoa-morani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2gkmtmjCV0lgUt3zb0umELlURzW.jpg" alt="Zoa Morani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zoa Morani</span>
             </a>
-            <a href="/actor/1254496-jayati-bhatia" class="cast-card">
+            <a href="/actor/1254496-jayati-bhatia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lioVFD8df3rZO51iwZYYbxcMRaE.jpg" alt="Jayati Bhatia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jayati Bhatia</span>
             </a>
-            <a href="/actor/4066540-manyuu-doshi" class="cast-card">
+            <a href="/actor/4066540-manyuu-doshi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Manyuu Doshi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manyuu Doshi</span>
             </a>
-            <a href="/actor/2504877-sanghmitra-hitaishi" class="cast-card">
+            <a href="/actor/2504877-sanghmitra-hitaishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7ZjDpKiHuEdtenuwxBXR5H6Mqtc.jpg" alt="Sanghmitra Hitaishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sanghmitra Hitaishi</span>
             </a>
-            <a href="/actor/2398725-hemang-vyas" class="cast-card">
+            <a href="/actor/2398725-hemang-vyas.html" class="cast-card">
                 <img src="/favicon.ico" alt="Hemang Vyas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hemang Vyas</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

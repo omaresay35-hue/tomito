@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Les dents de la mer, un succès monstre</span>
   </nav>
 
@@ -71,35 +71,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3083483-nathalie-labarthe" class="cast-card">
+            <a href="/actor/3083483-nathalie-labarthe.html" class="cast-card">
                 <img src="/favicon.ico" alt="Nathalie Labarthe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nathalie Labarthe</span>
             </a>
-            <a href="/actor/8607-lorraine-gary" class="cast-card">
+            <a href="/actor/8607-lorraine-gary.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6JKNdZopypnFnD9xSSlDs6YTHMC.jpg" alt="Lorraine Gary" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lorraine Gary</span>
             </a>
-            <a href="/actor/8558-joe-alves" class="cast-card">
+            <a href="/actor/8558-joe-alves.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4JZz6fd5TpqexJzHTXOvgUpMioK.jpg" alt="Joe Alves" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joe Alves</span>
             </a>
-            <a href="/actor/8555-carl-gottlieb" class="cast-card">
+            <a href="/actor/8555-carl-gottlieb.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tXsKWTANoQLwLyXTUteuDcDIc8b.jpg" alt="Carl Gottlieb" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carl Gottlieb</span>
             </a>
-            <a href="/actor/59291-alexandre-aja" class="cast-card">
+            <a href="/actor/59291-alexandre-aja.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5uiPUg3mclsr6Ee3DXPsW1O1ric.jpg" alt="Alexandre Aja" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexandre Aja</span>
             </a>
-            <a href="/actor/2375343-wendy-benchley" class="cast-card">
+            <a href="/actor/2375343-wendy-benchley.html" class="cast-card">
                 <img src="/favicon.ico" alt="Wendy Benchley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wendy Benchley</span>
             </a>
-            <a href="/actor/12677-matthew-robbins" class="cast-card">
+            <a href="/actor/12677-matthew-robbins.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/abxZZtYWLhnliR572pJvhfyksnD.jpg" alt="Matthew Robbins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthew Robbins</span>
             </a>
-            <a href="/actor/17780-ian-shaw" class="cast-card">
+            <a href="/actor/17780-ian-shaw.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/giKb2Ix0rpeF4DIwWRPGJX1hdgw.jpg" alt="Ian Shaw" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ian Shaw</span>
             </a></div></section>
@@ -107,13 +107,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

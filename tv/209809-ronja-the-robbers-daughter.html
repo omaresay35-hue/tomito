@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Ronja Rövardotter</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2987313-kerstin-linden" class="cast-card">
+            <a href="/actor/2987313-kerstin-linden.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jjE1ByTco1iouGxOJrIt8ydJrAz.jpg" alt="Kerstin Linden" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kerstin Linden</span>
             </a>
-            <a href="/actor/3693574-jack-bergenholtz-henriksson" class="cast-card">
+            <a href="/actor/3693574-jack-bergenholtz-henriksson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ghWnbouqoVGu0OH0y3gRsOHccIl.jpg" alt="Jack Bergenholtz Henriksson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Bergenholtz Henriksson</span>
             </a>
-            <a href="/actor/1428298-christopher-wagelin" class="cast-card">
+            <a href="/actor/1428298-christopher-wagelin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pqo0mTnRcRvL0zDKaK2SCIxbdPZ.jpg" alt="Christopher Wagelin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christopher Wagelin</span>
             </a>
-            <a href="/actor/72482-krista-kosonen" class="cast-card">
+            <a href="/actor/72482-krista-kosonen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7iW2mxbxBgV5sX2y0fSY78lewW4.jpg" alt="Krista Kosonen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Krista Kosonen</span>
             </a>
-            <a href="/actor/87663-sverrir-gudnason" class="cast-card">
+            <a href="/actor/87663-sverrir-gudnason.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ko2kPadRWZG8pPVRWCXqWy8TGbT.jpg" alt="Sverrir Gudnason" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sverrir Gudnason</span>
             </a>
-            <a href="/actor/2040609-maria-nohra" class="cast-card">
+            <a href="/actor/2040609-maria-nohra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xUrAl2p0XGkOoEzWLPr6saEs2gI.jpg" alt="Maria Nohra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maria Nohra</span>
             </a>
-            <a href="/actor/88911-johan-ulveson" class="cast-card">
+            <a href="/actor/88911-johan-ulveson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hfH1DTcaY3gE1ReDwn2045GGVIF.jpg" alt="Johan Ulveson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Johan Ulveson</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

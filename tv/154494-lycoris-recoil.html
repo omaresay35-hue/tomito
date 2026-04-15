@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,23 +75,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1324927-chika-anzai" class="cast-card">
+            <a href="/actor/1324927-chika-anzai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lk3Az9O67qrXR69rctwDDHWqi9d.jpg" alt="Chika Anzai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chika Anzai</span>
             </a>
-            <a href="/actor/2363904-shion-wakayama" class="cast-card">
+            <a href="/actor/2363904-shion-wakayama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/b697ggFreuliEfl4TjLgxhJCQXr.jpg" alt="Shion Wakayama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shion Wakayama</span>
             </a>
-            <a href="/actor/1220947-ami-koshimizu" class="cast-card">
+            <a href="/actor/1220947-ami-koshimizu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e5sU0stGjTMtFoj0jjHH7OFUqYC.jpg" alt="Ami Koshimizu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ami Koshimizu</span>
             </a>
-            <a href="/actor/151182-misaki-kuno" class="cast-card">
+            <a href="/actor/151182-misaki-kuno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hVtE4gdKaqofYZmXXtlJs4Q9XTL.jpg" alt="Misaki Kuno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Misaki Kuno</span>
             </a>
-            <a href="/actor/3272337-kosuke-sakaki" class="cast-card">
+            <a href="/actor/3272337-kosuke-sakaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vRekZ84PwkHoxvQXmPFKFe0rPga.jpg" alt="Kosuke Sakaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kosuke Sakaki</span>
             </a></div></section>
@@ -99,13 +99,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

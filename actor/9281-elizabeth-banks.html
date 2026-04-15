@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1078959-a-mistake">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1078959-a-mistake.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/j6bpNu94Nah75ED2WQVxt2iOX.jpg" alt="A Mistake — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Mistake</div></div>
-    </a>    <a class="card" href="/movie/1144911-skincare">
+    </a>    <a class="card" href="/movie/1144911-skincare.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ikPzv7el0RcBhtXj3ElCoH54icd.jpg" alt="Skincare — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Skincare</div></div>
-    </a>    <a class="card" href="/movie/10523-w">
+    </a>    <a class="card" href="/movie/10523-w.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nJm8UF4zbUYEoku9seEtz1PTJGS.jpg" alt="W. — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">W.</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/250220-the-miniature-wife">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/250220-the-miniature-wife.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/99SkFAS3S3iOtnplwH0byFUMiHK.jpg" alt="The Miniature Wife — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Miniature Wife</div></div>
-    </a>    <a class="card" href="/tv/253321-the-better-sister">
+    </a>    <a class="card" href="/tv/253321-the-better-sister.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vd1vEp1cKOkimarpuykswWR63Eg.jpg" alt="The Better Sister — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Better Sister</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

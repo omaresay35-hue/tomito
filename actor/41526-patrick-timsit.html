@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ Description above from the Wikipedia article Patrick Timsit, licensed under CC-B
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1306293-it-takes-two-to-tango">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1306293-it-takes-two-to-tango.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gBT1mJ2E7K8QqOM0HVtStlBElvV.jpg" alt="It Takes Two To Tango — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">It Takes Two To Tango</div></div>
-    </a>    <a class="card" href="/movie/1084869-fallen-from-the-truck">
+    </a>    <a class="card" href="/movie/1084869-fallen-from-the-truck.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/72BeUUNeKsXs7jeOKjY104UgEa6.jpg" alt="Fallen from the Truck — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fallen from the Truck</div></div>
-    </a>    <a class="card" href="/movie/245679-les-enfoirés-1999-dernière-édition-avant-lan-2000">
+    </a>    <a class="card" href="/movie/245679-les-enfoirés-1999-dernière-édition-avant-lan-2000.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fXlnlDn4jm10pkLEiLqr6z3xDkS.jpg" alt="Les Enfoirés 1999 - Dernière édition avant l'an 2000 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Les Enfoirés 1999 - Dernière édition avant l'an 2000</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/237052-the-lost-station-girls">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/237052-the-lost-station-girls.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/282rRZ3wKntv82FPZ3qMnAsNMkV.jpg" alt="The Lost Station Girls — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Lost Station Girls</div></div>
@@ -94,13 +94,6 @@ Description above from the Wikipedia article Patrick Timsit, licensed under CC-B
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ Description above from the Wikipedia article Jean-Pierre Darroussin,licensed und
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1440304-mauvaise-pioche">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1440304-mauvaise-pioche.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bLKDM4BEowhzck0Bdhy2hbMDecp.jpg" alt="Mauvaise Pioche — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Mauvaise Pioche</div></div>
-    </a>    <a class="card" href="/movie/1002158-vultures">
+    </a>    <a class="card" href="/movie/1002158-vultures.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wXkKQ6OZFsistB2cn8KDOaCuTfY.jpg" alt="Vultures — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Vultures</div></div>
-    </a>    <a class="card" href="/movie/1175267-the-thieving-magpie">
+    </a>    <a class="card" href="/movie/1175267-the-thieving-magpie.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lvNpUwVOlj9hoY0JiH5b5OHh9SJ.jpg" alt="The Thieving Magpie — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Thieving Magpie</div></div>
-    </a>    <a class="card" href="/movie/1000965-juliette-in-spring">
+    </a>    <a class="card" href="/movie/1000965-juliette-in-spring.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tAsdLuwi7JVoHQvMRpn95JBXBrO.jpg" alt="Juliette in Spring — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Juliette in Spring</div></div>
@@ -94,13 +94,6 @@ Description above from the Wikipedia article Jean-Pierre Darroussin,licensed und
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

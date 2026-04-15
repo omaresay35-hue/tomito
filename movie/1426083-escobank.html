@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>אסקובנק</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/584178-zohar-liba" class="cast-card">
+            <a href="/actor/584178-zohar-liba.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/JOuu3OC5chyRXm5DtRwrbBabM0.jpg" alt="Zohar Liba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zohar Liba</span>
             </a>
-            <a href="/actor/1245994-dana-frider" class="cast-card">
+            <a href="/actor/1245994-dana-frider.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kjm7j6Wr6lOOuCUZjASsEHblwS8.jpg" alt="Dana Frider" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dana Frider</span>
             </a>
-            <a href="/actor/1027673-angel-bonanni" class="cast-card">
+            <a href="/actor/1027673-angel-bonanni.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3YJrxH2yeIwSQJb4bwKVZbSBjDs.jpg" alt="Angel Bonanni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Angel Bonanni</span>
             </a>
-            <a href="/actor/1568397-george-iskandar" class="cast-card">
+            <a href="/actor/1568397-george-iskandar.html" class="cast-card">
                 <img src="/favicon.ico" alt="George Iskandar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>George Iskandar</span>
             </a>
-            <a href="/actor/1074701-rodrigo-poisón" class="cast-card">
+            <a href="/actor/1074701-rodrigo-poisón.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2fWGOpybjl8P54cTiH5DF60YgjX.jpg" alt="Rodrigo Poisón" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rodrigo Poisón</span>
             </a>
-            <a href="/actor/1637076-harlys-becerra" class="cast-card">
+            <a href="/actor/1637076-harlys-becerra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/klDB0a7YXBYH6JGWLZeTxojjmIK.jpg" alt="Harlys Becerra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Harlys Becerra</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

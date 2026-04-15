@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/970947-the-shrouds">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/970947-the-shrouds.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6J4lPto3rjlHZwhIhCy9cOWNnqb.jpg" alt="The Shrouds — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Shrouds</div></div>
-    </a>    <a class="card" href="/movie/1265623-banger">
+    </a>    <a class="card" href="/movie/1265623-banger.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5boTARNEddfrihsKRBhyvHwoC7Z.jpg" alt="Banger — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Banger</div></div>
-    </a>    <a class="card" href="/movie/1056652-saint-exupéry">
+    </a>    <a class="card" href="/movie/1056652-saint-exupéry.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1DBZpPdoLbBd0pfK7nFa6NtqzJG.jpg" alt="Saint-Exupéry — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Saint-Exupéry</div></div>
-    </a>    <a class="card" href="/movie/1105407-damaged">
+    </a>    <a class="card" href="/movie/1105407-damaged.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tMO0YLXgJZBnIAjoTSz26zE33YN.jpg" alt="Damaged — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Damaged</div></div>
-    </a>    <a class="card" href="/movie/10047-the-messenger-the-story-of-joan-of-arc">
+    </a>    <a class="card" href="/movie/10047-the-messenger-the-story-of-joan-of-arc.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lFzOGA2LPdOfQyhEiY74uDf2WKa.jpg" alt="The Messenger: The Story of Joan of Arc — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Messenger: The Story of Joan of Arc</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/221120-fiasco">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/221120-fiasco.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mxzF3PMICswCoPxHmkQVYV7XRkU.jpg" alt="Fiasco — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fiasco</div></div>
-    </a>    <a class="card" href="/tv/128066-liaison">
+    </a>    <a class="card" href="/tv/128066-liaison.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jwxlxMJxHW0TElgK6xnIOIwe9rb.jpg" alt="Liaison — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Liaison</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

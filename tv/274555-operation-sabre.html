@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Sablja</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/31648-dragan-mićanović" class="cast-card">
+            <a href="/actor/31648-dragan-mićanović.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1KVYAxi8hUZ9T6qqYJb3U3a028U.jpg" alt="Dragan Mićanović" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dragan Mićanović</span>
             </a>
-            <a href="/actor/2256336-milica-gojković" class="cast-card">
+            <a href="/actor/2256336-milica-gojković.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yFsYwJjfIZArg7EI8UXI7eLhvrN.jpg" alt="Milica Gojković" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Milica Gojković</span>
             </a>
-            <a href="/actor/110979-ljubomir-bandović" class="cast-card">
+            <a href="/actor/110979-ljubomir-bandović.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ptr55jShDwRKHBqHs6RboAtSlUx.jpg" alt="Ljubomir Bandović" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ljubomir Bandović</span>
             </a>
-            <a href="/actor/5006331-lazar-tasić" class="cast-card">
+            <a href="/actor/5006331-lazar-tasić.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lazar Tasić" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lazar Tasić</span>
             </a>
-            <a href="/actor/1411059-marko-marković" class="cast-card">
+            <a href="/actor/1411059-marko-marković.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sdxHXX9nUXKy8Qs95SG4GZGgqV3.jpg" alt="Marko Marković" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marko Marković</span>
             </a>
-            <a href="/actor/201706-jasmin-geljo" class="cast-card">
+            <a href="/actor/201706-jasmin-geljo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/96NJKCZWL72XVAiFe7ALIpg1m9z.jpg" alt="Jasmin Geljo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jasmin Geljo</span>
             </a>
-            <a href="/actor/4159466-milica-filić" class="cast-card">
+            <a href="/actor/4159466-milica-filić.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/idxAR8UREyEGXYbaimnetz1IEzz.jpg" alt="Milica Filić" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Milica Filić</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

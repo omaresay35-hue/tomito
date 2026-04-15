@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,15 +73,15 @@ Mark Douglas Brown McKinney (born June 26, 1959) is a Canadian comedian and acto
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1300963-scared-shitless">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1300963-scared-shitless.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bTYCQcbitzUfBYVzq1eKGDNOgNS.jpg" alt="Scared Shitless — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Scared Shitless</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/279299-snl50-beyond-saturday-night">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/279299-snl50-beyond-saturday-night.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/iXlBEeqiO8kc6xE4mDQ0WdmFMK8.jpg" alt="SNL50: Beyond Saturday Night — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">SNL50: Beyond Saturday Night</div></div>
-    </a>    <a class="card" href="/tv/155-3rd-rock-from-the-sun">
+    </a>    <a class="card" href="/tv/155-3rd-rock-from-the-sun.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sUB4lZghNnwQywKqgjIfJsyBqI2.jpg" alt="3rd Rock from the Sun — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">3rd Rock from the Sun</div></div>
@@ -90,13 +90,6 @@ Mark Douglas Brown McKinney (born June 26, 1959) is a Canadian comedian and acto
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

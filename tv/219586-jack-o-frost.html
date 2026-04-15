@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ジャックフロスト</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3007964-kyoya-honda" class="cast-card">
+            <a href="/actor/3007964-kyoya-honda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fsbJgDmEm3lmn0SS6D609A6jfRq.jpg" alt="Kyoya Honda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kyoya Honda</span>
             </a>
-            <a href="/actor/3909512-kosuke-suzuki" class="cast-card">
+            <a href="/actor/3909512-kosuke-suzuki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vPu0RyzcIF57CbsQwd192VxXvlz.jpg" alt="Kosuke Suzuki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kosuke Suzuki</span>
             </a>
-            <a href="/actor/3687598-shoot-mori" class="cast-card">
+            <a href="/actor/3687598-shoot-mori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xI8glOtpHh62wevI7gV3a5xS5yb.jpg" alt="Shoot Mori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shoot Mori</span>
             </a>
-            <a href="/actor/2446657-kilala-inori" class="cast-card">
+            <a href="/actor/2446657-kilala-inori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jtKSlhPPl8MYeUSmZo3TCC4m397.jpg" alt="Kilala Inori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kilala Inori</span>
             </a>
-            <a href="/actor/3949275-leo-matsumoto" class="cast-card">
+            <a href="/actor/3949275-leo-matsumoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jU1mSQSS7gLn7XhO3JLWArJfZn8.jpg" alt="Leo Matsumoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leo Matsumoto</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

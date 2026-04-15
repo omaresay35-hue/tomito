@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>贄姫と獣の王</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/119143-kana-hanazawa" class="cast-card">
+            <a href="/actor/119143-kana-hanazawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5bK9ttcRydQBWmyZp7gXDmJYOPF.jpg" alt="Kana Hanazawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kana Hanazawa</span>
             </a>
-            <a href="/actor/224413-satoshi-hino" class="cast-card">
+            <a href="/actor/224413-satoshi-hino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8ZJIiwIVF2zDyyFr7oXewj0eEuu.jpg" alt="Satoshi Hino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Satoshi Hino</span>
             </a>
-            <a href="/actor/222350-takuma-terashima" class="cast-card">
+            <a href="/actor/222350-takuma-terashima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n5uCihb318AzQCT9gieMlI2ueYL.jpg" alt="Takuma Terashima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takuma Terashima</span>
             </a>
-            <a href="/actor/1922616-yuka-nukui" class="cast-card">
+            <a href="/actor/1922616-yuka-nukui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bTFcrrgj9B8QAXa1NKqlsrdwWka.jpg" alt="Yuka Nukui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuka Nukui</span>
             </a>
-            <a href="/actor/1717121-natsumi-fujiwara" class="cast-card">
+            <a href="/actor/1717121-natsumi-fujiwara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9B9NICRp2li1SA3VF7vyIAxQ0x9.jpg" alt="Natsumi Fujiwara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natsumi Fujiwara</span>
             </a>
-            <a href="/actor/1164931-megumi-han" class="cast-card">
+            <a href="/actor/1164931-megumi-han.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cwnwrPg1YvB19TbfouC4ShGPmbQ.jpg" alt="Megumi Han" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Megumi Han</span>
             </a>
-            <a href="/actor/2020073-chikahiro-kobayashi" class="cast-card">
+            <a href="/actor/2020073-chikahiro-kobayashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dD0xdWLQubyRKAnI3rWpeV35XxD.jpg" alt="Chikahiro Kobayashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chikahiro Kobayashi</span>
             </a>
-            <a href="/actor/225996-hiroyuki-yoshino" class="cast-card">
+            <a href="/actor/225996-hiroyuki-yoshino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nZQbjjvAjPpjGYenY7kLDtW9e7N.jpg" alt="Hiroyuki Yoshino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiroyuki Yoshino</span>
             </a>
-            <a href="/actor/1256915-tasuku-hatanaka" class="cast-card">
+            <a href="/actor/1256915-tasuku-hatanaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xPDqoxAia1ShoVC2aMS2ZDPDWzG.jpg" alt="Tasuku Hatanaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tasuku Hatanaka</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

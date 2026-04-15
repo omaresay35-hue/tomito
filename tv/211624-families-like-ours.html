@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Familier som vores</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3726452-amaryllis-august" class="cast-card">
+            <a href="/actor/3726452-amaryllis-august.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kXBzNBaO1fzA2qu25zPjAKKs4bs.jpg" alt="Amaryllis August" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amaryllis August</span>
             </a>
-            <a href="/actor/1552847-albert-rudbeck-lindhardt" class="cast-card">
+            <a href="/actor/1552847-albert-rudbeck-lindhardt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iEvh3kr3ZTfxjUdWvXCLPUUsx.jpg" alt="Albert Rudbeck Lindhardt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Albert Rudbeck Lindhardt</span>
             </a>
-            <a href="/actor/1018-nikolaj-lie-kaas" class="cast-card">
+            <a href="/actor/1018-nikolaj-lie-kaas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zRu68e0GSwHJC7QOcbO77xIAM9J.jpg" alt="Nikolaj Lie Kaas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nikolaj Lie Kaas</span>
             </a>
-            <a href="/actor/4458-paprika-steen" class="cast-card">
+            <a href="/actor/4458-paprika-steen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/c0OSsG2akVhYMOrCd3EYNGY4AuN.jpg" alt="Paprika Steen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paprika Steen</span>
             </a>
-            <a href="/actor/136774-helene-reingaard-neumann" class="cast-card">
+            <a href="/actor/136774-helene-reingaard-neumann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1ctv638jZwpi94O6xY6SbbmECA.jpg" alt="Helene Reingaard Neumann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Helene Reingaard Neumann</span>
             </a>
-            <a href="/actor/1178384-esben-smed" class="cast-card">
+            <a href="/actor/1178384-esben-smed.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qqEvYkomcDyAxMy4psx9OpUeKxq.jpg" alt="Esben Smed" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Esben Smed</span>
             </a>
-            <a href="/actor/1438708-magnus-millang" class="cast-card">
+            <a href="/actor/1438708-magnus-millang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/z0jM63yPLymCkVhc9WcG5xUFbjn.jpg" alt="Magnus Millang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Magnus Millang</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

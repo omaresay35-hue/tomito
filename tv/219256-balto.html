@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>بالطو</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3462256-essam-omar" class="cast-card">
+            <a href="/actor/3462256-essam-omar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bpOORNk7UudRmwuiyVXp0n6c9Ph.jpg" alt="Essam Omar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Essam Omar</span>
             </a>
-            <a href="/actor/1714493-mohamed-mahmoud" class="cast-card">
+            <a href="/actor/1714493-mohamed-mahmoud.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h49gpgK9zVsrXOeBxb2mYbf27Pg.jpg" alt="Mohamed Mahmoud" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mohamed Mahmoud</span>
             </a>
-            <a href="/actor/2059006-arefa-abdul-rasoul" class="cast-card">
+            <a href="/actor/2059006-arefa-abdul-rasoul.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3RZjDahSEjVwIOVJwhcvtSfxkLf.jpg" alt="Arefa Abdul Rasoul" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arefa Abdul Rasoul</span>
             </a>
-            <a href="/actor/578041-mahmoud-el-bezzawy" class="cast-card">
+            <a href="/actor/578041-mahmoud-el-bezzawy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zSEhTEA07ZE4xchHU5SDwOOytmr.jpg" alt="Mahmoud El-Bezzawy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mahmoud El-Bezzawy</span>
             </a>
-            <a href="/actor/1941636-mahmoud-hafez" class="cast-card">
+            <a href="/actor/1941636-mahmoud-hafez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j3rqnfwdNttoKOoVUphD7APd9cy.jpg" alt="Mahmoud Hafez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mahmoud Hafez</span>
             </a>
-            <a href="/actor/3964943-mariam-el-gendy" class="cast-card">
+            <a href="/actor/3964943-mariam-el-gendy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zTVLSYAuZ5G14Ml3TYZ5TdkBfex.jpg" alt="Mariam El Gendy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariam El Gendy</span>
             </a>
-            <a href="/actor/3312291-sulafa-ghanem" class="cast-card">
+            <a href="/actor/3312291-sulafa-ghanem.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yJQoYeLkrFpc7Tcs9ZrDjy6A2FZ.jpg" alt="Sulafa Ghanem" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sulafa Ghanem</span>
             </a>
-            <a href="/actor/3107829-reda-idrees" class="cast-card">
+            <a href="/actor/3107829-reda-idrees.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6un4MDejWtRmDckQhI2IddNuTgv.jpg" alt="Reda Idrees" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reda Idrees</span>
             </a>
-            <a href="/actor/3366655-waleed-el-moghazy" class="cast-card">
+            <a href="/actor/3366655-waleed-el-moghazy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4Y0vIDDoy3vXEgkH77pNYFdiEtP.jpg" alt="Waleed El Moghazy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Waleed El Moghazy</span>
             </a>
-            <a href="/actor/3900232-donia-sami" class="cast-card">
+            <a href="/actor/3900232-donia-sami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a8ZSmhmj4W7Fld7QcMQTNu2QNDz.jpg" alt="Donia Sami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Donia Sami</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

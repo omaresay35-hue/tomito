@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1318417-a-place-for-her">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1318417-a-place-for-her.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1CUXmCLU9DkZHH8w4w43ZvOdVTd.jpg" alt="A Place for Her — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Place for Her</div></div>
-    </a>    <a class="card" href="/movie/1429348-the-stranger">
+    </a>    <a class="card" href="/movie/1429348-the-stranger.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nPv3Ay5ZzrCmmI3Mc5Q19Tut4ao.jpg" alt="The Stranger — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Stranger</div></div>
-    </a>    <a class="card" href="/movie/1284460-alpha">
+    </a>    <a class="card" href="/movie/1284460-alpha.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/PvdD2gTqSZfFWclP9ee4bqCn0B.jpg" alt="Alpha — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Alpha</div></div>
-    </a>    <a class="card" href="/movie/1083324-a-mothers-special-love">
+    </a>    <a class="card" href="/movie/1083324-a-mothers-special-love.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4MPZenW0I0AexBbil8das6kupIW.jpg" alt="A Mother's Special Love — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Mother's Special Love</div></div>
-    </a>    <a class="card" href="/movie/1001736-meet-the-barbarians">
+    </a>    <a class="card" href="/movie/1001736-meet-the-barbarians.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xGacUz5IkYrRtp6MEiiy3hKOte.jpg" alt="Meet the Barbarians — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Meet the Barbarians</div></div>
-    </a>    <a class="card" href="/movie/1158416-for-night-will-come">
+    </a>    <a class="card" href="/movie/1158416-for-night-will-come.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vdZkWuvFiunCI5RtbYbnaPbNT3m.jpg" alt="For Night Will Come — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">For Night Will Come</div></div>
-    </a>    <a class="card" href="/movie/1083412-on-the-pulse">
+    </a>    <a class="card" href="/movie/1083412-on-the-pulse.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1pC4IM6oFclxRR9f3roSuBZCAnQ.jpg" alt="On the Pulse — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">On the Pulse</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

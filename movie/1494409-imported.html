@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Imported</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4241116-edgar-sosa" class="cast-card">
+            <a href="/actor/4241116-edgar-sosa.html" class="cast-card">
                 <img src="/favicon.ico" alt="Edgar Sosa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Edgar Sosa</span>
             </a>
-            <a href="/actor/1659484-james-gist" class="cast-card">
+            <a href="/actor/1659484-james-gist.html" class="cast-card">
                 <img src="/favicon.ico" alt="James Gist" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Gist</span>
             </a>
-            <a href="/actor/5655418-lindsey-pulliam" class="cast-card">
+            <a href="/actor/5655418-lindsey-pulliam.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lindsey Pulliam" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lindsey Pulliam</span>
             </a>
-            <a href="/actor/5655419-michael-creppy-jr" class="cast-card">
+            <a href="/actor/5655419-michael-creppy-jr.html" class="cast-card">
                 <img src="/favicon.ico" alt="Michael Creppy Jr." loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Creppy Jr.</span>
             </a>
-            <a href="/actor/5229626-marcus-williams" class="cast-card">
+            <a href="/actor/5229626-marcus-williams.html" class="cast-card">
                 <img src="/favicon.ico" alt="Marcus Williams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marcus Williams</span>
             </a>
-            <a href="/actor/5655420-kaili-mclaren" class="cast-card">
+            <a href="/actor/5655420-kaili-mclaren.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kaili McLaren" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaili McLaren</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

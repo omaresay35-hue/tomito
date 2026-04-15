@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1325734-the-drama">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1325734-the-drama.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ikcNOWB6Qo1ER1H1BJL6Vf0W22s.jpg" alt="The Drama — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Drama</div></div>
-    </a>    <a class="card" href="/movie/1317288-marty-supreme">
+    </a>    <a class="card" href="/movie/1317288-marty-supreme.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg" alt="Marty Supreme — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Marty Supreme</div></div>
-    </a>    <a class="card" href="/movie/1033148-die-my-love">
+    </a>    <a class="card" href="/movie/1033148-die-my-love.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kajpShbFhOdpl6yCrLezMrr9tB4.jpg" alt="Die My Love — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Die My Love</div></div>
-    </a>    <a class="card" href="/movie/696506-mickey-17">
+    </a>    <a class="card" href="/movie/696506-mickey-17.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/edKpE9B5qN3e559OuMCLZdW1iBZ.jpg" alt="Mickey 17 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Mickey 17</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/229516-superpowered-the-dc-story">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/229516-superpowered-the-dc-story.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2MKY8LIUIXPNUHIWneadd5dqPXF.jpg" alt="Superpowered: The DC Story — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Superpowered: The DC Story</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

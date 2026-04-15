@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Danefæ</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/82352-lene-maria-christensen" class="cast-card">
+            <a href="/actor/82352-lene-maria-christensen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rTHz4YxAbgiasgsWhRC4DP6LQ3A.jpg" alt="Lene Maria Christensen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lene Maria Christensen</span>
             </a>
-            <a href="/actor/1184-anders-w-berthelsen" class="cast-card">
+            <a href="/actor/1184-anders-w-berthelsen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yEaRQLSOTcGsVHCkKEusb6PfUCE.jpg" alt="Anders W. Berthelsen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anders W. Berthelsen</span>
             </a>
-            <a href="/actor/1032398-fanny-leander-bornedal" class="cast-card">
+            <a href="/actor/1032398-fanny-leander-bornedal.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jR8BnGjOEwOggSXddSE7JtOXDvp.jpg" alt="Fanny Leander Bornedal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fanny Leander Bornedal</span>
             </a>
-            <a href="/actor/135945-petrine-agger" class="cast-card">
+            <a href="/actor/135945-petrine-agger.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wjzYZU9Gxj979MYeGpjwTZxGUzf.jpg" alt="Petrine Agger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Petrine Agger</span>
             </a>
-            <a href="/actor/2847036-sara-fanta-traore" class="cast-card">
+            <a href="/actor/2847036-sara-fanta-traore.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oiF49QXbeigudK7agvFAlAAgP5B.jpg" alt="Sara Fanta Traore" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sara Fanta Traore</span>
             </a>
-            <a href="/actor/110604-joen-højerslev" class="cast-card">
+            <a href="/actor/110604-joen-højerslev.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/LuHMKVKFU8PQ66e6t8TqdGhfKI.jpg" alt="Joen Højerslev" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joen Højerslev</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

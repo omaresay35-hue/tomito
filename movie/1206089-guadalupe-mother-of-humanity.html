@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,27 +75,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4460504-alejandro-márquez" class="cast-card">
+            <a href="/actor/4460504-alejandro-márquez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alejandro Márquez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alejandro Márquez</span>
             </a>
-            <a href="/actor/3201974-pepe-vázquez" class="cast-card">
+            <a href="/actor/3201974-pepe-vázquez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Pepe Vázquez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pepe Vázquez</span>
             </a>
-            <a href="/actor/563429-karyme-lozano" class="cast-card">
+            <a href="/actor/563429-karyme-lozano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9HyAFx5osBwZ1M8sxxqMCDPzEQ8.jpg" alt="Karyme Lozano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karyme Lozano</span>
             </a>
-            <a href="/actor/4460507-angélica-chong" class="cast-card">
+            <a href="/actor/4460507-angélica-chong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nuRCHVl3hIO40ovHgn8TsfnJL7W.jpg" alt="Angélica Chong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Angélica Chong</span>
             </a>
-            <a href="/actor/4460508-mario-alberto-hernández" class="cast-card">
+            <a href="/actor/4460508-mario-alberto-hernández.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tOU89QfCNvHTd2z0UTecerlbZBs.jpg" alt="Mario Alberto Hernández" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mario Alberto Hernández</span>
             </a>
-            <a href="/actor/100820-emilio-linder" class="cast-card">
+            <a href="/actor/100820-emilio-linder.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gdIfIUzkTmRmPZEI1YyccJTCwES.jpg" alt="Emilio Linder" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emilio Linder</span>
             </a></div></section>
@@ -103,13 +103,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

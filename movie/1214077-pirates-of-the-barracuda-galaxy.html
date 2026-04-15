@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Пираты галактики Барракуда</span>
   </nav>
 
@@ -71,39 +71,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4414462-boris-deykov" class="cast-card">
+            <a href="/actor/4414462-boris-deykov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iHeIm1IMhfEQjiTJLI3ZtYwl381.jpg" alt="Boris Deykov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Boris Deykov</span>
             </a>
-            <a href="/actor/1817937-polina-gukhman" class="cast-card">
+            <a href="/actor/1817937-polina-gukhman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8OFGx0ECiKIdIiBsieq2wndKCm5.jpg" alt="Polina Gukhman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Polina Gukhman</span>
             </a>
-            <a href="/actor/2223567-aleksey-onezhen" class="cast-card">
+            <a href="/actor/2223567-aleksey-onezhen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1aESLXHjconEufqkJmIOUhvcJsB.jpg" alt="Aleksey Onezhen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aleksey Onezhen</span>
             </a>
-            <a href="/actor/238130-yuri-kolokolnikov" class="cast-card">
+            <a href="/actor/238130-yuri-kolokolnikov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/77g4exFoU4FvCWoWVgn6aXR01rA.jpg" alt="Yuri Kolokolnikov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuri Kolokolnikov</span>
             </a>
-            <a href="/actor/1538786-lukerya-ilyashenko" class="cast-card">
+            <a href="/actor/1538786-lukerya-ilyashenko.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uc8bGkZSsdaafi7EuZTcPy86UJT.jpg" alt="Lukerya Ilyashenko" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lukerya Ilyashenko</span>
             </a>
-            <a href="/actor/1257180-roman-kurtsyn" class="cast-card">
+            <a href="/actor/1257180-roman-kurtsyn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gvcPUusj3CFikNRyqquE4o5byjH.jpg" alt="Roman Kurtsyn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Roman Kurtsyn</span>
             </a>
-            <a href="/actor/1466773-sofia-lebedeva" class="cast-card">
+            <a href="/actor/1466773-sofia-lebedeva.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yeJurGCq0a3eKFGt97jFTrcYV45.jpg" alt="Sofia Lebedeva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sofia Lebedeva</span>
             </a>
-            <a href="/actor/586005-olga-naumenko" class="cast-card">
+            <a href="/actor/586005-olga-naumenko.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yfM4Sagn6x3tjPsCQdZxI9N0unD.jpg" alt="Olga Naumenko" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olga Naumenko</span>
             </a>
-            <a href="/actor/1122961-tatyana-rasskazova" class="cast-card">
+            <a href="/actor/1122961-tatyana-rasskazova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3DOe7gHylyFOSfMojqfgOAahDoj.jpg" alt="Tatyana Rasskazova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tatyana Rasskazova</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

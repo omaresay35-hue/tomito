@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>كل الضوء الذي لا يمكننا رؤيته</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3378441-aria-mia-loberti" class="cast-card">
+            <a href="/actor/3378441-aria-mia-loberti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6aLn0vNVIRD2dAivEwB6WHV3N8o.jpg" alt="Aria Mia Loberti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aria Mia Loberti</span>
             </a>
-            <a href="/actor/1037348-louis-hofmann" class="cast-card">
+            <a href="/actor/1037348-louis-hofmann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m3Mo38afbKmy9EOsfmUagvTFM9q.jpg" alt="Louis Hofmann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louis Hofmann</span>
             </a>
-            <a href="/actor/111420-lars-eidinger" class="cast-card">
+            <a href="/actor/111420-lars-eidinger.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AgQkNqDz8gR5kNd6aqMzK9e0oD.jpg" alt="Lars Eidinger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lars Eidinger</span>
             </a>
-            <a href="/actor/41419-hugh-laurie" class="cast-card">
+            <a href="/actor/41419-hugh-laurie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/akArncggHnusP5jxzMBKmJDRrMo.jpg" alt="Hugh Laurie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hugh Laurie</span>
             </a>
-            <a href="/actor/103-mark-ruffalo" class="cast-card">
+            <a href="/actor/103-mark-ruffalo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5GilHMOt5PAQh6rlUKZzGmaKEI7.jpg" alt="Mark Ruffalo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Ruffalo</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>جزيرة الأشكال</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1803286-gideon-adlon" class="cast-card">
+            <a href="/actor/1803286-gideon-adlon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l8BSlg87Mn75n28P2aXzot6G0pi.jpg" alt="Gideon Adlon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gideon Adlon</span>
             </a>
-            <a href="/actor/66580-scott-adsit" class="cast-card">
+            <a href="/actor/66580-scott-adsit.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vbbuugUWrZhxA7ASWYiGqdZ6Dtf.jpg" alt="Scott Adsit" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Scott Adsit</span>
             </a>
-            <a href="/actor/210172-harvey-guillén" class="cast-card">
+            <a href="/actor/210172-harvey-guillén.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yiNBonobPwqMVweB02JWufzp2l9.jpg" alt="Harvey Guillén" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Harvey Guillén</span>
             </a>
-            <a href="/actor/111513-yvette-nicole-brown" class="cast-card">
+            <a href="/actor/111513-yvette-nicole-brown.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7cJowCcDPnyXqHJ46GgSNHomUGo.jpg" alt="Yvette Nicole Brown" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yvette Nicole Brown</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

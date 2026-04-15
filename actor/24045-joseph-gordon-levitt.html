@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/812583-wake-up-dead-man-a-knives-out-mystery">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/812583-wake-up-dead-man-a-knives-out-mystery.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qCOGGi8JBVEZMc3DVby8rUivyXz.jpg" alt="Wake Up Dead Man: A Knives Out Mystery — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wake Up Dead Man: A Knives Out Mystery</div></div>
-    </a>    <a class="card" href="/movie/1108566-killer-heat">
+    </a>    <a class="card" href="/movie/1108566-killer-heat.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/WiAEiqelck0NGWplhL5JQR12eg.jpg" alt="Killer Heat — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Killer Heat</div></div>
-    </a>    <a class="card" href="/movie/974250-greedy-people">
+    </a>    <a class="card" href="/movie/974250-greedy-people.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/aIUZiciO0nMh8MrhmsTaMWZvEWK.jpg" alt="Greedy People — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Greedy People</div></div>
-    </a>    <a class="card" href="/movie/280180-beverly-hills-cop-axel-f">
+    </a>    <a class="card" href="/movie/280180-beverly-hills-cop-axel-f.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zszRKfzjM5jltiq8rk6rasKVpUv.jpg" alt="Beverly Hills Cop: Axel F — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Beverly Hills Cop: Axel F</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/120998-poker-face">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/120998-poker-face.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8Xm5dyMQC9whMJKnGdFugUAW73C.jpg" alt="Poker Face — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Poker Face</div></div>
-    </a>    <a class="card" href="/tv/126301-super-pumped-the-battle-for-uber">
+    </a>    <a class="card" href="/tv/126301-super-pumped-the-battle-for-uber.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rGZ7Hv2VvPHKM0Pav6cHyX4jaLN.jpg" alt="Super Pumped: The Battle for Uber — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Super Pumped: The Battle for Uber</div></div>
-    </a>    <a class="card" href="/tv/155-3rd-rock-from-the-sun">
+    </a>    <a class="card" href="/tv/155-3rd-rock-from-the-sun.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sUB4lZghNnwQywKqgjIfJsyBqI2.jpg" alt="3rd Rock from the Sun — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">3rd Rock from the Sun</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

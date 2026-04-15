@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1618941-mandioca-frita">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1618941-mandioca-frita.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/niDeR6vC7mQka0rHzfNmKn8EmPk.jpg" alt="Mandioca Frita — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Mandioca Frita</div></div>
-    </a>    <a class="card" href="/movie/1002161-transamazonia">
+    </a>    <a class="card" href="/movie/1002161-transamazonia.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zHV02lJqwmYMqxZeezaQk1mwCTL.jpg" alt="Transamazonia — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Transamazonia</div></div>
-    </a>    <a class="card" href="/movie/1212121-latin-blood-the-ballad-of-ney-matogrosso">
+    </a>    <a class="card" href="/movie/1212121-latin-blood-the-ballad-of-ney-matogrosso.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uk2g9LNwSHEsDjwTEBLNb38kcRM.jpg" alt="Latin Blood – The Ballad of Ney Matogrosso — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Latin Blood – The Ballad of Ney Matogrosso</div></div>
-    </a>    <a class="card" href="/movie/1256408-manas">
+    </a>    <a class="card" href="/movie/1256408-manas.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zXSRMUkZ2aNarACYZXvDafxqoju.jpg" alt="Manas — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Manas</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/128331-maria-the-outlaw-legend">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/128331-maria-the-outlaw-legend.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2XxzltUGmDagZQLTSDkEGDoTOLz.jpg" alt="Maria: The Outlaw Legend — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Maria: The Outlaw Legend</div></div>
-    </a>    <a class="card" href="/tv/198053-o-jogo-que-mudou-a-história">
+    </a>    <a class="card" href="/tv/198053-o-jogo-que-mudou-a-história.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/trc7lqDTPpgvHLin4BDkWNJ6z6C.jpg" alt="O Jogo Que Mudou a História — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">O Jogo Que Mudou a História</div></div>
-    </a>    <a class="card" href="/tv/235924-criminal-code">
+    </a>    <a class="card" href="/tv/235924-criminal-code.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fDu0T5WE0QAoX2yAqZ1RtlWBn6I.jpg" alt="Criminal Code — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Criminal Code</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

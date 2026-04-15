@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Sin frenos</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/590991-javiera-contador" class="cast-card">
+            <a href="/actor/590991-javiera-contador.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p2n6VQOw7DwemgVeD9sWjRZ4Uer.jpg" alt="Javiera Contador" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Javiera Contador</span>
             </a>
-            <a href="/actor/2336433-yul-bürkle" class="cast-card">
+            <a href="/actor/2336433-yul-bürkle.html" class="cast-card">
                 <img src="/favicon.ico" alt="Yul Bürkle" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yul Bürkle</span>
             </a>
-            <a href="/actor/3117422-felipe-londoño" class="cast-card">
+            <a href="/actor/3117422-felipe-londoño.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gUKu2bla3ZKtwuzfymMbyzUsobC.jpg" alt="Felipe Londoño" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Felipe Londoño</span>
             </a>
-            <a href="/actor/296274-diego-muñoz" class="cast-card">
+            <a href="/actor/296274-diego-muñoz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/74ocWNGXwldzLRbCNShazwN16kZ.jpg" alt="Diego Muñoz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Diego Muñoz</span>
             </a>
-            <a href="/actor/4096244-maria-pedrique" class="cast-card">
+            <a href="/actor/4096244-maria-pedrique.html" class="cast-card">
                 <img src="/favicon.ico" alt="Maria Pedrique" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maria Pedrique</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

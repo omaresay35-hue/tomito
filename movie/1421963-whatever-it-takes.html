@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Ceux qui comptent</span>
   </nav>
 
@@ -71,35 +71,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/81821-sandrine-kiberlain" class="cast-card">
+            <a href="/actor/81821-sandrine-kiberlain.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iqDFdfhjZleeKjnjWvaMrXTyrB4.jpg" alt="Sandrine Kiberlain" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sandrine Kiberlain</span>
             </a>
-            <a href="/actor/544685-pierre-lottin" class="cast-card">
+            <a href="/actor/544685-pierre-lottin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1d0CBRIjScO7AUkQAqPcaRuC9Mg.jpg" alt="Pierre Lottin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pierre Lottin</span>
             </a>
-            <a href="/actor/2302770-louise-labèque" class="cast-card">
+            <a href="/actor/2302770-louise-labèque.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A6avdJDxsjifF1iaNOQtPu9rHtf.jpg" alt="Louise Labèque" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louise Labèque</span>
             </a>
-            <a href="/actor/4812674-alexis-rosenstiehl" class="cast-card">
+            <a href="/actor/4812674-alexis-rosenstiehl.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lSa63zKMIJurglCQv7SASzZled4.jpg" alt="Alexis Rosenstiehl" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexis Rosenstiehl</span>
             </a>
-            <a href="/actor/6028800-alma-ngoc" class="cast-card">
+            <a href="/actor/6028800-alma-ngoc.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alma Ngoc" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alma Ngoc</span>
             </a>
-            <a href="/actor/4484662-mélissa-izquierdo" class="cast-card">
+            <a href="/actor/4484662-mélissa-izquierdo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3Y0OCBAwxmSL0r3q4Q0oOj6KuT3.jpg" alt="Mélissa Izquierdo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mélissa Izquierdo</span>
             </a>
-            <a href="/actor/5660462-kevin-marvinio" class="cast-card">
+            <a href="/actor/5660462-kevin-marvinio.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kevin Marvinio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kevin Marvinio</span>
             </a>
-            <a href="/actor/1019875-frans-boyer" class="cast-card">
+            <a href="/actor/1019875-frans-boyer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pCHWQsQtjWtu74FOAkQ9izPhPoz.jpg" alt="Frans Boyer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Frans Boyer</span>
             </a></div></section>
@@ -107,13 +107,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

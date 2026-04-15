@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,31 +75,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/25072-oscar-isaac" class="cast-card">
+            <a href="/actor/25072-oscar-isaac.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg" alt="Oscar Isaac" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oscar Isaac</span>
             </a>
-            <a href="/actor/569-ethan-hawke" class="cast-card">
+            <a href="/actor/569-ethan-hawke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oojD9jSshvUT4t6AUySsBxoekHk.jpg" alt="Ethan Hawke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ethan Hawke</span>
             </a>
-            <a href="/actor/1952051-may-calamawy" class="cast-card">
+            <a href="/actor/1952051-may-calamawy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5S3nNkH5p85xK7k7AaXBZ0ouyOR.jpg" alt="May Calamawy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>May Calamawy</span>
             </a>
-            <a href="/actor/1765199-ann-akinjirin" class="cast-card">
+            <a href="/actor/1765199-ann-akinjirin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o4Tbudvow3rzgxmlilnRral5fpr.jpg" alt="Ann Akinjirin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ann Akinjirin</span>
             </a>
-            <a href="/actor/77505-david-ganly" class="cast-card">
+            <a href="/actor/77505-david-ganly.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e9NUAspQ306cmyhkl3gG5LU1LHi.jpg" alt="David Ganly" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Ganly</span>
             </a>
-            <a href="/actor/3132784-karim-el-hakim" class="cast-card">
+            <a href="/actor/3132784-karim-el-hakim.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2K3iP4pm6RFZ29kQxjXZQl40hCF.jpg" alt="Karim El Hakim" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karim El Hakim</span>
             </a>
-            <a href="/actor/1164-f-murray-abraham" class="cast-card">
+            <a href="/actor/1164-f-murray-abraham.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p2RYVGdrcP0m70BkkiKcwyrDeim.jpg" alt="F. Murray Abraham" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>F. Murray Abraham</span>
             </a></div></section>
@@ -107,13 +107,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

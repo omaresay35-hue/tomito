@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>恋愛裁判</span>
   </nav>
 
@@ -71,27 +71,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2538827-kyoko-saito" class="cast-card">
+            <a href="/actor/2538827-kyoko-saito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ds3khPvvYSpVTV6OFl1wRnXRxQC.jpg" alt="Kyoko Saito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kyoko Saito</span>
             </a>
-            <a href="/actor/2647155-yuki-kura" class="cast-card">
+            <a href="/actor/2647155-yuki-kura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dPTlgkUvQXPfc1yZLXSsdF5gOQM.jpg" alt="Yuki Kura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuki Kura</span>
             </a>
-            <a href="/actor/135524-kenjiro-tsuda" class="cast-card">
+            <a href="/actor/135524-kenjiro-tsuda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yBlT8FzQqZYbDcJlnCEayNQHrzS.jpg" alt="Kenjiro Tsuda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kenjiro Tsuda</span>
             </a>
-            <a href="/actor/1822694-erika-karata" class="cast-card">
+            <a href="/actor/1822694-erika-karata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h9J86XWiV4XMwjBGlcT7oKyiBLx.jpg" alt="Erika Karata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erika Karata</span>
             </a>
-            <a href="/actor/5199638-yuna-nakamura" class="cast-card">
+            <a href="/actor/5199638-yuna-nakamura.html" class="cast-card">
                 <img src="/favicon.ico" alt="Yuna Nakamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuna Nakamura</span>
             </a>
-            <a href="/actor/2720822-miyu-ogawa" class="cast-card">
+            <a href="/actor/2720822-miyu-ogawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7zLZuNyPvg7FVihIEfHYkRJf621.jpg" alt="Miyu Ogawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miyu Ogawa</span>
             </a></div></section>
@@ -99,13 +99,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

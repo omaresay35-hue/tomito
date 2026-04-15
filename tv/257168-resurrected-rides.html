@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>تجديد السيارات</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1631358-chris-redd" class="cast-card">
+            <a href="/actor/1631358-chris-redd.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nTisigWhjdQ10puFLTay9bqYl6s.jpg" alt="Chris Redd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Redd</span>
             </a>
-            <a href="/actor/5995230-saul-valencia" class="cast-card">
+            <a href="/actor/5995230-saul-valencia.html" class="cast-card">
                 <img src="/favicon.ico" alt="Saul Valencia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saul Valencia</span>
             </a>
-            <a href="/actor/5995232-oscar-valencia" class="cast-card">
+            <a href="/actor/5995232-oscar-valencia.html" class="cast-card">
                 <img src="/favicon.ico" alt="Oscar Valencia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oscar Valencia</span>
             </a>
-            <a href="/actor/5995233-shayna-guy" class="cast-card">
+            <a href="/actor/5995233-shayna-guy.html" class="cast-card">
                 <img src="/favicon.ico" alt="Shayna Guy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shayna Guy</span>
             </a>
-            <a href="/actor/5995234-lacey-blair" class="cast-card">
+            <a href="/actor/5995234-lacey-blair.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lacey Blair" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lacey Blair</span>
             </a>
-            <a href="/actor/5995242-don-abenante" class="cast-card">
+            <a href="/actor/5995242-don-abenante.html" class="cast-card">
                 <img src="/favicon.ico" alt="Don Abenante" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Don Abenante</span>
             </a>
-            <a href="/actor/5995245-steven-nelson" class="cast-card">
+            <a href="/actor/5995245-steven-nelson.html" class="cast-card">
                 <img src="/favicon.ico" alt="Steven Nelson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steven Nelson</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

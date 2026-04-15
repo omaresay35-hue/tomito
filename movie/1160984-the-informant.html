@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>정보원</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1388365-heo-sung-tae" class="cast-card">
+            <a href="/actor/1388365-heo-sung-tae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j65kOkZ8RjGVuwNHjuIVbSD49tB.jpg" alt="Heo Sung-tae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Heo Sung-tae</span>
             </a>
-            <a href="/actor/1428091-jo-bok-rae" class="cast-card">
+            <a href="/actor/1428091-jo-bok-rae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aTzFktB9Z1BcxjUxd33cQROLQnO.jpg" alt="Jo Bok-rae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jo Bok-rae</span>
             </a>
-            <a href="/actor/2617504-seo-min-joo" class="cast-card">
+            <a href="/actor/2617504-seo-min-joo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q8GFgPUihi7MohMl1Ok3eM7bXbV.jpg" alt="Seo Min-joo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Seo Min-joo</span>
             </a>
-            <a href="/actor/2101538-cha-soon-bae" class="cast-card">
+            <a href="/actor/2101538-cha-soon-bae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7oDDNlBZRUb9M7VxM5X1p1eXw4c.jpg" alt="Cha Soon-bae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cha Soon-bae</span>
             </a>
-            <a href="/actor/1530559-jang-hyuk-jin" class="cast-card">
+            <a href="/actor/1530559-jang-hyuk-jin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gBI4xgvtCBLTLz25jA6JgB0xccd.jpg" alt="Jang Hyuk-jin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jang Hyuk-jin</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

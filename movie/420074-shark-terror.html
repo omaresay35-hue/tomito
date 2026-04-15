@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Shark Terror</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/60650-michael-paré" class="cast-card">
+            <a href="/actor/60650-michael-paré.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jxrXW8OL6hwJgtJgePdMO5yHuAM.jpg" alt="Michael Paré" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Paré</span>
             </a>
-            <a href="/actor/128003-sarah-lieving" class="cast-card">
+            <a href="/actor/128003-sarah-lieving.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mAgpHUkqG7KLtUzEW2cjbnJUo3T.jpg" alt="Sarah Lieving" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sarah Lieving</span>
             </a>
-            <a href="/actor/4678648-carly-medina" class="cast-card">
+            <a href="/actor/4678648-carly-medina.html" class="cast-card">
                 <img src="/favicon.ico" alt="Carly Medina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carly Medina</span>
             </a>
-            <a href="/actor/5569272-javier-duran" class="cast-card">
+            <a href="/actor/5569272-javier-duran.html" class="cast-card">
                 <img src="/favicon.ico" alt="Javier Duran" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Javier Duran</span>
             </a>
-            <a href="/actor/5814074-joe-maria-fernandez" class="cast-card">
+            <a href="/actor/5814074-joe-maria-fernandez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Joe Maria Fernandez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joe Maria Fernandez</span>
             </a>
-            <a href="/actor/5814075-jude-merkel" class="cast-card">
+            <a href="/actor/5814075-jude-merkel.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jude Merkel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jude Merkel</span>
             </a>
-            <a href="/actor/4391448-jenna-day" class="cast-card">
+            <a href="/actor/4391448-jenna-day.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jenna Day" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jenna Day</span>
             </a>
-            <a href="/actor/1297180-travis-lincoln-cox" class="cast-card">
+            <a href="/actor/1297180-travis-lincoln-cox.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ikIRdczxwnYqEV4YQRAQlj8Frqf.jpg" alt="Travis Lincoln Cox" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Travis Lincoln Cox</span>
             </a>
-            <a href="/actor/4956074-bryce-tipple" class="cast-card">
+            <a href="/actor/4956074-bryce-tipple.html" class="cast-card">
                 <img src="/favicon.ico" alt="Bryce Tipple" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bryce Tipple</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

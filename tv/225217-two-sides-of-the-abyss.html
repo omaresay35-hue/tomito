@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Zwei Seiten des Abgrunds</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/13804-anne-ratte-polle" class="cast-card">
+            <a href="/actor/13804-anne-ratte-polle.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/urX3hisdzUOs4eBEvLeiEY5uDRh.jpg" alt="Anne Ratte-Polle" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anne Ratte-Polle</span>
             </a>
-            <a href="/actor/3461746-anton-dreger" class="cast-card">
+            <a href="/actor/3461746-anton-dreger.html" class="cast-card">
                 <img src="/favicon.ico" alt="Anton Dreger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anton Dreger</span>
             </a>
-            <a href="/actor/1291450-lea-van-acken" class="cast-card">
+            <a href="/actor/1291450-lea-van-acken.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5cFjIsl16SHcBJ1jc6IT1yKIhVK.jpg" alt="Lea van Acken" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lea van Acken</span>
             </a>
-            <a href="/actor/4027313-senita-huskić" class="cast-card">
+            <a href="/actor/4027313-senita-huskić.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lW5OtatZfWu8NdjjPc2mPISt41K.jpg" alt="Senita Huskić" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Senita Huskić</span>
             </a>
-            <a href="/actor/52400-dirk-martens" class="cast-card">
+            <a href="/actor/52400-dirk-martens.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2gYME7HpFXQQoTkiVb2aBGx9iX3.jpg" alt="Dirk Martens" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dirk Martens</span>
             </a>
-            <a href="/actor/1816304-renato-schuch" class="cast-card">
+            <a href="/actor/1816304-renato-schuch.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2bhahnS1bMMgPpW2U7Th7Dv5x5M.jpg" alt="Renato Schuch" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Renato Schuch</span>
             </a>
-            <a href="/actor/45947-ann-kathrin-kramer" class="cast-card">
+            <a href="/actor/45947-ann-kathrin-kramer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eK4V8dQAKSe1u9ZK0SSzyhhMFOl.jpg" alt="Ann-Kathrin Kramer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ann-Kathrin Kramer</span>
             </a>
-            <a href="/actor/133261-claudia-eisinger" class="cast-card">
+            <a href="/actor/133261-claudia-eisinger.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oXcVaZ9js3puxY656AAlCUmJYdm.jpg" alt="Claudia Eisinger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Claudia Eisinger</span>
             </a>
-            <a href="/actor/1366984-maximilian-brauer" class="cast-card">
+            <a href="/actor/1366984-maximilian-brauer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eQzQ1GrfBDZzUXnFdJesTNUI1qN.jpg" alt="Maximilian Brauer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maximilian Brauer</span>
             </a>
-            <a href="/actor/3003092-josephine-thiesen" class="cast-card">
+            <a href="/actor/3003092-josephine-thiesen.html" class="cast-card">
                 <img src="/favicon.ico" alt="Josephine Thiesen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Josephine Thiesen</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

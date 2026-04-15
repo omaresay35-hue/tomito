@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>கொட்டுக்காளி</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2236873-anna-ben" class="cast-card">
+            <a href="/actor/2236873-anna-ben.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d0vvDEO6MWeRnc6lj1d11TnIt5i.jpg" alt="Anna Ben" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anna Ben</span>
             </a>
-            <a href="/actor/544897-soori" class="cast-card">
+            <a href="/actor/544897-soori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iBpTFbCbkMO3zdw3WK4YaPqk3DA.jpg" alt="Soori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Soori</span>
             </a>
-            <a href="/actor/4900390-jawahar-sakthi" class="cast-card">
+            <a href="/actor/4900390-jawahar-sakthi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tujqtpUT92SDeo2AuUJiJGKBfYp.jpg" alt="Jawahar Sakthi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jawahar Sakthi</span>
             </a>
-            <a href="/actor/4912601-poobalam-pragatheeswaran" class="cast-card">
+            <a href="/actor/4912601-poobalam-pragatheeswaran.html" class="cast-card">
                 <img src="/favicon.ico" alt="Poobalam Pragatheeswaran" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Poobalam Pragatheeswaran</span>
             </a>
-            <a href="/actor/4912602-sai-abinaya" class="cast-card">
+            <a href="/actor/4912602-sai-abinaya.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sai Abinaya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sai Abinaya</span>
             </a>
-            <a href="/actor/4788515-murugan-govinthsamy" class="cast-card">
+            <a href="/actor/4788515-murugan-govinthsamy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dIr41eqqFiUobA5lyP9cVWw9hbY.jpg" alt="Murugan Govinthsamy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Murugan Govinthsamy</span>
             </a>
-            <a href="/actor/4968492-rajeshwari-murugan" class="cast-card">
+            <a href="/actor/4968492-rajeshwari-murugan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Rajeshwari Murugan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rajeshwari Murugan</span>
             </a>
-            <a href="/actor/4968494-muthulakshmi" class="cast-card">
+            <a href="/actor/4968494-muthulakshmi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Muthulakshmi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Muthulakshmi</span>
             </a>
-            <a href="/actor/4968496-r-charles" class="cast-card">
+            <a href="/actor/4968496-r-charles.html" class="cast-card">
                 <img src="/favicon.ico" alt="R. Charles" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>R. Charles</span>
             </a>
-            <a href="/actor/4968524-muthurasu" class="cast-card">
+            <a href="/actor/4968524-muthurasu.html" class="cast-card">
                 <img src="/favicon.ico" alt="Muthurasu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Muthurasu</span>
             </a>
-            <a href="/actor/4968526-m-vijay-kumar" class="cast-card">
+            <a href="/actor/4968526-m-vijay-kumar.html" class="cast-card">
                 <img src="/favicon.ico" alt="M. Vijay Kumar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>M. Vijay Kumar</span>
             </a>
-            <a href="/actor/4968528-k-n-theehan" class="cast-card">
+            <a href="/actor/4968528-k-n-theehan.html" class="cast-card">
                 <img src="/favicon.ico" alt="K. N. Theehan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>K. N. Theehan</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

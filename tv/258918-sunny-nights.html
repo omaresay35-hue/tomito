@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Sunny Nights</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1561264-darcy-carden" class="cast-card">
+            <a href="/actor/1561264-darcy-carden.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gleeirv4avhngSUnzqPe9qDYrMD.jpg" alt="D'Arcy Carden" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>D'Arcy Carden</span>
             </a>
-            <a href="/actor/62831-will-forte" class="cast-card">
+            <a href="/actor/62831-will-forte.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4VEzbkL3HwHTUZAPA5PyypFG2U.jpg" alt="Will Forte" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Will Forte</span>
             </a>
-            <a href="/actor/15298-rachel-house" class="cast-card">
+            <a href="/actor/15298-rachel-house.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2LCQF7Bn0I91o17GGkox0ZhhbE7.jpg" alt="Rachel House" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rachel House</span>
             </a>
-            <a href="/actor/1196822-jessica-de-gouw" class="cast-card">
+            <a href="/actor/1196822-jessica-de-gouw.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pu09eASIUzHPJZMfHPkpFqDZ2RR.jpg" alt="Jessica De Gouw" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jessica De Gouw</span>
             </a>
-            <a href="/actor/934252-ra-chapman" class="cast-card">
+            <a href="/actor/934252-ra-chapman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/an1WPBKGAQLJM4HtF1wdhjGUDY9.jpg" alt="Ra Chapman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ra Chapman</span>
             </a>
-            <a href="/actor/3622974-willie-mason" class="cast-card">
+            <a href="/actor/3622974-willie-mason.html" class="cast-card">
                 <img src="/favicon.ico" alt="Willie Mason" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Willie Mason</span>
             </a>
-            <a href="/actor/1399811-george-mason" class="cast-card">
+            <a href="/actor/1399811-george-mason.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fLUXBgeSwXFG5GRveROIniYXIpk.jpg" alt="George Mason" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>George Mason</span>
             </a>
-            <a href="/actor/3054747-matuse-paz" class="cast-card">
+            <a href="/actor/3054747-matuse-paz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3D61zv4m0mEqAzSRq1DcKBX9fIU.jpg" alt="Matuse Paz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matuse Paz</span>
             </a>
-            <a href="/actor/3241199-megan-wilding" class="cast-card">
+            <a href="/actor/3241199-megan-wilding.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fqzELUP4MmWrI6rpLAQRgfg3ot.jpg" alt="Megan Wilding" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Megan Wilding</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

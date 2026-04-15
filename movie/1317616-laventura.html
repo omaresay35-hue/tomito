@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>L'Aventura</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/119501-philippe-katerine" class="cast-card">
+            <a href="/actor/119501-philippe-katerine.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gXu7bbIOqac33Kimq5fIFzF9F4F.jpg" alt="Philippe Katerine" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Philippe Katerine</span>
             </a>
-            <a href="/actor/237875-sophie-letourneur" class="cast-card">
+            <a href="/actor/237875-sophie-letourneur.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gpgwKBpGKv78UeCnxqrkaNqYNoJ.jpg" alt="Sophie Letourneur" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sophie Letourneur</span>
             </a>
-            <a href="/actor/5377741-bérénice-vernet" class="cast-card">
+            <a href="/actor/5377741-bérénice-vernet.html" class="cast-card">
                 <img src="/favicon.ico" alt="Bérénice Vernet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bérénice Vernet</span>
             </a>
-            <a href="/actor/5377742-esteban-melero" class="cast-card">
+            <a href="/actor/5377742-esteban-melero.html" class="cast-card">
                 <img src="/favicon.ico" alt="Esteban Melero" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Esteban Melero</span>
             </a>
-            <a href="/actor/5904947-carmen-letourneur" class="cast-card">
+            <a href="/actor/5904947-carmen-letourneur.html" class="cast-card">
                 <img src="/favicon.ico" alt="Carmen Letourneur" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carmen Letourneur</span>
             </a>
-            <a href="/actor/5904951-francesco-arcuri" class="cast-card">
+            <a href="/actor/5904951-francesco-arcuri.html" class="cast-card">
                 <img src="/favicon.ico" alt="Francesco Arcuri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francesco Arcuri</span>
             </a>
-            <a href="/actor/5904952-nicolas-vernet" class="cast-card">
+            <a href="/actor/5904952-nicolas-vernet.html" class="cast-card">
                 <img src="/favicon.ico" alt="Nicolas Vernet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicolas Vernet</span>
             </a>
-            <a href="/actor/5904953-francesco-missoni" class="cast-card">
+            <a href="/actor/5904953-francesco-missoni.html" class="cast-card">
                 <img src="/favicon.ico" alt="Francesco Missoni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francesco Missoni</span>
             </a>
-            <a href="/actor/5904954-thérèse-bourgoin" class="cast-card">
+            <a href="/actor/5904954-thérèse-bourgoin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Thérèse Bourgoin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thérèse Bourgoin</span>
             </a>
-            <a href="/actor/5904956-dominique-orsatelli" class="cast-card">
+            <a href="/actor/5904956-dominique-orsatelli.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dominique Orsatelli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dominique Orsatelli</span>
             </a>
-            <a href="/actor/5904957-simona-manca" class="cast-card">
+            <a href="/actor/5904957-simona-manca.html" class="cast-card">
                 <img src="/favicon.ico" alt="Simona Manca" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Simona Manca</span>
             </a>
-            <a href="/actor/5904960-paolo-sidari" class="cast-card">
+            <a href="/actor/5904960-paolo-sidari.html" class="cast-card">
                 <img src="/favicon.ico" alt="Paolo Sidari" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paolo Sidari</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

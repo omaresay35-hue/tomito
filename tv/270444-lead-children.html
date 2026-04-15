@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>التلامذة المرضى</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/908548-joanna-kulig" class="cast-card">
+            <a href="/actor/908548-joanna-kulig.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hlRdav6dSvfzyDnSSMooVh9GVxh.jpg" alt="Joanna Kulig" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joanna Kulig</span>
             </a>
-            <a href="/actor/566101-agata-kulesza" class="cast-card">
+            <a href="/actor/566101-agata-kulesza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qOk64HBbyZeJ4o1k9ScOMOtqOXR.jpg" alt="Agata Kulesza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Agata Kulesza</span>
             </a>
-            <a href="/actor/107517-kinga-preis" class="cast-card">
+            <a href="/actor/107517-kinga-preis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x6iEzBIWIJxSgCVLU6ksZyYP8NF.jpg" alt="Kinga Preis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kinga Preis</span>
             </a>
-            <a href="/actor/1515484-michał-żurawski" class="cast-card">
+            <a href="/actor/1515484-michał-żurawski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7Z6MOsobKG31At2cgxa1v3IeG4T.jpg" alt="Michał Żurawski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michał Żurawski</span>
             </a>
-            <a href="/actor/127853-marian-dziędziel" class="cast-card">
+            <a href="/actor/127853-marian-dziędziel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9hbduQcQMzdBrEwpfh2pnSrBR3h.jpg" alt="Marian Dziędziel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marian Dziędziel</span>
             </a>
-            <a href="/actor/1067143-sebastian-pawlak" class="cast-card">
+            <a href="/actor/1067143-sebastian-pawlak.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aahiiItl6e5TCdOK8UNI1i3mhDY.jpg" alt="Sebastian Pawlak" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sebastian Pawlak</span>
             </a>
-            <a href="/actor/1145-zbigniew-zamachowski" class="cast-card">
+            <a href="/actor/1145-zbigniew-zamachowski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qUi05ZXhKoOMOgBkonKOLuIMf0n.jpg" alt="Zbigniew Zamachowski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zbigniew Zamachowski</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

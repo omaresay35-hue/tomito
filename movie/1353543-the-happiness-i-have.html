@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>الهنا للي أنا فيه</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1197253-karim-mahmoud-abdel-aziz" class="cast-card">
+            <a href="/actor/1197253-karim-mahmoud-abdel-aziz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lIIiYr9DUWFoBIMVwX10gM7XpuV.jpg" alt="Karim Mahmoud Abdel Aziz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karim Mahmoud Abdel Aziz</span>
             </a>
-            <a href="/actor/1614510-dina-el-sherbiny" class="cast-card">
+            <a href="/actor/1614510-dina-el-sherbiny.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yKIdQwGzMtYN7j75gSQOYQOwVXz.jpg" alt="Dina El Sherbiny" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dina El Sherbiny</span>
             </a>
-            <a href="/actor/1163328-yasmine-raeis" class="cast-card">
+            <a href="/actor/1163328-yasmine-raeis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h7XIybglVEp3K88DAXS0CWw1eVQ.jpg" alt="Yasmine Raeis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yasmine Raeis</span>
             </a>
-            <a href="/actor/3533812-hatim-salah" class="cast-card">
+            <a href="/actor/3533812-hatim-salah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d4pLQyaaMgHMFoGxemxxxHSzG2Z.jpg" alt="Hatim Salah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hatim Salah</span>
             </a>
-            <a href="/actor/3964943-mariam-el-gendy" class="cast-card">
+            <a href="/actor/3964943-mariam-el-gendy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zTVLSYAuZ5G14Ml3TYZ5TdkBfex.jpg" alt="Mariam El Gendy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariam El Gendy</span>
             </a>
-            <a href="/actor/1164726-mohsen-mansour" class="cast-card">
+            <a href="/actor/1164726-mohsen-mansour.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rjixT1y8JtRJHfp4i9bUIN5SPKy.jpg" alt="Mohsen Mansour" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mohsen Mansour</span>
             </a>
-            <a href="/actor/2856574-mohamed-outaka" class="cast-card">
+            <a href="/actor/2856574-mohamed-outaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/XyVpD2tp4x8wGlMjePtg5dhyGZ.jpg" alt="Mohamed Outaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mohamed Outaka</span>
             </a>
-            <a href="/actor/226837-yasser-el-tobgy" class="cast-card">
+            <a href="/actor/226837-yasser-el-tobgy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ibfMXbe2vGjJvdqcSh9NJLZ4wxf.jpg" alt="Yasser El Tobgy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yasser El Tobgy</span>
             </a>
-            <a href="/actor/226425-moataz-el-tony" class="cast-card">
+            <a href="/actor/226425-moataz-el-tony.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xnRosqFGmcj5AAEFhs7sNoRDP2B.jpg" alt="Moataz El Tony" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Moataz El Tony</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

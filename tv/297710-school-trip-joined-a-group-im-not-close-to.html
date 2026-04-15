@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>修学旅行で仲良くないグループに入りました</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4600135-kodai-fujimoto" class="cast-card">
+            <a href="/actor/4600135-kodai-fujimoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1ePYx19QYyUW3Wr3Itxt1wOla35.jpg" alt="Kodai Fujimoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kodai Fujimoto</span>
             </a>
-            <a href="/actor/3653832-hideyoshi-kan" class="cast-card">
+            <a href="/actor/3653832-hideyoshi-kan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6z4kgyRLaCmk0hqWpPaRaz8LMZT.jpg" alt="Hideyoshi Kan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hideyoshi Kan</span>
             </a>
-            <a href="/actor/3706597-masaya-sakuragi" class="cast-card">
+            <a href="/actor/3706597-masaya-sakuragi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5pp751du9M9TQ0NqxZwxVFtCY0F.jpg" alt="Masaya Sakuragi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masaya Sakuragi</span>
             </a>
-            <a href="/actor/4211433-ayuta-fukuda" class="cast-card">
+            <a href="/actor/4211433-ayuta-fukuda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tSYTAL7APPcMOGV63lR5veCqpgP.jpg" alt="Ayuta Fukuda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayuta Fukuda</span>
             </a>
-            <a href="/actor/5613441-kairi-shimizu" class="cast-card">
+            <a href="/actor/5613441-kairi-shimizu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8ZX17P11x5lkyGuwEj8sbLcpnQj.jpg" alt="Kairi Shimizu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kairi Shimizu</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

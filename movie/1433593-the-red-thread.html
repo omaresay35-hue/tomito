@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>El hilo rojo</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/85560-michel-brown" class="cast-card">
+            <a href="/actor/85560-michel-brown.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4a4KLHBaDbB8MHDCqOsKMfBqxDR.jpg" alt="Michel Brown" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michel Brown</span>
             </a>
-            <a href="/actor/1672140-mario-morán" class="cast-card">
+            <a href="/actor/1672140-mario-morán.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2ZyVrCWilJjIJ9GwVRSPQtNg1ea.jpg" alt="Mario Morán" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mario Morán</span>
             </a>
-            <a href="/actor/3000971-carolina-miranda" class="cast-card">
+            <a href="/actor/3000971-carolina-miranda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4lJzUpFW37ZcVuQfqKPdQ2djImP.jpg" alt="Carolina Miranda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carolina Miranda</span>
             </a>
-            <a href="/actor/36638-maya-zapata" class="cast-card">
+            <a href="/actor/36638-maya-zapata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sk1MsMBOoTDyu33JSJwllRPDYpA.jpg" alt="Maya Zapata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maya Zapata</span>
             </a>
-            <a href="/actor/3670025-pilar-santacruz" class="cast-card">
+            <a href="/actor/3670025-pilar-santacruz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ee56FKySzipXCj8oo8A8DUNjznz.jpg" alt="Pilar Santacruz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pilar Santacruz</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

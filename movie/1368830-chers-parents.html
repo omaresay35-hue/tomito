@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Chers parents</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/18177-andré-dussollier" class="cast-card">
+            <a href="/actor/18177-andré-dussollier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rw3J5sNFr7VYvTKAPak9d14F7R6.jpg" alt="André Dussollier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>André Dussollier</span>
             </a>
-            <a href="/actor/4274-miou-miou" class="cast-card">
+            <a href="/actor/4274-miou-miou.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kjQD9nNjcakYxOmXq1IG66y1RtU.jpg" alt="Miou-Miou" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miou-Miou</span>
             </a>
-            <a href="/actor/1069634-arnaud-ducret" class="cast-card">
+            <a href="/actor/1069634-arnaud-ducret.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k4wixf8xKSym0GTcYFRov6PgEj7.jpg" alt="Arnaud Ducret" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arnaud Ducret</span>
             </a>
-            <a href="/actor/1069637-thomas-solivérès" class="cast-card">
+            <a href="/actor/1069637-thomas-solivérès.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vK6cdnjTkklZFB4zPI1XSRHtwv9.jpg" alt="Thomas Solivérès" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thomas Solivérès</span>
             </a>
-            <a href="/actor/2112198-pauline-clément" class="cast-card">
+            <a href="/actor/2112198-pauline-clément.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3FZA5Q1fN7U0knqLnDEWHqNKRJ6.jpg" alt="Pauline Clément" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pauline Clément</span>
             </a>
-            <a href="/actor/554595-frédérique-tirmont" class="cast-card">
+            <a href="/actor/554595-frédérique-tirmont.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8EccF7N8PzYyKLxF7i4WUgifLQ4.jpg" alt="Frédérique Tirmont" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Frédérique Tirmont</span>
             </a>
-            <a href="/actor/24378-bernard-alane" class="cast-card">
+            <a href="/actor/24378-bernard-alane.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uBcoU8pZmVcWfi4ayNVSJsBvZir.jpg" alt="Bernard Alane" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bernard Alane</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

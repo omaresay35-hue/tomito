@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>大梦归离</span>
   </nav>
 
@@ -74,39 +74,39 @@ Wen Xiao, suspicious of Zhao Yuanzhou, joins the bureau along with her childhood
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1844511-hou-minghao" class="cast-card">
+            <a href="/actor/1844511-hou-minghao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cKFIKmHNPtAdeaWozo3MZkirojC.jpg" alt="Hou Minghao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hou Minghao</span>
             </a>
-            <a href="/actor/1476992-chen-duling" class="cast-card">
+            <a href="/actor/1476992-chen-duling.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/awVbnhkLiGuv6h6axIb5oNgRJGT.jpg" alt="Chen Duling" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chen Duling</span>
             </a>
-            <a href="/actor/4248872-tian-jiarui" class="cast-card">
+            <a href="/actor/4248872-tian-jiarui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iEAg620mH9HlbhzIo7o2GI2yiUu.jpg" alt="Tian Jiarui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tian Jiarui</span>
             </a>
-            <a href="/actor/1875779-cheng-xiao" class="cast-card">
+            <a href="/actor/1875779-cheng-xiao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r7GxmxSedptMQZB8eTsyIHiPjbQ.jpg" alt="Cheng Xiao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cheng Xiao</span>
             </a>
-            <a href="/actor/3181688-lin-ziye" class="cast-card">
+            <a href="/actor/3181688-lin-ziye.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vllYo1G6czaOE0caPLjCCiFy9OC.jpg" alt="Lin Ziye" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lin Ziye</span>
             </a>
-            <a href="/actor/4468368-xu-zhenxuan" class="cast-card">
+            <a href="/actor/4468368-xu-zhenxuan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3GeK90KDy6VaHEeTbN9e55LCBOp.jpg" alt="Xu Zhenxuan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xu Zhenxuan</span>
             </a>
-            <a href="/actor/2040132-yan-an" class="cast-card">
+            <a href="/actor/2040132-yan-an.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3reZJbOH8VT2A0xzRSJNp8sM6rv.jpg" alt="Yan An" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yan An</span>
             </a>
-            <a href="/actor/2749152-lai-weiming" class="cast-card">
+            <a href="/actor/2749152-lai-weiming.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zZIs8U7rDL3GSj1Tvs9c3gXNa9L.jpg" alt="Lai Weiming" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lai Weiming</span>
             </a>
-            <a href="/actor/3227810-liu-huan" class="cast-card">
+            <a href="/actor/3227810-liu-huan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tUL4Znn78vSZdUEC3BgD0cfQgnP.jpg" alt="Liu Huan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liu Huan</span>
             </a></div></section>
@@ -114,13 +114,6 @@ Wen Xiao, suspicious of Zhao Yuanzhou, joins the bureau along with her childhood
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

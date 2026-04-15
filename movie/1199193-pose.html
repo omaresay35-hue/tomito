@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>تظاهر</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5530-james-mcavoy" class="cast-card">
+            <a href="/actor/5530-james-mcavoy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/u4REKbm3zhFI2J5tVyqRovGRYUJ.jpg" alt="James McAvoy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James McAvoy</span>
             </a>
-            <a href="/actor/2417980-lucas-bravo" class="cast-card">
+            <a href="/actor/2417980-lucas-bravo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uO6vMlJBMASyOQMisvnPehjsfJB.jpg" alt="Lucas Bravo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucas Bravo</span>
             </a>
-            <a href="/actor/2044882-leila-farzad" class="cast-card">
+            <a href="/actor/2044882-leila-farzad.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cjB87g9aZOfmgKBvYhfNCJUM1Kn.jpg" alt="Leila Farzad" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leila Farzad</span>
             </a>
-            <a href="/actor/2846747-almudena-amor" class="cast-card">
+            <a href="/actor/2846747-almudena-amor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mmwdXj20aW4I0f413j1F0TeSGPC.jpg" alt="Almudena Amor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Almudena Amor</span>
             </a>
-            <a href="/actor/1323109-aisling-franciosi" class="cast-card">
+            <a href="/actor/1323109-aisling-franciosi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pE5GpcsMbFd3ZFGeiaTIvfapV6m.jpg" alt="Aisling Franciosi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aisling Franciosi</span>
             </a>
-            <a href="/actor/2105082-elektra-jansson-kilbey" class="cast-card">
+            <a href="/actor/2105082-elektra-jansson-kilbey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yElY3b6zN1zGt0HcNzm9liD3BDV.jpg" alt="Elektra Jansson-Kilbey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elektra Jansson-Kilbey</span>
             </a>
-            <a href="/actor/4873036-maria-therese-bassetti" class="cast-card">
+            <a href="/actor/4873036-maria-therese-bassetti.html" class="cast-card">
                 <img src="/favicon.ico" alt="Maria Therese Bassetti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maria Therese Bassetti</span>
             </a>
-            <a href="/actor/5868420-kristin-zakala" class="cast-card">
+            <a href="/actor/5868420-kristin-zakala.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kristin Zakala" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kristin Zakala</span>
             </a>
-            <a href="/actor/1294985-shubham-saraf" class="cast-card">
+            <a href="/actor/1294985-shubham-saraf.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7LsYeGYP4mTfKOvG2l7BVDEB0o6.jpg" alt="Shubham Saraf" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shubham Saraf</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

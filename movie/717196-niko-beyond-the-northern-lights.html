@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Niko ja myrskyporojen arvoitus</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4677369-matthew-whelan" class="cast-card">
+            <a href="/actor/4677369-matthew-whelan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Matthew Whelan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthew Whelan</span>
             </a>
-            <a href="/actor/4815721-emma-jenkins" class="cast-card">
+            <a href="/actor/4815721-emma-jenkins.html" class="cast-card">
                 <img src="/favicon.ico" alt="Emma Jenkins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emma Jenkins</span>
             </a>
-            <a href="/actor/96674-paul-tylak" class="cast-card">
+            <a href="/actor/96674-paul-tylak.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fa60rnV49DACuStH9QlZhIi7Q4p.jpg" alt="Paul Tylak" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paul Tylak</span>
             </a>
-            <a href="/actor/1654994-roger-gregg" class="cast-card">
+            <a href="/actor/1654994-roger-gregg.html" class="cast-card">
                 <img src="/favicon.ico" alt="Roger Gregg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Roger Gregg</span>
             </a>
-            <a href="/actor/2045981-dermot-magennis" class="cast-card">
+            <a href="/actor/2045981-dermot-magennis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cG8UF5xDdROiZfSMADEOqs1L9ne.jpg" alt="Dermot Magennis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dermot Magennis</span>
             </a>
-            <a href="/actor/1571373-aileen-mythen" class="cast-card">
+            <a href="/actor/1571373-aileen-mythen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hfH9ottdHqfaltDqpA07hiThiqb.jpg" alt="Aileen Mythen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aileen Mythen</span>
             </a>
-            <a href="/actor/5101199-lucy-smith" class="cast-card">
+            <a href="/actor/5101199-lucy-smith.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lucy Smith" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucy Smith</span>
             </a>
-            <a href="/actor/5101201-harry-weld-moore" class="cast-card">
+            <a href="/actor/5101201-harry-weld-moore.html" class="cast-card">
                 <img src="/favicon.ico" alt="Harry Weld-Moore" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Harry Weld-Moore</span>
             </a>
-            <a href="/actor/3805115-justin-daniels-anene" class="cast-card">
+            <a href="/actor/3805115-justin-daniels-anene.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4ZZwc5AUS6jtoK0Sun118pLwLBK.jpg" alt="Justin Daniels Anene" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Justin Daniels Anene</span>
             </a>
-            <a href="/actor/61168-brenda-mcdonald" class="cast-card">
+            <a href="/actor/61168-brenda-mcdonald.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/39yKTAbHI2NZuwaneV5vF1nuMsF.jpg" alt="Brenda McDonald" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brenda McDonald</span>
             </a>
-            <a href="/actor/54000-mary-murray" class="cast-card">
+            <a href="/actor/54000-mary-murray.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1ZRP9IfehCSx5OeBQQDcVPvKYD0.jpg" alt="Mary Murray" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mary Murray</span>
             </a>
-            <a href="/actor/2447473-susan-slott" class="cast-card">
+            <a href="/actor/2447473-susan-slott.html" class="cast-card">
                 <img src="/favicon.ico" alt="Susan Slott" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Susan Slott</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

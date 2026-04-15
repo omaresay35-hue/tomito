@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1113421-the-uninvited">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1113421-the-uninvited.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/clojTZu0mEYAMejfoU4fgJ6FLJU.jpg" alt="The Uninvited — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Uninvited</div></div>
-    </a>    <a class="card" href="/movie/1056746-the-trouble-with-jessica">
+    </a>    <a class="card" href="/movie/1056746-the-trouble-with-jessica.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9wCT73zvdbX8gkvocS5nU68T1IG.jpg" alt="The Trouble with Jessica — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Trouble with Jessica</div></div>
-    </a>    <a class="card" href="/movie/1083658-scoop">
+    </a>    <a class="card" href="/movie/1083658-scoop.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ib3H2ZSeVRTAmd7EtGWV31LswaZ.jpg" alt="Scoop — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Scoop</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/203857-the-diplomat">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/203857-the-diplomat.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cOKXV0FalCYixNmZYCfHXgyQ0VX.jpg" alt="The Diplomat — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Diplomat</div></div>
-    </a>    <a class="card" href="/tv/156902-kaleidoscope">
+    </a>    <a class="card" href="/tv/156902-kaleidoscope.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2nXJoSB5Y6R9ne7pjqL7Cs3zqY1.jpg" alt="Kaleidoscope — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kaleidoscope</div></div>
-    </a>    <a class="card" href="/tv/90802-the-sandman">
+    </a>    <a class="card" href="/tv/90802-the-sandman.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/q54qEgagGOYCq5D1903eBVMNkbo.jpg" alt="The Sandman — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Sandman</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

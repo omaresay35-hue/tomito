@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>चूना</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/35792-jimmy-shergill" class="cast-card">
+            <a href="/actor/35792-jimmy-shergill.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A3fJrhIgM7Q5TGwbQYxYBjNsV37.jpg" alt="Jimmy Shergill" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jimmy Shergill</span>
             </a>
-            <a href="/actor/85889-arshad-warsi" class="cast-card">
+            <a href="/actor/85889-arshad-warsi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iXSA1C7B5mtoUrfDZ2sULE28bww.jpg" alt="Arshad Warsi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arshad Warsi</span>
             </a>
-            <a href="/actor/2306258-aashim-gulati" class="cast-card">
+            <a href="/actor/2306258-aashim-gulati.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oV9cuWPMf6muiLtjn6FFaYiS8Of.jpg" alt="Aashim Gulati" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aashim Gulati</span>
             </a>
-            <a href="/actor/86883-namit-das" class="cast-card">
+            <a href="/actor/86883-namit-das.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Wm6DHg6OapLLTQA7I2b8nLksr7.jpg" alt="Namit Das" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Namit Das</span>
             </a>
-            <a href="/actor/1945925-atul-srivastava" class="cast-card">
+            <a href="/actor/1945925-atul-srivastava.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nbOoces0ukl1abKnPzjtyrBFChO.jpg" alt="Atul Srivastava" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Atul Srivastava</span>
             </a>
-            <a href="/actor/2505977-monika-panwar" class="cast-card">
+            <a href="/actor/2505977-monika-panwar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k6KDBJnLyvx0LWCW1DHEi4XeZES.jpg" alt="Monika Panwar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Monika Panwar</span>
             </a>
-            <a href="/actor/1981903-niharika-lyra-dutt" class="cast-card">
+            <a href="/actor/1981903-niharika-lyra-dutt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gDEkbTNBMhkPgNd14actBOdTVtj.jpg" alt="Niharika Lyra Dutt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Niharika Lyra Dutt</span>
             </a>
-            <a href="/actor/2281318-gyanendra-tripathi" class="cast-card">
+            <a href="/actor/2281318-gyanendra-tripathi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iNGSxhZolTUNbtWvMaof6LOgRcZ.jpg" alt="Gyanendra Tripathi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gyanendra Tripathi</span>
             </a>
-            <a href="/actor/1715408-vikram-kochhar" class="cast-card">
+            <a href="/actor/1715408-vikram-kochhar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qzwC8ebdicpuoVjfsM3KQSG6J9O.jpg" alt="Vikram Kochhar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vikram Kochhar</span>
             </a>
-            <a href="/actor/2587938-chandan-roy" class="cast-card">
+            <a href="/actor/2587938-chandan-roy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2zIIonCsFrdcmmZD0g5YIaCPnQY.jpg" alt="Chandan Roy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chandan Roy</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

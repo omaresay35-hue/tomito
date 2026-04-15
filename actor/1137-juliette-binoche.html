@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/975511-the-return">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/975511-the-return.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xSj6EbdwHs3MFT2tRj9L3I7TE5j.jpg" alt="The Return — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Return</div></div>
-    </a>    <a class="card" href="/movie/1136987-its-not-me">
+    </a>    <a class="card" href="/movie/1136987-its-not-me.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wQ3T6eEVqf3ReKm0DJT8eWj03XC.jpg" alt="It's Not Me — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">It's Not Me</div></div>
-    </a>    <a class="card" href="/movie/110-three-colors-red">
+    </a>    <a class="card" href="/movie/110-three-colors-red.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/JHmsBiX1tjCKqAul1lzC20WcAW.jpg" alt="Three Colors: Red — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Three Colors: Red</div></div>
-    </a>    <a class="card" href="/movie/109-three-colors-white">
+    </a>    <a class="card" href="/movie/109-three-colors-white.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fdIet3NSa27gobMbaUml66oCQNT.jpg" alt="Three Colors: White — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Three Colors: White</div></div>
-    </a>    <a class="card" href="/movie/108-three-colors-blue">
+    </a>    <a class="card" href="/movie/108-three-colors-blue.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/33wsWxzsNstI8N7dvuwzFmj1qBd.jpg" alt="Three Colors: Blue — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Three Colors: Blue</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/157368-the-new-look">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/157368-the-new-look.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/aQBpF8VmEIgow41OL9h4nU4WN6v.jpg" alt="The New Look — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The New Look</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

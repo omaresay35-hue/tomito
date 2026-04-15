@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,35 +75,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/70851-jack-black" class="cast-card">
+            <a href="/actor/70851-jack-black.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/59IhgCtiWI5yTfzPhsjzg7GjCjm.jpg" alt="Jack Black" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Black</span>
             </a>
-            <a href="/actor/1089873-rita-ora" class="cast-card">
+            <a href="/actor/1089873-rita-ora.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o1DMrW8vsTYnCcvVTZy6hEvlk4f.jpg" alt="Rita Ora" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rita Ora</span>
             </a>
-            <a href="/actor/62879-chris-geere" class="cast-card">
+            <a href="/actor/62879-chris-geere.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y5Ti23z47KY0XG7lzSLxffB0QKn.jpg" alt="Chris Geere" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Geere</span>
             </a>
-            <a href="/actor/1610446-della-saba" class="cast-card">
+            <a href="/actor/1610446-della-saba.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q2ksier0nLdvKbGUzVmpblgl8NT.jpg" alt="Della Saba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Della Saba</span>
             </a>
-            <a href="/actor/20904-james-hong" class="cast-card">
+            <a href="/actor/20904-james-hong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v3lfw5aHOy0paOCx6WHiSnwzbH0.jpg" alt="James Hong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Hong</span>
             </a>
-            <a href="/actor/1456313-rahnuma-panthaky" class="cast-card">
+            <a href="/actor/1456313-rahnuma-panthaky.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5K1Os8pZNB87g65Cyq8RlvAFYj4.jpg" alt="Rahnuma Panthaky" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rahnuma Panthaky</span>
             </a>
-            <a href="/actor/1695631-melissa-villaseñor" class="cast-card">
+            <a href="/actor/1695631-melissa-villaseñor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/144VoO4M5sU0Mn4lpTOYQFAgNVO.jpg" alt="Melissa Villaseñor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Melissa Villaseñor</span>
             </a>
-            <a href="/actor/4483-dustin-hoffman" class="cast-card">
+            <a href="/actor/4483-dustin-hoffman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yxNGnTiou25c3zjppT5dW2eWAve.jpg" alt="Dustin Hoffman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dustin Hoffman</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

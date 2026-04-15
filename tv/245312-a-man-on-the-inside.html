@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>جاسوس من الداخل</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/12836-ted-danson" class="cast-card">
+            <a href="/actor/12836-ted-danson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2QUEYVhrKbOkRKeFEUnc5sJby6a.jpg" alt="Ted Danson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ted Danson</span>
             </a>
-            <a href="/actor/139309-mary-elizabeth-ellis" class="cast-card">
+            <a href="/actor/139309-mary-elizabeth-ellis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dxU1L86zV6gjcOdATfO4uo6zIpt.jpg" alt="Mary Elizabeth Ellis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mary Elizabeth Ellis</span>
             </a>
-            <a href="/actor/1649246-lilah-richcreek-estrada" class="cast-card">
+            <a href="/actor/1649246-lilah-richcreek-estrada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pA3pPpC5ShWvoqREeHLpScXd2Qg.jpg" alt="Lilah Richcreek Estrada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lilah Richcreek Estrada</span>
             </a>
-            <a href="/actor/2453-mary-steenburgen" class="cast-card">
+            <a href="/actor/2453-mary-steenburgen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yJhfuqS3yXW7kLSyvRU6n3b35mq.jpg" alt="Mary Steenburgen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mary Steenburgen</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

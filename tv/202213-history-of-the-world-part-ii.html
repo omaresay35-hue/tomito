@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>History of the World: Part II</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/27102-wanda-sykes" class="cast-card">
+            <a href="/actor/27102-wanda-sykes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kHC6rgzF1B39mojqhhEbkspdxCS.jpg" alt="Wanda Sykes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wanda Sykes</span>
             </a>
-            <a href="/actor/208519-nick-kroll" class="cast-card">
+            <a href="/actor/208519-nick-kroll.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ggDaWSVuEXryxTJ6sKo2kiEhZPL.jpg" alt="Nick Kroll" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nick Kroll</span>
             </a>
-            <a href="/actor/198150-ike-barinholtz" class="cast-card">
+            <a href="/actor/198150-ike-barinholtz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pxK1HXsQFfh3zT1KA3t6lEKMiZK.jpg" alt="Ike Barinholtz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ike Barinholtz</span>
             </a>
-            <a href="/actor/14639-mel-brooks" class="cast-card">
+            <a href="/actor/14639-mel-brooks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/c21qNcMJlHnRolfhQhZOVacjtwI.jpg" alt="Mel Brooks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mel Brooks</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

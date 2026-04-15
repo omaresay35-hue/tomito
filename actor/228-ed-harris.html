@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,31 +73,31 @@ Harris has appeared in numerous leading and supporting roles, including in Cree
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/467905-how-to-make-a-killing">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/467905-how-to-make-a-killing.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yQ7OP2HYxl9YmkWNMkuUA2YaF5.jpg" alt="How to Make a Killing — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">How to Make a Killing</div></div>
-    </a>    <a class="card" href="/movie/1127767-riff-raff">
+    </a>    <a class="card" href="/movie/1127767-riff-raff.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xPSur71bxvFVdQ6RdKv0yaVKT2n.jpg" alt="Riff Raff — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Riff Raff</div></div>
-    </a>    <a class="card" href="/movie/1128505-my-dead-friend-zoe">
+    </a>    <a class="card" href="/movie/1128505-my-dead-friend-zoe.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bRoDBpwGU5UW03hQMExN2l92Q93.jpg" alt="My Dead Friend Zoe — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">My Dead Friend Zoe</div></div>
-    </a>    <a class="card" href="/movie/948549-love-lies-bleeding">
+    </a>    <a class="card" href="/movie/948549-love-lies-bleeding.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xImj8RLe39YK0lyVu9kXv7ApN8p.jpg" alt="Love Lies Bleeding — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Love Lies Bleeding</div></div>
-    </a>    <a class="card" href="/movie/241554-run-all-night">
+    </a>    <a class="card" href="/movie/241554-run-all-night.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/iGvSMoPbWZWDnIhh54yiq3sW7wH.jpg" alt="Run All Night — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Run All Night</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/259709-wyatt-earp-and-the-cowboy-war">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/259709-wyatt-earp-and-the-cowboy-war.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3J6MdyMKOb5bAEn0C6c3RtuqgT7.jpg" alt="Wyatt Earp and the Cowboy War — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wyatt Earp and the Cowboy War</div></div>
-    </a>    <a class="card" href="/tv/509-chips">
+    </a>    <a class="card" href="/tv/509-chips.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1464ScbUZQ22RjFtRtGiv4i2Zrs.jpg" alt="CHiPs — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">CHiPs</div></div>
@@ -106,13 +106,6 @@ Harris has appeared in numerous leading and supporting roles, including in Cree
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

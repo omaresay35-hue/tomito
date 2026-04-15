@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Dood Spoor</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/88808-peter-van-den-begin" class="cast-card">
+            <a href="/actor/88808-peter-van-den-begin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wK12wgD4ViVB5rgRfXNiVIeR0kg.jpg" alt="Peter van den Begin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Peter van den Begin</span>
             </a>
-            <a href="/actor/2900070-emilie-de-roo" class="cast-card">
+            <a href="/actor/2900070-emilie-de-roo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jXiZjMF86JKoVlfdub8GR4NGgiV.jpg" alt="Emilie De Roo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emilie De Roo</span>
             </a>
-            <a href="/actor/1590015-marjan-de-schutter" class="cast-card">
+            <a href="/actor/1590015-marjan-de-schutter.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7yKI11wAeD3Jxrr43bIRDPAkNM2.jpg" alt="Marjan De Schutter" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marjan De Schutter</span>
             </a>
-            <a href="/actor/87678-elise-schaap" class="cast-card">
+            <a href="/actor/87678-elise-schaap.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oaZZ5qgkGrZAxhrjDJ3y6vzk3f8.jpg" alt="Elise Schaap" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elise Schaap</span>
             </a>
-            <a href="/actor/1966958-ward-kerremans" class="cast-card">
+            <a href="/actor/1966958-ward-kerremans.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vphIQM2C6MzATLBOkjrf7u7h3Um.jpg" alt="Ward Kerremans" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ward Kerremans</span>
             </a>
-            <a href="/actor/5110192-jesse-bo-gebruers" class="cast-card">
+            <a href="/actor/5110192-jesse-bo-gebruers.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jesse Bo Gebruers" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jesse Bo Gebruers</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

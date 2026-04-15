@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Limpia</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1109643-maría-paz-grandjean" class="cast-card">
+            <a href="/actor/1109643-maría-paz-grandjean.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Vh6OcUdo5uDdOGSyvZwZGWLTvX.jpg" alt="María Paz Grandjean" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>María Paz Grandjean</span>
             </a>
-            <a href="/actor/5645316-rosa-puga-vittini" class="cast-card">
+            <a href="/actor/5645316-rosa-puga-vittini.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rjoswOS5864zb7VrPxDpnUZw6iU.jpg" alt="Rosa Puga Vittini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rosa Puga Vittini</span>
             </a>
-            <a href="/actor/2171544-ignacia-baeza" class="cast-card">
+            <a href="/actor/2171544-ignacia-baeza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5ZVEGrqmAsfsVD2dsJl7AGfS5KV.jpg" alt="Ignacia Baeza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ignacia Baeza</span>
             </a>
-            <a href="/actor/2044566-benjamín-westfall" class="cast-card">
+            <a href="/actor/2044566-benjamín-westfall.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sBe8wSJmdmXpz2K8XFGYbC9Ju7m.jpg" alt="Benjamín Westfall" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Benjamín Westfall</span>
             </a>
-            <a href="/actor/1471605-rodrigo-palacios" class="cast-card">
+            <a href="/actor/1471605-rodrigo-palacios.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A7n69bkFS27Mw3Ne7kuFOaqPqAW.jpg" alt="Rodrigo Palacios" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rodrigo Palacios</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

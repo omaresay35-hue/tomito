@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Riefenstahl</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/10139-leni-riefenstahl" class="cast-card">
+            <a href="/actor/10139-leni-riefenstahl.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6qBz8IVXankocpDP6pLQJFAIYYp.jpg" alt="Leni Riefenstahl" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leni Riefenstahl</span>
             </a>
-            <a href="/actor/1144713-horst-kettner" class="cast-card">
+            <a href="/actor/1144713-horst-kettner.html" class="cast-card">
                 <img src="/favicon.ico" alt="Horst Kettner" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Horst Kettner</span>
             </a>
-            <a href="/actor/10279-adolf-hitler" class="cast-card">
+            <a href="/actor/10279-adolf-hitler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n6f81IUSes1a8jTzUIF7rJ5zZnP.jpg" alt="Adolf Hitler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adolf Hitler</span>
             </a>
-            <a href="/actor/1090808-joseph-goebbels" class="cast-card">
+            <a href="/actor/1090808-joseph-goebbels.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qdvjL4rLbrumPxUwL1VGX8GYP1R.jpg" alt="Joseph Goebbels" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joseph Goebbels</span>
             </a>
-            <a href="/actor/1219975-albert-speer" class="cast-card">
+            <a href="/actor/1219975-albert-speer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yyJbtaRBKlaESmqX2h8oZz6ZtcI.jpg" alt="Albert Speer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Albert Speer</span>
             </a>
-            <a href="/actor/10280-rudolf-hess" class="cast-card">
+            <a href="/actor/10280-rudolf-hess.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zwz9KJjaN2Ui2KbcjgQnJk55QI8.jpg" alt="Rudolf Hess" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rudolf Hess</span>
             </a>
-            <a href="/actor/2298118-hansjürgen-rosenbauer" class="cast-card">
+            <a href="/actor/2298118-hansjürgen-rosenbauer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e0MWOqPl11kG7HjuTtCgy9bPz0W.jpg" alt="Hansjürgen Rosenbauer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hansjürgen Rosenbauer</span>
             </a>
-            <a href="/actor/5025457-elfriede-kretschmer" class="cast-card">
+            <a href="/actor/5025457-elfriede-kretschmer.html" class="cast-card">
                 <img src="/favicon.ico" alt="Elfriede Kretschmer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elfriede Kretschmer</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

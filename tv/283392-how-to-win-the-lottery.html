@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>حيلة للفوز باليانصيب</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1020697-alberto-guerra" class="cast-card">
+            <a href="/actor/1020697-alberto-guerra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aqckvbjXVGeFlx27FJevoby9WBM.jpg" alt="Alberto Guerra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alberto Guerra</span>
             </a>
-            <a href="/actor/234184-ana-brenda-contreras" class="cast-card">
+            <a href="/actor/234184-ana-brenda-contreras.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3ELp4YRikJKQDUCedSgnPpbCVDb.jpg" alt="Ana Brenda Contreras" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ana Brenda Contreras</span>
             </a>
-            <a href="/actor/947768-andrés-almeida" class="cast-card">
+            <a href="/actor/947768-andrés-almeida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4cTw37HIfjFrD4CcFf8IKokyYJM.jpg" alt="Andrés Almeida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrés Almeida</span>
             </a>
-            <a href="/actor/1255923-christian-tappán" class="cast-card">
+            <a href="/actor/1255923-christian-tappán.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v127qecxA8dN6G9nG3m18SWbyrq.jpg" alt="Christian Tappán" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christian Tappán</span>
             </a>
-            <a href="/actor/1484109-aldo-escalante" class="cast-card">
+            <a href="/actor/1484109-aldo-escalante.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/htKomk6SDIGJa1WuRM1yPbje2C4.jpg" alt="Aldo Escalante" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aldo Escalante</span>
             </a>
-            <a href="/actor/1309460-luis-alberti" class="cast-card">
+            <a href="/actor/1309460-luis-alberti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1uf6WXebWuL0oEMM2z8ulcnRro.jpg" alt="Luis Alberti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luis Alberti</span>
             </a>
-            <a href="/actor/947184-mariana-gajá" class="cast-card">
+            <a href="/actor/947184-mariana-gajá.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kzAngKZLp0xiSkU1cLxTFjngdWx.jpg" alt="Mariana Gajá" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariana Gajá</span>
             </a>
-            <a href="/actor/1486120-mercedes-hernández" class="cast-card">
+            <a href="/actor/1486120-mercedes-hernández.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2pC5Lv1eiItvAxeEe8KTbRlM1wY.jpg" alt="Mercedes Hernández" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mercedes Hernández</span>
             </a>
-            <a href="/actor/2558356-jero-medina" class="cast-card">
+            <a href="/actor/2558356-jero-medina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A8FWB4dw7qVF4fOrRcbnZM7qgXG.jpg" alt="Jero Medina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jero Medina</span>
             </a>
-            <a href="/actor/2695562-paloma-petra" class="cast-card">
+            <a href="/actor/2695562-paloma-petra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cbbnkLzXKnjGQ7x9GYHk3LvmFaz.jpg" alt="Paloma Petra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paloma Petra</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

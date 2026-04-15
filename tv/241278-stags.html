@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Stags</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1075321-nico-mirallegro" class="cast-card">
+            <a href="/actor/1075321-nico-mirallegro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zcrGmKeabSpL5ftVwyRBCeBxjsF.jpg" alt="Nico Mirallegro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nico Mirallegro</span>
             </a>
-            <a href="/actor/2833518-corin-silva" class="cast-card">
+            <a href="/actor/2833518-corin-silva.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qSF5NmUrxmsfAsN1LAOOlXFYb4L.jpg" alt="Corin Silva" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Corin Silva</span>
             </a>
-            <a href="/actor/4889471-sophie-lenglinger" class="cast-card">
+            <a href="/actor/4889471-sophie-lenglinger.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4cbBOvc0hw3ILr7vjr7gEMruinx.jpg" alt="Sophie Lenglinger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sophie Lenglinger</span>
             </a>
-            <a href="/actor/1945924-jojo-macari" class="cast-card">
+            <a href="/actor/1945924-jojo-macari.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fYv8j4AA3wzJzqHPRXKBcLVH0cq.jpg" alt="Jojo Macari" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jojo Macari</span>
             </a>
-            <a href="/actor/2793831-paul-forman" class="cast-card">
+            <a href="/actor/2793831-paul-forman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/chgYFUQ9nrCHeM1UsV8b70Kogs7.jpg" alt="Paul Forman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paul Forman</span>
             </a>
-            <a href="/actor/93649-javier-godino" class="cast-card">
+            <a href="/actor/93649-javier-godino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qwXxX6gKIphuCXJ2wgeROPjIdic.jpg" alt="Javier Godino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Javier Godino</span>
             </a>
-            <a href="/actor/72674-paulina-gálvez" class="cast-card">
+            <a href="/actor/72674-paulina-gálvez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qLn6T7rPAm0qLtwRwhVodD4BUTY.jpg" alt="Paulina Gálvez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paulina Gálvez</span>
             </a>
-            <a href="/actor/1363147-oscar-foronda" class="cast-card">
+            <a href="/actor/1363147-oscar-foronda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9pJU9eZOZNp4jGr1lK2dRFBdxUa.jpg" alt="Oscar Foronda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oscar Foronda</span>
             </a>
-            <a href="/actor/190699-cavan-clerkin" class="cast-card">
+            <a href="/actor/190699-cavan-clerkin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rtmU4RxFZze6s8At7Ob3ypLKp1l.jpg" alt="Cavan Clerkin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cavan Clerkin</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1270908-the-pet-detective">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1270908-the-pet-detective.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ydaAO8A9pIdtLN6K3hSAGVn08rH.jpg" alt="The Pet Detective — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">3.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Pet Detective</div></div>
-    </a>    <a class="card" href="/movie/945836-odum-kuthira-chadum-kuthira">
+    </a>    <a class="card" href="/movie/945836-odum-kuthira-chadum-kuthira.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/A7tcEl28jq2dOm3iU2WqGVzGnTP.jpg" alt="Odum Kuthira Chadum Kuthira — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Odum Kuthira Chadum Kuthira</div></div>
-    </a>    <a class="card" href="/movie/957926-aattam">
+    </a>    <a class="card" href="/movie/957926-aattam.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gjptPp7YlX1oy9yCjEpOdlrRisL.jpg" alt="Aattam — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Aattam</div></div>
-    </a>    <a class="card" href="/movie/214582-veettilekulla-vazhi">
+    </a>    <a class="card" href="/movie/214582-veettilekulla-vazhi.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8433ZJpeLUYzjj8lEbdoC7Q1I1J.jpg" alt="Veettilekulla Vazhi — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Veettilekulla Vazhi</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

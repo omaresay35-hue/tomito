@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1157322-franz">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1157322-franz.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cCRBkb1U9eKz1DYa4UMGZBSkcjC.jpg" alt="Franz — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Franz</div></div>
-    </a>    <a class="card" href="/movie/1294729-secret-delivery">
+    </a>    <a class="card" href="/movie/1294729-secret-delivery.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/r82r3jsokr1q9YIrJ9w0truKeFI.jpg" alt="Secret Delivery — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Secret Delivery</div></div>
-    </a>    <a class="card" href="/movie/426063-nosferatu">
+    </a>    <a class="card" href="/movie/426063-nosferatu.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5qGIxdEO841C0tdY8vOdLoRVrr0.jpg" alt="Nosferatu — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Nosferatu</div></div>
-    </a>    <a class="card" href="/movie/957452-the-crow">
+    </a>    <a class="card" href="/movie/957452-the-crow.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/g8TbOXrNMuqq7AaKqdvqS2oG4ob.jpg" alt="The Crow — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Crow</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

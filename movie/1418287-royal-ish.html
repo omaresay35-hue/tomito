@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Royal-ish</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/996697-nichole-sakura" class="cast-card">
+            <a href="/actor/996697-nichole-sakura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pnYsUkrFGvTFwktm9QTmddr4yH1.jpg" alt="Nichole Sakura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nichole Sakura</span>
             </a>
-            <a href="/actor/5528-william-moseley" class="cast-card">
+            <a href="/actor/5528-william-moseley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6HTpmCaGhtLEY6OUhRaXYgldb0x.jpg" alt="William Moseley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>William Moseley</span>
             </a>
-            <a href="/actor/4303696-francesca-europa" class="cast-card">
+            <a href="/actor/4303696-francesca-europa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m3lGHxqs73BFoinA2FA8t4T6ytt.jpg" alt="Francesca Europa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francesca Europa</span>
             </a>
-            <a href="/actor/3574462-emily-swain" class="cast-card">
+            <a href="/actor/3574462-emily-swain.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4Que3p81SqY83kQwhw8eEkU2YBt.jpg" alt="Emily Swain" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emily Swain</span>
             </a>
-            <a href="/actor/1327059-stephen-mullan" class="cast-card">
+            <a href="/actor/1327059-stephen-mullan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Stephen Mullan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephen Mullan</span>
             </a>
-            <a href="/actor/4413736-sophia-adli" class="cast-card">
+            <a href="/actor/4413736-sophia-adli.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sTj9859o8tGEY9js7bVJvU2lXIM.jpg" alt="Sophia Adli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sophia Adli</span>
             </a>
-            <a href="/actor/147054-brendan-dempsey" class="cast-card">
+            <a href="/actor/147054-brendan-dempsey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8livHKJd4ca1N9awFUlSt7xGv8a.jpg" alt="Brendan Dempsey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brendan Dempsey</span>
             </a>
-            <a href="/actor/4912912-hannah-brady" class="cast-card">
+            <a href="/actor/4912912-hannah-brady.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pFAAKO6MNsJIW8I5pogFMaZeIrb.jpg" alt="Hannah Brady" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hannah Brady</span>
             </a>
-            <a href="/actor/3909147-john-nayagam" class="cast-card">
+            <a href="/actor/3909147-john-nayagam.html" class="cast-card">
                 <img src="/favicon.ico" alt="John Nayagam" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Nayagam</span>
             </a>
-            <a href="/actor/5704603-tom-delahunty" class="cast-card">
+            <a href="/actor/5704603-tom-delahunty.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ljs3AydxPHwizryBLmkfS3pDEe5.jpg" alt="Tom Delahunty" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Delahunty</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

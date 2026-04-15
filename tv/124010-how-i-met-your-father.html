@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,31 +75,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5958-hilary-duff" class="cast-card">
+            <a href="/actor/5958-hilary-duff.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/48Pwyp6ASq8MjW2g4JERj47TeO4.jpg" alt="Hilary Duff" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hilary Duff</span>
             </a>
-            <a href="/actor/84300-chris-lowell" class="cast-card">
+            <a href="/actor/84300-chris-lowell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mRZcivH2VjWRB1mQuOvRuRC2Lll.jpg" alt="Chris Lowell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Lowell</span>
             </a>
-            <a href="/actor/1276317-francia-raísa" class="cast-card">
+            <a href="/actor/1276317-francia-raísa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uTjmrUPJUyM7n5CBCjxT5IX3Eac.jpg" alt="Francia Raísa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Francia Raísa</span>
             </a>
-            <a href="/actor/933160-suraj-sharma" class="cast-card">
+            <a href="/actor/933160-suraj-sharma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uT1OLTyiDsAczXA2QtlFxWyWFTj.jpg" alt="Suraj Sharma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Suraj Sharma</span>
             </a>
-            <a href="/actor/1566052-tom-ainsley" class="cast-card">
+            <a href="/actor/1566052-tom-ainsley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vovV8BMKzinc8UlWinewklyHE15.jpg" alt="Tom Ainsley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Ainsley</span>
             </a>
-            <a href="/actor/2659379-tien-tran" class="cast-card">
+            <a href="/actor/2659379-tien-tran.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yZxA3dYelCiMb2qWBZRHTAzvtwm.jpg" alt="Tien Tran" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tien Tran</span>
             </a>
-            <a href="/actor/2109-kim-cattrall" class="cast-card">
+            <a href="/actor/2109-kim-cattrall.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6X6x8gLSOWxwhoquIi37769m0k0.jpg" alt="Kim Cattrall" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Cattrall</span>
             </a></div></section>
@@ -107,13 +107,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

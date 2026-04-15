@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>True Lies</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/81388-steve-howey" class="cast-card">
+            <a href="/actor/81388-steve-howey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sbAG1WZHlUdky7ABi1054ExRC1w.jpg" alt="Steve Howey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steve Howey</span>
             </a>
-            <a href="/actor/1181314-ginger-gonzaga" class="cast-card">
+            <a href="/actor/1181314-ginger-gonzaga.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4YMXflYscHwrDBrrPfWEndwyNsB.jpg" alt="Ginger Gonzaga" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ginger Gonzaga</span>
             </a>
-            <a href="/actor/2687201-mike-ogorman" class="cast-card">
+            <a href="/actor/2687201-mike-ogorman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/221x9so5HCu9hA2yGGz1stKi9f7.jpg" alt="Mike O'Gorman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mike O'Gorman</span>
             </a>
-            <a href="/actor/2305067-erica-hernandez" class="cast-card">
+            <a href="/actor/2305067-erica-hernandez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5BwdYN8eFmroGkP3Rj5C4aJR8EE.jpg" alt="Erica Hernandez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erica Hernandez</span>
             </a>
-            <a href="/actor/3009612-annabella-didion" class="cast-card">
+            <a href="/actor/3009612-annabella-didion.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lIijSUzrUrZIYIWqz5mZFTViZzH.jpg" alt="Annabella Didion" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Annabella Didion</span>
             </a>
-            <a href="/actor/1583996-lucas-jaye" class="cast-card">
+            <a href="/actor/1583996-lucas-jaye.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rsKYeAKWnMarkIt7gzTjxXGItRN.jpg" alt="Lucas Jaye" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucas Jaye</span>
             </a>
-            <a href="/actor/334-omar-benson-miller" class="cast-card">
+            <a href="/actor/334-omar-benson-miller.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/adlrkEpxDIcpxF7bpzMGErLxeHP.jpg" alt="Omar Benson Miller" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Omar Benson Miller</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

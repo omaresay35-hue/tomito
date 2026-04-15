@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Other</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/18182-olga-kurylenko" class="cast-card">
+            <a href="/actor/18182-olga-kurylenko.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ei6eYUhQFw2AaV6U5fyPptBaPF0.jpg" alt="Olga Kurylenko" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olga Kurylenko</span>
             </a>
-            <a href="/actor/3784066-jean-schatz" class="cast-card">
+            <a href="/actor/3784066-jean-schatz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/azOPkIHDun8rz2ssuBBEmnNE9bt.jpg" alt="Jean Schatz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jean Schatz</span>
             </a>
-            <a href="/actor/5503551-lola-bonaventure" class="cast-card">
+            <a href="/actor/5503551-lola-bonaventure.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lola Bonaventure" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lola Bonaventure</span>
             </a>
-            <a href="/actor/1653124-jacqueline-ghaye" class="cast-card">
+            <a href="/actor/1653124-jacqueline-ghaye.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8CLYavf4FYW8BBJzP6LrYuASi4h.jpg" alt="Jacqueline Ghaye" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jacqueline Ghaye</span>
             </a>
-            <a href="/actor/5304657-sasha-nugent" class="cast-card">
+            <a href="/actor/5304657-sasha-nugent.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sasha Nugent" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sasha Nugent</span>
             </a>
-            <a href="/actor/1179888-philip-schurer" class="cast-card">
+            <a href="/actor/1179888-philip-schurer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fVC2tOp44gVsrGzUqB745PzgZzk.jpg" alt="Philip Schurer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Philip Schurer</span>
             </a>
-            <a href="/actor/5503554-ange-nawasadio" class="cast-card">
+            <a href="/actor/5503554-ange-nawasadio.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m8AvdyhS9kDuMpIs4Bm2siOQRtR.jpg" alt="Ange Nawasadio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ange Nawasadio</span>
             </a>
-            <a href="/actor/1467524-julie-maes" class="cast-card">
+            <a href="/actor/1467524-julie-maes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zms6UzJf91wC7rddp7Y8pz6ApRN.jpg" alt="Julie Maes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julie Maes</span>
             </a>
-            <a href="/actor/3811652-milton-riche" class="cast-card">
+            <a href="/actor/3811652-milton-riche.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2C3Frd1UmRDzkv4YHJUzjAHKOKh.jpg" alt="Milton Riche" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Milton Riche</span>
             </a>
-            <a href="/actor/1146743-anne-pascale-clairembourg" class="cast-card">
+            <a href="/actor/1146743-anne-pascale-clairembourg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ha59frJtIljI9uivGZYyldaX6jF.jpg" alt="Anne-Pascale Clairembourg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anne-Pascale Clairembourg</span>
             </a>
-            <a href="/actor/5304657-sasha-nugent" class="cast-card">
+            <a href="/actor/5304657-sasha-nugent.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sasha Nugent" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sasha Nugent</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

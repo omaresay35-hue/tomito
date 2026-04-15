@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1257425-rave-on">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1257425-rave-on.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/20PIVsVADzvccIq1dW79lRGwEBC.jpg" alt="Rave On — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Rave On</div></div>
-    </a>    <a class="card" href="/movie/1173522-the-investigation">
+    </a>    <a class="card" href="/movie/1173522-the-investigation.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/picoBlK5yZB1Z0fclPZFTY0twV.jpg" alt="The Investigation — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Investigation</div></div>
-    </a>    <a class="card" href="/movie/227975-futuro-beach">
+    </a>    <a class="card" href="/movie/227975-futuro-beach.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lologg70UiUMok8ijdSfDzBwR0N.jpg" alt="Futuro Beach — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Futuro Beach</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/255548-x-rated-queen">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/255548-x-rated-queen.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/A2BoRnDG9mje2Vo7JZXREYI8w0r.jpg" alt="X-Rated Queen — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">X-Rated Queen</div></div>
-    </a>    <a class="card" href="/tv/83867-andor">
+    </a>    <a class="card" href="/tv/83867-andor.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/khZqmwHQicTYoS7Flreb9EddFZC.jpg" alt="Andor — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Andor</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

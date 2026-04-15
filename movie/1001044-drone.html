@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,35 +75,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2879089-marion-barbeau" class="cast-card">
+            <a href="/actor/2879089-marion-barbeau.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9KJZhRxzMMDlwR8A9GpSPXLZ25W.jpg" alt="Marion Barbeau" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marion Barbeau</span>
             </a>
-            <a href="/actor/1850235-eugénie-derouand" class="cast-card">
+            <a href="/actor/1850235-eugénie-derouand.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5AzmefgMLYcZtS3LzpLpOgpDLUJ.jpg" alt="Eugénie Derouand" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eugénie Derouand</span>
             </a>
-            <a href="/actor/93903-cédric-kahn" class="cast-card">
+            <a href="/actor/93903-cédric-kahn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aw4OFv5Cod0gP8WQCVlUzaPvdk7.jpg" alt="Cédric Kahn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cédric Kahn</span>
             </a>
-            <a href="/actor/2601088-stefan-crepon" class="cast-card">
+            <a href="/actor/2601088-stefan-crepon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pEhRxeFhLR1iVyYBMkHijkLZ3xN.jpg" alt="Stefan Crepon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stefan Crepon</span>
             </a>
-            <a href="/actor/1810958-bilel-chegrani" class="cast-card">
+            <a href="/actor/1810958-bilel-chegrani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s5kOLzbRRvyHYreLbhET9ybsm7K.jpg" alt="Bilel Chegrani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bilel Chegrani</span>
             </a>
-            <a href="/actor/1933747-rio-vega" class="cast-card">
+            <a href="/actor/1933747-rio-vega.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vUum68QrXfjsKNw45sLyQvz6YLi.jpg" alt="Rio Vega" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rio Vega</span>
             </a>
-            <a href="/actor/1769562-clara-choï" class="cast-card">
+            <a href="/actor/1769562-clara-choï.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xoYLNUN6PbCSe2hLPAm5xtd6ubU.jpg" alt="Clara Choï" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Clara Choï</span>
             </a>
-            <a href="/actor/2064272-yamée-couture" class="cast-card">
+            <a href="/actor/2064272-yamée-couture.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4u1CYE3PQ3iZ4Z52gicJSNsI7J3.jpg" alt="Yamée Couture" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yamée Couture</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

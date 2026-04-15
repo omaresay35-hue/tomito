@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Pourquoi tu souris ?</span>
   </nav>
 
@@ -71,43 +71,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1496508-jean-pascal-zadi" class="cast-card">
+            <a href="/actor/1496508-jean-pascal-zadi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wkI3RmKxNMtxNBOfSpgMgQsR53K.jpg" alt="Jean-Pascal Zadi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jean-Pascal Zadi</span>
             </a>
-            <a href="/actor/26165-judith-magre" class="cast-card">
+            <a href="/actor/26165-judith-magre.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9nSb5UJZNzFVBeNbXAcYJIm4zuX.jpg" alt="Judith Magre" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Judith Magre</span>
             </a>
-            <a href="/actor/19117-emmanuelle-devos" class="cast-card">
+            <a href="/actor/19117-emmanuelle-devos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bX1l2sTxoXVMRBky7rfD3lVEHud.jpg" alt="Emmanuelle Devos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emmanuelle Devos</span>
             </a>
-            <a href="/actor/2185414-raphaël-quenard" class="cast-card">
+            <a href="/actor/2185414-raphaël-quenard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lMLzNtZKalKX1tO0QHKlfZphg7m.jpg" alt="Raphaël Quenard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Raphaël Quenard</span>
             </a>
-            <a href="/actor/1033745-camille-rutherford" class="cast-card">
+            <a href="/actor/1033745-camille-rutherford.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Iq8Gi1YsGNQ3gnxaVptXj68zVY.jpg" alt="Camille Rutherford" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Camille Rutherford</span>
             </a>
-            <a href="/actor/1172628-anne-lise-heimburger" class="cast-card">
+            <a href="/actor/1172628-anne-lise-heimburger.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tiACLgeJ0omEWIbk6aiR4ScF7la.jpg" alt="Anne-Lise Heimburger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anne-Lise Heimburger</span>
             </a>
-            <a href="/actor/128638-vincent-deniard" class="cast-card">
+            <a href="/actor/128638-vincent-deniard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dxt0HDPZ8wxAmAaoabjNVrNYgjU.jpg" alt="Vincent Deniard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vincent Deniard</span>
             </a>
-            <a href="/actor/1977894-stéphane-pezerat" class="cast-card">
+            <a href="/actor/1977894-stéphane-pezerat.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rDPj61mS6c71l6oBMCPM0sOkQd9.jpg" alt="Stéphane Pezerat" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stéphane Pezerat</span>
             </a>
-            <a href="/actor/2548718-sébastien-boissavit" class="cast-card">
+            <a href="/actor/2548718-sébastien-boissavit.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7TobuhF6i2Qe5cXGpdNw86G5EMU.jpg" alt="Sébastien Boissavit" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sébastien Boissavit</span>
             </a>
-            <a href="/actor/2916926-hubert-myon" class="cast-card">
+            <a href="/actor/2916926-hubert-myon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dvNQS2nMVffJfLButdREYWerP1p.jpg" alt="Hubert Myon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hubert Myon</span>
             </a></div></section>
@@ -115,13 +115,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

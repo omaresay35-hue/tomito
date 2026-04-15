@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/308682-the-boy-next-world-my-destiny">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/308682-the-boy-next-world-my-destiny.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nohWGK7vL3COZZbp0a2DCJCWqAj.jpg" alt="The Boy Next World: My Destiny — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Boy Next World: My Destiny</div></div>
-    </a>    <a class="card" href="/tv/256805-sugar-dog-life">
+    </a>    <a class="card" href="/tv/256805-sugar-dog-life.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bLMHhRwJXvu2XpnTKfAddHeJ2Ts.jpg" alt="Sugar Dog Life — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sugar Dog Life</div></div>
-    </a>    <a class="card" href="/tv/229305-gifted">
+    </a>    <a class="card" href="/tv/229305-gifted.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nlEm3VqfTdoHU1rRVOL1HrDpRIt.jpg" alt="Gifted — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Gifted</div></div>
-    </a>    <a class="card" href="/tv/221634-wave-listen-to-me">
+    </a>    <a class="card" href="/tv/221634-wave-listen-to-me.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/onKxsWri7aQP8jIbe02jYl6JSfG.jpg" alt="Wave, Listen to Me! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wave, Listen to Me!</div></div>
-    </a>    <a class="card" href="/tv/222370-naked-dining">
+    </a>    <a class="card" href="/tv/222370-naked-dining.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/e90Xpvo1HNRXysNYu0HxJ1BHtfW.jpg" alt="Naked Dining — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Naked Dining</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

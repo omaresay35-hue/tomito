@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>おーい、応為</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/87637-masami-nagasawa" class="cast-card">
+            <a href="/actor/87637-masami-nagasawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yvHhfDOral1DeyBRSzpxsoHz60t.jpg" alt="Masami Nagasawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masami Nagasawa</span>
             </a>
-            <a href="/actor/68973-masatoshi-nagase" class="cast-card">
+            <a href="/actor/68973-masatoshi-nagase.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i4FjAoP2xPtG82lEGnIkL7mFc6g.jpg" alt="Masatoshi Nagase" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masatoshi Nagase</span>
             </a>
-            <a href="/actor/2487461-kaito-takahashi" class="cast-card">
+            <a href="/actor/2487461-kaito-takahashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bCzpCvptvje62jtl5xQJpWMgVZB.jpg" alt="Kaito Takahashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaito Takahashi</span>
             </a>
-            <a href="/actor/1255724-ryohei-otani" class="cast-card">
+            <a href="/actor/1255724-ryohei-otani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bMFKfn3Semxy22Mnc1bFJl29VeW.jpg" alt="Ryohei Otani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryohei Otani</span>
             </a>
-            <a href="/actor/1090916-eisuke-sasai" class="cast-card">
+            <a href="/actor/1090916-eisuke-sasai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wodKYG7zTWCVtQfWp4PlQS1vtuF.jpg" alt="Eisuke Sasai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eisuke Sasai</span>
             </a>
-            <a href="/actor/1168936-eita-okuno" class="cast-card">
+            <a href="/actor/1168936-eita-okuno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lh6452i8TnGFl10hPaDInGIPozz.jpg" alt="Eita Okuno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eita Okuno</span>
             </a>
-            <a href="/actor/83527-shinobu-terajima" class="cast-card">
+            <a href="/actor/83527-shinobu-terajima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tOk9ggHemFL5FCvhfYeIkyS3Fk9.jpg" alt="Shinobu Terajima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shinobu Terajima</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Piedone - Uno sbirro a Napoli</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1343865-salvatore-esposito" class="cast-card">
+            <a href="/actor/1343865-salvatore-esposito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lvTeMD1NqYmYbaH0jYek2oXaSvR.jpg" alt="Salvatore Esposito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Salvatore Esposito</span>
             </a>
-            <a href="/actor/3203552-silvia-damico" class="cast-card">
+            <a href="/actor/3203552-silvia-damico.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ai4OwTWRSvbjDdBysUx5QlvLTwy.jpg" alt="Silvia D'Amico" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Silvia D'Amico</span>
             </a>
-            <a href="/actor/1865276-fabio-balsamo" class="cast-card">
+            <a href="/actor/1865276-fabio-balsamo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aPrjSdBn56uapmrK1ihtspBkpQO.jpg" alt="Fabio Balsamo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fabio Balsamo</span>
             </a>
-            <a href="/actor/1859696-susy-del-giudice" class="cast-card">
+            <a href="/actor/1859696-susy-del-giudice.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yYyehKbppN1wayo6b7VEg57FjCJ.jpg" alt="Susy Del Giudice" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Susy Del Giudice</span>
             </a>
-            <a href="/actor/1668746-massimiliano-rossi" class="cast-card">
+            <a href="/actor/1668746-massimiliano-rossi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3kgkMSYty4mqBVLCO70b3gXtPnh.jpg" alt="Massimiliano Rossi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Massimiliano Rossi</span>
             </a>
-            <a href="/actor/1636737-gaia-scodellaro" class="cast-card">
+            <a href="/actor/1636737-gaia-scodellaro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5hk50qopSbFHDqWlHzBeN7crEVj.jpg" alt="Gaia Scodellaro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gaia Scodellaro</span>
             </a>
-            <a href="/actor/1328364-antonio-de-matteo" class="cast-card">
+            <a href="/actor/1328364-antonio-de-matteo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eu2tqbYcnJBFj3G3TALetKns2f1.jpg" alt="Antonio De Matteo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Antonio De Matteo</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

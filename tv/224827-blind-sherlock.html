@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Blind Sherlock</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5882739-bart-kelchtermans" class="cast-card">
+            <a href="/actor/5882739-bart-kelchtermans.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ldQM3S9mxptpUJZvWeq9HHtYidP.jpg" alt="Bart Kelchtermans" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bart Kelchtermans</span>
             </a>
-            <a href="/actor/43643-frank-lammers" class="cast-card">
+            <a href="/actor/43643-frank-lammers.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rGIikThUCilyt8rgHkeJAxxEhCO.jpg" alt="Frank Lammers" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Frank Lammers</span>
             </a>
-            <a href="/actor/929890-charlie-dagelet" class="cast-card">
+            <a href="/actor/929890-charlie-dagelet.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9PkrramaZKhm6agGOk99G6gf049.jpg" alt="Charlie Dagelet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charlie Dagelet</span>
             </a>
-            <a href="/actor/1198292-sigrid-ten-napel" class="cast-card">
+            <a href="/actor/1198292-sigrid-ten-napel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sp9CSIjxPnkkeqU20jIDCDYi0zn.jpg" alt="Sigrid ten Napel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sigrid ten Napel</span>
             </a>
-            <a href="/actor/45751-pierre-bokma" class="cast-card">
+            <a href="/actor/45751-pierre-bokma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6s4lpbszhXQYBgvbkVBbO1HmwhF.jpg" alt="Pierre Bokma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pierre Bokma</span>
             </a>
-            <a href="/actor/1243536-cynthia-abma" class="cast-card">
+            <a href="/actor/1243536-cynthia-abma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1F8g4BrV3Y1yEt5TdGlLXesaRtM.jpg" alt="Cynthia Abma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cynthia Abma</span>
             </a>
-            <a href="/actor/2192053-aysegül-karaca" class="cast-card">
+            <a href="/actor/2192053-aysegül-karaca.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8XSZIK072PvfTYzii56c8GDuCId.jpg" alt="Aysegül Karaca" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aysegül Karaca</span>
             </a>
-            <a href="/actor/1341013-rein-hofman" class="cast-card">
+            <a href="/actor/1341013-rein-hofman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tj1C5TbTkT56sqLvYxNqoGXiHRH.jpg" alt="Rein Hofman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rein Hofman</span>
             </a>
-            <a href="/actor/3522712-denzel-goudmijn" class="cast-card">
+            <a href="/actor/3522712-denzel-goudmijn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bo8HuAXjIUXAq9Vl7Buc9mtV0Ls.jpg" alt="Denzel Goudmijn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Denzel Goudmijn</span>
             </a>
-            <a href="/actor/145591-eline-ten-camp" class="cast-card">
+            <a href="/actor/145591-eline-ten-camp.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1fmb7n7P1zE9HBxt8qWYk3nPg9s.jpg" alt="Eline ten Camp" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eline ten Camp</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

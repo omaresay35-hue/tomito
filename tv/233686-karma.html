@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>كارما</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1593672-park-hae-soo" class="cast-card">
+            <a href="/actor/1593672-park-hae-soo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hFt7Cj8sx1VYIwm18lYmq5kS7Pw.jpg" alt="Park Hae-soo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Hae-soo</span>
             </a>
-            <a href="/actor/116175-shin-min-a" class="cast-card">
+            <a href="/actor/116175-shin-min-a.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6CjxjYvZBuvbAQTcuoPb8EeVrUI.jpg" alt="Shin Min-a" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shin Min-a</span>
             </a>
-            <a href="/actor/1046863-lee-hee-jun" class="cast-card">
+            <a href="/actor/1046863-lee-hee-jun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4slyXnHbKgzmeyJNetBSORgDDEF.jpg" alt="Lee Hee-jun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Hee-jun</span>
             </a>
-            <a href="/actor/1024396-kim-sung-kyun" class="cast-card">
+            <a href="/actor/1024396-kim-sung-kyun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pii4fmXdkSEppsHSIhJ9jV5izX1.jpg" alt="Kim Sung-kyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Sung-kyun</span>
             </a>
-            <a href="/actor/1326172-lee-kwang-soo" class="cast-card">
+            <a href="/actor/1326172-lee-kwang-soo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eqjZXCV4EutnoVxZwOveK6Nl5W9.jpg" alt="Lee Kwang-soo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Kwang-soo</span>
             </a>
-            <a href="/actor/1510022-gong-seung-yeon" class="cast-card">
+            <a href="/actor/1510022-gong-seung-yeon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yHZsZH9AHJbaRiHSWiKQamIeHWa.jpg" alt="Gong Seung-yeon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gong Seung-yeon</span>
             </a>
-            <a href="/actor/142993-choi-hong-il" class="cast-card">
+            <a href="/actor/142993-choi-hong-il.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/legbWLwSQ4IJFoljR1g3Ci2AAdv.jpg" alt="Choi Hong-il" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Choi Hong-il</span>
             </a>
-            <a href="/actor/1872629-park-ho-san" class="cast-card">
+            <a href="/actor/1872629-park-ho-san.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gL5eN7UvYlseBD0rjdjgjiVKuQJ.jpg" alt="Park Ho-san" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Ho-san</span>
             </a>
-            <a href="/actor/1579820-lee-seo-jun" class="cast-card">
+            <a href="/actor/1579820-lee-seo-jun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3k0n93Ryz0LnKWHDts7zqyldu9h.jpg" alt="Lee Seo-jun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Seo-jun</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

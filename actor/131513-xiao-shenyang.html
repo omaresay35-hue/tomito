@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1537396-love-is-hard">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1537396-love-is-hard.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/p3sdbpDWYdOkrSkAnNydcwH7cvJ.jpg" alt="Love is Hard — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Love is Hard</div></div>
-    </a>    <a class="card" href="/movie/1399515-the-adventure">
+    </a>    <a class="card" href="/movie/1399515-the-adventure.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/66ezexBnlJNwGkZtveEn0kyT8VO.jpg" alt="The Adventure — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Adventure</div></div>
-    </a>    <a class="card" href="/movie/1357305-detective-chinatown-1900">
+    </a>    <a class="card" href="/movie/1357305-detective-chinatown-1900.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/g3GsgIlH3fA4RxhNOAMvSbVWyfW.jpg" alt="Detective Chinatown 1900 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Detective Chinatown 1900</div></div>
-    </a>    <a class="card" href="/movie/1225862-the-last-frenzy">
+    </a>    <a class="card" href="/movie/1225862-the-last-frenzy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jkyYQ1G47kUGL1JNsuS26d6p93I.jpg" alt="The Last Frenzy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Last Frenzy</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

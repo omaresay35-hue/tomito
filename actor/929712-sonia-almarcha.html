@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1320917-subsuelo">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1320917-subsuelo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vnC4Ld6QOzxyO5FFzdGPjs5Czb0.jpg" alt="Subsuelo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Subsuelo</div></div>
-    </a>    <a class="card" href="/movie/1373445-vhshalloween">
+    </a>    <a class="card" href="/movie/1373445-vhshalloween.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bvMKSZtN8KAdtlKoYbEi1Zhyaou.jpg" alt="V/H/S/Halloween — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">V/H/S/Halloween</div></div>
-    </a>    <a class="card" href="/movie/1351046-the-talent">
+    </a>    <a class="card" href="/movie/1351046-the-talent.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5tQOxGjjbCPXbcismTX4gXxkCoa.jpg" alt="The Talent — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Talent</div></div>
-    </a>    <a class="card" href="/movie/1034391-la-mitad-de-ana">
+    </a>    <a class="card" href="/movie/1034391-la-mitad-de-ana.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/c24RWnJzwAtWZ039o9u6K7c8jyw.jpg" alt="La mitad de Ana — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">La mitad de Ana</div></div>
-    </a>    <a class="card" href="/movie/1195100-marco-the-invented-truth">
+    </a>    <a class="card" href="/movie/1195100-marco-the-invented-truth.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/l5trCq9c5rlZf5QJKM6iQHMA7u6.jpg" alt="Marco: The Invented Truth — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Marco: The Invented Truth</div></div>
-    </a>    <a class="card" href="/movie/1299372-the-wailing">
+    </a>    <a class="card" href="/movie/1299372-the-wailing.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wB5fVj1Se9TFt9q1CHAtoPiuMyZ.jpg" alt="The Wailing — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Wailing</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/227043-the-law-of-the-sea">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/227043-the-law-of-the-sea.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/adbP0D0HjQTbmlHmjyS7xDM8z5W.jpg" alt="The Law of the Sea — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Law of the Sea</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

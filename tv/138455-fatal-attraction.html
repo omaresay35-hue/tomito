@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Fatal Attraction</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/51988-lizzy-caplan" class="cast-card">
+            <a href="/actor/51988-lizzy-caplan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cHs9pPpjcEMpWrGmrAYAn0QOE78.jpg" alt="Lizzy Caplan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lizzy Caplan</span>
             </a>
-            <a href="/actor/11866-joshua-jackson" class="cast-card">
+            <a href="/actor/11866-joshua-jackson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mH2a5YFd8J7upjjWwEzM75vitA2.jpg" alt="Joshua Jackson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joshua Jackson</span>
             </a>
-            <a href="/actor/2956-amanda-peet" class="cast-card">
+            <a href="/actor/2956-amanda-peet.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5TfyCj0X9ftKO11FN057P05s78C.jpg" alt="Amanda Peet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amanda Peet</span>
             </a>
-            <a href="/actor/1951261-alyssa-jirrels" class="cast-card">
+            <a href="/actor/1951261-alyssa-jirrels.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x9VVL5yFEs3RWUvjkOsGFhuZWEJ.jpg" alt="Alyssa Jirrels" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alyssa Jirrels</span>
             </a>
-            <a href="/actor/18271-toby-huss" class="cast-card">
+            <a href="/actor/18271-toby-huss.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dUqygHlDDnOBZLnE51MPJHkHWvQ.jpg" alt="Toby Huss" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Toby Huss</span>
             </a>
-            <a href="/actor/117187-reno-wilson" class="cast-card">
+            <a href="/actor/117187-reno-wilson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/odYnlRblq5nQHqFgOAu5zPUJCde.jpg" alt="Reno Wilson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reno Wilson</span>
             </a>
-            <a href="/actor/80978-brian-goodman" class="cast-card">
+            <a href="/actor/80978-brian-goodman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kvRS1QA7YuYhlFO3M8GbnOtvXts.jpg" alt="Brian Goodman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brian Goodman</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

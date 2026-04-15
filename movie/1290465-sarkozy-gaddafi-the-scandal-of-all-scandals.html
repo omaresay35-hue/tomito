@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Personne n'y comprend rien</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/77310-florence-loiret-caille" class="cast-card">
+            <a href="/actor/77310-florence-loiret-caille.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lNIVTZfgOvxbPIo4YgcXfepHKqF.jpg" alt="Florence Loiret Caille" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Florence Loiret Caille</span>
             </a>
-            <a href="/actor/2258309-fabrice-arfi" class="cast-card">
+            <a href="/actor/2258309-fabrice-arfi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xzKf4DP0A2TK5FXJpVjJKVepSIo.jpg" alt="Fabrice Arfi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fabrice Arfi</span>
             </a>
-            <a href="/actor/4714257-karl-laske" class="cast-card">
+            <a href="/actor/4714257-karl-laske.html" class="cast-card">
                 <img src="/favicon.ico" alt="Karl Laske" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karl Laske</span>
             </a>
-            <a href="/actor/5098796-julia-cagé" class="cast-card">
+            <a href="/actor/5098796-julia-cagé.html" class="cast-card">
                 <img src="/favicon.ico" alt="Julia Cagé" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julia Cagé</span>
             </a>
-            <a href="/actor/5098797-patrick-haimzadeh" class="cast-card">
+            <a href="/actor/5098797-patrick-haimzadeh.html" class="cast-card">
                 <img src="/favicon.ico" alt="Patrick Haimzadeh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patrick Haimzadeh</span>
             </a>
-            <a href="/actor/5098800-danièle-klein" class="cast-card">
+            <a href="/actor/5098800-danièle-klein.html" class="cast-card">
                 <img src="/favicon.ico" alt="Danièle Klein" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Danièle Klein</span>
             </a>
-            <a href="/actor/2042557-françois-molins" class="cast-card">
+            <a href="/actor/2042557-françois-molins.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/DZEtLYYOyT415soc7JItcrCzKk.jpg" alt="François Molins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>François Molins</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

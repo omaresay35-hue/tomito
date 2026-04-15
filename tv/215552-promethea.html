@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Prométhée</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1582907-fantine-harduin" class="cast-card">
+            <a href="/actor/1582907-fantine-harduin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1OPDUr31sXOevwYnCWsaKzCcQfV.jpg" alt="Fantine Harduin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fantine Harduin</span>
             </a>
-            <a href="/actor/1700367-camille-lou" class="cast-card">
+            <a href="/actor/1700367-camille-lou.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rbBu3PD3VaCWmkO5R5WcyIs1hC8.jpg" alt="Camille Lou" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Camille Lou</span>
             </a>
-            <a href="/actor/1319878-odile-vuillemin" class="cast-card">
+            <a href="/actor/1319878-odile-vuillemin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hUFNMlPdJF6KNWsg8sblZODtqUh.jpg" alt="Odile Vuillemin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Odile Vuillemin</span>
             </a>
-            <a href="/actor/8791-marie-josée-croze" class="cast-card">
+            <a href="/actor/8791-marie-josée-croze.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d7sRQCDFijXaSnyiZpURknJAQFi.jpg" alt="Marie-Josée Croze" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marie-Josée Croze</span>
             </a>
-            <a href="/actor/563371-thomas-jouannet" class="cast-card">
+            <a href="/actor/563371-thomas-jouannet.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x5Iwahju5jyHFFaS6U9vyTwNw9z.jpg" alt="Thomas Jouannet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thomas Jouannet</span>
             </a>
-            <a href="/actor/3220450-aymeric-fougeron" class="cast-card">
+            <a href="/actor/3220450-aymeric-fougeron.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2GiOfHcnoMqJGwDu7JiU8YMlgph.jpg" alt="Aymeric Fougeron" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aymeric Fougeron</span>
             </a>
-            <a href="/actor/96044-samy-seghir" class="cast-card">
+            <a href="/actor/96044-samy-seghir.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2VCHwAVlH1Fu5Tnt3dJGgfRFUGO.jpg" alt="Samy Seghir" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samy Seghir</span>
             </a>
-            <a href="/actor/3616215-margot-heckmann" class="cast-card">
+            <a href="/actor/3616215-margot-heckmann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qNhEYiiI3pC0gfbt0JsgPz0ttLi.jpg" alt="Margot Heckmann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Margot Heckmann</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

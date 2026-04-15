@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Anonim</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1457752-ali-atay" class="cast-card">
+            <a href="/actor/1457752-ali-atay.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yRQTggkHQnPCbxOfKiTm9jazJAu.jpg" alt="Ali Atay" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ali Atay</span>
             </a>
-            <a href="/actor/72154-serkan-keskin" class="cast-card">
+            <a href="/actor/72154-serkan-keskin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tLnZN612GhFis8BGIlOTBjzPqHq.jpg" alt="Serkan Keskin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Serkan Keskin</span>
             </a>
-            <a href="/actor/1256421-mehmet-özgür" class="cast-card">
+            <a href="/actor/1256421-mehmet-özgür.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n4QOcXf2eXPmJ8KOZcMlUEetUA8.jpg" alt="Mehmet Özgür" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mehmet Özgür</span>
             </a>
-            <a href="/actor/3408063-i̇dil-sivritepe" class="cast-card">
+            <a href="/actor/3408063-i̇dil-sivritepe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/572mKMH4d5IwEUDxCxT7oS2feyi.jpg" alt="İdil Sivritepe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>İdil Sivritepe</span>
             </a>
-            <a href="/actor/2072067-ceren-taşçı" class="cast-card">
+            <a href="/actor/2072067-ceren-taşçı.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/osj8CastVcLR4F1NLX62HctzIUQ.jpg" alt="Ceren Taşçı" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ceren Taşçı</span>
             </a>
-            <a href="/actor/2388083-cihan-talay" class="cast-card">
+            <a href="/actor/2388083-cihan-talay.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nVBOHi0kbZiWYo0KLReL8YSbjYq.jpg" alt="Cihan Talay" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cihan Talay</span>
             </a>
-            <a href="/actor/2056295-i̇lyas-özçakır" class="cast-card">
+            <a href="/actor/2056295-i̇lyas-özçakır.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/onE45W3H0uaFMv85UMXkKYjO6c.jpg" alt="İlyas Özçakır" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>İlyas Özçakır</span>
             </a>
-            <a href="/actor/2122764-burak-şafak" class="cast-card">
+            <a href="/actor/2122764-burak-şafak.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jrYis2MYCGFNIMowYIJpt6GdExZ.jpg" alt="Burak Şafak" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Burak Şafak</span>
             </a>
-            <a href="/actor/4982638-akgün-akova" class="cast-card">
+            <a href="/actor/4982638-akgün-akova.html" class="cast-card">
                 <img src="/favicon.ico" alt="Akgün Akova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Akgün Akova</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

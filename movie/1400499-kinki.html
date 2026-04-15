@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>近畿地方のある場所について</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/13249-miho-kanno" class="cast-card">
+            <a href="/actor/13249-miho-kanno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yRiVsxGcbRHVxQOYTUBqvuxkjuY.jpg" alt="Miho Kanno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miho Kanno</span>
             </a>
-            <a href="/actor/1509675-eiji-akaso" class="cast-card">
+            <a href="/actor/1509675-eiji-akaso.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n4meN0TldLP0Kk9seNJhzcOgMdQ.jpg" alt="Eiji Akaso" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eiji Akaso</span>
             </a>
-            <a href="/actor/1910723-atom-shukugawa" class="cast-card">
+            <a href="/actor/1910723-atom-shukugawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vy6Rxhvb7SIOU4T4CblUvJonDE.jpg" alt="Atom Shukugawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Atom Shukugawa</span>
             </a>
-            <a href="/actor/3885752-kyo-sato" class="cast-card">
+            <a href="/actor/3885752-kyo-sato.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fM4kuYZusEUCScAmZmWF1lxhspm.jpg" alt="Kyo Sato" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kyo Sato</span>
             </a>
-            <a href="/actor/4165871-nose-rin" class="cast-card">
+            <a href="/actor/4165871-nose-rin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rCFn1TbiKHn1OTI67BUJCoUsY9Y.jpg" alt="Nose Rin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nose Rin</span>
             </a>
-            <a href="/actor/1534224-keisaku-kimura" class="cast-card">
+            <a href="/actor/1534224-keisaku-kimura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4GA7CHiSBIIMptyjhM1KWDiaYmz.jpg" alt="Keisaku Kimura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keisaku Kimura</span>
             </a>
-            <a href="/actor/3307479-atsuki-yamada" class="cast-card">
+            <a href="/actor/3307479-atsuki-yamada.html" class="cast-card">
                 <img src="/favicon.ico" alt="Atsuki Yamada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Atsuki Yamada</span>
             </a>
-            <a href="/actor/71644-rio-kanno" class="cast-card">
+            <a href="/actor/71644-rio-kanno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5H4tWYZGCex99MYzKO1EZ8CAzUp.jpg" alt="Rio Kanno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rio Kanno</span>
             </a>
-            <a href="/actor/2790780-yuko-fukui" class="cast-card">
+            <a href="/actor/2790780-yuko-fukui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/slCOCQVPicaQtOXfsR3RFVGHh2.jpg" alt="Yuko Fukui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuko Fukui</span>
             </a>
-            <a href="/actor/1793654-chika-kuboyama" class="cast-card">
+            <a href="/actor/1793654-chika-kuboyama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bV3yViF8RG86apl5Hk9QKCt1Dzx.jpg" alt="Chika Kuboyama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chika Kuboyama</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

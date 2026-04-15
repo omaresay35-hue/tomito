@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>جايبة العيد</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2763851-summer-shesha" class="cast-card">
+            <a href="/actor/2763851-summer-shesha.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vvYby2ewUnAaO2bUioIAAsPBZo9.jpg" alt="Summer Shesha" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Summer Shesha</span>
             </a>
-            <a href="/actor/4387413-bateel-qamlo" class="cast-card">
+            <a href="/actor/4387413-bateel-qamlo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Bateel Qamlo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bateel Qamlo</span>
             </a>
-            <a href="/actor/1652138-hamza-haq" class="cast-card">
+            <a href="/actor/1652138-hamza-haq.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mVgpYlzmBICBUh2YBxX3SFpwfis.jpg" alt="Hamza Haq" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hamza Haq</span>
             </a>
-            <a href="/actor/3550444-yassir-al-saggaf" class="cast-card">
+            <a href="/actor/3550444-yassir-al-saggaf.html" class="cast-card">
                 <img src="/favicon.ico" alt="Yassir Al Saggaf" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yassir Al Saggaf</span>
             </a>
-            <a href="/actor/2539491-khalid-alharbi" class="cast-card">
+            <a href="/actor/2539491-khalid-alharbi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fdo96XpOnFgXDotF3xx0n8NgBRQ.jpg" alt="Khalid Alharbi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Khalid Alharbi</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

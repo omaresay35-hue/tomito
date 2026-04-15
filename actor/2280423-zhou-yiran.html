@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1356454-gezhi-town">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1356454-gezhi-town.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/24rBSxBq3WLlmNdzoL7Gl6nLZfG.jpg" alt="Gezhi Town — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Gezhi Town</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/254166-all-rise">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/254166-all-rise.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8352ZTOO2AlvjN5hVB4g8ke6KVZ.jpg" alt="All Rise — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">All Rise</div></div>
-    </a>    <a class="card" href="/tv/243076-go-east">
+    </a>    <a class="card" href="/tv/243076-go-east.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yWFjArbThmybeZRa2Nr5mMR2Grm.jpg" alt="Go East — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Go East</div></div>
-    </a>    <a class="card" href="/tv/253747-to-the-wonder">
+    </a>    <a class="card" href="/tv/253747-to-the-wonder.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/j2Ay1OEg9C0ExEQMUf7mCHBO1Rr.jpg" alt="To the Wonder — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">To the Wonder</div></div>
-    </a>    <a class="card" href="/tv/236617-regeneration">
+    </a>    <a class="card" href="/tv/236617-regeneration.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wWz0enTclDv5MAV7qiQNQXkDZdg.jpg" alt="Regeneration — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Regeneration</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,35 +75,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/228877-belén-esteban" class="cast-card">
+            <a href="/actor/228877-belén-esteban.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dFtgaB3P6i4dqcmQouQAztWUvKM.jpg" alt="Belén Esteban" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Belén Esteban</span>
             </a>
-            <a href="/actor/2371196-maría-patiño" class="cast-card">
+            <a href="/actor/2371196-maría-patiño.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/29ln6PQlhhzHEB8bIhd2Sy0b8rc.jpg" alt="María Patiño" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>María Patiño</span>
             </a>
-            <a href="/actor/1746642-terelu-campos" class="cast-card">
+            <a href="/actor/1746642-terelu-campos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nUMULVKQyz3gZKZBnfnPH0nVvyz.jpg" alt="Terelu Campos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Terelu Campos</span>
             </a>
-            <a href="/actor/2597723-lydia-lozano" class="cast-card">
+            <a href="/actor/2597723-lydia-lozano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/efkn8OlQdV3tKcGKx1bvym6FRbr.jpg" alt="Lydia Lozano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lydia Lozano</span>
             </a>
-            <a href="/actor/2844820-chelo-garcía-cortés" class="cast-card">
+            <a href="/actor/2844820-chelo-garcía-cortés.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o6nkVpZIS3i3XhaAY6gWcoUCDpP.jpg" alt="Chelo García-Cortés" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chelo García-Cortés</span>
             </a>
-            <a href="/actor/2597725-kiko-matamoros" class="cast-card">
+            <a href="/actor/2597725-kiko-matamoros.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/btF3aPsqdxceD05Q4RmYnUWpUG1.jpg" alt="Kiko Matamoros" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kiko Matamoros</span>
             </a>
-            <a href="/actor/2597721-kiko-hernández" class="cast-card">
+            <a href="/actor/2597721-kiko-hernández.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gAROkc6Qonf7BrBUbF5aUNf1sSX.jpg" alt="Kiko Hernández" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kiko Hernández</span>
             </a>
-            <a href="/actor/1423070-víctor-sandoval" class="cast-card">
+            <a href="/actor/1423070-víctor-sandoval.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dUnsZcLXmE16Jp8i9NcVhSw2zls.jpg" alt="Víctor Sandoval" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Víctor Sandoval</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>รักเล่นกล</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4792015-saranphat-pedersen" class="cast-card">
+            <a href="/actor/4792015-saranphat-pedersen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bgHyNB4QL4Qx4WDBJhiJ7e5IJ1d.jpg" alt="Saranphat Pedersen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saranphat Pedersen</span>
             </a>
-            <a href="/actor/4157563-punyapat-wangpongsathaporn" class="cast-card">
+            <a href="/actor/4157563-punyapat-wangpongsathaporn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fxRXaPc9flm7x4oJtidTj8tiEc8.jpg" alt="Punyapat Wangpongsathaporn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Punyapat Wangpongsathaporn</span>
             </a>
-            <a href="/actor/3670469-nadol-lamprasert" class="cast-card">
+            <a href="/actor/3670469-nadol-lamprasert.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/f4DRJA21G8c2epDZOKopwAwn8DE.jpg" alt="Nadol Lamprasert" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nadol Lamprasert</span>
             </a>
-            <a href="/actor/3170846-kidakarn-chatkaewmanee" class="cast-card">
+            <a href="/actor/3170846-kidakarn-chatkaewmanee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/11nqT4Q9ty2N4ELdcofV2brSlzb.jpg" alt="Kidakarn Chatkaewmanee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kidakarn Chatkaewmanee</span>
             </a>
-            <a href="/actor/3473921-pataraphol-wanlopsiri" class="cast-card">
+            <a href="/actor/3473921-pataraphol-wanlopsiri.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mcHKh5MvyeUOv9pS1CPtTjefpax.jpg" alt="Pataraphol Wanlopsiri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pataraphol Wanlopsiri</span>
             </a>
-            <a href="/actor/2398475-apasiri-nitibhon" class="cast-card">
+            <a href="/actor/2398475-apasiri-nitibhon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yGuaZcWRowFq5E7ws0vCReikoR8.jpg" alt="Apasiri Nitibhon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Apasiri Nitibhon</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

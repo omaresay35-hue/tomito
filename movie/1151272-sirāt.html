@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Sirāt</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/16972-sergi-lópez" class="cast-card">
+            <a href="/actor/16972-sergi-lópez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n3HcmUflYYaHUiQmzaayi0yqcRf.jpg" alt="Sergi López" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sergi López</span>
             </a>
-            <a href="/actor/4180392-bruno-núñez" class="cast-card">
+            <a href="/actor/4180392-bruno-núñez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/g8jn2IxoDJP7UctHnoxbO8hNsre.jpg" alt="Bruno Núñez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bruno Núñez</span>
             </a>
-            <a href="/actor/5362709-stefania-gadda" class="cast-card">
+            <a href="/actor/5362709-stefania-gadda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/939QjJJZzlGOVDJsrC5D9RMxaBm.jpg" alt="Stefania Gadda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stefania Gadda</span>
             </a>
-            <a href="/actor/5362711-joshua-liam-henderson" class="cast-card">
+            <a href="/actor/5362711-joshua-liam-henderson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jpijzr5w6WMFry6BTgGTWQ1TXz5.jpg" alt="Joshua Liam Henderson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joshua Liam Henderson</span>
             </a>
-            <a href="/actor/5678639-richard-bellamy" class="cast-card">
+            <a href="/actor/5678639-richard-bellamy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sGKh5mmADPWXMsCAVNpHHVHM5Ix.jpg" alt="Richard Bellamy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Richard Bellamy</span>
             </a>
-            <a href="/actor/5362714-tonin-janvier" class="cast-card">
+            <a href="/actor/5362714-tonin-janvier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hW5owhix70OBM7xFfnLRsFcAlly.jpg" alt="Tonin Janvier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tonin Janvier</span>
             </a>
-            <a href="/actor/5362717-jade-oukid" class="cast-card">
+            <a href="/actor/5362717-jade-oukid.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lTpF2nyh7EEIUzyesSvobZagxRj.jpg" alt="Jade Oukid" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jade Oukid</span>
             </a>
-            <a href="/actor/5663519-ahmed-abbou" class="cast-card">
+            <a href="/actor/5663519-ahmed-abbou.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ahmed Abbou" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ahmed Abbou</span>
             </a>
-            <a href="/actor/5663522-abdellilah-madrari" class="cast-card">
+            <a href="/actor/5663522-abdellilah-madrari.html" class="cast-card">
                 <img src="/favicon.ico" alt="Abdellilah Madrari" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Abdellilah Madrari</span>
             </a>
-            <a href="/actor/5663525-mohamed-madrari" class="cast-card">
+            <a href="/actor/5663525-mohamed-madrari.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mohamed Madrari" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mohamed Madrari</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1200063-a-gilded-game">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1200063-a-gilded-game.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/w0WpSIv7ta6Cc4yRfTCkmEbAolW.jpg" alt="A Gilded Game — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Gilded Game</div></div>
-    </a>    <a class="card" href="/movie/1235020-star-abyss">
+    </a>    <a class="card" href="/movie/1235020-star-abyss.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7WJOD7UgfL10Zep9lXrJuuc2e1r.jpg" alt="Star Abyss — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Star Abyss</div></div>
-    </a>    <a class="card" href="/movie/1240475-hunt-the-wicked">
+    </a>    <a class="card" href="/movie/1240475-hunt-the-wicked.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/m5UBHbEjQJx3AkRZWRY6A4l4ZDT.jpg" alt="Hunt the Wicked — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Hunt the Wicked</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/252320-feud">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/252320-feud.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fx7KQNaFUx5DaXMRm0pznHoLe04.jpg" alt="FEUD — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">FEUD</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

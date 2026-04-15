@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Northern Lights</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/538385-stephen-jones" class="cast-card">
+            <a href="/actor/538385-stephen-jones.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7OmH9btnIVugIZbbImtaku7qqCO.jpg" alt="Stephen Jones" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephen Jones</span>
             </a>
-            <a href="/actor/1490863-elva-trill" class="cast-card">
+            <a href="/actor/1490863-elva-trill.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gdTcDujkkPIoKtDZrGcbQ2voFI3.jpg" alt="Elva Trill" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elva Trill</span>
             </a>
-            <a href="/actor/2588583-jay-duffy" class="cast-card">
+            <a href="/actor/2588583-jay-duffy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9RY8ZW3FbwPmxlYZe02osL3TI0K.jpg" alt="Jay Duffy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jay Duffy</span>
             </a>
-            <a href="/actor/1937116-jennifer-heylen" class="cast-card">
+            <a href="/actor/1937116-jennifer-heylen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3fHBkxGIF8Ws2uq57KEtn5lMSLd.jpg" alt="Jennifer Heylen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jennifer Heylen</span>
             </a>
-            <a href="/actor/1338898-denise-mccormack" class="cast-card">
+            <a href="/actor/1338898-denise-mccormack.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/79BUL9AAaNvqOGkhMT8PKp5sIvR.jpg" alt="Denise McCormack" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Denise McCormack</span>
             </a>
-            <a href="/actor/111837-don-wycherley" class="cast-card">
+            <a href="/actor/111837-don-wycherley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tW4s04DGwi7MEXQ6bIxdIYmI0ah.jpg" alt="Don Wycherley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Don Wycherley</span>
             </a>
-            <a href="/actor/2710843-kevin-mcgahern" class="cast-card">
+            <a href="/actor/2710843-kevin-mcgahern.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/keBH7o6sK1tEc5kUYnmCfS5CODN.jpg" alt="Kevin McGahern" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kevin McGahern</span>
             </a>
-            <a href="/actor/3440085-john-doran" class="cast-card">
+            <a href="/actor/3440085-john-doran.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/12WEWj1jIK7n4LbPzd7vqMyyFfk.jpg" alt="John Doran" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Doran</span>
             </a>
-            <a href="/actor/2551391-eoin-duffy" class="cast-card">
+            <a href="/actor/2551391-eoin-duffy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8wokGTQBkdT5oIqcGyExovERnOm.jpg" alt="Eoin Duffy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eoin Duffy</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

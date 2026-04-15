@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>الأثرياء الصغار</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2058679-abraham-wapler" class="cast-card">
+            <a href="/actor/2058679-abraham-wapler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1lk4CT2e8lFXgqpJlIGSJwk1lzM.jpg" alt="Abraham Wapler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Abraham Wapler</span>
             </a>
-            <a href="/actor/3992572-malou-khebizi" class="cast-card">
+            <a href="/actor/3992572-malou-khebizi.html" class="cast-card">
                 <img src="/favicon.ico" alt="Malou Khebizi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Malou Khebizi</span>
             </a>
-            <a href="/actor/1487500-calixte-broisin-doutaz" class="cast-card">
+            <a href="/actor/1487500-calixte-broisin-doutaz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lD2TtGaCk3txxzops3IiRTrhMgn.jpg" alt="Calixte Broisin-Doutaz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Calixte Broisin-Doutaz</span>
             </a>
-            <a href="/actor/5569856-sara-gançarski" class="cast-card">
+            <a href="/actor/5569856-sara-gançarski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2OxEM29ZXgWwZeSGdh9gDIeKLG9.jpg" alt="Sara Gançarski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sara Gançarski</span>
             </a>
-            <a href="/actor/2114934-jeanne-boudier" class="cast-card">
+            <a href="/actor/2114934-jeanne-boudier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9vtbwH4W5YjiRd5RxNs7LRYT72E.jpg" alt="Jeanne Boudier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeanne Boudier</span>
             </a>
-            <a href="/actor/3702892-florian-lesieur" class="cast-card">
+            <a href="/actor/3702892-florian-lesieur.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4oJ9Ipk9Twk1pO3hkYnt9rPtRiz.jpg" alt="Florian Lesieur" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Florian Lesieur</span>
             </a>
-            <a href="/actor/2234779-victor-bonnel" class="cast-card">
+            <a href="/actor/2234779-victor-bonnel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p6eNNSeLxYvsmrQOkD5jnIVS392.jpg" alt="Victor Bonnel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Victor Bonnel</span>
             </a>
-            <a href="/actor/3616215-margot-heckmann" class="cast-card">
+            <a href="/actor/3616215-margot-heckmann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qNhEYiiI3pC0gfbt0JsgPz0ttLi.jpg" alt="Margot Heckmann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Margot Heckmann</span>
             </a>
-            <a href="/actor/4812674-alexis-rosenstiehl" class="cast-card">
+            <a href="/actor/4812674-alexis-rosenstiehl.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lSa63zKMIJurglCQv7SASzZled4.jpg" alt="Alexis Rosenstiehl" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexis Rosenstiehl</span>
             </a>
-            <a href="/actor/5233672-elma-urriaga" class="cast-card">
+            <a href="/actor/5233672-elma-urriaga.html" class="cast-card">
                 <img src="/favicon.ico" alt="Elma Urriaga" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elma Urriaga</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

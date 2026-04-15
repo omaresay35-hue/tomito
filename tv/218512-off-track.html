@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>L'Abîme</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1345053-sara-mortensen" class="cast-card">
+            <a href="/actor/1345053-sara-mortensen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yTjkP5agK9B3iylbYmDaSKMCx14.jpg" alt="Sara Mortensen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sara Mortensen</span>
             </a>
-            <a href="/actor/79550-gil-alma" class="cast-card">
+            <a href="/actor/79550-gil-alma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3yrXrQTESkXzQYcQ9rBZZpGRK6z.jpg" alt="Gil Alma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gil Alma</span>
             </a>
-            <a href="/actor/2310147-christopher-bayemi" class="cast-card">
+            <a href="/actor/2310147-christopher-bayemi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zBnmuYBZ6ailua5YbdRiH8sYySL.jpg" alt="Christopher Bayemi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christopher Bayemi</span>
             </a>
-            <a href="/actor/1300386-hélène-seuzaret" class="cast-card">
+            <a href="/actor/1300386-hélène-seuzaret.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xETOXmhvQuoumifHkJWtx58VqXd.jpg" alt="Hélène Seuzaret" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hélène Seuzaret</span>
             </a>
-            <a href="/actor/57738-samuel-labarthe" class="cast-card">
+            <a href="/actor/57738-samuel-labarthe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ud26oMB8L7pXeHYmSu6vnmcbWQs.jpg" alt="Samuel Labarthe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samuel Labarthe</span>
             </a>
-            <a href="/actor/3640290-marie-mallia" class="cast-card">
+            <a href="/actor/3640290-marie-mallia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A9cqUDLlF4aDWqJnhIsH1UYDC2Y.jpg" alt="Marie Mallia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marie Mallia</span>
             </a>
-            <a href="/actor/13191-anne-loiret" class="cast-card">
+            <a href="/actor/13191-anne-loiret.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tTfOmswbwPCiEvm3XMA2BBtVX9Q.jpg" alt="Anne Loiret" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anne Loiret</span>
             </a>
-            <a href="/actor/3908670-aloys-jammot" class="cast-card">
+            <a href="/actor/3908670-aloys-jammot.html" class="cast-card">
                 <img src="/favicon.ico" alt="Aloys Jammot" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aloys Jammot</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

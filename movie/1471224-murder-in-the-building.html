@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Le Crime du 3e étage</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/54291-gilles-lellouche" class="cast-card">
+            <a href="/actor/54291-gilles-lellouche.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5Ka9nodCWS6TRFJnmosjp9sV3iA.jpg" alt="Gilles Lellouche" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gilles Lellouche</span>
             </a>
-            <a href="/actor/119499-laetitia-casta" class="cast-card">
+            <a href="/actor/119499-laetitia-casta.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xx4xCIacTNi8p0HkAyIZgbsDsy0.jpg" alt="Laetitia Casta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laetitia Casta</span>
             </a>
-            <a href="/actor/6554-guillaume-gallienne" class="cast-card">
+            <a href="/actor/6554-guillaume-gallienne.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nponKvpwED1CivIY3f2NlQGLWE9.jpg" alt="Guillaume Gallienne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Guillaume Gallienne</span>
             </a>
-            <a href="/actor/2355348-isabel-aimé-gonzález-sola" class="cast-card">
+            <a href="/actor/2355348-isabel-aimé-gonzález-sola.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A8uyxyOyyc97gxCTrtYUpICtGTp.jpg" alt="Isabel Aimé González Sola" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isabel Aimé González Sola</span>
             </a>
-            <a href="/actor/3715469-jenna-knafo" class="cast-card">
+            <a href="/actor/3715469-jenna-knafo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jenna Knafo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jenna Knafo</span>
             </a>
-            <a href="/actor/5451234-katayoon-latif" class="cast-card">
+            <a href="/actor/5451234-katayoon-latif.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zBYC2IoDdltNIILuwQVnlBjbpOM.jpg" alt="Katayoon Latif" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Katayoon Latif</span>
             </a>
-            <a href="/actor/2820692-matthias-jacquin" class="cast-card">
+            <a href="/actor/2820692-matthias-jacquin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r19Gva0L5UufEFma0QQHmf1uUw3.jpg" alt="Matthias Jacquin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthias Jacquin</span>
             </a>
-            <a href="/actor/2761666-bénédicte-choisnet" class="cast-card">
+            <a href="/actor/2761666-bénédicte-choisnet.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fATbjmvnCVu5PYZidmduzJBL44C.jpg" alt="Bénédicte Choisnet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bénédicte Choisnet</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

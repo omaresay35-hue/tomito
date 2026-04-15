@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,39 +75,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4540681-olivia-deligan" class="cast-card">
+            <a href="/actor/4540681-olivia-deligan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AjQA0kUAixXDQIa4iRnJ0obFow1.jpg" alt="Olivia Deligan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olivia Deligan</span>
             </a>
-            <a href="/actor/4540682-madison-taylor" class="cast-card">
+            <a href="/actor/4540682-madison-taylor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pZDnReS7tfKtVyqyK06fZRfiNR8.jpg" alt="Madison Taylor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Madison Taylor</span>
             </a>
-            <a href="/actor/4540685-andrew-james-ferguson" class="cast-card">
+            <a href="/actor/4540685-andrew-james-ferguson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ik99xB78UwYBYaLz48KS7vbIryz.jpg" alt="Andrew James Ferguson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrew James Ferguson</span>
             </a>
-            <a href="/actor/4540686-bernard-timmons-ii" class="cast-card">
+            <a href="/actor/4540686-bernard-timmons-ii.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zU0ljN07f6CmQX23fGtxn7Z0W0j.jpg" alt="Bernard Timmons II" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bernard Timmons II</span>
             </a>
-            <a href="/actor/21315-eric-roberts" class="cast-card">
+            <a href="/actor/21315-eric-roberts.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/NiWg1TaUcal7xn1ZQeyA2dLd5F.jpg" alt="Eric Roberts" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eric Roberts</span>
             </a>
-            <a href="/actor/43432-tane-mcclure" class="cast-card">
+            <a href="/actor/43432-tane-mcclure.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/upUpZ4aoir0UAYyNmMap6SIuLgB.jpg" alt="Tane McClure" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tane McClure</span>
             </a>
-            <a href="/actor/4540687-nisha-catron" class="cast-card">
+            <a href="/actor/4540687-nisha-catron.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lukWtlmoBQzp7Hgw4ku1bHpwslS.jpg" alt="Nisha Catron" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nisha Catron</span>
             </a>
-            <a href="/actor/4329671-farryl-christina-lawson" class="cast-card">
+            <a href="/actor/4329671-farryl-christina-lawson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fvQzV5MLuYU6jeW4MJ0dyXxd7az.jpg" alt="Farryl Christina Lawson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Farryl Christina Lawson</span>
             </a>
-            <a href="/actor/4540688-sylvester-bowen" class="cast-card">
+            <a href="/actor/4540688-sylvester-bowen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y2rZn7XjjeQGYUt1BZowBehnepW.jpg" alt="Sylvester Bowen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sylvester Bowen</span>
             </a></div></section>
@@ -115,13 +115,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

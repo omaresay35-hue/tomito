@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>骄阳伴我</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2084790-xiao-zhan" class="cast-card">
+            <a href="/actor/2084790-xiao-zhan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/468n73j2sSJIbfZvsIZvDpvUaS8.jpg" alt="Xiao Zhan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xiao Zhan</span>
             </a>
-            <a href="/actor/588057-bai-baihe" class="cast-card">
+            <a href="/actor/588057-bai-baihe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4cEIvt6etPrWzXn59W5GgnijNIG.jpg" alt="Bai Baihe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bai Baihe</span>
             </a>
-            <a href="/actor/1397566-tian-yu" class="cast-card">
+            <a href="/actor/1397566-tian-yu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hltc7NNhaBpD45nVqhC1dPkoVuB.jpg" alt="Tian Yu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tian Yu</span>
             </a>
-            <a href="/actor/1077356-zhu-zhu" class="cast-card">
+            <a href="/actor/1077356-zhu-zhu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rg8OPxvu2xc1Y6YA0paaOBrCX2z.jpg" alt="Zhu Zhu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhu Zhu</span>
             </a>
-            <a href="/actor/99690-yuan-wenkang" class="cast-card">
+            <a href="/actor/99690-yuan-wenkang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/auB9ZHfxdiSoJIYGu1PvblPulTm.jpg" alt="Yuan Wenkang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuan Wenkang</span>
             </a>
-            <a href="/actor/2461691-liu-xun" class="cast-card">
+            <a href="/actor/2461691-liu-xun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kltFWIXmNDSmpGKb1gwdWBkH6ak.jpg" alt="Liu Xun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liu Xun</span>
             </a>
-            <a href="/actor/2581662-xiang-hanzhi" class="cast-card">
+            <a href="/actor/2581662-xiang-hanzhi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t4JiiGHKGBBysBUeAaImuZkkUX4.jpg" alt="Xiang Hanzhi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xiang Hanzhi</span>
             </a>
-            <a href="/actor/2407930-wu-xingjian" class="cast-card">
+            <a href="/actor/2407930-wu-xingjian.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h2DP3AVrkG6AHjAwA0qF3uA9iTE.jpg" alt="Wu Xingjian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wu Xingjian</span>
             </a>
-            <a href="/actor/1844395-dai-lele" class="cast-card">
+            <a href="/actor/1844395-dai-lele.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xaiH4RCXfG71uZHNqy8gHFjC4Tw.jpg" alt="Dai Lele" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dai Lele</span>
             </a>
-            <a href="/actor/2044189-han-qiuchi" class="cast-card">
+            <a href="/actor/2044189-han-qiuchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vwhfY8e3TTbEP144m4arLaFxBmr.jpg" alt="Han Qiuchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Han Qiuchi</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

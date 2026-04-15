@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>渡くんの××が崩壊寸前</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3128816-shuichiro-umeda" class="cast-card">
+            <a href="/actor/3128816-shuichiro-umeda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dCr870q8ojD6qpD1hmS1sdvh2pe.jpg" alt="Shuichiro Umeda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shuichiro Umeda</span>
             </a>
-            <a href="/actor/3118753-yumika-yano" class="cast-card">
+            <a href="/actor/3118753-yumika-yano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nnyvztbV5L5RO8bJA5f16oqx9e3.jpg" alt="Yumika Yano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yumika Yano</span>
             </a>
-            <a href="/actor/3612638-yurie-igoma" class="cast-card">
+            <a href="/actor/3612638-yurie-igoma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6wA7dFJU1qhbgIE1gWZQ8F74Yst.jpg" alt="Yurie Igoma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yurie Igoma</span>
             </a>
-            <a href="/actor/4615969-megu-umezawa" class="cast-card">
+            <a href="/actor/4615969-megu-umezawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wsBkrHKVSNv6u2fkZ9qau56BsRC.jpg" alt="Megu Umezawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Megu Umezawa</span>
             </a>
-            <a href="/actor/2161808-yoshiki-nakajima" class="cast-card">
+            <a href="/actor/2161808-yoshiki-nakajima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/izvxmcL0bL5BqpqSdHRuHEPidZ2.jpg" alt="Yoshiki Nakajima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshiki Nakajima</span>
             </a>
-            <a href="/actor/2774746-hinaki-yano" class="cast-card">
+            <a href="/actor/2774746-hinaki-yano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AaooiskwaqifXbXAficRnHyfUvj.jpg" alt="Hinaki Yano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hinaki Yano</span>
             </a>
-            <a href="/actor/1324931-naomi-ohzora" class="cast-card">
+            <a href="/actor/1324931-naomi-ohzora.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qygKX6EtfvPdnPsMM0d41mPztP2.jpg" alt="Naomi Ohzora" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Naomi Ohzora</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

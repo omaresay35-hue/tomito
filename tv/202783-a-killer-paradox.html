@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>قاتل في حيرة</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1255881-choi-woo-shik" class="cast-card">
+            <a href="/actor/1255881-choi-woo-shik.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hRDiuKWwe156zRjEu826eci7H3r.jpg" alt="Choi Woo-shik" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Choi Woo-shik</span>
             </a>
-            <a href="/actor/2035488-son-suk-ku" class="cast-card">
+            <a href="/actor/2035488-son-suk-ku.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/natZWFVBAWLKWCYebgVGywHtsME.jpg" alt="Son Suk-ku" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Son Suk-ku</span>
             </a>
-            <a href="/actor/1046863-lee-hee-jun" class="cast-card">
+            <a href="/actor/1046863-lee-hee-jun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4slyXnHbKgzmeyJNetBSORgDDEF.jpg" alt="Lee Hee-jun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Hee-jun</span>
             </a>
-            <a href="/actor/3245268-kwon-da-ham" class="cast-card">
+            <a href="/actor/3245268-kwon-da-ham.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ulInuoKvagzuCPmuRNQiFyHLFLv.jpg" alt="Kwon Da-ham" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kwon Da-ham</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Hazte la muerta</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/567742-paula-brasca" class="cast-card">
+            <a href="/actor/567742-paula-brasca.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e6YRVXpqeMvpT2yFUnEOlWj4srv.jpg" alt="Paula Brasca" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paula Brasca</span>
             </a>
-            <a href="/actor/3065840-damián-del-castillo" class="cast-card">
+            <a href="/actor/3065840-damián-del-castillo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Damián Del Castillo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Damián Del Castillo</span>
             </a>
-            <a href="/actor/4321298-marta-quarleri" class="cast-card">
+            <a href="/actor/4321298-marta-quarleri.html" class="cast-card">
                 <img src="/favicon.ico" alt="Marta Quarleri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marta Quarleri</span>
             </a>
-            <a href="/actor/5167953-milagros-ribet" class="cast-card">
+            <a href="/actor/5167953-milagros-ribet.html" class="cast-card">
                 <img src="/favicon.ico" alt="Milagros Ribet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Milagros Ribet</span>
             </a>
-            <a href="/actor/3381701-catalina-motto" class="cast-card">
+            <a href="/actor/3381701-catalina-motto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5ivMeMNqqjVYxGU2VXauJ0JDUnk.jpg" alt="Catalina Motto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Catalina Motto</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

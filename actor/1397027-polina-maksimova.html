@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1228477-chebi-my-fluffy-friend-2">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1228477-chebi-my-fluffy-friend-2.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xDIFCUpuGHWViF8yn9Bnq6feHZk.jpg" alt="Chebi: My Fluffy Friend 2 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Chebi: My Fluffy Friend 2</div></div>
-    </a>    <a class="card" href="/movie/1250567-adam-eve">
+    </a>    <a class="card" href="/movie/1250567-adam-eve.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dkSg921PxAtWKngzATkXJY2gWZD.jpg" alt="Adam & Eve — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Adam & Eve</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/244197-daring">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/244197-daring.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/otiquk8nNWkSyTsrrl7sHMnw68U.jpg" alt="Daring — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Daring</div></div>
-    </a>    <a class="card" href="/tv/230318-open-marriage">
+    </a>    <a class="card" href="/tv/230318-open-marriage.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rFcLOQnqA4lUUo2hxvtkEj6tby7.jpg" alt="Open Marriage — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Open Marriage</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

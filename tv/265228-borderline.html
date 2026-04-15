@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Borderline</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1188325-amy-de-bhrún" class="cast-card">
+            <a href="/actor/1188325-amy-de-bhrún.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cN5ep9TcNHmJcK6uO0wMUtvgIOx.jpg" alt="Amy De Bhrún" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amy De Bhrún</span>
             </a>
-            <a href="/actor/111801-eoin-macken" class="cast-card">
+            <a href="/actor/111801-eoin-macken.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9QcWKlulGbdDI8XNCJW88BfPyPv.jpg" alt="Eoin Macken" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eoin Macken</span>
             </a>
-            <a href="/actor/1467585-lochlann-ó-mearáin" class="cast-card">
+            <a href="/actor/1467585-lochlann-ó-mearáin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/g4ZaAlhmjuB3ix3URKkSDB4OhdP.jpg" alt="Lochlann Ó Mearáin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lochlann Ó Mearáin</span>
             </a>
-            <a href="/actor/96787-sophie-vavasseur" class="cast-card">
+            <a href="/actor/96787-sophie-vavasseur.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6ahlhT5dxfGa8Fn8KAE70cUM17X.jpg" alt="Sophie Vavasseur" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sophie Vavasseur</span>
             </a>
-            <a href="/actor/5798304-naoimh-whelton" class="cast-card">
+            <a href="/actor/5798304-naoimh-whelton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vEkjktULcW1ESJ1P4ZeRF5L40Au.jpg" alt="Naoimh Whelton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Naoimh Whelton</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

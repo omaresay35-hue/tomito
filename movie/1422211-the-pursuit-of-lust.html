@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Дур тачаалын эрэлд</span>
   </nav>
 
@@ -72,15 +72,15 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5197785-stepinstone" class="cast-card">
+            <a href="/actor/5197785-stepinstone.html" class="cast-card">
                 <img src="/favicon.ico" alt="STEPINSTONE" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>STEPINSTONE</span>
             </a>
-            <a href="/actor/5197787-ekhandmaa" class="cast-card">
+            <a href="/actor/5197787-ekhandmaa.html" class="cast-card">
                 <img src="/favicon.ico" alt="E.KHANDMAA" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>E.KHANDMAA</span>
             </a>
-            <a href="/actor/5197788-ebatkhuleg" class="cast-card">
+            <a href="/actor/5197788-ebatkhuleg.html" class="cast-card">
                 <img src="/favicon.ico" alt="E.BATKHULEG" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>E.BATKHULEG</span>
             </a></div></section>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

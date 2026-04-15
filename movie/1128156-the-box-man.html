@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>箱男</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/68973-masatoshi-nagase" class="cast-card">
+            <a href="/actor/68973-masatoshi-nagase.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i4FjAoP2xPtG82lEGnIkL7mFc6g.jpg" alt="Masatoshi Nagase" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masatoshi Nagase</span>
             </a>
-            <a href="/actor/13275-tadanobu-asano" class="cast-card">
+            <a href="/actor/13275-tadanobu-asano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3CBpfGRcPq1jEeYr51TiOiNbZzT.jpg" alt="Tadanobu Asano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tadanobu Asano</span>
             </a>
-            <a href="/actor/1255474-ayana-shiramoto" class="cast-card">
+            <a href="/actor/1255474-ayana-shiramoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gAOQpTz37hc23Es7GYGJd4PCjEC.jpg" alt="Ayana Shiramoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayana Shiramoto</span>
             </a>
-            <a href="/actor/58662-koichi-sato" class="cast-card">
+            <a href="/actor/58662-koichi-sato.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4qh8PI0LX92mITVV6YOnAhCrtYA.jpg" alt="Koichi Sato" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koichi Sato</span>
             </a>
-            <a href="/actor/237168-yuko-nakamura" class="cast-card">
+            <a href="/actor/237168-yuko-nakamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bEX2MMTquCpyOtQ5M11xEKKN9Sz.jpg" alt="Yuko Nakamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuko Nakamura</span>
             </a>
-            <a href="/actor/58611-kiyohiko-shibukawa" class="cast-card">
+            <a href="/actor/58611-kiyohiko-shibukawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eeQ3Dbrz7e09rJzcR31uxiH8xji.jpg" alt="Kiyohiko Shibukawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kiyohiko Shibukawa</span>
             </a>
-            <a href="/actor/1078683-yohta-kawase" class="cast-card">
+            <a href="/actor/1078683-yohta-kawase.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aPjf57B380k929h2OZ6FT0RLS4w.jpg" alt="Yohta Kawase" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yohta Kawase</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

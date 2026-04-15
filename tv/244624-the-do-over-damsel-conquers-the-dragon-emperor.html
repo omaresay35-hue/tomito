@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>やり直し令嬢は竜帝陛下を攻略中</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2376454-shu-uchida" class="cast-card">
+            <a href="/actor/2376454-shu-uchida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hPnxKWmru3s9p1z7rnBgk6ws86B.jpg" alt="Shu Uchida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shu Uchida</span>
             </a>
-            <a href="/actor/3651176-kikunosuke-toya" class="cast-card">
+            <a href="/actor/3651176-kikunosuke-toya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tSAHe7tjN7luUD1Tx5yPSCuCnuD.jpg" alt="Kikunosuke Toya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kikunosuke Toya</span>
             </a>
-            <a href="/actor/1647448-shiori-izawa" class="cast-card">
+            <a href="/actor/1647448-shiori-izawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/f9V38OeDvRGevWuKc4dN6LB62TH.jpg" alt="Shiori Izawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shiori Izawa</span>
             </a>
-            <a href="/actor/1941815-mari-hino" class="cast-card">
+            <a href="/actor/1941815-mari-hino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vjJblxZD3QWjEBvUIXxgH4ROK1K.jpg" alt="Mari Hino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mari Hino</span>
             </a>
-            <a href="/actor/2359648-tatsumaru-tachibana" class="cast-card">
+            <a href="/actor/2359648-tatsumaru-tachibana.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eShhW1W22SQuUwRaONnpzEZ5w6E.jpg" alt="Tatsumaru Tachibana" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tatsumaru Tachibana</span>
             </a>
-            <a href="/actor/1922635-shunichi-toki" class="cast-card">
+            <a href="/actor/1922635-shunichi-toki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3hauO9r1NEzgXxk8d2ed1p5dnxM.jpg" alt="Shunichi Toki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shunichi Toki</span>
             </a>
-            <a href="/actor/2210352-ayumi-mano" class="cast-card">
+            <a href="/actor/2210352-ayumi-mano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/umEB1uxpyGCy6866NzE5V2PvaAu.jpg" alt="Ayumi Mano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayumi Mano</span>
             </a>
-            <a href="/actor/1922616-yuka-nukui" class="cast-card">
+            <a href="/actor/1922616-yuka-nukui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bTFcrrgj9B8QAXa1NKqlsrdwWka.jpg" alt="Yuka Nukui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuka Nukui</span>
             </a>
-            <a href="/actor/203473-kaori-nazuka" class="cast-card">
+            <a href="/actor/203473-kaori-nazuka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cIMS99s6jpgGBbMnih8gx9hLPFi.jpg" alt="Kaori Nazuka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaori Nazuka</span>
             </a>
-            <a href="/actor/1319218-makoto-furukawa" class="cast-card">
+            <a href="/actor/1319218-makoto-furukawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/inLmBZhrqXeE9wlViyK28ocKJSw.jpg" alt="Makoto Furukawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Makoto Furukawa</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

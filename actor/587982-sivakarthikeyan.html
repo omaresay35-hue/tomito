@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/965483-parasakthi">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/965483-parasakthi.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cpKJGYU8Z1iSXzkgDl8vhazk5EQ.jpg" alt="Parasakthi — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Parasakthi</div></div>
-    </a>    <a class="card" href="/movie/1297181-madharaasi">
+    </a>    <a class="card" href="/movie/1297181-madharaasi.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dw3Dllz1gV7186m7clqNDnI9R28.jpg" alt="Madharaasi — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Madharaasi</div></div>
-    </a>    <a class="card" href="/movie/927342-amaran">
+    </a>    <a class="card" href="/movie/927342-amaran.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eCB06m1KUGilEOlIzb40nkQhVY0.jpg" alt="Amaran — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Amaran</div></div>
-    </a>    <a class="card" href="/movie/1129608-the-greatest-of-all-time">
+    </a>    <a class="card" href="/movie/1129608-the-greatest-of-all-time.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kk9SmNt6QcP5thvSYELWvO0NWuC.jpg" alt="The Greatest of All Time — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Greatest of All Time</div></div>
-    </a>    <a class="card" href="/movie/755388-ayalaan">
+    </a>    <a class="card" href="/movie/755388-ayalaan.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8nryykQqfU7yqTz4FD7uEBjseZp.jpg" alt="Ayalaan — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Ayalaan</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

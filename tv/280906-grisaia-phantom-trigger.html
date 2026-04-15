@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Grisaia Phantom Trigger</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1296667-maaya-uchida" class="cast-card">
+            <a href="/actor/1296667-maaya-uchida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rq4glg2SZwGyt3TIxR3ElalKmhH.jpg" alt="Maaya Uchida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maaya Uchida</span>
             </a>
-            <a href="/actor/992869-ayane-sakura" class="cast-card">
+            <a href="/actor/992869-ayane-sakura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yPbTmntASE9psPIMhNGU5oo6vIH.jpg" alt="Ayane Sakura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayane Sakura</span>
             </a>
-            <a href="/actor/203473-kaori-nazuka" class="cast-card">
+            <a href="/actor/203473-kaori-nazuka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cIMS99s6jpgGBbMnih8gx9hLPFi.jpg" alt="Kaori Nazuka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaori Nazuka</span>
             </a>
-            <a href="/actor/1588597-atsumi-tanezaki" class="cast-card">
+            <a href="/actor/1588597-atsumi-tanezaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6tM8GU7QvrdUCvR4kxqVUZivtvO.jpg" alt="Atsumi Tanezaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Atsumi Tanezaki</span>
             </a>
-            <a href="/actor/934634-yoshino-nanjo" class="cast-card">
+            <a href="/actor/934634-yoshino-nanjo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tkeAJsWuJMFdIYU0LrwHEPxBx77.jpg" alt="Yoshino Nanjo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshino Nanjo</span>
             </a>
-            <a href="/actor/1498127-suzuko-mimori" class="cast-card">
+            <a href="/actor/1498127-suzuko-mimori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zsUuNDI3rLh0ngDUUWcwfjQn9Od.jpg" alt="Suzuko Mimori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Suzuko Mimori</span>
             </a>
-            <a href="/actor/1255699-natsumi-takamori" class="cast-card">
+            <a href="/actor/1255699-natsumi-takamori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lmoEgs5x8NchMlsXqmU4ZYsC8ey.jpg" alt="Natsumi Takamori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natsumi Takamori</span>
             </a>
-            <a href="/actor/1503361-mikoi-sasaki" class="cast-card">
+            <a href="/actor/1503361-mikoi-sasaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jcxmjvDgpcBrnrnf2xUBcWYy8Gw.jpg" alt="Mikoi Sasaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mikoi Sasaki</span>
             </a>
-            <a href="/actor/1251017-tsubasa-yonaga" class="cast-card">
+            <a href="/actor/1251017-tsubasa-yonaga.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7U1aZt695KSSkzs64AkReyY3Zup.jpg" alt="Tsubasa Yonaga" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tsubasa Yonaga</span>
             </a>
-            <a href="/actor/2311140-mikako-izawa" class="cast-card">
+            <a href="/actor/2311140-mikako-izawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cMbjl0XYP1b0PXPkMA6GgvBjmMr.jpg" alt="Mikako Izawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mikako Izawa</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

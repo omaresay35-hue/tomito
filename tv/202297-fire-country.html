@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,23 +75,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/41883-max-thieriot" class="cast-card">
+            <a href="/actor/41883-max-thieriot.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aBiTMI3qB6FPOVhXw7b15pjJkmL.jpg" alt="Max Thieriot" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Max Thieriot</span>
             </a>
-            <a href="/actor/116474-kevin-alejandro" class="cast-card">
+            <a href="/actor/116474-kevin-alejandro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bh4aQqP7kJzL2Ls9tj5OmhsBlqi.jpg" alt="Kevin Alejandro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kevin Alejandro</span>
             </a>
-            <a href="/actor/1216004-jordan-calloway" class="cast-card">
+            <a href="/actor/1216004-jordan-calloway.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tRqqOTzfAAftvtWgNIdjyo5WDfm.jpg" alt="Jordan Calloway" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jordan Calloway</span>
             </a>
-            <a href="/actor/3218451-jules-latimer" class="cast-card">
+            <a href="/actor/3218451-jules-latimer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eOGSsznWnl5u7gegic5y2HT79Se.jpg" alt="Jules Latimer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jules Latimer</span>
             </a>
-            <a href="/actor/150954-diane-farr" class="cast-card">
+            <a href="/actor/150954-diane-farr.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r63GxSo6qYV5Hy2YZK717fMvxYt.jpg" alt="Diane Farr" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Diane Farr</span>
             </a></div></section>
@@ -99,13 +99,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

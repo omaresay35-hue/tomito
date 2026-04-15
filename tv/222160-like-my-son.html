@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Comme mon fils</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/25089-tomer-sisley" class="cast-card">
+            <a href="/actor/25089-tomer-sisley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2Tqiq9ajbiA0OGbpQDorROU2SO7.jpg" alt="Tomer Sisley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomer Sisley</span>
             </a>
-            <a href="/actor/3640324-jordan-delassus" class="cast-card">
+            <a href="/actor/3640324-jordan-delassus.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vgNnPNM2THVzHyhs6MAEY7wIomg.jpg" alt="Jordan Delassus" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jordan Delassus</span>
             </a>
-            <a href="/actor/84432-lizzie-brocheré" class="cast-card">
+            <a href="/actor/84432-lizzie-brocheré.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/whUxOD9HPpoDau9fjtvML5FUw3D.jpg" alt="Lizzie Brocheré" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lizzie Brocheré</span>
             </a>
-            <a href="/actor/1566670-phénix-brossard" class="cast-card">
+            <a href="/actor/1566670-phénix-brossard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4ZZyj4yq6B9mkotECsyQQviJl8r.jpg" alt="Phénix Brossard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Phénix Brossard</span>
             </a>
-            <a href="/actor/74115-constance-dollé" class="cast-card">
+            <a href="/actor/74115-constance-dollé.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wS97F2irPNwsLAJPcWjWcZKeT3Y.jpg" alt="Constance Dollé" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Constance Dollé</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

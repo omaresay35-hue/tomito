@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Rennervations</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/17604-jeremy-renner" class="cast-card">
+            <a href="/actor/17604-jeremy-renner.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yB84D1neTYXfWBaV0QOE9RF2VCu.jpg" alt="Jeremy Renner" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeremy Renner</span>
             </a>
-            <a href="/actor/3417164-rory-millikin" class="cast-card">
+            <a href="/actor/3417164-rory-millikin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Rory Millikin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rory Millikin</span>
             </a>
-            <a href="/actor/3953673-corey-wardleig" class="cast-card">
+            <a href="/actor/3953673-corey-wardleig.html" class="cast-card">
                 <img src="/favicon.ico" alt="Corey Wardleig" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Corey Wardleig</span>
             </a>
-            <a href="/actor/3953674-rob-bender-park" class="cast-card">
+            <a href="/actor/3953674-rob-bender-park.html" class="cast-card">
                 <img src="/favicon.ico" alt="Rob 'Bender' Park" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rob 'Bender' Park</span>
             </a>
-            <a href="/actor/3953675-roxy-bonilla" class="cast-card">
+            <a href="/actor/3953675-roxy-bonilla.html" class="cast-card">
                 <img src="/favicon.ico" alt="Roxy Bonilla" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Roxy Bonilla</span>
             </a>
-            <a href="/actor/3953676-justin-self" class="cast-card">
+            <a href="/actor/3953676-justin-self.html" class="cast-card">
                 <img src="/favicon.ico" alt="Justin Self" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Justin Self</span>
             </a>
-            <a href="/actor/3953677-merri-oswald" class="cast-card">
+            <a href="/actor/3953677-merri-oswald.html" class="cast-card">
                 <img src="/favicon.ico" alt="Merri Oswald" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Merri Oswald</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

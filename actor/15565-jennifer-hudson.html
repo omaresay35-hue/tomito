@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1297842-goat">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1297842-goat.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wfuqMlaExcoYiUEvKfVpUTt1v4u.jpg" alt="GOAT — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">GOAT</div></div>
-    </a>    <a class="card" href="/movie/1304800-the-lion-king-at-the-hollywood-bowl">
+    </a>    <a class="card" href="/movie/1304800-the-lion-king-at-the-hollywood-bowl.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/q0amPqVnEC3uG9H34PSBr8IaVLP.jpg" alt="The Lion King at the Hollywood Bowl — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Lion King at the Hollywood Bowl</div></div>
-    </a>    <a class="card" href="/movie/826338-diane-warren-relentless">
+    </a>    <a class="card" href="/movie/826338-diane-warren-relentless.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uhfvnmtq6cgpI038YrRsgmThb2D.jpg" alt="Diane Warren: Relentless — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Diane Warren: Relentless</div></div>
-    </a>    <a class="card" href="/movie/720321-breathe">
+    </a>    <a class="card" href="/movie/720321-breathe.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wTW2t8ocWDlHns8I7vQxuqkyK58.jpg" alt="Breathe — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Breathe</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/92788-marvels-moon-girl-and-devil-dinosaur">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/92788-marvels-moon-girl-and-devil-dinosaur.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1oFkjiF9fT2asKWjRiJtlbhu3hn.jpg" alt="Marvel's Moon Girl and Devil Dinosaur — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Marvel's Moon Girl and Devil Dinosaur</div></div>
-    </a>    <a class="card" href="/tv/204746-the-jennifer-hudson-show">
+    </a>    <a class="card" href="/tv/204746-the-jennifer-hudson-show.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/itMjVGw4abhhCDZFppmb7yGLrRa.jpg" alt="The Jennifer Hudson Show — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Jennifer Hudson Show</div></div>
-    </a>    <a class="card" href="/tv/210081-sherri">
+    </a>    <a class="card" href="/tv/210081-sherri.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/w6K4LsGYTBbuYpDG9qR20g6p1NT.jpg" alt="Sherri — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">2.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sherri</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

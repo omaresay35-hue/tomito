@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Le Rendez-vous de l'été</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3914349-blandine-madec" class="cast-card">
+            <a href="/actor/3914349-blandine-madec.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uxxUtr7g7qaSRBodARYYKRDe3CC.jpg" alt="Blandine Madec" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Blandine Madec</span>
             </a>
-            <a href="/actor/555967-india-hair" class="cast-card">
+            <a href="/actor/555967-india-hair.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gThHB2y6frehGeYJmOxMtkp7icc.jpg" alt="India Hair" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>India Hair</span>
             </a>
-            <a href="/actor/3147599-arcadi-radeff" class="cast-card">
+            <a href="/actor/3147599-arcadi-radeff.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5e8phMITmDTHRbdF3KaB46x6pOl.jpg" alt="Arcadi Radeff" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arcadi Radeff</span>
             </a>
-            <a href="/actor/2820692-matthias-jacquin" class="cast-card">
+            <a href="/actor/2820692-matthias-jacquin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r19Gva0L5UufEFma0QQHmf1uUw3.jpg" alt="Matthias Jacquin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthias Jacquin</span>
             </a>
-            <a href="/actor/3912169-lou-deleuze" class="cast-card">
+            <a href="/actor/3912169-lou-deleuze.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/slrxdRqaSoMh7LIodeIIr8scD1q.jpg" alt="Lou Deleuze" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lou Deleuze</span>
             </a>
-            <a href="/actor/5233670-béryl-gastaldello" class="cast-card">
+            <a href="/actor/5233670-béryl-gastaldello.html" class="cast-card">
                 <img src="/favicon.ico" alt="Béryl Gastaldello" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Béryl Gastaldello</span>
             </a>
-            <a href="/actor/1407367-pierre-cévaër" class="cast-card">
+            <a href="/actor/1407367-pierre-cévaër.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7tWEI7s8USICKYUv6e6y0QipoNJ.jpg" alt="Pierre Cévaër" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pierre Cévaër</span>
             </a>
-            <a href="/actor/4287-aurélia-petit" class="cast-card">
+            <a href="/actor/4287-aurélia-petit.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s42zuQHecWuexXyO4GwbenumMxF.jpg" alt="Aurélia Petit" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aurélia Petit</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

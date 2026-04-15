@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ Source: Article "Alice Belaïdi" from Wikipedia in English, licensed under CC-BY
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1450599-ko">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1450599-ko.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qcM2sUiAeP4zXwx4ADSvgc9S58k.jpg" alt="K.O. — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">K.O.</div></div>
-    </a>    <a class="card" href="/movie/1136394-an-ordinary-case">
+    </a>    <a class="card" href="/movie/1136394-an-ordinary-case.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xMRuEL73DJrIDKvMyLU7v5ksBv8.jpg" alt="An Ordinary Case — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">An Ordinary Case</div></div>
-    </a>    <a class="card" href="/movie/1152014-a-little-something-extra">
+    </a>    <a class="card" href="/movie/1152014-a-little-something-extra.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hhL8QC7O6fFfwgV6pDf1WSOxGcY.jpg" alt="A Little Something Extra — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Little Something Extra</div></div>
-    </a>    <a class="card" href="/movie/118354-wok-the-kasbah">
+    </a>    <a class="card" href="/movie/118354-wok-the-kasbah.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jPwioid4rOUUkj7oDcwRRqcl9GL.jpg" alt="Wok the Kasbah — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wok the Kasbah</div></div>
@@ -94,13 +94,6 @@ Source: Article "Alice Belaïdi" from Wikipedia in English, licensed under CC-BY
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

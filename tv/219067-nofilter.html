@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Sem Filtro</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3894112-ademara-barros" class="cast-card">
+            <a href="/actor/3894112-ademara-barros.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p5iARYXSvqrpqSZQaaczZZkdywF.jpg" alt="Ademara Barros" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ademara Barros</span>
             </a>
-            <a href="/actor/2099821-maicon-rodrigues" class="cast-card">
+            <a href="/actor/2099821-maicon-rodrigues.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oxyDj6chZA2NepR7r8efW2OWPy7.jpg" alt="Maicon Rodrigues" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maicon Rodrigues</span>
             </a>
-            <a href="/actor/1475116-mel-maia" class="cast-card">
+            <a href="/actor/1475116-mel-maia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/irVmiratr18o0PIbAXSrSVKdut8.jpg" alt="Mel Maia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mel Maia</span>
             </a>
-            <a href="/actor/2137666-luisa-perissé" class="cast-card">
+            <a href="/actor/2137666-luisa-perissé.html" class="cast-card">
                 <img src="/favicon.ico" alt="Luisa Perissé" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luisa Perissé</span>
             </a>
-            <a href="/actor/2136548-pedro-ottoni" class="cast-card">
+            <a href="/actor/2136548-pedro-ottoni.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r2AKXVIdXfX2xG6HuR2kn3siHbQ.jpg" alt="Pedro Ottoni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pedro Ottoni</span>
             </a>
-            <a href="/actor/3894114-thamirys-borsan" class="cast-card">
+            <a href="/actor/3894114-thamirys-borsan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x9RQE3LnCMFNF7aQIV6WxDYkuGc.jpg" alt="Thamirys Borsan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thamirys Borsan</span>
             </a>
-            <a href="/actor/2076539-flávia-reis" class="cast-card">
+            <a href="/actor/2076539-flávia-reis.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gkAcIL5Di1liIp2POkDNgpB67I8.jpg" alt="Flávia Reis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Flávia Reis</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

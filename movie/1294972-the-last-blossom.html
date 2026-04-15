@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>ホウセンカ</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/20332-kaoru-kobayashi" class="cast-card">
+            <a href="/actor/20332-kaoru-kobayashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zpnQ8L6SpyT8pI5vgbpKqXyMYoj.jpg" alt="Kaoru Kobayashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaoru Kobayashi</span>
             </a>
-            <a href="/actor/1186981-junki-tozuka" class="cast-card">
+            <a href="/actor/1186981-junki-tozuka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/52FABffTBlqXQJclmiai4dudwQ1.jpg" alt="Junki Tozuka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Junki Tozuka</span>
             </a>
-            <a href="/actor/100765-hikari-mitsushima" class="cast-card">
+            <a href="/actor/100765-hikari-mitsushima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7O24k8DWR4MgNw9JHiVcyY4HLq6.jpg" alt="Hikari Mitsushima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hikari Mitsushima</span>
             </a>
-            <a href="/actor/237362-yoshiko-miyazaki" class="cast-card">
+            <a href="/actor/237362-yoshiko-miyazaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uFdHiD3I9sKUHsfmQVGMMy6ueMm.jpg" alt="Yoshiko Miyazaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshiko Miyazaki</span>
             </a>
-            <a href="/actor/120434-pierre-taki" class="cast-card">
+            <a href="/actor/120434-pierre-taki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nIgFcU0smYH7FdzUt96d685uU1h.jpg" alt="Pierre Taki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pierre Taki</span>
             </a>
-            <a href="/actor/2722609-hideaki-murata" class="cast-card">
+            <a href="/actor/2722609-hideaki-murata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bIa6pJiZdyHdRWwbvA2Ep5CW3uH.jpg" alt="Hideaki Murata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hideaki Murata</span>
             </a>
-            <a href="/actor/216448-hiroki-yasumoto" class="cast-card">
+            <a href="/actor/216448-hiroki-yasumoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vNIGLl0wFmdhdnulMssQ1qyNeBs.jpg" alt="Hiroki Yasumoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiroki Yasumoto</span>
             </a>
-            <a href="/actor/1388751-soma-saito" class="cast-card">
+            <a href="/actor/1388751-soma-saito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8W8Y02Jmjivw0kk5PDih9dqiyd9.jpg" alt="Soma Saito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Soma Saito</span>
             </a>
-            <a href="/actor/3536483-kouta-nakayama" class="cast-card">
+            <a href="/actor/3536483-kouta-nakayama.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kouta Nakayama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kouta Nakayama</span>
             </a>
-            <a href="/actor/1256603-natsuki-hanae" class="cast-card">
+            <a href="/actor/1256603-natsuki-hanae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/alTb0DlcPIbcwM08WSmxFai58sd.jpg" alt="Natsuki Hanae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natsuki Hanae</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

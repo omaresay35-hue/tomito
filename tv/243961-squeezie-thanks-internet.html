@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Squeezie : Merci Internet</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2582286-lucas-hauchard" class="cast-card">
+            <a href="/actor/2582286-lucas-hauchard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qAk0ONQHlKEx14dGyLD95Pye0cn.jpg" alt="Lucas Hauchard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lucas Hauchard</span>
             </a>
-            <a href="/actor/4443910-florent-hauchard" class="cast-card">
+            <a href="/actor/4443910-florent-hauchard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vcLlwUbEnBVdFDOHnobFCspi1ox.jpg" alt="Florent Hauchard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Florent Hauchard</span>
             </a>
-            <a href="/actor/1674833-yvick-letexier" class="cast-card">
+            <a href="/actor/1674833-yvick-letexier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2mTvSkBjg8ilrOUFUGwVZm1oyBB.jpg" alt="Yvick Letexier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yvick Letexier</span>
             </a>
-            <a href="/actor/2354058-raphaël-carlier" class="cast-card">
+            <a href="/actor/2354058-raphaël-carlier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zS0mUQwtxcBd7Dt8gRFkqE5Y90h.jpg" alt="Raphaël Carlier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Raphaël Carlier</span>
             </a>
-            <a href="/actor/2354059-david-coscas" class="cast-card">
+            <a href="/actor/2354059-david-coscas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dne2ahMu5dDHpGG6yMBpoVvwUxr.jpg" alt="David Coscas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Coscas</span>
             </a>
-            <a href="/actor/3222046-hugo-travers" class="cast-card">
+            <a href="/actor/3222046-hugo-travers.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/icWRzfSlyVB7dZ7w56itq0jDT7W.jpg" alt="Hugo Travers" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hugo Travers</span>
             </a>
-            <a href="/actor/1265647-orelsan" class="cast-card">
+            <a href="/actor/1265647-orelsan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kEaWkRAdgTDm59bLs4nAfajIHSV.jpg" alt="Orelsan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Orelsan</span>
             </a>
-            <a href="/actor/2995042-léna-mahfouf" class="cast-card">
+            <a href="/actor/2995042-léna-mahfouf.html" class="cast-card">
                 <img src="/favicon.ico" alt="Léna Mahfouf" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Léna Mahfouf</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

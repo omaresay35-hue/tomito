@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ماذا حدث لغريتا؟</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2118692-roisin-gallagher" class="cast-card">
+            <a href="/actor/2118692-roisin-gallagher.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/maQvh7hdcSURPBxKZ2A0ot1oKBe.jpg" alt="Roisin Gallagher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Roisin Gallagher</span>
             </a>
-            <a href="/actor/216820-sinéad-keenan" class="cast-card">
+            <a href="/actor/216820-sinéad-keenan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wYHxDTjS4Ph3t2FTMspTdXBu23g.jpg" alt="Sinéad Keenan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sinéad Keenan</span>
             </a>
-            <a href="/actor/1914302-caoilfhionn-dunne" class="cast-card">
+            <a href="/actor/1914302-caoilfhionn-dunne.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/96GTcKtmXe0mU9yaMhGvRxrqkJU.jpg" alt="Caoilfhionn Dunne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Caoilfhionn Dunne</span>
             </a>
-            <a href="/actor/1185480-darragh-hand" class="cast-card">
+            <a href="/actor/1185480-darragh-hand.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qbj6VAOD47lSWOk2iaj2NlAoZ7j.jpg" alt="Darragh Hand" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Darragh Hand</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Robin Hood</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5208267-jack-patten" class="cast-card">
+            <a href="/actor/5208267-jack-patten.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sIE11wI7czGjYCUOlEKqXguIdsl.jpg" alt="Jack Patten" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Patten</span>
             </a>
-            <a href="/actor/1525713-lauren-mcqueen" class="cast-card">
+            <a href="/actor/1525713-lauren-mcqueen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fdoKXXGRL8cLrRhP5bP5MPdK9Uc.jpg" alt="Lauren McQueen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lauren McQueen</span>
             </a>
-            <a href="/actor/2435321-lydia-peckham" class="cast-card">
+            <a href="/actor/2435321-lydia-peckham.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tcBJklZSsP2JuQIYataJHW3pJXE.jpg" alt="Lydia Peckham" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lydia Peckham</span>
             </a>
-            <a href="/actor/1813662-marcus-fraser" class="cast-card">
+            <a href="/actor/1813662-marcus-fraser.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qpAxGk8XjUxNsfcW5B1YMupOff5.jpg" alt="Marcus Fraser" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marcus Fraser</span>
             </a>
-            <a href="/actor/5271927-henry-rowley" class="cast-card">
+            <a href="/actor/5271927-henry-rowley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wSAWkHEtCN9dAz3gGjiA5ODr3jN.jpg" alt="Henry Rowley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Henry Rowley</span>
             </a>
-            <a href="/actor/3975650-erica-ford" class="cast-card">
+            <a href="/actor/3975650-erica-ford.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kcizuJHVuRmvrYGD0vNh4UjJ4Az.jpg" alt="Erica Ford" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erica Ford</span>
             </a>
-            <a href="/actor/2750338-angus-castle-doughty" class="cast-card">
+            <a href="/actor/2750338-angus-castle-doughty.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aEYs00qhM3m9YcknhpFHYngP8Zp.jpg" alt="Angus Castle-Doughty" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Angus Castle-Doughty</span>
             </a>
-            <a href="/actor/27764-steven-waddington" class="cast-card">
+            <a href="/actor/27764-steven-waddington.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gmlX5NNJI5HoNrK3RUPwBUmUgBW.jpg" alt="Steven Waddington" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steven Waddington</span>
             </a>
-            <a href="/actor/935-connie-nielsen" class="cast-card">
+            <a href="/actor/935-connie-nielsen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gSQ3O3PJ6ly6nT63joOtfZyscFP.jpg" alt="Connie Nielsen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Connie Nielsen</span>
             </a>
-            <a href="/actor/48-sean-bean" class="cast-card">
+            <a href="/actor/48-sean-bean.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kTjiABk3TJ3yI0Cto5RsvyT6V3o.jpg" alt="Sean Bean" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sean Bean</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

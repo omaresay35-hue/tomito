@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,19 +75,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1374785-lorna-watson" class="cast-card">
+            <a href="/actor/1374785-lorna-watson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/80IeJb9Wd4neHxG1PvmXdOGp7xD.jpg" alt="Lorna Watson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lorna Watson</span>
             </a>
-            <a href="/actor/59316-max-brown" class="cast-card">
+            <a href="/actor/59316-max-brown.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5UfXDvI6ewAzlNmc7Pqy3GfXWWm.jpg" alt="Max Brown" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Max Brown</span>
             </a>
-            <a href="/actor/3107508-jerry-iwu" class="cast-card">
+            <a href="/actor/3107508-jerry-iwu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3eePaopse43DvZMsZ2540gWHPK3.jpg" alt="Jerry Iwu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jerry Iwu</span>
             </a>
-            <a href="/actor/1473990-ami-metcalf" class="cast-card">
+            <a href="/actor/1473990-ami-metcalf.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yxO2oeTAKk6j5LNipOMJZDCQ5VB.jpg" alt="Ami Metcalf" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ami Metcalf</span>
             </a></div></section>
@@ -95,13 +95,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

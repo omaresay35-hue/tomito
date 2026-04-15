@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ياكيتوري: جنود البؤس</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2106489-taito-ban" class="cast-card">
+            <a href="/actor/2106489-taito-ban.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pSExEOVmjAujKUyJJJSxC1WEzOM.jpg" alt="Taito Ban" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taito Ban</span>
             </a>
-            <a href="/actor/1254672-asami-seto" class="cast-card">
+            <a href="/actor/1254672-asami-seto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iKKCPgKrNd4pJ0iBOC1SBZy2Y4Y.jpg" alt="Asami Seto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Asami Seto</span>
             </a>
-            <a href="/actor/1563016-shunsuke-takeuchi" class="cast-card">
+            <a href="/actor/1563016-shunsuke-takeuchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p1bD76bPptJ41mKRtv0mIr8ZcvO.jpg" alt="Shunsuke Takeuchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shunsuke Takeuchi</span>
             </a>
-            <a href="/actor/1324472-kengo-kawanishi" class="cast-card">
+            <a href="/actor/1324472-kengo-kawanishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s0CxrO6LixJBgqiHEUjKelAh8ei.jpg" alt="Kengo Kawanishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kengo Kawanishi</span>
             </a>
-            <a href="/actor/1563442-akari-kito" class="cast-card">
+            <a href="/actor/1563442-akari-kito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AoRQOZRC0yINB0WeKnM569rV1wF.jpg" alt="Akari Kito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Akari Kito</span>
             </a>
-            <a href="/actor/135524-kenjiro-tsuda" class="cast-card">
+            <a href="/actor/135524-kenjiro-tsuda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yBlT8FzQqZYbDcJlnCEayNQHrzS.jpg" alt="Kenjiro Tsuda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kenjiro Tsuda</span>
             </a>
-            <a href="/actor/112278-wataru-takagi" class="cast-card">
+            <a href="/actor/112278-wataru-takagi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/amccLvyTl5JP7T9F05BojgQedNw.jpg" alt="Wataru Takagi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wataru Takagi</span>
             </a>
-            <a href="/actor/126704-tetsu-inada" class="cast-card">
+            <a href="/actor/126704-tetsu-inada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e8qQL1NKTHP8eOsZmV5LCkdHS9T.jpg" alt="Tetsu Inada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tetsu Inada</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

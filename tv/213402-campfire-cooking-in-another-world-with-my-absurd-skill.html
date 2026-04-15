@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>とんでもスキルで異世界放浪メシ</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1492992-yuma-uchida" class="cast-card">
+            <a href="/actor/1492992-yuma-uchida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2otstbLfQ7MXuFt1X8MFOb4OIgd.jpg" alt="Yuma Uchida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuma Uchida</span>
             </a>
-            <a href="/actor/224413-satoshi-hino" class="cast-card">
+            <a href="/actor/224413-satoshi-hino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8ZJIiwIVF2zDyyFr7oXewj0eEuu.jpg" alt="Satoshi Hino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Satoshi Hino</span>
             </a>
-            <a href="/actor/1597103-hina-kino" class="cast-card">
+            <a href="/actor/1597103-hina-kino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iwq0VvY3q4MPfn5ZTjsthhNcuyd.jpg" alt="Hina Kino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hina Kino</span>
             </a>
-            <a href="/actor/1296667-maaya-uchida" class="cast-card">
+            <a href="/actor/1296667-maaya-uchida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rq4glg2SZwGyt3TIxR3ElalKmhH.jpg" alt="Maaya Uchida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maaya Uchida</span>
             </a>
-            <a href="/actor/222340-yuhko-kaida" class="cast-card">
+            <a href="/actor/222340-yuhko-kaida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wttsRGyYySLPfNcDtAbNLVizHLx.jpg" alt="Yuhko Kaida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuhko Kaida</span>
             </a>
-            <a href="/actor/2944458-saho-shirasu" class="cast-card">
+            <a href="/actor/2944458-saho-shirasu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2iNYxiui27dvP30WiYtVquO1HCN.jpg" alt="Saho Shirasu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saho Shirasu</span>
             </a>
-            <a href="/actor/1550514-you-taichi" class="cast-card">
+            <a href="/actor/1550514-you-taichi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bt0oOFKknrOG7gNWusq9sc8UOhm.jpg" alt="You Taichi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>You Taichi</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

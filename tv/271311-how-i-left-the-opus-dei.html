@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسل</a> &gt; 
+    <a href="/index.html#series">مسلسل</a> &gt; 
     <span>El minuto heróico: Yo también dejé el Opus Dei</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1261473-claudia-traisac" class="cast-card">
+            <a href="/actor/1261473-claudia-traisac.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ntn9Qr7msMLN1vlagnjLYGCnmst.jpg" alt="Claudia Traisac" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Claudia Traisac</span>
             </a>
-            <a href="/actor/5258671-gareth-gore" class="cast-card">
+            <a href="/actor/5258671-gareth-gore.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gareth Gore" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gareth Gore</span>
             </a>
-            <a href="/actor/5258678-antonia-cundy" class="cast-card">
+            <a href="/actor/5258678-antonia-cundy.html" class="cast-card">
                 <img src="/favicon.ico" alt="Antonia Cundy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Antonia Cundy</span>
             </a>
-            <a href="/actor/5258681-john-paul-lennon" class="cast-card">
+            <a href="/actor/5258681-john-paul-lennon.html" class="cast-card">
                 <img src="/favicon.ico" alt="John Paul Lennon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Paul Lennon</span>
             </a>
-            <a href="/actor/5258690-sebastian-sal" class="cast-card">
+            <a href="/actor/5258690-sebastian-sal.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sebastian Sal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sebastian Sal</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1520850-sofias-suspicion">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1520850-sofias-suspicion.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/l9aBZKIaB5ehZrO64vEPnSr96UK.jpg" alt="Sofia's Suspicion — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sofia's Suspicion</div></div>
-    </a>    <a class="card" href="/movie/1084440-daniela-forever">
+    </a>    <a class="card" href="/movie/1084440-daniela-forever.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sPTAz3frxpVxOnSyEwy3jmEtEHE.jpg" alt="Daniela Forever — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Daniela Forever</div></div>
-    </a>    <a class="card" href="/movie/1214118-the-other-way-around">
+    </a>    <a class="card" href="/movie/1214118-the-other-way-around.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jWHEfq6QRwPS9xRz4pzY3oBRSxD.jpg" alt="The Other Way Around — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Other Way Around</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/283133-innate">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/283133-innate.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3FfKufoT62ogWu3vNfH1gmaIZbx.jpg" alt="Innate — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Innate</div></div>
-    </a>    <a class="card" href="/tv/278274-entrepreneurs">
+    </a>    <a class="card" href="/tv/278274-entrepreneurs.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dk0cSgzkceAyNKtgfhAbKULlnps.jpg" alt="Entrepreneurs — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Entrepreneurs</div></div>
-    </a>    <a class="card" href="/tv/242860-santuario">
+    </a>    <a class="card" href="/tv/242860-santuario.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/oDYd8wPMAi3M8qIx8wa5SxaB6yg.jpg" alt="Santuario — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Santuario</div></div>
-    </a>    <a class="card" href="/tv/220513-invisible">
+    </a>    <a class="card" href="/tv/220513-invisible.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ww4pfCaHONwPpdSTrP4cZU1pfBL.jpg" alt="Invisible — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Invisible</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

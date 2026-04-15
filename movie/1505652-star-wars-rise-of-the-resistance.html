@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Star Wars: Rise of the Resistance</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1315036-daisy-ridley" class="cast-card">
+            <a href="/actor/1315036-daisy-ridley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iVboQmgPC3tYFjezBjrVECJRS8n.jpg" alt="Daisy Ridley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daisy Ridley</span>
             </a>
-            <a href="/actor/236695-john-boyega" class="cast-card">
+            <a href="/actor/236695-john-boyega.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3153CfpgZQXTzCY0i74WpJumMQe.jpg" alt="John Boyega" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Boyega</span>
             </a>
-            <a href="/actor/1023139-adam-driver" class="cast-card">
+            <a href="/actor/1023139-adam-driver.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fsbGQ1eZFgdsG1XnKlhNSvHsiGo.jpg" alt="Adam Driver" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam Driver</span>
             </a>
-            <a href="/actor/25072-oscar-isaac" class="cast-card">
+            <a href="/actor/25072-oscar-isaac.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg" alt="Oscar Isaac" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oscar Isaac</span>
             </a>
-            <a href="/actor/93210-domhnall-gleeson" class="cast-card">
+            <a href="/actor/93210-domhnall-gleeson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qSSHBmfD4keoBfkaBBLoOfkpkjU.jpg" alt="Domhnall Gleeson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Domhnall Gleeson</span>
             </a>
-            <a href="/actor/19506-james-arnold-taylor" class="cast-card">
+            <a href="/actor/19506-james-arnold-taylor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xP7SNjPMhZ2m4aVuYboPa8W1RlB.jpg" alt="James Arnold Taylor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Arnold Taylor</span>
             </a>
-            <a href="/actor/1043835-jeff-leach" class="cast-card">
+            <a href="/actor/1043835-jeff-leach.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jeff Leach" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeff Leach</span>
             </a>
-            <a href="/actor/1729666-bill-kipsang-rotich" class="cast-card">
+            <a href="/actor/1729666-bill-kipsang-rotich.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hX4FMfTs3jGznEwFbXflNSnZsFL.jpg" alt="Bill Kipsang Rotich" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bill Kipsang Rotich</span>
             </a>
-            <a href="/actor/1753633-eric-saleh" class="cast-card">
+            <a href="/actor/1753633-eric-saleh.html" class="cast-card">
                 <img src="/favicon.ico" alt="Eric Saleh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eric Saleh</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

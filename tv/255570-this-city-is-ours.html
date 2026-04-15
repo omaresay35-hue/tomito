@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>This City Is Ours</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1803196-james-nelson-joyce" class="cast-card">
+            <a href="/actor/1803196-james-nelson-joyce.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tnzCnFoyR98ChW1z7T5wo196fxR.jpg" alt="James Nelson-Joyce" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Nelson-Joyce</span>
             </a>
-            <a href="/actor/3260026-hannah-onslow" class="cast-card">
+            <a href="/actor/3260026-hannah-onslow.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/plXhClA0EdgngZorqO8w3bmAkk3.jpg" alt="Hannah Onslow" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hannah Onslow</span>
             </a>
-            <a href="/actor/47735-julie-graham" class="cast-card">
+            <a href="/actor/47735-julie-graham.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oqk7TrAdD8qrgE5XLxLAsLhZrsQ.jpg" alt="Julie Graham" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julie Graham</span>
             </a>
-            <a href="/actor/1218392-mike-noble" class="cast-card">
+            <a href="/actor/1218392-mike-noble.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jr87f1RTSv1NSKK08cBvC8pyiB0.jpg" alt="Mike Noble" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mike Noble</span>
             </a>
-            <a href="/actor/82638-laura-aikman" class="cast-card">
+            <a href="/actor/82638-laura-aikman.html" class="cast-card">
                 <img src="/favicon.ico" alt="Laura Aikman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laura Aikman</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

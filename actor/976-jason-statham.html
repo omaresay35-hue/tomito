@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,23 +75,23 @@ While working at local market stalls, Statham began practising Chinese martial 
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1290821-shelter">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1290821-shelter.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/buPFnHZ3xQy6vZEHxbHgL1Pc6CR.jpg" alt="Shelter — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Shelter</div></div>
-    </a>    <a class="card" href="/movie/1197306-a-working-man">
+    </a>    <a class="card" href="/movie/1197306-a-working-man.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg" alt="A Working Man — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Working Man</div></div>
-    </a>    <a class="card" href="/movie/866398-the-beekeeper">
+    </a>    <a class="card" href="/movie/866398-the-beekeeper.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/A7EByudX0eOzlkQ2FIbogzyazm2.jpg" alt="The Beekeeper — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Beekeeper</div></div>
-    </a>    <a class="card" href="/movie/204082-homefront">
+    </a>    <a class="card" href="/movie/204082-homefront.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xcFLM44jgl015wLe7lWC1C1bEEM.jpg" alt="Homefront — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Homefront</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/226698-conan-obrien-must-go">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/226698-conan-obrien-must-go.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/x0Rt2LBQ1nuRq51lKyvETERU5zs.jpg" alt="Conan O'Brien Must Go — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Conan O'Brien Must Go</div></div>
@@ -100,13 +100,6 @@ While working at local market stalls, Statham began practising Chinese martial 
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

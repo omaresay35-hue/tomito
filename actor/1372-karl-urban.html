@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/799882-the-bluff">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/799882-the-bluff.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dl1cA7wdwePc9QU2Rc24EPqlcyJ.jpg" alt="The Bluff — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Bluff</div></div>
-    </a>    <a class="card" href="/movie/122-the-lord-of-the-rings-the-return-of-the-king">
+    </a>    <a class="card" href="/movie/122-the-lord-of-the-rings-the-return-of-the-king.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg" alt="The Lord of the Rings: The Return of the King — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Lord of the Rings: The Return of the King</div></div>
-    </a>    <a class="card" href="/movie/121-the-lord-of-the-rings-the-two-towers">
+    </a>    <a class="card" href="/movie/121-the-lord-of-the-rings-the-two-towers.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg" alt="The Lord of the Rings: The Two Towers — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Lord of the Rings: The Two Towers</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/123625-ark-the-animated-series">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/123625-ark-the-animated-series.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3qzBCXJLifxund1QMa8BiXmH3xp.jpg" alt="ARK: The Animated Series — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">ARK: The Animated Series</div></div>
-    </a>    <a class="card" href="/tv/205715-gen-v">
+    </a>    <a class="card" href="/tv/205715-gen-v.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tEv842Nd5uMSavURG4aQO1pNtst.jpg" alt="Gen V — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Gen V</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

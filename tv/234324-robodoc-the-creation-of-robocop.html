@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>RoboDoc: The Creation of RoboCop</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/27811-peter-weller" class="cast-card">
+            <a href="/actor/27811-peter-weller.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mVRJX38zabRadVPJe0XOTObVzhp.jpg" alt="Peter Weller" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Peter Weller</span>
             </a>
-            <a href="/actor/10491-paul-verhoeven" class="cast-card">
+            <a href="/actor/10491-paul-verhoeven.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2TQvrRCtS7GD0EEgODwfNMmkMbG.jpg" alt="Paul Verhoeven" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paul Verhoeven</span>
             </a>
-            <a href="/actor/44038-nancy-allen" class="cast-card">
+            <a href="/actor/44038-nancy-allen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ok87WkvJJJTDsTzqgmoC5BHv6Wh.jpg" alt="Nancy Allen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nancy Allen</span>
             </a>
-            <a href="/actor/780-ronny-cox" class="cast-card">
+            <a href="/actor/780-ronny-cox.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cKkVkqft2RacSDhsKxO8nMFgeAd.jpg" alt="Ronny Cox" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ronny Cox</span>
             </a>
-            <a href="/actor/7722-edward-neumeier" class="cast-card">
+            <a href="/actor/7722-edward-neumeier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sBkGYHLdTDs3c1OShy9EyB93PCn.jpg" alt="Edward Neumeier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Edward Neumeier</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

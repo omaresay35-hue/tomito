@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1412598-killer-whale">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1412598-killer-whale.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xC6zdIoIHjhOIFmjNyGgtzhuhiF.jpg" alt="Killer Whale — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Killer Whale</div></div>
-    </a>    <a class="card" href="/movie/1107325-witchboard">
+    </a>    <a class="card" href="/movie/1107325-witchboard.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8RcN5FHkJVNJdOaL6WtTePU7CyF.jpg" alt="Witchboard — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Witchboard</div></div>
-    </a>    <a class="card" href="/movie/1231953-five-blind-dates">
+    </a>    <a class="card" href="/movie/1231953-five-blind-dates.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nMFByoqAxTpiY7Irbvq4ugjjC0y.jpg" alt="Five Blind Dates — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Five Blind Dates</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/157950-ncis-sydney">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/157950-ncis-sydney.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6dYDa6h1AOZ7iZ1zv3nlw7qhErX.jpg" alt="NCIS: Sydney — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">NCIS: Sydney</div></div>
-    </a>    <a class="card" href="/tv/211465-caught">
+    </a>    <a class="card" href="/tv/211465-caught.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3XoxZ6PhqsHTD3HbGNVhnGGMlZq.jpg" alt="C*A*U*G*H*T — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">C*A*U*G*H*T</div></div>
-    </a>    <a class="card" href="/tv/210178-black-snow">
+    </a>    <a class="card" href="/tv/210178-black-snow.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8cYzv4vR2u4IA8rx7yk0r8P8uIp.jpg" alt="Black Snow — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Black Snow</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Gaga Chromatica Ball</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/237405-lady-gaga" class="cast-card">
+            <a href="/actor/237405-lady-gaga.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9Y4Pz7AEXhB9qNar2tMsx5EVXML.jpg" alt="Lady Gaga" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lady Gaga</span>
             </a>
-            <a href="/actor/3841647-tim-stewart" class="cast-card">
+            <a href="/actor/3841647-tim-stewart.html" class="cast-card">
                 <img src="/favicon.ico" alt="Tim Stewart" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tim Stewart</span>
             </a>
-            <a href="/actor/3565683-ricky-tillo" class="cast-card">
+            <a href="/actor/3565683-ricky-tillo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ricky Tillo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ricky Tillo</span>
             </a>
-            <a href="/actor/4749922-chris-johnson" class="cast-card">
+            <a href="/actor/4749922-chris-johnson.html" class="cast-card">
                 <img src="/favicon.ico" alt="Chris Johnson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Johnson</span>
             </a>
-            <a href="/actor/4749923-jonny-drummond" class="cast-card">
+            <a href="/actor/4749923-jonny-drummond.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jonny Drummond" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jonny Drummond</span>
             </a>
-            <a href="/actor/4749924-brockett-parsons" class="cast-card">
+            <a href="/actor/4749924-brockett-parsons.html" class="cast-card">
                 <img src="/favicon.ico" alt="Brockett Parsons" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brockett Parsons</span>
             </a>
-            <a href="/actor/4749925-madison-alvarado" class="cast-card">
+            <a href="/actor/4749925-madison-alvarado.html" class="cast-card">
                 <img src="/favicon.ico" alt="Madison Alvarado" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Madison Alvarado</span>
             </a>
-            <a href="/actor/4749926-morgan-geraghty" class="cast-card">
+            <a href="/actor/4749926-morgan-geraghty.html" class="cast-card">
                 <img src="/favicon.ico" alt="Morgan Geraghty" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Morgan Geraghty</span>
             </a>
-            <a href="/actor/4749927-jacob-gonzalez" class="cast-card">
+            <a href="/actor/4749927-jacob-gonzalez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jacob Gonzalez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jacob Gonzalez</span>
             </a>
-            <a href="/actor/4749928-trinity-inay" class="cast-card">
+            <a href="/actor/4749928-trinity-inay.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8NBYXlQAGwTFaCUqEfIbuXVd6WL.jpg" alt="Trinity Inay" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Trinity Inay</span>
             </a>
-            <a href="/actor/4749930-christopher-jensen" class="cast-card">
+            <a href="/actor/4749930-christopher-jensen.html" class="cast-card">
                 <img src="/favicon.ico" alt="Christopher Jensen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christopher Jensen</span>
             </a>
-            <a href="/actor/4749931-alaïa-kutyrev" class="cast-card">
+            <a href="/actor/4749931-alaïa-kutyrev.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alaïa Kutyrev" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alaïa Kutyrev</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

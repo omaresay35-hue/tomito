@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,27 +73,27 @@ Lowe was born Yan-Kay Lo in Vancouver, British Columbia to a Scottish mother and
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1425296-signed-sealed-delivered-to-the-moon-and-back">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1425296-signed-sealed-delivered-to-the-moon-and-back.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jMdsTGbM4riS5DaeyMHLqaRn81s.jpg" alt="Signed, Sealed, Delivered: To the Moon and Back — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Signed, Sealed, Delivered: To the Moon and Back</div></div>
-    </a>    <a class="card" href="/movie/1413196-the-wish-swap">
+    </a>    <a class="card" href="/movie/1413196-the-wish-swap.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tL0gzunQrFuATf9OhxIEzrHgAZF.jpg" alt="The Wish Swap — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Wish Swap</div></div>
-    </a>    <a class="card" href="/movie/1360772-this-time-each-year">
+    </a>    <a class="card" href="/movie/1360772-this-time-each-year.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qxdt2EQUHDQLlYda1v4sOnPelFf.jpg" alt="This Time Each Year — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">This Time Each Year</div></div>
-    </a>    <a class="card" href="/movie/1302757-signed-sealed-delivered-a-tale-of-three-letters">
+    </a>    <a class="card" href="/movie/1302757-signed-sealed-delivered-a-tale-of-three-letters.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bs9o9vtv0FUBj4xyVVOo8RW8N2p.jpg" alt="Signed, Sealed, Delivered: A Tale of Three Letters — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Signed, Sealed, Delivered: A Tale of Three Letters</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/240932-wild-cards">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/240932-wild-cards.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lIhkV9LNwViVD2bylPTFQvDD21e.jpg" alt="Wild Cards — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wild Cards</div></div>
-    </a>    <a class="card" href="/tv/1911-bones">
+    </a>    <a class="card" href="/tv/1911-bones.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eyTu5c8LniVciRZIOSHTvvkkgJa.jpg" alt="Bones — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Bones</div></div>
@@ -102,13 +102,6 @@ Lowe was born Yan-Kay Lo in Vancouver, British Columbia to a Scottish mother and
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

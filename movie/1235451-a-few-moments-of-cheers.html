@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>数分間のエールを</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1256603-natsuki-hanae" class="cast-card">
+            <a href="/actor/1256603-natsuki-hanae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/alTb0DlcPIbcwM08WSmxFai58sd.jpg" alt="Natsuki Hanae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Natsuki Hanae</span>
             </a>
-            <a href="/actor/1250465-mariya-ise" class="cast-card">
+            <a href="/actor/1250465-mariya-ise.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tQWlgrlQ70biWdg7x9E75CtwsuD.jpg" alt="Mariya Ise" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariya Ise</span>
             </a>
-            <a href="/actor/4497261-kei-sugawara" class="cast-card">
+            <a href="/actor/4497261-kei-sugawara.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kei Sugawara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kei Sugawara</span>
             </a>
-            <a href="/actor/1492992-yuma-uchida" class="cast-card">
+            <a href="/actor/1492992-yuma-uchida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2otstbLfQ7MXuFt1X8MFOb4OIgd.jpg" alt="Yuma Uchida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuma Uchida</span>
             </a>
-            <a href="/actor/3309472-fuka-izumi" class="cast-card">
+            <a href="/actor/3309472-fuka-izumi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nTC0TuLp4Ek3b08DG9lhwVJHwlW.jpg" alt="Fuka Izumi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fuka Izumi</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

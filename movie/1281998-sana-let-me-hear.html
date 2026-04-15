@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>あのコはだぁれ？</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2031109-nagisa-shibuya" class="cast-card">
+            <a href="/actor/2031109-nagisa-shibuya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pj7OoX34s52uIUNMZk0xOGBf99N.jpg" alt="Nagisa Shibuya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nagisa Shibuya</span>
             </a>
-            <a href="/actor/4404866-hayase-ikoi" class="cast-card">
+            <a href="/actor/4404866-hayase-ikoi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i04en2GGoEbOBXLq9teQgJ6JL5w.jpg" alt="Hayase Ikoi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hayase Ikoi</span>
             </a>
-            <a href="/actor/2234011-soma-santoki" class="cast-card">
+            <a href="/actor/2234011-soma-santoki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/g4I9g3IRcbxqTqDuOtgG9QicvfB.jpg" alt="Soma Santoki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Soma Santoki</span>
             </a>
-            <a href="/actor/1781079-towa-araki" class="cast-card">
+            <a href="/actor/1781079-towa-araki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m852DtyivE1jY8luUI4bYMRpFWy.jpg" alt="Towa Araki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Towa Araki</span>
             </a>
-            <a href="/actor/1018944-shota-sometani" class="cast-card">
+            <a href="/actor/1018944-shota-sometani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sEEfyEfEbd9TQB9gFlvDTQJov76.jpg" alt="Shota Sometani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shota Sometani</span>
             </a>
-            <a href="/actor/1502395-satoru-matsuo" class="cast-card">
+            <a href="/actor/1502395-satoru-matsuo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8PaX65udpDordFfvjSNWcsRJflm.jpg" alt="Satoru Matsuo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Satoru Matsuo</span>
             </a>
-            <a href="/actor/1133061-makita-sports" class="cast-card">
+            <a href="/actor/1133061-makita-sports.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oCEdthU1LWq3KovMBQGsdHI5VVl.jpg" alt="Makita Sports" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Makita Sports</span>
             </a>
-            <a href="/actor/4117747-tomoko-hoshi" class="cast-card">
+            <a href="/actor/4117747-tomoko-hoshi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8plSay5qkqQrdd8fISUVAQ0RPZ3.jpg" alt="Tomoko Hoshi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomoko Hoshi</span>
             </a>
-            <a href="/actor/4856793-maya-imamori" class="cast-card">
+            <a href="/actor/4856793-maya-imamori.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iRI0G7DklTmitpRNgcD37OYShIv.jpg" alt="Maya Imamori" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maya Imamori</span>
             </a>
-            <a href="/actor/4086514-fumika" class="cast-card">
+            <a href="/actor/4086514-fumika.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ok2wZWZWiDkm7hblfj4Z4By3wtM.jpg" alt="Fumika" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fumika</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

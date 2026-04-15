@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,15 +71,15 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1162858-the-other">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1162858-the-other.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kE6FV8Lc9Aqir6OlgaNgnbFcy9E.jpg" alt="The Other — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Other</div></div>
-    </a>    <a class="card" href="/movie/826510-harold-and-the-purple-crayon">
+    </a>    <a class="card" href="/movie/826510-harold-and-the-purple-crayon.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qtW6bWUEqfPLaD6KnetIlSG4adf.jpg" alt="Harold and the Purple Crayon — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Harold and the Purple Crayon</div></div>
-    </a>    <a class="card" href="/movie/974613-the-fabulous-four">
+    </a>    <a class="card" href="/movie/974613-the-fabulous-four.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/g7kZFm81LBr2wf34MAdKexkZ0NH.jpg" alt="The Fabulous Four — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Fabulous Four</div></div>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/244602-crime-punishment">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/244602-crime-punishment.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zr3rIvhnEP4k3QTAoHXsZFVSzTv.jpg" alt="Crime & Punishment — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Crime & Punishment</div></div>
-    </a>    <a class="card" href="/tv/250955-i-know-who-killed-you">
+    </a>    <a class="card" href="/tv/250955-i-know-who-killed-you.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bgnXM2h3ZUorMAvuAwteXfolv7E.jpg" alt="I Know Who Killed You — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">I Know Who Killed You</div></div>
-    </a>    <a class="card" href="/tv/239148-the-magic-district">
+    </a>    <a class="card" href="/tv/239148-the-magic-district.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jkMfsY5XH3cs86IuGrxIcxRhTWx.jpg" alt="The Magic District — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Magic District</div></div>
-    </a>    <a class="card" href="/tv/239827-holidays">
+    </a>    <a class="card" href="/tv/239827-holidays.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hkNGz9Gaq9rAEqI88WqYV9NkHF6.jpg" alt="Holidays — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Holidays</div></div>
-    </a>    <a class="card" href="/tv/221833-kafe-kuba">
+    </a>    <a class="card" href="/tv/221833-kafe-kuba.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/50y3lgZZAtN2BEIM5UFkOSQp2Hy.jpg" alt="Kafe Kuba — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kafe Kuba</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

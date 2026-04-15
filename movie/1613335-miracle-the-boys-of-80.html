@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Miracle: The Boys of '80</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/223121-herb-brooks" class="cast-card">
+            <a href="/actor/223121-herb-brooks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/whIW4612cq6IKo26q9UXIIDHAJO.jpg" alt="Herb Brooks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Herb Brooks</span>
             </a>
-            <a href="/actor/223122-mike-eruzione" class="cast-card">
+            <a href="/actor/223122-mike-eruzione.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AmXQyf76V7Tnfn9OhTVA67ENYGn.jpg" alt="Mike Eruzione" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mike Eruzione</span>
             </a>
-            <a href="/actor/223123-jim-craig" class="cast-card">
+            <a href="/actor/223123-jim-craig.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5djzwDLIFExM3zJe8xBdOkkbQh4.jpg" alt="Jim Craig" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jim Craig</span>
             </a>
-            <a href="/actor/5983841-gary-smith" class="cast-card">
+            <a href="/actor/5983841-gary-smith.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cychWYIiI28QLTL7jvIpSvhnZOG.jpg" alt="Gary Smith" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gary Smith</span>
             </a>
-            <a href="/actor/5983843-steve-janaszak" class="cast-card">
+            <a href="/actor/5983843-steve-janaszak.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s1CJhE7UAqV48O3Z5pqDsFfi0A1.jpg" alt="Steve Janaszak" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steve Janaszak</span>
             </a>
-            <a href="/actor/5983844-john-harrington" class="cast-card">
+            <a href="/actor/5983844-john-harrington.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3NIpno8QP2RpdDGWDHqpcTiDJv8.jpg" alt="John Harrington" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Harrington</span>
             </a>
-            <a href="/actor/5404330-craig-patrick" class="cast-card">
+            <a href="/actor/5404330-craig-patrick.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/to39bL58xkFrsRR8AizERMqXNK8.jpg" alt="Craig Patrick" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Craig Patrick</span>
             </a>
-            <a href="/actor/5983846-buzz-schneider" class="cast-card">
+            <a href="/actor/5983846-buzz-schneider.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5TgMU6WZDZFDvRqYUaDyECxKGdf.jpg" alt="Buzz Schneider" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Buzz Schneider</span>
             </a>
-            <a href="/actor/5983848-george-f-will" class="cast-card">
+            <a href="/actor/5983848-george-f-will.html" class="cast-card">
                 <img src="/favicon.ico" alt="George F. Will" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>George F. Will</span>
             </a>
-            <a href="/actor/5983853-ralph-cox" class="cast-card">
+            <a href="/actor/5983853-ralph-cox.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ralph Cox" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ralph Cox</span>
             </a>
-            <a href="/actor/5983854-eric-heiden" class="cast-card">
+            <a href="/actor/5983854-eric-heiden.html" class="cast-card">
                 <img src="/favicon.ico" alt="Eric Heiden" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eric Heiden</span>
             </a>
-            <a href="/actor/5983831-john-powers" class="cast-card">
+            <a href="/actor/5983831-john-powers.html" class="cast-card">
                 <img src="/favicon.ico" alt="John Powers" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Powers</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

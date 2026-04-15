@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>BTS: 더 리턴</span>
   </nav>
 
@@ -71,31 +71,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1544084-rm" class="cast-card">
+            <a href="/actor/1544084-rm.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w4M2bMWsQ4RZ6OmlGEx7WUPZTRN.jpg" alt="RM" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>RM</span>
             </a>
-            <a href="/actor/1544088-jin" class="cast-card">
+            <a href="/actor/1544088-jin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vI5yRxsxOTPT5Ivvgu5eU7M7By4.jpg" alt="Jin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jin</span>
             </a>
-            <a href="/actor/1544086-suga" class="cast-card">
+            <a href="/actor/1544086-suga.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zaUyLFBQa85cHpBXRR3BQwiuRhe.jpg" alt="SUGA" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>SUGA</span>
             </a>
-            <a href="/actor/1544090-j-hope" class="cast-card">
+            <a href="/actor/1544090-j-hope.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jS2WAQXv2TNMzx0KN9yQvcSbosZ.jpg" alt="j-hope" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>j-hope</span>
             </a>
-            <a href="/actor/1544092-jimin" class="cast-card">
+            <a href="/actor/1544092-jimin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fJeCtQ5FvKSzPpUkyi0rVNmQRjL.jpg" alt="Jimin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jimin</span>
             </a>
-            <a href="/actor/1544093-v" class="cast-card">
+            <a href="/actor/1544093-v.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vjgHocojskuMdNvfl0QgSV4zgWL.jpg" alt="V" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>V</span>
             </a>
-            <a href="/actor/1544095-jung-kook" class="cast-card">
+            <a href="/actor/1544095-jung-kook.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/445b02NdjpONWmHfaFmesula1fs.jpg" alt="Jung Kook" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jung Kook</span>
             </a></div></section>
@@ -103,13 +103,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Un año y un día</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1443418-luis-fernández" class="cast-card">
+            <a href="/actor/1443418-luis-fernández.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sqY7Tf9rlTR6zMZ7h5P9uGIfARF.jpg" alt="Luis Fernández" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luis Fernández</span>
             </a>
-            <a href="/actor/2527414-nicole-wallace" class="cast-card">
+            <a href="/actor/2527414-nicole-wallace.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xlvq6OYCN6yQef4fpJQtwVyQxqr.jpg" alt="Nicole Wallace" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicole Wallace</span>
             </a>
-            <a href="/actor/98358-nadia-de-santiago" class="cast-card">
+            <a href="/actor/98358-nadia-de-santiago.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1ovFkRvABlQEfdnWVVmr7PqqTpI.jpg" alt="Nadia de Santiago" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nadia de Santiago</span>
             </a>
-            <a href="/actor/112607-carlos-iglesias" class="cast-card">
+            <a href="/actor/112607-carlos-iglesias.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gElCYmYDSvlplt2JXHY7EPvGHaE.jpg" alt="Carlos Iglesias" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carlos Iglesias</span>
             </a>
-            <a href="/actor/3056391-cosette-silguero" class="cast-card">
+            <a href="/actor/3056391-cosette-silguero.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9PW6oswKGNzHMNsCFZoeQKoLxz2.jpg" alt="Cosette Silguero" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cosette Silguero</span>
             </a>
-            <a href="/actor/1240274-fanny-gautier" class="cast-card">
+            <a href="/actor/1240274-fanny-gautier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2QEVaSaNvJIlWLvZOubtS2d710u.jpg" alt="Fanny Gautier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fanny Gautier</span>
             </a>
-            <a href="/actor/1445669-víctor-elías" class="cast-card">
+            <a href="/actor/1445669-víctor-elías.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aDbeGx5UYciWgSxrytnK9oQ35zA.jpg" alt="Víctor Elías" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Víctor Elías</span>
             </a>
-            <a href="/actor/5310-antonio-gil" class="cast-card">
+            <a href="/actor/5310-antonio-gil.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qXNCtJxiMEHjB4k4WbN75LBZ8qh.jpg" alt="Antonio Gil" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Antonio Gil</span>
             </a>
-            <a href="/actor/4198427-paula-iglesias" class="cast-card">
+            <a href="/actor/4198427-paula-iglesias.html" class="cast-card">
                 <img src="/favicon.ico" alt="Paula Iglesias" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paula Iglesias</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

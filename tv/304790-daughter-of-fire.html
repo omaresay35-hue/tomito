@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Hija del fuego: La venganza de la bastarda</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1246183-eugenia-suárez" class="cast-card">
+            <a href="/actor/1246183-eugenia-suárez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kkMXfLbNIMRQraZMX8WGC8KrQyO.jpg" alt="Eugenia Suárez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eugenia Suárez</span>
             </a>
-            <a href="/actor/125493-antonella-costa" class="cast-card">
+            <a href="/actor/125493-antonella-costa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qHavnYejcgM1qhRjFIZdtYCqy1S.jpg" alt="Antonella Costa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Antonella Costa</span>
             </a>
-            <a href="/actor/1441648-eleonora-wexler" class="cast-card">
+            <a href="/actor/1441648-eleonora-wexler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1fpoOS4D4yALGhX1pAnTWvXwrC1.jpg" alt="Eleonora Wexler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eleonora Wexler</span>
             </a>
-            <a href="/actor/1691348-joaquín-ferreira" class="cast-card">
+            <a href="/actor/1691348-joaquín-ferreira.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dGpDGDPMtvsZpc4ZMMgjy1DOGpU.jpg" alt="Joaquín Ferreira" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joaquín Ferreira</span>
             </a>
-            <a href="/actor/1524300-pedro-fontaine" class="cast-card">
+            <a href="/actor/1524300-pedro-fontaine.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uL6ZRVsvdyl6V5LGJvWk9DB34iZ.jpg" alt="Pedro Fontaine" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pedro Fontaine</span>
             </a>
-            <a href="/actor/929045-diego-cremonesi" class="cast-card">
+            <a href="/actor/929045-diego-cremonesi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2p6iBhM6HCYaeJdWuDmlbk0DMNA.jpg" alt="Diego Cremonesi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Diego Cremonesi</span>
             </a>
-            <a href="/actor/2461272-jerónimo-bosia" class="cast-card">
+            <a href="/actor/2461272-jerónimo-bosia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rPstgq0xIelLWpVPb6OWxN0Wj4l.jpg" alt="Jerónimo Bosia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jerónimo Bosia</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>لعبة الحبّار: حديث في الكواليس</span>
   </nav>
 
@@ -72,15 +72,15 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1294471-hwang-dong-hyuk" class="cast-card">
+            <a href="/actor/1294471-hwang-dong-hyuk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xyr3b04ayyJtA5ZN3L0Af10WKIR.jpg" alt="Hwang Dong-hyuk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hwang Dong-hyuk</span>
             </a>
-            <a href="/actor/73249-lee-jung-jae" class="cast-card">
+            <a href="/actor/73249-lee-jung-jae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lx8oiTXL9lIx78KOXlrlvNfoz43.jpg" alt="Lee Jung-jae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Jung-jae</span>
             </a>
-            <a href="/actor/25002-lee-byung-hun" class="cast-card">
+            <a href="/actor/25002-lee-byung-hun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j7SUd9Qi8iOxgrQGb3nQyEYcXur.jpg" alt="Lee Byung-hun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Byung-hun</span>
             </a></div></section>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>捆绑上天堂</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1006864-ni-ni" class="cast-card">
+            <a href="/actor/1006864-ni-ni.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9htVCCREXhXxxa1V5ev386wjD1S.jpg" alt="Ni Ni" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ni Ni</span>
             </a>
-            <a href="/actor/1800556-zhou-you" class="cast-card">
+            <a href="/actor/1800556-zhou-you.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rKMgNYEXxQQ0Qp2g40YSATJ4fuv.jpg" alt="Zhou You" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhou You</span>
             </a>
-            <a href="/actor/99692-liao-fan" class="cast-card">
+            <a href="/actor/99692-liao-fan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yELT5tpxq5J7ErB23afDmowtuHz.jpg" alt="Liao Fan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liao Fan</span>
             </a>
-            <a href="/actor/2931732-xia-lixin" class="cast-card">
+            <a href="/actor/2931732-xia-lixin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bz7yRVeVfVkFS1WfV1TOxpe69lD.jpg" alt="Xia Lixin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xia Lixin</span>
             </a>
-            <a href="/actor/3034535-tao-zhai" class="cast-card">
+            <a href="/actor/3034535-tao-zhai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pfu2RJEshLvoHEUxRU1uxUdz64P.jpg" alt="Tao Zhai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tao Zhai</span>
             </a>
-            <a href="/actor/5975375-meng-genhua" class="cast-card">
+            <a href="/actor/5975375-meng-genhua.html" class="cast-card">
                 <img src="/favicon.ico" alt="Meng Genhua" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Meng Genhua</span>
             </a>
-            <a href="/actor/5975377-zhu-huilong" class="cast-card">
+            <a href="/actor/5975377-zhu-huilong.html" class="cast-card">
                 <img src="/favicon.ico" alt="Zhu Huilong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhu Huilong</span>
             </a>
-            <a href="/actor/3072786-piao-songri" class="cast-card">
+            <a href="/actor/3072786-piao-songri.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2SN2v6mJdYOLfCE5YjwIsDjJqoK.jpg" alt="Piao Songri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Piao Songri</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

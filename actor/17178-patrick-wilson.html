@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,15 +73,15 @@ Wilson has also appeared in films </p>
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1069905-jay-kelly">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1069905-jay-kelly.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lEXYpY9X17pGC7xYYy17Guv0L3J.jpg" alt="Jay Kelly — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Jay Kelly</div></div>
-    </a>    <a class="card" href="/movie/1038392-the-conjuring-last-rites">
+    </a>    <a class="card" href="/movie/1038392-the-conjuring-last-rites.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/byWgphT74ClOVa8EOGzYDkl8DVL.jpg" alt="The Conjuring: Last Rites — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Conjuring: Last Rites</div></div>
-    </a>    <a class="card" href="/movie/1319968-millers-in-marriage">
+    </a>    <a class="card" href="/movie/1319968-millers-in-marriage.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/z7UvGuQ8pSs0JJP3QYCAIsNzYXI.jpg" alt="Millers in Marriage — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Millers in Marriage</div></div>
@@ -90,13 +90,6 @@ Wilson has also appeared in films </p>
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

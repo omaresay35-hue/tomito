@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Riot Women</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/33450-joanna-scanlan" class="cast-card">
+            <a href="/actor/33450-joanna-scanlan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5qimZvgfU306k1SgX6ChjoX0EHB.jpg" alt="Joanna Scanlan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joanna Scanlan</span>
             </a>
-            <a href="/actor/1263102-rosalie-craig" class="cast-card">
+            <a href="/actor/1263102-rosalie-craig.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6kbA9rb7GHBEcWuImDlAcnYXKYv.jpg" alt="Rosalie Craig" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rosalie Craig</span>
             </a>
-            <a href="/actor/120931-tamsin-greig" class="cast-card">
+            <a href="/actor/120931-tamsin-greig.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qU1ccKUdy9Qlc9OJ0y1spPMQWx7.jpg" alt="Tamsin Greig" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tamsin Greig</span>
             </a>
-            <a href="/actor/78329-lorraine-ashbourne" class="cast-card">
+            <a href="/actor/78329-lorraine-ashbourne.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4cOOwDYkKcCf9G6fdGGDyAR4jru.jpg" alt="Lorraine Ashbourne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lorraine Ashbourne</span>
             </a>
-            <a href="/actor/93713-amelia-bullmore" class="cast-card">
+            <a href="/actor/93713-amelia-bullmore.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qsvkxSBAxj1O1pEXUFIyh85YMk9.jpg" alt="Amelia Bullmore" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amelia Bullmore</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

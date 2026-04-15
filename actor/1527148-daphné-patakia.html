@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1266798-dog-51">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1266798-dog-51.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/olMvhbCRuhTbf6EMKxKGHi2on3L.jpg" alt="Dog 51 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dog 51</div></div>
-    </a>    <a class="card" href="/movie/1103747-our-wildest-days">
+    </a>    <a class="card" href="/movie/1103747-our-wildest-days.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zuFaImlIVbkakV5UGLUC3nkuIel.jpg" alt="Our Wildest Days — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Our Wildest Days</div></div>
-    </a>    <a class="card" href="/movie/1186830-the-islanders">
+    </a>    <a class="card" href="/movie/1186830-the-islanders.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/MyDCKQmHTV5y9EtB4860XR2DOl.jpg" alt="The Islanders — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Islanders</div></div>
-    </a>    <a class="card" href="/movie/995797-all-for-one">
+    </a>    <a class="card" href="/movie/995797-all-for-one.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hZlEeLJPJZ61DzJ1DDXYpnGeBCN.jpg" alt="All for One — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">All for One</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

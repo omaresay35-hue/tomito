@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>كيتي كاتز</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2829785-briana-price" class="cast-card">
+            <a href="/actor/2829785-briana-price.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gmNZHqgEG80O7Q9Vl8j0TcSe1n3.jpg" alt="Briana Price" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Briana Price</span>
             </a>
-            <a href="/actor/1754653-shvorne-marks" class="cast-card">
+            <a href="/actor/1754653-shvorne-marks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/avpN7YwcqL7o1Z9Y1jvRrz30iAa.jpg" alt="Shvorne Marks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shvorne Marks</span>
             </a>
-            <a href="/actor/3933512-ami-okumura-jones" class="cast-card">
+            <a href="/actor/3933512-ami-okumura-jones.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ami Okumura Jones" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ami Okumura Jones</span>
             </a>
-            <a href="/actor/1252338-larissa-murray" class="cast-card">
+            <a href="/actor/1252338-larissa-murray.html" class="cast-card">
                 <img src="/favicon.ico" alt="Larissa Murray" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Larissa Murray</span>
             </a>
-            <a href="/actor/1159680-kosha-engler" class="cast-card">
+            <a href="/actor/1159680-kosha-engler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iE4RR7pX5fHOpCpcJgyvdJnvImZ.jpg" alt="Kosha Engler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kosha Engler</span>
             </a>
-            <a href="/actor/1089912-tom-clarke-hill" class="cast-card">
+            <a href="/actor/1089912-tom-clarke-hill.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tb7CWK9F3S60m5JfaypsyzsYj6S.jpg" alt="Tom Clarke Hill" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Clarke Hill</span>
             </a>
-            <a href="/actor/2050346-carlyss-peer" class="cast-card">
+            <a href="/actor/2050346-carlyss-peer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sTswzsyEqnlcBQP5MRr54VUbQZS.jpg" alt="Carlyss Peer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carlyss Peer</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

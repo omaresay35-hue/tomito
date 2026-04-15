@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>古相思曲</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1971604-zhang-yaqin" class="cast-card">
+            <a href="/actor/1971604-zhang-yaqin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mBsq8Vch45vbJ78m6Hlf9ryoTnr.jpg" alt="Zhang Yaqin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Yaqin</span>
             </a>
-            <a href="/actor/2931793-guo-jianan" class="cast-card">
+            <a href="/actor/2931793-guo-jianan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/njxfZ965jk0rCHcG2YCzmQgdJAT.jpg" alt="Guo Jianan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Guo Jianan</span>
             </a>
-            <a href="/actor/2986720-bubble-zhu" class="cast-card">
+            <a href="/actor/2986720-bubble-zhu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rpomNHimsSigy8ECVWBVRz2x9XL.jpg" alt="Bubble Zhu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bubble Zhu</span>
             </a>
-            <a href="/actor/4147552-quan-yilun" class="cast-card">
+            <a href="/actor/4147552-quan-yilun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sg2QgHDX51EERbfN4eOmUn8djmH.jpg" alt="Quan Yilun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Quan Yilun</span>
             </a>
-            <a href="/actor/2987608-zhuang-han" class="cast-card">
+            <a href="/actor/2987608-zhuang-han.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uvU41dWL0CbISofTvbIc5w7lUTP.jpg" alt="Zhuang Han" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhuang Han</span>
             </a>
-            <a href="/actor/4083599-huang-jingzhou" class="cast-card">
+            <a href="/actor/4083599-huang-jingzhou.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qbvOVLjDCKLiuNoZ8WkZ38xULQa.jpg" alt="Huang Jingzhou" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Huang Jingzhou</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

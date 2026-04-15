@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,31 +75,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/218923-tyler-hynes" class="cast-card">
+            <a href="/actor/218923-tyler-hynes.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lNULTF6zROuJ1njgTLRMN6dgg4X.jpg" alt="Tyler Hynes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tyler Hynes</span>
             </a>
-            <a href="/actor/76996-jonathan-bennett" class="cast-card">
+            <a href="/actor/76996-jonathan-bennett.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yvtVNM9UEse9Qmv8ZGvUGBTsxKd.jpg" alt="Jonathan Bennett" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jonathan Bennett</span>
             </a>
-            <a href="/actor/1214865-bj-britt" class="cast-card">
+            <a href="/actor/1214865-bj-britt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9uxuWSAgeLSNqSA1gPI9t9Sa4Ej.jpg" alt="B.J. Britt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>B.J. Britt</span>
             </a>
-            <a href="/actor/1588004-elena-rusconi" class="cast-card">
+            <a href="/actor/1588004-elena-rusconi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xQdWiCUl2lmoFxCwqNlCUNGjML1.jpg" alt="Elena Rusconi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elena Rusconi</span>
             </a>
-            <a href="/actor/74488-cosimo-fusco" class="cast-card">
+            <a href="/actor/74488-cosimo-fusco.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uIYyguOSgQ4DNaN8UZkzcHG6dAO.jpg" alt="Cosimo Fusco" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cosimo Fusco</span>
             </a>
-            <a href="/actor/4328515-chloe-raphael" class="cast-card">
+            <a href="/actor/4328515-chloe-raphael.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/djfj9rX738QTMwaiwZcjeUFM3pz.jpg" alt="Chloe Raphael" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chloe Raphael</span>
             </a>
-            <a href="/actor/4178602-oliver-shaw" class="cast-card">
+            <a href="/actor/4178602-oliver-shaw.html" class="cast-card">
                 <img src="/favicon.ico" alt="Oliver Shaw" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oliver Shaw</span>
             </a></div></section>
@@ -107,13 +107,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

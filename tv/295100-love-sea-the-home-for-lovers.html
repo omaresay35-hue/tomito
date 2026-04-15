@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Love Sea ～愛の居場所～</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5537875-masato-kunigami" class="cast-card">
+            <a href="/actor/5537875-masato-kunigami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n69qz49621CRe4905wEHFUHGpVF.jpg" alt="Masato Kunigami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masato Kunigami</span>
             </a>
-            <a href="/actor/1502226-shun-nishime" class="cast-card">
+            <a href="/actor/1502226-shun-nishime.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/b4YZ9lpoheHoNIGpjJrGUoyngnZ.jpg" alt="Shun Nishime" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shun Nishime</span>
             </a>
-            <a href="/actor/2117240-mizuho-habu" class="cast-card">
+            <a href="/actor/2117240-mizuho-habu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aOapOAlQdabjJ8W1I3NswWC7aZ8.jpg" alt="Mizuho Habu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mizuho Habu</span>
             </a>
-            <a href="/actor/2009837-asuka-kawazu" class="cast-card">
+            <a href="/actor/2009837-asuka-kawazu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hWkd805l8FpFCeSsUACctdklss7.jpg" alt="Asuka Kawazu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Asuka Kawazu</span>
             </a>
-            <a href="/actor/5612320-taiki-sawada" class="cast-card">
+            <a href="/actor/5612320-taiki-sawada.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2AyQFAKG99VXXoJw8nIq3NyUp8e.jpg" alt="Taiki Sawada" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taiki Sawada</span>
             </a>
-            <a href="/actor/2774111-yuno-ota" class="cast-card">
+            <a href="/actor/2774111-yuno-ota.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5tivbSchh8hlGaLUyuMDocNYqrA.jpg" alt="Yuno Ota" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuno Ota</span>
             </a>
-            <a href="/actor/1565127-yurina-yanagi" class="cast-card">
+            <a href="/actor/1565127-yurina-yanagi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rjSyX9JBpO2P1fxNYbEGJ2AjQd6.jpg" alt="Yurina Yanagi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yurina Yanagi</span>
             </a>
-            <a href="/actor/2163973-yutaka-morioka" class="cast-card">
+            <a href="/actor/2163973-yutaka-morioka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uywMAPmuaV2S4pW2SsuffQPcDep.jpg" alt="Yutaka Morioka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yutaka Morioka</span>
             </a>
-            <a href="/actor/133694-rika-adachi" class="cast-card">
+            <a href="/actor/133694-rika-adachi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ki5WUvlMLxD4fOoz10yRldS2F5t.jpg" alt="Rika Adachi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rika Adachi</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

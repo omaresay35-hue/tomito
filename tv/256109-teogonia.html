@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>神統記</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1253972-mutsumi-tamura" class="cast-card">
+            <a href="/actor/1253972-mutsumi-tamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uvbBIRiBK6GDLEESiYSFWOVlaE4.jpg" alt="Mutsumi Tamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mutsumi Tamura</span>
             </a>
-            <a href="/actor/119143-kana-hanazawa" class="cast-card">
+            <a href="/actor/119143-kana-hanazawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5bK9ttcRydQBWmyZp7gXDmJYOPF.jpg" alt="Kana Hanazawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kana Hanazawa</span>
             </a>
-            <a href="/actor/233590-yoshitsugu-matsuoka" class="cast-card">
+            <a href="/actor/233590-yoshitsugu-matsuoka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ugDwdWEXnmv43jcbnfAi4XwiQ8C.jpg" alt="Yoshitsugu Matsuoka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshitsugu Matsuoka</span>
             </a>
-            <a href="/actor/1248371-atsushi-miyauchi" class="cast-card">
+            <a href="/actor/1248371-atsushi-miyauchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lsXKX9EiUTcWOOI1PCjqONPuuFf.jpg" alt="Atsushi Miyauchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Atsushi Miyauchi</span>
             </a>
-            <a href="/actor/2652077-masaya-fukunishi" class="cast-card">
+            <a href="/actor/2652077-masaya-fukunishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8paIbTobS6266x57pIhJCq3mBJh.jpg" alt="Masaya Fukunishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masaya Fukunishi</span>
             </a>
-            <a href="/actor/1835721-manaka-iwami" class="cast-card">
+            <a href="/actor/1835721-manaka-iwami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/leKMaCBswXG8u4mfQNQ7J3y6Xow.jpg" alt="Manaka Iwami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manaka Iwami</span>
             </a>
-            <a href="/actor/2426940-hana-tamegai" class="cast-card">
+            <a href="/actor/2426940-hana-tamegai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jJJN1EXkGn0GEBrLulQPLaHDadO.jpg" alt="Hana Tamegai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hana Tamegai</span>
             </a>
-            <a href="/actor/126282-hiroshi-naka" class="cast-card">
+            <a href="/actor/126282-hiroshi-naka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9EmVmKWMczAd6qIGnmoYB2JBb7i.jpg" alt="Hiroshi Naka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hiroshi Naka</span>
             </a>
-            <a href="/actor/122481-banjo-ginga" class="cast-card">
+            <a href="/actor/122481-banjo-ginga.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qiXnKaZheMiVyA1U2mX9tPdNA3T.jpg" alt="Banjo Ginga" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Banjo Ginga</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>僕らのミクロな終末</span>
   </nav>
 
@@ -72,15 +72,15 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1728013-toshiki-seto" class="cast-card">
+            <a href="/actor/1728013-toshiki-seto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dVHjaPF9oTcoV3AnChRqXpQmEpJ.jpg" alt="Toshiki Seto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Toshiki Seto</span>
             </a>
-            <a href="/actor/2031916-keisuke-nakata" class="cast-card">
+            <a href="/actor/2031916-keisuke-nakata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wVc4lbfw3Z0rryLdjW6Vewe0Bz7.jpg" alt="Keisuke Nakata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keisuke Nakata</span>
             </a>
-            <a href="/actor/4166940-idegami-baku" class="cast-card">
+            <a href="/actor/4166940-idegami-baku.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kSw1YHnviffK6qVdNNuMUJeY11A.jpg" alt="Idegami Baku" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Idegami Baku</span>
             </a></div></section>
@@ -88,13 +88,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

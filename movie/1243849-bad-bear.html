@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Bad Bear</span>
   </nav>
 
@@ -71,11 +71,11 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3959746-liam-cowan-makrisopoulos" class="cast-card">
+            <a href="/actor/3959746-liam-cowan-makrisopoulos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j4lGMsrhHJf4hh1iThYuLfRkao5.jpg" alt="Liam Cowan Makrisopoulos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liam Cowan Makrisopoulos</span>
             </a>
-            <a href="/actor/3959718-owen-knight" class="cast-card">
+            <a href="/actor/3959718-owen-knight.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8q06SLm0WvTBbc3deOVwq606Lge.jpg" alt="Owen Knight" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Owen Knight</span>
             </a></div></section>
@@ -83,13 +83,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

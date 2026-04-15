@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Kerviel : Un trader, 50 milliards</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5059101-jérôme-kerviel" class="cast-card">
+            <a href="/actor/5059101-jérôme-kerviel.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jérôme Kerviel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jérôme Kerviel</span>
             </a>
-            <a href="/actor/1173480-françois-hollande" class="cast-card">
+            <a href="/actor/1173480-françois-hollande.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q1sf34MaCs1FlZg8zdsXDoq7KGx.jpg" alt="François Hollande" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>François Hollande</span>
             </a>
-            <a href="/actor/5503308-patricia-chapelotte" class="cast-card">
+            <a href="/actor/5503308-patricia-chapelotte.html" class="cast-card">
                 <img src="/favicon.ico" alt="Patricia Chapelotte" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patricia Chapelotte</span>
             </a>
-            <a href="/actor/5503306-hugues-le-bret" class="cast-card">
+            <a href="/actor/5503306-hugues-le-bret.html" class="cast-card">
                 <img src="/favicon.ico" alt="Hugues Le Bret" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hugues Le Bret</span>
             </a>
-            <a href="/actor/5503305-catherine-lubochinsky" class="cast-card">
+            <a href="/actor/5503305-catherine-lubochinsky.html" class="cast-card">
                 <img src="/favicon.ico" alt="Catherine Lubochinsky" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Catherine Lubochinsky</span>
             </a>
-            <a href="/actor/5503307-daniel-bouton" class="cast-card">
+            <a href="/actor/5503307-daniel-bouton.html" class="cast-card">
                 <img src="/favicon.ico" alt="Daniel Bouton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Bouton</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

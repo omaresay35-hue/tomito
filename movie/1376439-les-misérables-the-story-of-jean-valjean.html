@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Jean Valjean</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/223532-grégory-gadebois" class="cast-card">
+            <a href="/actor/223532-grégory-gadebois.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AvF337m0eGL9JLPEgG6Dy1T2Zu4.jpg" alt="Grégory Gadebois" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Grégory Gadebois</span>
             </a>
-            <a href="/actor/41029-bernard-campan" class="cast-card">
+            <a href="/actor/41029-bernard-campan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cILI8cr9ZLQVdgHSNCktpi7gGO6.jpg" alt="Bernard Campan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bernard Campan</span>
             </a>
-            <a href="/actor/4166-isabelle-carré" class="cast-card">
+            <a href="/actor/4166-isabelle-carré.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hC7NLIv6RGvtwb8pjy9DJbbHhJG.jpg" alt="Isabelle Carré" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isabelle Carré</span>
             </a>
-            <a href="/actor/113617-alexandra-lamy" class="cast-card">
+            <a href="/actor/113617-alexandra-lamy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m52fdEhVo6sBjEhgyM6bqFwC1HA.jpg" alt="Alexandra Lamy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexandra Lamy</span>
             </a>
-            <a href="/actor/5704760-loup-cousteil" class="cast-card">
+            <a href="/actor/5704760-loup-cousteil.html" class="cast-card">
                 <img src="/favicon.ico" alt="Loup Cousteil" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Loup Cousteil</span>
             </a>
-            <a href="/actor/2413-dominique-pinon" class="cast-card">
+            <a href="/actor/2413-dominique-pinon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rIPUhNwGSglgKLgMQWz0JNCqIzf.jpg" alt="Dominique Pinon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dominique Pinon</span>
             </a>
-            <a href="/actor/14606-albert-dupontel" class="cast-card">
+            <a href="/actor/14606-albert-dupontel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gwZFclFz6IQcKadX3wYhagP0r2I.jpg" alt="Albert Dupontel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Albert Dupontel</span>
             </a>
-            <a href="/actor/3026410-romane-libert" class="cast-card">
+            <a href="/actor/3026410-romane-libert.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6aYddYrQnFpCw91PTa0ZS0sLSux.jpg" alt="Romane Libert" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Romane Libert</span>
             </a>
-            <a href="/actor/583722-patrick-pineau" class="cast-card">
+            <a href="/actor/583722-patrick-pineau.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h1Mht3F3ZmMWku3x0MUeOnWJgLi.jpg" alt="Patrick Pineau" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patrick Pineau</span>
             </a>
-            <a href="/actor/5824374-ernest-mourier" class="cast-card">
+            <a href="/actor/5824374-ernest-mourier.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ernest Mourier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ernest Mourier</span>
             </a>
-            <a href="/actor/5085891-claire-ruppli" class="cast-card">
+            <a href="/actor/5085891-claire-ruppli.html" class="cast-card">
                 <img src="/favicon.ico" alt="Claire Ruppli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Claire Ruppli</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

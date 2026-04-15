@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,35 +75,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/206905-jeremy-allen-white" class="cast-card">
+            <a href="/actor/206905-jeremy-allen-white.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zKk4vmDeUexdevtt6wm8WdMQ1TG.jpg" alt="Jeremy Allen White" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeremy Allen White</span>
             </a>
-            <a href="/actor/21042-ebon-moss-bachrach" class="cast-card">
+            <a href="/actor/21042-ebon-moss-bachrach.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xD8GVNayMpiTZxLfahy2DseYcQq.jpg" alt="Ebon Moss-Bachrach" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ebon Moss-Bachrach</span>
             </a>
-            <a href="/actor/2195140-ayo-edebiri" class="cast-card">
+            <a href="/actor/2195140-ayo-edebiri.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zkTexmrBr5it1Xkm3XYE00hERHb.jpg" alt="Ayo Edebiri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayo Edebiri</span>
             </a>
-            <a href="/actor/2320708-lionel-boyce" class="cast-card">
+            <a href="/actor/2320708-lionel-boyce.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hpIxX5nkfA3pWCW8rYkEUCSBVyS.jpg" alt="Lionel Boyce" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lionel Boyce</span>
             </a>
-            <a href="/actor/1240486-abby-elliott" class="cast-card">
+            <a href="/actor/1240486-abby-elliott.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v7h08EsTce2pLHkZiaFe1QRuYbU.jpg" alt="Abby Elliott" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Abby Elliott</span>
             </a>
-            <a href="/actor/1646864-matty-matheson" class="cast-card">
+            <a href="/actor/1646864-matty-matheson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zKUWYrROoa9RvxAggbolQRaSLVG.jpg" alt="Matty Matheson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matty Matheson</span>
             </a>
-            <a href="/actor/59693-liza-colón-zayas" class="cast-card">
+            <a href="/actor/59693-liza-colón-zayas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q2gHcef0wckji0AS8ZEO6cYx065.jpg" alt="Liza Colón-Zayas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liza Colón-Zayas</span>
             </a>
-            <a href="/actor/1472895-edwin-lee-gibson" class="cast-card">
+            <a href="/actor/1472895-edwin-lee-gibson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wyDPu35soTnBi4VClpS8fv2atkE.jpg" alt="Edwin Lee Gibson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Edwin Lee Gibson</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

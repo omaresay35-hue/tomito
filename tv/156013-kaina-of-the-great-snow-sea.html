@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>大雪海のカイナ</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1253008-yoshimasa-hosoya" class="cast-card">
+            <a href="/actor/1253008-yoshimasa-hosoya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lUR5oN1LrqGgp25IOcI1qOH1Ud5.jpg" alt="Yoshimasa Hosoya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshimasa Hosoya</span>
             </a>
-            <a href="/actor/1492982-rie-takahashi" class="cast-card">
+            <a href="/actor/1492982-rie-takahashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aeB7z0cBTASdjKOjQriBAO6hYq4.jpg" alt="Rie Takahashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rie Takahashi</span>
             </a>
-            <a href="/actor/1325230-ayumu-murase" class="cast-card">
+            <a href="/actor/1325230-ayumu-murase.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3aGM6KpcCIEKOXP9510tzaKc8uw.jpg" alt="Ayumu Murase" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayumu Murase</span>
             </a>
-            <a href="/actor/9711-maaya-sakamoto" class="cast-card">
+            <a href="/actor/9711-maaya-sakamoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hPz2oEQui8a4q9aXdBugQf93ONq.jpg" alt="Maaya Sakamoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maaya Sakamoto</span>
             </a>
-            <a href="/actor/24647-katsuyuki-konishi" class="cast-card">
+            <a href="/actor/24647-katsuyuki-konishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nYM5cH6U7cp4x9dIzW0enmEKmeV.jpg" alt="Katsuyuki Konishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Katsuyuki Konishi</span>
             </a>
-            <a href="/actor/144655-tomokazu-sugita" class="cast-card">
+            <a href="/actor/144655-tomokazu-sugita.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cv5zuPZySNsHXu24pjKLYCRzJ2J.jpg" alt="Tomokazu Sugita" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomokazu Sugita</span>
             </a>
-            <a href="/actor/90137-nobuyuki-hiyama" class="cast-card">
+            <a href="/actor/90137-nobuyuki-hiyama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yxAzBPZGSzec9rtulmORY84ijzT.jpg" alt="Nobuyuki Hiyama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nobuyuki Hiyama</span>
             </a>
-            <a href="/actor/1222060-kenyu-horiuchi" class="cast-card">
+            <a href="/actor/1222060-kenyu-horiuchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qIsrjSbtdhmmUdd3xvpDHNWRuJp.jpg" alt="Kenyu Horiuchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kenyu Horiuchi</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Los pacientes del doctor García</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/96688-javier-rey" class="cast-card">
+            <a href="/actor/96688-javier-rey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bZCKrxOpNfXQ4vHAf1RcHwwUQQ3.jpg" alt="Javier Rey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Javier Rey</span>
             </a>
-            <a href="/actor/33411-tamar-novas" class="cast-card">
+            <a href="/actor/33411-tamar-novas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3MpjB6lxeTUA9EunaV4kAyvOvIG.jpg" alt="Tamar Novas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tamar Novas</span>
             </a>
-            <a href="/actor/114254-verónica-echegui" class="cast-card">
+            <a href="/actor/114254-verónica-echegui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A6bHIHnDlmKY6pWOlgLNsUf60W5.jpg" alt="Verónica Echegui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Verónica Echegui</span>
             </a>
-            <a href="/actor/1102408-eva-llorach" class="cast-card">
+            <a href="/actor/1102408-eva-llorach.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8w4O95cpFXkOc9D5Jq0aDrmIUKu.jpg" alt="Eva Llorach" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eva Llorach</span>
             </a>
-            <a href="/actor/229241-raúl-jiménez" class="cast-card">
+            <a href="/actor/229241-raúl-jiménez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qbXtymGnrszt870aLNYOpq7LE9g.jpg" alt="Raúl Jiménez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Raúl Jiménez</span>
             </a>
-            <a href="/actor/1255083-stephanie-cayo" class="cast-card">
+            <a href="/actor/1255083-stephanie-cayo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q1biqcKvbpU4tEvMcbVNaoO9ABM.jpg" alt="Stephanie Cayo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephanie Cayo</span>
             </a>
-            <a href="/actor/2410790-jon-olivares" class="cast-card">
+            <a href="/actor/2410790-jon-olivares.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ez0TSgfsUMxLszWQWNA5lYSHjit.jpg" alt="Jon Olivares" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jon Olivares</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

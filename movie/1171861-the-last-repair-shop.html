@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>The Last Repair Shop</span>
   </nav>
 
@@ -71,39 +71,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4496745-dana-atkinson" class="cast-card">
+            <a href="/actor/4496745-dana-atkinson.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dana Atkinson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dana Atkinson</span>
             </a>
-            <a href="/actor/4496746-duane-michaels" class="cast-card">
+            <a href="/actor/4496746-duane-michaels.html" class="cast-card">
                 <img src="/favicon.ico" alt="Duane Michaels" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Duane Michaels</span>
             </a>
-            <a href="/actor/4496748-paty-moreno" class="cast-card">
+            <a href="/actor/4496748-paty-moreno.html" class="cast-card">
                 <img src="/favicon.ico" alt="Paty Moreno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paty Moreno</span>
             </a>
-            <a href="/actor/4496747-steve-bagmanyan" class="cast-card">
+            <a href="/actor/4496747-steve-bagmanyan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Steve Bagmanyan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steve Bagmanyan</span>
             </a>
-            <a href="/actor/4505603-ken-burget" class="cast-card">
+            <a href="/actor/4505603-ken-burget.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ken Burget" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ken Burget</span>
             </a>
-            <a href="/actor/4505604-vincent-womack" class="cast-card">
+            <a href="/actor/4505604-vincent-womack.html" class="cast-card">
                 <img src="/favicon.ico" alt="Vincent Womack" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vincent Womack</span>
             </a>
-            <a href="/actor/2922-boris-karloff" class="cast-card">
+            <a href="/actor/2922-boris-karloff.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fVi0QkiziavXB8HnWk5NzRcnCO1.jpg" alt="Boris Karloff" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Boris Karloff</span>
             </a>
-            <a href="/actor/1351874-tom-parker" class="cast-card">
+            <a href="/actor/1351874-tom-parker.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m929dKquU8S1caX54RKRQcl4LK8.jpg" alt="Tom Parker" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Parker</span>
             </a>
-            <a href="/actor/21457-elvis-presley" class="cast-card">
+            <a href="/actor/21457-elvis-presley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/psf1wJUw48ALsfV3tN31FX0mDW5.jpg" alt="Elvis Presley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elvis Presley</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

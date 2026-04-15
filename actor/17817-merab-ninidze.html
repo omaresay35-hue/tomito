@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1197306-a-working-man">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1197306-a-working-man.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg" alt="A Working Man — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Working Man</div></div>
-    </a>    <a class="card" href="/movie/1064021-april">
+    </a>    <a class="card" href="/movie/1064021-april.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9DJadZoQfmSzxe3E5uB7dISfc3L.jpg" alt="April — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">April</div></div>
-    </a>    <a class="card" href="/movie/861211-in-the-name-of-blood">
+    </a>    <a class="card" href="/movie/861211-in-the-name-of-blood.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4lG3ZiGYNWo4lnOvnbS5afVzNA.jpg" alt="In the Name of Blood — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">In the Name of Blood</div></div>
-    </a>    <a class="card" href="/movie/974576-conclave">
+    </a>    <a class="card" href="/movie/974576-conclave.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vYEyxF1UT779RiEalpMjUT6kfdf.jpg" alt="Conclave — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Conclave</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/994-inspector-rex">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/994-inspector-rex.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tCzMaMoOdA1cPzV3Ll32ftg3EVO.jpg" alt="Inspector Rex — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Inspector Rex</div></div>
-    </a>    <a class="card" href="/tv/994-inspector-rex">
+    </a>    <a class="card" href="/tv/994-inspector-rex.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tCzMaMoOdA1cPzV3Ll32ftg3EVO.jpg" alt="Inspector Rex — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Inspector Rex</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

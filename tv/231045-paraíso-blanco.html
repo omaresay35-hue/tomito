@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Paraíso blanco</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3429184-sebastián-osorio" class="cast-card">
+            <a href="/actor/3429184-sebastián-osorio.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ih8oznWyTJy3rYfu0pJkyq4bs07.jpg" alt="Sebastián Osorio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sebastián Osorio</span>
             </a>
-            <a href="/actor/2459061-michał-malinowski" class="cast-card">
+            <a href="/actor/2459061-michał-malinowski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fLyHvKu7ABwjj2F5elxSdMKqcx0.jpg" alt="Michał Malinowski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michał Malinowski</span>
             </a>
-            <a href="/actor/5361769-camila-bordón" class="cast-card">
+            <a href="/actor/5361769-camila-bordón.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uO6hmBHOiclBJNu4udQaNBddymX.jpg" alt="Camila Bordón" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Camila Bordón</span>
             </a>
-            <a href="/actor/1780924-variel-sánchez" class="cast-card">
+            <a href="/actor/1780924-variel-sánchez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xsceVlnGZWj8lwIeJpjLejnEAqH.jpg" alt="Variel Sánchez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Variel Sánchez</span>
             </a>
-            <a href="/actor/1781991-bibiana-navas" class="cast-card">
+            <a href="/actor/1781991-bibiana-navas.html" class="cast-card">
                 <img src="/favicon.ico" alt="Bibiana Navas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bibiana Navas</span>
             </a>
-            <a href="/actor/4172898-césar-alvarez" class="cast-card">
+            <a href="/actor/4172898-césar-alvarez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xvwmOgti4UAQfBIaKxp7fVNw17c.jpg" alt="César Alvarez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>César Alvarez</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

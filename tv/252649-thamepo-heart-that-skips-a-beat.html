@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>เธมโป้ Heart That Skips a Beat</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4672537-jakrapatr-kaewpanpong" class="cast-card">
+            <a href="/actor/4672537-jakrapatr-kaewpanpong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wkC4is8qcI8tbKIpcRggIQjOMT.jpg" alt="Jakrapatr Kaewpanpong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jakrapatr Kaewpanpong</span>
             </a>
-            <a href="/actor/4179477-supha-sangaworawong" class="cast-card">
+            <a href="/actor/4179477-supha-sangaworawong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aCj3tpGlNXfDbt8nFcohA1iTXXD.jpg" alt="Supha Sangaworawong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Supha Sangaworawong</span>
             </a>
-            <a href="/actor/4048855-rapeepong-supatineekitdecha" class="cast-card">
+            <a href="/actor/4048855-rapeepong-supatineekitdecha.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6C2sfyosRm5F3ezR27wjAgkrrAR.jpg" alt="Rapeepong Supatineekitdecha" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rapeepong Supatineekitdecha</span>
             </a>
-            <a href="/actor/3483404-pichetpong-chiradatesakunvong" class="cast-card">
+            <a href="/actor/3483404-pichetpong-chiradatesakunvong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pO7fQJlHqiGiac1RMjZBCU11Gvo.jpg" alt="Pichetpong Chiradatesakunvong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pichetpong Chiradatesakunvong</span>
             </a>
-            <a href="/actor/4674779-thanat-danjesda" class="cast-card">
+            <a href="/actor/4674779-thanat-danjesda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9f77mDnGhbYOsRCqqTJXigvVKOV.jpg" alt="Thanat Danjesda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Thanat Danjesda</span>
             </a>
-            <a href="/actor/4674784-chayatorn-trairattanapradit" class="cast-card">
+            <a href="/actor/4674784-chayatorn-trairattanapradit.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hSZCcaAc6L86kweF75kS7o5uneR.jpg" alt="Chayatorn Trairattanapradit" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chayatorn Trairattanapradit</span>
             </a>
-            <a href="/actor/2098568-samantha-melanie-coates" class="cast-card">
+            <a href="/actor/2098568-samantha-melanie-coates.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3doyS1NrsD68C0OVL7obuAz5GNJ.jpg" alt="Samantha Melanie Coates" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samantha Melanie Coates</span>
             </a>
-            <a href="/actor/1285466-leo-saussay" class="cast-card">
+            <a href="/actor/1285466-leo-saussay.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cTZBMDtp3mMLT2qoM6CTwnyxGAW.jpg" alt="Leo Saussay" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leo Saussay</span>
             </a>
-            <a href="/actor/2073908-sattabut-laedeke" class="cast-card">
+            <a href="/actor/2073908-sattabut-laedeke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kmFf00ei5Vj7Mkj81YcvjpVW6h1.jpg" alt="Sattabut Laedeke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sattabut Laedeke</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

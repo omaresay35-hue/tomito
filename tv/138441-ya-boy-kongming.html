@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,23 +75,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1779027-kaede-hondo" class="cast-card">
+            <a href="/actor/1779027-kaede-hondo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/11BcHnuJYrOZhIftgUiQqfm7TK6.jpg" alt="Kaede Hondo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaede Hondo</span>
             </a>
-            <a href="/actor/89878-ryotaro-okiayu" class="cast-card">
+            <a href="/actor/89878-ryotaro-okiayu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qbj3cFQqWwZ6x7S1jEpOJa57sEZ.jpg" alt="Ryotaro Okiayu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryotaro Okiayu</span>
             </a>
-            <a href="/actor/115301-jun-fukushima" class="cast-card">
+            <a href="/actor/115301-jun-fukushima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xo2A4cr8TnhC9rLFxSQvhwCbIOw.jpg" alt="Jun Fukushima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jun Fukushima</span>
             </a>
-            <a href="/actor/1429141-shoya-chiba" class="cast-card">
+            <a href="/actor/1429141-shoya-chiba.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pF2urY77wuCYd9Fxh7dTirFYKSF.jpg" alt="Shoya Chiba" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shoya Chiba</span>
             </a>
-            <a href="/actor/1587124-hibiku-yamamura" class="cast-card">
+            <a href="/actor/1587124-hibiku-yamamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uaMNsVAS83XJ4l7hkPegkdzQnUE.jpg" alt="Hibiku Yamamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hibiku Yamamura</span>
             </a></div></section>
@@ -99,13 +99,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

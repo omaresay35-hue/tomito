@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1110034-kraken">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1110034-kraken.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jVsflOu9WpMqUJ3WwVX2mITi86S.jpg" alt="Kraken — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kraken</div></div>
-    </a>    <a class="card" href="/movie/1173147-brightly-shining">
+    </a>    <a class="card" href="/movie/1173147-brightly-shining.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/CeBPgOEcB4JiVYKeePp5WUevWL.jpg" alt="Brightly Shining — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Brightly Shining</div></div>
-    </a>    <a class="card" href="/movie/947674-the-polar-bear-prince">
+    </a>    <a class="card" href="/movie/947674-the-polar-bear-prince.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/dKI6pWb7FGhGXi5ksF6DQbbJr1N.jpg" alt="The Polar Bear Prince — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Polar Bear Prince</div></div>
-    </a>    <a class="card" href="/movie/1222248-number-24">
+    </a>    <a class="card" href="/movie/1222248-number-24.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qv7crkk9fzMrvj3WqWU6PiFm12f.jpg" alt="Number 24 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Number 24</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

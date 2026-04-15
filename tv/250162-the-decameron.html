@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Decameron</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1731959-tanya-reynolds" class="cast-card">
+            <a href="/actor/1731959-tanya-reynolds.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m5FP6lzbxYon8W6hEvj9d4h21i4.jpg" alt="Tanya Reynolds" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tanya Reynolds</span>
             </a>
-            <a href="/actor/2496934-jessica-kate-plummer" class="cast-card">
+            <a href="/actor/2496934-jessica-kate-plummer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/trt0VnEWXHRVllh11DjElBz3drU.jpg" alt="Jessica Kate Plummer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jessica Kate Plummer</span>
             </a>
-            <a href="/actor/1656137-lou-gala" class="cast-card">
+            <a href="/actor/1656137-lou-gala.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mBxprQBmKRpx5QqfiaDq1ubDt3A.jpg" alt="Lou Gala" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lou Gala</span>
             </a>
-            <a href="/actor/2717380-karan-gill" class="cast-card">
+            <a href="/actor/2717380-karan-gill.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7aPMmDXhW1u0HHL0RVyXVUbIBWK.jpg" alt="Karan Gill" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karan Gill</span>
             </a>
-            <a href="/actor/206966-zosia-mamet" class="cast-card">
+            <a href="/actor/206966-zosia-mamet.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8G4n5CMVhzKfYworKrc9Pd2QjHm.jpg" alt="Zosia Mamet" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zosia Mamet</span>
             </a>
-            <a href="/actor/1660888-saoirse-monica-jackson" class="cast-card">
+            <a href="/actor/1660888-saoirse-monica-jackson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5CSLLbQS59BlUPOqaxABQKfnnkz.jpg" alt="Saoirse-Monica Jackson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saoirse-Monica Jackson</span>
             </a>
-            <a href="/actor/1625156-douggie-mcmeekin" class="cast-card">
+            <a href="/actor/1625156-douggie-mcmeekin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mPqhmMPosUfEYCrkrGaqQ01wcYf.jpg" alt="Douggie McMeekin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Douggie McMeekin</span>
             </a>
-            <a href="/actor/25147-tony-hale" class="cast-card">
+            <a href="/actor/25147-tony-hale.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ar4uapp4w5wMkThZcqWUNMSTO8z.jpg" alt="Tony Hale" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tony Hale</span>
             </a>
-            <a href="/actor/2044882-leila-farzad" class="cast-card">
+            <a href="/actor/2044882-leila-farzad.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cjB87g9aZOfmgKBvYhfNCJUM1Kn.jpg" alt="Leila Farzad" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leila Farzad</span>
             </a>
-            <a href="/actor/1616920-amar-chadha-patel" class="cast-card">
+            <a href="/actor/1616920-amar-chadha-patel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6SZXUfn5A2IzwrWhpBDw99gC4uQ.jpg" alt="Amar Chadha-Patel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amar Chadha-Patel</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

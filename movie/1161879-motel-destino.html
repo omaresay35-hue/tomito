@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,51 +75,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4202465-iago-xavier" class="cast-card">
+            <a href="/actor/4202465-iago-xavier.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l6Ba1H8X8opOvNpaHg8jd5nrjOr.jpg" alt="Iago Xavier" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Iago Xavier</span>
             </a>
-            <a href="/actor/1154126-nataly-rocha" class="cast-card">
+            <a href="/actor/1154126-nataly-rocha.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sgLkrZ4qmC4vY7aZqMx3OFGaLtM.jpg" alt="Nataly Rocha" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nataly Rocha</span>
             </a>
-            <a href="/actor/130303-fábio-assunção" class="cast-card">
+            <a href="/actor/130303-fábio-assunção.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/owyB5DjfKjir0OaTXRxUIh8EX6r.jpg" alt="Fábio Assunção" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fábio Assunção</span>
             </a>
-            <a href="/actor/2815413-renan-capivara" class="cast-card">
+            <a href="/actor/2815413-renan-capivara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sJ7TTmXl2gQfvIBdcW0VJq47w8i.jpg" alt="Renan Capivara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Renan Capivara</span>
             </a>
-            <a href="/actor/2346582-fabíola-líper" class="cast-card">
+            <a href="/actor/2346582-fabíola-líper.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/X2G56G5eQunRDaQZtaxy2Jl28o.jpg" alt="Fabíola Líper" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fabíola Líper</span>
             </a>
-            <a href="/actor/2354136-isabela-catão" class="cast-card">
+            <a href="/actor/2354136-isabela-catão.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3oV10ClxIedLoAOXImMAWokvlln.jpg" alt="Isabela Catão" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isabela Catão</span>
             </a>
-            <a href="/actor/1978525-yuri-yamamoto" class="cast-card">
+            <a href="/actor/1978525-yuri-yamamoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qjZgBqy7onTBVUtfDWTK2PV3ofy.jpg" alt="Yuri Yamamoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuri Yamamoto</span>
             </a>
-            <a href="/actor/4131582-david-santos" class="cast-card">
+            <a href="/actor/4131582-david-santos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/owWCmZsL0siy8oxm9q9QXUqMSPO.jpg" alt="David Santos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Santos</span>
             </a>
-            <a href="/actor/2521827-jupyra-carvalho" class="cast-card">
+            <a href="/actor/2521827-jupyra-carvalho.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jupyra Carvalho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jupyra Carvalho</span>
             </a>
-            <a href="/actor/5018071-bertrand-de-courville" class="cast-card">
+            <a href="/actor/5018071-bertrand-de-courville.html" class="cast-card">
                 <img src="/favicon.ico" alt="Bertrand de Courville" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bertrand de Courville</span>
             </a>
-            <a href="/actor/5018072-jan-moreira" class="cast-card">
+            <a href="/actor/5018072-jan-moreira.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jan Moreira" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jan Moreira</span>
             </a>
-            <a href="/actor/3692872-edglê-lima" class="cast-card">
+            <a href="/actor/3692872-edglê-lima.html" class="cast-card">
                 <img src="/favicon.ico" alt="Edglê Lima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Edglê Lima</span>
             </a></div></section>
@@ -127,13 +127,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

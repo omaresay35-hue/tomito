@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Il ragazzo dai pantaloni rosa</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2514002-samuele-carrino" class="cast-card">
+            <a href="/actor/2514002-samuele-carrino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eY7HaQBhWlbS3kxzSZ9F2vPWp8w.jpg" alt="Samuele Carrino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samuele Carrino</span>
             </a>
-            <a href="/actor/126984-claudia-pandolfi" class="cast-card">
+            <a href="/actor/126984-claudia-pandolfi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iMpEYOtePEw3SeFsb6brwp0Hahu.jpg" alt="Claudia Pandolfi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Claudia Pandolfi</span>
             </a>
-            <a href="/actor/136288-corrado-fortuna" class="cast-card">
+            <a href="/actor/136288-corrado-fortuna.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/Ap0FrVoBHuYBIeENawqlS0V55uK.jpg" alt="Corrado Fortuna" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Corrado Fortuna</span>
             </a>
-            <a href="/actor/2498857-andrea-arru" class="cast-card">
+            <a href="/actor/2498857-andrea-arru.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9LYZo5m3AH95OGVvMu96P61wYeX.jpg" alt="Andrea Arru" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrea Arru</span>
             </a>
-            <a href="/actor/2328786-sara-ciocca" class="cast-card">
+            <a href="/actor/2328786-sara-ciocca.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yT6yL7m7bMddgS0XYDPMl7Uiwrf.jpg" alt="Sara Ciocca" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sara Ciocca</span>
             </a>
-            <a href="/actor/3733326-settimo-palazzo" class="cast-card">
+            <a href="/actor/3733326-settimo-palazzo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Settimo Palazzo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Settimo Palazzo</span>
             </a>
-            <a href="/actor/3522750-maurizio-jiritano" class="cast-card">
+            <a href="/actor/3522750-maurizio-jiritano.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5eGG40jjyiQ5PYyn2JCz6E3um3n.jpg" alt="Maurizio Jiritano" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maurizio Jiritano</span>
             </a>
-            <a href="/actor/5083547-barbara-bovoli" class="cast-card">
+            <a href="/actor/5083547-barbara-bovoli.html" class="cast-card">
                 <img src="/favicon.ico" alt="Barbara Bovoli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Barbara Bovoli</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

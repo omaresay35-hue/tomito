@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Long Bright River</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/71070-amanda-seyfried" class="cast-card">
+            <a href="/actor/71070-amanda-seyfried.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fQ4JaWimkid15Eqq4E6XP2We68b.jpg" alt="Amanda Seyfried" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amanda Seyfried</span>
             </a>
-            <a href="/actor/1356645-nicholas-pinnock" class="cast-card">
+            <a href="/actor/1356645-nicholas-pinnock.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ufGrGvx2JPLfFbMrNXAQWZoSI38.jpg" alt="Nicholas Pinnock" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicholas Pinnock</span>
             </a>
-            <a href="/actor/1255846-ashleigh-cummings" class="cast-card">
+            <a href="/actor/1255846-ashleigh-cummings.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yyU5YaJBJFxE1WfREe5SujJukYW.jpg" alt="Ashleigh Cummings" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ashleigh Cummings</span>
             </a>
-            <a href="/actor/4307020-callum-vinson" class="cast-card">
+            <a href="/actor/4307020-callum-vinson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zthXhlBa98WDS52OlcG2E9xvs8R.jpg" alt="Callum Vinson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Callum Vinson</span>
             </a>
-            <a href="/actor/4735-john-doman" class="cast-card">
+            <a href="/actor/4735-john-doman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2HQRXWb6QrUFHJtJrgY8zpLP8u8.jpg" alt="John Doman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Doman</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>فراشة</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/18307-daniel-dae-kim" class="cast-card">
+            <a href="/actor/18307-daniel-dae-kim.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AtKRWsC4UhEjzorWlL2eguzZ9XM.jpg" alt="Daniel Dae Kim" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Dae Kim</span>
             </a>
-            <a href="/actor/1903006-reina-hardesty" class="cast-card">
+            <a href="/actor/1903006-reina-hardesty.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9i3TidpFHK2FMbD9yr2XD2y34CU.jpg" alt="Reina Hardesty" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reina Hardesty</span>
             </a>
-            <a href="/actor/1257600-kim-ji-hoon" class="cast-card">
+            <a href="/actor/1257600-kim-ji-hoon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ts2P3zONNZxD4AWIVu0FrvtUQNJ.jpg" alt="Kim Ji-hoon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Ji-hoon</span>
             </a>
-            <a href="/actor/15555-piper-perabo" class="cast-card">
+            <a href="/actor/15555-piper-perabo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5XrzISDEox0KubRDzJU668Oxmxy.jpg" alt="Piper Perabo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Piper Perabo</span>
             </a>
-            <a href="/actor/3764333-louis-landau" class="cast-card">
+            <a href="/actor/3764333-louis-landau.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/efL6YrmJCPB9RJIN6EPfXx07GZ.jpg" alt="Louis Landau" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louis Landau</span>
             </a>
-            <a href="/actor/1237976-kim-tae-hee" class="cast-card">
+            <a href="/actor/1237976-kim-tae-hee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vFZZ2Gsu416CCD4QkYyVocgOa7C.jpg" alt="Kim Tae-hee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Tae-hee</span>
             </a>
-            <a href="/actor/1604286-sean-dulake" class="cast-card">
+            <a href="/actor/1604286-sean-dulake.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kjtUEIMTY8mgHr28JU0Zb13XY7p.jpg" alt="Sean Dulake" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sean Dulake</span>
             </a>
-            <a href="/actor/124112-charles-parnell" class="cast-card">
+            <a href="/actor/124112-charles-parnell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wLywO5xtR97YKtkYb57hXEFpL7j.jpg" alt="Charles Parnell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charles Parnell</span>
             </a>
-            <a href="/actor/4155811-seoyeon-jang" class="cast-card">
+            <a href="/actor/4155811-seoyeon-jang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1731TVOmYLG6QAb4orpYzEOcyPW.jpg" alt="Seoyeon Jang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Seoyeon Jang</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>شهر زي العسل</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3471329-nour-al-ghandour" class="cast-card">
+            <a href="/actor/3471329-nour-al-ghandour.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fM3zwd5GOQzSW2n5EYx026jGW7U.jpg" alt="Nour Al-Ghandour" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nour Al-Ghandour</span>
             </a>
-            <a href="/actor/3732473-mahmoud-boushahri" class="cast-card">
+            <a href="/actor/3732473-mahmoud-boushahri.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i8pbl8Ohwi7QlNiLV8r922wMBry.jpg" alt="Mahmoud Boushahri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mahmoud Boushahri</span>
             </a>
-            <a href="/actor/4698047-ascia-al-shammiri" class="cast-card">
+            <a href="/actor/4698047-ascia-al-shammiri.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lCSxhsNfY54EbrLWCsRimNrZF5Y.jpg" alt="Ascia Al-Shammiri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ascia Al-Shammiri</span>
             </a>
-            <a href="/actor/4698037-mehdi-perwez" class="cast-card">
+            <a href="/actor/4698037-mehdi-perwez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3Mq2Zn3657hGVpCXhOzOJvaeM1m.jpg" alt="Mehdi Perwez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mehdi Perwez</span>
             </a>
-            <a href="/actor/3614599-qahtan-al-qahtani" class="cast-card">
+            <a href="/actor/3614599-qahtan-al-qahtani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/92FLXTEuRIYVWdGXKloT5zjw7Fx.jpg" alt="Qahtan Al-Qahtani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Qahtan Al-Qahtani</span>
             </a>
-            <a href="/actor/3612715-ghorour" class="cast-card">
+            <a href="/actor/3612715-ghorour.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/Dex3uGEZuyB04kH58z6xOhYBgp.jpg" alt="Ghorour" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ghorour</span>
             </a>
-            <a href="/actor/4698033-امل-محمد" class="cast-card">
+            <a href="/actor/4698033-امل-محمد.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A89TQPsQMsYV66D0LyZbekPOj8Q.jpg" alt="أمل محمد" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>أمل محمد</span>
             </a>
-            <a href="/actor/4692102-zaman-abdullah" class="cast-card">
+            <a href="/actor/4692102-zaman-abdullah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tWjNJXVCTp7pb9qSjJyt97Ze8PV.jpg" alt="Zaman Abdullah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zaman Abdullah</span>
             </a>
-            <a href="/actor/4669904-faisal-almezel" class="cast-card">
+            <a href="/actor/4669904-faisal-almezel.html" class="cast-card">
                 <img src="/favicon.ico" alt="Faisal Almezel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Faisal Almezel</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

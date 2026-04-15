@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1184495-joy">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1184495-joy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/inL3nv3hAqlvoBSIWFMYydlwULE.jpg" alt="Joy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Joy</div></div>
-    </a>    <a class="card" href="/movie/1105545-ex-husbands">
+    </a>    <a class="card" href="/movie/1105545-ex-husbands.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/alBrexjQV8qnlF4T2T0xCicriXf.jpg" alt="Ex-Husbands — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Ex-Husbands</div></div>
-    </a>    <a class="card" href="/movie/802219-bob-marley-one-love">
+    </a>    <a class="card" href="/movie/802219-bob-marley-one-love.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1lQftpEARVVB9op4TaYiIbactzG.jpg" alt="Bob Marley: One Love — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Bob Marley: One Love</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/250988-house-of-guinness">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/250988-house-of-guinness.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cDjJBbJcOj7PsWAveLFdSa4J8zJ.jpg" alt="House of Guinness — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">House of Guinness</div></div>
-    </a>    <a class="card" href="/tv/240558-king-conqueror">
+    </a>    <a class="card" href="/tv/240558-king-conqueror.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8SW0c0tUFWjpWBz2UYr0U57a8kB.jpg" alt="King & Conqueror — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">King & Conqueror</div></div>
-    </a>    <a class="card" href="/tv/242706-playing-nice">
+    </a>    <a class="card" href="/tv/242706-playing-nice.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4JvX91JibvTEE2v4PfNaBKQuGyr.jpg" alt="Playing Nice — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Playing Nice</div></div>
-    </a>    <a class="card" href="/tv/209415-sunday-with-laura-kuenssberg">
+    </a>    <a class="card" href="/tv/209415-sunday-with-laura-kuenssberg.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/le6vaFe9E0en3znFhy8eFhP3DQV.jpg" alt="Sunday with Laura Kuenssberg — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">2.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sunday with Laura Kuenssberg</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

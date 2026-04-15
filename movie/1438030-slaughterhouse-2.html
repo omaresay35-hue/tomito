@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Slaughterhouse 2</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/935840-rick-roessler" class="cast-card">
+            <a href="/actor/935840-rick-roessler.html" class="cast-card">
                 <img src="/favicon.ico" alt="Rick Roessler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rick Roessler</span>
             </a>
-            <a href="/actor/45375-sherry-leigh" class="cast-card">
+            <a href="/actor/45375-sherry-leigh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bBIqUopXRyIYEsv737E2e5Jj3pr.jpg" alt="Sherry Leigh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sherry Leigh</span>
             </a>
-            <a href="/actor/4921891-jim-lairmore" class="cast-card">
+            <a href="/actor/4921891-jim-lairmore.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jim Lairmore" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jim Lairmore</span>
             </a>
-            <a href="/actor/5262169-mary-grondona" class="cast-card">
+            <a href="/actor/5262169-mary-grondona.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mary Grondona" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mary Grondona</span>
             </a>
-            <a href="/actor/5262171-madi-lewis" class="cast-card">
+            <a href="/actor/5262171-madi-lewis.html" class="cast-card">
                 <img src="/favicon.ico" alt="Madi Lewis" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Madi Lewis</span>
             </a>
-            <a href="/actor/1432460-dave-fogel" class="cast-card">
+            <a href="/actor/1432460-dave-fogel.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dave Fogel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dave Fogel</span>
             </a>
-            <a href="/actor/5262175-done-dowe" class="cast-card">
+            <a href="/actor/5262175-done-dowe.html" class="cast-card">
                 <img src="/favicon.ico" alt="Done Dowe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Done Dowe</span>
             </a>
-            <a href="/actor/5262176-remington-tully" class="cast-card">
+            <a href="/actor/5262176-remington-tully.html" class="cast-card">
                 <img src="/favicon.ico" alt="Remington Tully" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Remington Tully</span>
             </a>
-            <a href="/actor/92796-brian-butler" class="cast-card">
+            <a href="/actor/92796-brian-butler.html" class="cast-card">
                 <img src="/favicon.ico" alt="Brian Butler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brian Butler</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

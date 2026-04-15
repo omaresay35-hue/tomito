@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>محامي الأشباح</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1649086-park-soo-oh" class="cast-card">
+            <a href="/actor/1649086-park-soo-oh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aQTV0nUT9YRUDRlHOudde5u8UeD.jpg" alt="Park Soo-oh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Soo-oh</span>
             </a>
-            <a href="/actor/79578-jung-kyung-ho" class="cast-card">
+            <a href="/actor/79578-jung-kyung-ho.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fanLZsECF5nDy17HkhcdoLJjPaw.jpg" alt="Jung Kyung-ho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jung Kyung-ho</span>
             </a>
-            <a href="/actor/1761412-seol-in-a" class="cast-card">
+            <a href="/actor/1761412-seol-in-a.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nfHLot4nBfqWQKwcXykeol4Owjb.jpg" alt="Seol In-a" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Seol In-a</span>
             </a>
-            <a href="/actor/1512481-cha-hak-yeon" class="cast-card">
+            <a href="/actor/1512481-cha-hak-yeon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wxamSpg4ysggjv6KePjwAblzSiQ.jpg" alt="Cha Hak-yeon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cha Hak-yeon</span>
             </a>
-            <a href="/actor/2123570-tang-joon-sang" class="cast-card">
+            <a href="/actor/2123570-tang-joon-sang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oEP7orwukWSKoZwyzzXyJf7CYXw.jpg" alt="Tang Joon-sang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tang Joon-sang</span>
             </a>
-            <a href="/actor/1894261-yoo-seon-ho" class="cast-card">
+            <a href="/actor/1894261-yoo-seon-ho.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hVtbZIWtXsXN6z9JGO9HI2tKpLq.jpg" alt="Yoo Seon-ho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoo Seon-ho</span>
             </a>
-            <a href="/actor/2359299-kang-hye-won" class="cast-card">
+            <a href="/actor/2359299-kang-hye-won.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gMwXEcwN1PMeB2HX6AnluZ9WRxl.jpg" alt="Kang Hye-won" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kang Hye-won</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

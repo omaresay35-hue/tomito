@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/281016-boyfriend-on-demand">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/281016-boyfriend-on-demand.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8vBWQjdCnK7xSGuNbK1gBK1iIQL.jpg" alt="Boyfriend on Demand — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Boyfriend on Demand</div></div>
-    </a>    <a class="card" href="/tv/285278-idol-i">
+    </a>    <a class="card" href="/tv/285278-idol-i.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pKJLNbUh4uO2jwGsMfP4B37pamS.jpg" alt="Idol I — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Idol I</div></div>
-    </a>    <a class="card" href="/tv/254389-heavenly-ever-after">
+    </a>    <a class="card" href="/tv/254389-heavenly-ever-after.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pQ3fDmgQ9GbmntzPY6vOOttSi6J.jpg" alt="Heavenly Ever After — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Heavenly Ever After</div></div>
-    </a>    <a class="card" href="/tv/233742-newtopia">
+    </a>    <a class="card" href="/tv/233742-newtopia.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cIC36RA59lg9ruYtPc7UA3f72yy.jpg" alt="Newtopia — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Newtopia</div></div>
-    </a>    <a class="card" href="/tv/256725-motel-california">
+    </a>    <a class="card" href="/tv/256725-motel-california.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/aFEIz6IuRc1aJTms22YKxx6548w.jpg" alt="Motel California — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Motel California</div></div>
-    </a>    <a class="card" href="/tv/223212-the-impossible-heir">
+    </a>    <a class="card" href="/tv/223212-the-impossible-heir.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ksIQrUoJERXBnVcxAxkMQDpzx3l.jpg" alt="The Impossible Heir — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Impossible Heir</div></div>
-    </a>    <a class="card" href="/tv/203164-strong-girl-nam-soon">
+    </a>    <a class="card" href="/tv/203164-strong-girl-nam-soon.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rjkHORZvB5bnz7kH1PufFCKsX4I.jpg" alt="Strong Girl Nam-soon — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Strong Girl Nam-soon</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

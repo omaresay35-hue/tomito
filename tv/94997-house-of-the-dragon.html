@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,47 +75,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/136532-matt-smith" class="cast-card">
+            <a href="/actor/136532-matt-smith.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xr2GSp8Pm6fT5VGm0I9tsWVcZ8q.jpg" alt="Matt Smith" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matt Smith</span>
             </a>
-            <a href="/actor/1829122-ewan-mitchell" class="cast-card">
+            <a href="/actor/1829122-ewan-mitchell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v1PqysDnx5umfA2DqGyjwuAxc9C.jpg" alt="Ewan Mitchell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ewan Mitchell</span>
             </a>
-            <a href="/actor/1457238-sonoya-mizuno" class="cast-card">
+            <a href="/actor/1457238-sonoya-mizuno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/scbRPaGPw3VnR6mrmZQZi6Cuj1m.jpg" alt="Sonoya Mizuno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sonoya Mizuno</span>
             </a>
-            <a href="/actor/1526130-kurt-egyiawan" class="cast-card">
+            <a href="/actor/1526130-kurt-egyiawan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bLzmxAmUxRj8wwxzlpaKKdg2Ccf.jpg" alt="Kurt Egyiawan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kurt Egyiawan</span>
             </a>
-            <a href="/actor/1584566-matthew-needham" class="cast-card">
+            <a href="/actor/1584566-matthew-needham.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sZHT2xFtnBawU3DoaWZACSv15gX.jpg" alt="Matthew Needham" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthew Needham</span>
             </a>
-            <a href="/actor/1765227-tom-glynn-carney" class="cast-card">
+            <a href="/actor/1765227-tom-glynn-carney.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jJ3KqUW8ySGBwHXOCN3x2Wxjm5W.jpg" alt="Tom Glynn-Carney" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Glynn-Carney</span>
             </a>
-            <a href="/actor/1789952-harry-collett" class="cast-card">
+            <a href="/actor/1789952-harry-collett.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sGVXltoYX4Y06e5MTToox6rhJdI.jpg" alt="Harry Collett" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Harry Collett</span>
             </a>
-            <a href="/actor/55412-steve-toussaint" class="cast-card">
+            <a href="/actor/55412-steve-toussaint.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sNjMpDYLVu6l79iP0olrYDaNlrD.jpg" alt="Steve Toussaint" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steve Toussaint</span>
             </a>
-            <a href="/actor/65301-phil-daniels" class="cast-card">
+            <a href="/actor/65301-phil-daniels.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6yNFNjo3cWEcuAUrl0CNQnAnQ5M.jpg" alt="Phil Daniels" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Phil Daniels</span>
             </a>
-            <a href="/actor/2121005-emma-darcy" class="cast-card">
+            <a href="/actor/2121005-emma-darcy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9Zlmb7VmtVCxkLq5yqFFRRxCaED.jpg" alt="Emma D'Arcy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emma D'Arcy</span>
             </a>
-            <a href="/actor/1173984-olivia-cooke" class="cast-card">
+            <a href="/actor/1173984-olivia-cooke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7LYm4jGDq8IxAe4D6TTPkWwU0Ft.jpg" alt="Olivia Cooke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Olivia Cooke</span>
             </a></div></section>
@@ -123,13 +123,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

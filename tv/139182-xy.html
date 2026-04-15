@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>爱幽的密室</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1853548-zhang-youwu" class="cast-card">
+            <a href="/actor/1853548-zhang-youwu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2wnGZ6IXWkmdf4CdvwiygJOK9tm.jpg" alt="Zhang Youwu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Youwu</span>
             </a>
-            <a href="/actor/2207399-hao-xianghai" class="cast-card">
+            <a href="/actor/2207399-hao-xianghai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mDGtY44WlZbk8pMmuzPToIommx4.jpg" alt="Hao Xianghai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hao Xianghai</span>
             </a>
-            <a href="/actor/2156487-shen-nianru" class="cast-card">
+            <a href="/actor/2156487-shen-nianru.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6K9iai6QCkF8Gc9DeUPOeESokM0.jpg" alt="Shen Nianru" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shen Nianru</span>
             </a>
-            <a href="/actor/4801428-li-shenqian" class="cast-card">
+            <a href="/actor/4801428-li-shenqian.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gxOwOzljzSxJor76zCoIzkQmGch.jpg" alt="Li Shenqian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Li Shenqian</span>
             </a>
-            <a href="/actor/2121690-teng-xin" class="cast-card">
+            <a href="/actor/2121690-teng-xin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a2fFAjFbR3623Yhf4hhBSrUh0MQ.jpg" alt="Teng Xin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Teng Xin</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

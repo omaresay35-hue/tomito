@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>محادثات مع قاتل: أشرطة ابن سام</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2095892-david-berkowitz" class="cast-card">
+            <a href="/actor/2095892-david-berkowitz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lWQnnSfs1EFeWZVUq5nv2j0f2sX.jpg" alt="David Berkowitz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Berkowitz</span>
             </a>
-            <a href="/actor/5597920-jack-jones" class="cast-card">
+            <a href="/actor/5597920-jack-jones.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hraEuOKwAZpvEGaWD20vr1ArM0I.jpg" alt="Jack Jones" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Jones</span>
             </a>
-            <a href="/actor/5597922-mary-murphy" class="cast-card">
+            <a href="/actor/5597922-mary-murphy.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mary Murphy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mary Murphy</span>
             </a>
-            <a href="/actor/5597923-joseph-borrelli" class="cast-card">
+            <a href="/actor/5597923-joseph-borrelli.html" class="cast-card">
                 <img src="/favicon.ico" alt="Joseph Borrelli" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joseph Borrelli</span>
             </a>
-            <a href="/actor/5597924-lawrence-klausner" class="cast-card">
+            <a href="/actor/5597924-lawrence-klausner.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lawrence Klausner" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lawrence Klausner</span>
             </a>
-            <a href="/actor/5597926-manny-grossman" class="cast-card">
+            <a href="/actor/5597926-manny-grossman.html" class="cast-card">
                 <img src="/favicon.ico" alt="Manny Grossman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manny Grossman</span>
             </a>
-            <a href="/actor/5597927-marlin-hopkins" class="cast-card">
+            <a href="/actor/5597927-marlin-hopkins.html" class="cast-card">
                 <img src="/favicon.ico" alt="Marlin Hopkins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marlin Hopkins</span>
             </a>
-            <a href="/actor/5597928-richard-edmonds" class="cast-card">
+            <a href="/actor/5597928-richard-edmonds.html" class="cast-card">
                 <img src="/favicon.ico" alt="Richard Edmonds" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Richard Edmonds</span>
             </a>
-            <a href="/actor/5597929-john-comparetto" class="cast-card">
+            <a href="/actor/5597929-john-comparetto.html" class="cast-card">
                 <img src="/favicon.ico" alt="John Comparetto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Comparetto</span>
             </a>
-            <a href="/actor/5597930-dick-belsky" class="cast-card">
+            <a href="/actor/5597930-dick-belsky.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dick Belsky" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dick Belsky</span>
             </a>
-            <a href="/actor/5597932-william-gardella" class="cast-card">
+            <a href="/actor/5597932-william-gardella.html" class="cast-card">
                 <img src="/favicon.ico" alt="William Gardella" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>William Gardella</span>
             </a>
-            <a href="/actor/5597933-gloria-zonghetti" class="cast-card">
+            <a href="/actor/5597933-gloria-zonghetti.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gloria Zonghetti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gloria Zonghetti</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

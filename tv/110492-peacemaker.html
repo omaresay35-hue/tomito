@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,31 +75,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/56446-john-cena" class="cast-card">
+            <a href="/actor/56446-john-cena.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rgB2eIOt7WyQjdgJCOuESdDlrjg.jpg" alt="John Cena" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Cena</span>
             </a>
-            <a href="/actor/1075037-danielle-brooks" class="cast-card">
+            <a href="/actor/1075037-danielle-brooks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pPSG2Vmq24cwAL5XGK1NLs3KEoZ.jpg" alt="Danielle Brooks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Danielle Brooks</span>
             </a>
-            <a href="/actor/234934-freddie-stroma" class="cast-card">
+            <a href="/actor/234934-freddie-stroma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wZ8nqxyGvybdInXLBfQIjg2es5Z.jpg" alt="Freddie Stroma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Freddie Stroma</span>
             </a>
-            <a href="/actor/87165-jennifer-holland" class="cast-card">
+            <a href="/actor/87165-jennifer-holland.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ynuKq1Pd6aVGwhb07uJ0PiYV4F6.jpg" alt="Jennifer Holland" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jennifer Holland</span>
             </a>
-            <a href="/actor/559457-steve-agee" class="cast-card">
+            <a href="/actor/559457-steve-agee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sbMpatWydjTl2cTcDXFMTgCkEBO.jpg" alt="Steve Agee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steve Agee</span>
             </a>
-            <a href="/actor/81685-frank-grillo" class="cast-card">
+            <a href="/actor/81685-frank-grillo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kuEco4vo1xrsM8DyrNSZUEi593P.jpg" alt="Frank Grillo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Frank Grillo</span>
             </a>
-            <a href="/actor/418-robert-patrick" class="cast-card">
+            <a href="/actor/418-robert-patrick.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qRv2Es9rZoloullTbzss3I5j1Mp.jpg" alt="Robert Patrick" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robert Patrick</span>
             </a></div></section>
@@ -107,13 +107,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

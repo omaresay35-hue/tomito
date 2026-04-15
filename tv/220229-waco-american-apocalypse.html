@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>حصار واكو: نسخة أمريكية من نهاية العالم</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3976767-david-thibodeau" class="cast-card">
+            <a href="/actor/3976767-david-thibodeau.html" class="cast-card">
                 <img src="/favicon.ico" alt="David Thibodeau" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Thibodeau</span>
             </a>
-            <a href="/actor/3976770-chris-whitcomb" class="cast-card">
+            <a href="/actor/3976770-chris-whitcomb.html" class="cast-card">
                 <img src="/favicon.ico" alt="Chris Whitcomb" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Whitcomb</span>
             </a>
-            <a href="/actor/3976773-lee-hancock" class="cast-card">
+            <a href="/actor/3976773-lee-hancock.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lee Hancock" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Hancock</span>
             </a>
-            <a href="/actor/2830484-bob-ricks" class="cast-card">
+            <a href="/actor/2830484-bob-ricks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r2N4dikPkrtEDTASA1nO4pHBTGQ.jpg" alt="Bob Ricks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bob Ricks</span>
             </a>
-            <a href="/actor/2091282-kathy-schroeder" class="cast-card">
+            <a href="/actor/2091282-kathy-schroeder.html" class="cast-card">
                 <img src="/favicon.ico" alt="Kathy Schroeder" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kathy Schroeder</span>
             </a>
-            <a href="/actor/2091231-david-koresh" class="cast-card">
+            <a href="/actor/2091231-david-koresh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nY4f2OFVb5zGPLKKJsuyf9KBSsp.jpg" alt="David Koresh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Koresh</span>
             </a>
-            <a href="/actor/3955206-bill-buford" class="cast-card">
+            <a href="/actor/3955206-bill-buford.html" class="cast-card">
                 <img src="/favicon.ico" alt="Bill Buford" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bill Buford</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

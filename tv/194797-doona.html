@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>‫دونا!</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1014784-suzy" class="cast-card">
+            <a href="/actor/1014784-suzy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xdmQeM0UuwVGyZucc3eLhynlb7b.jpg" alt="Suzy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Suzy</span>
             </a>
-            <a href="/actor/1809986-yang-se-jong" class="cast-card">
+            <a href="/actor/1809986-yang-se-jong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zQQixC3LXRvvbiecDFbNGIKe5Nc.jpg" alt="Yang Se-jong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yang Se-jong</span>
             </a>
-            <a href="/actor/3031138-ahn-ha-young" class="cast-card">
+            <a href="/actor/3031138-ahn-ha-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a4BwdtRS1VjzARuqmCV2JWQUf43.jpg" alt="Ahn Ha-young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ahn Ha-young</span>
             </a>
-            <a href="/actor/1834243-park-se-wan" class="cast-card">
+            <a href="/actor/1834243-park-se-wan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yRaB00ZVVQ6DMjJmictDEaNf6t8.jpg" alt="Park Se-wan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Se-wan</span>
             </a>
-            <a href="/actor/1989398-kim-do-wan" class="cast-card">
+            <a href="/actor/1989398-kim-do-wan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p9RDV2mcjgH7J6M2qT9NaTSQPYs.jpg" alt="Kim Do-wan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Do-wan</span>
             </a>
-            <a href="/actor/2159121-kim-min-ho" class="cast-card">
+            <a href="/actor/2159121-kim-min-ho.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/49OxFNbTpXq9SM81ynQdtUnN38H.jpg" alt="Kim Min-ho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Min-ho</span>
             </a>
-            <a href="/actor/2791234-joo-yeon-woo" class="cast-card">
+            <a href="/actor/2791234-joo-yeon-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cTNTjVvObOVxN5vPQrdYFBwS1Kd.jpg" alt="Joo Yeon-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joo Yeon-woo</span>
             </a>
-            <a href="/actor/3289678-baek-ji-hye" class="cast-card">
+            <a href="/actor/3289678-baek-ji-hye.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AiBPzW0mnU5vJU4c70V4yRxaT3S.jpg" alt="Baek Ji-hye" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Baek Ji-hye</span>
             </a>
-            <a href="/actor/3226942-lee-chan-hyeong" class="cast-card">
+            <a href="/actor/3226942-lee-chan-hyeong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gu1khwOXUDuZkocL1ykcZ2MfkJX.jpg" alt="Lee Chan-hyeong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Chan-hyeong</span>
             </a>
-            <a href="/actor/5735798-ha-seon-jae" class="cast-card">
+            <a href="/actor/5735798-ha-seon-jae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xrq2QZdiVq4YyhAKEzVLRqTAHdu.jpg" alt="Ha Seon-jae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ha Seon-jae</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

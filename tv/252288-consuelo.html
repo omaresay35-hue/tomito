@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Consuelo</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1831842-cassandra-sánchez-navarro" class="cast-card">
+            <a href="/actor/1831842-cassandra-sánchez-navarro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hRsoMPc59W8vRYk5ltheDpcgdeT.jpg" alt="Cassandra Sánchez Navarro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cassandra Sánchez Navarro</span>
             </a>
-            <a href="/actor/2230590-erick-chapa" class="cast-card">
+            <a href="/actor/2230590-erick-chapa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/h4sjvDniBW4M3QDlpYENxLiTmoL.jpg" alt="Erick Chapa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Erick Chapa</span>
             </a>
-            <a href="/actor/1315591-eileen-yañez" class="cast-card">
+            <a href="/actor/1315591-eileen-yañez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rzzd62Im40eeNllTrCmjeXYyBQJ.jpg" alt="Eileen Yañez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eileen Yañez</span>
             </a>
-            <a href="/actor/6095081-sofía-monarrez" class="cast-card">
+            <a href="/actor/6095081-sofía-monarrez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sofía Monarrez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sofía Monarrez</span>
             </a>
-            <a href="/actor/6095082-alexander-ventosa" class="cast-card">
+            <a href="/actor/6095082-alexander-ventosa.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alexander Ventosa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexander Ventosa</span>
             </a>
-            <a href="/actor/1432338-lincoln-palomeque" class="cast-card">
+            <a href="/actor/1432338-lincoln-palomeque.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sV77pgKtB1ifBnTLxmTiqiL3N4k.jpg" alt="Lincoln Palomeque" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lincoln Palomeque</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

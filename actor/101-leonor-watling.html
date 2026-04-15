@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1104390-anatema">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1104390-anatema.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4akd1zxzCUdow2gXX1ovbRE3ZoO.jpg" alt="Anatema — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Anatema</div></div>
-    </a>    <a class="card" href="/movie/140-bad-education">
+    </a>    <a class="card" href="/movie/140-bad-education.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/du716YH0PKiL2kZgIPLkEblgHLX.jpg" alt="Bad Education — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Bad Education</div></div>
-    </a>    <a class="card" href="/movie/286695-el-elefante-del-rey">
+    </a>    <a class="card" href="/movie/286695-el-elefante-del-rey.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qjfYf76dgFOXp8GCN6qWxCpixpw.jpg" alt="El elefante del rey — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">El elefante del rey</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/259856-salvador">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/259856-salvador.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8pLnnRB2qG1vZHXpjm2gVFNyUX.jpg" alt="Salvador — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Salvador</div></div>
-    </a>    <a class="card" href="/tv/243790-the-short-life">
+    </a>    <a class="card" href="/tv/243790-the-short-life.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xfdKC0zg8MvEYgE2NZsHbw3WvgL.jpg" alt="The Short Life — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Short Life</div></div>
-    </a>    <a class="card" href="/tv/225282-en-fin">
+    </a>    <a class="card" href="/tv/225282-en-fin.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6YzDtyY1lFDPHul33rl2sfn3pNf.jpg" alt="En Fin — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">En Fin</div></div>
-    </a>    <a class="card" href="/tv/227554-cites-barcelona">
+    </a>    <a class="card" href="/tv/227554-cites-barcelona.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jStuS0GzjBQLo4Wli8DyLlLeQNb.jpg" alt="Cites Barcelona — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Cites Barcelona</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>مصرف تحت الحصار</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1428896-miguel-herrán" class="cast-card">
+            <a href="/actor/1428896-miguel-herrán.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eFNlbsaMODCHys35ZQOkMQNh0Jq.jpg" alt="Miguel Herrán" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miguel Herrán</span>
             </a>
-            <a href="/actor/1757167-maría-pedraza" class="cast-card">
+            <a href="/actor/1757167-maría-pedraza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2CMZgfH6xcH0azdueMcK7Py8qBJ.jpg" alt="María Pedraza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>María Pedraza</span>
             </a>
-            <a href="/actor/1131415-hovik-keuchkerian" class="cast-card">
+            <a href="/actor/1131415-hovik-keuchkerian.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o5cGKWHlZl4RFROYlT2hD95j0lN.jpg" alt="Hovik Keuchkerian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hovik Keuchkerian</span>
             </a>
-            <a href="/actor/2649281-tomy-aguilera" class="cast-card">
+            <a href="/actor/2649281-tomy-aguilera.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oyuR4yEJ2b5Y7DfmduPoEczI1zV.jpg" alt="Tomy Aguilera" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomy Aguilera</span>
             </a>
-            <a href="/actor/589477-isak-férriz" class="cast-card">
+            <a href="/actor/589477-isak-férriz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rFkVuTNGu8H8kRVjFB5pIu3gkrp.jpg" alt="Isak Férriz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isak Férriz</span>
             </a>
-            <a href="/actor/1062017-òscar-rabadán" class="cast-card">
+            <a href="/actor/1062017-òscar-rabadán.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/c5SUrxy7htVzCmPbtWea7ewfAC4.jpg" alt="Òscar Rabadán" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Òscar Rabadán</span>
             </a>
-            <a href="/actor/974519-tito-valverde" class="cast-card">
+            <a href="/actor/974519-tito-valverde.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1Xj7ih7Ya1CqjPykCsKE4EaknrY.jpg" alt="Tito Valverde" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tito Valverde</span>
             </a>
-            <a href="/actor/3845781-chemi-hitos" class="cast-card">
+            <a href="/actor/3845781-chemi-hitos.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sIgg5OHk3493OtfrT8PnDXEguah.jpg" alt="Chemi Hitos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chemi Hitos</span>
             </a>
-            <a href="/actor/2303047-pablo-vázquez" class="cast-card">
+            <a href="/actor/2303047-pablo-vázquez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/njlq7rJur3faHcLL2J3G6m0p621.jpg" alt="Pablo Vázquez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pablo Vázquez</span>
             </a>
-            <a href="/actor/2314755-pablo-béjar" class="cast-card">
+            <a href="/actor/2314755-pablo-béjar.html" class="cast-card">
                 <img src="/favicon.ico" alt="Pablo Béjar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pablo Béjar</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

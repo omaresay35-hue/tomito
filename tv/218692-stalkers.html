@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Stalkers</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1909698-wilbert-ross" class="cast-card">
+            <a href="/actor/1909698-wilbert-ross.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uboxvkoki8yY80jX245uspyhXjo.jpg" alt="Wilbert Ross" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wilbert Ross</span>
             </a>
-            <a href="/actor/1481740-rose-van-ginkel" class="cast-card">
+            <a href="/actor/1481740-rose-van-ginkel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dT5SDLURXVNfXcW0w2A9NigbiYw.jpg" alt="Rose Van Ginkel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rose Van Ginkel</span>
             </a>
-            <a href="/actor/1052738-mark-anthony-fernandez" class="cast-card">
+            <a href="/actor/1052738-mark-anthony-fernandez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wJUZQyd2FUdj1A18Q0KVk7MkDqp.jpg" alt="Mark Anthony Fernandez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Anthony Fernandez</span>
             </a>
-            <a href="/actor/2513207-nico-locco" class="cast-card">
+            <a href="/actor/2513207-nico-locco.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5mWKE2MAhdzpX6haB8734z1sisl.jpg" alt="Nico Locco" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nico Locco</span>
             </a>
-            <a href="/actor/1058265-yayo-aguila" class="cast-card">
+            <a href="/actor/1058265-yayo-aguila.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gSOCogk9uEzpqFgRLVGbtNbOp38.jpg" alt="Yayo Aguila" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yayo Aguila</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

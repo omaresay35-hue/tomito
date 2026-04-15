@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/263048-sniper-butterfly">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/263048-sniper-butterfly.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2lt4ZRGElT9uG4TEM1bkOjN86nk.jpg" alt="Sniper Butterfly — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sniper Butterfly</div></div>
-    </a>    <a class="card" href="/tv/242762-moonlit-reunion">
+    </a>    <a class="card" href="/tv/242762-moonlit-reunion.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pOy5ysYxiHth3ZfW9NjrtJuauxF.jpg" alt="Moonlit Reunion — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Moonlit Reunion</div></div>
-    </a>    <a class="card" href="/tv/234133-be-with-you">
+    </a>    <a class="card" href="/tv/234133-be-with-you.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qmdyvesxL3Xy4XdyjyNsW1NLnFp.jpg" alt="Be with You — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Be with You</div></div>
-    </a>    <a class="card" href="/tv/228547-when-i-fly-towards-you">
+    </a>    <a class="card" href="/tv/228547-when-i-fly-towards-you.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mjCChwZcEZ9902tUAG1hWZlfOHm.jpg" alt="When I Fly Towards You — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">When I Fly Towards You</div></div>
-    </a>    <a class="card" href="/tv/197438-see-you-tomorrow">
+    </a>    <a class="card" href="/tv/197438-see-you-tomorrow.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9BLSWkXQvXTibHhdUqmwVYNBJaQ.jpg" alt="See You Tomorrow — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">See You Tomorrow</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

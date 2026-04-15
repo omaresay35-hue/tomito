@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>My Old Ass</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1104567-maisy-stella" class="cast-card">
+            <a href="/actor/1104567-maisy-stella.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3rBVjUtx6tRxzsLt2Rd6Kz9y59T.jpg" alt="Maisy Stella" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maisy Stella</span>
             </a>
-            <a href="/actor/119592-aubrey-plaza" class="cast-card">
+            <a href="/actor/119592-aubrey-plaza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4pPvrQmrzQCYpgLo8WM1AW8myoe.jpg" alt="Aubrey Plaza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aubrey Plaza</span>
             </a>
-            <a href="/actor/1477961-percy-hynes-white" class="cast-card">
+            <a href="/actor/1477961-percy-hynes-white.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lY5WDKbqTPI0GGhKwqM2P7bPEX4.jpg" alt="Percy Hynes White" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Percy Hynes White</span>
             </a>
-            <a href="/actor/1483976-maddie-ziegler" class="cast-card">
+            <a href="/actor/1483976-maddie-ziegler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zMY7VuUUvJjzi52bERurbe8vKsR.jpg" alt="Maddie Ziegler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maddie Ziegler</span>
             </a>
-            <a href="/actor/2813970-kerrice-brooks" class="cast-card">
+            <a href="/actor/2813970-kerrice-brooks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AfVXStImMwjCfCqMTNdaraJNRme.jpg" alt="Kerrice Brooks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kerrice Brooks</span>
             </a>
-            <a href="/actor/205797-maria-dizzia" class="cast-card">
+            <a href="/actor/205797-maria-dizzia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sMsBH9o1kuFeVgjX2QoXvxccKJQ.jpg" alt="Maria Dizzia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maria Dizzia</span>
             </a>
-            <a href="/actor/21292-alain-goulem" class="cast-card">
+            <a href="/actor/21292-alain-goulem.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q4mcnNmWyVnWNOH6VuWh7zRpFkt.jpg" alt="Alain Goulem" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alain Goulem</span>
             </a>
-            <a href="/actor/1428071-seth-isaac-johnson" class="cast-card">
+            <a href="/actor/1428071-seth-isaac-johnson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8L1vXNiNYx1jOHCuWhU8W1yghmy.jpg" alt="Seth Isaac Johnson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Seth Isaac Johnson</span>
             </a>
-            <a href="/actor/3903124-carter-trozzolo" class="cast-card">
+            <a href="/actor/3903124-carter-trozzolo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9oZ4pWKGXYba6KoC3c3URNyl4jc.jpg" alt="Carter Trozzolo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carter Trozzolo</span>
             </a>
-            <a href="/actor/4861805-alexandria-rivera" class="cast-card">
+            <a href="/actor/4861805-alexandria-rivera.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alexandria Rivera" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexandria Rivera</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

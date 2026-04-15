@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>We Might Regret This</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4311348-kyla-harris" class="cast-card">
+            <a href="/actor/4311348-kyla-harris.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/daFhjMpn85syIeAaAyjA56rjyMh.jpg" alt="Kyla Harris" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kyla Harris</span>
             </a>
-            <a href="/actor/17123-darren-boyd" class="cast-card">
+            <a href="/actor/17123-darren-boyd.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cHDIKSsqCvu7PTBcfdxAKN99dQz.jpg" alt="Darren Boyd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Darren Boyd</span>
             </a>
-            <a href="/actor/2218975-elena-saurel" class="cast-card">
+            <a href="/actor/2218975-elena-saurel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j9QlZakIhoGAPmXHbwlH3wHYDbG.jpg" alt="Elena Saurel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elena Saurel</span>
             </a>
-            <a href="/actor/1731315-edward-bluemel" class="cast-card">
+            <a href="/actor/1731315-edward-bluemel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wrL8lk0Y6tHtVQCOMBTyvnBhofd.jpg" alt="Edward Bluemel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Edward Bluemel</span>
             </a>
-            <a href="/actor/1976368-aasiya-shah" class="cast-card">
+            <a href="/actor/1976368-aasiya-shah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qi6fGjxtR0TkvNsysxJP77CJjcl.jpg" alt="Aasiya Shah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aasiya Shah</span>
             </a>
-            <a href="/actor/9144-sally-phillips" class="cast-card">
+            <a href="/actor/9144-sally-phillips.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xLEMZhksdCEO8HUhQLNetkETLdr.jpg" alt="Sally Phillips" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sally Phillips</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

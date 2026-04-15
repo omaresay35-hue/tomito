@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>白豚貴族ですが前世の記憶が生えたのでひよこな弟育てます</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1250465-mariya-ise" class="cast-card">
+            <a href="/actor/1250465-mariya-ise.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tQWlgrlQ70biWdg7x9E75CtwsuD.jpg" alt="Mariya Ise" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariya Ise</span>
             </a>
-            <a href="/actor/151182-misaki-kuno" class="cast-card">
+            <a href="/actor/151182-misaki-kuno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hVtE4gdKaqofYZmXXtlJs4Q9XTL.jpg" alt="Misaki Kuno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Misaki Kuno</span>
             </a>
-            <a href="/actor/1922635-shunichi-toki" class="cast-card">
+            <a href="/actor/1922635-shunichi-toki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3hauO9r1NEzgXxk8d2ed1p5dnxM.jpg" alt="Shunichi Toki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shunichi Toki</span>
             </a>
-            <a href="/actor/235262-aki-toyosaki" class="cast-card">
+            <a href="/actor/235262-aki-toyosaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/crZpbb0ILJnH7mIYZV2l4uqQx1J.jpg" alt="Aki Toyosaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aki Toyosaki</span>
             </a>
-            <a href="/actor/1221108-haruhi-nanao" class="cast-card">
+            <a href="/actor/1221108-haruhi-nanao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1zdcXGwU3WRaiE281hjRuqfqeXg.jpg" alt="Haruhi Nanao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Haruhi Nanao</span>
             </a>
-            <a href="/actor/2019928-rie-hikisaka" class="cast-card">
+            <a href="/actor/2019928-rie-hikisaka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A2qoMAgTD0uG49HhQLkHmWquSiP.jpg" alt="Rie Hikisaka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rie Hikisaka</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

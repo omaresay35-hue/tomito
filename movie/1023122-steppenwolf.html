@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Дала қасқыры</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1063493-berik-aitzhanov" class="cast-card">
+            <a href="/actor/1063493-berik-aitzhanov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pVk4Hw8hdQFASA5wRJ3r8W6e6f7.jpg" alt="Berik Aitzhanov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Berik Aitzhanov</span>
             </a>
-            <a href="/actor/2147430-anna-starchenko" class="cast-card">
+            <a href="/actor/2147430-anna-starchenko.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1HvtvogWAoZXP3gHxIp0IHSAwcF.jpg" alt="Anna Starchenko" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anna Starchenko</span>
             </a>
-            <a href="/actor/1111727-azamat-nigmanov" class="cast-card">
+            <a href="/actor/1111727-azamat-nigmanov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p4TWRPVf7bUaJKlJQiMxpsWlmmp.jpg" alt="Azamat Nigmanov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Azamat Nigmanov</span>
             </a>
-            <a href="/actor/4414504-kuantay-abdimadi" class="cast-card">
+            <a href="/actor/4414504-kuantay-abdimadi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8impzcXl0B3pGeYreInwC4ohb2y.jpg" alt="Kuantay Abdimadi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kuantay Abdimadi</span>
             </a>
-            <a href="/actor/2041282-yerken-gubashev" class="cast-card">
+            <a href="/actor/2041282-yerken-gubashev.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v6f0Buzvh1CLsfFtFY6R4bPHdob.jpg" alt="Yerken Gubashev" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yerken Gubashev</span>
             </a>
-            <a href="/actor/5459566-timur-kim" class="cast-card">
+            <a href="/actor/5459566-timur-kim.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/auE0JN9vFdoHoxawlwsZSZIp2Ad.jpg" alt="Timur Kim" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Timur Kim</span>
             </a>
-            <a href="/actor/2838177-yerbolat-alkozha" class="cast-card">
+            <a href="/actor/2838177-yerbolat-alkozha.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w5tORrVFgZoXn7eMopweZGdFiZG.jpg" alt="Yerbolat Alkozha" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yerbolat Alkozha</span>
             </a>
-            <a href="/actor/1808014-nurbek-mukushev" class="cast-card">
+            <a href="/actor/1808014-nurbek-mukushev.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qdEkHz1pbSL4QBs3YzexHI8txyW.jpg" alt="Nurbek Mukushev" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nurbek Mukushev</span>
             </a>
-            <a href="/actor/1926255-bauirzhan-kaptagay" class="cast-card">
+            <a href="/actor/1926255-bauirzhan-kaptagay.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ixFZgQXLfyqU1ULDEduAwC1FuZG.jpg" alt="Bauirzhan Kaptagay" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bauirzhan Kaptagay</span>
             </a>
-            <a href="/actor/5703584-aktan-kolganatov" class="cast-card">
+            <a href="/actor/5703584-aktan-kolganatov.html" class="cast-card">
                 <img src="/favicon.ico" alt="Aktan Kolganatov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aktan Kolganatov</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

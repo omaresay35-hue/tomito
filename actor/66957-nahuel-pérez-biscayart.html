@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,15 +75,15 @@ Source: Article "Nahuel Pérez Biscayart" from Wikipedia in English, licensed un
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1034391-la-mitad-de-ana">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1034391-la-mitad-de-ana.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/c24RWnJzwAtWZ039o9u6K7c8jyw.jpg" alt="La mitad de Ana — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">La mitad de Ana</div></div>
-    </a>    <a class="card" href="/movie/1104937-kill-the-jockey">
+    </a>    <a class="card" href="/movie/1104937-kill-the-jockey.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2CGm69ebTBnbqFZIT8cWSuRIb8S.jpg" alt="Kill the Jockey — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kill the Jockey</div></div>
-    </a>    <a class="card" href="/movie/961082-my-new-friends">
+    </a>    <a class="card" href="/movie/961082-my-new-friends.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xyYowd5EVXyGxdUlz3GQUW6ELWS.jpg" alt="My New Friends — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">My New Friends</div></div>
@@ -92,13 +92,6 @@ Source: Article "Nahuel Pérez Biscayart" from Wikipedia in English, licensed un
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

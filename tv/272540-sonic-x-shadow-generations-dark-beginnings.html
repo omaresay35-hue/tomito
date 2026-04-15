@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Sonic x Shadow Generations: Dark Beginnings</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/81382-kirk-thornton" class="cast-card">
+            <a href="/actor/81382-kirk-thornton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pGzgUKchroJyBMf5uGOqmVZD6zX.jpg" alt="Kirk Thornton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kirk Thornton</span>
             </a>
-            <a href="/actor/1219437-stephanie-sheh" class="cast-card">
+            <a href="/actor/1219437-stephanie-sheh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/id00Jc4uwGnffNT1bp2SQWEoSH3.jpg" alt="Stephanie Sheh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephanie Sheh</span>
             </a>
-            <a href="/actor/59065-karen-strassman" class="cast-card">
+            <a href="/actor/59065-karen-strassman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6fLPatm6IhYu3dtje3zRPXXgRfs.jpg" alt="Karen Strassman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karen Strassman</span>
             </a>
-            <a href="/actor/75038-roger-craig-smith" class="cast-card">
+            <a href="/actor/75038-roger-craig-smith.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6oE356GbRHAf91Llw7LDpvsAf5L.jpg" alt="Roger Craig Smith" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Roger Craig Smith</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

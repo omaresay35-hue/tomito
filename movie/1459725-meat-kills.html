@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Vleesdag</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1723053-caro-derkx" class="cast-card">
+            <a href="/actor/1723053-caro-derkx.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xt85iVXUthTYxeozh2RBwJ1VkYh.jpg" alt="Caro Derkx" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Caro Derkx</span>
             </a>
-            <a href="/actor/4497796-juliëtte-van-de-weerdt" class="cast-card">
+            <a href="/actor/4497796-juliëtte-van-de-weerdt.html" class="cast-card">
                 <img src="/favicon.ico" alt="Juliëtte van de Weerdt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juliëtte van de Weerdt</span>
             </a>
-            <a href="/actor/3104660-tommy-zonneveld" class="cast-card">
+            <a href="/actor/3104660-tommy-zonneveld.html" class="cast-card">
                 <img src="/favicon.ico" alt="Tommy Zonneveld" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tommy Zonneveld</span>
             </a>
-            <a href="/actor/4175670-sem-ben-yakar" class="cast-card">
+            <a href="/actor/4175670-sem-ben-yakar.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2fZf2bXSYwQAGxBFixYRi1T9Gyq.jpg" alt="Sem Ben Yakar" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sem Ben Yakar</span>
             </a>
-            <a href="/actor/5534581-sweder-de-sitter" class="cast-card">
+            <a href="/actor/5534581-sweder-de-sitter.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sweder de Sitter" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sweder de Sitter</span>
             </a>
-            <a href="/actor/3163661-chardonnay-rillen" class="cast-card">
+            <a href="/actor/3163661-chardonnay-rillen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sHcQ2fNXwckj2T1OjVaK811waYO.jpg" alt="Chardonnay Rillen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chardonnay Rillen</span>
             </a>
-            <a href="/actor/4292748-derron-lurvink" class="cast-card">
+            <a href="/actor/4292748-derron-lurvink.html" class="cast-card">
                 <img src="/favicon.ico" alt="Derron Lurvink" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Derron Lurvink</span>
             </a>
-            <a href="/actor/211005-bart-oomen" class="cast-card">
+            <a href="/actor/211005-bart-oomen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sR7rSeri0TUROk0LgFQW8nNN1Hk.jpg" alt="Bart Oomen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bart Oomen</span>
             </a>
-            <a href="/actor/2298726-emma-josten" class="cast-card">
+            <a href="/actor/2298726-emma-josten.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4ohkcX2j22xaPGhq7dmaDxevkTl.jpg" alt="Emma Josten" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emma Josten</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

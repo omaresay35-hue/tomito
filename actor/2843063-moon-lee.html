@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1005985-organ-child">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1005985-organ-child.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bqKind6aQbKnfqDEBRMHrqrQhmU.jpg" alt="Organ Child — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Organ Child</div></div>
-    </a>    <a class="card" href="/movie/1019828-a-place-called-silence">
+    </a>    <a class="card" href="/movie/1019828-a-place-called-silence.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/psLDOC1iq5BfMLYUiu0Lp2We5uD.jpg" alt="A Place Called Silence — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Place Called Silence</div></div>
-    </a>    <a class="card" href="/movie/1261250-i-am-the-secret-in-your-heart">
+    </a>    <a class="card" href="/movie/1261250-i-am-the-secret-in-your-heart.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9y77aA6rHE09gxzNzt79b7cyf3M.jpg" alt="I am the Secret in Your Heart — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">I am the Secret in Your Heart</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/241576-had-i-not-seen-the-sun">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/241576-had-i-not-seen-the-sun.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/teWYMIihcVEXfthyTczzsYv3QuP.jpg" alt="Had I Not Seen the Sun — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Had I Not Seen the Sun</div></div>
-    </a>    <a class="card" href="/tv/213220-urban-horror">
+    </a>    <a class="card" href="/tv/213220-urban-horror.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uygYZcrwPqonQsoLxxvnsZWGoDR.jpg" alt="Urban Horror — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Urban Horror</div></div>
-    </a>    <a class="card" href="/tv/202753-oh-no-here-comes-trouble">
+    </a>    <a class="card" href="/tv/202753-oh-no-here-comes-trouble.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vu5RBzB0V2UocKMnFRfoWCufMdt.jpg" alt="Oh No! Here Comes Trouble — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Oh No! Here Comes Trouble</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

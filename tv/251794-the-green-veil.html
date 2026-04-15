@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Green Veil</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5723-john-leguizamo" class="cast-card">
+            <a href="/actor/5723-john-leguizamo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kwYCdxTlDh9zauUCg4mp2XTCQTw.jpg" alt="John Leguizamo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Leguizamo</span>
             </a>
-            <a href="/actor/1422571-steven-boyer" class="cast-card">
+            <a href="/actor/1422571-steven-boyer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3rt0I7SWke8YqSmtzySypnlR2vf.jpg" alt="Steven Boyer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steven Boyer</span>
             </a>
-            <a href="/actor/657997-hani-furstenberg" class="cast-card">
+            <a href="/actor/657997-hani-furstenberg.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iAMfKbyQzUyfdUwHjTLTTEIfV4O.jpg" alt="Hani Furstenberg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hani Furstenberg</span>
             </a>
-            <a href="/actor/3280992-isabelle-poloner" class="cast-card">
+            <a href="/actor/3280992-isabelle-poloner.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bUuOmbLNvVL13PsvOxn9j3ceUrA.jpg" alt="Isabelle Poloner" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isabelle Poloner</span>
             </a>
-            <a href="/actor/40543-john-ortiz" class="cast-card">
+            <a href="/actor/40543-john-ortiz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tMDPYhpc9nqIJAK3vtMroEH9qho.jpg" alt="John Ortiz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Ortiz</span>
             </a>
-            <a href="/actor/65529-irene-bedard" class="cast-card">
+            <a href="/actor/65529-irene-bedard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4ChPEG4A77lq56ZthY7OJq0E1hw.jpg" alt="Irene Bedard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Irene Bedard</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,15 +73,15 @@ Although he began his nearly six-decade-long career performing in radio commerci
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/889-the-flintstones-in-viva-rock-vegas">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/889-the-flintstones-in-viva-rock-vegas.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qTcf60dqziF7xU2amxIIsvrnkTl.jpg" alt="The Flintstones in Viva Rock Vegas — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Flintstones in Viva Rock Vegas</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/217288-tom-and-jerry">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/217288-tom-and-jerry.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bCOxX1rjJOhn8jsW93ptOzWGip6.jpg" alt="Tom and Jerry — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Tom and Jerry</div></div>
-    </a>    <a class="card" href="/tv/10476-speed-buggy">
+    </a>    <a class="card" href="/tv/10476-speed-buggy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sDfNsTKBSDwgvXHSsrSfeXzRgAe.jpg" alt="Speed Buggy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Speed Buggy</div></div>
@@ -90,13 +90,6 @@ Although he began his nearly six-decade-long career performing in radio commerci
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

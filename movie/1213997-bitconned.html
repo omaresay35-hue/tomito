@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Bitconned</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4459160-ray-trapani" class="cast-card">
+            <a href="/actor/4459160-ray-trapani.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ray Trapani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ray Trapani</span>
             </a>
-            <a href="/actor/4459161-robert-farkas" class="cast-card">
+            <a href="/actor/4459161-robert-farkas.html" class="cast-card">
                 <img src="/favicon.ico" alt="Robert Farkas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robert Farkas</span>
             </a>
-            <a href="/actor/4459162-sohrab-sharma" class="cast-card">
+            <a href="/actor/4459162-sohrab-sharma.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sohrab Sharma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sohrab Sharma</span>
             </a>
-            <a href="/actor/4459163-sam-bankman-fried" class="cast-card">
+            <a href="/actor/4459163-sam-bankman-fried.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sam Bankman-Fried" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sam Bankman-Fried</span>
             </a>
-            <a href="/actor/3606898-damian-williams" class="cast-card">
+            <a href="/actor/3606898-damian-williams.html" class="cast-card">
                 <img src="/favicon.ico" alt="Damian Williams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Damian Williams</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

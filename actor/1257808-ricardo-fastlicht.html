@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1475189-family-disaster">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1475189-family-disaster.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/s47Wf9DxTNPslxIN4VYFJ1d1D2X.jpg" alt="Family Disaster — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Family Disaster</div></div>
-    </a>    <a class="card" href="/movie/1446943-the-dad-quest">
+    </a>    <a class="card" href="/movie/1446943-the-dad-quest.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5YxF7mW7vp6ETRYznnlkWIsauem.jpg" alt="The Dad Quest — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Dad Quest</div></div>
-    </a>    <a class="card" href="/movie/1360170-maria-im-dying">
+    </a>    <a class="card" href="/movie/1360170-maria-im-dying.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4BMzmf3vEAVdapBU59KQmux0V9I.jpg" alt="Maria, I'm Dying! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Maria, I'm Dying!</div></div>
-    </a>    <a class="card" href="/movie/1278099-the-honest-candidate">
+    </a>    <a class="card" href="/movie/1278099-the-honest-candidate.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hmV5HPkbQuzgPo11Xm70CMQV3iZ.jpg" alt="The Honest Candidate — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Honest Candidate</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/229590-el-principe-del-barrio">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/229590-el-principe-del-barrio.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fT2ijnNz7nG6o3ch84JrvOOeBiu.jpg" alt="El Principe del Barrio — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">El Principe del Barrio</div></div>
-    </a>    <a class="card" href="/tv/219476-perdona-nuestros-pecados">
+    </a>    <a class="card" href="/tv/219476-perdona-nuestros-pecados.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/AepsNWQiPAZ5kBq9K0BSae9Hp3s.jpg" alt="Perdona nuestros pecados — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Perdona nuestros pecados</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

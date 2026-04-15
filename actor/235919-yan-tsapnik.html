@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/732707-vasiliy">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/732707-vasiliy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yxM2GAQ5mDlHk5Vu56l4abdxzUk.jpg" alt="Vasiliy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Vasiliy</div></div>
-    </a>    <a class="card" href="/movie/1372317-baba-yaga-saves-the-new-year">
+    </a>    <a class="card" href="/movie/1372317-baba-yaga-saves-the-new-year.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/huIhNSjhvDz3B9Qr28RqdTyScbp.jpg" alt="Baba Yaga Saves the New Year — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Baba Yaga Saves the New Year</div></div>
-    </a>    <a class="card" href="/movie/251212-the-funeral-party">
+    </a>    <a class="card" href="/movie/251212-the-funeral-party.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vO0TS3AZScWB3pbqHrQOM8RYxb8.jpg" alt="The Funeral Party — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">2.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Funeral Party</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/247208-red-5">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/247208-red-5.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sG0fTbGXd48WDVeLZTZP5KQZTL9.jpg" alt="Red 5 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Red 5</div></div>
-    </a>    <a class="card" href="/tv/238700-frostbitten">
+    </a>    <a class="card" href="/tv/238700-frostbitten.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jUq1IWohBFb3O6MTOMIQ8hsN8wZ.jpg" alt="Frostbitten — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Frostbitten</div></div>
-    </a>    <a class="card" href="/tv/229564-bodyguards">
+    </a>    <a class="card" href="/tv/229564-bodyguards.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vDtHxGvYgklcMAqbSxVVLpbgLaC.jpg" alt="Bodyguards — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Bodyguards</div></div>
-    </a>    <a class="card" href="/tv/230918-werecop">
+    </a>    <a class="card" href="/tv/230918-werecop.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cOGVyCGF8vtUoznAi1K32hzOpMM.jpg" alt="Werecop — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Werecop</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

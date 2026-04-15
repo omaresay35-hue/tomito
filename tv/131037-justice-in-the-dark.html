@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>光·渊</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2027708-zhang-xincheng" class="cast-card">
+            <a href="/actor/2027708-zhang-xincheng.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mpCVPsEvnMUkmMd1IN1xsBJpk7r.jpg" alt="Zhang Xincheng" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Xincheng</span>
             </a>
-            <a href="/actor/1163648-fu-xinbo" class="cast-card">
+            <a href="/actor/1163648-fu-xinbo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fKLKE5rMpFtTzsIEATAPzuFyTmV.jpg" alt="Fu Xinbo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fu Xinbo</span>
             </a>
-            <a href="/actor/2300678-zhao-zhiwei" class="cast-card">
+            <a href="/actor/2300678-zhao-zhiwei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/alsxeaNeEtTLdw8psXaQsgfn4cg.jpg" alt="Zhao Zhiwei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhao Zhiwei</span>
             </a>
-            <a href="/actor/3037040-liu-yihong" class="cast-card">
+            <a href="/actor/3037040-liu-yihong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3laibBI6wa7ozK8ZwZQTRYB7Onb.jpg" alt="Liu Yihong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liu Yihong</span>
             </a>
-            <a href="/actor/3195874-xiao-yu" class="cast-card">
+            <a href="/actor/3195874-xiao-yu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y5p72XoOmZaIDcyD244kltrEIqE.jpg" alt="Xiao Yu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xiao Yu</span>
             </a>
-            <a href="/actor/2698070-geng-jiawei" class="cast-card">
+            <a href="/actor/2698070-geng-jiawei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3p3EBukpKrZSjc7br7x1PLdHJgA.jpg" alt="Geng Jiawei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Geng Jiawei</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

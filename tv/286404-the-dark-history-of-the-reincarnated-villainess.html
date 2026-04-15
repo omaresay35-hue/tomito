@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>転生悪女の黒歴史</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1643476-yoshino-aoyama" class="cast-card">
+            <a href="/actor/1643476-yoshino-aoyama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yPOprcT7tPKR3p79RMYtogTEXGr.jpg" alt="Yoshino Aoyama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoshino Aoyama</span>
             </a>
-            <a href="/actor/1161472-mao-ichimichi" class="cast-card">
+            <a href="/actor/1161472-mao-ichimichi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/a3cflYtrlFK0LXfWODgLDO7E7CP.jpg" alt="Mao Ichimichi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mao Ichimichi</span>
             </a>
-            <a href="/actor/2378092-shohei-komatsu" class="cast-card">
+            <a href="/actor/2378092-shohei-komatsu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/quFQzZn6p2IbKAmNoDs6woDCJOF.jpg" alt="Shohei Komatsu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shohei Komatsu</span>
             </a>
-            <a href="/actor/1319218-makoto-furukawa" class="cast-card">
+            <a href="/actor/1319218-makoto-furukawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/inLmBZhrqXeE9wlViyK28ocKJSw.jpg" alt="Makoto Furukawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Makoto Furukawa</span>
             </a>
-            <a href="/actor/1922635-shunichi-toki" class="cast-card">
+            <a href="/actor/1922635-shunichi-toki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3hauO9r1NEzgXxk8d2ed1p5dnxM.jpg" alt="Shunichi Toki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shunichi Toki</span>
             </a>
-            <a href="/actor/1860296-arthur-lounsbery" class="cast-card">
+            <a href="/actor/1860296-arthur-lounsbery.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tc5EjvKeM8VatNFXVCAQETE5Rm6.jpg" alt="Arthur Lounsbery" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arthur Lounsbery</span>
             </a>
-            <a href="/actor/1258552-atsushi-tamaru" class="cast-card">
+            <a href="/actor/1258552-atsushi-tamaru.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/coh8N88X0eBIHfPgHE9qFMrUMCD.jpg" alt="Atsushi Tamaru" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Atsushi Tamaru</span>
             </a>
-            <a href="/actor/1249235-tomoaki-maeno" class="cast-card">
+            <a href="/actor/1249235-tomoaki-maeno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w3lEuXSbEyzzNyO3YnxsF6wm2N5.jpg" alt="Tomoaki Maeno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomoaki Maeno</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

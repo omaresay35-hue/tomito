@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,19 +73,19 @@ Park Yong-woo's father was an engineering professor and his mother was a music t
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/246473-made-in-korea">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/246473-made-in-korea.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cyBg9FJ2AmTWEGktA43gMo4t0Vj.jpg" alt="Made in Korea — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Made in Korea</div></div>
-    </a>    <a class="card" href="/tv/232557-walking-on-thin-ice">
+    </a>    <a class="card" href="/tv/232557-walking-on-thin-ice.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/n1ayYBVKw63GxU9npXQtNjHY81C.jpg" alt="Walking on Thin Ice — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Walking on Thin Ice</div></div>
-    </a>    <a class="card" href="/tv/281967-hunter-with-a-scalpel">
+    </a>    <a class="card" href="/tv/281967-hunter-with-a-scalpel.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vgLhGiCIV59FuPYKb6BDFGMsmFx.jpg" alt="Hunter with a Scalpel — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Hunter with a Scalpel</div></div>
-    </a>    <a class="card" href="/tv/203698-agency">
+    </a>    <a class="card" href="/tv/203698-agency.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tl5BTpac5kGnw9luLDrKv3KGFcY.jpg" alt="Agency — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Agency</div></div>
@@ -94,13 +94,6 @@ Park Yong-woo's father was an engineering professor and his mother was a music t
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

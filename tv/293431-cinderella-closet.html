@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>シンデレラ クロゼット</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2189469-ichika-osaki" class="cast-card">
+            <a href="/actor/2189469-ichika-osaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2yPqsjF4ns9A5dx3oxdhDvmuBf6.jpg" alt="Ichika Osaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ichika Osaki</span>
             </a>
-            <a href="/actor/3949275-leo-matsumoto" class="cast-card">
+            <a href="/actor/3949275-leo-matsumoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jU1mSQSS7gLn7XhO3JLWArJfZn8.jpg" alt="Leo Matsumoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leo Matsumoto</span>
             </a>
-            <a href="/actor/4804340-karuma" class="cast-card">
+            <a href="/actor/4804340-karuma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aHxlSTiMc3D77138Eb0Rg44EqZX.jpg" alt="Karuma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karuma</span>
             </a>
-            <a href="/actor/5043497-yuna-mito" class="cast-card">
+            <a href="/actor/5043497-yuna-mito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d0UsZCjXlbgetKB4B6nMByCVwNA.jpg" alt="Yuna Mito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuna Mito</span>
             </a>
-            <a href="/actor/3142123-rintaro-hachimura" class="cast-card">
+            <a href="/actor/3142123-rintaro-hachimura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mROU3bRZOjiBQwiCJKOg3LrEzon.jpg" alt="Rintaro Hachimura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rintaro Hachimura</span>
             </a>
-            <a href="/actor/3371349-kei-yamazaki" class="cast-card">
+            <a href="/actor/3371349-kei-yamazaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/r4h2AOy7C7tsuNzELX7N6PGVww9.jpg" alt="Kei Yamazaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kei Yamazaki</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

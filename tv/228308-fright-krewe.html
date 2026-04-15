@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Fright Krewe</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1297318-sydney-mikayla" class="cast-card">
+            <a href="/actor/1297318-sydney-mikayla.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vql1jJ8YTIT1nXFy3nBMkxoiC30.jpg" alt="Sydney Mikayla" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sydney Mikayla</span>
             </a>
-            <a href="/actor/1783262-tim-johnson-jr" class="cast-card">
+            <a href="/actor/1783262-tim-johnson-jr.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bCgypX3WoJp3qj7E7YGeLlQ7Dcc.jpg" alt="Tim Johnson Jr." loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tim Johnson Jr.</span>
             </a>
-            <a href="/actor/2577256-terrence-little-gardenhigh" class="cast-card">
+            <a href="/actor/2577256-terrence-little-gardenhigh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lVTu2s0PqFR9ln71qvZV6OS7SgT.jpg" alt="Terrence Little Gardenhigh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Terrence Little Gardenhigh</span>
             </a>
-            <a href="/actor/3264370-grace-lu" class="cast-card">
+            <a href="/actor/3264370-grace-lu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iRHUHXADcEgUBAAjixnVnAH6MLt.jpg" alt="Grace Lu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Grace Lu</span>
             </a>
-            <a href="/actor/1694082-chester-rushing" class="cast-card">
+            <a href="/actor/1694082-chester-rushing.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/34YpCnyxCgxlq5PYJqiro7losWy.jpg" alt="Chester Rushing" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chester Rushing</span>
             </a>
-            <a href="/actor/1532277-jacques-colimon" class="cast-card">
+            <a href="/actor/1532277-jacques-colimon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uZchGUV6IcM7HI0sYmTbJMqbLnx.jpg" alt="Jacques Colimon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jacques Colimon</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Un Amore</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/65571-stefano-accorsi" class="cast-card">
+            <a href="/actor/65571-stefano-accorsi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v0juBdStV3KECZL1nEL7AkbWQ0j.jpg" alt="Stefano Accorsi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stefano Accorsi</span>
             </a>
-            <a href="/actor/126983-micaela-ramazzotti" class="cast-card">
+            <a href="/actor/126983-micaela-ramazzotti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6b3BGvkMFU5A2e4cqp6GmFzZkSL.jpg" alt="Micaela Ramazzotti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Micaela Ramazzotti</span>
             </a>
-            <a href="/actor/15138-ottavia-piccolo" class="cast-card">
+            <a href="/actor/15138-ottavia-piccolo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/opG0RW7PuAdDrdXmrYMxwHhrSNs.jpg" alt="Ottavia Piccolo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ottavia Piccolo</span>
             </a>
-            <a href="/actor/1074529-alessandro-tedeschi" class="cast-card">
+            <a href="/actor/1074529-alessandro-tedeschi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pLIMMEoa10hbvlyfcMUeZS6AoKn.jpg" alt="Alessandro Tedeschi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alessandro Tedeschi</span>
             </a>
-            <a href="/actor/1117274-ivan-zerbinati" class="cast-card">
+            <a href="/actor/1117274-ivan-zerbinati.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hz5PBh0ZLQHAli1XSqsCMfrxiid.jpg" alt="Ivan Zerbinati" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ivan Zerbinati</span>
             </a>
-            <a href="/actor/129622-camille-dugay-comencini" class="cast-card">
+            <a href="/actor/129622-camille-dugay-comencini.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sbrqWhWcVGvBx6b1QUPAck3PzZz.jpg" alt="Camille Dugay Comencini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Camille Dugay Comencini</span>
             </a>
-            <a href="/actor/5035476-beatrice-fiorentini" class="cast-card">
+            <a href="/actor/5035476-beatrice-fiorentini.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4VloZw9t2JUpYhbDLt431Uzx5kC.jpg" alt="Beatrice Fiorentini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Beatrice Fiorentini</span>
             </a>
-            <a href="/actor/2558496-federico-pasquali" class="cast-card">
+            <a href="/actor/2558496-federico-pasquali.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pm3KPFxieof8NFvntsU3L6zBGGA.jpg" alt="Federico Pasquali" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Federico Pasquali</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

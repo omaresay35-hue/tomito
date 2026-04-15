@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Manor of Darkness</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2021794-kim-spearman" class="cast-card">
+            <a href="/actor/2021794-kim-spearman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7YUgpDUG0IKB7Ap6FkuWbvNXuVR.jpg" alt="Kim Spearman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Spearman</span>
             </a>
-            <a href="/actor/2875703-louis-james" class="cast-card">
+            <a href="/actor/2875703-louis-james.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6xkX0htAoWUntshEUlHImfVwGZD.jpg" alt="Louis James" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louis James</span>
             </a>
-            <a href="/actor/1565408-sarah-alexandra-marks" class="cast-card">
+            <a href="/actor/1565408-sarah-alexandra-marks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lWqcwlKApBGzUvSbp4azFi1gbvc.jpg" alt="Sarah Alexandra Marks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sarah Alexandra Marks</span>
             </a>
-            <a href="/actor/3111047-rui-shang" class="cast-card">
+            <a href="/actor/3111047-rui-shang.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vOR273NxXtymxIQ6fZORLgyo7yb.jpg" alt="Rui Shang" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rui Shang</span>
             </a>
-            <a href="/actor/3161106-stuart-wolfe-murray" class="cast-card">
+            <a href="/actor/3161106-stuart-wolfe-murray.html" class="cast-card">
                 <img src="/favicon.ico" alt="Stuart Wolfe-Murray" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stuart Wolfe-Murray</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>El elegido</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4146210-bobby-luhnow" class="cast-card">
+            <a href="/actor/4146210-bobby-luhnow.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kEjERwOVuwxwtOVpOsLUEtHsCAp.jpg" alt="Bobby Luhnow" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bobby Luhnow</span>
             </a>
-            <a href="/actor/141687-dianna-agron" class="cast-card">
+            <a href="/actor/141687-dianna-agron.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9BVahBiKoMKndboGFYQYtEd3RM4.jpg" alt="Dianna Agron" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dianna Agron</span>
             </a>
-            <a href="/actor/4214877-lilith-curiel" class="cast-card">
+            <a href="/actor/4214877-lilith-curiel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/poimeshzntuRSiggrBV7w9sXVRD.jpg" alt="Lilith Curiel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lilith Curiel</span>
             </a>
-            <a href="/actor/4214879-juanito-anguamea" class="cast-card">
+            <a href="/actor/4214879-juanito-anguamea.html" class="cast-card">
                 <img src="/favicon.ico" alt="Juanito Anguamea" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juanito Anguamea</span>
             </a>
-            <a href="/actor/4214882-jorge-javier-arballo" class="cast-card">
+            <a href="/actor/4214882-jorge-javier-arballo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jorge Javier Arballo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jorge Javier Arballo</span>
             </a>
-            <a href="/actor/4214884-alberto-pérez-jácome" class="cast-card">
+            <a href="/actor/4214884-alberto-pérez-jácome.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alberto Pérez-Jácome" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alberto Pérez-Jácome</span>
             </a>
-            <a href="/actor/4214885-patricio-serna-meza" class="cast-card">
+            <a href="/actor/4214885-patricio-serna-meza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2zSF9VQyGfl2vy6LlgdDtBkTQfA.jpg" alt="Patricio Serna Meza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Patricio Serna Meza</span>
             </a>
-            <a href="/actor/4218212-elvis-zamora" class="cast-card">
+            <a href="/actor/4218212-elvis-zamora.html" class="cast-card">
                 <img src="/favicon.ico" alt="Elvis Zamora" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elvis Zamora</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

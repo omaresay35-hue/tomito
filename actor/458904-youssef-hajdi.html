@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,19 +75,19 @@ His first film role was in 13 m² by Barthélémy Grossmann, which earned him a 
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1261605-princes-of-saint-tropez">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1261605-princes-of-saint-tropez.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bZTLMA4b9hkMp2DvDt2sTRqngaJ.jpg" alt="Princes of Saint-Tropez — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">3.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Princes of Saint-Tropez</div></div>
-    </a>    <a class="card" href="/movie/1318856-an-endless-wedding">
+    </a>    <a class="card" href="/movie/1318856-an-endless-wedding.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uvygZlicNXBIpklnLuAbgwkMMSL.jpg" alt="An Endless Wedding — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">An Endless Wedding</div></div>
-    </a>    <a class="card" href="/movie/1191666-the-rookie-guide">
+    </a>    <a class="card" href="/movie/1191666-the-rookie-guide.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fSxrzckEOWAFBBPwt9X4AHfVEA7.jpg" alt="The Rookie Guide — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Rookie Guide</div></div>
-    </a>    <a class="card" href="/movie/1312378-camille-chamoux-chamouxland">
+    </a>    <a class="card" href="/movie/1312378-camille-chamoux-chamouxland.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rEDndvUofXIWpiBwZlg5ihAgpHN.jpg" alt="Camille Chamoux - Chamouxland — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Camille Chamoux - Chamouxland</div></div>
@@ -96,13 +96,6 @@ His first film role was in 13 m² by Barthélémy Grossmann, which earned him a 
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Happy's Place</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/21986-reba-mcentire" class="cast-card">
+            <a href="/actor/21986-reba-mcentire.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q4T5XDHzVepqQi4NoqI9GKJcD3s.jpg" alt="Reba McEntire" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reba McEntire</span>
             </a>
-            <a href="/actor/2381442-belissa-escobedo" class="cast-card">
+            <a href="/actor/2381442-belissa-escobedo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/584tOsPVFbzq7GJxET5diOGZ8p0.jpg" alt="Belissa Escobedo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Belissa Escobedo</span>
             </a>
-            <a href="/actor/145816-melissa-peterman" class="cast-card">
+            <a href="/actor/145816-melissa-peterman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dyWRlAOJnSGzRwhVVfMIkYC4cp7.jpg" alt="Melissa Peterman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Melissa Peterman</span>
             </a>
-            <a href="/actor/16937-rex-linn" class="cast-card">
+            <a href="/actor/16937-rex-linn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dY8x6OrmS0dBdogxeF2QALrCvpI.jpg" alt="Rex Linn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rex Linn</span>
             </a>
-            <a href="/actor/3412654-pablo-castelblanco" class="cast-card">
+            <a href="/actor/3412654-pablo-castelblanco.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/10RmdpGNsEF51OAn7ZZS1CgnZyl.jpg" alt="Pablo Castelblanco" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pablo Castelblanco</span>
             </a>
-            <a href="/actor/1380163-tokala-black-elk" class="cast-card">
+            <a href="/actor/1380163-tokala-black-elk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fZ4wmUVQdyfRCHpcWKeAyyvdc9g.jpg" alt="Tokala Black Elk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tokala Black Elk</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

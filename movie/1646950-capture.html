@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Capture</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3107179-kaitlyn-lunardi" class="cast-card">
+            <a href="/actor/3107179-kaitlyn-lunardi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4J0JcAe2TQ7utEqlt7Olw3WqBU3.jpg" alt="Kaitlyn Lunardi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaitlyn Lunardi</span>
             </a>
-            <a href="/actor/2730819-cedric-gegel" class="cast-card">
+            <a href="/actor/2730819-cedric-gegel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1MNXDrWiTnnH9Kw44gkMNl0llPM.jpg" alt="Cedric Gegel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cedric Gegel</span>
             </a>
-            <a href="/actor/2502875-chris-cimperman" class="cast-card">
+            <a href="/actor/2502875-chris-cimperman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kIZXU6m3MI3Xd2XcqegL3Dmri9C.jpg" alt="Chris Cimperman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Cimperman</span>
             </a>
-            <a href="/actor/2430984-grant-schumacher" class="cast-card">
+            <a href="/actor/2430984-grant-schumacher.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gPN6DIZ8rbp1rIJd2sRmXwOS7x8.jpg" alt="Grant Schumacher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Grant Schumacher</span>
             </a>
-            <a href="/actor/4000615-leah-eckardt" class="cast-card">
+            <a href="/actor/4000615-leah-eckardt.html" class="cast-card">
                 <img src="/favicon.ico" alt="Leah Eckardt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leah Eckardt</span>
             </a>
-            <a href="/actor/1411925-lejon-woods" class="cast-card">
+            <a href="/actor/1411925-lejon-woods.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/UCGgaPOfwQjYXkdTq7mmtZdde6.jpg" alt="LeJon Woods" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>LeJon Woods</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

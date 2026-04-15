@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>يو يو هاكوشو</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1388624-takumi-kitamura" class="cast-card">
+            <a href="/actor/1388624-takumi-kitamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dbjTrQJaEDkoMX0h3QSHkad9A3b.jpg" alt="Takumi Kitamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takumi Kitamura</span>
             </a>
-            <a href="/actor/1684342-shuhei-uesugi" class="cast-card">
+            <a href="/actor/1684342-shuhei-uesugi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tpK9KBUhSqEJ6yOo1xvaZjDgha.jpg" alt="Shuhei Uesugi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shuhei Uesugi</span>
             </a>
-            <a href="/actor/1320678-jun-shison" class="cast-card">
+            <a href="/actor/1320678-jun-shison.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lBPrYOjPIaeLVr1wSTGXpZ0R1J9.jpg" alt="Jun Shison" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jun Shison</span>
             </a>
-            <a href="/actor/114725-kanata-hongo" class="cast-card">
+            <a href="/actor/114725-kanata-hongo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5BUmrqD3nbER1XV3ASSwFZitwwv.jpg" alt="Kanata Hongo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kanata Hongo</span>
             </a>
-            <a href="/actor/1480297-keita-machida" class="cast-card">
+            <a href="/actor/1480297-keita-machida.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fbc42SNQgPSbx3jtv2Z5Vsrt6MO.jpg" alt="Keita Machida" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keita Machida</span>
             </a>
-            <a href="/actor/2187869-kotone-furukawa" class="cast-card">
+            <a href="/actor/2187869-kotone-furukawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vcW4qq52yAWuIwKlHw3s5y2HEnI.jpg" alt="Kotone Furukawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kotone Furukawa</span>
             </a>
-            <a href="/actor/1871927-sei-shiraishi" class="cast-card">
+            <a href="/actor/1871927-sei-shiraishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ea06nmcTomfnkSaiueOFrS6HqP7.jpg" alt="Sei Shiraishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sei Shiraishi</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

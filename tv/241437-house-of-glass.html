@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Haus aus Glas</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1041604-stefanie-reinsperger" class="cast-card">
+            <a href="/actor/1041604-stefanie-reinsperger.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rr9ye1qVpZgnwSaAk4DhzkHcQcw.jpg" alt="Stefanie Reinsperger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stefanie Reinsperger</span>
             </a>
-            <a href="/actor/1365860-morgane-ferru" class="cast-card">
+            <a href="/actor/1365860-morgane-ferru.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jUMQ6XrZLJN4qMmlDW5ilKxHnbZ.jpg" alt="Morgane Ferru" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Morgane Ferru</span>
             </a>
-            <a href="/actor/1186880-merlin-rose" class="cast-card">
+            <a href="/actor/1186880-merlin-rose.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/puU8cte0fzKBkOhLBToQuFw4b62.jpg" alt="Merlin Rose" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Merlin Rose</span>
             </a>
-            <a href="/actor/1464155-sarah-mahita" class="cast-card">
+            <a href="/actor/1464155-sarah-mahita.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/71Y2twllYNe2byWiA3hWToGHR8u.jpg" alt="Sarah Mahita" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sarah Mahita</span>
             </a>
-            <a href="/actor/36709-götz-schubert" class="cast-card">
+            <a href="/actor/36709-götz-schubert.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rHeZ6L1XkBDHSdQS4Ilj8N0KQjg.jpg" alt="Götz Schubert" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Götz Schubert</span>
             </a>
-            <a href="/actor/8797-juliane-köhler" class="cast-card">
+            <a href="/actor/8797-juliane-köhler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v2eHSiEdAhu2mJWxEwa3Sqxtgg1.jpg" alt="Juliane Köhler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juliane Köhler</span>
             </a>
-            <a href="/actor/223768-aram-arami" class="cast-card">
+            <a href="/actor/223768-aram-arami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hDIDcmbIi7kqeiNet2QVmMJ45qz.jpg" alt="Aram Arami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aram Arami</span>
             </a>
-            <a href="/actor/3032039-lara-chedraoui" class="cast-card">
+            <a href="/actor/3032039-lara-chedraoui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yBVdbZglw2r81YCyAE8UFZNSU5W.jpg" alt="Lara Chedraoui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lara Chedraoui</span>
             </a>
-            <a href="/actor/2844329-carl-anton-koch" class="cast-card">
+            <a href="/actor/2844329-carl-anton-koch.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xIYBsg5qD4yOVD3qGPyZvzJjsz4.jpg" alt="Carl Anton Koch" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carl Anton Koch</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

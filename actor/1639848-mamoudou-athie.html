@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1325734-the-drama">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1325734-the-drama.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ikcNOWB6Qo1ER1H1BJL6Vf0W22s.jpg" alt="The Drama — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Drama</div></div>
-    </a>    <a class="card" href="/movie/938150-wardriver">
+    </a>    <a class="card" href="/movie/938150-wardriver.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ipTXhWCJgeg5RN0CpmFZYDzOzQi.jpg" alt="Wardriver — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wardriver</div></div>
-    </a>    <a class="card" href="/movie/1355755-an-almost-christmas-story">
+    </a>    <a class="card" href="/movie/1355755-an-almost-christmas-story.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mQC3nIJ9DQ74t9vFzUjqP8eohgX.jpg" alt="An Almost Christmas Story — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">An Almost Christmas Story</div></div>
-    </a>    <a class="card" href="/movie/1029955-kinds-of-kindness">
+    </a>    <a class="card" href="/movie/1029955-kinds-of-kindness.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/50lPmjIpDs8gKfgK7fPIeKzpllh.jpg" alt="Kinds of Kindness — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kinds of Kindness</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/246575-laid">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/246575-laid.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3I7Hi6cZFgQqxmq4KipRBzvmay9.jpg" alt="Laid — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Laid</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

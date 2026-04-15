@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Alphamännchen</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/66062-tom-beck" class="cast-card">
+            <a href="/actor/66062-tom-beck.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pndqeDdwxLCHOscrIPzbMOQcFw6.jpg" alt="Tom Beck" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tom Beck</span>
             </a>
-            <a href="/actor/1411793-moritz-führmann" class="cast-card">
+            <a href="/actor/1411793-moritz-führmann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9gbkUpDWNzhKWT9VRWAYpFYJ23v.jpg" alt="Moritz Führmann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Moritz Führmann</span>
             </a>
-            <a href="/actor/1500592-serkan-kaya" class="cast-card">
+            <a href="/actor/1500592-serkan-kaya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eh1jNuwjcZYFeUtNrSePr9ae0S2.jpg" alt="Serkan Kaya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Serkan Kaya</span>
             </a>
-            <a href="/actor/32425-david-rott" class="cast-card">
+            <a href="/actor/32425-david-rott.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qMTp2S7kxrd6UUW9sULdBFt70m4.jpg" alt="David Rott" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Rott</span>
             </a>
-            <a href="/actor/1203440-mona-pirzad" class="cast-card">
+            <a href="/actor/1203440-mona-pirzad.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2CCQEi414iefggE9141F6m6bTK6.jpg" alt="Mona Pirzad" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mona Pirzad</span>
             </a>
-            <a href="/actor/50019-franziska-machens" class="cast-card">
+            <a href="/actor/50019-franziska-machens.html" class="cast-card">
                 <img src="/favicon.ico" alt="Franziska Machens" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Franziska Machens</span>
             </a>
-            <a href="/actor/2597330-valentina-leone" class="cast-card">
+            <a href="/actor/2597330-valentina-leone.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9PswxyXN2srfC2g8JIH2KvlSvO.jpg" alt="Valentina Leone" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Valentina Leone</span>
             </a>
-            <a href="/actor/586664-marleen-lohse" class="cast-card">
+            <a href="/actor/586664-marleen-lohse.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qBlETsMdgZTSyWhy61AJ3ia4NTz.jpg" alt="Marleen Lohse" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marleen Lohse</span>
             </a>
-            <a href="/actor/1963586-jaela-probst" class="cast-card">
+            <a href="/actor/1963586-jaela-probst.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jGwADIjAcRVXcejw5t70wlEBS57.jpg" alt="Jaela Probst" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jaela Probst</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,35 +75,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4624302-suzanne-pereira" class="cast-card">
+            <a href="/actor/4624302-suzanne-pereira.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dfMrmq5zFTh9DLQmMaW9cTiEWUO.jpg" alt="Suzanne Pereira" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Suzanne Pereira</span>
             </a>
-            <a href="/actor/1743134-chris-reid" class="cast-card">
+            <a href="/actor/1743134-chris-reid.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yvo81AU4zUKbcNtWEQjaSTvLTPS.jpg" alt="Chris Reid" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Reid</span>
             </a>
-            <a href="/actor/5152104-brando-white" class="cast-card">
+            <a href="/actor/5152104-brando-white.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uM7BPdhXjs7GzPSLr6qr01m7ssJ.jpg" alt="Brando White" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brando White</span>
             </a>
-            <a href="/actor/4624303-takoda" class="cast-card">
+            <a href="/actor/4624303-takoda.html" class="cast-card">
                 <img src="/favicon.ico" alt="Takoda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takoda</span>
             </a>
-            <a href="/actor/2864788-alireza-mirmontazeri" class="cast-card">
+            <a href="/actor/2864788-alireza-mirmontazeri.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alireza Mirmontazeri" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alireza Mirmontazeri</span>
             </a>
-            <a href="/actor/553762-jill-adler" class="cast-card">
+            <a href="/actor/553762-jill-adler.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jcaiWuIFVFftcnIbl9yL2lVuPEB.jpg" alt="Jill Adler" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jill Adler</span>
             </a>
-            <a href="/actor/2511504-ischa-bee" class="cast-card">
+            <a href="/actor/2511504-ischa-bee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6BKVg8u5o1jQUk8xbB0iNK1GZRp.jpg" alt="Ischa Bee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ischa Bee</span>
             </a>
-            <a href="/actor/4624306-zoey-giovanna" class="cast-card">
+            <a href="/actor/4624306-zoey-giovanna.html" class="cast-card">
                 <img src="/favicon.ico" alt="Zoey Giovanna" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zoey Giovanna</span>
             </a></div></section>
@@ -111,13 +111,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

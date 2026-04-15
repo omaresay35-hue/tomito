@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Konflikti</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1426718-sara-soulié" class="cast-card">
+            <a href="/actor/1426718-sara-soulié.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hIMtIq5k44mCOrLRHCEDZ8XKu52.jpg" alt="Sara Soulié" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sara Soulié</span>
             </a>
-            <a href="/actor/11263-peter-franzén" class="cast-card">
+            <a href="/actor/11263-peter-franzén.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zJ8JV2TefLQIT5DzMinl5eoK5YH.jpg" alt="Peter Franzén" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Peter Franzén</span>
             </a>
-            <a href="/actor/125799-pirkka-pekka-petelius" class="cast-card">
+            <a href="/actor/125799-pirkka-pekka-petelius.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aIuPxrg2nOcZcKAkLGEDsWBusVZ.jpg" alt="Pirkka-Pekka Petelius" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pirkka-Pekka Petelius</span>
             </a>
-            <a href="/actor/2748390-julia-korpinen" class="cast-card">
+            <a href="/actor/2748390-julia-korpinen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tZFehBdzPsnR36NBpJ8XoKgvv59.jpg" alt="Julia Korpinen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Julia Korpinen</span>
             </a>
-            <a href="/actor/3377709-salah-isse-mohamed" class="cast-card">
+            <a href="/actor/3377709-salah-isse-mohamed.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kdgQt6fp3Snuf0n21ynjDZ58TpI.jpg" alt="Salah Isse Mohamed" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Salah Isse Mohamed</span>
             </a>
-            <a href="/actor/5185475-charles-gibbons" class="cast-card">
+            <a href="/actor/5185475-charles-gibbons.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bNKPPtyLCLoW47MgzwY4XyTFZft.jpg" alt="Charles Gibbons" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Charles Gibbons</span>
             </a>
-            <a href="/actor/2423488-elias-keränen" class="cast-card">
+            <a href="/actor/2423488-elias-keränen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uUJjf9k9LeQoQ3xFZhk057wr09Y.jpg" alt="Elias Keränen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elias Keränen</span>
             </a>
-            <a href="/actor/1803207-nadia-forde" class="cast-card">
+            <a href="/actor/1803207-nadia-forde.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qwAiNj5KytfdpWxChNmr1cbvt3M.jpg" alt="Nadia Forde" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nadia Forde</span>
             </a>
-            <a href="/actor/3714453-luke-sharland" class="cast-card">
+            <a href="/actor/3714453-luke-sharland.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vOQPQGdmdtpRmFV9UzyigwB8KqN.jpg" alt="Luke Sharland" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luke Sharland</span>
             </a>
-            <a href="/actor/1288730-moe-dunford" class="cast-card">
+            <a href="/actor/1288730-moe-dunford.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tJ64S9CzXXuVQQo6jpxLool6okw.jpg" alt="Moe Dunford" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Moe Dunford</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>حارس المجمّع</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3120886-piotr-witkowski" class="cast-card">
+            <a href="/actor/3120886-piotr-witkowski.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wOc1zX0nlfuZaZasX0Bb9Lq90IJ.jpg" alt="Piotr Witkowski" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Piotr Witkowski</span>
             </a>
-            <a href="/actor/1522835-konrad-eleryk" class="cast-card">
+            <a href="/actor/1522835-konrad-eleryk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q1pfFnOYGUysIpFES0MHrVnDe7S.jpg" alt="Konrad Eleryk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Konrad Eleryk</span>
             </a>
-            <a href="/actor/1175170-marcin-kowalczyk" class="cast-card">
+            <a href="/actor/1175170-marcin-kowalczyk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1u2WBIluwaiUkHJ8ocH7vU2L2xu.jpg" alt="Marcin Kowalczyk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marcin Kowalczyk</span>
             </a>
-            <a href="/actor/1689028-aleksandra-adamska" class="cast-card">
+            <a href="/actor/1689028-aleksandra-adamska.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eLvksihxtlHkNYyRzddXCBVuVgR.jpg" alt="Aleksandra Adamska" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aleksandra Adamska</span>
             </a>
-            <a href="/actor/1974908-anastasiia-pustovit" class="cast-card">
+            <a href="/actor/1974908-anastasiia-pustovit.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q09MY54sQrPMxWUEsY2ATIwdWmI.jpg" alt="Anastasiia Pustovit" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anastasiia Pustovit</span>
             </a>
-            <a href="/actor/107636-cezary-żak" class="cast-card">
+            <a href="/actor/107636-cezary-żak.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/futKJUJvkgd2NZC1rFsojmhK2or.jpg" alt="Cezary Żak" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cezary Żak</span>
             </a>
-            <a href="/actor/2305243-maja-szopa" class="cast-card">
+            <a href="/actor/2305243-maja-szopa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qBEYy0LtRMl99ox3PBXNJ3Yyb53.jpg" alt="Maja Szopa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maja Szopa</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

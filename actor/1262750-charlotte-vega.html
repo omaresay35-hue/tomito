@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1465038-the-last-gunfight">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1465038-the-last-gunfight.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7ElOux95K8mfK1kuxK6K4A8MulM.jpg" alt="The Last GunFight — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Last GunFight</div></div>
-    </a>    <a class="card" href="/movie/1315986-man-with-no-past">
+    </a>    <a class="card" href="/movie/1315986-man-with-no-past.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yLkxfnWMeI2cT2iePD0G8E3l1Ov.jpg" alt="Man with No Past — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Man with No Past</div></div>
-    </a>    <a class="card" href="/movie/1379587-utopia">
+    </a>    <a class="card" href="/movie/1379587-utopia.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yef0tY1Nw3BX8PJTfBLieqHj5Hw.jpg" alt="Utopia — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Utopia</div></div>
-    </a>    <a class="card" href="/movie/261102-the-misfits-club">
+    </a>    <a class="card" href="/movie/261102-the-misfits-club.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8FHk0h9sgPoZ9VowdD8dSWRqoZ8.jpg" alt="The Misfits Club — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Misfits Club</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/225729-the-castaways">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/225729-the-castaways.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/x4zWhedIoVJ2WvSKKUuUE3JDG4k.jpg" alt="The Castaways — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Castaways</div></div>
-    </a>    <a class="card" href="/tv/227318-who-is-erin-carter">
+    </a>    <a class="card" href="/tv/227318-who-is-erin-carter.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1FCsjYtEtuine1TUssIFjy6vmJW.jpg" alt="Who Is Erin Carter? — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Who Is Erin Carter?</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

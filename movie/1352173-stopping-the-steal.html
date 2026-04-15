@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,51 +75,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4194040-william-barr" class="cast-card">
+            <a href="/actor/4194040-william-barr.html" class="cast-card">
                 <img src="/favicon.ico" alt="William Barr" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>William Barr</span>
             </a>
-            <a href="/actor/4923443-marc-short" class="cast-card">
+            <a href="/actor/4923443-marc-short.html" class="cast-card">
                 <img src="/favicon.ico" alt="Marc Short" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marc Short</span>
             </a>
-            <a href="/actor/3258505-alyssa-farah-griffin" class="cast-card">
+            <a href="/actor/3258505-alyssa-farah-griffin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alyssa Farah Griffin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alyssa Farah Griffin</span>
             </a>
-            <a href="/actor/4923444-greg-jacob" class="cast-card">
+            <a href="/actor/4923444-greg-jacob.html" class="cast-card">
                 <img src="/favicon.ico" alt="Greg Jacob" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Greg Jacob</span>
             </a>
-            <a href="/actor/4923446-clint-hickman" class="cast-card">
+            <a href="/actor/4923446-clint-hickman.html" class="cast-card">
                 <img src="/favicon.ico" alt="Clint Hickman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Clint Hickman</span>
             </a>
-            <a href="/actor/4923449-steve-gallardo" class="cast-card">
+            <a href="/actor/4923449-steve-gallardo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Steve Gallardo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steve Gallardo</span>
             </a>
-            <a href="/actor/3513648-bill-gates" class="cast-card">
+            <a href="/actor/3513648-bill-gates.html" class="cast-card">
                 <img src="/favicon.ico" alt="Bill Gates" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bill Gates</span>
             </a>
-            <a href="/actor/4923453-adrian-fontes" class="cast-card">
+            <a href="/actor/4923453-adrian-fontes.html" class="cast-card">
                 <img src="/favicon.ico" alt="Adrian Fontes" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adrian Fontes</span>
             </a>
-            <a href="/actor/1932751-stephanie-grisham" class="cast-card">
+            <a href="/actor/1932751-stephanie-grisham.html" class="cast-card">
                 <img src="/favicon.ico" alt="Stephanie Grisham" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephanie Grisham</span>
             </a>
-            <a href="/actor/4923455-mark-brnovich" class="cast-card">
+            <a href="/actor/4923455-mark-brnovich.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mark Brnovich" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Brnovich</span>
             </a>
-            <a href="/actor/3513647-mark-finchem" class="cast-card">
+            <a href="/actor/3513647-mark-finchem.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hd1iFzfGMVjbHsM5G9cSyl81OEV.jpg" alt="Mark Finchem" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Finchem</span>
             </a>
-            <a href="/actor/4923456-rusty-bowers" class="cast-card">
+            <a href="/actor/4923456-rusty-bowers.html" class="cast-card">
                 <img src="/favicon.ico" alt="Rusty Bowers" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rusty Bowers</span>
             </a></div></section>
@@ -127,13 +127,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

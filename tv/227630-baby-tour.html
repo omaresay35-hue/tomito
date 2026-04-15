@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Бэби-тур</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3240173-anastasiya-popova" class="cast-card">
+            <a href="/actor/3240173-anastasiya-popova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/boEv5EXxZHvmXLFgyYQUAstAtRH.jpg" alt="Anastasiya Popova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anastasiya Popova</span>
             </a>
-            <a href="/actor/1142249-anna-kotova" class="cast-card">
+            <a href="/actor/1142249-anna-kotova.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i13TLKMUM9UCAabyJ02fnP2o1vh.jpg" alt="Anna Kotova" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anna Kotova</span>
             </a>
-            <a href="/actor/240350-angelina-mirimskaya" class="cast-card">
+            <a href="/actor/240350-angelina-mirimskaya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A7SE1JA6jrRbxneD2s1tpZbYUP.jpg" alt="Angelina Mirimskaya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Angelina Mirimskaya</span>
             </a>
-            <a href="/actor/4185220-мария-осипова" class="cast-card">
+            <a href="/actor/4185220-мария-осипова.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/E2cm8fvN5XQWPm7Y4nUddCZq6A.jpg" alt="Мария Осипова" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Мария Осипова</span>
             </a>
-            <a href="/actor/4185221-evgeny-shumeiko" class="cast-card">
+            <a href="/actor/4185221-evgeny-shumeiko.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kXqCEBnMzkcGqAL2a7QORlbvROM.jpg" alt="Evgeny Shumeiko" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Evgeny Shumeiko</span>
             </a>
-            <a href="/actor/1112012-dmitriy-kulichkov" class="cast-card">
+            <a href="/actor/1112012-dmitriy-kulichkov.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fpzttqO2qzzR0uh2n3SpwG9yxbJ.jpg" alt="Dmitriy Kulichkov" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dmitriy Kulichkov</span>
             </a>
-            <a href="/actor/2039612-vitaly-daushev" class="cast-card">
+            <a href="/actor/2039612-vitaly-daushev.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lR8QphX9QPDrmunfnKpKNItycy9.jpg" alt="Vitaly Daushev" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vitaly Daushev</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

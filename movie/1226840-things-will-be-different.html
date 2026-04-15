@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Things Will Be Different</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1216908-adam-david-thompson" class="cast-card">
+            <a href="/actor/1216908-adam-david-thompson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9Dr7qJ5wCzTp7KpA83lsO9YyBPh.jpg" alt="Adam David Thompson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adam David Thompson</span>
             </a>
-            <a href="/actor/2259152-riley-dandy" class="cast-card">
+            <a href="/actor/2259152-riley-dandy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/quhAWkEcdiG7fJgxJxlqTKkfbFH.jpg" alt="Riley Dandy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Riley Dandy</span>
             </a>
-            <a href="/actor/3393198-chloe-skoczen" class="cast-card">
+            <a href="/actor/3393198-chloe-skoczen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tBZP3jdUHV1LLPjhqsxPqDSdusX.jpg" alt="Chloe Skoczen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chloe Skoczen</span>
             </a>
-            <a href="/actor/1074560-justin-benson" class="cast-card">
+            <a href="/actor/1074560-justin-benson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mch4MNcOxVsej3O5ifugkZTFzWI.jpg" alt="Justin Benson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Justin Benson</span>
             </a>
-            <a href="/actor/33397-sarah-bolger" class="cast-card">
+            <a href="/actor/33397-sarah-bolger.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A3K2l5kkqTMQHtAkctzICqtbZMY.jpg" alt="Sarah Bolger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sarah Bolger</span>
             </a>
-            <a href="/actor/4937801-jori-lynn-felker" class="cast-card">
+            <a href="/actor/4937801-jori-lynn-felker.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jori Lynn Felker" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jori Lynn Felker</span>
             </a>
-            <a href="/actor/583479-aaron-moorhead" class="cast-card">
+            <a href="/actor/583479-aaron-moorhead.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/plvZ27ya8yxyyqSCHbwBMjFfJwS.jpg" alt="Aaron Moorhead" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aaron Moorhead</span>
             </a>
-            <a href="/actor/2088521-david-lawson-jr" class="cast-card">
+            <a href="/actor/2088521-david-lawson-jr.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/okia5rsM7XFZLPZcOHVQg9snz76.jpg" alt="David Lawson Jr." loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Lawson Jr.</span>
             </a>
-            <a href="/actor/5346474-zachary-clark" class="cast-card">
+            <a href="/actor/5346474-zachary-clark.html" class="cast-card">
                 <img src="/favicon.ico" alt="Zachary Clark" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zachary Clark</span>
             </a>
-            <a href="/actor/2594911-connor-hawkins" class="cast-card">
+            <a href="/actor/2594911-connor-hawkins.html" class="cast-card">
                 <img src="/favicon.ico" alt="Connor Hawkins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Connor Hawkins</span>
             </a>
-            <a href="/actor/1141538-michael-felker" class="cast-card">
+            <a href="/actor/1141538-michael-felker.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Ym0tMa3evMSbEbKBOUBE3zeBfk.jpg" alt="Michael Felker" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Felker</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>طائر الفينيق</span>
   </nav>
 
@@ -72,47 +72,47 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4189297-ma-qiuyuan" class="cast-card">
+            <a href="/actor/4189297-ma-qiuyuan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3DHCYG1jPIC62Y0gunfaXTncP8J.jpg" alt="Ma Qiuyuan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ma Qiuyuan</span>
             </a>
-            <a href="/actor/4869302-he-jianqi" class="cast-card">
+            <a href="/actor/4869302-he-jianqi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pTrPlkwVv65Pp4war1RPwGfZox1.jpg" alt="He Jianqi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>He Jianqi</span>
             </a>
-            <a href="/actor/3731856-chang-zhekuan" class="cast-card">
+            <a href="/actor/3731856-chang-zhekuan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/icjeSccoqk1dkeUjCp8KxhHDEcZ.jpg" alt="Chang Zhekuan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chang Zhekuan</span>
             </a>
-            <a href="/actor/5516789-song-jiayin" class="cast-card">
+            <a href="/actor/5516789-song-jiayin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kB6TAOOLuz4ExNwSjbQYcjIica0.jpg" alt="Song Jiayin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Song Jiayin</span>
             </a>
-            <a href="/actor/5522087-li-jiatong" class="cast-card">
+            <a href="/actor/5522087-li-jiatong.html" class="cast-card">
                 <img src="/favicon.ico" alt="Li Jiatong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Li Jiatong</span>
             </a>
-            <a href="/actor/3870925-guo-kangmin" class="cast-card">
+            <a href="/actor/3870925-guo-kangmin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Guo Kangmin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Guo Kangmin</span>
             </a>
-            <a href="/actor/4284810-pan-litong" class="cast-card">
+            <a href="/actor/4284810-pan-litong.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9R5kCHPPMyl6emrw7cu7kXPchsI.jpg" alt="Pan Litong" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pan Litong</span>
             </a>
-            <a href="/actor/5161537-zhang-bin" class="cast-card">
+            <a href="/actor/5161537-zhang-bin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6jFpKDrESyoW5A33IpR7RNGo8pK.jpg" alt="Zhang Bin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Bin</span>
             </a>
-            <a href="/actor/5213182-han-xu" class="cast-card">
+            <a href="/actor/5213182-han-xu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zGj41D1AJ8IFC6oX7HwreNchybT.jpg" alt="Han Xu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Han Xu</span>
             </a>
-            <a href="/actor/3212770-wang-shuyi" class="cast-card">
+            <a href="/actor/3212770-wang-shuyi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8j0mCN12WosQSMKhrYnjSriJslO.jpg" alt="Wang Shuyi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wang Shuyi</span>
             </a>
-            <a href="/actor/4781126-cheng-zhen" class="cast-card">
+            <a href="/actor/4781126-cheng-zhen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vB3k8HcoRLFI6mfsP9YVjMDQhDg.jpg" alt="Cheng Zhen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cheng Zhen</span>
             </a></div></section>
@@ -120,13 +120,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

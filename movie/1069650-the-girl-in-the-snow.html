@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>L'Engloutie</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1350986-galatea-bellugi" class="cast-card">
+            <a href="/actor/1350986-galatea-bellugi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l583mGk85A9tFkTCothEelPuxWU.jpg" alt="Galatea Bellugi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Galatea Bellugi</span>
             </a>
-            <a href="/actor/1767675-matthieu-lucci" class="cast-card">
+            <a href="/actor/1767675-matthieu-lucci.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bT2ADMuICq92GzfjSX9bDN5hENg.jpg" alt="Matthieu Lucci" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matthieu Lucci</span>
             </a>
-            <a href="/actor/3841400-samuel-kircher" class="cast-card">
+            <a href="/actor/3841400-samuel-kircher.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jU41TUM7swLrvV0ToX4sPLqxgDV.jpg" alt="Samuel Kircher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samuel Kircher</span>
             </a>
-            <a href="/actor/5403342-oscar-pons" class="cast-card">
+            <a href="/actor/5403342-oscar-pons.html" class="cast-card">
                 <img src="/favicon.ico" alt="Oscar Pons" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oscar Pons</span>
             </a>
-            <a href="/actor/2548881-sharif-andoura" class="cast-card">
+            <a href="/actor/2548881-sharif-andoura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/szZjLQoIrlVmz6sqWJyXAcN79Cb.jpg" alt="Sharif Andoura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sharif Andoura</span>
             </a>
-            <a href="/actor/5436501-léna-camillieri-dorléans" class="cast-card">
+            <a href="/actor/5436501-léna-camillieri-dorléans.html" class="cast-card">
                 <img src="/favicon.ico" alt="Léna Camillieri Dorléans" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Léna Camillieri Dorléans</span>
             </a>
-            <a href="/actor/5436504-solal-griveau-martin" class="cast-card">
+            <a href="/actor/5436504-solal-griveau-martin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Solal Griveau Martin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Solal Griveau Martin</span>
             </a>
-            <a href="/actor/5436505-lula-guaydan" class="cast-card">
+            <a href="/actor/5436505-lula-guaydan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lula Guaydan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lula Guaydan</span>
             </a>
-            <a href="/actor/5436506-greta-saggiorato" class="cast-card">
+            <a href="/actor/5436506-greta-saggiorato.html" class="cast-card">
                 <img src="/favicon.ico" alt="Greta Saggiorato" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Greta Saggiorato</span>
             </a>
-            <a href="/actor/5436508-andré-borel" class="cast-card">
+            <a href="/actor/5436508-andré-borel.html" class="cast-card">
                 <img src="/favicon.ico" alt="André Borel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>André Borel</span>
             </a>
-            <a href="/actor/5436510-amid-bouselahane" class="cast-card">
+            <a href="/actor/5436510-amid-bouselahane.html" class="cast-card">
                 <img src="/favicon.ico" alt="Amid Bouselahane" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amid Bouselahane</span>
             </a>
-            <a href="/actor/5436511-marisa-ronchail" class="cast-card">
+            <a href="/actor/5436511-marisa-ronchail.html" class="cast-card">
                 <img src="/favicon.ico" alt="Marisa Ronchail" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marisa Ronchail</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>الحارس</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1459772-nam-joo-hyuk" class="cast-card">
+            <a href="/actor/1459772-nam-joo-hyuk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zQdkQio6SyNpKoudDLc17BRQDGD.jpg" alt="Nam Joo-hyuk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nam Joo-hyuk</span>
             </a>
-            <a href="/actor/10112-yoo-ji-tae" class="cast-card">
+            <a href="/actor/10112-yoo-ji-tae.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gGGV2gc0orgssYJ0Q9MSomdYo2I.jpg" alt="Yoo Ji-tae" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoo Ji-tae</span>
             </a>
-            <a href="/actor/1887382-kim-so-jin" class="cast-card">
+            <a href="/actor/1887382-kim-so-jin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zB52bv23nkkjUALtHV0LmPBbI85.jpg" alt="Kim So-jin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim So-jin</span>
             </a>
-            <a href="/actor/1254630-lee-jun-hyuk" class="cast-card">
+            <a href="/actor/1254630-lee-jun-hyuk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hf3Yt9m9SE8I8uaoefDaYdBxwqh.jpg" alt="Lee Jun-hyuk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Jun-hyuk</span>
             </a>
-            <a href="/actor/554945-kwon-hae-hyo" class="cast-card">
+            <a href="/actor/554945-kwon-hae-hyo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3sCMSQVdY2mqYYq3jj4u9JWRoTt.jpg" alt="Kwon Hae-hyo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kwon Hae-hyo</span>
             </a>
-            <a href="/actor/4365677-lee-seung-woo" class="cast-card">
+            <a href="/actor/4365677-lee-seung-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/Ail0c4xZ2gwfVmlayIh28TFUSqn.jpg" alt="Lee Seung-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Seung-woo</span>
             </a>
-            <a href="/actor/2204527-lee-seo-hwan" class="cast-card">
+            <a href="/actor/2204527-lee-seo-hwan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xy6JlnuWWtEgb4I6tPuTpYc7hxp.jpg" alt="Lee Seo-hwan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Seo-hwan</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

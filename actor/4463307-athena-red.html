@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1492113-hipak">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1492113-hipak.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/eG7pnsX28JU0NrWswa0k3d0noiW.jpg" alt="Hipak — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Hipak</div></div>
-    </a>    <a class="card" href="/movie/1453857-habal">
+    </a>    <a class="card" href="/movie/1453857-habal.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/1Pqnk5rLEHdV9bfTbeCU3vXHFYW.jpg" alt="Habal — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Habal</div></div>
-    </a>    <a class="card" href="/movie/1400232-secret-sessions">
+    </a>    <a class="card" href="/movie/1400232-secret-sessions.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/aaxesWZlyL8OVZDT6j51BvAd6i8.jpg" alt="Secret Sessions — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">3.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Secret Sessions</div></div>
-    </a>    <a class="card" href="/movie/1370711-kabitan">
+    </a>    <a class="card" href="/movie/1370711-kabitan.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bw4cJcLpNStJ9UFCfkRtf3YmtgV.jpg" alt="Kabitan — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kabitan</div></div>
-    </a>    <a class="card" href="/movie/1312871-ang-pintor-at-ang-paraluman">
+    </a>    <a class="card" href="/movie/1312871-ang-pintor-at-ang-paraluman.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kQ3bGwCwMxwwm0wM6faLCYQD6iB.jpg" alt="Ang Pintor At Ang Paraluman — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Ang Pintor At Ang Paraluman</div></div>
-    </a>    <a class="card" href="/movie/1260916-a-journey">
+    </a>    <a class="card" href="/movie/1260916-a-journey.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/8LbrDogBCM7BxUl5igUrY1CLUfO.jpg" alt="A Journey — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Journey</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

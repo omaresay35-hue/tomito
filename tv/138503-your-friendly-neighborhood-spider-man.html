@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>سبايدرمان الجار الودود</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1820720-hudson-thames" class="cast-card">
+            <a href="/actor/1820720-hudson-thames.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7VpYPW62UlqwFhKyhN7tR1olv4X.jpg" alt="Hudson Thames" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hudson Thames</span>
             </a>
-            <a href="/actor/91671-colman-domingo" class="cast-card">
+            <a href="/actor/91671-colman-domingo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2tu6T9ugnf82qIMGVKWSb0dvvq5.jpg" alt="Colman Domingo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Colman Domingo</span>
             </a>
-            <a href="/actor/342-eugene-byrd" class="cast-card">
+            <a href="/actor/342-eugene-byrd.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4Vs64bmZC4MgOnwIhGEeZWUw7q1.jpg" alt="Eugene Byrd" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eugene Byrd</span>
             </a>
-            <a href="/actor/2189912-grace-song" class="cast-card">
+            <a href="/actor/2189912-grace-song.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5QQQSk8BfZfepGUwxeiLBJtFJcV.jpg" alt="Grace Song" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Grace Song</span>
             </a>
-            <a href="/actor/2135035-zeno-robinson" class="cast-card">
+            <a href="/actor/2135035-zeno-robinson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/PyoUSDPm4AiGcp6W2WTBD2zSMt.jpg" alt="Zeno Robinson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zeno Robinson</span>
             </a>
-            <a href="/actor/116315-kari-wahlgren" class="cast-card">
+            <a href="/actor/116315-kari-wahlgren.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zOr1RedcTfmntJO0gXxFkyxNBkE.jpg" alt="Kari Wahlgren" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kari Wahlgren</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

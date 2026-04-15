@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Vecina</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3724001-mircea-popa" class="cast-card">
+            <a href="/actor/3724001-mircea-popa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rSzlRo5D9BoVYAIPiz1vRsXVKZc.jpg" alt="Mircea Popa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mircea Popa</span>
             </a>
-            <a href="/actor/3867898-oana-zara" class="cast-card">
+            <a href="/actor/3867898-oana-zara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aLLoATtcyQncqFT2lUpNoP6ybvK.jpg" alt="Oana Zara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oana Zara</span>
             </a>
-            <a href="/actor/3724006-elena-moldovan" class="cast-card">
+            <a href="/actor/3724006-elena-moldovan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m1mlqqlqpE8MWMGvJPARbo9RJND.jpg" alt="Elena Moldovan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elena Moldovan</span>
             </a>
-            <a href="/actor/3724004-adrian-cucu" class="cast-card">
+            <a href="/actor/3724004-adrian-cucu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/85v6egYiGzCki5eqFGZ27dFWFrk.jpg" alt="Adrian Cucu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adrian Cucu</span>
             </a>
-            <a href="/actor/4997990-bogdan-bob-radulescu" class="cast-card">
+            <a href="/actor/4997990-bogdan-bob-radulescu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4TkEkbudXXfCZ6n2doKC08YV5U5.jpg" alt="Bogdan Bob Radulescu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bogdan Bob Radulescu</span>
             </a>
-            <a href="/actor/2514719-costel-bojog" class="cast-card">
+            <a href="/actor/2514719-costel-bojog.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/da5UNbj5GPnuELU09LIHCBJr4De.jpg" alt="Costel Bojog" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Costel Bojog</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>La promesa</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3748373-ana-garcés" class="cast-card">
+            <a href="/actor/3748373-ana-garcés.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/gwttUDHoPRmrkNKOXptzAoFBwjR.jpg" alt="Ana Garcés" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ana Garcés</span>
             </a>
-            <a href="/actor/1506920-eva-martín" class="cast-card">
+            <a href="/actor/1506920-eva-martín.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s0b06rkRzizAB0nndhMCbSZAXaH.jpg" alt="Eva Martín" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eva Martín</span>
             </a>
-            <a href="/actor/1017115-maría-castro" class="cast-card">
+            <a href="/actor/1017115-maría-castro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cOI8McLWzng2GuRU2RKippTI4Kt.jpg" alt="María Castro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>María Castro</span>
             </a>
-            <a href="/actor/1304975-manuel-regueiro" class="cast-card">
+            <a href="/actor/1304975-manuel-regueiro.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8qD6PmZ7y1yPe9lY23fWy3zSFj4.jpg" alt="Manuel Regueiro" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manuel Regueiro</span>
             </a>
-            <a href="/actor/272018-joaquín-climent" class="cast-card">
+            <a href="/actor/272018-joaquín-climent.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xtq8blzK76qwRwg5CAtvk9gm57D.jpg" alt="Joaquín Climent" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joaquín Climent</span>
             </a>
-            <a href="/actor/1506917-andrea-del-río" class="cast-card">
+            <a href="/actor/1506917-andrea-del-río.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pOFdMLac240oiULowedJityHfwd.jpg" alt="Andrea del Río" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Andrea del Río</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

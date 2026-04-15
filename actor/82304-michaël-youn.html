@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -77,27 +77,27 @@ The popularity and success of Michael Youn, at th</p>
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1318480-certains-laiment-chauve">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1318480-certains-laiment-chauve.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/s5SdVUKrCCyqg2yCcscudSw8jUE.jpg" alt="Certains l'aiment chauve — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Certains l'aiment chauve</div></div>
-    </a>    <a class="card" href="/movie/1371793-les-enfoirés-2025-au-pays-des-enfoirés">
+    </a>    <a class="card" href="/movie/1371793-les-enfoirés-2025-au-pays-des-enfoirés.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uVX1moZA8vAK1L00yPong5JajRP.jpg" alt="Les Enfoirés 2025 - Au pays des Enfoirés — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Les Enfoirés 2025 - Au pays des Enfoirés</div></div>
-    </a>    <a class="card" href="/movie/1255788-the-gardener">
+    </a>    <a class="card" href="/movie/1255788-the-gardener.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5T9WR7vIOnHm6xhVt5zBuPbBgt1.jpg" alt="The Gardener — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Gardener</div></div>
-    </a>    <a class="card" href="/movie/964876-the-world-upside-down">
+    </a>    <a class="card" href="/movie/964876-the-world-upside-down.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/d9TSnEbgi6uk8bfNs1fiITHHVZp.jpg" alt="The World Upside Down — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The World Upside Down</div></div>
-    </a>    <a class="card" href="/movie/118354-wok-the-kasbah">
+    </a>    <a class="card" href="/movie/118354-wok-the-kasbah.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jPwioid4rOUUkj7oDcwRRqcl9GL.jpg" alt="Wok the Kasbah — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wok the Kasbah</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/237979-flashback">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/237979-flashback.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wRXI0QvXgyFl18OQE5cL5Dl68my.jpg" alt="Flashback — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Flashback</div></div>
@@ -106,13 +106,6 @@ The popularity and success of Michael Youn, at th</p>
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

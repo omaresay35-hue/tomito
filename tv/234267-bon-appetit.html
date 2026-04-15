@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>본아페티</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2674515-lee-gi-taek" class="cast-card">
+            <a href="/actor/2674515-lee-gi-taek.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/phrd1GiMJgkFnDLKbmDHtO4NWW9.jpg" alt="Lee Gi-taek" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Gi-taek</span>
             </a>
-            <a href="/actor/4257472-yoo-jung-hun" class="cast-card">
+            <a href="/actor/4257472-yoo-jung-hun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nQcntoutoXGPYG9V6hjeUmhXMsh.jpg" alt="Yoo Jung-hun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoo Jung-hun</span>
             </a>
-            <a href="/actor/557408-yoo-jang-hee" class="cast-card">
+            <a href="/actor/557408-yoo-jang-hee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rxATUhQDGDehl2JqlE14i3PHlxD.jpg" alt="Yoo Jang-hee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoo Jang-hee</span>
             </a>
-            <a href="/actor/4394903-seo-dong-jin" class="cast-card">
+            <a href="/actor/4394903-seo-dong-jin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cIeAcSdEp3yHW63gUIXZBgdrxKf.jpg" alt="Seo Dong-jin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Seo Dong-jin</span>
             </a>
-            <a href="/actor/3411144-yoon-seo-bin" class="cast-card">
+            <a href="/actor/3411144-yoon-seo-bin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qbtNKjLv2egBrRkb5VIt4a36MyL.jpg" alt="Yoon Seo-bin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yoon Seo-bin</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسل</a> &gt; 
+    <a href="/index.html#series">مسلسل</a> &gt; 
     <span>宇宙人ムームー</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5087660-momo-harumi" class="cast-card">
+            <a href="/actor/5087660-momo-harumi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1tr2x8WEaSRGa8E0MoqVyXgxDD4.jpg" alt="Momo Harumi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Momo Harumi</span>
             </a>
-            <a href="/actor/112140-etsuko-kozakura" class="cast-card">
+            <a href="/actor/112140-etsuko-kozakura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/20KNVseVr2Y8Y4jziEaMcm06umL.jpg" alt="Etsuko Kozakura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Etsuko Kozakura</span>
             </a>
-            <a href="/actor/111375-yasuyuki-kase" class="cast-card">
+            <a href="/actor/111375-yasuyuki-kase.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sERtaipUjauSd4WgP9RQwHoAamO.jpg" alt="Yasuyuki Kase" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yasuyuki Kase</span>
             </a>
-            <a href="/actor/1919881-gakuto-kajiwara" class="cast-card">
+            <a href="/actor/1919881-gakuto-kajiwara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kUer38jXf7vTD2TGGxJMZVYL5Te.jpg" alt="Gakuto Kajiwara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gakuto Kajiwara</span>
             </a>
-            <a href="/actor/4549810-yuriko-hibi" class="cast-card">
+            <a href="/actor/4549810-yuriko-hibi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5oa2bdamZD0MIxnEdqzSBwLfbG1.jpg" alt="Yuriko Hibi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuriko Hibi</span>
             </a>
-            <a href="/actor/225655-hidenobu-kiuchi" class="cast-card">
+            <a href="/actor/225655-hidenobu-kiuchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d7MW4HQjMsZnX3cy2dF8QJETCbf.jpg" alt="Hidenobu Kiuchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hidenobu Kiuchi</span>
             </a>
-            <a href="/actor/1975220-kentaro-kumagai" class="cast-card">
+            <a href="/actor/1975220-kentaro-kumagai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hsSdTc4PBuLOQedZMsTS6AHvC8l.jpg" alt="Kentaro Kumagai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kentaro Kumagai</span>
             </a>
-            <a href="/actor/1287794-yukiyo-fujii" class="cast-card">
+            <a href="/actor/1287794-yukiyo-fujii.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tLG4K1iix3QNHFexf98mrZ25jT6.jpg" alt="Yukiyo Fujii" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yukiyo Fujii</span>
             </a>
-            <a href="/actor/1783522-karin-takahashi" class="cast-card">
+            <a href="/actor/1783522-karin-takahashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/40eynav2SoYcfd0McfiF46Hu16o.jpg" alt="Karin Takahashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Karin Takahashi</span>
             </a>
-            <a href="/actor/24647-katsuyuki-konishi" class="cast-card">
+            <a href="/actor/24647-katsuyuki-konishi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nYM5cH6U7cp4x9dIzW0enmEKmeV.jpg" alt="Katsuyuki Konishi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Katsuyuki Konishi</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

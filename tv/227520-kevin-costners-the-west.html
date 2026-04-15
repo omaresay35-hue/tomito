@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Kevin Costner's The West</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1269-kevin-costner" class="cast-card">
+            <a href="/actor/1269-kevin-costner.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/608blZipRDZkDpzp8VItB64qMaT.jpg" alt="Kevin Costner" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kevin Costner</span>
             </a>
-            <a href="/actor/4812366-clay-jenkinson" class="cast-card">
+            <a href="/actor/4812366-clay-jenkinson.html" class="cast-card">
                 <img src="/favicon.ico" alt="Clay Jenkinson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Clay Jenkinson</span>
             </a>
-            <a href="/actor/1605015-yohuru-williams" class="cast-card">
+            <a href="/actor/1605015-yohuru-williams.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zJPwyYRMlyFPR66Nk74OeoT7e0X.jpg" alt="Yohuru Williams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yohuru Williams</span>
             </a>
-            <a href="/actor/1230086-doris-kearns-goodwin" class="cast-card">
+            <a href="/actor/1230086-doris-kearns-goodwin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1eOhW27MpXYguo7EvAjdrAew1Zw.jpg" alt="Doris Kearns Goodwin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Doris Kearns Goodwin</span>
             </a>
-            <a href="/actor/1949841-hw-brands" class="cast-card">
+            <a href="/actor/1949841-hw-brands.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dpl0feDM3I4RhTteKVLSzRmx4Ke.jpg" alt="H.W. Brands" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>H.W. Brands</span>
             </a>
-            <a href="/actor/4530118-elliott-west" class="cast-card">
+            <a href="/actor/4530118-elliott-west.html" class="cast-card">
                 <img src="/favicon.ico" alt="Elliott West" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Elliott West</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

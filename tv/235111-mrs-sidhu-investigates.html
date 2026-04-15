@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Mrs Sidhu Investigates</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/6975-meera-syal" class="cast-card">
+            <a href="/actor/6975-meera-syal.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oymXzUh9tuPXsNKuPIFIrsL2MU6.jpg" alt="Meera Syal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Meera Syal</span>
             </a>
-            <a href="/actor/45050-craig-parkinson" class="cast-card">
+            <a href="/actor/45050-craig-parkinson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pVv5G6s2WqtuQf2sdRLHdUuREAp.jpg" alt="Craig Parkinson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Craig Parkinson</span>
             </a>
-            <a href="/actor/1981091-naana-agyei-ampadu" class="cast-card">
+            <a href="/actor/1981091-naana-agyei-ampadu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k3w1fN9OOgQdmS4EeI4KQpQb1gM.jpg" alt="Naana Agyei-Ampadu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Naana Agyei-Ampadu</span>
             </a>
-            <a href="/actor/1818307-gurjeet-singh" class="cast-card">
+            <a href="/actor/1818307-gurjeet-singh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/55oc0B2P3h0NmpUrCGzEtS8QLRV.jpg" alt="Gurjeet Singh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gurjeet Singh</span>
             </a>
-            <a href="/actor/162422-gordon-kennedy" class="cast-card">
+            <a href="/actor/162422-gordon-kennedy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iyxYTxPJ7UA4XjvPWn2atLuI5WG.jpg" alt="Gordon Kennedy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gordon Kennedy</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

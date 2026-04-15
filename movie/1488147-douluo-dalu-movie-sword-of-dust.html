@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>斗罗大陆剧场版：剑道尘心</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3718822-sang-yuze" class="cast-card">
+            <a href="/actor/3718822-sang-yuze.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yJNmML2PlTPz4uzBIaNJYy5ELTg.jpg" alt="Sang Yuze" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sang Yuze</span>
             </a>
-            <a href="/actor/3171092-huang-xiangyu" class="cast-card">
+            <a href="/actor/3171092-huang-xiangyu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qfBie9Iib0ZKWfqmHiaa5Z5oy3E.jpg" alt="Huang Xiangyu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Huang Xiangyu</span>
             </a>
-            <a href="/actor/1621710-liu-beichen" class="cast-card">
+            <a href="/actor/1621710-liu-beichen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uPmG4JbXDnQvIgrqnUS8K3bNz5h.jpg" alt="Liu Beichen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liu Beichen</span>
             </a>
-            <a href="/actor/3718828-li-chanfei" class="cast-card">
+            <a href="/actor/3718828-li-chanfei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9lPXNOqWemS1gilUTsRQcyG8wnX.jpg" alt="Li Chanfei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Li Chanfei</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

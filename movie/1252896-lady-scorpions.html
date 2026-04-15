@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Lady Scorpions</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/74375-cynthia-rothrock" class="cast-card">
+            <a href="/actor/74375-cynthia-rothrock.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/beYPJbNlN3zHC54Ii6WWS5U4B4R.jpg" alt="Cynthia Rothrock" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cynthia Rothrock</span>
             </a>
-            <a href="/actor/1110521-caitlin-dechelle" class="cast-card">
+            <a href="/actor/1110521-caitlin-dechelle.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A9IBrs6pScz0cIXR18ctXqLVvSp.jpg" alt="Caitlin Dechelle" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Caitlin Dechelle</span>
             </a>
-            <a href="/actor/20495-jeff-fahey" class="cast-card">
+            <a href="/actor/20495-jeff-fahey.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zRu1ZmM7ekKwKbmXn3U0VjD8Wyd.jpg" alt="Jeff Fahey" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeff Fahey</span>
             </a>
-            <a href="/actor/4249744-david-w-rice" class="cast-card">
+            <a href="/actor/4249744-david-w-rice.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qnBTXkxkiZ83XMt19Y76xBSmIHp.jpg" alt="David W. Rice" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David W. Rice</span>
             </a>
-            <a href="/actor/4647889-jose-manuel" class="cast-card">
+            <a href="/actor/4647889-jose-manuel.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jose Manuel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jose Manuel</span>
             </a>
-            <a href="/actor/4926689-miguel-peralta" class="cast-card">
+            <a href="/actor/4926689-miguel-peralta.html" class="cast-card">
                 <img src="/favicon.ico" alt="Miguel Peralta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miguel Peralta</span>
             </a>
-            <a href="/actor/1496138-nicolas-sotnikoff" class="cast-card">
+            <a href="/actor/1496138-nicolas-sotnikoff.html" class="cast-card">
                 <img src="/favicon.ico" alt="Nicolas Sotnikoff" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicolas Sotnikoff</span>
             </a>
-            <a href="/actor/4926694-sofia-obrien" class="cast-card">
+            <a href="/actor/4926694-sofia-obrien.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sofia O'Brien" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sofia O'Brien</span>
             </a>
-            <a href="/actor/4920845-mamyi-ithou" class="cast-card">
+            <a href="/actor/4920845-mamyi-ithou.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mamyi Ithou" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mamyi Ithou</span>
             </a>
-            <a href="/actor/1859305-mark-allyn" class="cast-card">
+            <a href="/actor/1859305-mark-allyn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1tx6WgrhwvTVGgw54PXCGWQHTDl.jpg" alt="Mark Allyn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mark Allyn</span>
             </a>
-            <a href="/actor/1485553-bruce-del-castillo" class="cast-card">
+            <a href="/actor/1485553-bruce-del-castillo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hNuRFnCU7JLy5IQ0bLCgQhpLRU3.jpg" alt="Bruce Del Castillo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bruce Del Castillo</span>
             </a>
-            <a href="/actor/4926696-noah-pao" class="cast-card">
+            <a href="/actor/4926696-noah-pao.html" class="cast-card">
                 <img src="/favicon.ico" alt="Noah Pao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Noah Pao</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

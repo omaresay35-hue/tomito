@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Nosotros</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/592475-maría-vázquez" class="cast-card">
+            <a href="/actor/592475-maría-vázquez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/k0HXxRMWpKyxFUfjgNmo3NfujX4.jpg" alt="María Vázquez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>María Vázquez</span>
             </a>
-            <a href="/actor/1209572-pablo-molinero" class="cast-card">
+            <a href="/actor/1209572-pablo-molinero.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mtoRws2DEpETuGJGmvI5DALUcce.jpg" alt="Pablo Molinero" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pablo Molinero</span>
             </a>
-            <a href="/actor/1165486-isabel-ordaz" class="cast-card">
+            <a href="/actor/1165486-isabel-ordaz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ondJNFb6S2dgxnXonMBRZnw4OTj.jpg" alt="Isabel Ordaz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isabel Ordaz</span>
             </a>
-            <a href="/actor/1456034-jorge-usón" class="cast-card">
+            <a href="/actor/1456034-jorge-usón.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zXXmIRRFvQbXk5qMPOjGtw21Ion.jpg" alt="Jorge Usón" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jorge Usón</span>
             </a>
-            <a href="/actor/5330043-markel-cocó" class="cast-card">
+            <a href="/actor/5330043-markel-cocó.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tSLNsG2odRMRk9KRfEB97RdWlTD.jpg" alt="Markel Cocó" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Markel Cocó</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

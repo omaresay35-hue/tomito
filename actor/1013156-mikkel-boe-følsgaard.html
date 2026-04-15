@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/680770-fleak">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/680770-fleak.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jLox5c77lT07Izve72UusCN22yR.jpg" alt="Fleak — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Fleak</div></div>
-    </a>    <a class="card" href="/movie/1035657-the-swedish-torpedo">
+    </a>    <a class="card" href="/movie/1035657-the-swedish-torpedo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/iOdjKoxVRuH7U2wkty9Y3oY29HO.jpg" alt="The Swedish Torpedo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Swedish Torpedo</div></div>
-    </a>    <a class="card" href="/movie/1051486-stockholm-bloodbath">
+    </a>    <a class="card" href="/movie/1051486-stockholm-bloodbath.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tzXOB8nxO70SfSbOhrYcY94x6MI.jpg" alt="Stockholm Bloodbath — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Stockholm Bloodbath</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/240456-the-count-of-monte-cristo">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/240456-the-count-of-monte-cristo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/bH85johgKnXDVVHdta9Q0wnG2PI.jpg" alt="The Count of Monte Cristo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Count of Monte Cristo</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

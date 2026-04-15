@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>じゃあ、あんたが作ってみろよ</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/228079-kaho" class="cast-card">
+            <a href="/actor/228079-kaho.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nTWb0PlVnISJu7lnlkWRNhfsD1u.jpg" alt="Kaho" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaho</span>
             </a>
-            <a href="/actor/1384646-ryoma-takeuchi" class="cast-card">
+            <a href="/actor/1384646-ryoma-takeuchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dbjZsHAhc9tjqHZeVr0r4mtC3wG.jpg" alt="Ryoma Takeuchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryoma Takeuchi</span>
             </a>
-            <a href="/actor/1373210-ayami-nakajo" class="cast-card">
+            <a href="/actor/1373210-ayami-nakajo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s9Lxr750zub8b911WFEtUYggKaE.jpg" alt="Ayami Nakajo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ayami Nakajo</span>
             </a>
-            <a href="/actor/1320679-yuzu-aoki" class="cast-card">
+            <a href="/actor/1320679-yuzu-aoki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xZdmoDei5fxBruGtpy9I01XV4aF.jpg" alt="Yuzu Aoki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuzu Aoki</span>
             </a>
-            <a href="/actor/2580510-mizuki-maehara" class="cast-card">
+            <a href="/actor/2580510-mizuki-maehara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vIfspAyQS3Zw6wDoySFx3GnJ3eb.jpg" alt="Mizuki Maehara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mizuki Maehara</span>
             </a>
-            <a href="/actor/3763200-saaya" class="cast-card">
+            <a href="/actor/3763200-saaya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3BvLdTNYd0isItVeL55pabcWP4R.jpg" alt="Saaya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saaya</span>
             </a>
-            <a href="/actor/2375361-raiku" class="cast-card">
+            <a href="/actor/2375361-raiku.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oQEdKVKG4za9tVFLuE0zOmPpYkg.jpg" alt="Raiku" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Raiku</span>
             </a>
-            <a href="/actor/1412422-kyoka-shibata" class="cast-card">
+            <a href="/actor/1412422-kyoka-shibata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5rwR4LNHyuC5xwGpd3zWaRKhOlu.jpg" alt="Kyoka Shibata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kyoka Shibata</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Fleak</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5828909-liva-guldberg-schrøder" class="cast-card">
+            <a href="/actor/5828909-liva-guldberg-schrøder.html" class="cast-card">
                 <img src="/favicon.ico" alt="Liva Guldberg Schrøder" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Liva Guldberg Schrøder</span>
             </a>
-            <a href="/actor/1013156-mikkel-boe-følsgaard" class="cast-card">
+            <a href="/actor/1013156-mikkel-boe-følsgaard.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oKC5KLsbj0npfRJA3j9nEIMglmg.jpg" alt="Mikkel Boe Følsgaard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mikkel Boe Følsgaard</span>
             </a>
-            <a href="/actor/1353296-sigurd-philip-dalgas" class="cast-card">
+            <a href="/actor/1353296-sigurd-philip-dalgas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7XSCPYH3oo97OktGaWZbA9ywaVb.jpg" alt="Sigurd Philip Dalgas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sigurd Philip Dalgas</span>
             </a>
-            <a href="/actor/1783172-bertil-smith" class="cast-card">
+            <a href="/actor/1783172-bertil-smith.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dh6HYWsxQKEVqQNPosEQYYmUTa2.jpg" alt="Bertil Smith" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bertil Smith</span>
             </a>
-            <a href="/actor/1297500-johanne-louise-schmidt" class="cast-card">
+            <a href="/actor/1297500-johanne-louise-schmidt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2TC1HQeQE7fGR79K91vABaDziJk.jpg" alt="Johanne Louise Schmidt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Johanne Louise Schmidt</span>
             </a>
-            <a href="/actor/5050740-vilbert-hein-friberg" class="cast-card">
+            <a href="/actor/5050740-vilbert-hein-friberg.html" class="cast-card">
                 <img src="/favicon.ico" alt="Vilbert Hein Friberg" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vilbert Hein Friberg</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

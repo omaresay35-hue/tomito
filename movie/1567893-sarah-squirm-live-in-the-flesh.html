@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Sarah Squirm: Live + in the Flesh</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2198504-sarah-sherman" class="cast-card">
+            <a href="/actor/2198504-sarah-sherman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8COfsPTMLVfrMPECZnJnsfNMoaw.jpg" alt="Sarah Sherman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sarah Sherman</span>
             </a>
-            <a href="/actor/10367-john-waters" class="cast-card">
+            <a href="/actor/10367-john-waters.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4foU1kJ24CJwz2RVZgyc7oxMs4i.jpg" alt="John Waters" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Waters</span>
             </a>
-            <a href="/actor/4131747-jack-bensinger" class="cast-card">
+            <a href="/actor/4131747-jack-bensinger.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/9YzDMZB82PkKdji2qQsxl6qwW9M.jpg" alt="Jack Bensinger" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Bensinger</span>
             </a>
-            <a href="/actor/4079596-marley-gotterer" class="cast-card">
+            <a href="/actor/4079596-marley-gotterer.html" class="cast-card">
                 <img src="/favicon.ico" alt="Marley Gotterer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marley Gotterer</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

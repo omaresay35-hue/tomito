@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,19 +75,19 @@ She obtained a degree in political science from McGill University in Canada. She
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1302848-class-reunion">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1302848-class-reunion.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/9bj75Pb7sUFE6IeDM33V1GwbagY.jpg" alt="Class Reunion — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Class Reunion</div></div>
-    </a>    <a class="card" href="/movie/1220566-eagles-of-the-republic">
+    </a>    <a class="card" href="/movie/1220566-eagles-of-the-republic.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/f9MzpMfbBL4PknhKqoQpIUdskTl.jpg" alt="Eagles of the Republic — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Eagles of the Republic</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/224009-ghosts-of-beirut">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/224009-ghosts-of-beirut.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/w40j5uqjJIUvRSP5zJ7Q5qRdNRs.jpg" alt="Ghosts of Beirut — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Ghosts of Beirut</div></div>
-    </a>    <a class="card" href="/tv/206344-vortex">
+    </a>    <a class="card" href="/tv/206344-vortex.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/oYzNhRU2TFWrqeW6umtdhv11ePH.jpg" alt="Vortex — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Vortex</div></div>
@@ -96,13 +96,6 @@ She obtained a degree in political science from McGill University in Canada. She
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

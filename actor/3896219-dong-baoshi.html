@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1411529-take-off">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1411529-take-off.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4MCXfUEaIDLLZew1JQg817fqyb0.jpg" alt="Take Off — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Take Off</div></div>
-    </a>    <a class="card" href="/movie/1362519-i-grass-i-love">
+    </a>    <a class="card" href="/movie/1362519-i-grass-i-love.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jxKAGQimqUFaFlAWJGYIDLPLFd5.jpg" alt="I Grass, I Love — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">I Grass, I Love</div></div>
-    </a>    <a class="card" href="/movie/1233324-the-unseen-sister">
+    </a>    <a class="card" href="/movie/1233324-the-unseen-sister.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vpWDTc2sQE8vHthH4Pji41W0lxy.jpg" alt="The Unseen Sister — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Unseen Sister</div></div>
-    </a>    <a class="card" href="/movie/1241476-life-hotel">
+    </a>    <a class="card" href="/movie/1241476-life-hotel.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wvAy5Zs11wL2T4Ms72hkHlyRWFp.jpg" alt="Life Hotel — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Life Hotel</div></div>
-    </a>    <a class="card" href="/movie/1225862-the-last-frenzy">
+    </a>    <a class="card" href="/movie/1225862-the-last-frenzy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jkyYQ1G47kUGL1JNsuS26d6p93I.jpg" alt="The Last Frenzy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Last Frenzy</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/220149-good-guy-good-luck">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/220149-good-guy-good-luck.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/kZXvlreB80Qn0IaaR4fbu7qnxW5.jpg" alt="Good Guy Good Luck — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Good Guy Good Luck</div></div>
-    </a>    <a class="card" href="/tv/136440-why-try-to-change-me-now">
+    </a>    <a class="card" href="/tv/136440-why-try-to-change-me-now.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7tMzfCvDBaTuDKOABJXmufZuOsp.jpg" alt="Why Try to Change Me Now — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Why Try to Change Me Now</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

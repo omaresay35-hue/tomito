@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Thank You, Goodnight - The Bon Jovi Story</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/32362-jon-bon-jovi" class="cast-card">
+            <a href="/actor/32362-jon-bon-jovi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bqZdwRljds92cSvqQcoueBzLyat.jpg" alt="Jon Bon Jovi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jon Bon Jovi</span>
             </a>
-            <a href="/actor/111404-david-bryan" class="cast-card">
+            <a href="/actor/111404-david-bryan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/b00CPqXD4oj35LE1DgNjYPKiSeA.jpg" alt="David Bryan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Bryan</span>
             </a>
-            <a href="/actor/111403-tico-torres" class="cast-card">
+            <a href="/actor/111403-tico-torres.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kwR1wuwDwc48b74eZWycqg0wY3k.jpg" alt="Tico Torres" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tico Torres</span>
             </a>
-            <a href="/actor/1452827-hugh-mcdonald" class="cast-card">
+            <a href="/actor/1452827-hugh-mcdonald.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jcBbS5xCshoN24MebJFhVHWKXax.jpg" alt="Hugh McDonald" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hugh McDonald</span>
             </a>
-            <a href="/actor/1723870-phil-x" class="cast-card">
+            <a href="/actor/1723870-phil-x.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1i906c9FwjBWMWmp5iywyKNjUkE.jpg" alt="Phil X" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Phil X</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

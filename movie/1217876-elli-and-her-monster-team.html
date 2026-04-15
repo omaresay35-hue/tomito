@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Elli - Ungeheuer Geheim</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3010090-dalia-mya-schmidt-foß" class="cast-card">
+            <a href="/actor/3010090-dalia-mya-schmidt-foß.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dalia Mya Schmidt-Foß" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dalia Mya Schmidt-Foß</span>
             </a>
-            <a href="/actor/16814-oliver-kalkofe" class="cast-card">
+            <a href="/actor/16814-oliver-kalkofe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yBnZQwKbZHATG6nev7qOtv4xncd.jpg" alt="Oliver Kalkofe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Oliver Kalkofe</span>
             </a>
-            <a href="/actor/56607-santiago-ziesmer" class="cast-card">
+            <a href="/actor/56607-santiago-ziesmer.html" class="cast-card">
                 <img src="/favicon.ico" alt="Santiago Ziesmer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Santiago Ziesmer</span>
             </a>
-            <a href="/actor/56600-max-giermann" class="cast-card">
+            <a href="/actor/56600-max-giermann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vFtFZtN4XonkL347pnUSzLMyUrt.jpg" alt="Max Giermann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Max Giermann</span>
             </a>
-            <a href="/actor/1276061-svantje-wascher" class="cast-card">
+            <a href="/actor/1276061-svantje-wascher.html" class="cast-card">
                 <img src="/favicon.ico" alt="Svantje Wascher" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Svantje Wascher</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

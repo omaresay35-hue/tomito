@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>طموح الحب</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2049994-zhao-lusi" class="cast-card">
+            <a href="/actor/2049994-zhao-lusi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/y82wmaDqTdXqvtasb4kxAIuT44U.jpg" alt="Zhao Lusi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhao Lusi</span>
             </a>
-            <a href="/actor/127268-william-chan" class="cast-card">
+            <a href="/actor/127268-william-chan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mHunqWHguLuD0CEW8vLIrERdegN.jpg" alt="William Chan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>William Chan</span>
             </a>
-            <a href="/actor/2187124-wan-peng" class="cast-card">
+            <a href="/actor/2187124-wan-peng.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/swgC6JHDJbvmTl4JoRdbfqf2hF.jpg" alt="Wan Peng" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wan Peng</span>
             </a>
-            <a href="/actor/2824064-guan-zijing" class="cast-card">
+            <a href="/actor/2824064-guan-zijing.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3Ief5FB2y0gKsujA3O8tY0L7VC7.jpg" alt="Guan Zijing" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Guan Zijing</span>
             </a>
-            <a href="/actor/2366712-wang-yiyao" class="cast-card">
+            <a href="/actor/2366712-wang-yiyao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/97wNVZfi5VinDBaOMAUiSK7P29P.jpg" alt="Wang Yiyao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wang Yiyao</span>
             </a>
-            <a href="/actor/4340054-zhong-yating" class="cast-card">
+            <a href="/actor/4340054-zhong-yating.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4eTsVBEDGHNtjTWT1IZ2cUhxprx.jpg" alt="Zhong Yating" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhong Yating</span>
             </a>
-            <a href="/actor/2312401-tang-xiaotian" class="cast-card">
+            <a href="/actor/2312401-tang-xiaotian.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/84NlC4nbZqwUJXH0tSNw9O6o3Um.jpg" alt="Tang Xiaotian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tang Xiaotian</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

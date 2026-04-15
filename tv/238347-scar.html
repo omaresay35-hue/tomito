@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Cicatriz</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1962619-milena-radulović" class="cast-card">
+            <a href="/actor/1962619-milena-radulović.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4hsDfERHev4rOmR9m2i9dbGZJxS.jpg" alt="Milena Radulović" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Milena Radulović</span>
             </a>
-            <a href="/actor/3142196-juanlu-gonzález" class="cast-card">
+            <a href="/actor/3142196-juanlu-gonzález.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kC9O1yCzH8CE673L7OqxL9MGIps.jpg" alt="Juanlu González" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Juanlu González</span>
             </a>
-            <a href="/actor/1443418-luis-fernández" class="cast-card">
+            <a href="/actor/1443418-luis-fernández.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sqY7Tf9rlTR6zMZ7h5P9uGIfARF.jpg" alt="Luis Fernández" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luis Fernández</span>
             </a>
-            <a href="/actor/80507-stefan-kapičić" class="cast-card">
+            <a href="/actor/80507-stefan-kapičić.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6qHO7ckiyjLNOmW0v5RZj1MpLBj.jpg" alt="Stefan Kapičić" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stefan Kapičić</span>
             </a>
-            <a href="/actor/1346371-mladen-sovilj" class="cast-card">
+            <a href="/actor/1346371-mladen-sovilj.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6SdmmT892V9P0ZCgV6P8XaRPpRf.jpg" alt="Mladen Sovilj" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mladen Sovilj</span>
             </a>
-            <a href="/actor/590244-goran-šušljik" class="cast-card">
+            <a href="/actor/590244-goran-šušljik.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vqfmENOXzXczKKnkXU6WgkFnt87.jpg" alt="Goran Šušljik" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Goran Šušljik</span>
             </a>
-            <a href="/actor/131696-maciej-stuhr" class="cast-card">
+            <a href="/actor/131696-maciej-stuhr.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oVGhW6lrLUv3TgPjtnqvLiESwHY.jpg" alt="Maciej Stuhr" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maciej Stuhr</span>
             </a>
-            <a href="/actor/5575418-adela-glisic" class="cast-card">
+            <a href="/actor/5575418-adela-glisic.html" class="cast-card">
                 <img src="/favicon.ico" alt="Adela Glisic" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Adela Glisic</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

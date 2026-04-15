@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ばっどがーる</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4776137-azusa-tachibana" class="cast-card">
+            <a href="/actor/4776137-azusa-tachibana.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jMfPIQOYOLUUCcu6oJFcLJXmkQA.jpg" alt="Azusa Tachibana" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Azusa Tachibana</span>
             </a>
-            <a href="/actor/3664111-nina-hanamiya" class="cast-card">
+            <a href="/actor/3664111-nina-hanamiya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rTEASPSL1QhJSQ3RpqAhOyD9xAo.jpg" alt="Nina Hanamiya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nina Hanamiya</span>
             </a>
-            <a href="/actor/2440223-misato-matsuoka" class="cast-card">
+            <a href="/actor/2440223-misato-matsuoka.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zSB8zgGwFGFq2EL3cWobQifsIXt.jpg" alt="Misato Matsuoka" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Misato Matsuoka</span>
             </a>
-            <a href="/actor/2388269-miharu-hanai" class="cast-card">
+            <a href="/actor/2388269-miharu-hanai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uJLbkjW9MlyHVSaSIh3rqCmapBb.jpg" alt="Miharu Hanai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Miharu Hanai</span>
             </a>
-            <a href="/actor/2208367-kaori-maeda" class="cast-card">
+            <a href="/actor/2208367-kaori-maeda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nj0DsfJ5tL96HlXvzThj7R022f2.jpg" alt="Kaori Maeda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kaori Maeda</span>
             </a>
-            <a href="/actor/1691384-lynn" class="cast-card">
+            <a href="/actor/1691384-lynn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eJ2NqgzpnzNbT6Nt9EpDfzqNeZM.jpg" alt="Lynn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lynn</span>
             </a>
-            <a href="/actor/202806-yui-horie" class="cast-card">
+            <a href="/actor/202806-yui-horie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3TXfhSdsfEqPYi4ww0dBPGhVQm0.jpg" alt="Yui Horie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yui Horie</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

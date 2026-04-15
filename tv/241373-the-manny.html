@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>El niñero</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/145184-sandra-echeverría" class="cast-card">
+            <a href="/actor/145184-sandra-echeverría.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2BrDCExAKY7ikVy7Budm4f7f3Pz.jpg" alt="Sandra Echeverría" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sandra Echeverría</span>
             </a>
-            <a href="/actor/2782289-iván-amozurrutia" class="cast-card">
+            <a href="/actor/2782289-iván-amozurrutia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aXZHYlKrgjs3dZDN19HtPTfB8rK.jpg" alt="Iván Amozurrutia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Iván Amozurrutia</span>
             </a>
-            <a href="/actor/1869530-diana-bovio" class="cast-card">
+            <a href="/actor/1869530-diana-bovio.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fIHf1qsPzVhtnDBFGY1muc9AikB.jpg" alt="Diana Bovio" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Diana Bovio</span>
             </a>
-            <a href="/actor/3338548-alexander-tavizón" class="cast-card">
+            <a href="/actor/3338548-alexander-tavizón.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alexander Tavizón" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alexander Tavizón</span>
             </a>
-            <a href="/actor/4425262-anthony-giuletti" class="cast-card">
+            <a href="/actor/4425262-anthony-giuletti.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nEG1gcdsg0oTITrwD4P6ypVKEn0.jpg" alt="Anthony Giuletti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anthony Giuletti</span>
             </a>
-            <a href="/actor/2152771-cassandra-iturralde" class="cast-card">
+            <a href="/actor/2152771-cassandra-iturralde.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pNEGZk5bz0ixsDDZ8doc5r502AE.jpg" alt="Cassandra Iturralde" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cassandra Iturralde</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

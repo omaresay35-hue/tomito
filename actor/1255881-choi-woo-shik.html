@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1411577-number-one">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1411577-number-one.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/mF4kH35jFW3Mxrm35DcK3uM8lOD.jpg" alt="Number One — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Number One</div></div>
-    </a>    <a class="card" href="/movie/635996-wonderland">
+    </a>    <a class="card" href="/movie/635996-wonderland.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xGFjhFkqpOpFFUkEQjetKS11AWz.jpg" alt="Wonderland — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Wonderland</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/281011-would-you-marry-me">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/281011-would-you-marry-me.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pfN6Ln8a6Xw23LQw0vL1YL8Kwqh.jpg" alt="Would You Marry Me? — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Would You Marry Me?</div></div>
-    </a>    <a class="card" href="/tv/243964-melo-movie">
+    </a>    <a class="card" href="/tv/243964-melo-movie.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/4Aat5liR3Aepisn0fhxegpBSGKF.jpg" alt="Melo Movie — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Melo Movie</div></div>
-    </a>    <a class="card" href="/tv/202783-a-killer-paradox">
+    </a>    <a class="card" href="/tv/202783-a-killer-paradox.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/i2yYZGT2If8XcCZS9ASF1g13MiT.jpg" alt="A Killer Paradox — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Killer Paradox</div></div>
-    </a>    <a class="card" href="/tv/214250-jinnys-kitchen">
+    </a>    <a class="card" href="/tv/214250-jinnys-kitchen.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hgd5qd1w6SsZzVcre4wJcZHn5HL.jpg" alt="Jinny's Kitchen — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Jinny's Kitchen</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

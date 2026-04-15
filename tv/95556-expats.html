@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>"مغتربون"</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2227-nicole-kidman" class="cast-card">
+            <a href="/actor/2227-nicole-kidman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zjdybHeNvp4DFbRd97Jo2ZLakwX.jpg" alt="Nicole Kidman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicole Kidman</span>
             </a>
-            <a href="/actor/1224130-sarayu-blue" class="cast-card">
+            <a href="/actor/1224130-sarayu-blue.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/zW1G9wSJ03iaSDToFxkMJaqGZLs.jpg" alt="Sarayu Blue" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sarayu Blue</span>
             </a>
-            <a href="/actor/2983147-ji-young-yoo" class="cast-card">
+            <a href="/actor/2983147-ji-young-yoo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4jgtqpNWhMx8XOKQ9qQJvDdzbxG.jpg" alt="Ji-young Yoo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ji-young Yoo</span>
             </a>
-            <a href="/actor/116278-brian-tee" class="cast-card">
+            <a href="/actor/116278-brian-tee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ieqbktfBwcHkeikMfNDW94Yffzp.jpg" alt="Brian Tee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brian Tee</span>
             </a>
-            <a href="/actor/3997599-tiana-gowen" class="cast-card">
+            <a href="/actor/3997599-tiana-gowen.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hrrEIj3XFpu458gK0gs671KhlWU.jpg" alt="Tiana Gowen" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tiana Gowen</span>
             </a>
-            <a href="/actor/2796435-bodhi-del-rosario" class="cast-card">
+            <a href="/actor/2796435-bodhi-del-rosario.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pKDjQCj27fPJxyG0UGj7NUcoSKl.jpg" alt="Bodhi del Rosario" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Bodhi del Rosario</span>
             </a>
-            <a href="/actor/1348735-ruby-ruiz" class="cast-card">
+            <a href="/actor/1348735-ruby-ruiz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wBL1B8ekTxoK3gQE8gOw24gKfBG.jpg" alt="Ruby Ruiz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ruby Ruiz</span>
             </a>
-            <a href="/actor/4267546-amelyn-pardenilla" class="cast-card">
+            <a href="/actor/4267546-amelyn-pardenilla.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hXOBwTC974ht5z0QXyOXyAd1pot.jpg" alt="Amelyn Pardenilla" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amelyn Pardenilla</span>
             </a>
-            <a href="/actor/54738-jack-huston" class="cast-card">
+            <a href="/actor/54738-jack-huston.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dopiwKGjFiWYlC4Pi5U9NNVgbgr.jpg" alt="Jack Huston" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Huston</span>
             </a>
-            <a href="/actor/2514716-will-or-wai-lam" class="cast-card">
+            <a href="/actor/2514716-will-or-wai-lam.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6Uv70pPhBZ2C4xVH3WK9HH41LiE.jpg" alt="Will Or Wai-Lam" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Will Or Wai-Lam</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

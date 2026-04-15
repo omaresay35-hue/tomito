@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>러브 메이트</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3223741-cho-han-gyeol" class="cast-card">
+            <a href="/actor/3223741-cho-han-gyeol.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nByXzKnCqUaC9omVlNXXbdGKvRg.jpg" alt="Cho Han-gyeol" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cho Han-gyeol</span>
             </a>
-            <a href="/actor/4033638-cho-hyun-min" class="cast-card">
+            <a href="/actor/4033638-cho-hyun-min.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8rn3C3bLrJl2jQtKIBd8qLFEOvD.jpg" alt="Cho Hyun-min" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cho Hyun-min</span>
             </a>
-            <a href="/actor/2252853-lee-sae-bom" class="cast-card">
+            <a href="/actor/2252853-lee-sae-bom.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xe3EgyjdYUFzVCH4HJAo9Z6nJYs.jpg" alt="Lee Sae-bom" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Sae-bom</span>
             </a>
-            <a href="/actor/4138009-lee-chan-woo" class="cast-card">
+            <a href="/actor/4138009-lee-chan-woo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2bH4caFcuzOgMhce9GphyoXXNjr.jpg" alt="Lee Chan-woo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Chan-woo</span>
             </a>
-            <a href="/actor/4348908-im-so-young" class="cast-card">
+            <a href="/actor/4348908-im-so-young.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/of8VsTTLZDpQD4KjNUE4Rb3h9XV.jpg" alt="Im So Young" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Im So Young</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

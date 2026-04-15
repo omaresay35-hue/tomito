@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/278573-perfect-crown">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/278573-perfect-crown.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/6CDHhHZ8lYkpSE3UkFKrqYeeSzz.jpg" alt="Perfect Crown — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Perfect Crown</div></div>
-    </a>    <a class="card" href="/tv/229480-no-gain-no-love">
+    </a>    <a class="card" href="/tv/229480-no-gain-no-love.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jiGxkMP3lzPDaPw4F0EZAEiTSgL.jpg" alt="No Gain No Love — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">No Gain No Love</div></div>
-    </a>    <a class="card" href="/tv/230923-lovely-runner">
+    </a>    <a class="card" href="/tv/230923-lovely-runner.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xJQyrif5M4UMoVBrBlwUabtaRxB.jpg" alt="Lovely Runner — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Lovely Runner</div></div>
-    </a>    <a class="card" href="/tv/203164-strong-girl-nam-soon">
+    </a>    <a class="card" href="/tv/203164-strong-girl-nam-soon.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/rjkHORZvB5bnz7kH1PufFCKsX4I.jpg" alt="Strong Girl Nam-soon — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Strong Girl Nam-soon</div></div>
-    </a>    <a class="card" href="/tv/215199-just-an-excuse">
+    </a>    <a class="card" href="/tv/215199-just-an-excuse.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2n8dBK8wyGYN3Wf124ojxHHCkHF.jpg" alt="Just an Excuse — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Just an Excuse</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

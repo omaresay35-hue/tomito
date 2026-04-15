@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>わんだふるぷりきゅあ！</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1564652-maria-naganawa" class="cast-card">
+            <a href="/actor/1564652-maria-naganawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tt0j0z34Oq3MyvDA3VeizskWcw4.jpg" alt="Maria Naganawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maria Naganawa</span>
             </a>
-            <a href="/actor/1588597-atsumi-tanezaki" class="cast-card">
+            <a href="/actor/1588597-atsumi-tanezaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6tM8GU7QvrdUCvR4kxqVUZivtvO.jpg" alt="Atsumi Tanezaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Atsumi Tanezaki</span>
             </a>
-            <a href="/actor/1564654-satsumi-matsuda" class="cast-card">
+            <a href="/actor/1564654-satsumi-matsuda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2t35t5W2hyBD0eQGCpJcG4m4zHh.jpg" alt="Satsumi Matsuda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Satsumi Matsuda</span>
             </a>
-            <a href="/actor/1452028-reina-ueda" class="cast-card">
+            <a href="/actor/1452028-reina-ueda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2WV61uVU7y6XGYqNHLMpP0sApdu.jpg" alt="Reina Ueda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Reina Ueda</span>
             </a>
-            <a href="/actor/222350-takuma-terashima" class="cast-card">
+            <a href="/actor/222350-takuma-terashima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/n5uCihb318AzQCT9gieMlI2ueYL.jpg" alt="Takuma Terashima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Takuma Terashima</span>
             </a>
-            <a href="/actor/1251442-shinnosuke-tachibana" class="cast-card">
+            <a href="/actor/1251442-shinnosuke-tachibana.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uPw2IDfXyndFDQ8vtdA69WDSnrz.jpg" alt="Shinnosuke Tachibana" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shinnosuke Tachibana</span>
             </a>
-            <a href="/actor/1157642-shinya-takahashi" class="cast-card">
+            <a href="/actor/1157642-shinya-takahashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/19DN4yrD9c3E7BWthVEqvwhQNdb.jpg" alt="Shinya Takahashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shinya Takahashi</span>
             </a>
-            <a href="/actor/230471-kana-ueda" class="cast-card">
+            <a href="/actor/230471-kana-ueda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/us6FMwXCeSUR2YyByxVcgOUjiIA.jpg" alt="Kana Ueda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kana Ueda</span>
             </a>
-            <a href="/actor/1325964-eriko-matsui" class="cast-card">
+            <a href="/actor/1325964-eriko-matsui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/atMgu6hwHQisLA2tK8aVmevZYh6.jpg" alt="Eriko Matsui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eriko Matsui</span>
             </a>
-            <a href="/actor/220709-mai-nakahara" class="cast-card">
+            <a href="/actor/220709-mai-nakahara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s8DBmM540SRlRzUplaapMaDo8vV.jpg" alt="Mai Nakahara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mai Nakahara</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

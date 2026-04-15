@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>الطفيليات: وحدة غري</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2104287-jeon-so-nee" class="cast-card">
+            <a href="/actor/2104287-jeon-so-nee.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dIYceHYZ9lHePBnAsZo2zMEHHAq.jpg" alt="Jeon So-nee" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeon So-nee</span>
             </a>
-            <a href="/actor/1096458-koo-kyo-hwan" class="cast-card">
+            <a href="/actor/1096458-koo-kyo-hwan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aFwCpSKPGFqoiTStY6ljXnD5CwH.jpg" alt="Koo Kyo-hwan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koo Kyo-hwan</span>
             </a>
-            <a href="/actor/1244822-lee-jung-hyun" class="cast-card">
+            <a href="/actor/1244822-lee-jung-hyun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rOm1wgpRGDAyc8YvsWW3A99zmbi.jpg" alt="Lee Jung-hyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Jung-hyun</span>
             </a>
-            <a href="/actor/554945-kwon-hae-hyo" class="cast-card">
+            <a href="/actor/554945-kwon-hae-hyo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3sCMSQVdY2mqYYq3jj4u9JWRoTt.jpg" alt="Kwon Hae-hyo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kwon Hae-hyo</span>
             </a>
-            <a href="/actor/115904-kim-in-kwon" class="cast-card">
+            <a href="/actor/115904-kim-in-kwon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vMPHVFE0FhItp2uMMgGRYq5z5Bj.jpg" alt="Kim In-kwon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim In-kwon</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

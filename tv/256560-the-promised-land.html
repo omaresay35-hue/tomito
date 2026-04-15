@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Promised Land</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4751981-shereen-khan" class="cast-card">
+            <a href="/actor/4751981-shereen-khan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3V5VAgvaJQllLCnbQn2MknbQY4T.jpg" alt="Shereen Khan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shereen Khan</span>
             </a>
-            <a href="/actor/4767017-dav-coretti" class="cast-card">
+            <a href="/actor/4767017-dav-coretti.html" class="cast-card">
                 <img src="/favicon.ico" alt="Dav Coretti" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dav Coretti</span>
             </a>
-            <a href="/actor/3498647-wasim-nomani" class="cast-card">
+            <a href="/actor/3498647-wasim-nomani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qDHnPfkpaedJIMEyttIoL21kawi.jpg" alt="Wasim No'Mani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wasim No'Mani</span>
             </a>
-            <a href="/actor/3282307-tryphena-wade" class="cast-card">
+            <a href="/actor/3282307-tryphena-wade.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cx0cXQ5clTnnybSHE08eoZGGlf1.jpg" alt="Tryphena Wade" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tryphena Wade</span>
             </a>
-            <a href="/actor/4767019-majed-sayess" class="cast-card">
+            <a href="/actor/4767019-majed-sayess.html" class="cast-card">
                 <img src="/favicon.ico" alt="Majed Sayess" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Majed Sayess</span>
             </a>
-            <a href="/actor/2682377-artoun-nazareth" class="cast-card">
+            <a href="/actor/2682377-artoun-nazareth.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tceyJGjj2jzDFiCHxcyJ7DBEeK8.jpg" alt="Artoun Nazareth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Artoun Nazareth</span>
             </a>
-            <a href="/actor/555251-brad-culver" class="cast-card">
+            <a href="/actor/555251-brad-culver.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/giYp9vPIKpfzSaRtQ8wS3i5ZPCM.jpg" alt="Brad Culver" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brad Culver</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

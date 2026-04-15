@@ -32,7 +32,7 @@ def card_html(item):
     title = item.get('title', '')
     folder = item.get('folder', 'movie')
     slug = item.get('slug', '')
-    href = f"/{folder}/{slug}" # Clean URL
+    href = f"/{folder}/{slug}.html" # Clean URL with extension
     rating = item.get('rating', '')
     badge = f"{rating}⭐" if rating else "حصري"
     
@@ -51,7 +51,7 @@ def build_carousel(trends):
     for item in trends:
         folder = item.get('folder', 'movie')
         slug = item.get('slug', '')
-        href = f"/{folder}/{slug}"
+        href = f"/{folder}/{slug}.html"
         poster = item.get('poster', '/favicon.ico')
         title = item.get('title', '')
         rating = item.get('rating', '')
@@ -85,7 +85,7 @@ def build_carousel(trends):
     <section class="trending-container" id="trending">
       <div class="trending-header">
         <h2>🔥 التريند الآن</h2>
-        <a href="/trending/">عرض الكل &gt;</a>
+        <a href="/trending.html">عرض الكل &gt;</a>
       </div>
       <div class="slim-carousel">
         {cards}
@@ -112,9 +112,7 @@ def build_trending_page(trends, base_html):
     # Update title
     page_html = page_html.replace('<title>TOMITO', '<title>التريند الآن | TOMITO')
     
-    trending_dir = os.path.join(BASE_PATH, 'trending')
-    os.makedirs(trending_dir, exist_ok=True)
-    out_path = os.path.join(trending_dir, 'index.html')
+    out_path = os.path.join(BASE_PATH, 'trending.html')
     with open(out_path, 'w', encoding='utf-8') as f:
         f.write(page_html)
 

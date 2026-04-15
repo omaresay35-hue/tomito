@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,27 +75,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/73457-chris-pratt" class="cast-card">
+            <a href="/actor/73457-chris-pratt.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/872Hzdq95gsbMRabsColTW3TLrD.jpg" alt="Chris Pratt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Pratt</span>
             </a>
-            <a href="/actor/10478-jeanne-tripplehorn" class="cast-card">
+            <a href="/actor/10478-jeanne-tripplehorn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/q7D9MDnMVc5PAm99853gszHwJy7.jpg" alt="Jeanne Tripplehorn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeanne Tripplehorn</span>
             </a>
-            <a href="/actor/98522-riley-keough" class="cast-card">
+            <a href="/actor/98522-riley-keough.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/du1FYr5dTQL6gCMX6ISnQBOxz2F.jpg" alt="Riley Keough" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Riley Keough</span>
             </a>
-            <a href="/actor/60900-taylor-kitsch" class="cast-card">
+            <a href="/actor/60900-taylor-kitsch.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lnpp4g14fsLqI29KajEbJUsuBhf.jpg" alt="Taylor Kitsch" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taylor Kitsch</span>
             </a>
-            <a href="/actor/206444-constance-wu" class="cast-card">
+            <a href="/actor/206444-constance-wu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dMx2RlHDuCabtk8GHiijWtVOH8h.jpg" alt="Constance Wu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Constance Wu</span>
             </a>
-            <a href="/actor/1981665-arlo-mertz" class="cast-card">
+            <a href="/actor/1981665-arlo-mertz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qvuRVUbB1lW54IRtr1amlxOTG7m.jpg" alt="Arlo Mertz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Arlo Mertz</span>
             </a></div></section>
@@ -103,13 +103,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

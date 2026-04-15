@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Los Rechazados</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/232245-frank-perozo" class="cast-card">
+            <a href="/actor/232245-frank-perozo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qWqwiMFEdQE0dLuqSPt3qHDQfQQ.jpg" alt="Frank Perozo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Frank Perozo</span>
             </a>
-            <a href="/actor/1691370-hony-estrella" class="cast-card">
+            <a href="/actor/1691370-hony-estrella.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dzVlBxP6URVkHmZlyovW9fUnDlz.jpg" alt="Hony Estrella" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Hony Estrella</span>
             </a>
-            <a href="/actor/114982-manolo-ozuna" class="cast-card">
+            <a href="/actor/114982-manolo-ozuna.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pMpd4utJNPWWv1m2Dw4rH21mtQM.jpg" alt="Manolo Ozuna" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manolo Ozuna</span>
             </a>
-            <a href="/actor/222481-fausto-mata" class="cast-card">
+            <a href="/actor/222481-fausto-mata.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vnPgl5My9ii9ijGOfRlFg8sCugo.jpg" alt="Fausto Mata" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fausto Mata</span>
             </a>
-            <a href="/actor/4068405-salvador-pérez" class="cast-card">
+            <a href="/actor/4068405-salvador-pérez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Salvador Pérez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Salvador Pérez</span>
             </a>
-            <a href="/actor/5179130-gabi-desangles" class="cast-card">
+            <a href="/actor/5179130-gabi-desangles.html" class="cast-card">
                 <img src="/favicon.ico" alt="Gabi Desangles" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gabi Desangles</span>
             </a>
-            <a href="/actor/2079144-vicente-santos" class="cast-card">
+            <a href="/actor/2079144-vicente-santos.html" class="cast-card">
                 <img src="/favicon.ico" alt="Vicente Santos" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vicente Santos</span>
             </a>
-            <a href="/actor/2039380-pepe-sierra" class="cast-card">
+            <a href="/actor/2039380-pepe-sierra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6dgftxBA7LnBD9MQ35Z62iNs50F.jpg" alt="Pepe Sierra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pepe Sierra</span>
             </a>
-            <a href="/actor/5179136-santiago-matías-alofoke" class="cast-card">
+            <a href="/actor/5179136-santiago-matías-alofoke.html" class="cast-card">
                 <img src="/favicon.ico" alt="Santiago Matías (Alofoke)" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Santiago Matías (Alofoke)</span>
             </a>
-            <a href="/actor/5179137-pedro-casals" class="cast-card">
+            <a href="/actor/5179137-pedro-casals.html" class="cast-card">
                 <img src="/favicon.ico" alt="Pedro Casals" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pedro Casals</span>
             </a>
-            <a href="/actor/5179138-ariel-santana" class="cast-card">
+            <a href="/actor/5179138-ariel-santana.html" class="cast-card">
                 <img src="/favicon.ico" alt="Ariel Santana" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ariel Santana</span>
             </a>
-            <a href="/actor/5179140-vitaly-sánchez" class="cast-card">
+            <a href="/actor/5179140-vitaly-sánchez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Vitaly Sánchez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Vitaly Sánchez</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1368292-in-flight">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1368292-in-flight.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/ezGSeCPQ0E4qtroV20VMVzjd4k1.jpg" alt="In Flight — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">In Flight</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/157741-landman">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/157741-landman.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hYthRgS1nvQkGILn9YmqsF8kSk6.jpg" alt="Landman — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Landman</div></div>
-    </a>    <a class="card" href="/tv/234721-masters-of-the-universe-revolution">
+    </a>    <a class="card" href="/tv/234721-masters-of-the-universe-revolution.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/s54EXuPe3BlQ4PlotUznkuIHgd9.jpg" alt="Masters of the Universe: Revolution — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Masters of the Universe: Revolution</div></div>
-    </a>    <a class="card" href="/tv/202102-quantum-leap">
+    </a>    <a class="card" href="/tv/202102-quantum-leap.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/wAoei8KMQ5SXpmABw43hbfQKS8q.jpg" alt="Quantum Leap — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Quantum Leap</div></div>
-    </a>    <a class="card" href="/tv/68010-geeking-out">
+    </a>    <a class="card" href="/tv/68010-geeking-out.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fXBM3kq3mGmYAVCbj5YAlaGcH2U.jpg" alt="Geeking Out — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Geeking Out</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

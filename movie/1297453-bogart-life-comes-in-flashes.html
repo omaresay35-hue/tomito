@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>Bogart: Life Comes in Flashes</span>
   </nav>
 
@@ -71,31 +71,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4110-humphrey-bogart" class="cast-card">
+            <a href="/actor/4110-humphrey-bogart.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4pk2VbOb2td7iBZyir6Ji46HH4N.jpg" alt="Humphrey Bogart" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Humphrey Bogart</span>
             </a>
-            <a href="/actor/71073-enzo-squillino-jr" class="cast-card">
+            <a href="/actor/71073-enzo-squillino-jr.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pXr0Vg3wrhyl32rFjCtYBojD2np.jpg" alt="Enzo Squillino Jr." loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Enzo Squillino Jr.</span>
             </a>
-            <a href="/actor/1956493-leon-finnan" class="cast-card">
+            <a href="/actor/1956493-leon-finnan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Leon Finnan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leon Finnan</span>
             </a>
-            <a href="/actor/7570-lauren-bacall" class="cast-card">
+            <a href="/actor/7570-lauren-bacall.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iCOzbSzCSUC6D9EcyXtVb2FRNu0.jpg" alt="Lauren Bacall" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lauren Bacall</span>
             </a>
-            <a href="/actor/4111-ingrid-bergman" class="cast-card">
+            <a href="/actor/4111-ingrid-bergman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jXEE0P6705JbMAJ2nwtHjmqkd5F.jpg" alt="Ingrid Bergman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ingrid Bergman</span>
             </a>
-            <a href="/actor/101034-kerry-shale" class="cast-card">
+            <a href="/actor/101034-kerry-shale.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7IrOqC44j27MtUGjn3UwB2FRFWK.jpg" alt="Kerry Shale" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kerry Shale</span>
             </a>
-            <a href="/actor/1292207-stephen-h-bogart" class="cast-card">
+            <a href="/actor/1292207-stephen-h-bogart.html" class="cast-card">
                 <img src="/favicon.ico" alt="Stephen H. Bogart" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stephen H. Bogart</span>
             </a></div></section>
@@ -103,13 +103,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

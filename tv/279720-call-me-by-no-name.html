@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>コールミー・バイ・ノーネーム</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1593971-mio-kudo" class="cast-card">
+            <a href="/actor/1593971-mio-kudo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sSVHXOkMM1Ko4BQMG2KiUSMdOmg.jpg" alt="Mio Kudo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mio Kudo</span>
             </a>
-            <a href="/actor/2189469-ichika-osaki" class="cast-card">
+            <a href="/actor/2189469-ichika-osaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2yPqsjF4ns9A5dx3oxdhDvmuBf6.jpg" alt="Ichika Osaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ichika Osaki</span>
             </a>
-            <a href="/actor/3183705-tomo-nakai" class="cast-card">
+            <a href="/actor/3183705-tomo-nakai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eIhDystP9bgrhN5A51WaSzew9CK.jpg" alt="Tomo Nakai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tomo Nakai</span>
             </a>
-            <a href="/actor/2193155-ryō-hashimoto" class="cast-card">
+            <a href="/actor/2193155-ryō-hashimoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mQfL3NuDUmfaKdiizLYzVU5KTx2.jpg" alt="Ryō Hashimoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryō Hashimoto</span>
             </a>
-            <a href="/actor/3194201-ui-mihara" class="cast-card">
+            <a href="/actor/3194201-ui-mihara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sUIg4YmNdGJNw0JPqMhwtpNxoXk.jpg" alt="Ui Mihara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ui Mihara</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

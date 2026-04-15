@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,23 +71,23 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1224993-dark-nuns">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1224993-dark-nuns.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2Abt2GgscAGtGAXTrhH44qPhugI.jpg" alt="Dark Nuns — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dark Nuns</div></div>
-    </a>    <a class="card" href="/movie/1075676-uprising">
+    </a>    <a class="card" href="/movie/1075676-uprising.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hg9OeaCRSpazrfqYyEFr6BDaZW8.jpg" alt="Uprising — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Uprising</div></div>
-    </a>    <a class="card" href="/movie/865910-the-plot">
+    </a>    <a class="card" href="/movie/865910-the-plot.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/pBZ1N68Ral2rtNzeQAmGFhDadq0.jpg" alt="The Plot — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Plot</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/223326-tempest">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/223326-tempest.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/cCSOw482P0el3ioDnZEDhggrQoj.jpg" alt="Tempest — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Tempest</div></div>
-    </a>    <a class="card" href="/tv/215199-just-an-excuse">
+    </a>    <a class="card" href="/tv/215199-just-an-excuse.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/2n8dBK8wyGYN3Wf124ojxHHCkHF.jpg" alt="Just an Excuse — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">9.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Just an Excuse</div></div>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Bunker</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/55775-katie-cassidy" class="cast-card">
+            <a href="/actor/55775-katie-cassidy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/v7cs7RFcfoiL8W1YRkZK5lBc57H.jpg" alt="Katie Cassidy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Katie Cassidy</span>
             </a>
-            <a href="/actor/7517-kate-bosworth" class="cast-card">
+            <a href="/actor/7517-kate-bosworth.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ezaM2jsyrxXWVFN1SbH3UfAgZaG.jpg" alt="Kate Bosworth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kate Bosworth</span>
             </a>
-            <a href="/actor/50398-devon-sawa" class="cast-card">
+            <a href="/actor/50398-devon-sawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yvMbpZ0UFQ1IBwlWm8quCA6fNc5.jpg" alt="Devon Sawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Devon Sawa</span>
             </a>
-            <a href="/actor/8169-tyrese-gibson" class="cast-card">
+            <a href="/actor/8169-tyrese-gibson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jxoy4fbXNKFQtBdK73cLXEz3ufS.jpg" alt="Tyrese Gibson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tyrese Gibson</span>
             </a>
-            <a href="/actor/112328-christopher-backus" class="cast-card">
+            <a href="/actor/112328-christopher-backus.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/g48BUWwmbbZDD8fgZACIO5G9NuN.jpg" alt="Christopher Backus" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christopher Backus</span>
             </a>
-            <a href="/actor/163597-kale-browne" class="cast-card">
+            <a href="/actor/163597-kale-browne.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6AOFK5Q3YfoO90AxWKL7FBrdAZ7.jpg" alt="Kale Browne" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kale Browne</span>
             </a>
-            <a href="/actor/4154339-lisa-long" class="cast-card">
+            <a href="/actor/4154339-lisa-long.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lisa Long" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lisa Long</span>
             </a>
-            <a href="/actor/2749400-lorena-sarria" class="cast-card">
+            <a href="/actor/2749400-lorena-sarria.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/30Bl8WKWSkUV8LFCMjxDKaXxEpM.jpg" alt="Lorena Sarria" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lorena Sarria</span>
             </a>
-            <a href="/actor/4154340-joey-anibal-mendez-jr" class="cast-card">
+            <a href="/actor/4154340-joey-anibal-mendez-jr.html" class="cast-card">
                 <img src="/favicon.ico" alt="Joey Anibal Mendez Jr." loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joey Anibal Mendez Jr.</span>
             </a>
-            <a href="/actor/4154341-alyssa-lane" class="cast-card">
+            <a href="/actor/4154341-alyssa-lane.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alyssa Lane" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alyssa Lane</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

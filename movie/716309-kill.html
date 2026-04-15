@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,31 +75,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5847926-calum-ross" class="cast-card">
+            <a href="/actor/5847926-calum-ross.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tjxirdrij10rr4IIBapZy5CGNWR.jpg" alt="Calum Ross" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Calum Ross</span>
             </a>
-            <a href="/actor/1034702-daniel-portman" class="cast-card">
+            <a href="/actor/1034702-daniel-portman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/g44oKPICmujej0fNhP60B0Ujz5l.jpg" alt="Daniel Portman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daniel Portman</span>
             </a>
-            <a href="/actor/1446565-brian-vernel" class="cast-card">
+            <a href="/actor/1446565-brian-vernel.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4soXoVA4Mzp2g0I9hguOvnC6Mk.jpg" alt="Brian Vernel" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brian Vernel</span>
             </a>
-            <a href="/actor/71084-paul-higgins" class="cast-card">
+            <a href="/actor/71084-paul-higgins.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3vtvypxL6uoROZZ6egxOLY7gVzB.jpg" alt="Paul Higgins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paul Higgins</span>
             </a>
-            <a href="/actor/1774532-james-harkness" class="cast-card">
+            <a href="/actor/1774532-james-harkness.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nh2QOLYRvGugbGjbZEVUp6pjNWi.jpg" alt="James Harkness" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Harkness</span>
             </a>
-            <a href="/actor/2058097-joanne-thomson" class="cast-card">
+            <a href="/actor/2058097-joanne-thomson.html" class="cast-card">
                 <img src="/favicon.ico" alt="Joanne Thomson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joanne Thomson</span>
             </a>
-            <a href="/actor/1815487-anita-vettesse" class="cast-card">
+            <a href="/actor/1815487-anita-vettesse.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sFglr5ujZZqOCTvw7YfCUoHuP8q.jpg" alt="Anita Vettesse" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anita Vettesse</span>
             </a></div></section>
@@ -107,13 +107,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>The Good Ship Murder</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1226215-shayne-ward" class="cast-card">
+            <a href="/actor/1226215-shayne-ward.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/p4ArCqgMIa0vrDa2u1GSUb6lB8k.jpg" alt="Shayne Ward" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shayne Ward</span>
             </a>
-            <a href="/actor/1234982-catherine-tyldesley" class="cast-card">
+            <a href="/actor/1234982-catherine-tyldesley.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4NJH3koH0MztJCIYcQ7NoTaqr2L.jpg" alt="Catherine Tyldesley" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Catherine Tyldesley</span>
             </a>
-            <a href="/actor/1249588-geoffrey-breton" class="cast-card">
+            <a href="/actor/1249588-geoffrey-breton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8DjMBI553fCsN0fAt38cnYcajvD.jpg" alt="Geoffrey Breton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Geoffrey Breton</span>
             </a>
-            <a href="/actor/4453283-zak-douglas" class="cast-card">
+            <a href="/actor/4453283-zak-douglas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bjQw9x0FAXf4KRRjbfwcnOvFN52.jpg" alt="Zak Douglas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zak Douglas</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

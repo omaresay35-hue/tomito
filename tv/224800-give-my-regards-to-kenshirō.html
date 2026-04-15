@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ケンシロウによろしく</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/72932-ryuhei-matsuda" class="cast-card">
+            <a href="/actor/72932-ryuhei-matsuda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tG3wMOri6LdDV0ccnP0nNNF5TM4.jpg" alt="Ryuhei Matsuda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryuhei Matsuda</span>
             </a>
-            <a href="/actor/1741323-nanase-nishino" class="cast-card">
+            <a href="/actor/1741323-nanase-nishino.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8Y3OFMBXPmbfn94QSrSEN64lE0F.jpg" alt="Nanase Nishino" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nanase Nishino</span>
             </a>
-            <a href="/actor/227089-kana-kurashina" class="cast-card">
+            <a href="/actor/227089-kana-kurashina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4lfxz4MKbcvH4lL97vLldTNb7qC.jpg" alt="Kana Kurashina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kana Kurashina</span>
             </a>
-            <a href="/actor/1683576-yuma-yamoto" class="cast-card">
+            <a href="/actor/1683576-yuma-yamoto.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/c777kEmb9D7jhY2TdhjsELSQcTT.jpg" alt="Yuma Yamoto" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuma Yamoto</span>
             </a>
-            <a href="/actor/1089922-shigeru-saiki" class="cast-card">
+            <a href="/actor/1089922-shigeru-saiki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/oGFtxMKzuM875nFOnckoZuNdwjo.jpg" alt="Shigeru Saiki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shigeru Saiki</span>
             </a>
-            <a href="/actor/52710-masanobu-katsumura" class="cast-card">
+            <a href="/actor/52710-masanobu-katsumura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hFBAKiDX43rSFTDXsd3SXgGSC9L.jpg" alt="Masanobu Katsumura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Masanobu Katsumura</span>
             </a>
-            <a href="/actor/1405926-toru-nomaguchi" class="cast-card">
+            <a href="/actor/1405926-toru-nomaguchi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vK1z59SqOTIlDP8reCpLeNjtOII.jpg" alt="Toru Nomaguchi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Toru Nomaguchi</span>
             </a>
-            <a href="/actor/1488361-airi-matsui" class="cast-card">
+            <a href="/actor/1488361-airi-matsui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/poqUs3OqT8MNU7CrFzjSXez423Z.jpg" alt="Airi Matsui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Airi Matsui</span>
             </a>
-            <a href="/actor/1117063-mariko-tsutsui" class="cast-card">
+            <a href="/actor/1117063-mariko-tsutsui.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/giQ4CzWrLCfcnPjDUZnDuYdZY8c.jpg" alt="Mariko Tsutsui" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mariko Tsutsui</span>
             </a>
-            <a href="/actor/72202-shido-nakamura" class="cast-card">
+            <a href="/actor/72202-shido-nakamura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dMyf8ZoHD5xkld66h8bEw9QgQZI.jpg" alt="Shido Nakamura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shido Nakamura</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

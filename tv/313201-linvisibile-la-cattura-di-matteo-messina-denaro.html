@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>L'invisibile - La Cattura di Matteo Messina Denaro</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/231226-lino-guanciale" class="cast-card">
+            <a href="/actor/231226-lino-guanciale.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vFr9bpRQjs7jVVhoftICIBFcKUf.jpg" alt="Lino Guanciale" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lino Guanciale</span>
             </a>
-            <a href="/actor/4004130-leo-gassmann" class="cast-card">
+            <a href="/actor/4004130-leo-gassmann.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kQcJR4r7v6rkOPlMyqAVKnrp4ws.jpg" alt="Leo Gassmann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Leo Gassmann</span>
             </a>
-            <a href="/actor/2785269-levante" class="cast-card">
+            <a href="/actor/2785269-levante.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5d6Ycis2qDMwhE8i4wyntB5cVgc.jpg" alt="Levante" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Levante</span>
             </a>
-            <a href="/actor/78697-antonino-bruschetta" class="cast-card">
+            <a href="/actor/78697-antonino-bruschetta.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1GBSY3pCvaSUtHguV8AmTxLYD4K.jpg" alt="Antonino Bruschetta" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Antonino Bruschetta</span>
             </a>
-            <a href="/actor/129649-massimo-de-lorenzo" class="cast-card">
+            <a href="/actor/129649-massimo-de-lorenzo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/coFLDs22kQr81MphsePilpLADoe.jpg" alt="Massimo De Lorenzo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Massimo De Lorenzo</span>
             </a>
-            <a href="/actor/2809075-giacomo-stallone" class="cast-card">
+            <a href="/actor/2809075-giacomo-stallone.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6FQYRcUF839X5PSuCv67e2IGzch.jpg" alt="Giacomo Stallone" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Giacomo Stallone</span>
             </a>
-            <a href="/actor/4071963-noemi-brando" class="cast-card">
+            <a href="/actor/4071963-noemi-brando.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hzj15Fry3vlfGiav5MPAGUbsgOx.jpg" alt="Noemi Brando" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Noemi Brando</span>
             </a>
-            <a href="/actor/1736401-roberto-scorza" class="cast-card">
+            <a href="/actor/1736401-roberto-scorza.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bLL3MWywOMVE7p6cvpZaIQ3p7Dj.jpg" alt="Roberto Scorza" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Roberto Scorza</span>
             </a>
-            <a href="/actor/107626-paolo-briguglia" class="cast-card">
+            <a href="/actor/107626-paolo-briguglia.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/m5zgv4OzYydp05xfdmaOJ9BkVhY.jpg" alt="Paolo Briguglia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paolo Briguglia</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

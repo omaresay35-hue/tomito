@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Paris Has Fallen</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1135268-tewfik-jallab" class="cast-card">
+            <a href="/actor/1135268-tewfik-jallab.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bxQQdJtkhjHpasmd22YKSCHnM6D.jpg" alt="Tewfik Jallab" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tewfik Jallab</span>
             </a>
-            <a href="/actor/1742596-ritu-arya" class="cast-card">
+            <a href="/actor/1742596-ritu-arya.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bBRGCBAW0wNS7fQeGQroOeA60yw.jpg" alt="Ritu Arya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ritu Arya</span>
             </a>
-            <a href="/actor/25340-emmanuelle-bercot" class="cast-card">
+            <a href="/actor/25340-emmanuelle-bercot.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xywoj2EBThgQE8izX7979MmrlOd.jpg" alt="Emmanuelle Bercot" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Emmanuelle Bercot</span>
             </a>
-            <a href="/actor/971726-ana-ularu" class="cast-card">
+            <a href="/actor/971726-ana-ularu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ZIRcuu7SEhZXBUFH8W5Yfe1r27.jpg" alt="Ana Ularu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ana Ularu</span>
             </a>
-            <a href="/actor/16702-sean-harris" class="cast-card">
+            <a href="/actor/16702-sean-harris.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jouyaTu0UuZMNBrADRRkCQX1VX1.jpg" alt="Sean Harris" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sean Harris</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

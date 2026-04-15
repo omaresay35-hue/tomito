@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,27 +75,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/64-gary-oldman" class="cast-card">
+            <a href="/actor/64-gary-oldman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yhaSM5habNNI1Tf4ALRwRk3VvSZ.jpg" alt="Gary Oldman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gary Oldman</span>
             </a>
-            <a href="/actor/1334638-jack-lowden" class="cast-card">
+            <a href="/actor/1334638-jack-lowden.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3wSE6uHLkslE9xvRiMbnphuI0VK.jpg" alt="Jack Lowden" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jack Lowden</span>
             </a>
-            <a href="/actor/5470-kristin-scott-thomas" class="cast-card">
+            <a href="/actor/5470-kristin-scott-thomas.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/axksw0vAjBPSW02ZqpcC0V8rPD7.jpg" alt="Kristin Scott Thomas" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kristin Scott Thomas</span>
             </a>
-            <a href="/actor/13363-saskia-reeves" class="cast-card">
+            <a href="/actor/13363-saskia-reeves.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dTzb4BHZ9T9O2kNgNgTuMtGQ8rB.jpg" alt="Saskia Reeves" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Saskia Reeves</span>
             </a>
-            <a href="/actor/1239342-christopher-chung" class="cast-card">
+            <a href="/actor/1239342-christopher-chung.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wV4r6tVjP9Prk2acj7bYTmdtaMF.jpg" alt="Christopher Chung" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Christopher Chung</span>
             </a>
-            <a href="/actor/1224269-aimee-ffion-edwards" class="cast-card">
+            <a href="/actor/1224269-aimee-ffion-edwards.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iwk8yjyWd46R5BFAYQLImFUvlHh.jpg" alt="Aimee-Ffion Edwards" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Aimee-Ffion Edwards</span>
             </a></div></section>
@@ -103,13 +103,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

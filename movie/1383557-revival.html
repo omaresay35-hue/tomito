@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Revival</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/54649-louis-mandylor" class="cast-card">
+            <a href="/actor/54649-louis-mandylor.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/skvNBR83wxjbFj6XuLxWAhCZTmh.jpg" alt="Louis Mandylor" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Louis Mandylor</span>
             </a>
-            <a href="/actor/60650-michael-paré" class="cast-card">
+            <a href="/actor/60650-michael-paré.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jxrXW8OL6hwJgtJgePdMO5yHuAM.jpg" alt="Michael Paré" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Michael Paré</span>
             </a>
-            <a href="/actor/3060587-yonv-joseph" class="cast-card">
+            <a href="/actor/3060587-yonv-joseph.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uewtdpOglyHZHyo8vAMkeN9znw9.jpg" alt="Yonv Joseph" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yonv Joseph</span>
             </a>
-            <a href="/actor/592528-nathalie-rapti-gomez" class="cast-card">
+            <a href="/actor/592528-nathalie-rapti-gomez.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/3xmsqNOBOs19rfGDviUF3KFMSSJ.jpg" alt="Nathalie Rapti Gomez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nathalie Rapti Gomez</span>
             </a>
-            <a href="/actor/90117-james-chalke" class="cast-card">
+            <a href="/actor/90117-james-chalke.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/83XksAzD5WoJHErDBgjYQ3NrVM6.jpg" alt="James Chalke" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>James Chalke</span>
             </a>
-            <a href="/actor/5143409-giovanni-bufalini" class="cast-card">
+            <a href="/actor/5143409-giovanni-bufalini.html" class="cast-card">
                 <img src="/favicon.ico" alt="Giovanni Bufalini" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Giovanni Bufalini</span>
             </a>
-            <a href="/actor/5446387-violetta-jackson" class="cast-card">
+            <a href="/actor/5446387-violetta-jackson.html" class="cast-card">
                 <img src="/favicon.ico" alt="Violetta Jackson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Violetta Jackson</span>
             </a>
-            <a href="/actor/2041154-naya-manson" class="cast-card">
+            <a href="/actor/2041154-naya-manson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/eItX5RTAmPchzVpvRPjb6SLe7Rl.jpg" alt="Naya Manson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Naya Manson</span>
             </a>
-            <a href="/actor/84262-robert-madison" class="cast-card">
+            <a href="/actor/84262-robert-madison.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/1y3GPJRuRebLM018GOFS16BlNgF.jpg" alt="Robert Madison" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Robert Madison</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

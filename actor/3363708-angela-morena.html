@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1421198-sponsor">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1421198-sponsor.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/7Opn9aPs8UCBJQ6lqou3i8f9omC.jpg" alt="Sponsor — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sponsor</div></div>
-    </a>    <a class="card" href="/movie/1310906-butas">
+    </a>    <a class="card" href="/movie/1310906-butas.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/u4fWtdi3Dfz1DRjJ477VDyiKmrd.jpg" alt="Butas — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Butas</div></div>
-    </a>    <a class="card" href="/movie/1302004-kaskasero">
+    </a>    <a class="card" href="/movie/1302004-kaskasero.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/qSpFNnFC3il0bdhyynzJgwlMRnv.jpg" alt="Kaskasero — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kaskasero</div></div>
-    </a>    <a class="card" href="/movie/1266985-lady-guard">
+    </a>    <a class="card" href="/movie/1266985-lady-guard.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vHWqWxbhULXTkkb0VWFla66r9Gj.jpg" alt="Lady Guard — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Lady Guard</div></div>
-    </a>    <a class="card" href="/movie/1226301-kabit">
+    </a>    <a class="card" href="/movie/1226301-kabit.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/p56MfwTvPqIe9J9QRBhuGA7lgzQ.jpg" alt="Kabit — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">4.9⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kabit</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/230691-secret-campus">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/230691-secret-campus.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vaMxZGw4Dl7hH8knr0V0EuBwc4x.jpg" alt="Secret Campus — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Secret Campus</div></div>
-    </a>    <a class="card" href="/tv/203906-high-school-on-sex">
+    </a>    <a class="card" href="/tv/203906-high-school-on-sex.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/tBOQVr2XfNKjUnB7O4tOM3olomr.jpg" alt="High (School) On Sex — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">High (School) On Sex</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

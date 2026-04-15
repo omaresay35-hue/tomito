@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,19 +71,19 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/274570-moon-river">
+  <section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/274570-moon-river.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/nVl892J7boHDS5blMi97wQK7BUt.jpg" alt="Moon River — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Moon River</div></div>
-    </a>    <a class="card" href="/tv/275177-to-the-moon">
+    </a>    <a class="card" href="/tv/275177-to-the-moon.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/sDvFzszgrB2UEYhnfPaNrSeDSfH.jpg" alt="To the Moon — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">To the Moon</div></div>
-    </a>    <a class="card" href="/tv/254391-the-potato-lab">
+    </a>    <a class="card" href="/tv/254391-the-potato-lab.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/c20CqgsCKKEFBKNOknL6GFSgL35.jpg" alt="The Potato Lab — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Potato Lab</div></div>
-    </a>    <a class="card" href="/tv/197067-extraordinary-attorney-woo">
+    </a>    <a class="card" href="/tv/197067-extraordinary-attorney-woo.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/zuNOQVI4rEaqwknrfQUVKtlKE2C.jpg" alt="Extraordinary Attorney Woo — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Extraordinary Attorney Woo</div></div>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

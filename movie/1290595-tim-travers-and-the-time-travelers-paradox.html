@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Tim Travers and the Time Traveler's Paradox</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1570322-samuel-dunning" class="cast-card">
+            <a href="/actor/1570322-samuel-dunning.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lRGvy0BQ06TJBk3AuirEPoVi5zL.jpg" alt="Samuel Dunning" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Samuel Dunning</span>
             </a>
-            <a href="/actor/76527-felicia-day" class="cast-card">
+            <a href="/actor/76527-felicia-day.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wJQX3mfVc8FOXMKxJkuY9qHpNN9.jpg" alt="Felicia Day" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Felicia Day</span>
             </a>
-            <a href="/actor/74949-joel-mchale" class="cast-card">
+            <a href="/actor/74949-joel-mchale.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7iwIiaYhIPaiAyiaZOc2Gl1ZAY4.jpg" alt="Joel McHale" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joel McHale</span>
             </a>
-            <a href="/actor/11160-danny-trejo" class="cast-card">
+            <a href="/actor/11160-danny-trejo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7JrUkRGBscZ1Hy5JinaaXjjzSCF.jpg" alt="Danny Trejo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Danny Trejo</span>
             </a>
-            <a href="/actor/65827-keith-david" class="cast-card">
+            <a href="/actor/65827-keith-david.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hwykAZLSIP5Cb2bbauZ4CEEmq0u.jpg" alt="Keith David" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Keith David</span>
             </a>
-            <a href="/actor/1867530-alex-terzieff" class="cast-card">
+            <a href="/actor/1867530-alex-terzieff.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alex Terzieff" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alex Terzieff</span>
             </a>
-            <a href="/actor/79907-tony-doupe" class="cast-card">
+            <a href="/actor/79907-tony-doupe.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wmhu0egMzWXak0hn13Obso06KDU.jpg" alt="Tony Doupe" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tony Doupe</span>
             </a>
-            <a href="/actor/1359349-stimson-snead" class="cast-card">
+            <a href="/actor/1359349-stimson-snead.html" class="cast-card">
                 <img src="/favicon.ico" alt="Stimson Snead" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Stimson Snead</span>
             </a>
-            <a href="/actor/1464046-david-babbitt" class="cast-card">
+            <a href="/actor/1464046-david-babbitt.html" class="cast-card">
                 <img src="/favicon.ico" alt="David Babbitt" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Babbitt</span>
             </a>
-            <a href="/actor/2280574-nicole-murray" class="cast-card">
+            <a href="/actor/2280574-nicole-murray.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5K2mAQ63XbhwFLqPV9SF9ABd9yt.jpg" alt="Nicole Murray" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nicole Murray</span>
             </a>
-            <a href="/actor/1636796-jeff-hilliard" class="cast-card">
+            <a href="/actor/1636796-jeff-hilliard.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jeff Hilliard" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeff Hilliard</span>
             </a>
-            <a href="/actor/3551816-jhon-goodwin" class="cast-card">
+            <a href="/actor/3551816-jhon-goodwin.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jhon Goodwin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jhon Goodwin</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -44,8 +44,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -75,27 +75,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1229-jeff-bridges" class="cast-card">
+            <a href="/actor/1229-jeff-bridges.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6ItMc51AeORUz6iIQxGnX3HEZaB.jpg" alt="Jeff Bridges" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jeff Bridges</span>
             </a>
-            <a href="/actor/12074-john-lithgow" class="cast-card">
+            <a href="/actor/12074-john-lithgow.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ajfuBSm1HuVqFJlbTmAlza62Xxr.jpg" alt="John Lithgow" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>John Lithgow</span>
             </a>
-            <a href="/actor/61178-alia-shawkat" class="cast-card">
+            <a href="/actor/61178-alia-shawkat.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aUc0hlILKfDKhlKnWQliGjkQL9a.jpg" alt="Alia Shawkat" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alia Shawkat</span>
             </a>
-            <a href="/actor/103330-navid-negahban" class="cast-card">
+            <a href="/actor/103330-navid-negahban.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pWi5tINf4mDvTYbNKZDJPODYKra.jpg" alt="Navid Negahban" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Navid Negahban</span>
             </a>
-            <a href="/actor/1318221-jacqueline-antaramian" class="cast-card">
+            <a href="/actor/1318221-jacqueline-antaramian.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e9Jv7fneXEsWEXL6QRhgkV1okvD.jpg" alt="Jacqueline Antaramian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jacqueline Antaramian</span>
             </a>
-            <a href="/actor/15851-amy-brenneman" class="cast-card">
+            <a href="/actor/15851-amy-brenneman.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4FJNcWqnYciJzsZRsORZuyxdKfb.jpg" alt="Amy Brenneman" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amy Brenneman</span>
             </a></div></section>
@@ -103,13 +103,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

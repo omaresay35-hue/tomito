@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>يدفع</span>
   </nav>
 
@@ -72,39 +72,39 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1155085-alicia-sanz" class="cast-card">
+            <a href="/actor/1155085-alicia-sanz.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/SvNFKjOhmScEluclKpo4bqjHWH.jpg" alt="Alicia Sanz" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alicia Sanz</span>
             </a>
-            <a href="/actor/557579-raúl-castillo" class="cast-card">
+            <a href="/actor/557579-raúl-castillo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wyxl5HtyjeJRXkE89LtsItQhPHN.jpg" alt="Raúl Castillo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Raúl Castillo</span>
             </a>
-            <a href="/actor/3938260-david-alexander-flinn" class="cast-card">
+            <a href="/actor/3938260-david-alexander-flinn.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4zkZzzVFJG9Wr6WeN5I8jPMqv4y.jpg" alt="David Alexander Flinn" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Alexander Flinn</span>
             </a>
-            <a href="/actor/1508131-gore-abrams" class="cast-card">
+            <a href="/actor/1508131-gore-abrams.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bKMTqbl0FYlzIC6aTMKQZNAhhXK.jpg" alt="Gore Abrams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gore Abrams</span>
             </a>
-            <a href="/actor/145181-luke-barnett" class="cast-card">
+            <a href="/actor/145181-luke-barnett.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/b6i9jyAaUdjPPXKdPDAjPzee1bu.jpg" alt="Luke Barnett" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luke Barnett</span>
             </a>
-            <a href="/actor/1701234-cole-gleason" class="cast-card">
+            <a href="/actor/1701234-cole-gleason.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/d5zZDHWr2qFMEucG3B8TQpdhR0O.jpg" alt="Cole Gleason" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Cole Gleason</span>
             </a>
-            <a href="/actor/1336420-linc-hand" class="cast-card">
+            <a href="/actor/1336420-linc-hand.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xgdpXLpcrJOxz1DVBufDxnSiG8Y.jpg" alt="Linc Hand" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Linc Hand</span>
             </a>
-            <a href="/actor/80232-dagney-kerr" class="cast-card">
+            <a href="/actor/80232-dagney-kerr.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/A53u02APKYKXDfRhRdCfq1FqqYM.jpg" alt="Dagney Kerr" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Dagney Kerr</span>
             </a>
-            <a href="/actor/2802714-justin-marcel-mcmanus" class="cast-card">
+            <a href="/actor/2802714-justin-marcel-mcmanus.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/mXRlqv3NvkjTbULYD93Hhz1IZHI.jpg" alt="Justin Marcel McManus" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Justin Marcel McManus</span>
             </a></div></section>
@@ -112,13 +112,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

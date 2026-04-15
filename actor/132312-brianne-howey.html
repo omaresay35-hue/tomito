@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1491034-netflix-tudum-2025">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1491034-netflix-tudum-2025.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/jTZ5yiFpJPc19lA6uoT9zafHr0f.jpg" alt="Netflix Tudum 2025 — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Netflix Tudum 2025</div></div>
-    </a>    <a class="card" href="/movie/1212142-kinda-pregnant">
+    </a>    <a class="card" href="/movie/1212142-kinda-pregnant.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/k2Lq3rCJ7P9gk5Df9of9kqr9IJM.jpg" alt="Kinda Pregnant — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Kinda Pregnant</div></div>
-    </a>    <a class="card" href="/movie/1097870-dear-santa">
+    </a>    <a class="card" href="/movie/1097870-dear-santa.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/fRbDHbGBXg6kwQYr3CRYeKPJW5q.jpg" alt="Dear Santa — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Dear Santa</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/209752-celebrity-jeopardy">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/209752-celebrity-jeopardy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vhll3DMjzU5xs94BqFl1aYp1DSc.jpg" alt="Celebrity Jeopardy! — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Celebrity Jeopardy!</div></div>
-    </a>    <a class="card" href="/tv/210081-sherri">
+    </a>    <a class="card" href="/tv/210081-sherri.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/w6K4LsGYTBbuYpDG9qR20g6p1NT.jpg" alt="Sherri — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">2.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">Sherri</div></div>
-    </a>    <a class="card" href="/tv/117581-ginny-georgia">
+    </a>    <a class="card" href="/tv/117581-ginny-georgia.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/vOwunzW4dx3n0J5mH40n9jTRSwY.jpg" alt="Ginny & Georgia — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Ginny & Georgia</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

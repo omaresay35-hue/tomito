@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -73,27 +73,27 @@ Description above from the Wikipedia article Nicholas Rowe , licensed under CC-B
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1184495-joy">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1184495-joy.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/inL3nv3hAqlvoBSIWFMYydlwULE.jpg" alt="Joy — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.8⭐</div></div>
       <div class="card-bottom"><div class="card-title">Joy</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/287167-the-hack">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/287167-the-hack.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yY5gamvZd82mZx7EVTkwqfAQU00.jpg" alt="The Hack — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Hack</div></div>
-    </a>    <a class="card" href="/tv/247704-red-eye">
+    </a>    <a class="card" href="/tv/247704-red-eye.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hmNbB68i1zQ7xq7MY82eBujziYF.jpg" alt="Red Eye — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">Red Eye</div></div>
-    </a>    <a class="card" href="/tv/241889-máxima">
+    </a>    <a class="card" href="/tv/241889-máxima.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/g8nhNXY2SPfrsNO0zXyUCm9ILA.jpg" alt="Máxima — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.2⭐</div></div>
       <div class="card-bottom"><div class="card-title">Máxima</div></div>
-    </a>    <a class="card" href="/tv/231340-the-killing-kind">
+    </a>    <a class="card" href="/tv/231340-the-killing-kind.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/5imNWXMYXmBZBc34BqPE3lkoIl9.jpg" alt="The Killing Kind — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Killing Kind</div></div>
-    </a>    <a class="card" href="/tv/887-space-race">
+    </a>    <a class="card" href="/tv/887-space-race.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/54tkCalnQcchkUQ4p59uNcy5oDL.jpg" alt="Space Race — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Space Race</div></div>
@@ -102,13 +102,6 @@ Description above from the Wikipedia article Nicholas Rowe , licensed under CC-B
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

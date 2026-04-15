@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>잔혹한 인턴</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/980225-ra-mi-ran" class="cast-card">
+            <a href="/actor/980225-ra-mi-ran.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/45jkWK6vQpQo32FsbGMSDrZig62.jpg" alt="Ra Mi-ran" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ra Mi-ran</span>
             </a>
-            <a href="/actor/1299243-uhm-ji-won" class="cast-card">
+            <a href="/actor/1299243-uhm-ji-won.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/21ln2aJX0BWCWURqpDW2CjKL9BB.jpg" alt="Uhm Ji-won" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Uhm Ji-won</span>
             </a>
-            <a href="/actor/145990-lee-jong-hyuk" class="cast-card">
+            <a href="/actor/145990-lee-jong-hyuk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o9XEyccafEoyy2sDicr4AVSizzb.jpg" alt="Lee Jong-hyuk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Jong-hyuk</span>
             </a>
-            <a href="/actor/1766435-kim-min-seo" class="cast-card">
+            <a href="/actor/1766435-kim-min-seo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vI2TYCAPRktDH5VIi9N2IGn8v2M.jpg" alt="Kim Min-seo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Min-seo</span>
             </a>
-            <a href="/actor/115904-kim-in-kwon" class="cast-card">
+            <a href="/actor/115904-kim-in-kwon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vMPHVFE0FhItp2uMMgGRYq5z5Bj.jpg" alt="Kim In-kwon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim In-kwon</span>
             </a>
-            <a href="/actor/2697147-kim-hye-hwa" class="cast-card">
+            <a href="/actor/2697147-kim-hye-hwa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pCwGRkimaHXcv7MOn20cgJrUCAU.jpg" alt="Kim Hye-hwa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Hye-hwa</span>
             </a>
-            <a href="/actor/566373-lee-chae-eun" class="cast-card">
+            <a href="/actor/566373-lee-chae-eun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o5ryIitLKc2Ej5GYsrypc6S1PN9.jpg" alt="Lee Chae-eun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lee Chae-eun</span>
             </a>
-            <a href="/actor/1875638-gyeongree" class="cast-card">
+            <a href="/actor/1875638-gyeongree.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8szL6k73fWZXsgz5s9M6eO8LNbZ.jpg" alt="Gyeongree" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Gyeongree</span>
             </a>
-            <a href="/actor/2977941-seo-ji-hoo" class="cast-card">
+            <a href="/actor/2977941-seo-ji-hoo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aRPOEXO0iO1OZdW7EGAvIZNyMYt.jpg" alt="Seo Ji-hoo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Seo Ji-hoo</span>
             </a>
-            <a href="/actor/6079187-최시아" class="cast-card">
+            <a href="/actor/6079187-최시아.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lvNC3J2DmBaBtR0UhLOe5ZRgz8U.jpg" alt="최시아" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>최시아</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

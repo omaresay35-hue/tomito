@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>The Encampments</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5303354-mahmoud-khalil" class="cast-card">
+            <a href="/actor/5303354-mahmoud-khalil.html" class="cast-card">
                 <img src="/favicon.ico" alt="Mahmoud Khalil" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mahmoud Khalil</span>
             </a>
-            <a href="/actor/5320607-sueda-polat" class="cast-card">
+            <a href="/actor/5320607-sueda-polat.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sueda Polat" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sueda Polat</span>
             </a>
-            <a href="/actor/239794-jamal-joseph" class="cast-card">
+            <a href="/actor/239794-jamal-joseph.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jamal Joseph" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jamal Joseph</span>
             </a>
-            <a href="/actor/5320612-grant-miner" class="cast-card">
+            <a href="/actor/5320612-grant-miner.html" class="cast-card">
                 <img src="/favicon.ico" alt="Grant Miner" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Grant Miner</span>
             </a>
-            <a href="/actor/5320616-maya-abdallah" class="cast-card">
+            <a href="/actor/5320616-maya-abdallah.html" class="cast-card">
                 <img src="/favicon.ico" alt="Maya Abdallah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maya Abdallah</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

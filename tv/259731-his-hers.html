@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>روايته وروايتها</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/62561-tessa-thompson" class="cast-card">
+            <a href="/actor/62561-tessa-thompson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/19ze60jXlb2j7dXc2UpA3MujXA8.jpg" alt="Tessa Thompson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Tessa Thompson</span>
             </a>
-            <a href="/actor/19498-jon-bernthal" class="cast-card">
+            <a href="/actor/19498-jon-bernthal.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/o0t6EVkJOrFAjESDilZUlf46IbQ.jpg" alt="Jon Bernthal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jon Bernthal</span>
             </a>
-            <a href="/actor/59254-pablo-schreiber" class="cast-card">
+            <a href="/actor/59254-pablo-schreiber.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/trKW3kwhwx4UeCNZg43A1x1h4Uv.jpg" alt="Pablo Schreiber" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pablo Schreiber</span>
             </a>
-            <a href="/actor/937317-crystal-r-fox" class="cast-card">
+            <a href="/actor/937317-crystal-r-fox.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/u5mv4EiIl5oS2s0yUaqtjbpWEz2.jpg" alt="Crystal R. Fox" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Crystal R. Fox</span>
             </a>
-            <a href="/actor/1375002-sunita-mani" class="cast-card">
+            <a href="/actor/1375002-sunita-mani.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xQo4rkMEphSAt8F9D1OyWv0GBLx.jpg" alt="Sunita Mani" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sunita Mani</span>
             </a>
-            <a href="/actor/2392602-poppy-liu" class="cast-card">
+            <a href="/actor/2392602-poppy-liu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i36QkUChZN7K8BQa1ReaZHes6L4.jpg" alt="Poppy Liu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Poppy Liu</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

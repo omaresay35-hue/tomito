@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>‫المغامرة الأخيرة: كواليس Stranger Things 5</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1179422-ross-duffer" class="cast-card">
+            <a href="/actor/1179422-ross-duffer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7wdhSHgMLry5jBKJT1mdLT3BYaZ.jpg" alt="Ross Duffer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ross Duffer</span>
             </a>
-            <a href="/actor/1179419-matt-duffer" class="cast-card">
+            <a href="/actor/1179419-matt-duffer.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/kXO5CnSxC0znMAICGxnPeuGP73U.jpg" alt="Matt Duffer" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Matt Duffer</span>
             </a>
-            <a href="/actor/1666689-paul-dichter" class="cast-card">
+            <a href="/actor/1666689-paul-dichter.html" class="cast-card">
                 <img src="/favicon.ico" alt="Paul Dichter" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Paul Dichter</span>
             </a>
-            <a href="/actor/1916848-kate-trefry" class="cast-card">
+            <a href="/actor/1916848-kate-trefry.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/RYoRQPYeGhSQP6y0X5x6LG8THM.jpg" alt="Kate Trefry" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kate Trefry</span>
             </a>
-            <a href="/actor/3566405-caitlin-schneiderhan" class="cast-card">
+            <a href="/actor/3566405-caitlin-schneiderhan.html" class="cast-card">
                 <img src="/favicon.ico" alt="Caitlin Schneiderhan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Caitlin Schneiderhan</span>
             </a>
-            <a href="/actor/17825-shawn-levy" class="cast-card">
+            <a href="/actor/17825-shawn-levy.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uZ40wDFzxPmzROJl9KxPgEGv9ME.jpg" alt="Shawn Levy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shawn Levy</span>
             </a>
-            <a href="/actor/1113659-lampton-enochs" class="cast-card">
+            <a href="/actor/1113659-lampton-enochs.html" class="cast-card">
                 <img src="/favicon.ico" alt="Lampton Enochs" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lampton Enochs</span>
             </a>
-            <a href="/actor/966560-chris-trujillo" class="cast-card">
+            <a href="/actor/966560-chris-trujillo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Chris Trujillo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Chris Trujillo</span>
             </a>
-            <a href="/actor/1285825-jess-royal" class="cast-card">
+            <a href="/actor/1285825-jess-royal.html" class="cast-card">
                 <img src="/favicon.ico" alt="Jess Royal" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jess Royal</span>
             </a>
-            <a href="/actor/2025119-amy-parris" class="cast-card">
+            <a href="/actor/2025119-amy-parris.html" class="cast-card">
                 <img src="/favicon.ico" alt="Amy Parris" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amy Parris</span>
             </a>
-            <a href="/actor/83356-jamie-campbell-bower" class="cast-card">
+            <a href="/actor/83356-jamie-campbell-bower.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/jVAkrPb3lNHZLerfzVxTzh170L7.jpg" alt="Jamie Campbell Bower" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jamie Campbell Bower</span>
             </a>
-            <a href="/actor/1830362-caleb-heymann" class="cast-card">
+            <a href="/actor/1830362-caleb-heymann.html" class="cast-card">
                 <img src="/favicon.ico" alt="Caleb Heymann" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Caleb Heymann</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

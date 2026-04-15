@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>선산</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/232599-kim-hyun-joo" class="cast-card">
+            <a href="/actor/232599-kim-hyun-joo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/AeYZSlVauG1BMJdzfyaw3u5jcyA.jpg" alt="Kim Hyun-joo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Hyun-joo</span>
             </a>
-            <a href="/actor/93999-park-hee-soon" class="cast-card">
+            <a href="/actor/93999-park-hee-soon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s2SSzvlsSfCPP5EXhCoWUr8970F.jpg" alt="Park Hee-soon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Hee-soon</span>
             </a>
-            <a href="/actor/564844-park-byung-eun" class="cast-card">
+            <a href="/actor/564844-park-byung-eun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/8lDiEHjbBxPD8VNu1kGifMXhPUn.jpg" alt="Park Byung-eun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Park Byung-eun</span>
             </a>
-            <a href="/actor/2239782-ryu-kyung-soo" class="cast-card">
+            <a href="/actor/2239782-ryu-kyung-soo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4tjiTN3osUTaXE8lFAyK2Sjl8Lw.jpg" alt="Ryu Kyung-soo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryu Kyung-soo</span>
             </a>
-            <a href="/actor/4730829-joo-suk-in" class="cast-card">
+            <a href="/actor/4730829-joo-suk-in.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iltLvUMcDAEgbFiuLJs4qj9djhH.jpg" alt="Joo Suk-In" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joo Suk-In</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

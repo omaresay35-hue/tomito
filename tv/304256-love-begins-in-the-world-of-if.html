@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>ifの世界で恋がはじまる</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2194388-kotaro-daigo" class="cast-card">
+            <a href="/actor/2194388-kotaro-daigo.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/i2pNaX2x4naW6Eyf4SGPypqh7To.jpg" alt="Kotaro Daigo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kotaro Daigo</span>
             </a>
-            <a href="/actor/2389747-daisuke-nakagawa" class="cast-card">
+            <a href="/actor/2389747-daisuke-nakagawa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7HvEZ5Xu4D98KiRva3DY6dHLMDJ.jpg" alt="Daisuke Nakagawa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Daisuke Nakagawa</span>
             </a>
-            <a href="/actor/3855351-yuki-hayama" class="cast-card">
+            <a href="/actor/3855351-yuki-hayama.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5ZKvdpkG9VPPQj2BuefBrBKzTQX.jpg" alt="Yuki Hayama" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yuki Hayama</span>
             </a>
-            <a href="/actor/1366211-sojiro-yoshimura" class="cast-card">
+            <a href="/actor/1366211-sojiro-yoshimura.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7DuFRmhh5nlhde5bp8aLy3ym0OW.jpg" alt="Sojiro Yoshimura" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sojiro Yoshimura</span>
             </a>
-            <a href="/actor/3597409-mamoru-hagiwara" class="cast-card">
+            <a href="/actor/3597409-mamoru-hagiwara.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/utE6CFcNE8q6Y8MBqitexERpOF.jpg" alt="Mamoru Hagiwara" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mamoru Hagiwara</span>
             </a>
-            <a href="/actor/1998971-kazunari-tosa" class="cast-card">
+            <a href="/actor/1998971-kazunari-tosa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pjmEpy5LN9DIX6Z580Ol59kUc0e.jpg" alt="Kazunari Tosa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kazunari Tosa</span>
             </a>
-            <a href="/actor/1179110-motoki-kobayashi" class="cast-card">
+            <a href="/actor/1179110-motoki-kobayashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/cleuRZeI1GkmyeOXHzaVLUpciix.jpg" alt="Motoki Kobayashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Motoki Kobayashi</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>كابيل: البرنامج الهندي العظيم</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1513214-kapil-sharma" class="cast-card">
+            <a href="/actor/1513214-kapil-sharma.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/bu0jBQkDJmXCuISoJwktwgamkRX.jpg" alt="Kapil Sharma" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kapil Sharma</span>
             </a>
-            <a href="/actor/1485723-sunil-grover" class="cast-card">
+            <a href="/actor/1485723-sunil-grover.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ing2HJHnpvl7uzEQpv5M7NP4XK8.jpg" alt="Sunil Grover" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sunil Grover</span>
             </a>
-            <a href="/actor/1055969-krishna-abhishek" class="cast-card">
+            <a href="/actor/1055969-krishna-abhishek.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2wJ0f2nJXUdVQ7R6NHQdXiIu4YE.jpg" alt="Krishna Abhishek" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Krishna Abhishek</span>
             </a>
-            <a href="/actor/1632609-kiku-sharda" class="cast-card">
+            <a href="/actor/1632609-kiku-sharda.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/j1yxHbF12tDRoTqqLVqdJzCo9ro.jpg" alt="Kiku Sharda" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kiku Sharda</span>
             </a>
-            <a href="/actor/87304-archana-puran-singh" class="cast-card">
+            <a href="/actor/87304-archana-puran-singh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uc6QJNnT8q0wNnZOZi0QW2hE1wq.jpg" alt="Archana Puran Singh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Archana Puran Singh</span>
             </a>
-            <a href="/actor/140770-navjot-singh-sidhu" class="cast-card">
+            <a href="/actor/140770-navjot-singh-sidhu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/tSBr7AVFmZYhIEJkqHgvBsanqi4.jpg" alt="Navjot Singh Sidhu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Navjot Singh Sidhu</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

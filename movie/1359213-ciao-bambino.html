@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>Ciao bambino</span>
   </nav>
 
@@ -72,51 +72,51 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/5283122-marco-adamo" class="cast-card">
+            <a href="/actor/5283122-marco-adamo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Marco Adamo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Marco Adamo</span>
             </a>
-            <a href="/actor/5001667-anastasia-kaletchuk" class="cast-card">
+            <a href="/actor/5001667-anastasia-kaletchuk.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7Ztt20ourPCriacwqmKOb1fJGV9.jpg" alt="Anastasia Kaletchuk" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anastasia Kaletchuk</span>
             </a>
-            <a href="/actor/5001668-luciano-pistone" class="cast-card">
+            <a href="/actor/5001668-luciano-pistone.html" class="cast-card">
                 <img src="/favicon.ico" alt="Luciano Pistone" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luciano Pistone</span>
             </a>
-            <a href="/actor/1143617-pasquale-esposito" class="cast-card">
+            <a href="/actor/1143617-pasquale-esposito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wmeeCENQYBE9d5GBQUhM7b6ARnw.jpg" alt="Pasquale Esposito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pasquale Esposito</span>
             </a>
-            <a href="/actor/2538205-salvatore-pelliccia" class="cast-card">
+            <a href="/actor/2538205-salvatore-pelliccia.html" class="cast-card">
                 <img src="/favicon.ico" alt="Salvatore Pelliccia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Salvatore Pelliccia</span>
             </a>
-            <a href="/actor/5001669-sergio-minucci" class="cast-card">
+            <a href="/actor/5001669-sergio-minucci.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sergio Minucci" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sergio Minucci</span>
             </a>
-            <a href="/actor/3188644-luciano-gigante" class="cast-card">
+            <a href="/actor/3188644-luciano-gigante.html" class="cast-card">
                 <img src="/favicon.ico" alt="Luciano Gigante" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Luciano Gigante</span>
             </a>
-            <a href="/actor/5001670-attilo-peluso" class="cast-card">
+            <a href="/actor/5001670-attilo-peluso.html" class="cast-card">
                 <img src="/favicon.ico" alt="Attilo Peluso" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Attilo Peluso</span>
             </a>
-            <a href="/actor/5001671-antonio-cirillo" class="cast-card">
+            <a href="/actor/5001671-antonio-cirillo.html" class="cast-card">
                 <img src="/favicon.ico" alt="Antonio Cirillo" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Antonio Cirillo</span>
             </a>
-            <a href="/actor/5001672-rosalia-zinno" class="cast-card">
+            <a href="/actor/5001672-rosalia-zinno.html" class="cast-card">
                 <img src="/favicon.ico" alt="Rosalia Zinno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rosalia Zinno</span>
             </a>
-            <a href="/actor/1871392-lia-zinno" class="cast-card">
+            <a href="/actor/1871392-lia-zinno.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uzcNwHU187W3EEDcrm2ZKyK7LXl.jpg" alt="Lia Zinno" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Lia Zinno</span>
             </a>
-            <a href="/actor/5249011-serafina-sampu" class="cast-card">
+            <a href="/actor/5249011-serafina-sampu.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/nOutt6V3N4essGBPOMvjgbRQxsc.jpg" alt="Serafina Sampu" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Serafina Sampu</span>
             </a></div></section>
@@ -124,13 +124,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,31 +71,31 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1276704-53-sundays">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1276704-53-sundays.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/olk6MkfHFWEpWmhQn6Mb4jNqspm.jpg" alt="53 Sundays — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">53 Sundays</div></div>
-    </a>    <a class="card" href="/movie/1217584-torrente-for-president">
+    </a>    <a class="card" href="/movie/1217584-torrente-for-president.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/yrDKwAdZRJjoQ9RZwzRGPpMC7U1.jpg" alt="Torrente for President — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Torrente for President</div></div>
-    </a>    <a class="card" href="/movie/1437873-band-together">
+    </a>    <a class="card" href="/movie/1437873-band-together.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/A7bLtYFI04Qb73Vl0qKrVJDDinO.jpg" alt="Band Together — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">Band Together</div></div>
-    </a>    <a class="card" href="/movie/1276210-last-stop-rocafort-st">
+    </a>    <a class="card" href="/movie/1276210-last-stop-rocafort-st.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/oY6KfZgplGCA4WszBgd5WV2VOKj.jpg" alt="Last Stop: Rocafort St. — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.4⭐</div></div>
       <div class="card-bottom"><div class="card-title">Last Stop: Rocafort St.</div></div>
-    </a>    <a class="card" href="/movie/1104071-honeymoon">
+    </a>    <a class="card" href="/movie/1104071-honeymoon.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/hERiiDwQqg6LQsrIbxI5YvROjic.jpg" alt="Honeymoon — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">Honeymoon</div></div>
-    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/243790-the-short-life">
+    </a></div></section><section class="section"><h2 class="section-title">مسلسلاته — TV Shows</h2><div class="grid">    <a class="card" href="/tv/243790-the-short-life.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xfdKC0zg8MvEYgE2NZsHbw3WvgL.jpg" alt="The Short Life — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Short Life</div></div>
-    </a>    <a class="card" href="/tv/239966-the-asunta-case">
+    </a>    <a class="card" href="/tv/239966-the-asunta-case.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/3sGdiu1TPfPB01AAohlgVh1uf0q.jpg" alt="The Asunta Case — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Asunta Case</div></div>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

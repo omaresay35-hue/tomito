@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Payback</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/147884-morven-christie" class="cast-card">
+            <a href="/actor/147884-morven-christie.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fTlG9uWyaiQt9UATyPYswjo9EGh.jpg" alt="Morven Christie" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Morven Christie</span>
             </a>
-            <a href="/actor/3064-peter-mullan" class="cast-card">
+            <a href="/actor/3064-peter-mullan.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dvu5PWJK6Vv4xnYyMzdMvH73Laj.jpg" alt="Peter Mullan" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Peter Mullan</span>
             </a>
-            <a href="/actor/110615-prasanna-puwanarajah" class="cast-card">
+            <a href="/actor/110615-prasanna-puwanarajah.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/soIlyi4qNdRX11etHhoMFrlUJcI.jpg" alt="Prasanna Puwanarajah" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Prasanna Puwanarajah</span>
             </a>
-            <a href="/actor/143971-derek-riddell" class="cast-card">
+            <a href="/actor/143971-derek-riddell.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/yLOCUYfXbSflW3WQRkDqi2fHvl4.jpg" alt="Derek Riddell" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Derek Riddell</span>
             </a>
-            <a href="/actor/978-steven-mackintosh" class="cast-card">
+            <a href="/actor/978-steven-mackintosh.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/vDA4mmVe0XMnqd6qMyGWI8bUEeC.jpg" alt="Steven Mackintosh" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steven Mackintosh</span>
             </a>
-            <a href="/actor/1636378-grace-chilton" class="cast-card">
+            <a href="/actor/1636378-grace-chilton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/4cBrTQTDT6DuyTtujP6SoDByHWQ.jpg" alt="Grace Chilton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Grace Chilton</span>
             </a>
-            <a href="/actor/3498680-eileen-duffy" class="cast-card">
+            <a href="/actor/3498680-eileen-duffy.html" class="cast-card">
                 <img src="/favicon.ico" alt="Eileen Duffy" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Eileen Duffy</span>
             </a>
-            <a href="/actor/2205838-steven-miller" class="cast-card">
+            <a href="/actor/2205838-steven-miller.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/11gMgxiilUqxdD5ie4fvjLJJKK8.jpg" alt="Steven Miller" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Steven Miller</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

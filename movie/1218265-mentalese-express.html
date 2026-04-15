@@ -34,15 +34,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">فيلم</a> &gt; 
+    <a href="/index.html#movies">فيلم</a> &gt; 
     <span>忐忑電梯</span>
   </nav>
 
@@ -71,27 +71,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/2151537-koshi-mizukami" class="cast-card">
+            <a href="/actor/2151537-koshi-mizukami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xMZ03bRz7pGAXi57q9PxZandnnu.jpg" alt="Koshi Mizukami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Koshi Mizukami</span>
             </a>
-            <a href="/actor/2801544-joanne-missingham" class="cast-card">
+            <a href="/actor/2801544-joanne-missingham.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/wvNj9ikZOUdLeGf2CU77XatJSaI.jpg" alt="Joanne Missingham" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Joanne Missingham</span>
             </a>
-            <a href="/actor/3777281-nushimo-runa" class="cast-card">
+            <a href="/actor/3777281-nushimo-runa.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lQ4hgt2c2VOQQry1yQE5r22yTkC.jpg" alt="Nushimo Runa" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nushimo Runa</span>
             </a>
-            <a href="/actor/4435858-ocean-hsiung" class="cast-card">
+            <a href="/actor/4435858-ocean-hsiung.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/6R3vFB1CVuwIjcqL36SNwMWZhLs.jpg" alt="Ocean Hsiung" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ocean Hsiung</span>
             </a>
-            <a href="/actor/1681569-wei-yi-lin" class="cast-card">
+            <a href="/actor/1681569-wei-yi-lin.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/w3Tgye4wQM6FcqreELZoX5l6gjr.jpg" alt="Wei-Yi Lin" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Wei-Yi Lin</span>
             </a>
-            <a href="/actor/3573047-shanina" class="cast-card">
+            <a href="/actor/3573047-shanina.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/euZe44BoYBvQQpvRhrJlmjOCXZb.jpg" alt="Shanina" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shanina</span>
             </a></div></section>
@@ -99,13 +99,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

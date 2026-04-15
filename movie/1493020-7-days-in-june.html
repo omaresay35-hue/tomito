@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/movie">أفلام</a> &gt; 
+    <a href="/index.html#movies">أفلام</a> &gt; 
     <span>7 jours en juin</span>
   </nav>
 
@@ -72,43 +72,43 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1181510-manuel-gonçalves" class="cast-card">
+            <a href="/actor/1181510-manuel-gonçalves.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qiHxxx9Yn7r5y3D1rLc2Dlo85YM.jpg" alt="Manuel Gonçalves" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Manuel Gonçalves</span>
             </a>
-            <a href="/actor/1951215-laurent-guiot" class="cast-card">
+            <a href="/actor/1951215-laurent-guiot.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qxZMChLZPGqWL1v7PZ61azuGRvX.jpg" alt="Laurent Guiot" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laurent Guiot</span>
             </a>
-            <a href="/actor/4014050-franck-rasamison" class="cast-card">
+            <a href="/actor/4014050-franck-rasamison.html" class="cast-card">
                 <img src="/favicon.ico" alt="Franck Rasamison" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Franck Rasamison</span>
             </a>
-            <a href="/actor/1845063-anthony-wauters" class="cast-card">
+            <a href="/actor/1845063-anthony-wauters.html" class="cast-card">
                 <img src="/favicon.ico" alt="Anthony Wauters" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anthony Wauters</span>
             </a>
-            <a href="/actor/5484720-noé-aboucaya" class="cast-card">
+            <a href="/actor/5484720-noé-aboucaya.html" class="cast-card">
                 <img src="/favicon.ico" alt="Noé Aboucaya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Noé Aboucaya</span>
             </a>
-            <a href="/actor/1619675-alain-marseglia" class="cast-card">
+            <a href="/actor/1619675-alain-marseglia.html" class="cast-card">
                 <img src="/favicon.ico" alt="Alain Marseglia" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Alain Marseglia</span>
             </a>
-            <a href="/actor/146992-david-aboucaya" class="cast-card">
+            <a href="/actor/146992-david-aboucaya.html" class="cast-card">
                 <img src="/favicon.ico" alt="David Aboucaya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>David Aboucaya</span>
             </a>
-            <a href="/actor/5484722-laurent-aboucaya" class="cast-card">
+            <a href="/actor/5484722-laurent-aboucaya.html" class="cast-card">
                 <img src="/favicon.ico" alt="Laurent Aboucaya" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Laurent Aboucaya</span>
             </a>
-            <a href="/actor/5484725-sonia-pérez" class="cast-card">
+            <a href="/actor/5484725-sonia-pérez.html" class="cast-card">
                 <img src="/favicon.ico" alt="Sonia Pérez" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Sonia Pérez</span>
             </a>
-            <a href="/actor/5484726-isabelle-rasamison" class="cast-card">
+            <a href="/actor/5484726-isabelle-rasamison.html" class="cast-card">
                 <img src="/favicon.ico" alt="Isabelle Rasamison" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Isabelle Rasamison</span>
             </a></div></section>
@@ -116,13 +116,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

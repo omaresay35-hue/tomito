@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>حيل لمنازل أوسع</span>
   </nav>
 
@@ -72,19 +72,19 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/4147366-ati-williams" class="cast-card">
+            <a href="/actor/4147366-ati-williams.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lMSXepqWE1texnHqif151QOA2aG.jpg" alt="Ati Williams" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ati Williams</span>
             </a>
-            <a href="/actor/4147368-jessica-banks" class="cast-card">
+            <a href="/actor/4147368-jessica-banks.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x9zls2FgEwd37zhjaY4HJENSJ3L.jpg" alt="Jessica Banks" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jessica Banks</span>
             </a>
-            <a href="/actor/2596299-brooks-atwood" class="cast-card">
+            <a href="/actor/2596299-brooks-atwood.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/hgDCMABfR5DWglZm1k9wraoEsGH.jpg" alt="Brooks Atwood" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Brooks Atwood</span>
             </a>
-            <a href="/actor/3661817-mikel-welch" class="cast-card">
+            <a href="/actor/3661817-mikel-welch.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/85MMUlDcUkpRvRENx52bLAHiwZE.jpg" alt="Mikel Welch" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Mikel Welch</span>
             </a></div></section>
@@ -92,13 +92,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

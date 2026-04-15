@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>Dear Edward</span>
   </nav>
 
@@ -72,35 +72,35 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/3257962-colin-obrien" class="cast-card">
+            <a href="/actor/3257962-colin-obrien.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/qF38oBiO1b7nEua71FY2XfIayZl.jpg" alt="Colin O'Brien" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Colin O'Brien</span>
             </a>
-            <a href="/actor/221809-taylor-schilling" class="cast-card">
+            <a href="/actor/221809-taylor-schilling.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/icdvnrgzoxHWpqpNAyGktkqrfc2.jpg" alt="Taylor Schilling" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Taylor Schilling</span>
             </a>
-            <a href="/actor/2878206-anna-uzele" class="cast-card">
+            <a href="/actor/2878206-anna-uzele.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fiowjvGCQ7a29E1V392XpFagGjV.jpg" alt="Anna Uzele" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Anna Uzele</span>
             </a>
-            <a href="/actor/1917039-idris-debrand" class="cast-card">
+            <a href="/actor/1917039-idris-debrand.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/dDOSGWdVOTPiT9i8JY9pRjJOYI6.jpg" alt="Idris Debrand" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Idris Debrand</span>
             </a>
-            <a href="/actor/1846046-carter-hudson" class="cast-card">
+            <a href="/actor/1846046-carter-hudson.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iW6Pk9aFaC5o86IxpViI1OTMZed.jpg" alt="Carter Hudson" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Carter Hudson</span>
             </a>
-            <a href="/actor/1369336-amy-forsyth" class="cast-card">
+            <a href="/actor/1369336-amy-forsyth.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/ii3DqSprC4MTFsqzjAloynqVOKB.jpg" alt="Amy Forsyth" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Amy Forsyth</span>
             </a>
-            <a href="/actor/1810651-maxwell-jenkins" class="cast-card">
+            <a href="/actor/1810651-maxwell-jenkins.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/7pAqHa0aMHpK6Z717g2WMxzpYya.jpg" alt="Maxwell Jenkins" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Maxwell Jenkins</span>
             </a>
-            <a href="/actor/86310-connie-britton" class="cast-card">
+            <a href="/actor/86310-connie-britton.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/lxfHf4tTx5NukbemcJjmgqqFAiV.jpg" alt="Connie Britton" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Connie Britton</span>
             </a></div></section>
@@ -108,13 +108,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

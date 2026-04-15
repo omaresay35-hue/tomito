@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>仁心俱乐部</span>
   </nav>
 
@@ -72,23 +72,23 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1569934-xin-zhilei" class="cast-card">
+            <a href="/actor/1569934-xin-zhilei.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/iiIGXK1MtB6pLpeVlgQi4cM1XWK.jpg" alt="Xin Zhilei" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Xin Zhilei</span>
             </a>
-            <a href="/actor/1627281-white-k" class="cast-card">
+            <a href="/actor/1627281-white-k.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/t7Hi7qYnXPaeehR7K5rbf0hHX0B.jpg" alt="White-K" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>White-K</span>
             </a>
-            <a href="/actor/1982712-zhang-zixian" class="cast-card">
+            <a href="/actor/1982712-zhang-zixian.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/x0dYcguZ2QTffmGUXtCNDK1m597.jpg" alt="Zhang Zixian" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Zhang Zixian</span>
             </a>
-            <a href="/actor/3567741-annabel-yao" class="cast-card">
+            <a href="/actor/3567741-annabel-yao.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/e7OyuR1f3wHArvkhshAn6R1Dm8V.jpg" alt="Annabel Yao" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Annabel Yao</span>
             </a>
-            <a href="/actor/2485889-shi-mingze" class="cast-card">
+            <a href="/actor/2485889-shi-mingze.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/5NOiK3L8wH1O5Qbm22rlZSfRugN.jpg" alt="Shi Mingze" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Shi Mingze</span>
             </a></div></section>
@@ -96,13 +96,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

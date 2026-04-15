@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>شريك جيد</span>
   </nav>
 
@@ -72,31 +72,31 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1234280-jang-na-ra" class="cast-card">
+            <a href="/actor/1234280-jang-na-ra.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/uIIShNFO8torFMbPqbjs6VXVqD8.jpg" alt="Jang Na-ra" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jang Na-ra</span>
             </a>
-            <a href="/actor/939137-nam-ji-hyun" class="cast-card">
+            <a href="/actor/939137-nam-ji-hyun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/RQhxoyupXpBYS4ePsjsfTxDYqW.jpg" alt="Nam Ji-hyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Nam Ji-hyun</span>
             </a>
-            <a href="/actor/2054220-kim-jun-han" class="cast-card">
+            <a href="/actor/2054220-kim-jun-han.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/sGEVz3KHa7LVuD0YOvMa4X3Q6fE.jpg" alt="Kim Jun-han" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kim Jun-han</span>
             </a>
-            <a href="/actor/1878886-pyo-ji-hoon" class="cast-card">
+            <a href="/actor/1878886-pyo-ji-hoon.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/fWNdUN9sZpD8xfvTq6q6PDAdLNv.jpg" alt="Pyo Ji-hoon" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Pyo Ji-hoon</span>
             </a>
-            <a href="/actor/1762692-ji-seung-hyun" class="cast-card">
+            <a href="/actor/1762692-ji-seung-hyun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/pV0Bvhrm7RYuNDrWGpUIo5b00cU.jpg" alt="Ji Seung-hyun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ji Seung-hyun</span>
             </a>
-            <a href="/actor/2653304-han-jae-yi" class="cast-card">
+            <a href="/actor/2653304-han-jae-yi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/l9iaZHF2NKHu1Zd5ub4xzW6B6MW.jpg" alt="Han Jae-yi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Han Jae-yi</span>
             </a>
-            <a href="/actor/5720165-ahn-soo-eun" class="cast-card">
+            <a href="/actor/5720165-ahn-soo-eun.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/s3al8zHayU1cWArHAuez68nla5B.jpg" alt="Ahn Soo-eun" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ahn Soo-eun</span>
             </a></div></section>
@@ -104,13 +104,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

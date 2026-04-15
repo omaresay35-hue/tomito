@@ -35,15 +35,15 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
 
   <nav class="breadcrumb">
     <a href="/">الرئيسية</a> &gt; 
-    <a href="/tv">مسلسلات</a> &gt; 
+    <a href="/index.html#series">مسلسلات</a> &gt; 
     <span>スナックバス江</span>
   </nav>
 
@@ -72,27 +72,27 @@
   </div>
 
   <section class="cast-section"><h2 class="section-title">طاقم العمل — Cast</h2><div class="cast-grid">
-            <a href="/actor/1492982-rie-takahashi" class="cast-card">
+            <a href="/actor/1492982-rie-takahashi.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/aeB7z0cBTASdjKOjQriBAO6hYq4.jpg" alt="Rie Takahashi" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Rie Takahashi</span>
             </a>
-            <a href="/actor/1241603-kimiko-saito" class="cast-card">
+            <a href="/actor/1241603-kimiko-saito.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rPP0jCjtLuEEroY3e2aRT8zonYK.jpg" alt="Kimiko Saito" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Kimiko Saito</span>
             </a>
-            <a href="/actor/2220797-yohei-azakami" class="cast-card">
+            <a href="/actor/2220797-yohei-azakami.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/rLIqw8pIjVIxPb5engrTbu9iOex.jpg" alt="Yohei Azakami" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Yohei Azakami</span>
             </a>
-            <a href="/actor/1566511-fukushi-ochiai" class="cast-card">
+            <a href="/actor/1566511-fukushi-ochiai.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xE2FoiUjb9N51J7jg0U8eGmfK19.jpg" alt="Fukushi Ochiai" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Fukushi Ochiai</span>
             </a>
-            <a href="/actor/2019929-ryota-iwasaki" class="cast-card">
+            <a href="/actor/2019929-ryota-iwasaki.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/2aIpmhJ6R49ijYapEAeaAFS9U8g.jpg" alt="Ryota Iwasaki" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Ryota Iwasaki</span>
             </a>
-            <a href="/actor/115301-jun-fukushima" class="cast-card">
+            <a href="/actor/115301-jun-fukushima.html" class="cast-card">
                 <img src="https://image.tmdb.org/t/p/original/xo2A4cr8TnhC9rLFxSQvhwCbIOw.jpg" alt="Jun Fukushima" loading="lazy" onerror="this.src='/favicon.ico'">
                 <span>Jun Fukushima</span>
             </a></div></section>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>

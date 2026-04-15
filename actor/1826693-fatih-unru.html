@@ -35,8 +35,8 @@
     <a class="logo" href="/">TOMITO</a>
     <ul class="nav">
       <li><a href="/">الرئيسية</a></li>
-      <li><a href="/movie">أفلام</a></li>
-      <li><a href="/tv">مسلسلات</a></li>
+      <li><a href="/index.html#movies">أفلام</a></li>
+      <li><a href="/index.html#series">مسلسلات</a></li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -71,27 +71,27 @@
     </div>
   </div>
 
-  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1546050-lone-samurai">
+  <section class="section"><h2 class="section-title">أفلامه — Movies</h2><div class="grid">    <a class="card" href="/movie/1546050-lone-samurai.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/lwKD20JbeZAX4BswSlWKpmB8Qke.jpg" alt="Lone Samurai — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.0⭐</div></div>
       <div class="card-bottom"><div class="card-title">Lone Samurai</div></div>
-    </a>    <a class="card" href="/movie/1280089-the-siege-at-thorn-high">
+    </a>    <a class="card" href="/movie/1280089-the-siege-at-thorn-high.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/uis9PJkI6WHRczCumsfPFaaUAxm.jpg" alt="The Siege at Thorn High — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">7.3⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Siege at Thorn High</div></div>
-    </a>    <a class="card" href="/movie/1406956-a-business-proposal">
+    </a>    <a class="card" href="/movie/1406956-a-business-proposal.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/gBmx0CQo3NZVjnG6chA2euM1L5Q.jpg" alt="A Business Proposal — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">2.7⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Business Proposal</div></div>
-    </a>    <a class="card" href="/movie/1310741-a-brother-and-7-siblings">
+    </a>    <a class="card" href="/movie/1310741-a-brother-and-7-siblings.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/d8iIVE9KmkSITslMYD6WvHvbRFk.jpg" alt="A Brother and 7 Siblings — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">8.5⭐</div></div>
       <div class="card-bottom"><div class="card-title">A Brother and 7 Siblings</div></div>
-    </a>    <a class="card" href="/movie/1380486-risky-business">
+    </a>    <a class="card" href="/movie/1380486-risky-business.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/91L42Zg3I3uWVKrCqZbp4Yx9Q0E.jpg" alt="Risky Business — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">5.6⭐</div></div>
       <div class="card-bottom"><div class="card-title">Risky Business</div></div>
-    </a>    <a class="card" href="/movie/1282448-the-forbidden-camp-mass-possession">
+    </a>    <a class="card" href="/movie/1282448-the-forbidden-camp-mass-possession.html">
       <img class="card-poster" src="https://image.tmdb.org/t/p/original/xsKvu7FPLcYUulsBPhBDYknlnRX.jpg" alt="The Forbidden Camp: Mass Possession — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">6.1⭐</div></div>
       <div class="card-bottom"><div class="card-title">The Forbidden Camp: Mass Possession</div></div>
@@ -100,13 +100,6 @@
   <footer class="footer">
     <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
-  <script>
-    document.querySelectorAll('a').forEach(a => {
-        let h = a.getAttribute('href');
-        if (h && h.endsWith('.html') && !h.startsWith('http') && !h.startsWith('//')) {
-            a.setAttribute('href', h.slice(0, -5));
-        }
-    });
-  </script>
+  <!-- No script needed -->
 </body>
 </html>
