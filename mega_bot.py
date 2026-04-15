@@ -738,7 +738,9 @@ def build_listing_pages():
 
         if not filtered: filtered = all_items[:200] # Fallback if empty
             
-        with open(os.path.join(genre_dir, f"{slug}.html"), 'w', encoding='utf-8') as f:
+        slug_dir = os.path.join(genre_dir, slug)
+        os.makedirs(slug_dir, exist_ok=True)
+        with open(os.path.join(slug_dir, "index.html"), 'w', encoding='utf-8') as f:
             f.write(render_list(mission['label'], filtered[::-1], f"genre/{slug}"))
 
     print("✅ Listing pages generated.")
