@@ -220,14 +220,20 @@ def generate_seo_with_gemini(title_ar, year, type_label):
     return None, None
 
 def generate_seo_description(ar_data, en_data, title_ar, year, type_label):
-    # Try Gemini First
+    # Check if we already have a rich description (e.g. from OpenRouter)
+    ar_desc = ar_data.get('overview', '') if ar_data else ''
+    en_desc = en_data.get('overview', '') if en_data else ''
+    
+    # If description is already substantial (>80 words), use it directly
+    if len(ar_desc.split()) > 80:
+        return ar_desc, en_desc
+
+    # Try Gemini Second
     gemini_ar, gemini_en = generate_seo_with_gemini(title_ar, year, type_label)
     if gemini_ar and gemini_en:
         return gemini_ar[:2000], gemini_en[:2000]
         
     # Fallback to Original
-    ar_desc = ar_data.get('overview', '') if ar_data else ''
-    en_desc = en_data.get('overview', '') if en_data else ''
     seo_ar = f"مشاهدة وتحميل {title_ar} ({year}) اون لاين بجودة عالية HD مترجم حصرياً بدون اعلانات."
     seo_en = f"Watch and download online in HD quality. Free streaming with English subtitles {year}."
     full_ar = f"{ar_desc[:120]}... {seo_ar}" if len(ar_desc) > 30 else seo_ar

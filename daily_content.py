@@ -4,11 +4,13 @@ import sys
 import json
 import logging
 import threading
+import subprocess
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor
-import google.generativeai as genai
+# Import new AI engine
+from ai_engine import generate_seo_content
 
-# -- إعداد المسارات --
+# -- Path Setup --
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_PATH)
 
@@ -20,128 +22,154 @@ from mega_bot import (
     SITE_URL,
 )
 
-# -- الإعدادات --
-TARGET       = 100  # الهدف: 100 فيلم و 100 مسلسل يومياً
+# -- Settings --
+BATCH_SIZE   = 5   # For testing, push every 5 pages
+TARGET_TOTAL = 10  # Target: 5 movies and 5 TV shows for testing
 SEEN_FILE    = os.path.join(BASE_PATH, 'daily_seen_ids.json')
 INDEX_FILE   = os.path.join(BASE_PATH, 'data', 'content_index.json')
-GEMINI_KEY   = os.getenv("GEMINI_API_KEY")
-
-# -- إعداد Gemini --
-if GEMINI_KEY:
-    genai.configure(api_key=GEMINI_KEY)
-    gemini_model = genai.GenerativeModel('gemini-1.5-flash')
 
 # -- Logging --
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
 log = logging.getLogger(__name__)
 
-# ── Smart Deep Collector (The 1900 Scraper) ──────────────────────────────────
+def git_push():
+    """Trigger the git sync script."""
+    log.info("🚀 Triggering Git Push...")
+    try:
+        subprocess.run(["bash", os.path.join(BASE_PATH, "git_sync.sh")], check=True)
+    except Exception as e:
+        log.error(f"❌ Git Push Failed: {e}")
 
-def collect_deep_content(media_type, seen_ids):
-    """
-    يبحث في الجديد، وإذا لم يجد، يعود في التاريخ عاماً بعد عام حتى 1900.
-    """
+def collect_varied_content(media_type, seen_ids, target):
+    """Fetches content from multiple TMDB endpoints to ensure variety."""
     collected = []
     
-    # 1. المرحلة الأولى: التريند (الجديد)
-    log.info(f"🔍 Checking Trending {media_type}...")
-    for page in range(1, 5):
-        data = get_tmdb_data(f'trending/{media_type}/day', {'page': page})
-        if not data or 'results' not in data: break
-        for item in data['results']:
-            tid = str(item.get('id'))
-            if tid not in seen_ids:
-                collected.append(tid)
-                seen_ids.add(tid)
-                if len(collected) >= TARGET: return collected
-
-    # 2. المرحلة الثانية: الحفار (Backfill to 1900)
-    current_year = datetime.now().year
-    log.info(f"⏳ Backfilling {media_type} Mode: ON. Digging through history...")
+    # Endpoints to check
+    endpoints = [
+        (f'trending/{media_type}/day', {}),
+        (f'trending/{media_type}/week', {}),
+    ]
+    if media_type == 'tv':
+        endpoints.append(('tv/airing_today', {}))
     
-    for year in range(current_year, 1900, -1): # يرجع بالسنوات لور
-        if len(collected) >= TARGET: break
-        
-        # البحث في أفضل 3 صفحات لكل سنة لضمان الجودة
-        for page in range(1, 4):
-            params = {
-                'page': page,
-                'year' if media_type == 'movie' else 'first_air_date_year': year,
-                'sort_by': 'popularity.desc',
-                'with_original_language': 'en' # التركيز على المحتوى الأجنبي (الإنجليزي)
-            }
-            data = get_tmdb_data(f'discover/{media_type}', params)
+    log.info(f"🔍 Searching for {media_type} variety...")
+    for endpoint, params in endpoints:
+        for page in range(1, 3):
+            p = params.copy()
+            p['page'] = page
+            data = get_tmdb_data(endpoint, p)
             if not data or 'results' not in data: break
-            
             for item in data['results']:
                 tid = str(item.get('id'))
                 if tid not in seen_ids:
                     collected.append(tid)
                     seen_ids.add(tid)
-                    if len(collected) >= TARGET:
-                        log.info(f"✅ Target Reached! Found 100 {media_type}s down to year {year}.")
-                        return collected
+                    if len(collected) >= target: return collected
+
+    # Backfill if target not reached
+    log.info(f"⏳ Backfilling {media_type} from history...")
+    current_year = datetime.now().year
+    for year in range(current_year, 1900, -1):
+        if len(collected) >= target: break
+        for page in range(1, 3):
+            params = {
+                'page': page,
+                'year' if media_type == 'movie' else 'first_air_date_year': year,
+                'sort_by': 'popularity.desc'
+            }
+            data = get_tmdb_data(f'discover/{media_type}', params)
+            if not data or 'results' not in data: break
+            for item in data['results']:
+                tid = str(item.get('id'))
+                if tid not in seen_ids:
+                    collected.append(tid)
+                    seen_ids.add(tid)
+                    if len(collected) >= target: return collected
     return collected
 
-# ── Processing & SEO ─────────────────────────────────────────────────────────
-
-def get_ai_seo(title, overview, media_type):
-    if not GEMINI_KEY or not overview: return None
-    prompt = f"أنت خبير SEO لموقع (nordrama.live). اصنع عنواناً جذاباً ووصفاً حصرياً (+100 كلمة) و15 تاغ لفيلم/مسلسل: {title}. الأصل: {overview}. أجب JSON فقط."
-    try:
-        response = gemini_model.generate_content(prompt)
-        return json.loads(response.text.replace('```json', '').replace('```', '').strip())
-    except: return None
-
-def worker(tid, media_type, new_entries, new_pages, lock):
+def worker(tid, media_type, new_entries, lock, counter):
     details = fetch_details(tid, media_type)
-    if not details or not details.get('overview'): return
+    if not details: return
     
-    ai = get_ai_seo(details.get('title') or details.get('name'), details['overview'], media_type)
+    # Use OpenRouter for SEO
+    title = (details['en'].get('title') or details['en'].get('name')) if details['en'] else "Unknown"
+    overview = (details['en'].get('overview') or details['ar'].get('overview')) if details.get('ar') or details.get('en') else ""
+    
+    if not overview: return
+    
+    ai = generate_seo_content(title, overview, media_type)
     if ai:
-        details['title'], details['overview'], details['tags'] = ai['seo_title'], ai['ai_description'], ai['keywords']
-    
+        # Patch details for create_page
+        if details['ar']:
+            details['ar']['title'] = ai.get('seo_title', title)
+            details['ar']['overview'] = ai.get('ai_description', overview)
+        if details['en']:
+            details['en']['overview'] = ai.get('ai_description', overview)
+            
+    # create_page handles folder creation and returns path
     page_path, entry = create_page(details, media_type, is_trend=True)
     if page_path and entry:
         with lock:
             new_entries.append(entry)
-            new_pages.append(page_path)
-
-# ── Main ────────────────────────────────────────────────────────────────────
+            counter[0] += 1
 
 def main():
+    # Initialize seen as specific sets to satisfy linter/logic
+    seen_movie = set()
+    seen_tv = set()
     if os.path.exists(SEEN_FILE):
-        with open(SEEN_FILE, 'r') as f: 
-            d = json.load(f)
-            seen = {'movie': set(map(str, d.get('movie', []))), 'tv': set(map(str, d.get('tv', [])))}
-    else: seen = {'movie': set(), 'tv': set()}
+        try:
+            with open(SEEN_FILE, 'r') as f: 
+                d = json.load(f)
+                seen_movie = set(map(str, d.get('movie', [])))
+                seen_tv = set(map(str, d.get('tv', [])))
+        except: pass
+    
+    seen = {'movie': seen_movie, 'tv': seen_tv}
     
     all_index = []
     if os.path.exists(INDEX_FILE):
-        with open(INDEX_FILE, 'r') as f: all_index = json.load(f)
+        with open(INDEX_FILE, 'r') as f: 
+            try: all_index = json.load(f)
+            except: pass
 
-    all_pages_paths = []
     for m_type in ['movie', 'tv']:
-        ids = collect_deep_content(m_type, seen[m_type])
+        log.info(f"🚀 Starting {m_type} Generation...")
+        ids = collect_varied_content(m_type, seen[m_type], TARGET_TOTAL // 2)
         
-        new_entries, new_pages = [], []
-        lock = threading.Lock()
-        with ThreadPoolExecutor(max_workers=5) as executor:
-            for tid in ids: executor.submit(worker, tid, m_type, new_entries, new_pages, lock)
-        
-        with open(os.path.join(BASE_PATH, 'data', f'trend_{m_type}.json'), 'w') as f:
-            json.dump(new_entries, f, ensure_ascii=False)
+        # Process in batches of BATCH_SIZE
+        for i in range(0, len(ids), BATCH_SIZE):
+            batch_ids = ids[i : i + BATCH_SIZE]
+            batch_entries = []
+            lock = threading.Lock()
+            counter = [0]
             
-        all_index.extend(new_entries)
-        all_pages_paths.extend(new_pages)
+            log.info(f"📦 Processing Batch {(i//BATCH_SIZE) + 1} ({len(batch_ids)} items)...")
+            with ThreadPoolExecutor(max_workers=3) as executor:
+                for tid in batch_ids: 
+                    executor.submit(worker, tid, m_type, batch_entries, lock, counter)
+            
+            if batch_entries:
+                with lock:
+                    # Update Index
+                    all_index.extend(batch_entries)
+                    with open(INDEX_FILE, 'w') as f:
+                        json.dump(all_index, f, ensure_ascii=False, indent=2)
+                    
+                    # Update Seen
+                    with open(SEEN_FILE, 'w') as f:
+                        json.dump({'movie': list(seen_movie), 'tv': list(seen_tv)}, f)
+                    
+                    # Generate Sitemap for new pages
+                    # mega_bot.create_page returns page_path like 'tv/slug' or 'movie/slug'
+                    all_paths = [f"{e['folder']}/{e['slug']}.html" for e in all_index]
+                    generate_sitemap(SITE_URL, BASE_PATH, all_paths)
+                    
+                    # Push to Git
+                    git_push()
 
-    # حفظ البيانات المحدثة
-    with open(SEEN_FILE, 'w') as f:
-        json.dump({'movie': list(seen['movie']), 'tv': list(seen['tv'])}, f)
-    with open(INDEX_FILE, 'w') as f:
-        json.dump(all_index, f, ensure_ascii=False, indent=2)
-    
-    if all_pages_paths: generate_sitemap(SITE_URL, BASE_PATH, all_pages_paths)
-    log.info("🏁 Deep Scraping Complete!")
+        
+    log.info("🏁 All Batches Complete!")
 
 if __name__ == '__main__': main()
+
