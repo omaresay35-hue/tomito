@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """
 daily_content.py — Fetch & generate 100 newest movies + 100 newest TV shows per day.
@@ -157,7 +158,7 @@ def collect_new_ids(media_type: str, seen_ids: set, today: datetime) -> list:
 def generate_pages(tmdb_ids: list, media_type: str,
                    existing_index: list) -> tuple[list, list]:
     """
-    Generate HTML pages for the given IDs in parallel (2 workers).
+    Generate HTML pages for the given IDs in parallel (10 workers).
     Returns (new_index_entries, new_page_paths).
     """
     from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -184,7 +185,7 @@ def generate_pages(tmdb_ids: list, media_type: str,
             with lock:
                 errors += 1
 
-    with ThreadPoolExecutor(max_workers=2) as executor:
+    with ThreadPoolExecutor(max_workers=10) as executor:
         futures = [executor.submit(process_one, tid) for tid in tmdb_ids]
         for f in as_completed(futures):
             pass # results handled in closure
@@ -280,3 +281,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+```
