@@ -28,9 +28,14 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          # زدنا مكتبة Gemini هنا باش ما يبقاش يعطيك Error
+          pip install requests google-generativeai 
 
       - name: Run Daily Content Fetcher
+        env:
+          # ضروري نزيدو هاد الجوج هنا باش البوت يقدر يقرا السوارث من Secrets
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python daily_content.py
 
@@ -39,9 +44,9 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git config --global core.quotepath false
-          git add movie/ tv/ data/content_index.json sitemap.xml \
-                  index.html daily_seen_ids.json daily_content.log || true
-          git commit -m "chore: daily fetch — 100 movies + 100 TV shows [skip ci]" \
+          # كنجمعو كاع التغييرات اللي دار البوت والذكاء الاصطناعي
+          git add . 
+          git commit -m "chore: daily fetch — 100 movies + 100 TV shows with Gemini SEO [skip ci]" \
             || echo "No changes to commit"
           git pull --rebase origin main
           git push origin main
