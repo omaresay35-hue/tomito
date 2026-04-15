@@ -3,6 +3,7 @@ import os
 import json
 import re
 import time
+import logging
 from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -18,6 +19,8 @@ DIRS = ['movie', 'tv', 'movie-trend', 'tv-trend', 'actor', 'data']
 
 # --- Global Content Index Cache ---
 _AVAILABLE_IDS = None
+logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(message)s')
+log = logging.getLogger(__name__)
 
 def get_available_ids():
     global _AVAILABLE_IDS
@@ -76,9 +79,24 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{TITLE_OG}}">
   <meta name="twitter:image" content="{{POSTER_URL}}">
-  <link rel="canonical" href="{{PAGE_URL}}">
   <link rel="stylesheet" href="../style.css">
   <link rel="icon" href="../favicon.ico">
+  <style>
+    .dropdown { position: relative; display: inline-block; }
+    .dropdown-content {
+      display: none; position: absolute; background-color: #1a1a1a;
+      min-width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+      z-index: 100; border: 1px solid #333; border-radius: 8px;
+      max-height: 400px; overflow-y: auto; right: 0;
+    }
+    .dropdown-content a {
+      color: #ccc; padding: 10px 16px; text-decoration: none;
+      display: block; font-size: 14px; border-bottom: 1px solid #222;
+    }
+    .dropdown-content a:hover { background-color: #333; color: #fff; }
+    .dropdown:hover .dropdown-content { display: block; }
+    .nav li a { padding: 10px 15px; }
+  </style>
   {{JSON_LD}}
 </head>
 <body>
@@ -88,6 +106,12 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
       <li><a href="/">الرئيسية</a></li>
       <li><a href="/movie">أفلام</a></li>
       <li><a href="/tv">مسلسلات</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)">تصنيفات ▾</a>
+        <div class="dropdown-content">
+          {{CATEGORIES_LINKS}}
+        </div>
+      </li>
     </ul>
     <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
   </header>
@@ -138,6 +162,20 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
 </body>
 </html>"""
 
+# --- Category Links Helper ---
+def get_category_links_html():
+    """Generates the HTML for the categories dropdown."""
+    try:
+        from ai_engine import BOT_MISSIONS
+    except ImportError:
+        return ""
+    
+    links = ""
+    for m in BOT_MISSIONS:
+        slug = clean_slug(m["name"])
+        links += f'<a href="/genre/{slug}">{m["label"]}</a>\n'
+    return links
+
 # --- Utilities ---
 def clean_slug(text):
     if not text: return ""
@@ -186,15 +224,13 @@ def build_keywords(title_ar, title_en, media_type, year, genres_ar):
 def generate_seo_with_gemini(title_ar, year, type_label):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={GEMINI_API_KEY}"
     ar_type = "فيلم" if "Movie" in type_label else "مسلسل"
-    prompt = f"Write a powerful, highly optimized, and comprehensive long-form SEO meta description and rich content for the {ar_type} '{title_ar}' ({year}). Include at least 100 relevant SEO keywords and entities to maximize search visibility. Provide the result in exactly 2 long paragraphs (approximately 150-200 words each, no markdown, no bolding, no bullet points): Paragraph 1 in Arabic, Paragraph 2 in English."
+    prompt = f"Write a powerful, highly optimized, and comprehensive long-form SEO meta description and rich content for the {ar_type} '{title_ar}' ({year}). Provide the result in exactly 3 parts:\n1. Paragraph 1: Detailed Arabic description (150 words).\n2. Paragraph 2: Detailed English description (150 words).\n3. Part 3: A comma-separated list of 50 high-value SEO keywords in both Arabic and English (e.g. مشاهدة فيلم {title_ar}, download {title_ar} free, etc.).\nNo markdown, no bolding, no bullet points. Return each part on a new line."
     
     payload = {
         "contents": [{"parts": [{"text": prompt}]}]
     }
     headers = {'Content-Type': 'application/json'}
     
-    # Stay under 15 RPM limit (1 req / 4s)
-    # With 2 workers, this yields ~12 RPM max (safe)
     time.sleep(5) 
     for attempt in range(3):
         try:
@@ -204,41 +240,32 @@ def generate_seo_with_gemini(title_ar, year, type_label):
                 if 'candidates' in data and len(data['candidates']) > 0:
                     text = data['candidates'][0]['content']['parts'][0]['text']
                     lines = [ln.strip() for ln in text.split('\n') if ln.strip()]
-                    if len(lines) >= 2:
-                        return lines[0].replace('**', ''), lines[1].replace('**', '')
+                    if len(lines) >= 3:
+                        return lines[0].replace('**', ''), lines[1].replace('**', ''), lines[2].replace('**', '')
+                    elif len(lines) == 2:
+                        return lines[0].replace('**', ''), lines[1].replace('**', ''), ""
             elif r.status_code == 429:
-                wait_time = 21 if attempt == 0 else 40
-                print(f"Gemini Rate Limit hit. Waiting {wait_time}s...")
-                time.sleep(wait_time)
+                time.sleep(30)
                 continue
             else:
-                print(f"Gemini Error: {r.status_code} - {r.text}")
                 break
-        except Exception as e:
-            print(f"Gemini Exception: {e}")
+        except Exception:
             time.sleep(2)
-    return None, None
+    return None, None, None
 
-def generate_seo_description(ar_data, en_data, title_ar, year, type_label):
-    # Check if we already have a rich description (e.g. from OpenRouter)
+def generate_seo_description_v2(ar_data, en_data, title_ar, year, type_label):
+    # Try Gemini first for both desc and keywords
+    gemini_ar, gemini_en, gemini_kw = generate_seo_with_gemini(title_ar, year, type_label)
+    if gemini_ar and gemini_en:
+        return gemini_ar[:2500], gemini_en[:2500], gemini_kw or ""
+        
     ar_desc = ar_data.get('overview', '') if ar_data else ''
     en_desc = en_data.get('overview', '') if en_data else ''
-    
-    # If description is already substantial (>80 words), use it directly
-    if len(ar_desc.split()) > 80:
-        return ar_desc, en_desc
-
-    # Try Gemini Second
-    gemini_ar, gemini_en = generate_seo_with_gemini(title_ar, year, type_label)
-    if gemini_ar and gemini_en:
-        return gemini_ar[:2000], gemini_en[:2000]
-        
-    # Fallback to Original
     seo_ar = f"مشاهدة وتحميل {title_ar} ({year}) اون لاين بجودة عالية HD مترجم حصرياً بدون اعلانات."
     seo_en = f"Watch and download online in HD quality. Free streaming with English subtitles {year}."
-    full_ar = f"{ar_desc[:120]}... {seo_ar}" if len(ar_desc) > 30 else seo_ar
-    full_en = f"{en_desc[:120]}... {seo_en}" if len(en_desc) > 30 else seo_en
-    return full_ar.strip(), full_en.strip()
+    full_ar = f"{ar_desc[:150]}... {seo_ar}" if len(ar_desc) > 30 else seo_ar
+    full_en = f"{en_desc[:150]}... {seo_en}" if len(en_desc) > 30 else seo_en
+    return full_ar.strip(), full_en.strip(), ""
 
 def create_page(item_data, media_type, is_trend=False):
     ar, en, credits = item_data['ar'], item_data['en'], item_data['credits']
@@ -286,7 +313,7 @@ def create_page(item_data, media_type, is_trend=False):
         schema_type = 'TVSeries'
         type_label = "TV Series | مسلسل"
 
-    desc_ar, desc_en = generate_seo_description(ar, en, title_ar, year, type_label)
+    desc_ar, desc_en, ai_kw = generate_seo_description_v2(ar, en, title_ar, year, type_label)
 
     # Genres
     genres_ar = [g.get('name', '') for g in (ar.get('genres', []) if ar else [])]
@@ -309,7 +336,7 @@ def create_page(item_data, media_type, is_trend=False):
         type_label = "TV Series | مسلسل"
 
     page_url = f"{SITE_URL}/{folder}/{slug}"
-    keywords = build_keywords(title_ar, title_en, media_type, year, genres_ar)
+    keywords = ai_kw if ai_kw else build_keywords(title_ar, title_en, media_type, year, genres_ar)
 
     # Similar Content section (Replacing Cast as requested)
     similar_html = ''
@@ -446,6 +473,7 @@ def create_page(item_data, media_type, is_trend=False):
         '{{JSON_LD}}': json_ld_html,
         '{{FOLDER}}': folder,
         '{{TYPE_AR}}': type_label.split('|')[-1].strip(),
+        '{{CATEGORIES_LINKS}}': get_category_links_html(),
     }
     for k, v in replacements.items():
         html = html.replace(k, v)
@@ -454,18 +482,21 @@ def create_page(item_data, media_type, is_trend=False):
     with open(path, 'w', encoding='utf-8') as f:
         f.write(html)
 
+    # Return entry for index
+    g_ids = [g.get('id') for g in (en.get('genres', []) if en else [])]
     index_entry = {
         'title': f"{title_ar} / {title_en}" if title_ar != title_en else title_ar,
         'title_ar': title_ar,
         'title_en': title_en,
         'slug': slug,
         'folder': folder,
-        'poster': poster_url,
+        'poster_path': poster_path,
         'rating': rating,
         'year': year,
         'type': media_type,
         'tmdb_id': tmdb_id,
-        'genres': genres_en,
+        'genre_ids': g_ids,
+        'timestamp': int(time.time())
     }
     return f"{folder}/{slug}", index_entry
 
@@ -584,6 +615,7 @@ def create_actor_page(actor_id):
         '{{JSON_LD}}': json_ld_html,
         '{{FOLDER}}': 'actor',
         '{{TYPE_AR}}': 'ممثلين',
+        '{{CATEGORIES_LINKS}}': get_category_links_html(),
     }
     for k, v in replacements.items():
         html = html.replace(k, v)
@@ -610,6 +642,7 @@ def fetch_ids(media_type, years, target=5000, genre=None, start_page=1):
                 params['first_air_date_year'] = year
             if genre:
                 params['with_genres'] = genre
+            
             data = get_tmdb_data(f"discover/{media_type}", params)
             if not data or not data.get('results'):
                 break
@@ -622,132 +655,157 @@ def fetch_ids(media_type, years, target=5000, genre=None, start_page=1):
             break
     return list(ids)[:target]
 
+def build_listing_pages():
+    """Generates index.html and genre-specific listing pages."""
+    index_path = os.path.join(BASE_PATH, 'data', 'content_index.json')
+    if not os.path.exists(index_path): return
+    
+    with open(index_path, 'r', encoding='utf-8') as f:
+        all_items = json.load(f)
+
+    # Import missions from ai_engine (local import to avoid circular)
+    try:
+        from ai_engine import BOT_MISSIONS
+    except ImportError:
+        BOT_MISSIONS = [] # Fallback
+    
+    # Generate Category HTML Links for Nav
+    cat_links = get_category_links_html()
+
+    def render_list(title, items, folder=""):
+        # Use simple mapping
+        html = MASTER_TEMPLATE.replace('{{TITLE_PAGE}}', f"{title} — TOMITO")
+        html = html.replace('{{META_DESC}}', f"استكشف {title} - مشاهدة أحدث الأفلام والمسلسلات أون لاين.")
+        html = html.replace('{{KEYWORDS}}', f"{title}, افلام, مسلسلات, مترجم, tomite")
+        html = html.replace('{{TITLE_OG}}', title)
+        html = html.replace('{{POSTER_URL}}', "/logo.png")
+        html = html.replace('{{PAGE_URL}}', SITE_URL + "/" + folder)
+        html = html.replace('{{OG_TYPE}}', "website")
+        html = html.replace('{{JSON_LD}}', "")
+        html = html.replace('{{CATEGORIES_LINKS}}', cat_links)
+        html = html.replace('{{FOLDER}}', folder)
+        html = html.replace('{{TYPE_AR}}', "تصنيف")
+        html = html.replace('{{TITLE_AR}}', title)
+        html = html.replace('{{TITLE_EN}}', "")
+        html = html.replace('{{DESC_EN}}', "")
+        html = html.replace('{{DESC_AR}}', f"استمتع بمشاهدة {title} بجودة عالية HD.")
+        html = html.replace('{{TAGS_SECTION}}', "")
+        html = html.replace('{{BUTTON_URL}}', "#")
+        
+        # Grid layout
+        grid = '<div class="grid-container" style="display:grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap:15px; padding:20px;">'
+        for item in items[:150]:
+            s = item.get('slug')
+            fld = item.get('folder', 'movie')
+            t_ar = item.get('title_ar', 'Unknown')
+            pst = item.get('poster_path', '')
+            grid += f'''
+            <a href="/{fld}/{s}" style="text-decoration:none; color:#fff;">
+              <div class="card" style="background:#111; border:1px solid #222; border-radius:10px; overflow:hidden;">
+                <img src="https://image.tmdb.org/t/p/w300{pst}" alt="{t_ar}" style="width:100%; aspect-ratio:2/3; display:block;">
+                <div style="padding:10px; font-size:13px; font-weight:bold; text-align:center;">{t_ar}</div>
+              </div>
+            </a>'''
+        grid += "</div>"
+        return html.replace('{{EXTRA_CONTENT}}', grid)
+
+    # 1. Main Index
+    with open(os.path.join(BASE_PATH, 'index.html'), 'w', encoding='utf-8') as f:
+        f.write(render_list("الرئيسية", all_items[::-1]))
+
+    # 2. Genre Pages
+    genre_dir = os.path.join(BASE_PATH, 'genre')
+    os.makedirs(genre_dir, exist_ok=True)
+    for mission in BOT_MISSIONS:
+        slug = clean_slug(mission['name'])
+        m_id = mission.get('id')
+        m_years = mission.get('years')
+        
+        filtered = []
+        for it in all_items:
+            # Filter by Genre ID
+            it_genres = it.get('genre_ids', [])
+            if m_id and m_id in it_genres:
+                filtered.append(it)
+            # Filter by Year
+            elif m_years:
+                it_year = it.get('year')
+                if it_year and any(str(y) in str(it_year) for y in m_years):
+                    filtered.append(it)
+            # Trending/latest (fallback to all recent)
+            elif not m_id and not m_years:
+                filtered.append(it)
+
+        if not filtered: filtered = all_items[:200] # Fallback if empty
+            
+        with open(os.path.join(genre_dir, f"{slug}.html"), 'w', encoding='utf-8') as f:
+            f.write(render_list(mission['label'], filtered[::-1], f"genre/{slug}"))
+
+    print("✅ Listing pages generated.")
+
 # --- Sitemap Generator ---
 def generate_sitemap(base_url, root_dir, all_pages):
+    """Splits sitemaps into movies, tv, and genres."""
     today = datetime.now().strftime('%Y-%m-%d')
-    sitemap_path = os.path.join(root_dir, 'sitemap.xml')
-
-    priority_map = {
-        'movie': 0.8,
-        'tv': 0.8,
-        'actor': 0.6,
-    }
-    base_url = "https://nordrama.live" # Use nordrama.live for sitemap loc
-    with open(sitemap_path, 'w', encoding='utf-8') as f:
-        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
-        f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
-        # Homepage
-        f.write(f'  <url>\n    <loc>{base_url}/</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n')
-        # All generated pages
-        for page_path in all_pages:
-            parts = page_path.split('/')
-            folder = parts[0] if parts else 'movie'
-            priority = priority_map.get(folder, 0.7)
-            freq = 'weekly' if folder in ['movie', 'tv'] else 'monthly'
-            url = f"{base_url}/{page_path}" # Clean URL already handled by bot logic
-            f.write(f'  <url>\n    <loc>{url}</loc>\n    <lastmod>{today}</lastmod>\n    <changefreq>{freq}</changefreq>\n    <priority>{priority}</priority>\n  </url>\n')
-        f.write('</urlset>')
-
-    print(f"\nGenerated sitemap.xml with {len(all_pages) + 1} URLs")
-    return sitemap_path
-
-# --- Main ---
-def main(limit=20000):
-    print(f"=== NORDRAMA MEGA BOT — Target: {limit} pages ===")
-
-    for d in DIRS:
-        path = os.path.join(BASE_PATH, d)
-        os.makedirs(path, exist_ok=True)
-
-    # Skipping old page cleanup to allow accumulation
-    print("  Incremental mode: Preserving existing pages...")
-
-    # Distribution
-    movie_target = limit // 2
-    tv_target = limit // 2
-    years = [2026, 2025, 2024, 2023, 2022]
-
-    # Load existing content index
-    all_index = []
-    index_path = os.path.join(BASE_PATH, 'data', 'content_index.json')
-    if os.path.exists(index_path):
-        try:
-            with open(index_path, 'r', encoding='utf-8') as f:
-                all_index = json.load(f)
-            print(f"  Loaded {len(all_index)} existing items from index.")
-        except Exception:
-            print("  Warning: Could not load existing index, starting fresh.")
-
-    existing_ids = {item.get('tmdb_id') for item in all_index if item.get('tmdb_id')}
-    existing_slugs = {item.get('slug') for item in all_index if item.get('slug')}
-    all_pages = [f"{item['folder']}/{item['slug']}" for item in all_index]
+    base_url = "https://nordrama.live"
     
-    print(f"\nFetching TMDB IDs (Starting from page {getattr(args, 'start_page', 1)})...")
-    movie_ids = [mid for mid in fetch_ids('movie', years, target=movie_target, start_page=getattr(args, 'start_page', 1)) if mid not in existing_ids]
-    print(f"  New Movies: {len(movie_ids)} IDs")
-    tv_ids = [tid for tid in fetch_ids('tv', years, target=tv_target, start_page=getattr(args, 'start_page', 1)) if tid not in existing_ids]
-    print(f"  New TV Series: {len(tv_ids)} IDs")
+    # Pre-populate sitemap_genre.xml with actual genre listing pages
+    try:
+        from ai_engine import BOT_MISSIONS
+        genre_urls = [f"genre/{clean_slug(m['name'])}" for m in BOT_MISSIONS]
+    except ImportError:
+        genre_urls = []
 
-    actor_ids = set()
-    page_count = [0]
-    errors = [0]
-    lock_index = __import__('threading').Lock()
+    sitemaps = {
+        'sitemap_movie.xml': [p for p in all_pages if p.startswith('movie')],
+        'sitemap_tv.xml': [p for p in all_pages if p.startswith('tv')],
+        'sitemap_genre.xml': genre_urls + [p for p in all_pages if p.startswith('genre')],
+        'sitemap_actor.xml': [p for p in all_pages if p.startswith('actor')]
+    }
 
-    def process_item(tmdb_id, media_type):
-        try:
-            details = fetch_details(tmdb_id, 'movie' if media_type == 'movie' else 'tv')
-            if not details or (not details['ar'] and not details['en']):
-                return
-            url, index_entry = create_page(details, media_type)
-            if url and index_entry:
-                with lock_index:
-                    all_index.append(index_entry)
-                    all_pages.append(url)
-                    page_count[0] += 1
-        except Exception:
-            errors[0] += 1
+    def write_xml(filename, urls, priority=0.8):
+        path = os.path.join(root_dir, filename)
+        with open(path, 'w', encoding='utf-8') as f:
+            f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+            f.write('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+            if filename == 'sitemap_movie.xml': # Add homepage to movie sitemap
+                f.write(f'  <url><loc>{base_url}/</loc><lastmod>{today}</lastmod><priority>1.0</priority></url>\n')
+            for u in urls:
+                f.write(f'  <url><loc>{base_url}/{u}</loc><lastmod>{today}</lastmod><priority>{priority}</priority></url>\n')
+            f.write('</urlset>')
+        log.info(f"✅ Sitemap generated: {filename}")
 
-    total = len(movie_ids) + len(tv_ids)
-    print(f"\nProcessing {total} items with 10 workers...")
+    for fname, urls in sitemaps.items():
+        if urls or fname == 'sitemap_movie.xml':
+            write_xml(fname, urls)
 
-    with ThreadPoolExecutor(max_workers=2) as ex:
-        futures = []
-        for mid in movie_ids:
-            futures.append(ex.submit(process_item, mid, 'movie'))
-        for tid in tv_ids:
-            futures.append(ex.submit(process_item, tid, 'tv'))
+    # Root Sitemap Index
+    with open(os.path.join(root_dir, 'sitemap.xml'), 'w', encoding='utf-8') as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
+        f.write('<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n')
+        for fname in sitemaps.keys():
+            if os.path.exists(os.path.join(root_dir, fname)):
+                f.write(f'  <sitemap><loc>{base_url}/{fname}</loc><lastmod>{today}</lastmod></sitemap>\n')
+        f.write('</sitemapindex>')
+    return 'sitemap.xml'
 
-        done = 0
-        for f in as_completed(futures):
-            done += 1
-            if done % 500 == 0:
-                print(f"  Progress: {done}/{total} processed, {page_count[0]} pages created...")
-
-    print(f"\nContent pages created: {page_count[0]}")
-    print(f"Errors: {errors[0]}")
-
-
-
-    # Save content index
+# --- Main API Support ---
+def main_process(limit=250):
+    for d in DIRS: os.makedirs(os.path.join(BASE_PATH, d), exist_ok=True)
     index_path = os.path.join(BASE_PATH, 'data', 'content_index.json')
-    # Use float casting to handle old string ratings and new float ratings
-    all_index.sort(key=lambda x: float(x.get('rating', 0)), reverse=True)
-    with open(index_path, 'w', encoding='utf-8') as f:
-        json.dump(all_index, f, ensure_ascii=False, indent=2)
-    print(f"\nSaved content index: {len(all_index)} items → {index_path}")
-
-    # Generate single unified sitemap
-    generate_sitemap(SITE_URL, BASE_PATH, all_pages)
-
-    total_pages = page_count[0]
-    print(f"\n{'='*50}")
-    print(f"TOTAL PAGES GENERATED: {total_pages}")
-    print(f"{'='*50}")
+    all_index = []
+    if os.path.exists(index_path):
+        with open(index_path, 'r', encoding='utf-8') as f: all_index = json.load(f)
+    existing_ids = {str(i.get('tmdb_id')) for i in all_index}
+    
+    # Process small batch from Trending for variety if run standalone
+    print("Fetching default variety...")
+    # This is just a fallback main if not called from daily_content.py
 
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument('--limit', type=int, default=9000)
-    parser.add_argument('--start-page', type=int, default=1)
+    parser.add_argument('--limit', type=int, default=100)
     args = parser.parse_args()
-    main(limit=args.limit)
+    # build_listing_pages() is already in standalone daily_content tasks
+    build_listing_pages()

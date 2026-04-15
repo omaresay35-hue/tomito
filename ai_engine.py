@@ -82,11 +82,41 @@ FORBIDDEN_PATTERNS = {
     "في نهاية المطاف": "فالاخر"
 }
 
-def get_current_model():
-    """Selects a model based on the current day to ensure 'each bot works on its own day'."""
-    day_of_year = datetime.now().timetuple().tm_yday
-    index = day_of_year % len(MODELS)
-    return MODELS[index]
+# Mapping each of the 26 models to a specific 'Mission'
+BOT_MISSIONS = [
+    {"name": "Action", "type": "genre", "id": 28, "label": "أكشن"},
+    {"name": "Adventure", "type": "genre", "id": 12, "label": "مغامرة"},
+    {"name": "Animation", "type": "genre", "id": 16, "label": "أنمي"},
+    {"name": "Comedy", "type": "genre", "id": 35, "label": "كوميديا"},
+    {"name": "Crime", "type": "genre", "id": 80, "label": "جريمة"},
+    {"name": "Documentary", "type": "genre", "id": 99, "label": "وثائقي"},
+    {"name": "Drama", "type": "genre", "id": 18, "label": "دراما"},
+    {"name": "Family", "type": "genre", "id": 10751, "label": "عائلي"},
+    {"name": "Fantasy", "type": "genre", "id": 14, "label": "فانتازيا"},
+    {"name": "History", "type": "genre", "id": 36, "label": "تاريخي"},
+    {"name": "Horror", "type": "genre", "id": 27, "label": "رعب"},
+    {"name": "Music", "type": "genre", "id": 10402, "label": "موسيقى"},
+    {"name": "Mystery", "type": "genre", "id": 9648, "label": "غموض"},
+    {"name": "Romance", "type": "genre", "id": 10749, "label": "رومانسية"},
+    {"name": "Sci-Fi", "type": "genre", "id": 878, "label": "خيال علمي"},
+    {"name": "TV Movie", "type": "genre", "id": 10770, "label": "أفلام تلفزيونية"},
+    {"name": "Thriller", "type": "genre", "id": 53, "label": "إثارة"},
+    {"name": "War", "type": "genre", "id": 10752, "label": "حربي"},
+    {"name": "Western", "type": "genre", "id": 37, "label": "ويسترن"},
+    {"name": "Classics", "type": "era", "range": (1900, 1960), "label": "كلاسيكيات"},
+    {"name": "70s Cinema", "type": "era", "range": (1970, 1979), "label": "سينما السبعينات"},
+    {"name": "80s Cinema", "type": "era", "range": (1980, 1989), "label": "سينما الثمانينات"},
+    {"name": "90s Cinema", "type": "era", "range": (1990, 1999), "label": "سينما التسعينات"},
+    {"name": "Mini-Series", "type": "mini_series", "label": "ميني-سيريز"},
+    {"name": "New Releases", "type": "trending", "label": "جديد 2025-2026"},
+    {"name": "Reality & Talk", "type": "genre", "id": 10764, "label": "واقعي وTalk"}
+]
+
+def get_mission(index=None):
+    if index is None:
+        day_of_year = datetime.now().timetuple().tm_yday
+        index = day_of_year % len(MODELS)
+    return MODELS[index], BOT_MISSIONS[index]
 
 def clean_ai_text(text):
     """Replaces forbidden AI patterns with human-like alternatives."""
@@ -101,9 +131,9 @@ def clean_ai_text(text):
             cleaned = cleaned.replace(ai_pattern, human_pattern)
     return cleaned
 
-def generate_seo_content(title, overview, media_type):
+def generate_seo_content(title, overview, media_type, model_override=None):
     """Generates SEO title and description using OpenRouter with model rotation."""
-    model = get_current_model()
+    model = model_override or get_mission()[0]
     ar_type = "فيلم" if media_type == 'movie' else "مسلسل"
     
     # Detailed prompt to enforce all user constraints
@@ -165,6 +195,7 @@ def generate_seo_content(title, overview, media_type):
 
 if __name__ == "__main__":
     # Test
-    print(f"Current Model for today: {get_current_model()}")
-    test_res = generate_seo_content("The Last of Us", "A survival story in a post-apocalyptic world.", "tv")
+    model, mission = get_mission()
+    print(f"Current Mission: {mission['name']} using {model}")
+    test_res = generate_seo_content("The Last of Us", "A survival story in a post-apocalyptic world.", "tv", model_override=model)
     print(json.dumps(test_res, indent=2, ensure_ascii=False))

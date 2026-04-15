@@ -1,0 +1,55 @@
+name: 24/7 Multi-Bot SEO Cycle
+
+on:
+  schedule:
+    - cron: "0 * * * *"  # Run every hour
+  workflow_dispatch:      # Allow manual trigger
+
+jobs:
+  run-mission:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests
+          # Add any other dependencies if needed
+
+      - name: Determine Mission Index
+        id: mission
+        run: |
+          # Use (Day of Year * 24 + Hour) % 26 to cycle through all 26 missions
+          DOY=$(date +%j)
+          HOUR=$(date +%H)
+          INDEX=$(( (DOY * 24 + HOUR) % 26 ))
+          echo "index=$INDEX" >> $GITHUB_OUTPUT
+          echo "Selected Mission Index: $INDEX"
+
+      - name: Run Bot Mission
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          OPENROUTER_KEY: ${{ secrets.OPENROUTER_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          python3 daily_content.py --mission ${{ steps.mission.outputs.index }}
+
+      - name: Verify and Build Pages
+        run: |
+          python3 mega_bot.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "bot@nordrama.live"
+          git config --local user.name "Multi-Bot Engine"
+          git add .
+          git commit -m "🤖 Multi-Bot: Mission ${{ steps.mission.outputs.index }} - Automatic Content Update" || echo "No changes to commit"
+          git push origin main
