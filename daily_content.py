@@ -6,7 +6,7 @@ import logging
 import time
 import threading
 from datetime import datetime
-from concurrent.futures import ThreadPoolExecutor, as_completed
+from concurrent.futures import ThreadPoolExecutor
 import google.generativeai as genai
 
 # -- إعداد المسارات --
@@ -21,17 +21,23 @@ from mega_bot import (
     SITE_URL,
 )
 
-# -- الإعدادات العامة --
-TARGET       = 100
+# -- الإعدادات --
+TARGET       = 100  
 SEEN_FILE    = os.path.join(BASE_PATH, 'daily_seen_ids.json')
 INDEX_FILE   = os.path.join(BASE_PATH, 'data', 'content_index.json')
 LOG_FILE     = os.path.join(BASE_PATH, 'daily_content.log')
 GEMINI_KEY   = os.getenv("GEMINI_API_KEY")
 
+# قائمة الأنواع (Genres) لضمان تنوع المحتوى
+GENRES = {
+    'movie': [28, 12, 16, 35, 80, 27, 10749, 878], # أكشن، مغامرة، أنيميشن، كوميديا، جريمة، رعب، رومانسي، خيال علمي
+    'tv': [10759, 18, 35, 80, 10765, 9648] # أكشن، دراما، كوميديا، جريمة، خيال علمي، غموض
+}
+
 # -- إعداد Gemini --
 if GEMINI_KEY:
     genai.configure(api_key=GEMINI_KEY)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    gemini_model = genai.GenerativeModel('gemini-1.5-flash')
 
 # -- Logging --
 logging.basicConfig(
@@ -41,136 +47,109 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-# ── SEO & Gemini Engine ──────────────────────────────────────────────────────
+# ── SEO Engine (Gemini) ─────────────────────────────────────────────────────
 
 def get_ai_seo_content(title, overview, media_type):
-    """يستخدم Gemini لصناعة محتوى SEO حصري 1000%"""
-    if not GEMINI_KEY or not overview:
-        return None
-    
+    if not GEMINI_KEY or not overview: return None
     prompt = f"""
     أنت خبير SEO لموقع أفلام (nordrama.live). قم بتحليل: ({title}) نوعه ({media_type}).
     الوصف الأصلي: {overview}.
-    
-    المطلوب إنتاج محتوى حصري 100% يتبع هذه الشروط الصارمة:
-    1. SEO Title: عنوان جذاب جداً بالعربية والإنجليزية (مثال: مشاهدة فيلم Joker 2 مترجم كامل HD).
-    2. Tags: استخرج 15 كلمة مفتاحية قوية بالعربية والإنجليزية مفصولة بفاصلة.
-    3. Description: اكتب مراجعة وصفية مشوقة (أكثر من 100 كلمة) بأسلوب سينمائي يركز على القصة والجودة، استهدف كلمات يفضلها جوجل.
-    
+    المطلوب إنتاج محتوى حصري 100% (SEO Title، 15 Tags قوية، وصف مشوق +100 كلمة).
     أجب بصيغة JSON فقط:
-    {{
-      "seo_title": "...",
-      "keywords": "...",
-      "ai_description": "..."
-    }}
+    {{ "seo_title": "...", "keywords": "...", "ai_description": "..." }}
     """
     try:
-        response = model.generate_content(prompt)
+        response = gemini_model.generate_content(prompt)
         clean_json = response.text.replace('```json', '').replace('```', '').strip()
         return json.loads(clean_json)
-    except Exception as e:
-        log.warning(f" Gemini Error for {title}: {e}")
-        return None
+    except: return None
 
-# ── Helpers ──────────────────────────────────────────────────────────────────
+# ── Smart Collector (Trending + Genres + Backfill) ─────────────────────────
 
-def load_data():
-    seen = {'movie': set(), 'tv': set()}
-    if os.path.exists(SEEN_FILE):
-        with open(SEEN_FILE, 'r', encoding='utf-8') as f:
-            d = json.load(f)
-            seen = {'movie': set(d.get('movie', [])), 'tv': set(d.get('tv', []))}
-    
-    index = []
-    if os.path.exists(INDEX_FILE):
-        with open(INDEX_FILE, 'r', encoding='utf-8') as f:
-            index = json.load(f)
-    return seen, index
-
-def save_data(seen, index):
-    with open(SEEN_FILE, 'w', encoding='utf-8') as f:
-        json.dump({'movie': list(seen['movie']), 'tv': list(seen['tv'])}, f)
-    index.sort(key=lambda x: float(x.get('rating', 0)), reverse=True)
-    with open(INDEX_FILE, 'w', encoding='utf-8') as f:
-        json.dump(index, f, ensure_ascii=False, indent=2)
-
-# ── Core Logic ───────────────────────────────────────────────────────────────
-
-def collect_trending(media_type, seen_ids):
-    """جلب التريند من TMDB"""
+def collect_smart_content(media_type, seen_ids):
     collected = []
-    for page in range(1, 8):
+    
+    # 1. الأولوية: التريند الحالي (الجديد)
+    log.info(f"🔍 Searching Trending {media_type}...")
+    for page in range(1, 5):
         data = get_tmdb_data(f'trending/{media_type}/day', {'page': page})
         if not data or 'results' not in data: break
         for item in data['results']:
-            tid = item.get('id')
-            if tid and tid not in seen_ids:
-                collected.append(tid)
-                seen_ids.add(tid)
-                if len(collected) >= TARGET: break
+            tid = str(item.get('id'))
+            if tid not in seen_ids:
+                collected.append(tid); seen_ids.add(tid)
+                if len(collected) >= TARGET: return collected
+
+    # 2. البحث بالأنواع (Action, Horror, etc.) لضمان التنوع
+    log.info(f"📂 Searching by Genres for {media_type}...")
+    for genre_id in GENRES[media_type]:
         if len(collected) >= TARGET: break
+        for page in range(1, 3):
+            params = {'page': page, 'with_genres': genre_id, 'sort_by': 'popularity.desc'}
+            data = get_tmdb_data(f'discover/{media_type}', params)
+            if not data or 'results' not in data: break
+            for item in data['results']:
+                tid = str(item.get('id'))
+                if tid not in seen_ids:
+                    collected.append(tid); seen_ids.add(tid)
+                    if len(collected) >= TARGET: break
+
+    # 3. الرجوع للسنوات السابقة (Backfill)
+    current_year = datetime.now().year
+    for year in [current_year, current_year-1, current_year-2]:
+        if len(collected) >= TARGET: break
+        log.info(f"⏳ Backfilling {media_type} from {year}...")
+        for page in range(1, 5):
+            params = {'page': page, 'year' if media_type == 'movie' else 'first_air_date_year': year, 'sort_by': 'popularity.desc'}
+            data = get_tmdb_data(f'discover/{media_type}', params)
+            if not data or 'results' not in data: break
+            for item in data['results']:
+                tid = str(item.get('id'))
+                if tid not in seen_ids:
+                    collected.append(tid); seen_ids.add(tid)
+                    if len(collected) >= TARGET: return collected
     return collected
 
-def process_and_generate(tmdb_ids, media_type):
-    """صناعة الصفحات باستخدام الذكاء الاصطناعي والسرعة القصوى"""
+# ── Processing & Main ───────────────────────────────────────────────────────
+
+def process_items(tmdb_ids, media_type):
     new_entries, new_pages = [], []
     lock = threading.Lock()
-
     def worker(tid):
         details = fetch_details(tid, media_type)
         if not details or not details.get('overview'): return
-        
-        # تفعيل وحش السيو (Gemini)
         ai_data = get_ai_seo_content(details.get('title') or details.get('name'), details['overview'], media_type)
-        
         if ai_data:
-            details['title'] = ai_content['seo_title'] # تحديث العنوان بالعربي/إنجليزي
-            details['overview'] = ai_content['ai_description'] # تحديث الوصف لـ +100 كلمة
-            details['tags'] = ai_content['keywords'] # إضافة الكلمات المفتاحية
-        
+            details['title'], details['overview'], details['tags'] = ai_data['seo_title'], ai_data['ai_description'], ai_data['keywords']
         page_path, entry = create_page(details, media_type, is_trend=True)
         if page_path and entry:
-            with lock:
-                new_entries.append(entry)
-                new_pages.append(page_path)
+            with lock: new_entries.append(entry); new_pages.append(page_path)
 
-    with ThreadPoolExecutor(max_workers=10) as executor:
-        list(executor.map(worker, tmdb_ids))
-    
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        executor.map(worker, tmdb_ids)
     return new_entries, new_pages
 
-# ── Execution ────────────────────────────────────────────────────────────────
-
 def main():
-    start_time = datetime.now()
-    log.info(f"🚀 Launching SEO Beast Run: {start_time}")
+    log.info(f"🚀 Launching SEO Beast Mode (Genres + Trends)")
+    if os.path.exists(SEEN_FILE):
+        with open(SEEN_FILE, 'r') as f: d = json.load(f); seen = {'movie': set(map(str, d.get('movie', []))), 'tv': set(map(str, d.get('tv', [])))}
+    else: seen = {'movie': set(), 'tv': set()}
     
-    os.makedirs(os.path.join(BASE_PATH, 'data'), exist_ok=True)
-    seen, all_index = load_data()
-    all_pages = [f"{i['folder']}/{i['slug']}" for i in all_index]
+    all_index = []
+    if os.path.exists(INDEX_FILE):
+        with open(INDEX_FILE, 'r') as f: all_index = json.load(f)
 
+    all_pages_paths = []
     for m_type in ['movie', 'tv']:
-        log.info(f"Fetching Trending {m_type}...")
-        ids = collect_trending(m_type, seen[m_type])
-        entries, pages = process_and_generate(ids, m_type)
-        
-        # حفظ تريند منفصل لكل نوع (للسلايدر مثلاً)
-        with open(os.path.join(BASE_PATH, 'data', f'trend_{m_type}.json'), 'w', encoding='utf-8') as f:
-            json.dump(entries, f, ensure_ascii=False, indent=2)
-            
-        all_index.extend(entries)
-        all_pages.extend(pages)
+        ids = collect_smart_content(m_type, seen[m_type])
+        entries, pages = process_items(ids, m_type)
+        with open(os.path.join(BASE_PATH, 'data', f'trend_{m_type}.json'), 'w') as f: json.dump(entries, f, ensure_ascii=False)
+        all_index.extend(entries); all_pages_paths.extend(pages)
 
-    save_data(seen, all_index)
-    generate_sitemap(SITE_URL, BASE_PATH, all_pages)
+    with open(SEEN_FILE, 'w') as f: json.dump({'movie': list(seen['movie']), 'tv': list(seen['tv'])}, f)
+    with open(INDEX_FILE, 'w') as f: json.dump(all_index, f, ensure_ascii=False, indent=2)
     
-    # تحديث الصفحة الرئيسية
-    try:
-        import subprocess
-        subprocess.run([sys.executable, os.path.join(BASE_PATH, 'build_homepage.py')], check=True)
-    except: pass
+    if all_pages_paths: generate_sitemap(SITE_URL, BASE_PATH, all_pages_paths)
+    log.info("🏁 Task Complete!")
 
-    log.info(f"✅ Finished in {datetime.now() - start_time}. All pages are unique and AI-optimized!")
-
-if __name__ == '__main__':
-    main()
+if __name__ == '__main__': main()
