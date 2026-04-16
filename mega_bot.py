@@ -79,8 +79,8 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{TITLE_OG}}">
   <meta name="twitter:image" content="{{POSTER_URL}}">
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" href="../favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
   <style>
     .dropdown { position: relative; display: inline-block; }
     .dropdown-content {
@@ -101,11 +101,11 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
   <header class="header">
-    <a class="logo" href="/">TOMITO</a>
+    <a class="logo" href="index.html">TOMITO</a>
     <ul class="nav">
-      <li><a href="/">الرئيسية</a></li>
-      <li><a href="/index.html#movies">أفلام</a></li>
-      <li><a href="/index.html#series">مسلسلات</a></li>
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="index.html#movies">أفلام</a></li>
+      <li><a href="index.html#series">مسلسلات</a></li>
       <li class="dropdown">
         <a href="javascript:void(0)">تصنيفات ▾</a>
         <div class="dropdown-content">
@@ -166,7 +166,7 @@ def get_category_links_html():
     links = ""
     for m in BOT_MISSIONS:
         slug = clean_slug(m["name"])
-        links += f'<a href="/genre/{slug}.html">{m["label"]}</a>\n'
+        links += f'<a href="/genre/{slug}">{m["label"]}</a>\n'
     return links
 
 # --- Utilities ---
@@ -361,8 +361,8 @@ def create_page(item_data, media_type, is_trend=False):
             s_rating = round(sim.get('vote_average', 0), 1)
             s_badge = f"{s_rating}⭐" if s_rating else s_year
             
-            similar_html += f'''    <a class="card" href="/{folder}/{s_slug}.html">
-      <img class="card-poster" src="{poster_src}" alt="{s_title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='../favicon.ico'">
+            similar_html += f'''    <a class="card" href="/{folder}/{s_slug}">
+      <img class="card-poster" src="{poster_src}" alt="{s_title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">{s_badge}</div></div>
       <div class="card-bottom"><div class="card-title">{s_title}</div></div>
     </a>'''
@@ -531,7 +531,7 @@ def build_filmography_html(movies, tv_shows):
         badge = f"{rating}⭐" if rating else year
         
         # Using exact same card structure as the homepage `build_homepage.py`
-        return f'''    <a class="card" href="/{folder}/{slug}.html">
+        return f'''    <a class="card" href="/{folder}/{slug}">
       <img class="card-poster" src="{poster}" alt="{title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
       <div class="card-overlay"><div class="card-meta">{badge}</div></div>
       <div class="card-bottom"><div class="card-title">{title}</div></div>
@@ -675,7 +675,15 @@ def build_listing_pages():
         html = html.replace('{{PAGE_URL}}', SITE_URL + "/" + folder)
         html = html.replace('{{OG_TYPE}}', "website")
         html = html.replace('{{JSON_LD}}', "")
-        html = html.replace('{{CATEGORIES_LINKS}}', cat_links)
+        
+        # Override cat links if we are at root level (index.html) vs genre level
+        custom_cat_links = cat_links if "genre" in folder else cat_links
+        html = html.replace('{{CATEGORIES_LINKS}}', custom_cat_links)
+        
+        # Same for nav links
+        if not "genre" in folder:
+            pass # Removed local rewrite
+            
         html = html.replace('{{FOLDER}}', folder)
         html = html.replace('{{TYPE_AR}}', "تصنيف")
         html = html.replace('{{TITLE_AR}}', title)

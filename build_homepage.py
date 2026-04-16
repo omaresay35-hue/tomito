@@ -32,7 +32,7 @@ def card_html(item):
     title = item.get('title', '')
     folder = item.get('folder', 'movie')
     slug = item.get('slug', '')
-    href = f"/{folder}/{slug}.html" # Clean URL with extension
+    href = f"/{folder}/{slug}"
     rating = item.get('rating', '')
     badge = f"{rating}⭐" if rating else "حصري"
     
@@ -51,7 +51,7 @@ def build_carousel(trends):
     for item in trends:
         folder = item.get('folder', 'movie')
         slug = item.get('slug', '')
-        href = f"/{folder}/{slug}.html"
+        href = f"/{folder}/{slug}"
         poster = item.get('poster', '/favicon.ico')
         title = item.get('title', '')
         rating = item.get('rating', '')
@@ -85,7 +85,7 @@ def build_carousel(trends):
     <section class="trending-container" id="trending">
       <div class="trending-header">
         <h2>🔥 التريند الآن</h2>
-        <a href="/trending.html">عرض الكل &gt;</a>
+        <a href="/trending">عرض الكل &gt;</a>
       </div>
       <div class="slim-carousel">
         {cards}
@@ -150,6 +150,9 @@ def build():
     carousel_section = build_carousel(trends)
 
     total = len(movies) + len(series) + len(anime)
+    
+    from mega_bot import get_category_links_html
+    cat_links = get_category_links_html()
 
     html = f'''<!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -176,8 +179,8 @@ def build():
   <meta property="og:url" content="{SITE_URL}">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{SITE_URL}">
-  <link rel="stylesheet" href="/style.css">
-  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
   <script type="application/ld+json">
   {{
     "@context": "https://schema.org",
@@ -193,18 +196,30 @@ def build():
     }}
   }}
   </script>
+  <style>
+    .dropdown {{ position: relative; display: inline-block; }}
+    .dropdown-content {{ display: none; position: absolute; background-color: #1a1a1a; min-width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5); z-index: 100; border: 1px solid #333; border-radius: 8px; max-height: 400px; overflow-y: auto; right: 0; }}
+    .dropdown-content a {{ color: #ccc; padding: 10px 16px; text-decoration: none; display: block; font-size: 14px; border-bottom: 1px solid #222; }}
+    .dropdown-content a:hover {{ background-color: #333; color: #fff; }}
+    .dropdown:hover .dropdown-content {{ display: block; }}
+  </style>
 </head>
-<body>
-
-  <header class="header">
-    <a class="logo" href="/">TOMITO</a>
-    <ul class="nav">
-      <li><a href="/">الرئيسية</a></li>
-      <li><a href="/#movies">أفلام</a></li>
-      <li><a href="/#series">مسلسلات</a></li>
-    </ul>
-    <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
-  </header>
+  <body>
+    <header class="header">
+      <a class="logo" href="index.html">TOMITO</a>
+      <ul class="nav">
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="index.html#movies">أفلام</a></li>
+        <li><a href="index.html#series">مسلسلات</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)">تصنيفات ▾</a>
+          <div class="dropdown-content">
+            {cat_links}
+          </div>
+        </li>
+      </ul>
+      <a class="header-btn" href="https://tomito.xyz">الموقع الرسمي</a>
+    </header>
 
   <section class="filters-section">
     <div class="filter-container">
