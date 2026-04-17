@@ -90,7 +90,7 @@ def create_long_page(item_data, media_type, custom_slug=None):
             s_rating = round(sim.get('vote_average', 0), 1)
             s_badge = f"{s_rating}⭐" if s_rating else s_year
             
-            similar_html += f'    <a class="card" href="../{folder}/{s_slug}.html">\n      <img class="card-poster" src="{poster_src}" alt="{s_title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src=\'../favicon.ico\'">\n      <div class="card-overlay"><div class="card-meta">{s_badge}</div></div>\n      <div class="card-bottom"><div class="card-title">{s_title}</div></div>\n    </a>'
+            similar_html += f'    <a class="card" href="../{folder}/{s_slug}">\n      <img class="card-poster" src="{poster_src}" alt="{s_title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src=\'../favicon.ico\'">\n      <div class="card-overlay"><div class="card-meta">{s_badge}</div></div>\n      <div class="card-bottom"><div class="card-title">{s_title}</div></div>\n    </a>'
         similar_html += '</div></section>'
 
     tags = [type_label, f"⭐ {rating}", year] + genres_en[:3]

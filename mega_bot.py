@@ -101,11 +101,11 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
   <header class="header">
-    <a class="logo" href="{{ROOT}}index.html">TOMITO</a>
+    <a class="logo" href="{{ROOT}}">TOMITO</a>
     <ul class="nav">
-      <li><a href="{{ROOT}}index.html">الرئيسية</a></li>
-      <li><a href="{{ROOT}}index.html#movies">أفلام</a></li>
-      <li><a href="{{ROOT}}index.html#series">مسلسلات</a></li>
+      <li><a href="{{ROOT}}">الرئيسية</a></li>
+      <li><a href="{{ROOT}}#movies">أفلام</a></li>
+      <li><a href="{{ROOT}}#series">مسلسلات</a></li>
       <li class="dropdown">
         <a href="javascript:void(0)">تصنيفات ▾</a>
         <div class="dropdown-content">
@@ -117,7 +117,7 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
   </header>
 
   <nav class="breadcrumb">
-    <a href="{{ROOT}}index.html">الرئيسية</a> &gt; 
+    <a href="{{ROOT}}">الرئيسية</a> &gt; 
     <a href="{{ROOT}}{{FOLDER}}">{{TYPE_AR}}</a> &gt; 
     <span>{{TITLE_AR}}</span>
   </nav>
@@ -149,7 +149,7 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
   {{EXTRA_CONTENT}}
 
   <footer class="footer">
-    <p>© 2026 <a href="{{ROOT}}index.html">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
+    <p>© 2026 <a href="{{ROOT}}">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
   <!-- No script needed -->
 </body>
@@ -166,7 +166,7 @@ def get_category_links_html(root_path="./"):
     links = ""
     for m in BOT_MISSIONS:
         slug = clean_slug(m["name"])
-        links += f'<a href="{root_path}genre/{slug}.html">{m["label"]}</a>\n'
+        links += f'<a href="{root_path}genre/{slug}">{m["label"]}</a>\n'
     return links
 
 # --- Utilities ---
@@ -361,7 +361,7 @@ def create_page(item_data, media_type, is_trend=False):
             s_rating = round(sim.get('vote_average', 0), 1)
             s_badge = f"{s_rating}⭐" if s_rating else s_year
             
-            similar_html += f'''    <a class="card" href="../{folder}/{s_slug}.html">
+            similar_html += f'''    <a class="card" href="../{folder}/{s_slug}">
       <img class="card-poster" src="{poster_src}" alt="{s_title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='../favicon.ico'">
       <div class="card-overlay"><div class="card-meta">{s_badge}</div></div>
       <div class="card-bottom"><div class="card-title">{s_title}</div></div>
@@ -532,7 +532,7 @@ def build_filmography_html(movies, tv_shows):
         badge = f"{rating}⭐" if rating else year
         
         # Using exact same card structure as the homepage `build_homepage.py`
-        return f'''    <a class="card" href="../{folder}/{slug}.html">
+        return f'''    <a class="card" href="../{folder}/{slug}">
       <img class="card-poster" src="{poster}" alt="{title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='../favicon.ico'">
       <div class="card-overlay"><div class="card-meta">{badge}</div></div>
       <div class="card-bottom"><div class="card-title">{title}</div></div>
@@ -705,7 +705,7 @@ def build_listing_pages():
             t_ar = item.get('title_ar', 'Unknown')
             pst = item.get('poster_path', '')
             grid += f'''
-            <a href="/{fld}/{s}.html" style="text-decoration:none; color:#fff;">
+            <a href="/{fld}/{s}" style="text-decoration:none; color:#fff;">
               <div class="card" style="background:#111; border:1px solid #222; border-radius:10px; overflow:hidden;">
                 <img src="https://image.tmdb.org/t/p/w300{pst}" alt="{t_ar}" style="width:100%; aspect-ratio:2/3; display:block;">
                 <div style="padding:10px; font-size:13px; font-weight:bold; text-align:center;">{t_ar}</div>

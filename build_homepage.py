@@ -206,11 +206,11 @@ def build():
 </head>
   <body>
     <header class="header">
-      <a class="logo" href="./index.html">TOMITO</a>
+      <a class="logo" href="/">TOMITO</a>
       <ul class="nav">
-        <li><a href="./index.html">الرئيسية</a></li>
-        <li><a href="./index.html#movies">أفلام</a></li>
-        <li><a href="./index.html#series">مسلسلات</a></li>
+        <li><a href="/">الرئيسية</a></li>
+        <li><a href="/#movies">أفلام</a></li>
+        <li><a href="/#series">مسلسلات</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)">تصنيفات ▾</a>
           <div class="dropdown-content">
