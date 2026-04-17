@@ -81,22 +81,6 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
   <meta name="twitter:image" content="{{POSTER_URL}}">
   <link rel="stylesheet" href="{{ROOT}}style.css">
   <link rel="icon" href="{{ROOT}}favicon.ico">
-  <style>
-    .dropdown { position: relative; display: inline-block; }
-    .dropdown-content {
-      display: none; position: absolute; background-color: #1a1a1a;
-      min-width: 200px; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-      z-index: 100; border: 1px solid #333; border-radius: 8px;
-      max-height: 400px; overflow-y: auto; right: 0;
-    }
-    .dropdown-content a {
-      color: #ccc; padding: 10px 16px; text-decoration: none;
-      display: block; font-size: 14px; border-bottom: 1px solid #222;
-    }
-    .dropdown-content a:hover { background-color: #333; color: #fff; }
-    .dropdown:hover .dropdown-content { display: block; }
-    .nav li a { padding: 10px 15px; }
-  </style>
   {{JSON_LD}}
 </head>
 <body>
