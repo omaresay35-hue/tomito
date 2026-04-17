@@ -5,6 +5,7 @@ import requests
 from google.oauth2 import service_account
 import google.auth.transport.requests
 import time
+import sys
 
 # ==========================================
 # الإعدادات (Settings)
@@ -13,6 +14,9 @@ import time
 SERVICE_ACCOUNT_FILE = 'reference-fact-488823-b6-710a3997d9de.json'
 SCOPES = ['https://www.googleapis.com/auth/indexing']
 ENDPOINT = 'https://indexing.googleapis.com/v3/urlNotifications:publish'
+
+# الموقع ديالنا
+SITE_URL = 'https://nordrama.live'
 
 # مسارات الـ sitemaps ديالنا
 SITEMAPS = ['sitemap_trend.xml', 'sitemap_root.xml', 'sitemap_tv.xml', 'sitemap_actor.xml', 'sitemap_movie.xml']
@@ -27,8 +31,13 @@ def get_access_token():
         credentials = service_account.Credentials.from_service_account_info(
             creds_json, scopes=SCOPES)
     else:
+        # التأكد من وجود ملف المفاتيح فالمكان الصحيح
+        creds_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), SERVICE_ACCOUNT_FILE)
+        if not os.path.exists(creds_path):
+            raise FileNotFoundError(f"❌ ملف المفاتيح غير موجود: {creds_path}")
+            
         credentials = service_account.Credentials.from_service_account_file(
-            SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+            creds_path, scopes=SCOPES)
         
     request = google.auth.transport.requests.Request()
     credentials.refresh(request)
@@ -46,6 +55,12 @@ def notify_google_index(url, type="URL_UPDATED"):
             "Authorization": f"Bearer {access_token}"
         }
         
+        # التأكد باللي URL كيبدا بـ SITE_URL إيلا كان نسبي
+        if url.startswith('/'):
+            url = f"{SITE_URL}{url}"
+        elif not url.startswith('http'):
+            url = f"{SITE_URL}/{url}"
+            
         data = {"url": url, "type": type}
         
         response = requests.post(ENDPOINT, headers=headers, json=data)
@@ -168,4 +183,11 @@ def index_sitemaps():
          print("\n🎉 سالينا الران ديال دابا! المرة الجاية غادي يكمل اوتوماتيك منين حبسنا.")
 
 if __name__ == "__main__":
-    index_sitemaps()
+    if len(sys.argv) > 1:
+        # إيلا عطينا رابط فـ command line، نصيفطوه هو بوحدو
+        input_url = sys.argv[1]
+        print(f"🚀 غادي نصيفطو هاد الرابط بوحدو: {input_url}")
+        notify_google_index(input_url)
+    else:
+        # إيلا ما عطينا والو، نخدمو بالـ sitemaps العاديين
+        index_sitemaps()
