@@ -19,7 +19,7 @@ ENDPOINT = 'https://indexing.googleapis.com/v3/urlNotifications:publish'
 SITE_URL = 'https://nordrama.live'
 
 # مسارات الـ sitemaps ديالنا
-SITEMAPS = ['sitemap_trend.xml', 'sitemap_root.xml', 'sitemap_tv.xml', 'sitemap_actor.xml', 'sitemap_movie.xml']
+SITEMAPS = ['sitemap_root.xml', 'sitemap_tv.xml', 'sitemap_actor.xml', 'sitemap_movie.xml']
 PROGRESS_FILE = 'indexer_progress.json'
 LINKS_PER_RUN = 200
 # ==========================================
@@ -140,11 +140,7 @@ def index_sitemaps():
         total_urls = len(urls)
         print(f"📊 طوطال الروابط اللي لقينا هنا: {total_urls}")
         
-        # إيلا كانت sitemap_trend.xml، ديما نبداو من الأول حيت هي كتكون فيها الجديد ديال النهار
-        if sitemap_path == 'sitemap_trend.xml':
-            start_index = 0
-        else:
-            start_index = int(progress.get(sitemap_path, 0))
+        start_index = int(progress.get(sitemap_path, 0))
         
         if start_index >= total_urls:
             print(f"✅ سالينا هاد الـ sitemap كامل! (الروابط كاملين {total_urls} صيفطناهم)")
