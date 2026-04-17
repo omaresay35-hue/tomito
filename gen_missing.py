@@ -2,7 +2,7 @@ import os
 import json
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from mega_bot import fetch_details, clean_slug, build_keywords, MASTER_TEMPLATE, IMAGE_BASE_URL, SITE_URL, BUTTON_DOMAIN
+from mega_bot import fetch_details, clean_slug, build_keywords, MASTER_TEMPLATE, IMAGE_BASE_URL, SITE_URL, BUTTON_DOMAIN, get_category_links_html
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 index_path = os.path.join(BASE_PATH, 'data', 'content_index.json')
@@ -90,7 +90,7 @@ def create_long_page(item_data, media_type, custom_slug=None):
             s_rating = round(sim.get('vote_average', 0), 1)
             s_badge = f"{s_rating}⭐" if s_rating else s_year
             
-            similar_html += f'    <a class="card" href="/{folder}/{s_slug}">\n      <img class="card-poster" src="{poster_src}" alt="{s_title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src=\'favicon.ico\'">\n      <div class="card-overlay"><div class="card-meta">{s_badge}</div></div>\n      <div class="card-bottom"><div class="card-title">{s_title}</div></div>\n    </a>'
+            similar_html += f'    <a class="card" href="../{folder}/{s_slug}.html">\n      <img class="card-poster" src="{poster_src}" alt="{s_title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src=\'../favicon.ico\'">\n      <div class="card-overlay"><div class="card-meta">{s_badge}</div></div>\n      <div class="card-bottom"><div class="card-title">{s_title}</div></div>\n    </a>'
         similar_html += '</div></section>'
 
     tags = [type_label, f"⭐ {rating}", year] + genres_en[:3]
@@ -116,6 +116,8 @@ def create_long_page(item_data, media_type, custom_slug=None):
         '{{JSON_LD}}': '<script>{}</script>',
         '{{FOLDER}}': folder,
         '{{TYPE_AR}}': type_label.split('|')[-1].strip(),
+        '{{CATEGORIES_LINKS}}': get_category_links_html(root_path="../"),
+        '{{ROOT}}': '../',
     }
     for k, v in replacements.items():
         html = html.replace(k, v)

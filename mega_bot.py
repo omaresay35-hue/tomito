@@ -79,8 +79,8 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{TITLE_OG}}">
   <meta name="twitter:image" content="{{POSTER_URL}}">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="{{ROOT}}style.css">
+  <link rel="icon" href="{{ROOT}}favicon.ico">
   <style>
     .dropdown { position: relative; display: inline-block; }
     .dropdown-content {
@@ -101,11 +101,11 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body>
   <header class="header">
-    <a class="logo" href="index.html">TOMITO</a>
+    <a class="logo" href="{{ROOT}}index.html">TOMITO</a>
     <ul class="nav">
-      <li><a href="index.html">الرئيسية</a></li>
-      <li><a href="index.html#movies">أفلام</a></li>
-      <li><a href="index.html#series">مسلسلات</a></li>
+      <li><a href="{{ROOT}}index.html">الرئيسية</a></li>
+      <li><a href="{{ROOT}}index.html#movies">أفلام</a></li>
+      <li><a href="{{ROOT}}index.html#series">مسلسلات</a></li>
       <li class="dropdown">
         <a href="javascript:void(0)">تصنيفات ▾</a>
         <div class="dropdown-content">
@@ -117,8 +117,8 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
   </header>
 
   <nav class="breadcrumb">
-    <a href="/">الرئيسية</a> &gt; 
-    <a href="/{{FOLDER}}">{{TYPE_AR}}</a> &gt; 
+    <a href="{{ROOT}}index.html">الرئيسية</a> &gt; 
+    <a href="{{ROOT}}{{FOLDER}}">{{TYPE_AR}}</a> &gt; 
     <span>{{TITLE_AR}}</span>
   </nav>
 
@@ -149,14 +149,14 @@ MASTER_TEMPLATE = """<!DOCTYPE html>
   {{EXTRA_CONTENT}}
 
   <footer class="footer">
-    <p>© 2026 <a href="/">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
+    <p>© 2026 <a href="{{ROOT}}index.html">TOMITO</a> — جميع الحقوق محفوظة | <a href="https://myactivity.google.com/">Google Activity</a> | مشاهدة افلام ومسلسلات اون لاين</p>
   </footer>
   <!-- No script needed -->
 </body>
 </html>"""
 
 # --- Category Links Helper ---
-def get_category_links_html():
+def get_category_links_html(root_path="./"):
     """Generates the HTML for the categories dropdown."""
     try:
         from ai_engine import BOT_MISSIONS
@@ -166,7 +166,7 @@ def get_category_links_html():
     links = ""
     for m in BOT_MISSIONS:
         slug = clean_slug(m["name"])
-        links += f'<a href="/genre/{slug}">{m["label"]}</a>\n'
+        links += f'<a href="{root_path}genre/{slug}.html">{m["label"]}</a>\n'
     return links
 
 # --- Utilities ---
@@ -361,8 +361,8 @@ def create_page(item_data, media_type, is_trend=False):
             s_rating = round(sim.get('vote_average', 0), 1)
             s_badge = f"{s_rating}⭐" if s_rating else s_year
             
-            similar_html += f'''    <a class="card" href="/{folder}/{s_slug}">
-      <img class="card-poster" src="{poster_src}" alt="{s_title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+            similar_html += f'''    <a class="card" href="../{folder}/{s_slug}.html">
+      <img class="card-poster" src="{poster_src}" alt="{s_title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='../favicon.ico'">
       <div class="card-overlay"><div class="card-meta">{s_badge}</div></div>
       <div class="card-bottom"><div class="card-title">{s_title}</div></div>
     </a>'''
@@ -466,7 +466,8 @@ def create_page(item_data, media_type, is_trend=False):
         '{{JSON_LD}}': json_ld_html,
         '{{FOLDER}}': folder,
         '{{TYPE_AR}}': type_label.split('|')[-1].strip(),
-        '{{CATEGORIES_LINKS}}': get_category_links_html(),
+        '{{CATEGORIES_LINKS}}': get_category_links_html(root_path="../"),
+        '{{ROOT}}': '../',
     }
     for k, v in replacements.items():
         html = html.replace(k, v)
@@ -531,8 +532,8 @@ def build_filmography_html(movies, tv_shows):
         badge = f"{rating}⭐" if rating else year
         
         # Using exact same card structure as the homepage `build_homepage.py`
-        return f'''    <a class="card" href="/{folder}/{slug}">
-      <img class="card-poster" src="{poster}" alt="{title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='/favicon.ico'">
+        return f'''    <a class="card" href="../{folder}/{slug}.html">
+      <img class="card-poster" src="{poster}" alt="{title} — مشاهدة وتحميل اون لاين" loading="lazy" onerror="this.src='../favicon.ico'">
       <div class="card-overlay"><div class="card-meta">{badge}</div></div>
       <div class="card-bottom"><div class="card-title">{title}</div></div>
     </a>'''
@@ -556,7 +557,7 @@ def create_actor_page(actor_id):
     name = en.get('name', 'Unknown')
     bio_ar = (ar.get('biography', '') if ar else '') or ''
     bio_en = en.get('biography', '') or ''
-    img_url = f"{IMAGE_BASE_URL}{en.get('profile_path')}" if en.get('profile_path') else "favicon.ico"
+    img_url = f"{IMAGE_BASE_URL}{en.get('profile_path')}" if en.get('profile_path') else "/favicon.ico"
     slug = f"{actor_id}-{clean_slug(name)}"
 
     # Fetch filmography (100 movies + 100 tv)
@@ -608,7 +609,8 @@ def create_actor_page(actor_id):
         '{{JSON_LD}}': json_ld_html,
         '{{FOLDER}}': 'actor',
         '{{TYPE_AR}}': 'ممثلين',
-        '{{CATEGORIES_LINKS}}': get_category_links_html(),
+        '{{CATEGORIES_LINKS}}': get_category_links_html(root_path="../"),
+        '{{ROOT}}': '../',
     }
     for k, v in replacements.items():
         html = html.replace(k, v)
@@ -677,7 +679,9 @@ def build_listing_pages():
         html = html.replace('{{JSON_LD}}', "")
         
         # Override cat links if we are at root level (index.html) vs genre level
-        custom_cat_links = cat_links if "genre" in folder else cat_links
+        root_path = "../" if "genre" in folder else "./"
+        html = html.replace('{{ROOT}}', root_path)
+        custom_cat_links = get_category_links_html(root_path=root_path)
         html = html.replace('{{CATEGORIES_LINKS}}', custom_cat_links)
         
         # Same for nav links

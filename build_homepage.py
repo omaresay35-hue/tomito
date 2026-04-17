@@ -152,7 +152,7 @@ def build():
     total = len(movies) + len(series) + len(anime)
     
     from mega_bot import get_category_links_html
-    cat_links = get_category_links_html()
+    cat_links = get_category_links_html(root_path="./")
 
     html = f'''<!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -179,8 +179,8 @@ def build():
   <meta property="og:url" content="{SITE_URL}">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="{SITE_URL}">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./favicon.ico">
   <script type="application/ld+json">
   {{
     "@context": "https://schema.org",
@@ -206,11 +206,11 @@ def build():
 </head>
   <body>
     <header class="header">
-      <a class="logo" href="index.html">TOMITO</a>
+      <a class="logo" href="./index.html">TOMITO</a>
       <ul class="nav">
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="index.html#movies">أفلام</a></li>
-        <li><a href="index.html#series">مسلسلات</a></li>
+        <li><a href="./index.html">الرئيسية</a></li>
+        <li><a href="./index.html#movies">أفلام</a></li>
+        <li><a href="./index.html#series">مسلسلات</a></li>
         <li class="dropdown">
           <a href="javascript:void(0)">تصنيفات ▾</a>
           <div class="dropdown-content">
