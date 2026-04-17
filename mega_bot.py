@@ -52,7 +52,7 @@ SEO_EN = [
     "English Subtitles", "BluRay", "2026", "Exclusive", "No Ads"
 ]
 
-# --- Master Template (CSS uses ../style.css for subdirectory pages) ---
+# --- Master Template (CSS uses style.css — flat path for all pages) ---
 MASTER_TEMPLATE = """<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -556,7 +556,7 @@ def create_actor_page(actor_id):
     name = en.get('name', 'Unknown')
     bio_ar = (ar.get('biography', '') if ar else '') or ''
     bio_en = en.get('biography', '') or ''
-    img_url = f"{IMAGE_BASE_URL}{en.get('profile_path')}" if en.get('profile_path') else "../favicon.ico"
+    img_url = f"{IMAGE_BASE_URL}{en.get('profile_path')}" if en.get('profile_path') else "favicon.ico"
     slug = f"{actor_id}-{clean_slug(name)}"
 
     # Fetch filmography (100 movies + 100 tv)
