@@ -1,0 +1,41 @@
+name: Google Indexer (200 URLs/day)
+
+on:
+  schedule:
+    - cron: '30 1 * * *' # كل يوم 1:30 AM UTC
+  workflow_dispatch: # يدوي كذلك
+
+permissions:
+  contents: write
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: |
+          pip install requests google-auth
+
+      - name: Run Google Indexer
+        env:
+          GCP_INDEXING_KEY: ${{ secrets.GCP_INDEXING_KEY }}
+        run: |
+          python3 google_indexer.py
+
+      - name: Commit and Push Progress
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add indexer_progress.json
+          git commit -m "🔍 indexer: update progress [skip ci]" || echo "No changes"
+          git push
