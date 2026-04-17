@@ -1,8 +1,11 @@
 import os
 import json
 import re
+import requests
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from mega_bot import fetch_details, clean_slug, build_keywords, MASTER_TEMPLATE, IMAGE_BASE_URL, SITE_URL, BUTTON_DOMAIN, get_category_links_html
+from ai_engine import MODELS, OPENROUTER_KEY, clean_ai_text
 
 BASE_PATH = os.path.dirname(os.path.abspath(__file__))
 index_path = os.path.join(BASE_PATH, 'data', 'content_index.json')
@@ -10,6 +13,37 @@ all_index = []
 if os.path.exists(index_path):
     with open(index_path, 'r', encoding='utf-8') as f:
         all_index = json.load(f)
+
+def generate_missing_seo(title, overview, media_type):
+    """AI personality for gen_missing.py: Story-Focused & Reliable."""
+    model = MODELS[0] # Using first model as fallback
+    ar_type = "فيلم" if media_type == 'movie' else "مسلسل"
+    prompt = f"""
+أنت كاتب محتوى سينمائي محترف. مهمتك إعادة كتابة وصف لـ {ar_type} '{title}' كان مفقوداً من الموقع.
+الأصل: {overview[:300]}.
+
+القواعد:
+1. ركز بشكل كبير على القصة (Plot) بأسلوب مشوق.
+2. أكد للمشاهد أن المحتوى متاح الآن بجودة عالية جداً (BlueRay/HD).
+3. استخدم مزيجاً من العربية والإنجليزية (Bilingual).
+أجب بصيغة JSON فقط:
+{{
+  "ai_description": "وصف مشوق يركز على القصة وجودة المشاهدة...",
+  "keywords": "كلمات, مفتاحية, مختارة"
+}}
+"""
+    headers = {"Authorization": f"Bearer {OPENROUTER_KEY}", "Content-Type": "application/json"}
+    payload = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}]
+    }
+    try:
+        r = requests.post("https://openrouter.ai/api/v1/chat/completions", headers=headers, json=payload, timeout=40)
+        if r.status_code == 200:
+            content = r.json()['choices'][0]['message']['content'].strip().replace('```json', '').replace('```', '').strip()
+            return json.loads(content)
+    except: pass
+    return None
 
 def create_long_page(item_data, media_type, custom_slug=None):
     ar, en, credits = item_data['ar'], item_data['en'], item_data['credits']
@@ -44,15 +78,16 @@ def create_long_page(item_data, media_type, custom_slug=None):
     ar_overview = (ar.get('overview', '') if ar else '')
     en_overview = (en.get('overview', '') if en else '')
     
-    seo_ar_text = f"مشاهدة وتحميل {title_ar} ({year}) اون لاين بجودة عالية HD مترجم حصرياً بدون اعلانات."
-    seo_en_text = f"Watch and download online in HD quality. Free streaming with English subtitles {year}."
-    
-    desc_ar = f"{ar_overview}\n\n{seo_ar_text}".strip()
-    desc_en = f"{en_overview}\n\n{seo_en_text}".strip()
-    if len(desc_ar) < 100:
-        desc_ar = f"قصة {title_ar}: تابعوا أحداث هذه القصة الممتعة والمثيرة للاهتمام. {seo_ar_text} متوفر الآن للمشاهدة المباشرة والتحميل السريع بجودة فائقة الدقة."
-    if len(desc_en) < 100:
-        desc_en = f"Story of {title_en}: Follow this captivating and exciting journey. {seo_en_text} Available now for fast direct download and high definition stream without any interruptions."
+    # NEW: AI Generation for Missing Pages
+    ai = generate_missing_seo(title_en, en_overview or ar_overview, media_type)
+    if ai:
+        desc_ar = clean_ai_text(ai.get('ai_description', ''))
+        desc_en = desc_ar # Use the same bilingual desc for both for consistency in missing pages
+    else:
+        seo_ar_text = f"مشاهدة وتحميل {title_ar} ({year}) اون لاين بجودة عالية HD مترجم حصرياً بدون اعلانات."
+        seo_en_text = f"Watch and download online in HD quality. Free streaming with English subtitles {year}."
+        desc_ar = f"{ar_overview}\n\n{seo_ar_text}".strip()
+        desc_en = f"{en_overview}\n\n{seo_en_text}".strip()
 
     if media_type == 'movie':
         watch_url = "#player"
@@ -168,7 +203,7 @@ def main():
     errors = 0
     lock = threading.Lock()
     
-    with ThreadPoolExecutor(max_workers=10) as ex:
+    with ThreadPoolExecutor(max_workers=100) as ex:
         futures = []
         for line in lines:
             if ',' not in line: continue

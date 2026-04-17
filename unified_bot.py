@@ -42,16 +42,17 @@ log = logging.getLogger(__name__)
 def generate_unified_seo(title, overview, media_type, model):
     ar_type = "فيلم" if media_type == 'movie' else "مسلسل"
     prompt = f"""
-أنت مساعد SEO سريع. النص الأصلي لـ {ar_type} '{title}' هو: "{overview[:250]}".
+أنت مساعد SEO عبقري وسريع. النص الأصلي لـ {ar_type} '{title}' هو: "{overview[:250]}".
 
 مهمتك:
-1. إعادة صياغة بسيطة وسريعة للنص ليكون وصفاً قصيراً (سطر واحد أو سطرين).
-2. إضافة 10 كلمات مفتاحية.
+1. إنشاء (SEO Title) جذاب جداً مع كلمات دلالية.
+2. إنشاء وصف (Description) قصير وخاطف (سطرين كحد أقصى) يشد القارئ ويجمع بين القصة والجودة.
+3. إضافة 10 كلمات مفتاحية قوية جداً.
 أجب بصيغة JSON فقط:
 {{
-  "seo_title": "{title} مشاهدة وتحميل اون لاين",
-  "ai_description": "الوصف القصير المعدل...",
-  "keywords": "كلمات, مفتاحية, مفصولة, بفاصلة"
+  "seo_title": "أفضل عنوان SEO لـ {title}...",
+  "ai_description": "وصف جذاب وقصير...",
+  "keywords": "كلمات, مفتاحية, حصرية"
 }}
 """
     headers = {
@@ -83,19 +84,20 @@ def fetch_items(seen):
     tasks = []
     # (media_type, endpoint, is_trend)
     sources = [
+        ('movie', 'trending/movie/day', True),
+        ('tv', 'trending/tv/day', True),
         ('movie', 'discover/movie', False),
         ('tv', 'discover/tv', False),
-        ('movie', 'trending/movie/day', True),
-        ('tv', 'trending/tv/day', True)
     ]
     
     page = 1
     # Rotate through sources evenly
-    while len(tasks) < TARGET_TOTAL and page <= 50:
+    while len(tasks) < TARGET_TOTAL and page <= 60:
         for media_type, url, is_trend in sources:
             params = {'page': page}
             if not is_trend:
                 params['sort_by'] = 'popularity.desc'
+                params['vote_count.gte'] = 5
             data = get_tmdb_data(url, params)
             if data and 'results' in data:
                 for item in data['results']:
@@ -105,6 +107,31 @@ def fetch_items(seen):
                         seen[media_type].add(tid)
                         if len(tasks) >= TARGET_TOTAL: return tasks
         page += 1
+    
+    # Variety Fallback: If still not enough, fetch from random years
+    import random
+    if len(tasks) < TARGET_TOTAL:
+        log.info(f"🔄 Variety Fallback: Fetching older content (1990-2024)...")
+        for _ in range(20): # Try up to 20 random year/page combinations
+            media_type = random.choice(['movie', 'tv'])
+            year = random.randint(1990, 2024)
+            page = random.randint(1, 10)
+            params = {
+                'page': page,
+                'sort_by': 'popularity.desc',
+                'vote_count.gte': 10
+            }
+            if media_type == 'movie': params['primary_release_year'] = year
+            else: params['first_air_date_year'] = year
+            
+            data = get_tmdb_data(f"discover/{media_type}", params)
+            if data and 'results' in data:
+                for item in data['results']:
+                    tid = str(item['id'])
+                    if tid not in seen[media_type]:
+                        tasks.append((tid, media_type, False))
+                        seen[media_type].add(tid)
+                        if len(tasks) >= TARGET_TOTAL: return tasks
     return tasks
 
 def worker(item, batch_entries, lock, counter, model_iter_state):
@@ -174,7 +201,7 @@ def main():
         counter = [0]
         
         log.info(f"📦 Processing Batch {(i//BATCH_SIZE) + 1} ({len(batch_tasks)} items)...")
-        with ThreadPoolExecutor(max_workers=10) as executor:
+        with ThreadPoolExecutor(max_workers=100) as executor:
             futures = {executor.submit(worker, item, batch_entries, lock, counter, model_iter_state): item for item in batch_tasks}
             concurrent.futures.wait(futures)
         
@@ -198,10 +225,9 @@ def main():
                 except Exception as e:
                     log.error(f"❌ Error rebuilding pages: {e}")
                 
-                log.info("🚀 Triggering Git Push...")
-                subprocess.run(["bash", os.path.join(BASE_PATH, "git_sync.sh")], check=False)
+                log.info("✅ Batch complete.")
                 
-    log.info("🏁 Unified Generation Complete! 500 pages processed.")
+    log.info("🏁 Generation Complete! Run 'bash git_sync.sh' when ready to push.")
 
 if __name__ == '__main__':
     main()

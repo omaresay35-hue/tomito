@@ -162,7 +162,7 @@ def main():
         counter = [0]
         
         log.info(f"📦 Processing Batch {(i//BATCH_SIZE) + 1} ({len(batch_tasks)} items)...")
-        with ThreadPoolExecutor(max_workers=3) as executor:
+        with ThreadPoolExecutor(max_workers=100) as executor:
             futures = {executor.submit(worker, tid, mt, batch_entries, lock, counter, model_name): tid for (tid, mt) in batch_tasks}
             for idx, future in enumerate(concurrent.futures.as_completed(futures), 1):
                 try:
